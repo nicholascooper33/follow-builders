@@ -183,12 +183,6 @@ cat > ~/.follow-builders/config.json << 'CFGEOF'
     "chatId": "<telegram chat ID, only if telegram>",
     "email": "<email address, only if email>"
   },
-  "sources": {
-    "addedPodcasts": [],
-    "removedPodcasts": [],
-    "addedXAccounts": [],
-    "removedXAccounts": []
-  },
   "onboardingComplete": true
 }
 CFGEOF
@@ -197,24 +191,47 @@ CFGEOF
 Then set up the scheduled job based on platform AND delivery method:
 
 **OpenClaw:**
+
+Build the cron expression from the user's preferences:
+- Daily at 8am → `"0 8 * * *"`
+- Weekly on Monday at 9am → `"0 9 * * 1"`
+
 ```bash
 openclaw cron add \
   --name "AI Builders Digest" \
-  --cron "<cron expression based on frequency/time>" \
-  --tz "<user timezone>" \
+  --cron "<cron expression>" \
+  --tz "<user IANA timezone, e.g. America/Los_Angeles>" \
   --session isolated \
-  --message "Run the follow-builders skill to fetch and deliver today's AI builders digest" \
+  --message "Run the follow-builders skill: execute prepare-digest.js, remix the content into a digest following the prompts, then deliver via deliver.js" \
   --announce \
-  --channel last
+  --channel last \
+  --exact
+```
+
+Parameters explained:
+- `--session isolated`: runs in a fresh session so it doesn't pollute the main chat
+- `--announce`: delivers the result to the user's messaging channel
+- `--channel last`: sends to whichever channel the user last messaged from
+- `--exact`: no stagger delay, run at the exact scheduled time
+- `--tz`: IANA timezone string so the cron runs at the user's local time
+
+If the user wants it delivered to a specific channel instead of `last`:
+- Telegram: `--channel telegram --to "<chat_id>"`
+- Discord: `--channel discord --to "<channel_id>"`
+- Slack: `--channel slack --to "channel:<channel_id>"`
+
+To verify the job was created:
+```bash
+openclaw cron list
 ```
 
 **Non-persistent agent + Telegram or Email delivery:**
 Use system crontab so it runs even when the terminal is closed:
 ```bash
 SKILL_DIR="<absolute path to the skill directory>"
-(crontab -l 2>/dev/null; echo "<cron expression> cd $SKILL_DIR/scripts && node fetch-content.js 2>/dev/null | node deliver.js 2>/dev/null") | crontab -
+(crontab -l 2>/dev/null; echo "<cron expression> cd $SKILL_DIR/scripts && node prepare-digest.js 2>/dev/null | node deliver.js 2>/dev/null") | crontab -
 ```
-Note: this runs the fetcher and pipes its output directly to the delivery script,
+Note: this runs the prepare script and pipes its output directly to delivery,
 bypassing the agent entirely. The digest won't be remixed by an LLM — it will
 deliver the raw JSON. For full remixed digests, the user should use /ai manually
 or switch to OpenClaw.
