@@ -1,1 +1,88 @@
-placeholder
+AI Builders Digest — April 2, 2026
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+X / TWITTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Thariq (Claude Code team, Anthropic)
+Claude Code just got a major UX upgrade: the renderer was rewritten to use a virtual viewport, you can now use your mouse, and the prompt input stays pinned to the bottom. This is a real-usage-driven change that makes the terminal feel much more like a proper IDE. The tweet drew over 1,400 likes — clearly a long-requested improvement.
+https://x.com/trq212/status/2039453692592873587
+
+Cat Wu (Claude Code team, Anthropic)
+Cat highlighted a workflow she loves: firing off ideas to Claude Code on the Claude mobile app while on the go, then picking them up later on a desktop. Sessions teleport seamlessly between devices — a small but meaningful quality-of-life feature for builders who think in motion.
+https://x.com/_catwu/status/2039421527935033854
+
+Peter Steinberger (ClawFather, AI coding advocate)
+A spicy take that landed: Peter never uses plan mode in AI coding tools, arguing it was added mainly for "claude-pilled people who struggle changing habits." His point is that natural conversation is enough — you don't need a formal plan step if you just talk with the model. The post went viral with 1,700+ likes and sparked a real debate about AI coding UX patterns.
+https://x.com/steipete/status/2039551079621566812
+
+Amjad Masad (CEO, Replit)
+Two notable posts from Amjad. First, he called this "an unprecedented era of rapid wealth creation" — a macro framing of what AI is doing to the economy. Second, he shared that Replit Agent 4 has turned Replit into something more like an OS, with users able to endlessly customize the platform through skills. That second framing — agent platform as operating system — is one to watch.
+https://x.com/amasad/status/2039552681493336250
+https://x.com/amasad/status/2039429759344730549
+
+Guillermo Rauch (CEO, Vercel)
+A single striking data point: Vercel signups are growing at 52% month-over-month, up from 23%, up from 17%. No commentary needed — the acceleration curve says everything about where developer tooling demand is going.
+https://x.com/rauchg/status/2039493013043626427
+
+Nan Yu (Head of Product, Linear)
+Nan raised a familiar pain point: how often PMs, sales, and support people have to bother engineers just to understand exactly how the app works. He framed it as a problem worth solving — likely a hint at something Linear is building to give non-engineers direct insight into product behavior.
+https://x.com/thenanyu/status/2039490349941526770
+
+Dan Shipper (CEO, Every)
+Dan's take: "SaaS isn't dead, it just needs to become agent-native." He used Linear as his proof case — a product that has evolved to work for both humans and agents simultaneously. This agent-native pivot is the key product design challenge of 2026, and Dan is articulating it clearly.
+https://x.com/danshipper/status/2039357127903350960
+
+Garry Tan (President & CEO, Y Combinator)
+Short and direct: "Local models are a very very good thing." As YC's leader, Garry signals what the next wave of funded infrastructure and applications might look like — on-device AI as a category worth backing.
+https://x.com/garrytan/status/2039568811440128137
+
+Zara Zhang (Builder)
+Zara introduced the "Follow Builders" skill — a curated feed of 25 X accounts and podcasts for staying on top of AI. The launch tweet drew 274 likes and 21 retweets. She also shared a personal workflow: replacing her to-do list with "braindumping to-dos to OpenClaw," her AI assistant, instead of writing tasks down manually.
+https://x.com/zarazhangrui/status/2039368866741277074
+https://x.com/zarazhangrui/status/2039599038358814961
+
+Swyx (AI Engineer, Cognition / Latent Space)
+Swyx posted the JFK moon speech quote — "not because they are easy, but because they are hard" — with no additional commentary. In the current AI moment, the framing lands as a rallying call for ambitious builders.
+https://x.com/swyx/status/2039472186600427903
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PODCASTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Latent Space — "Mistral: Voxtral TTS, Forge, Leanstral, & Mistral 4 — w/ Pavan Kumar Reddy & Guillaume Lample"
+Published: March 30, 2026
+
+Takeaway: Mistral is betting that enterprise customers have been leaving enormous value on the table by using closed-source models that can't learn from their proprietary data — and Voxtral TTS, built on a novel autoregressive flow-matching architecture, is their latest move to change that.
+
+Swyx and Alessio sat down with Mistral Chief Scientist Guillaume Lample and Pavan Kumar Reddy, who leads audio research, to dig into Mistral's growing suite of audio models. The conversation covers Voxtral, their new text-to-speech model, and how it fits into a broader audio roadmap that already includes transcription models with real-time support and multilingual capabilities.
+
+The architectural choices are genuinely interesting. Instead of using the popular depth-transformer approach (which predicts K audio tokens per time step autoregressively), Mistral developed a flow-matching head that treats audio generation as a continuous process rather than a discrete one. As Pavan explained: "We train the codec to be both discrete and continuous to have this flexibility... the continuous stuff works just better." The model is 3B parameters, built on the Ministral base, and supports nine languages — while pricing at a fraction of competitors.
+
+Guillaume made a broader point about why proprietary fine-tuning matters: "When customers use off-the-shelf closed models, what's very sad is that they are not leveraging the data they have been collecting for years or sometimes for decades. Trillions of tokens of data in a very specific domain — data on which closed source models we actually have no access." That's the core Mistral thesis: the best model for an enterprise is one trained on that enterprise's data, and open or fine-tunable models are the only way to get there.
+
+Pavan also noted that unlike text or even vision, audio generation has no settled "right way" to build yet — no dominant architecture has emerged, which makes the space both harder and more exciting to work in.
+
+https://youtube.com/watch?v=SUjA25ijcNs
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Anthropic Engineering: Quantifying infrastructure noise in agentic coding evals
+https://www.anthropic.com/engineering/infrastructure-noise
+
+Anthropic Engineering: Harness design for long-running application development
+https://www.anthropic.com/engineering/harness-design-long-running-apps
+
+Claude Blog: Claude now creates interactive charts, diagrams and visualizations (Mar 12, 2026)
+https://claude.com/blog/claude-builds-visuals
+
+Claude Blog: How enterprises are building AI agents in 2026 (Dec 9, 2025)
+https://claude.com/blog/how-enterprises-are-building-ai-agents-in-2026
+
+Claude Blog: Improving frontend design through Skills (Nov 12, 2025)
+https://claude.com/blog/improving-frontend-design-through-skills
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
