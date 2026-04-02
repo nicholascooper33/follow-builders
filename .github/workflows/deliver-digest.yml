@@ -1,0 +1,37 @@
+name: Deliver Digest to Telegram
+
+# Triggered by Claude scheduled trigger via repository_dispatch
+on:
+  repository_dispatch:
+    types: [deliver-digest]
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send digest to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DIGEST_TEXT: ${{ github.event.client_payload.digest }}
+        run: |
+          # Telegram has a 4096 char limit per message, so split if needed
+          echo "$DIGEST_TEXT" > /tmp/digest.txt
+
+          # Split into chunks at newline boundaries
+          split -b 3900 -d --additional-suffix=.chunk /tmp/digest.txt /tmp/chunk_
+
+          for chunk_file in /tmp/chunk_*.chunk; do
+            CHUNK=$(cat "$chunk_file")
+            # Send via Telegram Bot API
+            curl -s -X POST \
+              "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+              -H "Content-Type: application/json; charset=utf-8" \
+              -d "$(jq -n --arg text "$CHUNK" --arg chat_id "$TELEGRAM_CHAT_ID" \
+                '{chat_id: $chat_id, text: $text, disable_web_page_preview: true}')"
+
+            # Small delay between chunks
+            sleep 1
+          done
+
+          echo "Digest delivered to Telegram"
