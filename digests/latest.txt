@@ -1,100 +1,65 @@
-AI Builders Digest — April 4, 2026
+AI Builders Digest — April 5, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude (Official — AI assistant by Anthropic)
-Microsoft 365 connectors are now live on every Claude plan. You can now connect Outlook, OneDrive, and SharePoint to bring your email, documents, and files directly into the conversation. The announcement drew over 14,000 likes.
-https://x.com/claudeai/status/2040086268562842097
+Andrej Karpathy — AI researcher, previously Director of AI at Tesla and founding team at OpenAI
 
----
+Karpathy made a compelling case for personal knowledge wikis as the right model for AI personalization — explicit, user-owned, stored in universal file formats (markdown, images), and portable across any AI provider. Rather than letting an AI company silently accumulate knowledge about you in their servers, a local wiki keeps your data inspectable and interoperable, with agents able to apply the full Unix toolkit over it. He argues four properties matter most: the memory artifact is explicit and navigable, the data stays on your local machine, files are in universal formats (not trapped in a proprietary app), and you can plug any AI into the same data. "Keep the AI companies on their toes!" He describes "agent proficiency" as a core skill of the 21st century.
+https://x.com/karpathy/status/2040572272944324650
 
-Peter Steinberger — Polyagentmorous ClawFather, AI tooling builder
-The most-discussed tweet of the day in the Claude ecosystem. Steinberger woke up to a flood of mentions and shared that he and Dave Morin both tried to talk sense into Anthropic about a controversial decision — "best we managed was delaying this for a week." He called out the timing: "first they copy some popular features into their closed harness, then they lock out open source." Despite his criticism, he credited Boris for shipping API fixes to lower costs for affected users. The thread drew over 3,200 likes — clearly a nerve was struck. He also flagged a broader agent-era infrastructure gap: GitHub's API wasn't designed with agents in mind, and he keeps hitting quota limits.
-https://x.com/steipete/status/2040209434019082522
-https://x.com/steipete/status/2040298884787032103
-https://x.com/steipete/status/2040067429242675523
+Karpathy also shared a longer-form take on AI and government accountability. His argument: AI doesn't just give governments new tools to make citizens legible — it gives citizens the tools to make governments legible in return. Laws, spending bills, lobbying disclosures, and FOIA responses are technically public but practically unprocessable. AI dissolves that bottleneck, enabling anyone — not just trained investigative journalists — to parse 4,000-page omnibus bills, track voting patterns against stated positions, or map lobbyist-to-legislator-to-vote graphs. He's cautiously optimistic this increases democratic participation overall, while acknowledging the same tools can cut the other way.
+https://x.com/karpathy/status/2040549459193704852
 
----
-
-Thariq — Claude Code at Anthropic, prev YC W20, MIT Media Lab
-A brief but high-signal post: offering a free month of credits to users for "bearing with us" — a rare moment of public accountability from someone inside Anthropic. The post got 1,728 likes and 265 replies, likely connected to the outage or policy controversy that Steinberger also referenced.
-https://x.com/trq212/status/2040215427931156595
-
----
-
-Swyx — AI engineer, affiliated with Cognition, Temporal, AI dot engineer, Latent Space Pod
-Swyx declared "we have achieved agentic self improvement" — he's been copy-pasting blogposts and tweets into Devin, and it oneshots complete implementations. "Jaw dropped when it did. This is very out of distribution of the underlying Gemini Flash Lite model but it Just Worked." He also shared how feature testing works in agentic pipelines: you watch recorded videos of the feature working post-implementation, with annotations of what's being tested. As a contrast, he fired a shot at the discourse: "this is why nobody takes AI Twitter seriously."
-https://x.com/swyx/status/2040181076237443299
-https://x.com/swyx/status/2040245613997219902
+He also shared that his "LLM wiki" tweet went viral and followed up with an "idea file" — a gist-format concept description you hand to your agent, which then builds your own personal wiki customized to your needs. The framing: in the agent era, sharing ideas beats sharing specific apps, since each person's agent can build the tailored version for them.
+https://x.com/karpathy/status/2040470801506541998
 
 ---
 
 Aaron Levie — CEO at Box
-A thoughtful long-form take on the limits of human-agent collaboration. Levie quoted: "there is a limit on human cognition — even if you're not reviewing everything they're doing, how much you can hold in your head at one time" — and extended it: managers exist because humans can only track so much context. Agents face the same constraint. They're only as effective as the context they're given, the tools available, and the human's ability to keep them on track. "For now, that will continue to take real (mental) work from the people managing agents." He used this to push back on the "AI replaces jobs" narrative.
-https://x.com/levie/status/2040264454982480138
+
+Levie made a sharp point about why the context layer will always be central to enterprise AI: even the best models can't be trained to know everything every user needs, especially in enterprise settings where each person has different access to sensitive documents. You can't fine-tune a model that "keeps secrets" from some users but not others — it's architecturally untenable. "This is why the context layer is going to always be the core part of the AI stack for applied use cases to turn general models into useful agents. Can't fight the physics on this one."
+https://x.com/levie/status/2040650799550722243
+
+In a longer post, Levie traced how agent architecture is finally starting to match how people actually work. A year ago, the state of the art for document-heavy agents was chunked RAG: embed, similarity-search, pull context. It worked, but with awkward edge cases — like when a document says "do not use this" on page 1 but the relevant content is on page 3. With better context windows, tool calling, and reasoning, agents can now search and read documents far more like a human would. His team redesigned Box Agent's entire architecture around this shift: the agent now searches similar to how a user searches, expands queries semantically, and can read many large documents at once. "As model progress continues on the dimensions of context accuracy, tool calling, advanced reasoning, and coding, agents are going to become insanely powerful."
+https://x.com/levie/status/2040528801386361128
 
 ---
 
-Ryo Lu — Design at Cursor, early Notion and Stripe
-Cursor shipped a new UI and icon set this weekend. Ryo shared the new interface — "made with care and character" — and announced Composer 2 is now available with 2x usage through the weekend. He also reposted a design philosophy reminder that got 411 likes: "simpler is better." The icon work signals a maturing design sensibility at one of the fastest-growing coding tools on the market.
-https://x.com/ryolu_/status/2040061299053519099
-https://x.com/ryolu_/status/2040270917637648749
-https://x.com/ryolu_/status/2040272055673999730
+Garry Tan — President & CEO at YCombinator
+
+Two updates on GStack, his AI-powered software factory project. Fourteen security bug fixes just landed — half of them community-contributed pull requests — a sign the project is gaining enough outside interest to attract real contributions. He's also working on making code reviews adaptive and smarter, part of a longer-term push toward what he calls an "L8 software factory." Progress is incremental but consistent.
+https://x.com/garrytan/status/2040658880586522783
+https://x.com/garrytan/status/2040667535490863254
 
 ---
 
-Garry Tan — President & CEO at Y Combinator, creator of GStack
-Two notable posts. First: Garry's List (his AI-built project) now scores a 95 on PageSpeed — "codegen luddites should take a seat." Second: he released /plan-devex-review, a new tool on GStack for creating excellent developer experiences, inspired by Addy Osmani's DX framework. He's building tools for himself first and releasing them publicly.
-https://x.com/garrytan/status/2040228442130850008
-https://x.com/garrytan/status/2040211569775395042
+Zara Zhang — Builder
 
----
+A quick but useful prompting tip, originally from Peter Steinberger: after giving the model a task, ask it "Do you have any questions?" It prompts the model to surface ambiguities it might otherwise paper over — leading to better outputs with fewer iteration cycles.
+https://x.com/zarazhangrui/status/2040565939100676382
 
-Peter Yang — Product at Roblox, newsletter for 140K+ AI practitioners
-Peter shared the full soul.md prompt he uses to give his AI agent a personality. The voice guidelines include: skip filler phrases like "Great question!" and "I'd be happy to help"; have strong opinions ('"It depends" is lazy — pick a side'); and never say "delve," "foster," "leverage," or "it's worth noting." He also teased a deep-dive Codex episode dropping the next day, timed around the "OpenClaw" news.
-https://x.com/petergyang/status/2040269162719887610
-https://x.com/petergyang/status/2040265600820469938
-
----
-
-Nan Yu — Head of Product at Linear
-Two posts on org design. The most-liked (181 likes): "PMM is a product concern." He sees too many orgs combining design and product management — which creates poor incentives, shallows out explorations, and hurts brand. His view: product management and product marketing are a much more natural fit together. He also noted that finishing a project with 40 incomplete issues is exactly when you'll wish you'd organized them upfront — and that's when users will want an agent to handle the cleanup.
-https://x.com/thenanyu/status/2040177368187212157
-https://x.com/thenanyu/status/2040206778751750255
-
----
-
-Zara Zhang — Builder, Harvard '17
-Called out an emerging trend: people are now distilling colleagues, influencers, and even their exes into agent skills. Also agreed with Nan Yu's take on PMM: "Product management and product marketing should be one job. They're two sides of the same coin."
-https://x.com/zarazhangrui/status/2040211603875074512
-https://x.com/zarazhangrui/status/2040319135507480921
-
----
-
-Aditya Agarwal — General Partner at South Park Commons, former CTO of Dropbox
-Called out a $10B company suing a smaller competitor because their app "looks and feels" like theirs. His sharp take: instead of $300 in legal fees, just ship a better product.
-https://x.com/adityaag/status/2040107083841053145
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Latent Space — "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why 'This Time Is Different'"
+No Priors — "AI for Atoms: How Periodic Labs is Revolutionizing Materials Engineering with Co-Founder Liam Fedus"
 
-Takeaway: Marc Andreessen argues that today's AI breakthroughs aren't new — they're the 80-year overnight success of ideas that have been building since the 1940s, and this time the progress is real and compounding.
+Takeaway: Liam Fedus — co-creator of ChatGPT and former VP of Post-Training at OpenAI — left one of the most coveted roles in AI to build Periodic Labs, betting that the same acceleration AI brought to software will hit the physical world, but only if AI systems are connected to real experiments, not just text.
 
-Andreessen sat down with the Latent Space team at the a16z office for a wide-ranging conversation about AI history and trajectory. His core framing: "I call it the eighty year overnight success. It's an overnight success because it's like bam — ChatGPT hits and then o1 hits and these are radical overnight transformative successes, but they're drawing on an eighty year sort of wellspring backlog of ideas and thinking."
+Fedus traces a natural arc: physics undergrad doing dark matter research → machine learning at Google Brain during the era of the transformer and mixture-of-experts → OpenAI, where he helped turn GPT-4 into ChatGPT → Periodic Labs, where the bet is that materials science, chemistry, and advanced manufacturing are the next frontier.
 
-He traced the technical inflection points clearly: AlexNet in 2013 was "the real knee in the curve." The Transformer in 2017 was the key unlock. Then came a strange four-year gap — Google had internal chatbots but wouldn't let anyone use them, and the only way a normal person could access GPT-3 was through AI Dungeon, pretending to play Dungeons and Dragons. Even OpenAI needed time to redirect its research path toward consumer deployment.
+The Periodic model works in closed loops. AI systems ingest literature and simulation data to build a prior, then design physical experiments, observe results, look for anomalies and patterns, and feed that back into the next round. Language models act as an orchestration layer — directing experiments, processing multi-modal data — while specialized neural nets handle lower-level atomic modeling with symmetry awareness and low latency. A key insight: published materials data is often unreliable, with reported values spanning orders of magnitude. "Once we start moving into specific discovery areas, chemical spaces, we can see a very high level of sample efficiency. The system isn't starting as a randomly initialized neural net — it has a strong prior on the world."
 
-On the "is this different from 2016-17?" question, Andreessen was cautious but directional. He acknowledged the historical pattern of AI summers and winters going back eighty years, but suggested the structural ingredients this time — scale, compute, data, and the transformer architecture — are qualitatively different in their compounding. He's been working in and around AI since the late 1980s (coding in Lisp in 1989), and he frames the current moment as the natural unlock of decades of serious research rather than hype.
+Fedus draws an analogy to early Google Brain: a small number of people and GPUs, high diversity of research, fast iteration — before it became industrialized and driven by scaling laws. His argument is that materials science is at a similar inflection point, where AI plus automation can now run experiments at a throughput that no human team could interpret unaided. The company is starting by treating itself as "customer zero," building tools that internal scientists use before selling to enterprises bottlenecked by materials or process engineering.
 
-The episode also covers the death of the browser as a primary interface, the implications of OpenClaw (a major new model release), and what it would mean for AI to break free of human cognitive limits. For anyone thinking about where AI infrastructure and interfaces are heading over the next decade, this is a dense and worthwhile listen.
+The vision: "If our physical world could keep up at some fraction to our digital world, I think life will just feel dramatically different." He compares it to the agricultural revolution — a massive, discontinuous spike in physical-world productivity enabled by the same scaling-law mindset that transformed software.
 
-https://www.youtube.com/@LatentSpacePod
+"Software engineering now looks wildly different than even six months ago. I think we see similar opportunities in the physical world. Of course atoms are hard, and so you will have some limits of physics. But just because atoms are hard doesn't mean there's not an order of magnitude or two to speed up just making sense of huge amounts of data and getting to solutions more quickly."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://www.youtube.com/@NoPriorsPodcast
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
