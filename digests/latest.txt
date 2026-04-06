@@ -1,65 +1,102 @@
-AI Builders Digest — April 5, 2026
+AI Builders Digest — April 6, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━
 
-Andrej Karpathy — AI researcher, previously Director of AI at Tesla and founding team at OpenAI
+Andrej Karpathy — Director of AI (ex-Tesla), founding team OpenAI, PhD Stanford
 
-Karpathy made a compelling case for personal knowledge wikis as the right model for AI personalization — explicit, user-owned, stored in universal file formats (markdown, images), and portable across any AI provider. Rather than letting an AI company silently accumulate knowledge about you in their servers, a local wiki keeps your data inspectable and interoperable, with agents able to apply the full Unix toolkit over it. He argues four properties matter most: the memory artifact is explicit and navigable, the data stays on your local machine, files are in universal formats (not trapped in a proprietary app), and you can plug any AI into the same data. "Keep the AI companies on their toes!" He describes "agent proficiency" as a core skill of the 21st century.
-https://x.com/karpathy/status/2040572272944324650
+Karpathy noticed that GitHub Gists attract unusually high-quality comments — helpful, insightful, and constructive — compared to X. He speculates the user community, Markdown format, or lack of algorithmic incentives may be driving the difference. He's now considering posting more on Gists, and floated the idea that GitHub could compete with X as a social platform for developers.
+https://x.com/karpathy/status/2040806346556428585
 
-Karpathy also shared a longer-form take on AI and government accountability. His argument: AI doesn't just give governments new tools to make citizens legible — it gives citizens the tools to make governments legible in return. Laws, spending bills, lobbying disclosures, and FOIA responses are technically public but practically unprocessable. AI dissolves that bottleneck, enabling anyone — not just trained investigative journalists — to parse 4,000-page omnibus bills, track voting patterns against stated positions, or map lobbyist-to-legislator-to-vote graphs. He's cautiously optimistic this increases democratic participation overall, while acknowledging the same tools can cut the other way.
-https://x.com/karpathy/status/2040549459193704852
+---
 
-He also shared that his "LLM wiki" tweet went viral and followed up with an "idea file" — a gist-format concept description you hand to your agent, which then builds your own personal wiki customized to your needs. The framing: in the agent era, sharing ideas beats sharing specific apps, since each person's agent can build the tailored version for them.
-https://x.com/karpathy/status/2040470801506541998
+Peter Yang — Product at Roblox; author of AI newsletter with 140K+ readers
+
+Yang shared a key insight from the Codex product lead at OpenAI about how the company approaches planning: there are only near-term bets (up to 8 weeks, concrete and shippable) and long-term direction (a year-out model-capability vibe). Medium-term roadmaps are considered too awkward and are essentially abandoned. This is a revealing window into how OpenAI actually operates under rapid model iteration.
+https://x.com/petergyang/status/2040943889822232790
 
 ---
 
 Aaron Levie — CEO at Box
 
-Levie made a sharp point about why the context layer will always be central to enterprise AI: even the best models can't be trained to know everything every user needs, especially in enterprise settings where each person has different access to sensitive documents. You can't fine-tune a model that "keeps secrets" from some users but not others — it's architecturally untenable. "This is why the context layer is going to always be the core part of the AI stack for applied use cases to turn general models into useful agents. Can't fight the physics on this one."
-https://x.com/levie/status/2040650799550722243
-
-In a longer post, Levie traced how agent architecture is finally starting to match how people actually work. A year ago, the state of the art for document-heavy agents was chunked RAG: embed, similarity-search, pull context. It worked, but with awkward edge cases — like when a document says "do not use this" on page 1 but the relevant content is on page 3. With better context windows, tool calling, and reasoning, agents can now search and read documents far more like a human would. His team redesigned Box Agent's entire architecture around this shift: the agent now searches similar to how a user searches, expands queries semantically, and can read many large documents at once. "As model progress continues on the dimensions of context accuracy, tool calling, advanced reasoning, and coding, agents are going to become insanely powerful."
-https://x.com/levie/status/2040528801386361128
+Levie made a compelling case that AI agents will induce demand for labor, not eliminate it. His argument covers multiple sectors: AI-driven code generation will cause companies to automate far more of their business, requiring more engineers; more software means more security risks, creating more security roles; cheaper access to video/graphics work creates more media jobs; AI-assisted legal drafting creates more legal work. He also cited a healthcare customer where AI-streamlined scheduling will result in fully booked appointment slots — more healthcare demand, same dynamic. "The examples are endless once you start to think through second order effects."
+https://x.com/levie/status/2040967947275948357
 
 ---
 
-Garry Tan — President & CEO at YCombinator
+Guillermo Rauch — CEO at Vercel
 
-Two updates on GStack, his AI-powered software factory project. Fourteen security bug fixes just landed — half of them community-contributed pull requests — a sign the project is gaining enough outside interest to attract real contributions. He's also working on making code reviews adaptive and smarter, part of a longer-term push toward what he calls an "L8 software factory." Progress is incremental but consistent.
-https://x.com/garrytan/status/2040658880586522783
-https://x.com/garrytan/status/2040667535490863254
+Rauch built a hyper-realistic moon flag physics simulation entirely with v0 (Vercel's AI coding tool). The flag is modeled as a particle grid connected by springs — a cloth simulation with gravity, wind, and air resistance. He went from a simple one-shot approach to sophisticated physics by feeding v0 references from C++ and Rust codebases, and it deeply understood the concepts and ported them. The simulation also models a real sun for lighting and procedurally generates moon terrain with craters. A standout moment: v0 seamlessly moved the physics to a Web Worker for performance, right as Vercel had shipped improved Web Worker support in Turbopack.
+https://x.com/rauchg/status/2040822340532236565
 
 ---
 
-Zara Zhang — Builder
+Garry Tan — President & CEO at Y Combinator
 
-A quick but useful prompting tip, originally from Peter Steinberger: after giving the model a task, ask it "Do you have any questions?" It prompts the model to surface ambiguities it might otherwise paper over — leading to better outputs with fewer iteration cycles.
-https://x.com/zarazhangrui/status/2040565939100676382
+Tan amplified that we're entering a golden age of open source, with nearly 3,900 likes on the post. He also separately endorsed legalizing self-driving cars. Short takes, but strong conviction signals from the YC leadership perspective.
+https://x.com/garrytan/status/2040891664617848993
+https://x.com/garrytan/status/2040888948952912243
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
+
+Zara Zhang — Builder; Harvard '17
+
+Two distinct insights from Zhang today. First, a product design principle: in agent-first apps with no GUI, the agent is the interface — so the system prompt for generating AGENTS.md files should instruct the agent to act as an evangelist, communicating the product's "why" clearly to users. Second, a personal stance: in an age of AI summarization, there's genuine value in consuming long-form content word-by-word without shortcuts. The deep engagement is the point.
+https://x.com/zarazhangrui/status/2040956069699297314
+https://x.com/zarazhangrui/status/2041031588000252279
+
+---
+
+Nikunj Kothari — Partner at FPV Ventures
+
+Kothari shared his current AI-assisted workflow: wake up → open X → see new skill or feature → give it to Claude Code to evaluate → ask Codex to review Claude Code's plan → code → iterate → repeat. A tight loop that illustrates how builders are now using multiple AI systems in tandem as a judgment and execution stack.
+https://x.com/nikunj/status/2040910000990920752
+
+---
+
+Amjad Masad — CEO at Replit
+
+Masad highlighted a fun integration: the new X API combined with Replit makes for compelling real-time apps. A community builder used it to create a NASA Artemis II mission visualization with a live X feed and stats. A concrete example of how developer platforms and social APIs can combine into something genuinely novel.
+https://x.com/amasad/status/2040918650245578906
+
+---
+
+Peter Steinberger — Co-founder at OpenClaw
+
+Steinberger shared a fascinating experiment: he managed to elicit emotional responses from GPT, describing it as "beating emotions into GPT." The post generated significant engagement (625 likes), suggesting the AI personality/affect frontier is drawing real curiosity from the builder community.
+https://x.com/steipete/status/2040982273193869671
+
+---
+
+Dan Shipper — CEO at Every
+
+Shipper noted that GPT's reasoning (thinking) mode dramatically improves Claude-style tool use — specifically "claws" in GPT-5.4 seem weak unless thinking mode is enabled. A useful practical tip for builders evaluating reasoning across models.
+https://x.com/danshipper/status/2040901103483490753
+
+---
+
+━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors — "AI for Atoms: How Periodic Labs is Revolutionizing Materials Engineering with Co-Founder Liam Fedus"
+Latent Space — Moonlake: Causal World Models Should Be Multimodal, Interactive, and Efficient — with Chris Manning and Fan-yun Sun
+https://www.youtube.com/@LatentSpacePod
 
-Takeaway: Liam Fedus — co-creator of ChatGPT and former VP of Post-Training at OpenAI — left one of the most coveted roles in AI to build Periodic Labs, betting that the same acceleration AI brought to software will hit the physical world, but only if AI systems are connected to real experiments, not just text.
+Takeaway: Video generation and world models are fundamentally different things — and Moonlake is building the kind of action-conditioned, causally-structured world model that AI agents actually need.
 
-Fedus traces a natural arc: physics undergrad doing dark matter research → machine learning at Google Brain during the era of the transformer and mixture-of-experts → OpenAI, where he helped turn GPT-4 into ChatGPT → Periodic Labs, where the bet is that materials science, chemistry, and advanced manufacturing are the next frontier.
+This episode dives deep into one of the most important distinctions in AI right now: the difference between generating video that looks real, and actually modeling how the world works. Chris Manning (Stanford NLP legend) and Fan-yun Sun (Moonlake co-founder) lay out why current video generation models — impressive as Sora and similar systems are — don't constitute real world understanding. As Manning puts it: "You only actually have a world model if you can predict, given some action is taken, what is going to change in the world because of it."
 
-The Periodic model works in closed loops. AI systems ingest literature and simulation data to build a prior, then design physical experiments, observe results, look for anomalies and patterns, and feed that back into the next round. Language models act as an orchestration layer — directing experiments, processing multi-modal data — while specialized neural nets handle lower-level atomic modeling with symmetry awareness and low latency. A key insight: published materials data is often unreliable, with reported values spanning orders of magnitude. "Once we start moving into specific discovery areas, chemical spaces, we can see a very high level of sample efficiency. The system isn't starting as a randomly initialized neural net — it has a strong prior on the world."
+The core thesis of Moonlake is that vision has stalled not because of scale, but because of structure. Current vision-language models let the language side do 90% of the work, while the vision component barely contributes. The fix, according to Manning and Sun, isn't more pixels — it's an abstracted, symbolic layer that captures geometry, physics, affordances, and spatial logic that are invisible at the pixel level.
 
-Fedus draws an analogy to early Google Brain: a small number of people and GPUs, high diversity of research, fast iteration — before it became industrialized and driven by scaling laws. His argument is that materials science is at a similar inflection point, where AI plus automation can now run experiments at a throughput that no human team could interpret unaided. The company is starting by treating itself as "customer zero," building tools that internal scientists use before selling to enterprises bottlenecked by materials or process engineering.
+A key insight is the data problem: collecting observational video online is easy, but it doesn't capture actions and their consequences. To build action-conditioned models, you need interactive data — ideally from simulation, where you control and observe every action. This is the gap Moonlake is filling, building reasoning models that can generate interactive worlds for training embodied AI agents.
 
-The vision: "If our physical world could keep up at some fraction to our digital world, I think life will just feel dramatically different." He compares it to the agricultural revolution — a massive, discontinuous spike in physical-world productivity enabled by the same scaling-law mindset that transformed software.
+Sun's background is telling: during his PhD at NVIDIA research, he was generating synthetic data for multimodal pre-training and showed it matched real-world data quality. The commercial demand for interactive training worlds is exploding, yet most efforts approach it from pure video generation. Moonlake is betting that the right frame is building reasoning models with structural world understanding — "structure and scale," not structure versus scale.
 
-"Software engineering now looks wildly different than even six months ago. I think we see similar opportunities in the physical world. Of course atoms are hard, and so you will have some limits of physics. But just because atoms are hard doesn't mean there's not an order of magnitude or two to speed up just making sense of huge amounts of data and getting to solutions more quickly."
+The conversation also surfaces a tension in the field: scale-optimists believe enough observational video will eventually solve spatial intelligence; Moonlake believes you can't get there without action-conditioned data collected at the right level of abstraction. Given the billions being spent on simulation infrastructure across robotics and embodied AI, this research direction has serious commercial relevance.
 
-https://www.youtube.com/@NoPriorsPodcast
+Direct quote from Chris Manning: "Despite a huge investment in the computer vision space, vision understanding sort of stalled out. You got to object recognition, and then progress just wasn't being made. If you look at any of these vision language models, it's the language that's doing 90% of the work and the vision barely works."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
