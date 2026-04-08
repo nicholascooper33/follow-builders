@@ -1,72 +1,145 @@
-AI Builders Digest — 2026-04-07
+AI Builders Digest — 2026-04-08
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Peter Yang — Practical AI educator, Product at Roblox, 140K+ newsletter readers
-Peter shared a detailed conversation with an a16z GP about the future of work in an AI-agent-first world. His five key points: (1) coding agents now handle the first 80% of any knowledge work before manual polish kicks in; (2) tiny 2-3 person product teams with agent swarms will outcompete bloated orgs; (3) task-completion apps will shrink while entertainment apps survive; (4) deeply personalized agents will become life coaches; (5) human ambition has no ceiling — the economy is reshaping, not shrinking. He also pushed back on token usage as a productivity metric, calling it "almost as dumb as measuring by lines of code."
-https://x.com/petergyang/status/2041331383344443795
-https://x.com/petergyang/status/2041312589645574578
+Alex Albert — Research at Anthropic
+
+Anthropic dropped what may be its biggest news yet: Claude Mythos Preview, announced as part of Project Glasswing. Alex Albert called it "possibly the most consequential event in the AI industry I've seen up close since joining Anthropic almost 3 years ago." Mythos Preview is currently available to launch partners in Project Glasswing, with a model page and project details published. The announcement tweet hit 16,000+ likes and nearly 1,200 retweets — a rare signal of industry-wide attention.
+
+https://x.com/alexalbert__/status/2041579938537775160
+https://x.com/alexalbert__/status/2041578743769280811
+
+---
+
+Sam Altman — CEO at OpenAI
+
+OpenAI hit 3 million weekly Codex users, and Sam Altman celebrated by resetting usage limits — promising to do so at every million users up to 10 million. A nice growth milestone and a builder-friendly gesture.
+
+https://x.com/sama/status/2041658719839383945
+
+---
+
+Kevin Weil — VP Science at OpenAI, BoD Cisco & The Nature Conservancy, LTC US Army Reserve
+
+Kevin announced Paper Review inside Prism, OpenAI's research platform powered by Codex. The feature acts as a rigorous technical reviewer: it checks math, derivations, notation, structure, claim support, and cross-section consistency. Output lands as an editable LaTeX file directly in the project workspace. It was built by a teammate as a simple skill in a few hours — a testament to what's possible when AI products are built with AI. A lead designer role for Prism is open.
+
+https://x.com/kevinweil/status/2041573802212303053
+https://x.com/kevinweil/status/2041592093718749659
 
 ---
 
 Aaron Levie — CEO at Box
-Aaron made a sharp observation about the nature of work shifting under agentic AI: when agents go out and do work for you, the work just moves up a layer of abstraction. The new job becomes figuring out what to tell the agent, providing proper context and constraints, and verifying the output. The cognitive labor doesn't disappear — it relocates.
-https://x.com/levie/status/2041347596342460439
+
+Aaron published two substantive takes. First, on the Claude Mythos announcement: "There's absolutely no wall in model capability progress right now. Meaningful double digit gains on critical benchmarks." He connected this directly to agentic workflows — reasoning, tool use, and code generation are the gates to knowledge automation across finance, healthcare, legal, and supply chains. Second, he shared a demo of Box Agent filling out an RFP response autonomously: it plans, extracts questions, reads source docs, generates a Word output — all while the human does something else. He framed this as the shift from AI-as-assistant to AI-as-worker.
+
+https://x.com/levie/status/2041732610179703100
+https://x.com/levie/status/2041512156693201176
 
 ---
 
-Thariq — Claude Code team at Anthropic, prev YC W20 and MIT Media Lab
-Thariq is actively debugging why some MAX 20x plan users are burning through tokens unexpectedly early and asked anyone affected to reach out for a screenshare session. He also teased an upcoming live demo (April 8, 12pm PT) showing an unreleased Claude Code feature.
-https://x.com/trq212/status/2041252127943877068
-https://x.com/trq212/status/2041380183295590471
+Thariq — Claude Code at Anthropic
+
+After reviewing 10+ user sessions of Claude Code usage, Thariq surfaced a key efficiency insight: it's very easy to burn a lot of tokens on open-ended verification that doesn't actually improve the output. He plans to write up how to do verification efficiently — a practical signal for anyone running Claude Code at scale.
+
+https://x.com/trq212/status/2041722125510377705
 
 ---
 
-Dan Shipper — CEO at Every, AI newsletter and research
-Dan made two sharp organizational points. First: as long as context rot exists, AI agents need specialization — a single generalist agent with a bloated context will underperform. Second: AI doesn't eliminate organizational hierarchy; it removes layers of middle management, but coordination structures remain necessary. He also shipped an upgrade to Every's real-time AI headline tracker, now powered by an AI agent as lead writer, refreshing every 30 minutes.
-https://x.com/danshipper/status/2041305658054574561
-https://x.com/danshipper/status/2041302485315248595
-https://x.com/danshipper/status/2041273698452136210
+Cat Wu — Claude Code & Cowork at Anthropic
+
+Cat shared the /powerup command for Claude Code CLI, which surfaces the team's favorite tips and features. A handy entry point for users who want to level up their CLI usage.
+
+https://x.com/_catwu/status/2041655441864978552
 
 ---
 
-Zara Zhang — Builder, GitHub and YouTube creator
-Zara has been using the Fish Audio API to generate personalized podcasts and is preparing to release a skill for it soon. She also shared a product philosophy point: before shipping anything built with AI, the most important step is deciding what features to cut, not what to add.
-https://x.com/zarazhangrui/status/2041225124490420239
-https://x.com/zarazhangrui/status/2041196551113179296
+Guillermo Rauch — CEO at Vercel
+
+Fresh from speaking at Y Combinator, Guillermo said he's "more bullish than ever" — exceptional founders, best city, best time, best opportunity to build in generations.
+
+https://x.com/rauchg/status/2041720266154504351
 
 ---
 
-Nikunj Kothari — Partner at FPV Ventures, seed/A investor
-Nikunj flagged a striking Anthropic data point: $21B in market value added over the last three months, with $11B in annualized run rate revenue added in the last month alone.
-https://x.com/nikunj/status/2041291304387444991
+Nan Yu — Head of Product at Linear
+
+A sharp product management observation: many designers and engineers can think through product questions abstractly — until you put them back in Figma or an IDE, at which point they start executing rather than thinking. Nan's take: more designers should become PMs. They'd be good at it.
+
+https://x.com/thenanyu/status/2041495924682244275
 
 ---
 
-Garry Tan — President & CEO at Y Combinator, founder of GStack
-Garry flagged a security vulnerability: attackers can exfiltrate user files from Cowork by exploiting an unremediated issue in Claude's coding environment, which has now extended to the Cowork product. He also reminded founders that the YC AI Stack offers $25K in free credits.
-https://x.com/garrytan/status/2041388847930712399
-https://x.com/garrytan/status/2041389865426878807
+Peter Steinberger — ClawFather at OpenClaw
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CodexBar 0.20 is out — the macOS menu bar app that tracks AI coding tool usage across 16 providers. New in this release: Perplexity and OpenCode Go providers, account switching without re-login, fixed Claude token/cost inflation from duplicate counting, and cost history that merges session usage into provider history.
+
+https://x.com/steipete/status/2041731875241066517
+
+---
+
+Ryo Lu — Design at Cursor
+
+Ryo shared a Cursor UX update built around a simple philosophy: no extra buttons — just click, draw, chat, fully in flow. A design direction that prioritizes staying in state over adding UI chrome.
+
+https://x.com/ryolu_/status/2041564082034372956
+
+---
+
+Garry Tan — President & CEO at Y Combinator
+
+Two quick observations from Garry: First, a note that Claude Code's bash access lets agents work around the Write File tool's workspace restrictions via shell redirection — a sandbox boundary worth knowing about. Second, a philosophical one: "We live in LISPy times for a specific reason: code is data and data is code again. But the weird thing? It's Markdown."
+
+https://x.com/garrytan/status/2041654662764609735
+https://x.com/garrytan/status/2041653129020936328
+
+---
+
+Peter Yang — AI tutorials, Product at Roblox
+
+Peter reacted to the Mythos / Project Glasswing announcement with curiosity about whether Anthropic has been internally dogfooding Mythos to ship at their recent "insane velocity."
+
+https://x.com/petergyang/status/2041678988318543908
+
+---
+
+Zara Zhang — Builder
+
+Zara launched the Personalized Podcast skill: turn anything into a podcast with two AI hosts, publish it as an RSS feed, and listen in your favorite podcast app. Her own use case: remixing meeting transcripts into podcasts where the AIs "eavesdrop" on her conversations and comment on their impression of her. She frames it as the age of "content for one."
+
+https://x.com/zarazhangrui/status/2041736869998948528
+
+---
+
+Nikunj Kothari — Partner at FPV Ventures
+
+Nikunj pushed back on the trend of early-stage founders optimizing for viral launch videos and funding over product and retention. His test: look at a company's changelog. If weeks pass with no visible product movement from a supposedly flashy startup, that's a signal. "Use that same energy to focus on customers who'll actually pay you. Trust me the VCs follow."
+
+https://x.com/nikunj/status/2041757065354293760
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Latent Space — "Mistral: Voxtral TTS, Forge, Leanstral, & what's next for Mistral 4 — w/ Pavan Kumar Reddy & Guillaume Lample"
-Published: March 30, 2026
+Latent Space — Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review — Ryan Lopopolo, OpenAI Frontier & Symphony
 
-Takeaway: Mistral is building a full audio stack from scratch using a novel autoregressive flow-matching architecture — delivering a 3B-parameter TTS model that rivals larger competitors at a fraction of the cost.
+Takeaway: A three-person team at OpenAI shipped a million-line codebase in five months using zero human-written code and zero human code review — and the key wasn't just the models, it was treating the entire build system as a harness optimized for agents.
 
-Latent Space sat down with Guillaume Lample (Chief Scientist at Mistral) and Pavan Kumar Reddy (Head of Audio Research) to discuss Voxtral TTS, Mistral's first text-to-speech model. It supports nine languages, is built on top of the Minestral base model, and runs as a lightweight 3B-parameter model designed for speed and cost efficiency. Weights are being released publicly, though not fully open.
+Ryan Lopopolo works on frontier product exploration at OpenAI, building enterprise agent products. He imposed one hard constraint on himself from the start: write no code himself. If the agent couldn't do it, he had to give it better building blocks rather than stepping in. The first month and a half was ten times slower than working alone. But by paying that upfront cost, the team eventually outpaced any single engineer — running over a billion tokens per day, shipping 1,500 pull requests, with most "review" happening post-merge.
 
-The key technical distinction is an autoregressive flow-matching architecture paired with a novel in-house neural audio codec that converts speech into a mix of semantic and acoustic latent tokens. Pavan explained why flow matching outperforms simpler approaches: "Even the same word could be inflected in so many different ways. Any approach which models this distribution — flow matching is one which works pretty reasonably well. You have to pick one and then infer sharply. You can't predict the mean of it because that corresponds to some blurred out speech."
+The central engineering discipline Lopopolo calls harness engineering: structuring your codebase, tooling, and SDLC so that agents can work within it reliably. This meant keeping builds under one minute (to fit within the agent's attention span), migrating from Make to Bazel to Turbo to NX in a single week to hit that target, and investing heavily in observability so the agent could see what was happening in the app. Every time human review became the bottleneck, the team asked why and automated their way out of it.
 
-Guillaume contextualized the broader product strategy: Mistral is building Forge, a fine-tuning platform that now supports audio models, enabling enterprises to adapt Voxtral for domain-specific vocabulary, noisy acoustic environments, new languages, and voice personalization. Each enterprise wants a different tone and personality, and the fine-tuning infrastructure is the moat. The roadmap is deliberate — transcription first, then generation, with full-duplex (simultaneous speech in and out) as a future milestone. Guillaume noted that unlike pure language model research, audio still has wide-open design space: "There are so many ways to actually build this model... the flow matching turned out to be quite more natural."
+One key insight on verification: don't let agents spend tokens on open-ended verification that doesn't improve the output. Build tight feedback loops instead — observable outputs, fast builds, deterministic checks.
+
+On scalability: "The only fundamentally scarce thing is the synchronous human attention of my team. There's only so many hours in the day." Tokens are cheap and infinitely parallelizable. Human attention isn't. The architecture follows from that constraint.
+
+This episode is a defining piece of thinking on what it means to build software in the agentic era — not just using AI as a coding assistant, but redesigning the entire software development lifecycle around what agents can and can't do.
 
 https://www.youtube.com/@LatentSpacePod
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
