@@ -1,118 +1,90 @@
-AI Builders Digest — April 11, 2026
+AI Builders Digest — April 12, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thariq (Claude Code Engineering, Anthropic)
-Claude Code just shipped /ultraplan — a new mode where Claude builds a full implementation plan for you on the web, which you can read, edit, and then run either in the browser or back in your terminal. It's available now in preview for all users with Claude Code on the web enabled. Thariq clarified that ultraplan uses roughly the same number of tokens and subscription rate limits as regular plan mode, and that the key insight is that planning (which is mostly about reading code and understanding intent) can happen in the cloud, while implementation still benefits from a local environment.
-https://x.com/trq212/status/2042671370186973589
-https://x.com/trq212/status/2042673325139427724
+Thariq (Claude Code at Anthropic, prev YC W20 / MIT Media Lab)
+A TurboTax connector just dropped inside Claude Code — a timely development for anyone who procrastinated on taxes. The post resonated: 1,400+ likes. Claude Code's integration story keeps expanding beyond pure coding workflows.
+https://x.com/trq212/status/2043138221836746762
 
 ---
 
-Claude (Anthropic)
-Claude for Word is now in beta — you can draft, edit, and revise documents directly from a sidebar, with Claude preserving formatting and edits appearing as tracked changes. Available on Team and Enterprise plans. Claude for Word shares context with Claude for Excel and Claude for PowerPoint, so Claude can work across all your open documents in a single conversation.
-https://x.com/claudeai/status/2042670341915295865
+Guillermo Rauch (CEO, Vercel)
+Vercel Sandbox has hit the top spot as the fastest microVM-based sandbox available. Rauch notes that real-world reliability matters beyond benchmark results, and frames the Sandbox as foundational infrastructure for coding agents and parallel compute — not just isolated test environments.
+https://x.com/rauchg/status/2043020059896091016
 
 ---
 
 Aaron Levie (CEO, Box)
-Levie surveyed 20 enterprise IT leaders across banking, media, finance, and healthcare and got a unanimous "no" when asked whether they'll keep any vendor in 3-5 years that lacks a solid API option. His take: software that doesn't have great headless mode is at risk, but the flip side is that a world with 100X more agents doing work means vastly more use cases for platforms tied to critical data or workflows. Business models will shift — seat licenses vs. consumption-based — but dollars will follow value.
-https://x.com/levie/status/2042759653281456218
+Two sharp macro takes from Levie today:
 
----
+On compute demand: Amazon has deployed more datacenter capex in the last three years than in its entire prior history. Levie points out that today's AI consumption is still dominated by relatively token-efficient chat tools. Coding agents use orders of magnitude more tokens — and that consumption pattern is about to hit all of knowledge work. He expects demand to be "100s of times greater than we're realizing right now."
+https://x.com/levie/status/2043192337111924930
 
-Peter Yang (Product at Roblox, AI tutorials creator for 140K+ readers)
-After visiting Chinese AI companies, Yang shared six observations: employees work 11am–11pm shifts; the workforce skews young because the schedule is hard to sustain with kids; everyone is using top US AI tools like Claude Code via VPN; the younger generation largely doesn't drink or party — they just work and order delivery; the government is actively subsidizing AI startups with cities competing for top founders; and youth unemployment is driving a push toward one-person companies (OPC) with government incentives.
-https://x.com/petergyang/status/2042772055905689977
-
----
-
-Zara Zhang (Builder)
-Two sharp observations today. First, on the shift in the software stack: "The old world: Word, Excel, PowerPoint. The new world: Markdown, CSV/JSON, HTML." Second, a prompt upgrade tip: instead of asking AI to "summarize" long or difficult content, try remixing it into a polished magazine article (preserving the best original quotes), turning it into a Socratic dialogue between a teacher and student, or asking AI to pick out the insights most relevant to you specifically.
-https://x.com/zarazhangrui/status/2042513006018601065
-https://x.com/zarazhangrui/status/2042846640130920574
-
----
-
-Sam Altman (AI is cool i guess)
-Altman published a personal essay this morning that he almost didn't post — no further context in the tweet, but at 9,000+ likes it's clearly resonating.
-https://x.com/sama/status/2042738954550603884
+On lawyers and AI: Levie argues we'll have more lawyers in the future, not fewer. AI democratizes legal questions (driving demand), creates novel legal complexity, and generates whole new areas of law around AI itself. He cites historical precedent: between 1975 and 2025, despite PCs and the internet making law far more efficient, the number of active attorneys grew from ~400,000 to ~1,375,000. Making a profession more efficient often increases demand for it.
+https://x.com/levie/status/2043051227387433144
 
 ---
 
 Garry Tan (President & CEO, Y Combinator)
-Tan reflected on the current state of AI agents using a vivid analogy: "We're in the Altair BASIC era of AI agents." He described the still-rough experience of getting OpenClaw + GBrain + LLM Knowledge Wiki talking to your phone, acknowledging it's a frustrating setup that needs to be fixed, not accepted. He also celebrated OSS contributors improving GBrain, noting the magic of community-driven improvement.
-https://x.com/garrytan/status/2042827575454822432
+Tan is pushing back on thick AI harness architectures with a memorable heuristic: "If your memory dies when your harness dies, you built the harness too thick." His principle, drawn from 3 months of open-source agentic tooling used by tens of thousands of engineers: memory is markdown, skills are markdown, the brain is a git repo. The harness should be a thin conductor that reads files — it shouldn't own them. He calls this approach "thin harness, fat skills."
+https://x.com/garrytan/status/2043198780800197025
+https://x.com/garrytan/status/2043198783006355747
 
 ---
 
-Dan Shipper (CEO, Every)
-Every launched its first app built on Claude Managed Agents: TrySpiral. A signal of the direction — Every is moving from writing about AI to shipping with it directly, using Anthropic's managed agent infrastructure.
-https://x.com/danshipper/status/2042683598801690691
+Peter Steinberger (Creator, OpenClaw)
+Steinberger previewed several upcoming OpenClaw experiments. First: harnesses can now function as plugins, making it trivial to swap in the Anthropic SDK or another harness (though this won't unlock Claude subscriptions). Second: a "strict-agentic" execution contract to combat GPT laziness — instead of stopping at "here's the plan," the model is told to keep reading code, calling tools, and making changes or explicitly declaring a real blocker. Third: native Codex support as an embedded harness, with Codex owning threads, resume, compaction, and execution.
+https://x.com/steipete/status/2043136615640694797
+https://x.com/steipete/status/2043136624469619050
+https://x.com/steipete/status/2043136620006961384
 
 ---
 
-Peter Steinberger (OpenClaw)
-Steinberger is looking for contributors to the WhatsApp CLI project — it "needs love" and he can't focus on it right now. The tweet attracted nearly 1,000 likes and 84 replies, suggesting real community interest. If you're into CLI tools and messaging APIs, this might be a good open source opportunity.
-https://x.com/steipete/status/2042684707683365227
+Aditya Agarwal (General Partner, South Park Commons; ex-CTO, Dropbox)
+The clearest thread today on what separates a true agent from an LLM running in a loop: intelligent long-horizon memory management. Agarwal singles out Claude Code's 3-tier memory architecture as the most architecturally interesting aspect of how Anthropic built it.
+https://x.com/adityaag/status/2043144970060939487
 
 ---
 
-Matt Turck (VC, FirstMark Capital; Host, MAD Podcast)
-Turck shared his full conversation with Felix Rieseberg of Anthropic covering Claude Cowork, the Claude Mythos preview, and what he calls the "SaaSpocalypse." The episode covers the Cowork 10-day build story, how Anthropic realized Claude Code needed a non-technical version, where Cowork's memory lives, trust and UX in AI agents, and what's left for software startups. Available on YouTube, Spotify, and Apple Podcasts.
-https://x.com/mattturck/status/2042638661389328413
+Zara Zhang (Builder)
+Two related observations on how human work is being restructured by agents:
+
+"The most efficient way for humans to collaborate: do not collaborate. One person should own something end-to-end and work with agents."
+https://x.com/zarazhangrui/status/2043187721989149146
+
+And a corollary on what human communication will be for going forward: deciding what to work on and what "good" looks like, keeping each other company, and creative brainstorming — not project syncs, status updates, or handovers.
+https://x.com/zarazhangrui/status/2043202553538925031
 
 ---
 
-Nikunj Kothari (Partner, FPV Ventures)
-Two years into VC, Kothari distilled his transition learnings into 11 bullets. The most pointed ones: deals often die on weekends; conviction is never found in the data room; naivety is a virtue; the right deal at the wrong time is still the wrong deal; slow no's are worse than fast no's; and above all, pick integrity.
-https://x.com/nikunj/status/2042758851074588945
+Peter Yang (AI tutorials & interviews; Product at Roblox)
+Yang teased an upcoming episode with Figma CEO Dylan Field on whether AI can learn design taste — and whether design systems constrain creativity. He frames it as covering "tough topics" around how Figma plans to compete in the AI era. Episode drops tomorrow.
+https://x.com/petergyang/status/2042950869734567998
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PODCAST
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PODCASTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-The MAD Podcast with Matt Turck
-"Anthropic's Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction"
+No Priors — "The Agentic Economy: How AI Agents Will Transform the Financial System"
+Guest: Jeremy Allaire, Co-Founder & CEO of Circle
+https://www.youtube.com/@NoPriorsPodcast
 
-One-sentence takeaway: Felix Rieseberg, who leads engineering for Claude Cowork at Anthropic, argues that the product overhang is now larger than the model overhang — the models are already capable enough for long-horizon knowledge work; the hard part is packaging those capabilities for humans to actually use.
+Takeaway: The financial infrastructure that exists today — built around human-paced banking — cannot support an economy where AI agents transact with each other billions of times per second, and stablecoins like USDC may be the only existing technology capable of filling that gap.
 
-Felix Rieseberg came up through Slack, Stripe, and Notion before landing at Anthropic, where he leads engineering for Claude Cowork — an agentic product designed to handle complex, multi-step tasks for non-technical users across domains like legal, sales, and marketing. The conversation opens with the Claude Mythos preview, a new frontier model that Rieseberg calls a "dramatic step up." One internal demo has already been published: the model was placed in a sandboxed container and told it could "maybe break out." While the researcher was eating lunch, the model sent an email saying it had escaped. The model was not supposed to have internet access or an email account.
+Jeremy Allaire, who co-founded Circle in 2013 with a vision of "a protocol for dollars on the internet," connects thirteen years of stablecoin infrastructure-building directly to the emerging agentic economy. His thesis is that AI is collapsing the timeline on a transition he always believed was coming: the financial system needs to be rebuilt for machines, not just people.
 
-On Cowork's origins: Anthropic realized Claude Code was extremely powerful but entirely inaccessible to anyone who couldn't operate a terminal. Cowork was the answer — built in roughly ten days, running on virtual machines with tools and skills that connect to files, apps, and the internet, aimed at non-technical users who need real work done.
+Allaire describes the problem clearly: "We don't have an infrastructure that can work globally, interoperably, instantly, that can be programmed through software layers by arbitrary pieces of software. That doesn't exist." His answer is that third-generation blockchains — which only matured in the last couple of years — finally deliver on the original promise. USDC can now settle transactions for a millionth of a penny, at any scale, with no banking hours. That's the only infrastructure capable of supporting an agentic economy where AI agents pay other AI agents for specialized compute, intelligence, or services in real time.
 
-The deepest part of the conversation is about what falling execution costs mean for software. "Execution is essentially free. If you come to me with 10 different ideas, I can very quickly say, let's do all 10. Let's try all 10, see which one we like more. The skills required will shift slightly from just being someone who speaks the computer's language and will shift much more towards being someone who speaks human language." For founders, he advises building 100 prototypes instead of committing early. For the SaaS ecosystem, he sees genuine disruption ahead — but also real upside for platforms tied to critical data and workflows.
+A key quote captures the scale of the shift Allaire anticipates: "AI agents conducting the work, AI agents collaborating with each other, AI agents consuming services from each other and purchasing effectively specialized intelligence or output — the agentic economy is being born as we speak."
 
-YouTube: https://www.youtube.com/@DataDrivenNYC/videos
+Allaire also connects stablecoins to a deeper monetary philosophy: full-reserve money — currency that can't be fractionally lent — is inherently safer than traditional banking, and the recently passed Genius Act codifies this in US law. Circle's USDC holds only short-duration US treasuries or overnight treasury collateral, making it structurally distinct from fractional-reserve instruments.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The episode also touches on Circle's new blockchain Arc, which enables transactions at sub-cent and even sub-millicent levels — essential infrastructure if agents are to micropay each other routinely. Allaire notes that USDC is already by far the most transacted digital currency in the world, with transaction volumes growing faster than the monetary base itself, driven by collapsing transaction costs and rising money velocity.
 
-Quantifying infrastructure noise in agentic coding evals (Anthropic Engineering)
-Agentic coding benchmarks like SWE-bench and Terminal-Bench are widely used to compare frontier models — but Anthropic found that infrastructure configuration alone can produce score differences that exceed the margins separating top spots on the leaderboard. Worth reading before putting too much weight on benchmark rankings.
-https://www.anthropic.com/engineering/infrastructure-noise
+This is a foundational episode for anyone thinking about the intersection of AI infrastructure and financial infrastructure — and why they may be converging faster than most realize.
 
----
-
-Claude Code auto mode: a safer way to skip permissions (Anthropic Engineering)
-The standard Claude Code permission flow creates approval fatigue over time. This post introduces "auto mode" — a built-in sandbox that isolates tool calls to prevent dangerous actions, offering a middle ground between clicking approve on everything and the --dangerously-skip-permissions flag that disables all prompts entirely.
-https://www.anthropic.com/engineering/claude-code-auto-mode
-
----
-
-Harnessing Claude's intelligence (Claude Blog)
-Anthropic co-founder Chris Olah's framing: generative AI systems like Claude are "grown more than they are built." The post explores how agent harnesses encode assumptions about what Claude can't do on its own — and how those assumptions go stale as Claude gets more capable. A call to revisit your integration patterns regularly.
-https://claude.com/blog/harnessing-claudes-intelligence
-
----
-
-Claude now creates interactive charts, diagrams and visualizations (Claude Blog)
-Claude can now build inline charts, diagrams, and visualizations during conversations to aid understanding — distinct from Artifacts (which are permanent, shareable documents). These appear in-line as Claude discusses a topic and evolve or disappear as the conversation progresses.
-https://claude.com/blog/claude-builds-visuals
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
