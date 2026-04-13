@@ -1,90 +1,102 @@
-AI Builders Digest — April 12, 2026
+AI Builders Digest — April 13, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thariq (Claude Code at Anthropic, prev YC W20 / MIT Media Lab)
-A TurboTax connector just dropped inside Claude Code — a timely development for anyone who procrastinated on taxes. The post resonated: 1,400+ likes. Claude Code's integration story keeps expanding beyond pure coding workflows.
-https://x.com/trq212/status/2043138221836746762
+Aaron Levie — CEO at Box
+After a week on the road meeting dozens of enterprise IT and AI leaders across banking, media, healthcare, and retail, Aaron Levie shared his most detailed field report yet on where enterprise AI actually stands. The headline shift: companies are moving from "chat era" AI to agents that use tools, process data, and execute real work — and the "let a thousand flowers bloom" experimentation phase is giving way to targeted automation in specific workflows. The practical blockers remain change management (one company deployed a head of AI in every business unit just to stay coordinated) and legacy infrastructure that agents can't easily plug into. On jobs: almost no one is talking about replacing headcount — the dominant use cases are things companies simply couldn't do before. And crucially, Levie argues engineers are not going away; the technical complexity of actually standing up agent systems (skills, MCP, CLIs) means technical people will be more indispensable than ever, not less.
+https://x.com/levie/status/2043426157367095397
 
----
-
-Guillermo Rauch (CEO, Vercel)
-Vercel Sandbox has hit the top spot as the fastest microVM-based sandbox available. Rauch notes that real-world reliability matters beyond benchmark results, and frames the Sandbox as foundational infrastructure for coding agents and parallel compute — not just isolated test environments.
-https://x.com/rauchg/status/2043020059896091016
+In a separate tweet, Levie invoked the Jevons paradox for security: better AI tooling for finding vulnerabilities will increase demand for security talent, not decrease it. AI surfaces findings 100x faster, but expert judgment is still required to triage, remediate, and make architectural decisions. "Autonomous exploitability automates the proving step, but it doesn't automate the response."
+https://x.com/levie/status/2043318118169354302
 
 ---
 
-Aaron Levie (CEO, Box)
-Two sharp macro takes from Levie today:
-
-On compute demand: Amazon has deployed more datacenter capex in the last three years than in its entire prior history. Levie points out that today's AI consumption is still dominated by relatively token-efficient chat tools. Coding agents use orders of magnitude more tokens — and that consumption pattern is about to hit all of knowledge work. He expects demand to be "100s of times greater than we're realizing right now."
-https://x.com/levie/status/2043192337111924930
-
-On lawyers and AI: Levie argues we'll have more lawyers in the future, not fewer. AI democratizes legal questions (driving demand), creates novel legal complexity, and generates whole new areas of law around AI itself. He cites historical precedent: between 1975 and 2025, despite PCs and the internet making law far more efficient, the number of active attorneys grew from ~400,000 to ~1,375,000. Making a profession more efficient often increases demand for it.
-https://x.com/levie/status/2043051227387433144
+Garry Tan — President & CEO at Y Combinator
+Garry Tan distilled the most useful mental model for agentic engineering he's learned this year: push smart, fuzzy, human-style operations into markdown skills ("fat skills"); push must-be-perfect deterministic operations into code ("fat code"); and keep the harness itself thin. It's a clean architectural principle that explains why well-structured AI agents are both powerful and maintainable. Separately, he offered a crisp maxim for avoiding over-engineering: "Do the right job at the right layer. Everything else is architecture astronomy."
+https://x.com/garrytan/status/2043566215927328955
+https://x.com/garrytan/status/2043566405862236254
 
 ---
 
-Garry Tan (President & CEO, Y Combinator)
-Tan is pushing back on thick AI harness architectures with a memorable heuristic: "If your memory dies when your harness dies, you built the harness too thick." His principle, drawn from 3 months of open-source agentic tooling used by tens of thousands of engineers: memory is markdown, skills are markdown, the brain is a git repo. The harness should be a thin conductor that reads files — it shouldn't own them. He calls this approach "thin harness, fat skills."
-https://x.com/garrytan/status/2043198780800197025
-https://x.com/garrytan/status/2043198783006355747
+Zara Zhang — Builder, Harvard '17
+Zara Zhang vibe-coded a custom Chrome "New Tab" page that she describes as the Marie Kondo method for browser tabs. The open-sourced tool groups all open tabs by domain with clear titles, plays a "swoosh" sound and confetti animation when closing tabs, batches homepages and localhost tabs for one-click closure, detects and removes duplicates with a single click, and lets you save tabs you're not done with into a checklist. It got nearly 1,000 likes and sparked a lively thread about browser productivity. Code is open-sourced at the link in her follow-up post.
+https://x.com/zarazhangrui/status/2043415572688629937
 
 ---
 
-Peter Steinberger (Creator, OpenClaw)
-Steinberger previewed several upcoming OpenClaw experiments. First: harnesses can now function as plugins, making it trivial to swap in the Anthropic SDK or another harness (though this won't unlock Claude subscriptions). Second: a "strict-agentic" execution contract to combat GPT laziness — instead of stopping at "here's the plan," the model is told to keep reading code, calling tools, and making changes or explicitly declaring a real blocker. Third: native Codex support as an embedded harness, with Codex owning threads, resume, compaction, and execution.
-https://x.com/steipete/status/2043136615640694797
-https://x.com/steipete/status/2043136624469619050
-https://x.com/steipete/status/2043136620006961384
+Amjad Masad — CEO at Replit
+On its 50th birthday, Apple is apparently doing something to make itself "the most hated company in the world" — Amjad Masad's take on a linked news story went massively viral, accumulating over 8,000 likes and 1,250 retweets. He didn't elaborate further, but the engagement says the sentiment resonates.
+https://x.com/amasad/status/2043394289326289243
 
 ---
 
-Aditya Agarwal (General Partner, South Park Commons; ex-CTO, Dropbox)
-The clearest thread today on what separates a true agent from an LLM running in a loop: intelligent long-horizon memory management. Agarwal singles out Claude Code's 3-tier memory architecture as the most architecturally interesting aspect of how Anthropic built it.
-https://x.com/adityaag/status/2043144970060939487
+Kevin Weil — VP of Science at OpenAI, Board at Cisco
+Kevin Weil offered a reframing worth bookmarking: human intelligence and AI intelligence are not different points on a single line, but exist in a high-dimensional space. Rather than asking which is "smarter," we should be exploring more of that space — looking for the dimensions where each excels and where they complement each other. A short tweet, but a useful mental model for thinking about human-AI collaboration.
+https://x.com/kevinweil/status/2043510607736189193
 
 ---
 
-Zara Zhang (Builder)
-Two related observations on how human work is being restructured by agents:
-
-"The most efficient way for humans to collaborate: do not collaborate. One person should own something end-to-end and work with agents."
-https://x.com/zarazhangrui/status/2043187721989149146
-
-And a corollary on what human communication will be for going forward: deciding what to work on and what "good" looks like, keeping each other company, and creative brainstorming — not project syncs, status updates, or handovers.
-https://x.com/zarazhangrui/status/2043202553538925031
+Guillermo Rauch — CEO at Vercel
+A practical distribution tip from Guillermo Rauch: create an X group chat with your best and most demanding customers, put your engineering leads in it, and ship in direct response to their feedback. He runs one for v0 and is inviting people who are committed to sharing excellent feedback to DM him to join. It's a high-signal, zero-delay feedback loop that bypasses the usual layers of abstraction between users and builders.
+https://x.com/rauchg/status/2043381737754120592
 
 ---
 
-Peter Yang (AI tutorials & interviews; Product at Roblox)
-Yang teased an upcoming episode with Figma CEO Dylan Field on whether AI can learn design taste — and whether design systems constrain creativity. He frames it as covering "tough topics" around how Figma plans to compete in the AI era. Episode drops tomorrow.
-https://x.com/petergyang/status/2042950869734567998
+Aditya Agarwal — General Partner at South Park Commons, ex-CTO at Dropbox
+Aditya Agarwal, who was an early engineer at Facebook, made a sharp cultural observation: Anthropic reminds him more of early Facebook than OpenAI does — despite OpenAI having more ex-Facebook employees. The parallels he sees: people inside are having a lot of fun, there's a bottom-up hacker culture, insane mission alignment, a certain naivete about the world, and a sense that winning solves a lot of things. It's a vivid characterization from someone who was actually there at early Facebook.
+https://x.com/adityaag/status/2043501400626491758
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
+
+Peter Yang — Product at Roblox, AI newsletter with 140K+ readers
+The Claude subreddit and Peter Yang's entire feed are reportedly full of people claiming Anthropic "nerfed" its own flagship model. Yang pushed back with a simple question: why would Anthropic deliberately make its own models worse? With 532 likes and 245 replies, it clearly hit a nerve in the ongoing debate about whether model quality fluctuates and who's responsible.
+https://x.com/petergyang/status/2043466663258140685
+
+---
+
+Nikunj Kothari — Partner at FPV Ventures
+Nikunj Kothari argues more startups should adopt the "Doordash strategy": rather than competing head-on in the hypercompetitive SF/NY/LA markets, start in the ambitious suburbs just outside major cities. Doordash famously won the food delivery war by focusing on suburban markets while rivals battled over city cores. Kothari thinks this plays out similarly in startup geography — more experienced founders, lower burn, and coworking spaces already emerging to meet the demand. He's looking to hear from anyone who's already trying it.
+https://x.com/nikunj/status/2043374140443553885
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors — "The Agentic Economy: How AI Agents Will Transform the Financial System"
-Guest: Jeremy Allaire, Co-Founder & CEO of Circle
-https://www.youtube.com/@NoPriorsPodcast
+Latent Space — Marc Andreessen on The Death of the Browser, Pi + OpenClaw, and Why "This Time Is Different"
 
-Takeaway: The financial infrastructure that exists today — built around human-paced banking — cannot support an economy where AI agents transact with each other billions of times per second, and stablecoins like USDC may be the only existing technology capable of filling that gap.
+Takeaway: Marc Andreessen argues that Pi + OpenClaw represent one of the ten most important software breakthroughs in history — essentially the marriage of the Unix shell mindset with large language models — and that this architecture makes AI agents genuinely, profoundly different from anything that came before.
 
-Jeremy Allaire, who co-founded Circle in 2013 with a vision of "a protocol for dollars on the internet," connects thirteen years of stablecoin infrastructure-building directly to the emerging agentic economy. His thesis is that AI is collapsing the timeline on a transition he always believed was coming: the financial system needs to be rebuilt for machines, not just people.
+Andreessen opens by pushing back on AI hype cycles, calling the current moment an "80-year overnight success": decades of deep research in neural networks, transformers, and compute suddenly unlocking, not a bolt from the blue. The real knees in the curve were AlexNet (2013) and the Transformer (2017); everything since has been a cascade from those foundations.
 
-Allaire describes the problem clearly: "We don't have an infrastructure that can work globally, interoperably, instantly, that can be programmed through software layers by arbitrary pieces of software. That doesn't exist." His answer is that third-generation blockchains — which only matured in the last couple of years — finally deliver on the original promise. USDC can now settle transactions for a millionth of a penny, at any scale, with no banking hours. That's the only infrastructure capable of supporting an agentic economy where AI agents pay other AI agents for specialized compute, intelligence, or services in real time.
+The most technically dense portion of the episode covers what Andreessen calls the conceptual breakthrough behind Pi and OpenClaw. Drawing on his Unix roots — he was coding in Lisp in 1989 during the last AI boom — he explains that the old Unix mindset was about composing discrete modules through a shell, rather than building monolithic castles in the sky like IBM's OS/360. What Pi and OpenClaw figured out, he argues, is that an agent is simply: LLM + Unix shell + filesystem + markdown + cron. Every component other than the model was already fully understood. And crucially, because agent state lives in files rather than in the model itself, you can swap the underlying LLM and your agent retains all its memories and capabilities. "It was like swapping out a chip and recompiling."
 
-A key quote captures the scale of the shift Allaire anticipates: "AI agents conducting the work, AI agents collaborating with each other, AI agents consuming services from each other and purchasing effectively specialized intelligence or output — the agentic economy is being born as we speak."
+On the death of the browser: Andreessen reflects on the design choices he made building Mosaic, including the deliberate decision to use verbose text protocols (HTTP, HTML) over compressed binary ones, betting on infinite future bandwidth. He calls it the original "tokenmaxxing." The parallel he draws: just as view-source let anyone learn to build web pages, the transparency of agent architectures creates a similar latent power for builders today. The capability unlock of giving an agent access to a full browser on top of a shell is "profound" — and he predicts everyone will eventually have a family of agents.
 
-Allaire also connects stablecoins to a deeper monetary philosophy: full-reserve money — currency that can't be fractionally lent — is inherently safer than traditional banking, and the recently passed Genius Act codifies this in US law. Circle's USDC holds only short-duration US treasuries or overnight treasury collateral, making it structurally distinct from fractional-reserve instruments.
+One direct quote that captures his enthusiasm: "If I were 18, this is 100% what I would be spending all of my time on. This is such an incredible conceptual breakthrough."
 
-The episode also touches on Circle's new blockchain Arc, which enables transactions at sub-cent and even sub-millicent levels — essential infrastructure if agents are to micropay each other routinely. Allaire notes that USDC is already by far the most transacted digital currency in the world, with transaction volumes growing faster than the monetary base itself, driven by collapsing transaction costs and rising money velocity.
+https://www.youtube.com/@LatentSpacePod
 
-This is a foundational episode for anyone thinking about the intersection of AI infrastructure and financial infrastructure — and why they may be converging faster than most realize.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Claude Blog — Preparing your security program for AI-accelerated offense
+Published: April 10, 2026
+
+Anthropic's Project Glasswing — which deploys Claude Mythos Preview for defensive cybersecurity — generated a companion post aimed at practical security teams. The core thesis: within the next 24 months, AI will find and chain into working exploits the vast majority of currently unpatched bugs, collapsing the window between patch release and active exploitation. The good news is this works both ways.
+
+The recommendations are prioritized by what has been shown to hold versus degrade under AI-accelerated offense:
+- Close your patch gap immediately, starting with the CISA Known Exploited Vulnerabilities catalog; use EPSS scores to prioritize the rest. Internet-facing systems should be patched within 24 hours of an exploit becoming available.
+- Prepare for an order-of-magnitude increase in vulnerability reports. Manual triage processes and weekly spreadsheet reviews will not scale — automation with humans in the loop is becoming necessary.
+- Audit open-source dependencies using OpenSSF Scorecard and reduce redundant libraries (multiple HTTP clients, multiple JSON parsers) that give attackers more surface area for no functional gain.
+- Use frontier models to assist with triage, deduplication, remediation ticket drafting, and even generating patches for well-described vulnerabilities.
+
+The post maps directly onto SOC 2 and ISO 27001 controls and is framed as living guidance that will be updated as Project Glasswing's work continues.
+
+https://claude.com/blog/preparing-your-security-program-for-ai-accelerated-offense
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
