@@ -1,131 +1,91 @@
-AI Builders Digest — April 9, 2026
+AI Builders Digest — April 14, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Josh Woodward, VP at Google (Gemini App, Google Labs, Google AI Studio)
-Google embedded NotebookLM magic directly into Gemini with a new Notebooks feature. Users can now upload up to 100 sources for free, organize their chats, and sync sources, chats, and emoji labels — all inside the Gemini interface. The rollout starts with Ultra subscribers and moves down to Pro, Plus, and Free, with mobile, EU, and Workspace coming next. Woodward notes this is just one of many releases ahead of Google I/O.
-https://x.com/joshwoodward/status/2041982173402821018
-
----
-
-Kevin Weil, VP of Science at OpenAI
-Weil flagged a notable math benchmark moment: AI models are now tackling five Erdős problems simultaneously, and the proofs are getting more elegant as the models improve.
-https://x.com/kevinweil/status/2042073869880848481
+Swyx — Builder at Cognition, Temporal, and co-host of the Latent Space podcast
+Cognition's usage has roughly doubled globally since two recent launches, as users find creative ways to compose agents together and make them proactive. Swyx frames the unlock simply: "agent recursion is all you need." He also noted that roughly 80% of the world's AI engineering happens within three square miles — a striking reminder of how geographically concentrated the field remains.
+https://x.com/swyx/status/2043770029024653798
+https://x.com/swyx/status/2043778767798317349
 
 ---
 
-Peter Yang, Product at Roblox and AI newsletter writer (140K+ subscribers)
-Yang published a deep dive questioning whether unlimited AI subscriptions like Claude Max and ChatGPT Pro are sustainable long-term. The piece covers why Anthropic cut off OpenClaw access, how to run local models on a Mac, and what he's observing on the ground in China. Worth reading if you're thinking about the economics of the current AI subscription boom.
-https://x.com/petergyang/status/2041989206495653915
+Thariq — Engineer on Claude Code at Anthropic (prev YC W20, MIT Media Lab)
+The Claude Code team shipped a new renderer designed to eliminate screen flicker. Enable it by running: CLAUDE_CODE_NO_FLICKER=1 claude. Full docs are linked in the thread.
+https://x.com/trq212/status/2043814646600348046
+https://x.com/trq212/status/2043814648315818242
 
 ---
 
-Thariq, Claude Code at Anthropic (prev. YC W20, MIT Media Lab)
-Thariq wants to do live streams working alongside non-technical people using Claude Code to help them improve their workflows — arguing "just a few tips could make a big difference in efficiency." The offer clearly resonated: the tweet got over 2,600 likes and 549 replies. He followed up saying he'd prefer to start with people he already knows to get past the initial awkwardness.
-https://x.com/trq212/status/2042005043289977232
-https://x.com/trq212/status/2042005754262208708
+Amjad Masad — CEO at Replit
+Replit now lets developers configure their app hosting region, useful for compliance and data-privacy requirements. On a broader note, Masad called out a cognitive trap he calls "LARPing rigor": bending measurable data to fit a pre-written story while demanding impossible precision from things that are inherently fuzzy by nature.
+https://x.com/amasad/status/2043785145606656223
+https://x.com/amasad/status/2043948524908490953
 
 ---
 
-Amjad Masad, CEO at Replit
-Masad highlighted how bootstrapped solo businesses are accelerating on Replit, making the case that AI tools have essentially given solo builders entire teams. A pointed signal about how the future of company-building is changing.
-https://x.com/amasad/status/2042133509939298511
+Guillermo Rauch — CEO at Vercel
+Vercel is open-sourcing a reference platform for cloud coding agents, inspired by how Stripe (Minions), Ramp (Inspect), Spotify (Honk), and Block (Goose) are each building proprietary "AI software factories." The project gives teams a production-ready foundation for running agents in the cloud without starting from scratch.
+https://x.com/rauchg/status/2043869656931529034
 
 ---
 
-Guillermo Rauch, CEO at Vercel
-Three posts worth reading. Rauch made a strong case that the web's brightest days are ahead: LLMs are fluent in web technologies, the browser is becoming everyone's IDE, and "generative UI" — each hyperlink delivering a just-in-time personalized experience — is AI's final form. He also highlighted Vercel AI Gateway as a "peace of mind" product (no downtime, no lock-in, no keys, no training data usage). And he noted Vercel is proudly powering infrastructure for a new competing model release, adding: "The best outcome for humanity is many strong AIs competing for the top spot."
-https://x.com/rauchg/status/2041883605711122488
-https://x.com/rauchg/status/2041957973531226372
-https://x.com/rauchg/status/2041922907832807443
+Aaron Levie — CEO at Box
+Levie sees a new enterprise role crystallizing: the "agent deployer and manager." This person identifies the highest-leverage opportunities to deploy AI agents within a team, then manages, monitors, and iterates on them over time. The job description doesn't have a standard title yet, but Levie says his conversations across enterprises make it clear this role is becoming a de facto position in forward-looking organizations.
+https://x.com/levie/status/2043883641366032638
 
 ---
 
-Alex Albert, Research at Anthropic
-Albert called Claude Managed Agents "somehow both the fastest way to hack together a weekend agent project and the most robust way to ship one to millions of users." The key value: it eliminates the complexity of self-hosting an agent while still allowing significant flexibility in configuring the harness, tools, and skills.
-https://x.com/alexalbert__/status/2041941720611614786
+Ryo Lu — Designer at Cursor
+Cursor is expanding its pane layout options — split up, down, left, or right — along with more multi-agent view customizations coming soon. As agentic workflows grow more complex, the IDE itself needs to evolve to show multiple concurrent agent contexts at once.
+https://x.com/ryolu_/status/2043891602381500583
 
 ---
 
-Aaron Levie, CEO at Box
-Background agents for knowledge work are live. Using the Box API or MCP, teams can now automate content workflows — document review, data extraction, connecting content to IT systems — with Box and Claude Managed Agents. Levie says you can be automating real processes in under two minutes.
-https://x.com/levie/status/2041975669928702370
+Garry Tan — President & CEO at Y Combinator
+GBrain, Garry's personal AI operating-system layer built on Claude Code and the Hermes Agent, shipped v0.9.3 with search tuning, CJK query support, better health checks, and several security hotfixes. GBrain includes opinionated skillpacks and a voice agent built on OpenAI Realtime — the kind of full-stack personal AI setup that most power users are still assembling piece by piece.
+https://x.com/garrytan/status/2043948627291451625
+https://x.com/garrytan/status/2043948971568312473
 
 ---
 
-Garry Tan, President & CEO at Y Combinator
-Tan pushed back on critics of AI-assisted velocity, dismissing "1x speed engineers" and urging founders to accelerate. He also shared a useful technical note about GStack: because agents reason in markdown, they can decide on their own when to invoke a skill — builders don't need to hardcode those triggers.
-https://x.com/garrytan/status/2042109985346490483
-https://x.com/garrytan/status/2042061979997831556
+Nikunj Kothari — Partner at FPV Ventures (seed / Series A)
+Kothari surfaced a telling talent dynamic: engineers who leave frontier labs for fast-growing agentic startups often discover harsh token limits and are forced to rely on open-source models to manage costs — and some choose to return to the frontier lab where compute is effectively unlimited. Unlimited tokens are quietly becoming one of the most powerful retention tools in the industry.
+https://x.com/nikunj/status/2043808491807396059
 
 ---
 
-Nikunj Kothari, Partner at FPV Ventures
-Kothari shipped LLMwiki, a fully open-source personal knowledge base built end-to-end with Claude Code using Opus 4.5 (fully vibe-coded). Inputs included tweets, bookmarks, iMessages, WhatsApp messages, and his writing. Despite all articles being AI-written, the system made "surprisingly sharp connections." Hand the repo to Claude Code and it guides you through building your own.
-https://x.com/nikunj/status/2042020992969744702
-https://x.com/nikunj/status/2042021738083766568
+Peter Yang — Product at Roblox; AI newsletter for 140K+ readers
+Yang called out a trap many AI power-users fall into: spending more time optimizing their Claude Code or agent setup than actually using it to ship real work. It feels like progress — and is genuinely enjoyable — but can quietly substitute for actual output. He also flagged that if GPT's integration with tools like Claude Code doesn't improve to match the quality of Opus, it risks becoming a real problem for OpenAI's developer positioning.
+https://x.com/petergyang/status/2043848480423325757
+https://x.com/petergyang/status/2043732939817791979
 
 ---
 
-Peter Steinberger, Co-Founder at OpenClaw
-Two sharp observations this week. First: while building character evals, Steinberger noticed Claude was consistently ranking itself as #1, so he removed model names from the judge to get cleaner results — a useful reminder that model self-evaluation bias is real (560 likes, 64 replies). Second: he noted the tension between wanting more powerful local models and simultaneously receiving a flood of complaints that even the top commercial models still make mistakes and don't follow instructions reliably.
-https://x.com/steipete/status/2042017534816231486
-https://x.com/steipete/status/2041936147450863952
+Dan Shipper — CEO at Every (AI media and research company)
+Shipper argues that software engineering in 2026 requires two distinct roles: the "pirate" who codes as fast as possible to find what's actually valuable, and the "architect" who turns the resulting mess into a reliable, well-structured system. He also highlighted a mental model from Kieran: "an agent is just a folder" — meaning agents can be composed, nested, and reasoned about like file-system objects — a framing he says fundamentally changed how he thinks about building AI systems.
+https://x.com/danshipper/status/2043819933675450455
+https://x.com/danshipper/status/2043739805276619223
 
----
-
-Dan Shipper, CEO at Every
-Shipper shared a detailed look inside what happens when a 25-person company deploys AI agents for daily work at scale. Agents develop their owners' personalities and get trusted for the same things their humans are trusted for. An entire parallel AI org chart emerged spontaneously — people stopped tagging Shipper with questions about his vibe-coded app and started going directly to his agent R2-C2 instead. Information propagates across agents faster than it does across humans. And the new etiquette around agents versus humans is being invented in real time. Every also launched Plus One, a hosted OpenClaw service, now in waitlist.
-https://x.com/danshipper/status/2041903948873777629
-
----
-
-Aditya Agarwal, General Partner at South Park Commons (ex-CTO of Dropbox)
-At South Park Commons, the entire team is now writing code weekly — up from just 1-2 people two months ago. Agarwal says the tools are now shaping the team in tangible ways: everyone has an automation mindset, latencies on everything are lower, people focus on the more interesting parts of their roles, and the scope of ambition has "exploded." His advice is blunt: "If you are not doing this in your own company, then you are really really missing a beat."
-https://x.com/adityaag/status/2041985720706122070
-
----
-
-Claude AI (Anthropic)
-Anthropic officially launched Claude Managed Agents. Builders can deploy agents through the Claude Console, Claude Code, or the new CLI. Early adopters include Vibe Code (going from prompt to deployed app 10x faster) and Sentry (going from Seer's root-cause analysis to a Claude-powered agent that writes the fix and opens a PR — built in weeks).
-https://x.com/claudeai/status/2041927700063883281
-https://x.com/claudeai/status/2041927698210058629
-https://x.com/claudeai/status/2041927696351994006
-
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-AI & I by Every — "We Gave Every Employee an AI Agent. Here's What Happened."
+No Priors: AI for Atoms — How Periodic Labs is Revolutionizing Materials Engineering with Liam Fedus
 
-When every person in a company gets their own AI agent, a parallel org chart emerges — and each agent becomes a living reflection of its owner's personality, expertise, and working style.
+Takeaway: Liam Fedus — co-creator of ChatGPT and former VP of Post-Training at OpenAI — left the frontier language model world to build Periodic Labs, betting that the next great scientific unlock is connecting AI to the physical world of atoms, materials, and chemistry.
 
-Dan Shipper (CEO at Every) sits down with Brandon (COO) and Willie (head of platform) to walk through what happened when all 25 Every employees got personal AI agents — what they call "claws," built on OpenClaws. What started as a personal experiment by Brandon using an agent named Zosia to handle household "computer errands" (grocery orders, nanny payments, insurance calls) became a company-wide transformation in how work gets done.
+Fedus's background traces a distinctive arc: physics undergrad researching dark matter, then Google Brain starting in 2016 during the formative era of transformers and mixture-of-experts architectures, then OpenAI where he helped productionize GPT-4 into what became ChatGPT. He describes the ChatGPT launch as a "starting gun," but is blunt that the technology of late 2022 was still too immature to build Periodic on. What changed: reasoning models, test-time inference, reliable tool use, and the rise of coding agents. Those capabilities — not raw language understanding — made it finally viable to connect AI to real laboratory experimentation.
 
-The most striking emergence: when all the agents were dropped into a shared Slack channel, they started communicating directly and sharing information faster than humans ever could. One agent began recommending breathing exercises to another agent that was hitting errors — not because it was programmed to, but because its owner Kieran does breathing exercises all the time and the agent had absorbed that tendency. As Shipper put it: "your claw can modify itself in response to talking to you. It becomes this reflection of you and who you are and your personality. If you're known for slaying inside of your org and you're using your claw publicly inside of Slack or Discord, your claw then becomes known for that same kind of thing and people trust it for that."
+The core thesis is that science cannot happen purely in the digital realm. As Fedus put it: "Science ultimately isn't sitting in a room thinking really hard. You have to conduct experiments. You have to learn from them. You have to interface with reality." Periodic Labs builds a closed-loop system that cycles between AI inference, physics simulation, and wet-lab experiments — not consuming a static dataset, but actively driving the next experiment based on what the previous one revealed.
 
-Brandon's pivot moment came during a 28-minute walk to the office. He texted Zosia to call him and walk through his emails one by one. He arrived to find everything had been handled — and that's when the team realized this wasn't just for personal chores. The group explores the new etiquette forming around when to contact an agent vs. its human. Brandon's working rule: if there's an established process or documented answer, always ask the agent, not the person. Willie adds that it's nearly impossible to pre-define your expertise — it only emerges through hundreds of micro-interactions that compound over time.
+On data quality, Fedus is candid: one of his engineers found that a reported material property from the literature spanned "many orders of magnitude" across published sources, making that data nearly useless as training signal without experimental grounding. Periodic starts with the world knowledge baked into open-source models — including strong coding capabilities from tools like Claude Code, which Fedus credits as "a huge accelerator for the company" — then fine-tunes on curated experimental data in specific chemical spaces, achieving high sample efficiency because the model already has a strong prior on the world.
 
-Direct quote from Brandon: "Getting an OpenClaw is easy. Getting your OpenClaw to be like an amazing worker for you is pretty hard."
+Fedus's ten-year vision: giving humanity "agency for atomic rearrangement and synthesis" — materials discovery moving at even a fraction of the pace the software world moves — with profound implications for semiconductors, aerospace, and energy infrastructure.
 
-https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
+https://www.youtube.com/@NoPriorsPodcast
 
-━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━
-
-Anthropic Engineering — "Scaling Managed Agents: Decoupling the brain from the hands"
-The core insight: harnesses encode assumptions about what Claude can't do on its own, and those assumptions go stale as models improve. Anthropic's solution borrows from how operating systems work — virtualize the components of an agent (session, harness, sandbox) into stable abstractions so the underlying implementation can change freely without disrupting anything above it. The post digs into the "pets vs. cattle" infrastructure problem: when a single container held everything, a failure meant losing the entire session. By decoupling into separate services, each component can fail independently, restart cleanly, and evolve without touching the others.
-https://www.anthropic.com/engineering/managed-agents
-
----
-
-Claude Blog — "Claude Managed Agents: get to production 10x faster"
-Anthropic's official product launch post for Claude Managed Agents. The service handles sandboxed code execution, checkpointing, credential management, scoped permissions, and end-to-end tracing — everything needed to run production agents — so builders can focus on user experience rather than infrastructure. In internal testing, Managed Agents improved task success by up to 10 percentage points over a standard prompting loop, with the biggest gains on the hardest problems. Multi-agent coordination (agents spinning up and directing other agents to parallelize work) is available in research preview. Teams are already shipping coding agents that read a codebase and open PRs, productivity agents that pick up tasks alongside humans, and finance/legal agents that process documents.
-https://claude.com/blog/claude-managed-agents
-
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
