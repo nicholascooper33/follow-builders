@@ -1,91 +1,127 @@
-AI Builders Digest — April 14, 2026
+AI Builders Digest — April 15, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — Builder at Cognition, Temporal, and co-host of the Latent Space podcast
-Cognition's usage has roughly doubled globally since two recent launches, as users find creative ways to compose agents together and make them proactive. Swyx frames the unlock simply: "agent recursion is all you need." He also noted that roughly 80% of the world's AI engineering happens within three square miles — a striking reminder of how geographically concentrated the field remains.
-https://x.com/swyx/status/2043770029024653798
-https://x.com/swyx/status/2043778767798317349
-
----
-
-Thariq — Engineer on Claude Code at Anthropic (prev YC W20, MIT Media Lab)
-The Claude Code team shipped a new renderer designed to eliminate screen flicker. Enable it by running: CLAUDE_CODE_NO_FLICKER=1 claude. Full docs are linked in the thread.
-https://x.com/trq212/status/2043814646600348046
-https://x.com/trq212/status/2043814648315818242
+Claude (claudeai — AI assistant by Anthropic)
+The biggest announcement of the day: Claude Code on desktop has been redesigned from the ground up for parallel agentic work. You can now run multiple Claude sessions side by side in a single window, with a new sidebar for managing and switching between them. The update also brings an integrated terminal, in-app file editor, HTML/PDF preview, and a faster diff viewer — all in a drag-and-drop layout. The redesigned app is live now for Pro, Max, Team, and Enterprise plans.
+https://x.com/claudeai/status/2044131493966909862
 
 ---
 
-Amjad Masad — CEO at Replit
-Replit now lets developers configure their app hosting region, useful for compliance and data-privacy requirements. On a broader note, Masad called out a cognitive trap he calls "LARPing rigor": bending measurable data to fit a pre-written story while demanding impossible precision from things that are inherently fuzzy by nature.
-https://x.com/amasad/status/2043785145606656223
-https://x.com/amasad/status/2043948524908490953
+Alex Albert (alexalbert__ — Research at Anthropic)
+Alex flagged today's Claude Code desktop release as a major drop, noting the new features and performance improvements now live in the app. He encouraged users to download or update immediately to get started.
+https://x.com/alexalbert__/status/2044144091395699055
 
 ---
 
-Guillermo Rauch — CEO at Vercel
-Vercel is open-sourcing a reference platform for cloud coding agents, inspired by how Stripe (Minions), Ramp (Inspect), Spotify (Honk), and Block (Goose) are each building proprietary "AI software factories." The project gives teams a production-ready foundation for running agents in the cloud without starting from scratch.
-https://x.com/rauchg/status/2043869656931529034
+Cat Wu (_catwu — Claude Code & cowork at Anthropic)
+Cat has become a daily Claude Code desktop user and shared that it's now her go-to for kicking off and managing multiple coding sessions at once. She also announced Routines — a new feature that lets you schedule Claude Code to run on a timer or trigger it from the command line, automating the repetitive parts of your workflow.
+https://x.com/_catwu/status/2044212251717186007
+https://x.com/_catwu/status/2044103103591657941
 
 ---
 
-Aaron Levie — CEO at Box
-Levie sees a new enterprise role crystallizing: the "agent deployer and manager." This person identifies the highest-leverage opportunities to deploy AI agents within a team, then manages, monitors, and iterates on them over time. The job description doesn't have a standard title yet, but Levie says his conversations across enterprises make it clear this role is becoming a de facto position in forward-looking organizations.
-https://x.com/levie/status/2043883641366032638
+Peter Yang (petergyang — AI tutorials, 140K+ newsletter readers)
+Peter is enjoying the new Claude Code desktop app (calling it the end of the terminal era) and has been exploring how to sync sessions across mobile and desktop. He also surfaced a sharp prompting insight: "It's a mistake to think of the output of a prompt as a final result" — the framing being that prompts are iterative building blocks, not one-shot outputs.
+https://x.com/petergyang/status/2044234654241436066
+https://x.com/petergyang/status/2044061039671820406
 
 ---
 
-Ryo Lu — Designer at Cursor
-Cursor is expanding its pane layout options — split up, down, left, or right — along with more multi-agent view customizations coming soon. As agentic workflows grow more complex, the IDE itself needs to evolve to show multiple concurrent agent contexts at once.
-https://x.com/ryolu_/status/2043891602381500583
+Aaron Levie (levie — CEO at Box)
+Aaron made a pointed observation about enterprise AI adoption: getting agents to actually work at company scale takes real effort, which means forward-deployed engineers and solution architects are more strategically valuable than ever. In his view, the companies investing in that human layer of AI deployment will pull ahead.
+https://x.com/levie/status/2044225408972009842
 
 ---
 
-Garry Tan — President & CEO at Y Combinator
-GBrain, Garry's personal AI operating-system layer built on Claude Code and the Hermes Agent, shipped v0.9.3 with search tuning, CJK query support, better health checks, and several security hotfixes. GBrain includes opinionated skillpacks and a voice agent built on OpenAI Realtime — the kind of full-stack personal AI setup that most power users are still assembling piece by piece.
-https://x.com/garrytan/status/2043948627291451625
-https://x.com/garrytan/status/2043948971568312473
+Amjad Masad (amasad — CEO at Replit)
+Amjad noted that file-format conversion — once a one-off chore requiring a custom script — is now just a skill Replit handles fluently. He also announced Razorpay integration for Indian Replit builders, making it easier to build and accept payments natively on the platform.
+https://x.com/amasad/status/2044277183766770029
+https://x.com/amasad/status/2044161522415612096
 
 ---
 
-Nikunj Kothari — Partner at FPV Ventures (seed / Series A)
-Kothari surfaced a telling talent dynamic: engineers who leave frontier labs for fast-growing agentic startups often discover harsh token limits and are forced to rely on open-source models to manage costs — and some choose to return to the frontier lab where compute is effectively unlimited. Unlimited tokens are quietly becoming one of the most powerful retention tools in the industry.
-https://x.com/nikunj/status/2043808491807396059
+Josh Woodward (joshwoodward — VP at Google Labs, Gemini, Google AI Studio)
+Josh announced that Gemini now offers NEET practice tests for students preparing for India's national medical entrance exam — a significant localization push ahead of one of the world's largest standardized tests.
+https://x.com/joshwoodward/status/2044149482548580689
 
 ---
 
-Peter Yang — Product at Roblox; AI newsletter for 140K+ readers
-Yang called out a trap many AI power-users fall into: spending more time optimizing their Claude Code or agent setup than actually using it to ship real work. It feels like progress — and is genuinely enjoyable — but can quietly substitute for actual output. He also flagged that if GPT's integration with tools like Claude Code doesn't improve to match the quality of Opus, it risks becoming a real problem for OpenAI's developer positioning.
-https://x.com/petergyang/status/2043848480423325757
-https://x.com/petergyang/status/2043732939817791979
+Garry Tan (garrytan — President & CEO at Y Combinator)
+Garry open-sourced GBrain under the MIT License, a personal AI tool he built in about 12 days with heavy use of AI coding assistance. He shared the full repo publicly and invited people to try it.
+https://x.com/garrytan/status/2044292522256806260
+https://x.com/garrytan/status/2044292523817062575
 
 ---
 
-Dan Shipper — CEO at Every (AI media and research company)
-Shipper argues that software engineering in 2026 requires two distinct roles: the "pirate" who codes as fast as possible to find what's actually valuable, and the "architect" who turns the resulting mess into a reliable, well-structured system. He also highlighted a mental model from Kieran: "an agent is just a folder" — meaning agents can be composed, nested, and reasoned about like file-system objects — a framing he says fundamentally changed how he thinks about building AI systems.
-https://x.com/danshipper/status/2043819933675450455
-https://x.com/danshipper/status/2043739805276619223
+Guillermo Rauch (rauchg — CEO at Vercel)
+Guillermo pointed out that anyone building an agent coding platform today should think carefully about pairing app generations with a durable data layer — hinting at why stateful infrastructure matters as agentic workflows become more complex.
+https://x.com/rauchg/status/2044067044325503404
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
+
+Dan Shipper (danshipper — CEO at Every)
+Dan launched Sparkle v4 from Every — an agent that examines your messy desktop, categorizes your files, and moves everything to where it should actually live. He called it one of the best-kept apps in the Every suite.
+https://x.com/danshipper/status/2044079255726838273
+
+---
+
+Zara Zhang (zarazhangrui — Builder)
+Zara shipped two side projects in quick succession. First, she discovered that Chrome saves all browsing history locally in a SQLite database and built a tool to read and analyze it. Then she shipped a dramatically simplified version of her Tab Out Chrome extension — now a pure extension with no server, no Node.js, and no npm required, making installation trivial.
+https://x.com/zarazhangrui/status/2044211269767704929
+https://x.com/zarazhangrui/status/2044114136364397043
+
+---
+
+Nikunj Kothari (nikunj — Partner at FPV Ventures)
+Nikunj pushed back on the "I can vibe code this in a weekend" mentality by pointing to the complexity of something like Slack's notification system as a reality check. Real products have hard, invisible infrastructure — and that gap is still very much there even with AI-assisted coding.
+https://x.com/nikunj/status/2044277884777574565
+
+---
+
+Peter Steinberger (steipete — Polyagentmorous, AI tinkerer)
+Peter expressed genuine excitement about a release he wasn't involved in at all — a testament to the quality of work from Vincent Koc and the open-source maintainer team. The kind of "proud but hands-off" moment that signals a healthy open-source project.
+https://x.com/steipete/status/2044047222481019300
+
+---
+
+Aditya Agarwal (adityaag — GP at South Park Commons, ex-CTO Dropbox)
+Aditya keeps encountering people who get LLMs to do genuinely surprising things and has to keep reminding himself we're still early. The observation: the ceiling of what's possible with these models keeps moving, and most people are only scratching the surface.
+https://x.com/adityaag/status/2044241840967385460
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors: AI for Atoms — How Periodic Labs is Revolutionizing Materials Engineering with Liam Fedus
+Training Data — "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+Published: April 14, 2026
+https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
 
-Takeaway: Liam Fedus — co-creator of ChatGPT and former VP of Post-Training at OpenAI — left the frontier language model world to build Periodic Labs, betting that the next great scientific unlock is connecting AI to the physical world of atoms, materials, and chemistry.
+Takeaway: The front door of the internet hasn't changed — but who's walking through it has, and that shift from human consumer to AI agent is rewriting the entire rulebook for marketing.
 
-Fedus's background traces a distinctive arc: physics undergrad researching dark matter, then Google Brain starting in 2016 during the formative era of transformers and mixture-of-experts architectures, then OpenAI where he helped productionize GPT-4 into what became ChatGPT. He describes the ChatGPT launch as a "starting gun," but is blunt that the technology of late 2022 was still too immature to build Periodic on. What changed: reasoning models, test-time inference, reliable tool use, and the rise of coding agents. Those capabilities — not raw language understanding — made it finally viable to connect AI to real laboratory experimentation.
+James Cadwallader, co-founder and CEO of Profound (a marketing platform serving close to 12% of the Fortune 500), joined the Training Data podcast to explain why agent-led growth (ALG) is fundamentally different from SEO — and why most marketers are still pattern-matching the new world to the old one.
 
-The core thesis is that science cannot happen purely in the digital realm. As Fedus put it: "Science ultimately isn't sitting in a room thinking really hard. You have to conduct experiments. You have to learn from them. You have to interface with reality." Periodic Labs builds a closed-loop system that cycles between AI inference, physics simulation, and wet-lab experiments — not consuming a static dataset, but actively driving the next experiment based on what the previous one revealed.
+The core argument: when a person Googled something, they scanned the top five blue links because human attention is scarce. When an AI agent answers a query, it might crawl 65 web pages to formulate a response. That's not a marginal change — it's an orders-of-magnitude expansion of the internet's surface area that matters for discovery. The implication for marketers is that content designed purely to rank for human eyes now needs to be legible and useful to superintelligent agents with "infinite bandwidth."
 
-On data quality, Fedus is candid: one of his engineers found that a reported material property from the literature spanned "many orders of magnitude" across published sources, making that data nearly useless as training signal without experimental grounding. Periodic starts with the world knowledge baked into open-source models — including strong coding capabilities from tools like Claude Code, which Fedus credits as "a huge accelerator for the company" — then fine-tunes on curated experimental data in specific chemical spaces, achieving high sample efficiency because the model already has a strong prior on the world.
+James also broke down why different AI platforms behave differently as recommendation engines: Gemini leans heavily on YouTube (Google owns it), ChatGPT tends to pull from Reddit for consumer queries and LinkedIn for B2B, and Claude has recently become more sensitive to real-time web information. Profound helps brands understand not just whether they appear in AI responses, but what sentiment and citations surround those appearances — and then deploys agents to close the gaps.
 
-Fedus's ten-year vision: giving humanity "agency for atomic rearrangement and synthesis" — materials discovery moving at even a fraction of the pace the software world moves — with profound implications for semiconductors, aerospace, and energy infrastructure.
+The most provocative idea in the episode: content "slop" is a red herring. The real challenge is telling a superintelligent model something it doesn't already know. As James put it, "humans are this kind of fleshy API between reality and the Internet at this point" — which means original insight, proprietary data, and first-hand experience are what differentiate marketing content in the agent era.
 
-https://www.youtube.com/@NoPriorsPodcast
+Direct quote:
+"The fundamental difference between SEO and this new world is that in SEO, you were building content that was designed to be picked up by an algorithm, but fundamentally consumed by a human. Whereas in this new world, you are building content that is frankly designed entirely to be both discovered and then consumed by an agent." — James Cadwallader
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Claude Blog — "Redesigning Claude Code on desktop for parallel agents"
+Published: April 14, 2026
+https://claude.com/blog/claude-code-desktop-redesign
+
+The new Claude Code desktop app is built around the reality that agentic coding now means many things running at once. The redesign introduces a sidebar for managing multiple sessions across repos, a drag-and-drop layout for arranging your workspace, and an integrated terminal and file editor — so you can review, tweak, and ship without bouncing to a separate tool. The diff viewer has been rebuilt for performance on large changesets, and HTML/PDF preview is now in-app. Three view modes (Verbose, Normal, Summary) let you dial between full transparency into Claude's tool calls and just the results. The app now also has full parity with CLI plugins, and SSH support extends to Mac. Available now for Pro, Max, Team, and Enterprise plans.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
