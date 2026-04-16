@@ -1,127 +1,89 @@
-AI Builders Digest — April 15, 2026
+AI Builders Digest — 2026-04-16
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude (claudeai — AI assistant by Anthropic)
-The biggest announcement of the day: Claude Code on desktop has been redesigned from the ground up for parallel agentic work. You can now run multiple Claude sessions side by side in a single window, with a new sidebar for managing and switching between them. The update also brings an integrated terminal, in-app file editor, HTML/PDF preview, and a faster diff viewer — all in a drag-and-drop layout. The redesigned app is live now for Pro, Max, Team, and Enterprise plans.
-https://x.com/claudeai/status/2044131493966909862
+Thariq — Claude Code engineer at Anthropic
+The 1M context window in Claude is a double-edged sword: it lets Claude tackle more complex tasks, but it also risks context pollution if you don't actively manage your session. Thariq shared a guide on how to handle this well and noted you can set your own autocompact threshold — 400k is a reasonable middle ground — via CLAUDE_CODE_AUTO_COMPACT_WINDOW=400000 claude.
+https://x.com/trq212/status/2044653083817660431
+https://x.com/trq212/status/2044653085415604473
 
----
+Josh Woodward — VP at Google Labs, Gemini App, Google AI Studio
+Google just launched Gemini on Mac — 100% native Swift, 100+ features shipped in under 100 days. Woodward called it a direct response to user feedback and says it's lightning fast.
+https://x.com/joshwoodward/status/2044452201947627709
 
-Alex Albert (alexalbert__ — Research at Anthropic)
-Alex flagged today's Claude Code desktop release as a major drop, noting the new features and performance improvements now live in the app. He encouraged users to download or update immediately to get started.
-https://x.com/alexalbert__/status/2044144091395699055
+Swyx — Advisor at Cognition, host of Latent Space Pod
+Swyx sees 2025 as "the year of subagents" — but notes the harder, more interesting problem is the inverse: boss agents that compose and manage other agents. He shared that Cognition just launched a new "Spaces" concept, and he played a small part in designing it. On Meta, he tracks the narrative arc: Llama 4 flopped, but Meta is doubling down — more hiring, Zuck literally moved in with other founders and is coding again, and they GA'd an Opus-level model (though no API and not open source).
+https://x.com/swyx/status/2044542494420214217
+https://x.com/swyx/status/2044598788065731017
 
----
+Guillermo Rauch — CEO at Vercel
+Rauch argues the software factory is now the product itself. He highlighted Shader Lab — a custom design tool built with Claude Code, Three.js, Next.js, and Vercel — as a preview of where design is going: every team empowered to build their own bespoke "design factory."
+https://x.com/rauchg/status/2044445445636972578
+https://x.com/rauchg/status/2044419655306215492
 
-Cat Wu (_catwu — Claude Code & cowork at Anthropic)
-Cat has become a daily Claude Code desktop user and shared that it's now her go-to for kicking off and managing multiple coding sessions at once. She also announced Routines — a new feature that lets you schedule Claude Code to run on a timer or trigger it from the command line, automating the repetitive parts of your workflow.
-https://x.com/_catwu/status/2044212251717186007
-https://x.com/_catwu/status/2044103103591657941
+Ryo Lu — Designer at Cursor
+Cursor's new /canvas command lets you build custom interfaces directly for your agents — a glimpse at a future where users interact with AI through purpose-built UIs rather than generic chat boxes.
+https://x.com/ryolu_/status/2044493859821129992
 
----
+Amjad Masad — CEO at Replit
+If frontier models can fully automate finding security flaws in code (as Mythos suggests), Masad thinks GitHub should surface a new metric — alongside stars — showing how much compute has been spent hardening an open-source package. "Only way OSS can be trusted."
+https://x.com/amasad/status/2044437437141909609
 
-Peter Yang (petergyang — AI tutorials, 140K+ newsletter readers)
-Peter is enjoying the new Claude Code desktop app (calling it the end of the terminal era) and has been exploring how to sync sessions across mobile and desktop. He also surfaced a sharp prompting insight: "It's a mistake to think of the output of a prompt as a final result" — the framing being that prompts are iterative building blocks, not one-shot outputs.
-https://x.com/petergyang/status/2044234654241436066
-https://x.com/petergyang/status/2044061039671820406
+Aaron Levie — CEO at Box
+Levie pushes back on AI-kills-all-jobs narratives: when AI accelerates output in one area, it tends to expose bottlenecks elsewhere that still require humans. He pointed to a Financial Times example of AI expanding legal demand as a concrete illustration of this dynamic.
+https://x.com/levie/status/2044621545348481285
 
----
+Garry Tan — President & CEO at Y Combinator
+Tan shared that GBrain — his personal AI system built on git and Postgres — now works smoothly with multiple agents running simultaneously. He also noted that OpenClaw with Docker sandbox, mitmproxy firewall logging, and Clawvisor is now production-ready: "The days of 'it's insecure' for OpenClaw are over."
+https://x.com/garrytan/status/2044644320599560416
+https://x.com/garrytan/status/2044512730087072000
 
-Aaron Levie (levie — CEO at Box)
-Aaron made a pointed observation about enterprise AI adoption: getting agents to actually work at company scale takes real effort, which means forward-deployed engineers and solution architects are more strategically valuable than ever. In his view, the companies investing in that human layer of AI deployment will pull ahead.
-https://x.com/levie/status/2044225408972009842
+Matt Turck — VC at FirstMark Capital
+The roadmap for Claude Cowork is exactly one month long. Turck quoted Felix Rieseberg, who heads Cowork at Anthropic: things are moving too fast in AI to plan any further out. Ship, evaluate, iterate.
+https://x.com/mattturck/status/2044534930684719394
 
----
+Peter Yang — Product at Roblox, AI newsletter author
+After two weeks in China, Yang says every product builder should visit. His observations: a culture of extreme AI work intensity, a world of $2 delivery and ubiquitous EVs, and a society where the pace of daily life is shaped by tech in ways the US hasn't caught up to yet.
+https://x.com/petergyang/status/2044418914856353901
 
-Amjad Masad (amasad — CEO at Replit)
-Amjad noted that file-format conversion — once a one-off chore requiring a custom script — is now just a skill Replit handles fluently. He also announced Razorpay integration for Indian Replit builders, making it easier to build and accept payments natively on the platform.
-https://x.com/amasad/status/2044277183766770029
-https://x.com/amasad/status/2044161522415612096
+Zara Zhang — Builder and AI explorer
+Zhang has two connected takes: HTML-made slides are so good you can't go back to traditional tools (she's been using AnyGen.io's Frontend Slides feature), and "play" deserves more respect in AI work. If you work in AI, pushing models to their limits in a non-utilitarian, exploratory way is literally part of the job — and often where the best insights come from.
+https://x.com/zarazhangrui/status/2044653882597421066
+https://x.com/zarazhangrui/status/2044515052435476685
 
----
+Nikunj Kothari — Partner at FPV Ventures
+A short, sharp reminder: find someone who genuinely cares — a mentor, founder, VC, advisor, customer. Life's too short to work with people who don't. "It might end up being the greatest moat of them all."
+https://x.com/nikunj/status/2044596515088499194
 
-Josh Woodward (joshwoodward — VP at Google Labs, Gemini, Google AI Studio)
-Josh announced that Gemini now offers NEET practice tests for students preparing for India's national medical entrance exam — a significant localization push ahead of one of the world's largest standardized tests.
-https://x.com/joshwoodward/status/2044149482548580689
+Peter Steinberger — Co-creator of OpenClaw
+Steinberger addressed lingering security concerns about OpenClaw: over the last four months, thousands of work hours went into building a layered security model — you can go fully yolo, use a Docker or OpenShell sandbox, set allow-lists, or configure per-access exec prompts. Hundreds of security researchers have pen-tested it, leading to rapid iteration and hardening.
+https://x.com/steipete/status/2044482797449150520
 
----
+Aditya Agarwal — General Partner at South Park Commons, ex-CTO of Dropbox
+Agarwal mapped out the full arc of LLM skepticism — from "they're just autocorrect" to "they're only good for verifiable things" — and drew the obvious conclusion: "Just admit it! LLMs are awesome."
+https://x.com/adityaag/status/2044444065199177748
 
-Garry Tan (garrytan — President & CEO at Y Combinator)
-Garry open-sourced GBrain under the MIT License, a personal AI tool he built in about 12 days with heavy use of AI coding assistance. He shared the full repo publicly and invited people to try it.
-https://x.com/garrytan/status/2044292522256806260
-https://x.com/garrytan/status/2044292523817062575
-
----
-
-Guillermo Rauch (rauchg — CEO at Vercel)
-Guillermo pointed out that anyone building an agent coding platform today should think carefully about pairing app generations with a durable data layer — hinting at why stateful infrastructure matters as agentic workflows become more complex.
-https://x.com/rauchg/status/2044067044325503404
-
----
-
-Dan Shipper (danshipper — CEO at Every)
-Dan launched Sparkle v4 from Every — an agent that examines your messy desktop, categorizes your files, and moves everything to where it should actually live. He called it one of the best-kept apps in the Every suite.
-https://x.com/danshipper/status/2044079255726838273
-
----
-
-Zara Zhang (zarazhangrui — Builder)
-Zara shipped two side projects in quick succession. First, she discovered that Chrome saves all browsing history locally in a SQLite database and built a tool to read and analyze it. Then she shipped a dramatically simplified version of her Tab Out Chrome extension — now a pure extension with no server, no Node.js, and no npm required, making installation trivial.
-https://x.com/zarazhangrui/status/2044211269767704929
-https://x.com/zarazhangrui/status/2044114136364397043
-
----
-
-Nikunj Kothari (nikunj — Partner at FPV Ventures)
-Nikunj pushed back on the "I can vibe code this in a weekend" mentality by pointing to the complexity of something like Slack's notification system as a reality check. Real products have hard, invisible infrastructure — and that gap is still very much there even with AI-assisted coding.
-https://x.com/nikunj/status/2044277884777574565
-
----
-
-Peter Steinberger (steipete — Polyagentmorous, AI tinkerer)
-Peter expressed genuine excitement about a release he wasn't involved in at all — a testament to the quality of work from Vincent Koc and the open-source maintainer team. The kind of "proud but hands-off" moment that signals a healthy open-source project.
-https://x.com/steipete/status/2044047222481019300
-
----
-
-Aditya Agarwal (adityaag — GP at South Park Commons, ex-CTO Dropbox)
-Aditya keeps encountering people who get LLMs to do genuinely surprising things and has to keep reminding himself we're still early. The observation: the ceiling of what's possible with these models keeps moving, and most people are only scratching the surface.
-https://x.com/adityaag/status/2044241840967385460
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Training Data — "From SEO to Agent-Led Growth: Profound's James Cadwallader"
-Published: April 14, 2026
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
+AI & I by Every — "The AI Model Built for What LLMs Can't Do"
+Published: 2026-04-15
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
 
-Takeaway: The front door of the internet hasn't changed — but who's walking through it has, and that shift from human consumer to AI agent is rewriting the entire rulebook for marketing.
+Takeaway: Energy-based models (EBMs) offer a fundamentally different and potentially safer path for AI in mission-critical applications — one that doesn't rely on token prediction and can be formally constrained to follow hard rules.
 
-James Cadwallader, co-founder and CEO of Profound (a marketing platform serving close to 12% of the Fortune 500), joined the Training Data podcast to explain why agent-led growth (ALG) is fundamentally different from SEO — and why most marketers are still pattern-matching the new world to the old one.
+Dan Shipper (CEO of Every) interviewed Eve, founder and CEO of Logical Intelligence, about why the company is building what they call Kona — formally, an "energy based reasoning model with latent variables" — as an alternative to the LLM paradigm.
 
-The core argument: when a person Googled something, they scanned the top five blue links because human attention is scarce. When an AI agent answers a query, it might crawl 65 web pages to formulate a response. That's not a marginal change — it's an orders-of-magnitude expansion of the internet's surface area that matters for discovery. The implication for marketers is that content designed purely to rank for human eyes now needs to be legible and useful to superintelligent agents with "infinite bandwidth."
+The central argument is architectural. LLMs predict the next token in a sequence, one step at a time, with no ability to backtrack or see the full picture. This makes them prone to hallucination and expensive to run. Eve describes it as having "tunnel vision" while navigating a city — you can only turn one direction at a time and might walk into a hole you can see but can't avoid. EBMs, by contrast, work by mapping all possible states into an energy landscape and navigating toward the lowest-energy (most probable) outcome — giving them a "bird's eye view" that lets them reroute when something goes wrong.
 
-James also broke down why different AI platforms behave differently as recommendation engines: Gemini leans heavily on YouTube (Google owns it), ChatGPT tends to pull from Reddit for consumer queries and LinkedIn for B2B, and Claude has recently become more sensitive to real-time web information. Profound helps brands understand not just whether they appear in AI responses, but what sentiment and citations surround those appearances — and then deploys agents to close the gaps.
+Because EBMs don't use tokens, they're cheaper to run and better suited for tasks that have nothing to do with language: spatial reasoning, applied engineering, data analysis, chip design, circuit control. Eve points out that LLMs are fundamentally "literature department" tools being applied to "engineering school" problems — it works, but it's wasteful. EBMs also have the unusual property of being inspectable during training, not just after, making them less of a black box. And crucially, they can be formally constrained: you can force an EBM to follow a hard set of rules, something you simply can't do with an LLM.
 
-The most provocative idea in the episode: content "slop" is a red herring. The real challenge is telling a superintelligent model something it doesn't already know. As James put it, "humans are this kind of fleshy API between reality and the Internet at this point" — which means original insight, proprietary data, and first-hand experience are what differentiate marketing content in the agent era.
+Logical Intelligence's strategy is not to replace LLMs but to complement them. As Eve puts it: "You want to make them cheaper. Everyone wants. You can outsource the task to us related to spatial reasoning." The duo also discussed why investment has been slow to shift — billions are already committed to the LLM ecosystem and a huge amount of circular dependency has built up between model companies, data centers, and hardware. But Eve noted that some major LLM companies are quietly building EBMs in-house — which she reads as a positive signal for the paradigm.
 
-Direct quote:
-"The fundamental difference between SEO and this new world is that in SEO, you were building content that was designed to be picked up by an algorithm, but fundamentally consumed by a human. Whereas in this new world, you are building content that is frankly designed entirely to be both discovered and then consumed by an agent." — James Cadwallader
+Direct quote from Eve: "EBMs are naturally non autoregressive. There are no sequences of tokens, and that's what makes it fundamentally different. Like, imagine you're trying to navigate the map, and you have a left brain. To navigate, you're sort of allowed to choose one direction of the time. And sometimes you take the wrong turns just because you hallucinate... EBM gonna have the bird view all the time. So if you see there's a hole, you're gonna choose a different route."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Claude Blog — "Redesigning Claude Code on desktop for parallel agents"
-Published: April 14, 2026
-https://claude.com/blog/claude-code-desktop-redesign
-
-The new Claude Code desktop app is built around the reality that agentic coding now means many things running at once. The redesign introduces a sidebar for managing multiple sessions across repos, a drag-and-drop layout for arranging your workspace, and an integrated terminal and file editor — so you can review, tweak, and ship without bouncing to a separate tool. The diff viewer has been rebuilt for performance on large changesets, and HTML/PDF preview is now in-app. Three view modes (Verbose, Normal, Summary) let you dial between full transparency into Claude's tool calls and just the results. The app now also has full parity with CLI plugins, and SSH support extends to Mac. Available now for Pro, Max, Team, and Enterprise plans.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
