@@ -1,89 +1,100 @@
-AI Builders Digest — 2026-04-16
+AI Builders Digest — 2026-04-17
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thariq — Claude Code engineer at Anthropic
-The 1M context window in Claude is a double-edged sword: it lets Claude tackle more complex tasks, but it also risks context pollution if you don't actively manage your session. Thariq shared a guide on how to handle this well and noted you can set your own autocompact threshold — 400k is a reasonable middle ground — via CLAUDE_CODE_AUTO_COMPACT_WINDOW=400000 claude.
-https://x.com/trq212/status/2044653083817660431
-https://x.com/trq212/status/2044653085415604473
+Claude (Anthropic's official account) — AI assistant by Anthropic
+Claude Opus 4.7 launched today across claude.ai, the Claude Platform, and all major cloud platforms. Claude Code gains a new /ultrareview command that runs a dedicated review session to flag issues a careful reviewer would catch. On the API, a new xhigh effort level between high and max provides finer control over reasoning and latency on hard problems, and task budgets (beta) help Claude manage costs across longer runs.
+https://x.com/claudeai/status/2044785272617939282
 
-Josh Woodward — VP at Google Labs, Gemini App, Google AI Studio
-Google just launched Gemini on Mac — 100% native Swift, 100+ features shipped in under 100 days. Woodward called it a direct response to user feedback and says it's lightning fast.
-https://x.com/joshwoodward/status/2044452201947627709
+Alex Albert — Researcher at Anthropic
+Highlights his favorite things in Opus 4.7: much better at async work and following instructions, more predictable effort levels for token control (including the new xhigh level), no more downscaling of high-resolution images, and noticeably better taste in UIs, slides, and docs. This is the most concise breakdown of what's meaningfully new in the model.
+https://x.com/alexalbert__/status/2044788914813292583
 
-Swyx — Advisor at Cognition, host of Latent Space Pod
-Swyx sees 2025 as "the year of subagents" — but notes the harder, more interesting problem is the inverse: boss agents that compose and manage other agents. He shared that Cognition just launched a new "Spaces" concept, and he played a small part in designing it. On Meta, he tracks the narrative arc: Llama 4 flopped, but Meta is doubling down — more hiring, Zuck literally moved in with other founders and is coding again, and they GA'd an Opus-level model (though no API and not open source).
-https://x.com/swyx/status/2044542494420214217
-https://x.com/swyx/status/2044598788065731017
+Cat Wu — Claude Code at Anthropic
+The default effort level for Opus 4.7 in Claude Code has been set to xhigh; users can adjust with /effort. She shares practical tips: put your testing workflow in claude.md or add a /verify-app skill, since Opus 4.7 is better at verifying its own work and benefits from having local dev tips it can't easily discover on its own.
+https://x.com/_catwu/status/2044808539663978970
 
-Guillermo Rauch — CEO at Vercel
-Rauch argues the software factory is now the product itself. He highlighted Shader Lab — a custom design tool built with Claude Code, Three.js, Next.js, and Vercel — as a preview of where design is going: every team empowered to build their own bespoke "design factory."
-https://x.com/rauchg/status/2044445445636972578
-https://x.com/rauchg/status/2044419655306215492
+Thariq — Claude Code at Anthropic
+The team is running monthly "what we shipped" webinars for Claude Code users. They've also added a curated "What's New" section to the docs with important announcements as a digest. More updates are coming this week, starting with improvements to the /usage command.
+https://x.com/trq212/status/2044893587691958320
+
+Sam Altman — CEO of OpenAI
+Major Codex update: computer use now lets Codex run all the apps on your Mac in parallel without interfering with your work. Codex can also learn from experience and proactively suggest things it can do for you. New in-app browser and many new plugins round out what he calls a genuine step forward for how agents work for knowledge workers.
+https://x.com/sama/status/2044858862042591378
+
+Kevin Weil — VP of Science at OpenAI
+Launching GPT-Rosalind, OpenAI's first frontier model built for scientific research across biology, drug discovery, protein engineering, genomics, and translational medicine — with built-in knowledge of research databases and tools. Due to bioweapons risk, it's launching through a trusted access structure for qualified customers. Also shipping a Life Sciences plugin for Codex available to everyone today.
+https://x.com/kevinweil/status/2044862783947448611
+
+Aaron Levie — CEO of Box
+The new Codex is a major leap for knowledge worker agents: agents that can code, use tools, and use computers can now execute long-running tasks in the background — drafting reports, setting up data rooms for mergers, reviewing contracts, processing invoices. Box is launching a plugin inside Codex to let enterprise content power almost any kind of automated work, with multi-app connectivity as the key leverage point.
+https://x.com/levie/status/2044855448722100720
+
+Guillermo Rauch — CEO of Vercel
+Announcing Workflow SDK, which he describes as solving the hardest problem in agent backends: durability. LLM calls go down, services rate-limit, databases slow. He frames Workflow SDK as doing for backends what Next.js did for frontends — combining the reliability of SQS/Kafka/microservices without the complexity, with strong self-hosting and multi-cloud support from day 0.
+https://x.com/rauchg/status/2044858872842826102
+
+Amjad Masad — CEO of Replit
+You can now turn a web app into an iOS app for under $10 via Replit. Replit is offering 50% off — particularly useful for running parallel agents to make faster progress on projects. EU deployment is also now live.
+https://x.com/amasad/status/2044953138957025707
 
 Ryo Lu — Designer at Cursor
-Cursor's new /canvas command lets you build custom interfaces directly for your agents — a glimpse at a future where users interact with AI through purpose-built UIs rather than generic chat boxes.
-https://x.com/ryolu_/status/2044493859821129992
+Sharing "baby glass," a new prototyping environment at Cursor that lets designers quickly imagine, remix, and test ideas in code using shared components powering Cursor 3's new interface. Separately, his personal AI model stack right now: Opus 4.7 for planning, Composer 2 for building and iterations, Codex/GPT-5.4 for hard bugs — all inside Cursor.
+https://x.com/ryolu_/status/2044982132859400342
 
-Amjad Masad — CEO at Replit
-If frontier models can fully automate finding security flaws in code (as Mythos suggests), Masad thinks GitHub should surface a new metric — alongside stars — showing how much compute has been spent hardening an open-source package. "Only way OSS can be trusted."
-https://x.com/amasad/status/2044437437141909609
+Swyx — AI Dot Engineer and co-host of Latent Space
+Reflecting on the structure of AI Dot Engineer conference talks: day 1 featured "slop cannon" high-velocity AI builders and day 2 featured more measured "grown ups" — and in retrospect he thinks this maps cleanly onto the most important current split in AI engineering. Shared links to both the Harness Engineering and Slow Down talks from the event.
+https://x.com/swyx/status/2044939001405350235
 
-Aaron Levie — CEO at Box
-Levie pushes back on AI-kills-all-jobs narratives: when AI accelerates output in one area, it tends to expose bottlenecks elsewhere that still require humans. He pointed to a Financial Times example of AI expanding legal demand as a concrete illustration of this dynamic.
-https://x.com/levie/status/2044621545348481285
+Peter Yang — Product at Roblox, author of AI tutorials
+When building skills with AI, he now always spins up a separate eval agent to do yes/no checks grading the first agent's output — and if output isn't "yes" across the board, the first agent keeps iterating. He's applying this pattern to building a YouTube thumbnails and titles generator. Also called for Claude and Codex to add easy markdown file viewing and editing on web and mobile for hand-crafting the last 10% of instructions.
+https://x.com/petergyang/status/2044998456062906422
 
-Garry Tan — President & CEO at Y Combinator
-Tan shared that GBrain — his personal AI system built on git and Postgres — now works smoothly with multiple agents running simultaneously. He also noted that OpenClaw with Docker sandbox, mitmproxy firewall logging, and Clawvisor is now production-ready: "The days of 'it's insecure' for OpenClaw are over."
-https://x.com/garrytan/status/2044644320599560416
-https://x.com/garrytan/status/2044512730087072000
+Garry Tan — President and CEO of YCombinator
+Shipping actively on GBrain: security fixes just dropped, e2e Gemini Live tests are being built in-house (coming to GBrain Voice with open source release soon), and bug fixes to make the /ship skill more robust.
+https://x.com/garrytan/status/2045002844508766510
 
-Matt Turck — VC at FirstMark Capital
-The roadmap for Claude Cowork is exactly one month long. Turck quoted Felix Rieseberg, who heads Cowork at Anthropic: things are moving too fast in AI to plan any further out. Ship, evaluate, iterate.
-https://x.com/mattturck/status/2044534930684719394
+Zara Zhang — Builder
+Frames her most valuable uses of time in three categories: Deep Talk (conversations/brainstorms with great people), Deep Read (long-form content), and Deep Play (trying random things with AI to see where it goes). Also announced HTML videos are live — turning the Frontend Slides GitHub repo into a video, with the framing: "What the symphony was to Beethoven, play was to Shakespeare, HTML is to agents."
+https://x.com/zarazhangrui/status/2044891980178792560
 
-Peter Yang — Product at Roblox, AI newsletter author
-After two weeks in China, Yang says every product builder should visit. His observations: a culture of extreme AI work intensity, a world of $2 delivery and ubiquitous EVs, and a society where the pace of daily life is shaped by tech in ways the US hasn't caught up to yet.
-https://x.com/petergyang/status/2044418914856353901
-
-Zara Zhang — Builder and AI explorer
-Zhang has two connected takes: HTML-made slides are so good you can't go back to traditional tools (she's been using AnyGen.io's Frontend Slides feature), and "play" deserves more respect in AI work. If you work in AI, pushing models to their limits in a non-utilitarian, exploratory way is literally part of the job — and often where the best insights come from.
-https://x.com/zarazhangrui/status/2044653882597421066
-https://x.com/zarazhangrui/status/2044515052435476685
-
-Nikunj Kothari — Partner at FPV Ventures
-A short, sharp reminder: find someone who genuinely cares — a mentor, founder, VC, advisor, customer. Life's too short to work with people who don't. "It might end up being the greatest moat of them all."
-https://x.com/nikunj/status/2044596515088499194
-
-Peter Steinberger — Co-creator of OpenClaw
-Steinberger addressed lingering security concerns about OpenClaw: over the last four months, thousands of work hours went into building a layered security model — you can go fully yolo, use a Docker or OpenShell sandbox, set allow-lists, or configure per-access exec prompts. Hundreds of security researchers have pen-tested it, leading to rapid iteration and hardening.
-https://x.com/steipete/status/2044482797449150520
-
-Aditya Agarwal — General Partner at South Park Commons, ex-CTO of Dropbox
-Agarwal mapped out the full arc of LLM skepticism — from "they're just autocorrect" to "they're only good for verifiable things" — and drew the obvious conclusion: "Just admit it! LLMs are awesome."
-https://x.com/adityaag/status/2044444065199177748
+Peter Steinberger — OpenClaw
+Nearly 2,000 people showed up to ClawCon Michigan, which he describes as a "weird lobster cult." On the security front, he reframes the stream of GitHub Security Advisories (GHSAs) for OpenClaw not as a sign of insecurity but as a leading indicator of the broader security storm coming for AI tooling.
+https://x.com/steipete/status/2044935917417205796
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-AI & I by Every — "The AI Model Built for What LLMs Can't Do"
-Published: 2026-04-15
-https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
+Latent Space — "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future" (with Simon Last & Sarah Sachs of Notion)
 
-Takeaway: Energy-based models (EBMs) offer a fundamentally different and potentially safer path for AI in mission-critical applications — one that doesn't rely on token prediction and can be formally constrained to follow hard rules.
+Takeaway: Building production AI agents at scale is mostly about knowing when you're swimming upstream against model limitations versus when the river is ready — and Notion's edge is having rebuilt their agent infrastructure five times and surviving to tell the story.
 
-Dan Shipper (CEO of Every) interviewed Eve, founder and CEO of Logical Intelligence, about why the company is building what they call Kona — formally, an "energy based reasoning model with latent variables" — as an alternative to the LLM paradigm.
+Simon Last (engineer) and Sarah Sachs (product) from Notion walk through how the company has been building AI agents since late 2022, starting with GPT-4 before function calling even existed. They designed their own tool-calling framework, tried to fine-tune models to use it, and it consistently failed to be robust enough — until roughly Sonnet 3.6 in early 2025. That unlock is what led to Notion's agent and then custom agents shipping publicly.
 
-The central argument is architectural. LLMs predict the next token in a sequence, one step at a time, with no ability to backtrack or see the full picture. This makes them prone to hallucination and expensive to run. Eve describes it as having "tunnel vision" while navigating a city — you can only turn one direction at a time and might walk into a hole you can see but can't avoid. EBMs, by contrast, work by mapping all possible states into an energy landscape and navigating toward the lowest-energy (most probable) outcome — giving them a "bird's eye view" that lets them reroute when something goes wrong.
+A key insight from Sarah: the two skills that matter most at the frontier are (1) quickly recognizing when you're "swimming upstream" against model limitations rather than fighting product or infrastructure problems, and (2) knowing which direction the river is flowing so you can build ahead. They've had multiple failed versions of capabilities — transcription before meeting notes, multiple custom agent rebuilds — and the discipline is knowing when to stop pressing and wait for the model to catch up.
 
-Because EBMs don't use tokens, they're cheaper to run and better suited for tasks that have nothing to do with language: spatial reasoning, applied engineering, data analysis, chip design, circuit control. Eve points out that LLMs are fundamentally "literature department" tools being applied to "engineering school" problems — it works, but it's wasteful. EBMs also have the unusual property of being inspectable during training, not just after, making them less of a black box. And crucially, they can be formally constrained: you can force an EBM to follow a hard set of rules, something you simply can't do with an LLM.
+Simon flags that in his view, "coding agents are the kernel of AGI — everything is a coding agent." The next big bet he's excited about is what he calls the "software factory": a maximally automated workflow for developing, debugging, merging, reviewing, and maintaining a codebase with multiple agents working together. Notion is actively building toward this.
 
-Logical Intelligence's strategy is not to replace LLMs but to complement them. As Eve puts it: "You want to make them cheaper. Everyone wants. You can outsource the task to us related to spatial reasoning." The duo also discussed why investment has been slow to shift — billions are already committed to the LLM ecosystem and a huge amount of circular dependency has built up between model companies, data centers, and hardware. But Eve noted that some major LLM companies are quietly building EBMs in-house — which she reads as a positive signal for the paradigm.
+On MCP vs CLIs, Simon says he's bullish on both: MCPs for narrow, lightweight agents where you want a strong permission model and don't need a full coding agent runtime; CLIs for broader use. Sarah adds that Notion is committed to supporting their MCP regardless of internal perspective, because their users expect it.
 
-Direct quote from Eve: "EBMs are naturally non autoregressive. There are no sequences of tokens, and that's what makes it fundamentally different. Like, imagine you're trying to navigate the map, and you have a left brain. To navigate, you're sort of allowed to choose one direction of the time. And sometimes you take the wrong turns just because you hallucinate... EBM gonna have the bird view all the time. So if you see there's a hole, you're gonna choose a different route."
+Direct quote from Simon Last: "I think coding agents are the kernel of AGI. Everything is a coding agent... Your agent can bootstrap its own software and capabilities and actually debug and maintain them."
+
+https://www.youtube.com/@LatentSpacePod
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Anthropic Engineering — "Scaling Managed Agents: Decoupling the brain from the hands"
+A deep technical post on how Anthropic built Managed Agents by virtualizing agent components — session (the append-only log), harness (the loop that calls Claude), and sandbox (execution environment) — so each can be swapped independently as models improve. The key insight: agent harnesses encode assumptions about model limitations that go stale fast (e.g., "context anxiety" workarounds for Sonnet 4.5 became dead weight with Opus 4.5). By decoupling components like an OS virtualizes hardware, the interfaces stay stable while implementations underneath evolve freely. The post is a direct argument against the "pet server" anti-pattern — a coupled single-container approach where losing the container means losing the session.
+https://www.anthropic.com/engineering/managed-agents
+
+Claude Blog — "Claude Managed Agents: get to production 10x faster"
+Anthropic's public launch of Claude Managed Agents (public beta on the Claude Platform): a suite of composable APIs for building and deploying cloud-hosted agents without having to build sandboxing, state management, permissioning, checkpointing, or context recovery from scratch. The harness handles tool calls, context management, and error recovery. It supports long-running sessions (hours, even through disconnections), multi-agent coordination where agents spin up and direct other agents (research preview), and trusted governance with scoped permissions and execution tracing built into Claude Console. In internal testing on structured file generation, Managed Agents improved task success by up to 10 points over a standard prompting loop, with the biggest gains on the hardest problems.
+https://claude.com/blog/claude-managed-agents
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
