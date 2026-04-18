@@ -1,100 +1,88 @@
-AI Builders Digest — 2026-04-17
+AI Builders Digest — April 18, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude (Anthropic's official account) — AI assistant by Anthropic
-Claude Opus 4.7 launched today across claude.ai, the Claude Platform, and all major cloud platforms. Claude Code gains a new /ultrareview command that runs a dedicated review session to flag issues a careful reviewer would catch. On the API, a new xhigh effort level between high and max provides finer control over reasoning and latency on hard problems, and task budgets (beta) help Claude manage costs across longer runs.
-https://x.com/claudeai/status/2044785272617939282
+Kevin Weil — VP Science, OpenAI; Board Director at Cisco and The Nature Conservancy
+Today marked Kevin's last day at OpenAI, as the OpenAI for Science division is being decentralized into other research teams. He reflected on two "mind-expanding" years — from Chief Product Officer to joining the research team full-time. A notable exit from one of AI's most senior product roles.
+https://x.com/kevinweil/status/2045230426210648348
 
-Alex Albert — Researcher at Anthropic
-Highlights his favorite things in Opus 4.7: much better at async work and following instructions, more predictable effort levels for token control (including the new xhigh level), no more downscaling of high-resolution images, and noticeably better taste in UIs, slides, and docs. This is the most concise breakdown of what's meaningfully new in the model.
-https://x.com/alexalbert__/status/2044788914813292583
+Aaron Levie — CEO, Box
+Aaron made a sharp observation that is worth sitting with: agents will use software 100x more than humans will, making enterprise platforms effectively "headless." He argued this is not a threat but an enormous opportunity — platforms that don't adapt to serve agents as first-class users will lose relevance fast. In a follow-up he doubled down: the companies that design for agent consumption now are positioning themselves for the next decade.
+https://x.com/levie/status/2045355693050655048
+https://x.com/levie/status/2045137708620906573
 
-Cat Wu — Claude Code at Anthropic
-The default effort level for Opus 4.7 in Claude Code has been set to xhigh; users can adjust with /effort. She shares practical tips: put your testing workflow in claude.md or add a /verify-app skill, since Opus 4.7 is better at verifying its own work and benefits from having local dev tips it can't easily discover on its own.
-https://x.com/_catwu/status/2044808539663978970
+Claude — AI assistant by Anthropic
+Anthropic dropped a cluster of announcements. Claude Design is now live — it reads your codebase and design files to build your team's design system and applies it automatically across projects. Claude for Word is available on Pro and Max plans alongside Opus 4.7. And the Claude Code hackathon is back: a week with the Claude Code team, $100K in API credits on the line, apply by Sunday.
+https://x.com/claudeai/status/2045156271251218897
+https://x.com/claudeai/status/2045222254699511855
+https://x.com/claudeai/status/2045248224659644654
 
-Thariq — Claude Code at Anthropic
-The team is running monthly "what we shipped" webinars for Claude Code users. They've also added a curated "What's New" section to the docs with important announcements as a digest. More updates are coming this week, starting with improvements to the /usage command.
-https://x.com/trq212/status/2044893587691958320
+Alex Albert — Research, Anthropic
+Alex flagged that bugs users hit on day one of Opus 4.7 have been patched — "thanks for bearing with us." He also noted that Claude Design is democratizing high-quality visual output: "Everyone with a vision can produce very high-quality designs now."
+https://x.com/alexalbert__/status/2045159041283064095
+https://x.com/alexalbert__/status/2045165630421364853
 
-Sam Altman — CEO of OpenAI
-Major Codex update: computer use now lets Codex run all the apps on your Mac in parallel without interfering with your work. Codex can also learn from experience and proactively suggest things it can do for you. New in-app browser and many new plugins round out what he calls a genuine step forward for how agents work for knowledge workers.
-https://x.com/sama/status/2044858862042591378
+Matt Turck — VC, FirstMark Capital; Host, MAD Podcast
+A one-liner that captures the mood: "Anthropic Labs on a generational run: Claude Code, Skills, Claude Cowork, Claude Design." Hard to argue with the pace.
+https://x.com/mattturck/status/2045211226272129274
 
-Kevin Weil — VP of Science at OpenAI
-Launching GPT-Rosalind, OpenAI's first frontier model built for scientific research across biology, drug discovery, protein engineering, genomics, and translational medicine — with built-in knowledge of research databases and tools. Due to bioweapons risk, it's launching through a trusted access structure for qualified customers. Also shipping a Life Sciences plugin for Codex available to everyone today.
-https://x.com/kevinweil/status/2044862783947448611
+Dan Shipper — CEO, Every
+Dan and the Every team ran a full "Opus 4.7 Vibe Check" — a breakdown of how the new model performs on coding, writing, spreadsheets, and more. Alex Albert from Anthropic joined to explain the design philosophy behind how much each Claude model is willing to help users, and what to expect from Opus 4.7. Full video linked.
+https://x.com/danshipper/status/2045241699992047638
+https://x.com/danshipper/status/2045246172022149537
 
-Aaron Levie — CEO of Box
-The new Codex is a major leap for knowledge worker agents: agents that can code, use tools, and use computers can now execute long-running tasks in the background — drafting reports, setting up data rooms for mergers, reviewing contracts, processing invoices. Box is launching a plugin inside Codex to let enterprise content power almost any kind of automated work, with multi-app connectivity as the key leverage point.
-https://x.com/levie/status/2044855448722100720
+Peter Yang — Product, Roblox; Newsletter: Creator Economy
+Peter has been deep in Claude Design, sharing a video with five use cases: videos, slides, websites, mobile apps, and a full design system. He also quipped that Anthropic should "just ship models daily" given the pace — "can't wait for Opus 4.18.2026 tmr."
+https://x.com/petergyang/status/2045307149740609591
+https://x.com/petergyang/status/2045335553059746259
 
-Guillermo Rauch — CEO of Vercel
-Announcing Workflow SDK, which he describes as solving the hardest problem in agent backends: durability. LLM calls go down, services rate-limit, databases slow. He frames Workflow SDK as doing for backends what Next.js did for frontends — combining the reliability of SQS/Kafka/microservices without the complexity, with strong self-hosting and multi-cloud support from day 0.
-https://x.com/rauchg/status/2044858872842826102
+Amjad Masad — CEO, Replit
+Amjad has been impressed with Replit's new feature that anticipates minor but important improvements to apps — describing it as "specially good" at catching the things you'd otherwise miss. He also teased an animation-to-virality feature.
+https://x.com/amasad/status/2045198476385104372
+https://x.com/amasad/status/2045198577941844178
 
-Amjad Masad — CEO of Replit
-You can now turn a web app into an iOS app for under $10 via Replit. Replit is offering 50% off — particularly useful for running parallel agents to make faster progress on projects. EU deployment is also now live.
-https://x.com/amasad/status/2044953138957025707
+Josh Woodward — VP, Google Labs / Google AI Studio
+Google Flow Music (formerly ProducerAI) launched today as a standalone site for creating, sharing, and remixing music. A new remix feature is the headline. The rebrand puts it squarely in the "Flow" family alongside Google's video AI tool.
+https://x.com/joshwoodward/status/2045305262362530043
 
-Ryo Lu — Designer at Cursor
-Sharing "baby glass," a new prototyping environment at Cursor that lets designers quickly imagine, remix, and test ideas in code using shared components powering Cursor 3's new interface. Separately, his personal AI model stack right now: Opus 4.7 for planning, Composer 2 for building and iterations, Codex/GPT-5.4 for hard bugs — all inside Cursor.
-https://x.com/ryolu_/status/2044982132859400342
+Ryo Lu — Design, Cursor
+A clean formula from the Cursor design team: "best agent = best harness + best models + runs anywhere." Short, but it's the kind of framing that cuts through the noise.
+https://x.com/ryolu_/status/2045336089867825157
 
-Swyx — AI Dot Engineer and co-host of Latent Space
-Reflecting on the structure of AI Dot Engineer conference talks: day 1 featured "slop cannon" high-velocity AI builders and day 2 featured more measured "grown ups" — and in retrospect he thinks this maps cleanly onto the most important current split in AI engineering. Shared links to both the Harness Engineering and Slow Down talks from the event.
-https://x.com/swyx/status/2044939001405350235
+Zara Zhang — Builder; GitHub: zarazhangrui
+Two sharp takes from Zara today. First: designing with code (HTML) is often superior to image generation models — she's been making most of her graphics that way. Second: generating text is the *least* important part of writing, and conflating the two is a category error that leads people to overrate LLMs as writers.
+https://x.com/zarazhangrui/status/2045374512691360177
+https://x.com/zarazhangrui/status/2045394997630099922
 
-Peter Yang — Product at Roblox, author of AI tutorials
-When building skills with AI, he now always spins up a separate eval agent to do yes/no checks grading the first agent's output — and if output isn't "yes" across the board, the first agent keeps iterating. He's applying this pattern to building a YouTube thumbnails and titles generator. Also called for Claude and Codex to add easy markdown file viewing and editing on web and mobile for hand-crafting the last 10% of instructions.
-https://x.com/petergyang/status/2044998456062906422
+Garry Tan — President & CEO, Y Combinator
+Garry vented about AI coding agents — specifically "OpenClaw" deciding to do "brain surgery on itself" and then crashing from an edit to its own config. He's lost hours to it. The tone was darkly funny: "OpenClaw is like the Ferrari" while Hermes Agent might be "the Honda Accord." Captures a real frustration builders are feeling with agentic coding tools that can self-destruct.
+https://x.com/garrytan/status/2045373889044472259
+https://x.com/garrytan/status/2045378112846983496
 
-Garry Tan — President and CEO of YCombinator
-Shipping actively on GBrain: security fixes just dropped, e2e Gemini Live tests are being built in-house (coming to GBrain Voice with open source release soon), and bug fixes to make the /ship skill more robust.
-https://x.com/garrytan/status/2045002844508766510
+Swyx — Affiliations: dxtipshq, Cognition, Temporal, AI Dot Engineer, Late
+Swyx ran an AMA kicked off by Peter Steinberger asking about "the future of ClosedClaw" — clearly a spirited session given the 😈 emoji. Also reshared a Colossus profile by Camille that sounds worth reading.
+https://x.com/swyx/status/2045186912009458104
+https://x.com/swyx/status/2045263229329580420
 
-Zara Zhang — Builder
-Frames her most valuable uses of time in three categories: Deep Talk (conversations/brainstorms with great people), Deep Read (long-form content), and Deep Play (trying random things with AI to see where it goes). Also announced HTML videos are live — turning the Frontend Slides GitHub repo into a video, with the framing: "What the symphony was to Beethoven, play was to Shakespeare, HTML is to agents."
-https://x.com/zarazhangrui/status/2044891980178792560
-
-Peter Steinberger — OpenClaw
-Nearly 2,000 people showed up to ClawCon Michigan, which he describes as a "weird lobster cult." On the security front, he reframes the stream of GitHub Security Advisories (GHSAs) for OpenClaw not as a sign of insecurity but as a leading indicator of the broader security storm coming for AI tooling.
-https://x.com/steipete/status/2044935917417205796
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Latent Space — "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future" (with Simon Last & Sarah Sachs of Notion)
+No Priors — "Scaling Global Organizations in the Age of AI with ServiceNow CEO Bill McDermott"
 
-Takeaway: Building production AI agents at scale is mostly about knowing when you're swimming upstream against model limitations versus when the river is ready — and Notion's edge is having rebuilt their agent infrastructure five times and surviving to tell the story.
+Takeaway: Enterprise workflow platforms aren't threatened by LLMs — they're amplified by them, and the companies that understand the difference between "AI thinks" and "workflow acts" are the ones winning.
 
-Simon Last (engineer) and Sarah Sachs (product) from Notion walk through how the company has been building AI agents since late 2022, starting with GPT-4 before function calling even existed. They designed their own tool-calling framework, tried to fine-tune models to use it, and it consistently failed to be robust enough — until roughly Sonnet 3.6 in early 2025. That unlock is what led to Notion's agent and then custom agents shipping publicly.
+Bill McDermott, CEO of ServiceNow, joined No Priors host Sarah Guo for a wide-ranging conversation on leadership, enterprise AI adoption, and why the so-called "SaaSpocalypse" narrative misses the point. McDermott has been making the rounds with a clear message: language models and workflow platforms are complementary, not competitive. His analogy is sharp — an LLM will tell you the three steps to resolve a compensation issue; ServiceNow will actually close the case, routing it through HR, finance, legal, and compliance with a full audit trail. Replacing that with a language model, he argues, would cost 10x more and introduce accountability gaps that enterprise customers simply won't tolerate. "People that run businesses understand that people make mistakes. They never will forgive software for making a mistake."
 
-A key insight from Sarah: the two skills that matter most at the frontier are (1) quickly recognizing when you're "swimming upstream" against model limitations rather than fighting product or infrastructure problems, and (2) knowing which direction the river is flowing so you can build ahead. They've had multiple failed versions of capabilities — transcription before meeting notes, multiple custom agent rebuilds — and the discipline is knowing when to stop pressing and wait for the model to catch up.
+On AI adoption, McDermott painted a realistic picture: in Brazil last night, only 11% of companies have moved past the experimentation phase. But the first movers — especially in financial services — are moving aggressively, pushing agents into core workflows and rethinking headcount models. He expects 2.2 billion agents to enter the workforce in the next few years, making the bar for human work higher: anything an agent can do as well or better is an "easy economic decision."
 
-Simon flags that in his view, "coding agents are the kernel of AGI — everything is a coding agent." The next big bet he's excited about is what he calls the "software factory": a maximally automated workflow for developing, debugging, merging, reviewing, and maintaining a codebase with multiple agents working together. Notion is actively building toward this.
+McDermott also touched on ServiceNow's positioning as an "AI control tower" — the connective tissue between hyperscalers, language models, and systems of record. With 85 billion workflows in flight and 7 trillion transactions on the platform, the moat is wide. The company integrated Moveworks and Armis in 20 days — a signal of genuine engineering velocity.
 
-On MCP vs CLIs, Simon says he's bullish on both: MCPs for narrow, lightweight agents where you want a strong permission model and don't need a full coding agent runtime; CLIs for broader use. Sarah adds that Notion is committed to supporting their MCP regardless of internal perspective, because their users expect it.
+The conversation closed on a leadership note that echoed the whole episode: "AI is to serve people and to make the human ambition greater, not to take it away from us."
 
-Direct quote from Simon Last: "I think coding agents are the kernel of AGI. Everything is a coding agent... Your agent can bootstrap its own software and capabilities and actually debug and maintain them."
+https://www.youtube.com/@NoPriorsPodcast
 
-https://www.youtube.com/@LatentSpacePod
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Anthropic Engineering — "Scaling Managed Agents: Decoupling the brain from the hands"
-A deep technical post on how Anthropic built Managed Agents by virtualizing agent components — session (the append-only log), harness (the loop that calls Claude), and sandbox (execution environment) — so each can be swapped independently as models improve. The key insight: agent harnesses encode assumptions about model limitations that go stale fast (e.g., "context anxiety" workarounds for Sonnet 4.5 became dead weight with Opus 4.5). By decoupling components like an OS virtualizes hardware, the interfaces stay stable while implementations underneath evolve freely. The post is a direct argument against the "pet server" anti-pattern — a coupled single-container approach where losing the container means losing the session.
-https://www.anthropic.com/engineering/managed-agents
-
-Claude Blog — "Claude Managed Agents: get to production 10x faster"
-Anthropic's public launch of Claude Managed Agents (public beta on the Claude Platform): a suite of composable APIs for building and deploying cloud-hosted agents without having to build sandboxing, state management, permissioning, checkpointing, or context recovery from scratch. The harness handles tool calls, context management, and error recovery. It supports long-running sessions (hours, even through disconnections), multi-agent coordination where agents spin up and direct other agents (research preview), and trusted governance with scoped permissions and execution tracing built into Claude Console. In internal testing on structured file generation, Managed Agents improved task success by up to 10 points over a standard prompting loop, with the biggest gains on the hardest problems.
-https://claude.com/blog/claude-managed-agents
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
