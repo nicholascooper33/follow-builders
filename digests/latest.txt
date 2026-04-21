@@ -1,86 +1,91 @@
-AI Builders Digest — April 20, 2026
+AI Builders Digest — April 21, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Guillermo Rauch — CEO, Vercel
-
-Rauch issued a detailed public statement about a major security incident at Vercel. A Vercel employee's account was compromised through the breach of an AI platform they were using, which allowed a sophisticated attacker to escalate access into Vercel's internal environments. While customer environment variables are stored fully encrypted at rest, some "non-sensitive" variables were exposed through enumeration. Rauch described the attacking group as "highly sophisticated and, I strongly suspect, significantly accelerated by AI" — noting they moved with surprising velocity and deep understanding of Vercel's systems. He's engaged Google Mandiant, elite cybersecurity firms, and law enforcement. All customers are advised to rotate secrets and follow Vercel's Security Bulletin.
-
-https://x.com/rauchg/status/2045995362499076169
+Claude AI (Anthropic's official AI assistant account) announced Cowork, a major new capability now live on all paid plans. In Cowork, Claude can build live artifacts — dashboards and trackers that stay connected to your apps and files, refreshing with current data every time you open them. Everything you build is saved to a new Live Artifacts tab with full version history, accessible from any session.
+https://x.com/claudeai/status/2046328619249684989
 
 ---
 
-Aaron Levie — CEO, Box
-
-Levie pushed back on the narrative that AI will simply eliminate jobs, arguing the opposite: AI will cause most roles to grow in complexity, not shrink. Because AI raises the floor of what everyone can accomplish, workers will tackle bigger problems — and the expertise required keeps rising. "The engineer with AI is going to be far more productive and capable with AI than the non-engineer trying to build the same piece of software. Building a lightweight app is no longer the definition of getting by in software development."
-
-https://x.com/levie/status/2046067263326028108
+Swyx (AI engineer community builder; affiliations with Cognition, Temporal, AI Engineer World's Fair, Latent Space Podcast) is fired up about the Codex + Sky by Software acquisition. He calls it one of the best OpenAI deals of the past year, noting that "real" computer use — first teased at AIEWF 2024 via 4o Vision — is only now actually rolling out in a usable form.
+https://x.com/swyx/status/2046362691606855700
 
 ---
 
-Zara Zhang — Builder & Founder
-
-Zhang argues that as AI handles more execution, product teams should shift time toward external communication — talking to users and customers. Understanding the right problem to solve will matter far more than implementing solutions, internal coordination will shrink as teams get smaller, and some indie founders are already dumping customer recordings to their agents to decide what to build next.
-
-https://x.com/zarazhangrui/status/2045810170245386713
+Peter Yang (product at Roblox, author of a 140K-subscriber AI newsletter) made three sharp observations in quick succession: AI design tools can close Codex's gap in frontend skills (he likes Pencil by Tom Krcha); coding and designing with agents are equally fun; and the most innovative companies rarely have a rigid 2026 roadmap.
+https://x.com/petergyang/status/2046434474603446535
 
 ---
 
-Peter Yang — Product at Roblox, AI Tutorials Creator (140K+ readers)
-
-Yang documented a frustrating afternoon trying to get OpenClaw (an AI coding harness) working with GPT, finding the model struggled with agentic and cron-style tasks that Claude handles easily. After the model repeatedly botched templates, Yang wrote: "No you totally screwed it up tbh. let's switch the model to sonnet." He noted this mirrors feedback from his AI builder networks and is pinning his hopes on "Spud / GPT 5.5" to fix the issue.
-
-https://x.com/petergyang/status/2046036593199497615
+Guillermo Rauch (CEO, Vercel) is responding to a security incident openly. Vercel has shipped over 20 product improvements across Dashboard and CLI to strengthen users' security posture — easier MFA setup, environment variable auditing, activity logs, and more. He directed users to the live security bulletin as the authoritative source and reiterated that Vercel directly contacted all customers it believes were affected.
+https://x.com/rauchg/status/2046406894269747668
 
 ---
 
-Garry Tan — President & CEO, Y Combinator
-
-Tan released GStack v1.4 — an open-source toolkit he builds with Claude Code whenever he hits a gap in his own workflows. The new release adds a /make-pdf skill and integrates cleanly with OpenClaw/Hermes as a tool. His workflow: spot a gap, have Claude Code build the solution, release it open source. He also offered a workaround tip for OpenClaw users struggling with missing cron/subagent support: have your OpenClaw implement those patterns itself.
-
-https://x.com/garrytan/status/2046097059057651941
+Aaron Levie (CEO, Box) offered a clear-eyed take on enterprise AI adoption: the jump from chatbot to actual workflow automation is non-trivial, and most companies will need dedicated people responsible for driving that automation rather than leaving it to every individual employee.
+https://x.com/levie/status/2046397816755634340
 
 ---
 
-Nikunj Kothari — Partner, FPV Ventures
-
-Kothari flagged that cybersecurity companies are poised for massive growth as AI accelerates the pace and sophistication of attacks. "Humans will continue to be the primary vector of attack — and we haven't seen anything yet." He extended sympathies to infra providers dealing with the current wave of incidents, alluding to the Vercel breach dominating feeds.
-
-https://x.com/nikunj/status/2046007615512256624
+Zara Zhang (builder, open-source developer) made the case that agents should express themselves in HTML — their native language — rather than XML. Her observation: agents produce noticeably better-looking slides and structured output in HTML than in XML.
+https://x.com/zarazhangrui/status/2046454622852657264
 
 ---
 
-Nan Yu — Head of Product, Linear
+Peter Steinberger (Polyagentmorous ClawFather; OpenClaw + OpenAI) shipped two tool releases in the same day: wacli 0.6.0 (WhatsApp CLI) with a big security and reliability sweep — hardened SQLite/store path handling, sanitized search queries, recovered sync/media panics, added WACLI_STORE_DIR, and improved SIGINT exits; and gog 0.13 (Gmail/Google Workspace CLI) with Gmail forwarding with notes and attachments, autoreplies, full-body search, Markdown uploads to Google Docs, rendered Slides thumbnails, Sheets chart editing, secondary calendars, commenter-only Drive shares, and safer no-send controls. He also announced collaboration with Tencent to improve OpenClaw's harness performance and feed fixes back to the open-source repo.
+https://x.com/steipete/status/2046375922031321401
+https://x.com/steipete/status/2046356596683411924
+https://x.com/steipete/status/2046259696722465113
 
-Yu offered a sharp observation on authenticity and PR: "If people think you're bad at PR then they tend to believe you're not lying to them, which, if you think about it, makes you good at PR." He also posed a question worth sitting with: if every major AI lab issued a press release today, which one would have the shortest gap between what they said and what they actually believe?
+---
 
-https://x.com/thenanyu/status/2045903644298465422
-https://x.com/thenanyu/status/2045910980597530836
+Dan Shipper (CEO, Every) shared a punchy trio: "two agents are better than one," "Opus 4.7 does good code reviews," and "media is cool again." Brief, but a signal that multi-agent workflows and Claude's latest model are getting real daily use at Every.
+https://x.com/danshipper/status/2046231280430240141
 
-━━━━━━━━━━━━━━━━━━━━━━━━
+---
+
+Matt Turck (VC, FirstMark Capital; organizer of Data Driven NYC) pushed back on a popular but flawed framing: the idea that AI's total addressable market equals the entire human labor market dollar-for-dollar. His correction: like every labor automation technology in history, the price of AI services will settle at marginal cost plus a normal margin — not at the price of the human labor it displaces.
+https://x.com/mattturck/status/2046284478151086178
+
+---
+
+Sam Altman (CEO, OpenAI) teased something that felt like "telepathy" — the internal working name for what appears to be a significant new capability rolling out. No further detail in the tweet, but the framing suggests something in the spatial/ambient computing direction.
+https://x.com/sama/status/2046330082726384051
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning — Ep 84: OpenAI's Chief Scientist on Continual Learning Hype, RL Beyond Code & Future Alignment Directions
+No Priors: "The Agentic Economy: How AI Agents Will Transform the Financial System" with Jeremy Allaire (Co-Founder & CEO, Circle)
+https://www.youtube.com/watch?v=eyobeqMdbeI
 
-OpenAI's Chief Scientist isn't worried about the "continual learning" hype cycle — because, in his view, continual learning is exactly what they've been building toward all along.
+Takeaway: The agentic economy is being born right now, and existing financial infrastructure — built for humans — cannot support the billions of micro-transactions, real-time settlements, and dynamically-spawned financial endpoints that AI agents will require.
 
-In a wide-ranging conversation with Jacob Efron on Unsupervised Learning, the Chief Scientist covered the current state of model capabilities, what it will take to reach autonomous AI researchers, and why alignment is more tractable now than it seemed just a few years ago.
+Jeremy Allaire joined No Priors to argue that stablecoins and blockchain infrastructure aren't just crypto novelties — they're the necessary financial plumbing for a world where AI agents autonomously conduct economic activity. He traced Circle's origin to 2013, when he believed the internet needed a "protocol for dollars": full-reserve, programmable money that could move instantly and globally at near-zero cost. USDC, now codified in US law under the Genius Act, is that vision realized.
 
-On model progress: He called the explosive rise of coding tools — now used for "the majority of actual coding" at OpenAI — a clear signal that something is on track. He expects gradual increases in model autonomy over the next 3–6 months, with models capable of working autonomously for a couple of days arriving soon, producing "much higher quality artifacts on their own."
+The bulk of the conversation turned to what Allaire calls the agentic economy. As AI agents begin doing more and more of the white-collar economy's work — consuming services from each other, paying for specialized intelligence, settling contracts — the financial system needs infrastructure that works like the internet: always on, globally interoperable, programmable by any piece of software, and capable of scaling to trillions of transactions. "We need transactions that can scale potentially into the billions or trillions... We need that to work in real time, again, between any piece of hardware, software, anywhere in the world." Legacy banking systems, he argues, cannot do this.
 
-On RL beyond coding and math: He sees reinforcement learning expanding to harder-to-verify domains like medicine, law, and finance, framing it as the same challenge as longer-horizon tasks — where even well-specified problems require open-ended daily decisions. He's optimistic about scaling RL to general domains, but flagged that in-context learning may ultimately be more efficient for most business use cases than building custom RL pipelines.
+Circle's answer is ARC, which Allaire describes as an "economic operating system" for this machine-driven economy. Unlike earlier blockchains designed for censorship resistance outside the financial mainstream, ARC is built with a known validator set of major financial infrastructure companies, deterministic settlement finality in hundreds of milliseconds, and USDC as the native token — real dollars, no volatile gas token. Privacy primitives are built in from day one.
 
-On alignment: He highlighted chain-of-thought monitoring as a powerful and underrated alignment tool. Because chain-of-thought is not directly supervised during training, it can reveal a model's actual reasoning in ways that final outputs cannot. "Allowing the models some sort of private space... the important thing is not supervising [the chain of thought] during training. If we established a paradigm where you just shout these chains of thought in product, eventually you kind of have to train them." His broader view: alignment has moved from a "nebulous problem" toward concrete technical progress, but his timelines to very capable models have shortened — requiring the industry to be prepared to make hard trade-offs.
+Allaire is also bullish on tokenized real-world assets (tokenized stocks, treasuries, euros) and on-chain prediction markets, noting that USDC already powers Polymarket. On the GDP question, he thinks double-digit growth in the 2030s is "not unrealistic" — but warns the real risk is that AI-driven GDP growth concentrates at the capital level rather than flowing to humans, making the construction of a new social contract the defining challenge of the coming decade.
 
-On AI for science: He shared that OpenAI's models have already solved problems from a "First Proof" challenge — problems designed by expert mathematicians to represent real research work, with no published solutions. "Seeing the model come up with these ideas, which I would be quite proud to come up with in a week or two, seeing it come up with them in an hour or so — that was a very weird feeling."
+Direct quote: "Agentic economic activity is actually how does the organization of what we used to think of as labor and capital — how does this organization of kind of compute work happen, and what kinds of corporate forms might emerge in that world to do that."
 
-On governance: His biggest societal concern isn't job displacement per se, but highly capable automated organizations controlled by a very small number of people — and the lack of any clear governance framework for that scenario. "What does governance of such things look like? What are these organizations that are so powerful and yet maybe made of only a couple of people?"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-https://www.youtube.com/watch?v=vK1qEF3a3WM
+Claude Blog: "Preparing your security program for AI-accelerated offense"
+https://claude.com/blog/preparing-your-security-program-for-ai-accelerated-offense
 
-━━━━━━━━━━━━━━━━━━━━━━━━
+Anthropic's security engineering and research teams published a practical, prioritized guide for security programs in the age of AI-accelerated attacks. The core warning: within the next 24 months, frontier AI models will find and chain bugs that have sat unnoticed in production code for years — and attackers will use the same tools first unless defenders move fast.
+
+The seven priority areas, ranked by urgency: (1) Close your patch gap — patch KEV catalog items immediately, use EPSS to prioritize the rest, target 24-hour patch windows for internet-facing systems. (2) Handle a much higher volume of vulnerability reports — plan for an order-of-magnitude increase in findings, automate triage with AI in the loop. (3) Find bugs before you ship — add AI-assisted code review and automated penetration testing to CI/CD pipelines, adopt memory-safe languages for new code. (4) Find vulnerabilities already in your code — proactively scan your own codebase with a frontier model before attackers do, prioritizing code that parses untrusted input or enforces auth decisions. (5) Design for breach — zero trust architecture, hardware-bound credentials, short-lived tokens; mitigations that only work through friction are now much less effective against AI-powered attackers. (6) Reduce and inventory your exposed surface — maintain a real-time inventory, decommission legacy services, use AI to identify unused endpoints and run autonomous external red-teaming. (7) Shorten incident response time — put a model at the front of your alert queue, automate incident bookkeeping, run tabletop exercises that simulate five simultaneous incidents in one week.
+
+The post also includes specific guidance for submitting vulnerability reports responsibly — including the advice to disclose AI involvement upfront, provide a working reproduction, and include a proposed patch — as open-source maintainers are already overwhelmed by low-quality automated reports.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
