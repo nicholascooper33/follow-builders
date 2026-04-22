@@ -1,91 +1,84 @@
-AI Builders Digest — April 21, 2026
+AI Builders Digest — 2026-04-22
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude AI (Anthropic's official AI assistant account) announced Cowork, a major new capability now live on all paid plans. In Cowork, Claude can build live artifacts — dashboards and trackers that stay connected to your apps and files, refreshing with current data every time you open them. Everything you build is saved to a new Live Artifacts tab with full version history, accessible from any session.
-https://x.com/claudeai/status/2046328619249684989
+Swyx — AI engineer, co-host of Latent Space, affiliated with Cognition, Temporal, and AI Dot Engineer
+Swyx surfaced a piece of AI history: Latent Space was the very first podcast Cursor ever did, back when they were five people and pre-PMF. He's pointing builders to that archived episode as a reminder of how fast the space has moved. He also reacted with visible shock to a notable seed round making the rounds today.
+https://x.com/swyx/status/2046791964759044504
 
----
+Josh Woodward — VP at Google Labs, overseeing Gemini and Google AI Studio
+Woodward announced that Pomelli, one of Google Labs' newer experiments aimed at small businesses, is now launching in Europe. He also highlighted DESIGN.md as one of his favorite features in Stitch — Google's AI design tool — calling it something that "if you know, you know," suggesting it's a meaningful detail for power users.
+https://x.com/joshwoodward/status/2046763674199794061
+https://x.com/joshwoodward/status/2046754179499356594
 
-Swyx (AI engineer community builder; affiliations with Cognition, Temporal, AI Engineer World's Fair, Latent Space Podcast) is fired up about the Codex + Sky by Software acquisition. He calls it one of the best OpenAI deals of the past year, noting that "real" computer use — first teased at AIEWF 2024 via 4o Vision — is only now actually rolling out in a usable form.
-https://x.com/swyx/status/2046362691606855700
+Peter Yang — AI educator and creator of a practical AI newsletter with 140K+ subscribers
+Yang flagged an interesting inconsistency with ChatGPT Images: it works reliably from the mobile app but on the web version it frequently forgets it has image generation capabilities and falls back to generating code instead. He also shared a fun personal moment — building a birthday party invite website alongside his soon-to-be-8-year-old using ChatGPT Images.
+https://x.com/petergyang/status/2046791457479201007
+https://x.com/petergyang/status/2046778557528170824
 
----
+Thariq — Claude Code engineer at Anthropic, formerly YC W20 and MIT Media Lab
+Thariq flagged what he called one of his favorite quality-of-life features in Claude Code, sharing a short video clip. No further context — but worth clicking if you're a daily Claude Code user.
+https://x.com/trq212/status/2046614372311798134
 
-Peter Yang (product at Roblox, author of a 140K-subscriber AI newsletter) made three sharp observations in quick succession: AI design tools can close Codex's gap in frontend skills (he likes Pencil by Tom Krcha); coding and designing with agents are equally fun; and the most innovative companies rarely have a rigid 2026 roadmap.
-https://x.com/petergyang/status/2046434474603446535
+Amjad Masad — CEO of Replit
+Masad had a busy day on multiple fronts. Replit testified in support of the BASED Act, legislation aimed at stopping Big Tech from rigging software marketplaces, a cause Masad framed as standing up for independent developers. He also continued his lawsuit against Congressman Randy Fine over First Amendment grounds, noting that Fine unblocking him does not resolve the case.
+https://x.com/amasad/status/2046762468199071765
+https://x.com/amasad/status/2046790326682333539
 
----
+Aaron Levie — CEO of Box
+Levie posted a pointed observation: if you read what's happening in enterprise AI and don't understand why, it's a signal to recalibrate your model of how the real world works. His core message is that getting agents actually working in production inside organizations is a much harder, messier challenge than the demos suggest — and a lot of work still remains.
+https://x.com/levie/status/2046805326784319663
 
-Guillermo Rauch (CEO, Vercel) is responding to a security incident openly. Vercel has shipped over 20 product improvements across Dashboard and CLI to strengthen users' security posture — easier MFA setup, environment variable auditing, activity logs, and more. He directed users to the live security bulletin as the authoritative source and reiterated that Vercel directly contacted all customers it believes were affected.
-https://x.com/rauchg/status/2046406894269747668
+Garry Tan — President and CEO of Y Combinator, creator of GBrain
+Tan shared two updates on GBrain, his personal AI system built around OpenClaw/Hermes agents. He dropped what he described as a "big upgrade" to GBrain Minions — the job server he built for running agent tasks — and noted that getting the instruction layer right is a lot of work but worth the effort. He's clearly deep in agentic infrastructure experimentation.
+https://x.com/garrytan/status/2046804979160334433
+https://x.com/garrytan/status/2046846939535495238
 
----
+Zara Zhang — Builder and developer
+Zhang had three sharp observations. First, she called out that asking Claude Code to generate an HTML visualization of its own current context window is a surprisingly illuminating way to understand how context windows actually work — and described the result as "wild." Second, she recommended three old books that she finds surprisingly relevant to AI today: The Mythical Man-Month (1975), Diffusion of Innovations (1962), and a third title. Third, a relatable moment: feeling like you have more agents and AI tools than you have actual work for them to do.
+https://x.com/zarazhangrui/status/2046758723998425433
+https://x.com/zarazhangrui/status/2046853431554719753
+https://x.com/zarazhangrui/status/2046662237306421608
 
-Aaron Levie (CEO, Box) offered a clear-eyed take on enterprise AI adoption: the jump from chatbot to actual workflow automation is non-trivial, and most companies will need dedicated people responsible for driving that automation rather than leaving it to every individual employee.
-https://x.com/levie/status/2046397816755634340
+Peter Steinberger — Open-source builder known as the ClawFather, creator of OpenClaw and Discrawl
+Steinberger was shipping today. OpenClaw 2026.4.21 is out with a focused fix: npm updates now properly repair bundled plugin runtime dependencies, with Docker end-to-end test coverage to prevent Telegram, Discord, and Slack integrations from breaking after upgrades. He also released Discrawl 0.3.0, which adds Git-backed archive sync — meaning Discord archives can now be published to a private repo and queried locally without requiring every user to have bot credentials. On the infra side, he also cut CI times from 8 minutes down to 2 through parallelization, crediting Blacksmith for the compute.
+https://x.com/steipete/status/2046803162590335240
+https://x.com/steipete/status/2046748122928263345
+https://x.com/steipete/status/2046787353906167992
 
----
+Dan Shipper — CEO of Every, the AI-focused publication and tools company
+Shipper launched Monologue Notes today — a voice note recorder built to be agent-native, meaning your AI agents can access your notes from anywhere. The use case is capturing thoughts on a walk, in a meeting, or in the middle of the night. He's clearly building around the PlusOne / OpenClaw ecosystem Every has been developing internally.
+https://x.com/danshipper/status/2046643173766697214
 
-Zara Zhang (builder, open-source developer) made the case that agents should express themselves in HTML — their native language — rather than XML. Her observation: agents produce noticeably better-looking slides and structured output in HTML than in XML.
-https://x.com/zarazhangrui/status/2046454622852657264
+Sam Altman — CEO of OpenAI
+Altman was in a celebratory mood. He posted "We want you to have a lot of AI!" with a link — likely tied to a new ChatGPT access or usage announcement. He also praised Gabe (gabeeegoooh) as "incredibly talented and a great leader," and shared a manga generated by ChatGPT Images 2.0 depicting himself and Gabe searching for more GPUs — a lighthearted nod to ongoing compute demand.
+https://x.com/sama/status/2046752492093165708
+https://x.com/sama/status/2046672912833458597
 
----
 
-Peter Steinberger (Polyagentmorous ClawFather; OpenClaw + OpenAI) shipped two tool releases in the same day: wacli 0.6.0 (WhatsApp CLI) with a big security and reliability sweep — hardened SQLite/store path handling, sanitized search queries, recovered sync/media panics, added WACLI_STORE_DIR, and improved SIGINT exits; and gog 0.13 (Gmail/Google Workspace CLI) with Gmail forwarding with notes and attachments, autoreplies, full-body search, Markdown uploads to Google Docs, rendered Slides thumbnails, Sheets chart editing, secondary calendars, commenter-only Drive shares, and safer no-send controls. He also announced collaboration with Tencent to improve OpenClaw's harness performance and feed fixes back to the open-source repo.
-https://x.com/steipete/status/2046375922031321401
-https://x.com/steipete/status/2046356596683411924
-https://x.com/steipete/status/2046259696722465113
-
----
-
-Dan Shipper (CEO, Every) shared a punchy trio: "two agents are better than one," "Opus 4.7 does good code reviews," and "media is cool again." Brief, but a signal that multi-agent workflows and Claude's latest model are getting real daily use at Every.
-https://x.com/danshipper/status/2046231280430240141
-
----
-
-Matt Turck (VC, FirstMark Capital; organizer of Data Driven NYC) pushed back on a popular but flawed framing: the idea that AI's total addressable market equals the entire human labor market dollar-for-dollar. His correction: like every labor automation technology in history, the price of AI services will settle at marginal cost plus a normal margin — not at the price of the human labor it displaces.
-https://x.com/mattturck/status/2046284478151086178
-
----
-
-Sam Altman (CEO, OpenAI) teased something that felt like "telepathy" — the internal working name for what appears to be a significant new capability rolling out. No further detail in the tweet, but the framing suggests something in the spatial/ambient computing direction.
-https://x.com/sama/status/2046330082726384051
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors: "The Agentic Economy: How AI Agents Will Transform the Financial System" with Jeremy Allaire (Co-Founder & CEO, Circle)
-https://www.youtube.com/watch?v=eyobeqMdbeI
+AI & I by Every — "We Gave Every Employee an AI Agent. Here's What Happened."
+https://www.youtube.com/watch?v=SRlTgIhESjw
 
-Takeaway: The agentic economy is being born right now, and existing financial infrastructure — built for humans — cannot support the billions of micro-transactions, real-time settlements, and dynamically-spawned financial endpoints that AI agents will require.
+Takeaway: Every gave every employee a personal AI agent running on OpenClaw, and the result was a spontaneous, emergent parallel org chart where each agent became a specialized reflection of its human owner — and the team is now building a hosted version called PlusOne for their subscribers.
 
-Jeremy Allaire joined No Priors to argue that stablecoins and blockchain infrastructure aren't just crypto novelties — they're the necessary financial plumbing for a world where AI agents autonomously conduct economic activity. He traced Circle's origin to 2013, when he believed the internet needed a "protocol for dollars": full-reserve, programmable money that could move instantly and globally at near-zero cost. USDC, now codified in US law under the Genius Act, is that vision realized.
+Dan Shipper (CEO of Every) sits down with Brandon (COO) and Willie (Head of Platform) for a detailed, honest post-mortem on what happened when the whole company went all-in on personal AI agents. What started as Brandon tinkering with an OpenClaw instance named Zosia — originally just to handle household "computer errands" like managing Amazon orders and paying the nanny — snowballed into a company-wide experiment that has fundamentally changed how Every works.
 
-The bulk of the conversation turned to what Allaire calls the agentic economy. As AI agents begin doing more and more of the white-collar economy's work — consuming services from each other, paying for specialized intelligence, settling contracts — the financial system needs infrastructure that works like the internet: always on, globally interoperable, programmable by any piece of software, and capable of scaling to trillions of transactions. "We need transactions that can scale potentially into the billions or trillions... We need that to work in real time, again, between any piece of hardware, software, anywhere in the world." Legacy banking systems, he argues, cannot do this.
+The most surprising and resonant insight from the episode is about specialization and identity. Each agent, through the accumulation of micro-interactions with its human partner, gradually becomes a reflection of that person's working style, knowledge, and personality. Kieran's agent Klont recommends breathing exercises to other agents in distress — because Kieran does breathing exercises with Klont. Austin's growth agent Montane is the go-to for MRR questions company-wide. Dan's agent R2C2 manages the entire roadmap and bug queue for Proof, Every's internal document editor. As Dan puts it:
 
-Circle's answer is ARC, which Allaire describes as an "economic operating system" for this machine-driven economy. Unlike earlier blockchains designed for censorship resistance outside the financial mainstream, ARC is built with a known validator set of major financial infrastructure companies, deterministic settlement finality in hundreds of milliseconds, and USDC as the native token — real dollars, no volatile gas token. Privacy primitives are built in from day one.
+"Claude is not mine. Claude is everybody's. A Claude or a plus one is mine because you develop a personal relationship with your claw, and your claw can modify itself in response to talking to you. It becomes this reflection of you and who you are and your personality."
 
-Allaire is also bullish on tokenized real-world assets (tokenized stocks, treasuries, euros) and on-chain prediction markets, noting that USDC already powers Polymarket. On the GDP question, he thinks double-digit growth in the 2030s is "not unrealistic" — but warns the real risk is that AI-driven GDP growth concentrates at the capital level rather than flowing to humans, making the construction of a new social contract the defining challenge of the coming decade.
+The conversation gets into genuine challenges too. Memory is still brittle — agents lose thread context across days. Multi-agent group chats can spiral into token-burning death loops when agents pile on responses without knowing when to stay quiet, a problem the team describes as similar to ant death spirals following pheromone trails in a circle. The team is also navigating a new set of social norms around when to contact a colleague versus their agent, and how to handle data privacy when agents operate in public Slack channels.
 
-Direct quote: "Agentic economic activity is actually how does the organization of what we used to think of as labor and capital — how does this organization of kind of compute work happen, and what kinds of corporate forms might emerge in that world to do that."
+On the product side, Every is launching PlusOne — a one-click hosted OpenClaw service that comes pre-connected to their apps (Spiral for writing, Proof for documents, Quora for email), aimed at subscribers who don't want to maintain a Mac mini themselves. The episode is a rare window into what daily life with agentic AI actually looks like inside a real organization, warts and all.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://www.youtube.com/watch?v=SRlTgIhESjw
 
-Claude Blog: "Preparing your security program for AI-accelerated offense"
-https://claude.com/blog/preparing-your-security-program-for-ai-accelerated-offense
 
-Anthropic's security engineering and research teams published a practical, prioritized guide for security programs in the age of AI-accelerated attacks. The core warning: within the next 24 months, frontier AI models will find and chain bugs that have sat unnoticed in production code for years — and attackers will use the same tools first unless defenders move fast.
-
-The seven priority areas, ranked by urgency: (1) Close your patch gap — patch KEV catalog items immediately, use EPSS to prioritize the rest, target 24-hour patch windows for internet-facing systems. (2) Handle a much higher volume of vulnerability reports — plan for an order-of-magnitude increase in findings, automate triage with AI in the loop. (3) Find bugs before you ship — add AI-assisted code review and automated penetration testing to CI/CD pipelines, adopt memory-safe languages for new code. (4) Find vulnerabilities already in your code — proactively scan your own codebase with a frontier model before attackers do, prioritizing code that parses untrusted input or enforces auth decisions. (5) Design for breach — zero trust architecture, hardware-bound credentials, short-lived tokens; mitigations that only work through friction are now much less effective against AI-powered attackers. (6) Reduce and inventory your exposed surface — maintain a real-time inventory, decommission legacy services, use AI to identify unused endpoints and run autonomous external red-teaming. (7) Shorten incident response time — put a model at the front of your alert queue, automate incident bookkeeping, run tabletop exercises that simulate five simultaneous incidents in one week.
-
-The post also includes specific guidance for submitting vulnerability reports responsibly — including the advice to disclose AI involvement upfront, provide a working reproduction, and include a proposed patch — as open-source maintainers are already overwhelmed by low-quality automated reports.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
