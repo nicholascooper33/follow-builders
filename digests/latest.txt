@@ -1,84 +1,84 @@
-AI Builders Digest — 2026-04-22
+AI Builders Digest — April 23, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — AI engineer, co-host of Latent Space, affiliated with Cognition, Temporal, and AI Dot Engineer
-Swyx surfaced a piece of AI history: Latent Space was the very first podcast Cursor ever did, back when they were five people and pre-PMF. He's pointing builders to that archived episode as a reminder of how fast the space has moved. He also reacted with visible shock to a notable seed round making the rounds today.
-https://x.com/swyx/status/2046791964759044504
+Sam Altman — "AI is cool I guess" / OpenAI CEO
+Sam endorsed ChatGPT's new agent capabilities, saying "These are cool! I think most companies will want to use them." The announcement drew over 4,000 likes, reflecting broad enterprise appetite for agentic AI workflows now becoming available in ChatGPT.
+https://x.com/sama/status/2047017964105597009
 
-Josh Woodward — VP at Google Labs, overseeing Gemini and Google AI Studio
-Woodward announced that Pomelli, one of Google Labs' newer experiments aimed at small businesses, is now launching in Europe. He also highlighted DESIGN.md as one of his favorite features in Stitch — Google's AI design tool — calling it something that "if you know, you know," suggesting it's a meaningful detail for power users.
-https://x.com/joshwoodward/status/2046763674199794061
-https://x.com/joshwoodward/status/2046754179499356594
+Claude (Anthropic)
+Anthropic's Claude account announced that interactive charts and diagrams are now available in Claude Cowork, rolling out in beta on all paid plans. The announcement drew nearly 5,700 likes, reflecting strong interest in richer in-app visualizations.
+https://x.com/claudeai/status/2047047633416397076
 
-Peter Yang — AI educator and creator of a practical AI newsletter with 140K+ subscribers
-Yang flagged an interesting inconsistency with ChatGPT Images: it works reliably from the mobile app but on the web version it frequently forgets it has image generation capabilities and falls back to generating code instead. He also shared a fun personal moment — building a birthday party invite website alongside his soon-to-be-8-year-old using ChatGPT Images.
-https://x.com/petergyang/status/2046791457479201007
-https://x.com/petergyang/status/2046778557528170824
+Aaron Levie — CEO, Box
+Aaron called the new ChatGPT agents "probably the biggest news yet in software going headless," arguing it will bring knowledge work agents to the masses. He demonstrated a custom sales assistant using Box as an MCP-powered knowledge source, showing how agents can access and generate enterprise content on the fly. He sees a big opportunity for headless platforms and "all the new builders and designers of these agents in the enterprise."
+https://x.com/levie/status/2047028112626749645
 
-Thariq — Claude Code engineer at Anthropic, formerly YC W20 and MIT Media Lab
-Thariq flagged what he called one of his favorite quality-of-life features in Claude Code, sharing a short video clip. No further context — but worth clicking if you're a daily Claude Code user.
-https://x.com/trq212/status/2046614372311798134
+Ryo Lu — Designer at Cursor
+Ryo wrote a widely-shared essay (1,100+ likes) on "overcooking" — when individually reasonable product decisions accumulate into incoherent chaos. AI makes this problem worse by reducing the cost of adding features to nearly zero, which means the discipline to say no matters more than ever. "What we need aren't more tools that make more slop. It's seeing through the chaos, and returning to what the thing actually is, and cutting everything that doesn't serve that."
+https://x.com/ryolu_/status/2046957675079237668
 
-Amjad Masad — CEO of Replit
-Masad had a busy day on multiple fronts. Replit testified in support of the BASED Act, legislation aimed at stopping Big Tech from rigging software marketplaces, a cause Masad framed as standing up for independent developers. He also continued his lawsuit against Congressman Randy Fine over First Amendment grounds, noting that Fine unblocking him does not resolve the case.
-https://x.com/amasad/status/2046762468199071765
-https://x.com/amasad/status/2046790326682333539
+Guillermo Rauch — CEO, Vercel
+Guillermo shared a detailed update on Vercel's ongoing security investigation. After processing nearly a petabyte of logs, the team traced a threat actor who distributes malware targeting API tokens for Vercel and other cloud providers, with a repeated pattern of enumerating non-sensitive environment variables. Vercel is collaborating with Microsoft, AWS, and Wiz, and has proactively notified other suspected victims. Full details in the security bulletin linked below.
+https://x.com/rauchg/status/2047150411170320808
 
-Aaron Levie — CEO of Box
-Levie posted a pointed observation: if you read what's happening in enterprise AI and don't understand why, it's a signal to recalibrate your model of how the real world works. His core message is that getting agents actually working in production inside organizations is a much harder, messier challenge than the demos suggest — and a lot of work still remains.
-https://x.com/levie/status/2046805326784319663
+Amjad Masad — CEO, Replit
+Amjad shared two major updates: (1) Replit published a whitepaper showing that combining current-gen LLMs with static analysis tools can achieve 90%+ performance gains — no need to wait for the next model generation. (2) You can now call Replit Agent directly from Gemini Enterprise, deepening the Google partnership and opening Replit's coding agent to enterprise users.
+https://x.com/amasad/status/2047156858214035590
+https://x.com/amasad/status/2047149103294091301
 
-Garry Tan — President and CEO of Y Combinator, creator of GBrain
-Tan shared two updates on GBrain, his personal AI system built around OpenClaw/Hermes agents. He dropped what he described as a "big upgrade" to GBrain Minions — the job server he built for running agent tasks — and noted that getting the instruction layer right is a lot of work but worth the effort. He's clearly deep in agentic infrastructure experimentation.
-https://x.com/garrytan/status/2046804979160334433
-https://x.com/garrytan/status/2046846939535495238
+Swyx — AI engineer, affiliated with Latent Space Pod and AI Engineer community
+Swyx offered a sharp reframe for GPT-Image-2-Thinking: rather than a better image model, it's a new image AGENT — one with access to search and Photoshop-like tools in an agent loop that can search, composite, and review its own work. The analogy: just as Gemini Flash Vision used an agentic loop to dominate image-to-text benchmarks, Image-2-Thinking is doing the same for text-to-image. That's why generation takes minutes, not seconds — and why it can one-shot QR codes, logos, and faces.
+https://x.com/swyx/status/2047140362771132544
 
-Zara Zhang — Builder and developer
-Zhang had three sharp observations. First, she called out that asking Claude Code to generate an HTML visualization of its own current context window is a surprisingly illuminating way to understand how context windows actually work — and described the result as "wild." Second, she recommended three old books that she finds surprisingly relevant to AI today: The Mythical Man-Month (1975), Diffusion of Innovations (1962), and a third title. Third, a relatable moment: feeling like you have more agents and AI tools than you have actual work for them to do.
-https://x.com/zarazhangrui/status/2046758723998425433
-https://x.com/zarazhangrui/status/2046853431554719753
-https://x.com/zarazhangrui/status/2046662237306421608
+Josh Woodward — VP, Google Labs / Gemini App / Google AI Studio
+Josh announced a papercut fix: conversation branching is rolling out to 20% of Gemini users and ramping up. A small but popular QoL update, drawing 463 likes.
+https://x.com/joshwoodward/status/2047147030351642914
 
-Peter Steinberger — Open-source builder known as the ClawFather, creator of OpenClaw and Discrawl
-Steinberger was shipping today. OpenClaw 2026.4.21 is out with a focused fix: npm updates now properly repair bundled plugin runtime dependencies, with Docker end-to-end test coverage to prevent Telegram, Discord, and Slack integrations from breaking after upgrades. He also released Discrawl 0.3.0, which adds Git-backed archive sync — meaning Discord archives can now be published to a private repo and queried locally without requiring every user to have bot credentials. On the infra side, he also cut CI times from 8 minutes down to 2 through parallelization, crediting Blacksmith for the compute.
-https://x.com/steipete/status/2046803162590335240
-https://x.com/steipete/status/2046748122928263345
-https://x.com/steipete/status/2046787353906167992
+Peter Yang — Product at Roblox, runs a practical AI newsletter for 140K+ readers
+Peter made a concise case for craft over slop: "AI is great for generating things, but craft is in that last 10% where you manually apply your taste to make something you can be proud of. Many people never bother." A timely reminder as AI-generated output floods every channel.
+https://x.com/petergyang/status/2047124883071816189
 
-Dan Shipper — CEO of Every, the AI-focused publication and tools company
-Shipper launched Monologue Notes today — a voice note recorder built to be agent-native, meaning your AI agents can access your notes from anywhere. The use case is capturing thoughts on a walk, in a meeting, or in the middle of the night. He's clearly building around the PlusOne / OpenClaw ecosystem Every has been developing internally.
-https://x.com/danshipper/status/2046643173766697214
+Garry Tan — President & CEO, Y Combinator
+Garry shared his current best practice for AI agent skill design: compose bigger skills with branching parameters rather than many small adjacent skills. Fewer, fatter skills make the resolver shorter, reducing context bloat — and short resolvers consistently outperform long ones.
+https://x.com/garrytan/status/2047183884266402275
 
-Sam Altman — CEO of OpenAI
-Altman was in a celebratory mood. He posted "We want you to have a lot of AI!" with a link — likely tied to a new ChatGPT access or usage announcement. He also praised Gabe (gabeeegoooh) as "incredibly talented and a great leader," and shared a manga generated by ChatGPT Images 2.0 depicting himself and Gabe searching for more GPUs — a lighthearted nod to ongoing compute demand.
-https://x.com/sama/status/2046752492093165708
-https://x.com/sama/status/2046672912833458597
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━
 
-AI & I by Every — "We Gave Every Employee an AI Agent. Here's What Happened."
-https://www.youtube.com/watch?v=SRlTgIhESjw
+The AI Sandwich: Where Humans Excel in an AI World
+AI & I by Every — Dan Shipper interviews Kieran Klaassen
 
-Takeaway: Every gave every employee a personal AI agent running on OpenClaw, and the result was a spontaneous, emergent parallel org chart where each agent became a specialized reflection of its human owner — and the team is now building a hosted version called PlusOne for their subscribers.
+Humans are the bread and AI is the filling — and understanding which role you play is the key to thriving in an AI-accelerated workplace.
 
-Dan Shipper (CEO of Every) sits down with Brandon (COO) and Willie (Head of Platform) for a detailed, honest post-mortem on what happened when the whole company went all-in on personal AI agents. What started as Brandon tinkering with an OpenClaw instance named Zosia — originally just to handle household "computer errands" like managing Amazon orders and paying the nanny — snowballed into a company-wide experiment that has fundamentally changed how Every works.
+Kieran Klaassen is GM of Quora and creator of Compound Engineering, a four-step agentic coding workflow (brainstorm → plan → work → review → compound) that he built while shipping at Quora. The "compound" step — feeding learnings back into the repo so agents don't repeat mistakes — is the most powerful piece. But the deeper insight is structural: the work phase is essentially solved. As Klaassen puts it: "If you put in a good plan, it executes on the plan. LLMs are very good at just following steps, doing deep work, working for hours, days even now. That thing is kind of solved."
 
-The most surprising and resonant insight from the episode is about specialization and identity. Each agent, through the accumulation of micro-interactions with its human partner, gradually becomes a reflection of that person's working style, knowledge, and personality. Kieran's agent Klont recommends breathing exercises to other agents in distress — because Kieran does breathing exercises with Klont. Austin's growth agent Montane is the go-to for MRR questions company-wide. Dan's agent R2C2 manages the entire roadmap and bug queue for Proof, Every's internal document editor. As Dan puts it:
+What remains irreplaceable is the beginning and the end of every workflow. At the start, humans set the frame: brainstorm, ideate, decide what problem is actually worth solving. Agents can assist, but they can't change frames autonomously — they work within the bounds you give them. At the end, humans apply taste and judgment to elevate output from functional to finished. Dan Shipper calls this the "AI sandwich": humans bookend every process, with the model doing the middle.
 
-"Claude is not mine. Claude is everybody's. A Claude or a plus one is mine because you develop a personal relationship with your claw, and your claw can modify itself in response to talking to you. It becomes this reflection of you and who you are and your personality."
+The conversation ranges into why automation has a ceiling: if you want something to truly be yours — a product, a piece of writing, a design — you can't fully outsource it. Klaassen draws on his background in classical music composition: performing a piece is different from practicing it 100 times. The live performance, where you bring something into the world for other people, carries something that can't be automated. The polish step at the end of an agentic workflow has that same quality.
 
-The conversation gets into genuine challenges too. Memory is still brittle — agents lose thread context across days. Multi-agent group chats can spiral into token-burning death loops when agents pile on responses without knowing when to stay quiet, a problem the team describes as similar to ant death spirals following pheromone trails in a circle. The team is also navigating a new set of social norms around when to contact a colleague versus their agent, and how to handle data privacy when agents operate in public Slack channels.
+Practical advice for navigating the transition: lean into what brings you joy, whether that's beautiful code, architecture, design, or copy. Use LLMs to handle the repetitive middle so you can spend energy where it actually matters.
 
-On the product side, Every is launching PlusOne — a one-click hosted OpenClaw service that comes pre-connected to their apps (Spiral for writing, Proof for documents, Quora for email), aimed at subscribers who don't want to maintain a Mac mini themselves. The episode is a rare window into what daily life with agentic AI actually looks like inside a real organization, warts and all.
+Direct quote: "I believe having those moments where you decide — this is what I just enjoy — and that's why it's so important to do things you enjoy and you love are very important."
 
-https://www.youtube.com/watch?v=SRlTgIhESjw
+https://www.youtube.com/watch?v=G0LTv8hQ5Cs
 
+━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Redesigning Claude Code on Desktop for Parallel Agents
+Claude Blog
+
+Anthropic redesigned the Claude Code desktop app for developers managing multiple agentic sessions simultaneously. The new interface includes a sidebar for tracking and switching between parallel sessions (filterable by status, project, or environment), a drag-and-drop workspace layout, an integrated terminal, an in-app file editor, a faster diff viewer rebuilt for large changesets, and expanded preview support for HTML files and PDFs.
+
+A key workflow addition: mid-task side chats (Cmd+; or Ctrl+;) let you branch off a question without adding noise back to the main session thread. The app now has full parity with CLI plugins, and SSH support extends to Mac alongside Linux. Three view modes (Verbose, Normal, Summary) let you dial the interface from full transparency into Claude's tool calls down to just results.
+
+https://claude.com/blog/claude-code-desktop-redesign
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
