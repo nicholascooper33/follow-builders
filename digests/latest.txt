@@ -1,117 +1,121 @@
-AI Builders Digest — April 24, 2026
+AI Builders Digest — April 25, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude (Anthropic AI)
-The headline from Anthropic today: Memory on Claude Managed Agents is now in public beta. Agents can learn across sessions using an intelligence-optimized memory layer, with memories stored as files that developers can export, manage via API, and fully control. It is available on web, desktop, and mobile beta across all plans.
-https://x.com/claudeai/status/2047421844311949513
-https://x.com/claudeai/status/2047421846463623579
+Sam Altman, CEO of OpenAI
+GPT-5.5 and GPT-5.5 Pro are now available in the API. Altman wrapped the week with a celebratory note — "this was a good week. proud of the team. happy building!" — a signal that OpenAI views this launch as meaningful, not just incremental.
+https://x.com/sama/status/2047787124846653895
+https://x.com/sama/status/2047823357635354814
 
-Sam Altman (OpenAI CEO)
-Sam shared news of a new enterprise Codex rollout experiment done in partnership with NVIDIA — rolling out the tool across an entire company. He called it "awesome to see it work" and invited other companies to reach out. OpenAI is actively looking for more enterprise partners to deploy Codex at scale.
-https://x.com/sama/status/2047395562501411058
+---
 
-Amanda Askell (Philosopher & Ethicist, Anthropic)
-A quietly resonant post from Anthropic's alignment researcher gathered more than 2,100 likes: "It's odd to be living through what feels like one of the most critical periods in human history and to feel all of the weight of it from the inside." No grand pronouncements — just an honest reflection on what this moment feels like from the inside.
-https://x.com/AmandaAskell/status/2047429629263454377
+Ryo Lu, Designer at Cursor
+Ryo switched fully to GPT-5.5 + Composer 2 inside Cursor, calling it "the perfect duo for intelligence, speed, and cost." He also highlighted the /multitask command, which lets users break out of the queue and work on many things at once — a practical workflow tip for power users of the AI coding tool.
+https://x.com/ryolu_/status/2047879353313431649
+https://x.com/ryolu_/status/2047766831105220799
 
-Aaron Levie (CEO, Box)
-After weeks of internal testing, Aaron shared Box's benchmarks on GPT-5.5 vs GPT-5.4 for enterprise knowledge work — a 10 percentage point accuracy jump across financial services (83%), healthcare (78%), public sector (72%), and media (70%). GPT-5.5 is now available in Box AI Studio. Separately, Aaron pushed back on the idea that AI reduces total work: most companies have far more work they could be doing than they currently tackle — AI just makes previously impossible-to-start projects feasible. "Work isn't static."
-https://x.com/levie/status/2047387742951313910
-https://x.com/levie/status/2047540230694350958
+---
 
-Peter Yang (Product at Roblox, AI newsletter for 140K+ readers)
-Peter ran his recurring "F-Zero test" — building a working racing game from scratch with a new model combo — and reported that GPT-5.5 + Codex is the first combo to actually build a working game, complete with AI bots to race against. He also shared a full video breakdown of his GPT-5.5 impressions.
-https://x.com/petergyang/status/2047502885710410159
-https://x.com/petergyang/status/2047502897412468770
+Peter Yang, AI Educator and Product at Roblox
+Peter tested GPT-5.5 and Codex's ability to make a Star Fox game — the result after just 15 minutes of prompting was striking enough to rack up 167 likes. What caught his attention was the model play-testing its own game, suggesting a new tier of agentic iteration in creative coding workflows.
+https://x.com/petergyang/status/2047882568520102226
 
-Amjad Masad (CEO, Replit)
-Amjad pushed back on the "Chinese distillation" narrative dominating US policy circles, noting that Chinese scientists are sharing genuine AI breakthroughs openly — advances that have nothing to do with training data and that benefit the entire ecosystem, including US labs. He also flagged that DeepSeek v4 dropped today.
-https://x.com/amasad/status/2047547275682214384
-https://x.com/amasad/status/2047519635063631914
+---
 
-Cat Wu (Claude Code + Cowork, Anthropic)
-Cat shared highlights from a conversation with Lenny San about how Claude Code maintains product velocity, how the product manager role is evolving in the AI era, and what the future of work looks like from inside Anthropic.
-https://x.com/_catwu/status/2047427510091366533
+Peter Steinberger, OpenClaw and OpenAI
+Steinberger observed that "GPT-5.5 is definitely a step up in the character game," which generated 480 likes — pointing to qualitative leaps in model personality and responsiveness. He also shipped discrawl 0.6.0, a tool that can now read Discord DMs without custom login tricks, with an explicit decision to disable writing so it doesn't send humans AI-generated slop.
+https://x.com/steipete/status/2047871519762567468
+https://x.com/steipete/status/2047797210427859450
 
-Dan Shipper (CEO, Every)
-Dan's read on GPT-5.5 in one line: "many models write a great plan and then get scared of it. OpenAI's new GPT-5.5 just does the thing." He shared a longer vibe check linked from his tweet.
-https://x.com/danshipper/status/2047388883823087633
+---
 
-Nikunj Kothari (Partner, FPV Ventures)
-Nikunj shared his current go-to AI building stack — Claude Opus for planning and frontend design, OpenAI Codex for engineering, Conductor for orchestration, Railway for deployment — noting "It's never been more easy and fun to build!" He also wrote a longer thread on the M&A surge in startups, arguing the seed-to-Series A gap keeps widening and that too many people are becoming founders for the sake of it rather than out of necessity.
-https://x.com/nikunj/status/2047382587258364204
-https://x.com/nikunj/status/2047336067972624870
+Aaron Levie, CEO of Box
+Levie made a compelling case for Jevons paradox applied to AI: if AI makes employees more productive, companies will want more productive units of labor, not fewer. He argues this dynamic accelerates as AI improves — a small business that couldn't afford engineering talent will hire engineers once AI makes each one worth 5–10x. Sales teams with better lead gen will hire more salespeople. Counterintuitively, better AI leads to more human hiring.
+https://x.com/levie/status/2047747142308274645
 
-Aditya Agarwal (General Partner, South Park Commons)
-Aditya reflected on what makes SF's AI builder culture uniquely powerful — not just the networks and capital, but the culture of curiosity and wonder. He described watching a mind-bending every-pixel-generated demo from people who had been quietly jamming at SPC surrounded by a culture that asks "if it works, what could happen?" Ending line: "We are so lucky to be surrounded by weirdos who love to build."
-https://x.com/adityaag/status/2047421448449630379
+---
 
-Swyx (Latent Space, affiliations include Cognition and AI Engineer)
-Swyx flagged that the most underrated part of today's OpenAI launch isn't GPT-5.5 itself — linking to what he considers the sleeper announcement. He also observed that the Codex app has been so transformed it "almost like it shouldve been Atlas the whole time," referencing the rebrand from Codex CLI to Atlas.
-https://x.com/swyx/status/2047536499999346812
-https://x.com/swyx/status/2047461691580195310
+Amjad Masad, CEO of Replit
+Replit now lets users import apps from Vercel or Lovable with just a few clicks. This positions Replit as a destination layer for projects started elsewhere — a smart ecosystem play that reduces switching friction.
+https://x.com/amasad/status/2047747978690232550
 
+---
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Josh Woodward, VP at Google Labs / NotebookLM
+NotebookLM can now auto-label and categorize sources, announced by Woodward to 297 likes. This is a meaningful quality-of-life update for researchers and heavy NotebookLM users managing large source libraries.
+https://x.com/joshwoodward/status/2047795981534847413
+
+---
+
+Nan Yu, Head of Product at Linear
+Nan made a sharp point about design philosophy: "The core design is about understanding, not output. A design is an intention. Not an image or a prototype. Output without intention is hallucination." He extended this to a wry observation that the weather app and dashboard mockups flooding Dribbble and Behance in the pre-AI era were themselves a kind of hallucination — beautiful outputs without grounding.
+https://x.com/thenanyu/status/2047751915271020920
+https://x.com/thenanyu/status/2047758400948408831
+
+---
+
+Dan Shipper, CEO of Every
+Shipper offered a concise framing worth sitting with: "Any AI knows more than any individual human. But any individual human learns faster than any AI." He also shared enthusiasm for NotebookLM's generative capabilities after using it on a book he was reading.
+https://x.com/danshipper/status/2047797874600161334
+https://x.com/danshipper/status/2047674383469093079
+
+---
+
+Swyx, AI engineer at Cognition / Latent Space
+Swyx flagged that the hot skills of today become the post-training targets of tomorrow — a reminder that whatever feels like a differentiating human skill now is likely being baked into the next generation of models. He also highlighted that Vercel's AI engineering output is driven by C-suite involvement, calling it commendable and uncommon.
+https://x.com/swyx/status/2047715417867907539
+https://x.com/swyx/status/2047749587163877668
+
+---
+
+Matt Turck, VC at FirstMark Capital
+The Cohere and Aleph Alpha combination drew Turck's attention for a geopolitical reason: outside the US, he observes significant reluctance to outsource intelligence to a handful of American platforms. Sovereign AI infrastructure is becoming a real demand signal, not just rhetoric.
+https://x.com/mattturck/status/2047721904438493482
+
+---
+
+Aditya Agarwal, GP at SouthPark Commons, ex-CTO at Dropbox
+Aditya pointed to a broader shift: "We're approaching a post-prompting world." The framing suggests that explicit prompting as a skill may have a shorter shelf life than many expect, as models get better at inferring intent.
+https://x.com/adityaag/status/2047669585667666321
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning Ep 85: Has AI Infra Stabilized, FM Vibe Shift & What's Next for Coding Agents
-https://www.youtube.com/@RedpointAI
+No Priors — "SAP: Bringing the 'Operating System' of a Company into the AI Era with CTO Philipp Herzig"
+https://www.youtube.com/watch?v=5u7AjPardvo
 
-Takeaway: The AI coding wars are massive and still accelerating — and 2026 is shaping up to be the year coding agents break containment beyond code into everything else.
+Takeaway: AI adoption in the enterprise is falling further behind the AI innovation pace — and closing that gap requires treating AI as a business model transformation, not just a technology upgrade.
 
-In this annual crossover episode between Unsupervised Learning (Redpoint's Jacob Efron) and Latent Space (Swyx), the two dig into AI infrastructure stability, the coding wars, foundation model dynamics, open vs. closed models, and what comes next. The episode is unusually data-rich: Swyx estimates Anthropic is at roughly $2.5B ARR just from Claude Code, OpenAI's coding revenue is similarly estimated, and Cursor is rumored at $2B ARR — all created in roughly one year. "Both OpenAI and Anthropic have made it their priority to compete on coding," Swyx notes.
+SAP CTO Philipp Herzig sat down with No Priors to explain why SAP — with 400,000 enterprise customers and software spanning finance, HR, supply chain, and logistics — thinks about AI differently from most. Herzig's core argument: the gap between the "AI innovation race" and the "AI outcome race" is widening, not shrinking. Delivering outcomes requires not just better models, but better data infrastructure, reliable evals, and a willingness to reengineer the entire software stack.
 
-On infrastructure stability: Swyx says building patterns have landed on a consensus — agents are LLMs with tools in a loop, a filesystem, and a skill layer (minimal markdown files with scripts attached). But he cautions against staking a reputation on calling stability "permanent" — the real adaptation still ahead is around memory, real-time elements, and sub-agents. Jacob draws the infrastructure/application divide sharply: app companies can afford to throw things out every three months because they have sticky end customers; infra companies face complete churn when they fall behind.
+He laid out three layers undergoing transformation: the UI (moving from static interfaces designed for human clicks to generative UIs that respond to natural language queries against live business data), business processes (agents blending structured and unstructured data to handle tasks like travel expense automation and consulting support), and the data layer (SAP is building a harmonized semantic knowledge graph to give AI reliable grounding in real enterprise data).
 
-On coding competition: Claude Code remains the first-mover leader on vibes and stickiness; Codex is catching up on speed and integrations. The open question is where Gemini and XAI fit in — both are trying, neither has broken through yet. Microsoft's GitHub position is flagged as a sleeping giant. Chinese labs (ZAI, GLM) are also pushing hard for a piece of the market.
+On LLMs versus predictive models, Herzig made a point that cuts against the dominant narrative: large language models are not well suited for tabular, predictive tasks like demand forecasting or cash flow prediction. SAP's research led to RPT-1 (Relational Pretrained Transformers), a new architecture built specifically for structured/tabular prediction that could democratize what used to require specialized data scientists.
 
-On the next frontier, Swyx introduces the concept of "dark factories" — not just zero human-written code, but zero human code review. A handful of companies are beginning to explore this, and he argues it is the only truly scalable path: "You just have to flip the SDLC entirely." He also notes that 60% of traffic to Vercel's app admin architecture is now bots, not humans — your primary customer is increasingly an agent.
+Perhaps the most resonant moment: "Do you still remember test-driven development? Nobody did it because it was more fun to write the code first. Now the behavior and the writing of the code is so much automated — you need to describe the right outcome." Writing evals is the new test-driven development, and enterprises that learn to do it well will compound their AI advantage.
 
-On open models, Swyx reversed his earlier skepticism: the top 20% of builders are moving toward open models, driven by cost, fine-tuning, and the rise of alternative inference chips (Cerebras, Thales) enabling thousands of tokens per second.
+On pricing: SAP is shifting from seat-based to a consumptive hybrid model, but customers want predictability — so the transition is gradual. Herzig was candid that nobody knows how fast outcome-based licensing will arrive.
 
-Direct quote: "The general thesis that I have been pursuing now is that the same way that 2025 was a year of coding agents, 2026 is coding agents breaking containment, to do everything else."
-https://www.youtube.com/@RedpointAI
+Direct quote: "AI is only as powerful as the data is. The biggest challenge is not the AI — it's teaching the AI to do the right thing at scale."
 
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Anthropic Engineering: An update on recent Claude Code quality reports
-https://www.anthropic.com/engineering/april-23-postmortem
+Anthropic Engineering — "Scaling Managed Agents: Decoupling the brain from the hands"
+https://www.anthropic.com/engineering/managed-agents
 
-Anthropic published a full postmortem on three separate issues that degraded Claude Code quality over the past month, all resolved as of April 20 (v2.1.116).
+Anthropic's engineering team published an architectural deep dive on how they built Managed Agents — their hosted service for long-horizon agents. The core insight is a classic distributed systems move: decouple the "brain" (Claude + its harness) from the "hands" (sandboxes and tools) and the "session" (the append-only event log). This separates concerns that were previously tangled, and lets each component fail or be replaced independently.
 
-Issue 1 — Reasoning effort downgrade (March 4): Default reasoning was quietly lowered from "high" to "medium" to reduce long-tail latency. Users reported Claude feeling less intelligent. Reversed April 7; all users now default to xhigh effort on Opus 4.7 and high on all other models.
+The gains were substantial. Removing the container assumption cut time-to-first-token latency by 60% at p50 and over 90% at p95, because containers no longer need to be provisioned upfront for every session. The security model also improved: credentials never touch the sandbox where Claude's generated code runs, eliminating a class of prompt-injection attacks where a compromised session could steal tokens and spawn unrestricted new sessions.
 
-Issue 2 — Caching bug dropped prior thinking history (March 26): A caching optimization had a bug that continuously wiped Claude's prior reasoning from sessions instead of doing it just once after an idle period. This made Claude appear forgetful, repetitive, and caused unusual tool-choice behavior. It also drained usage limits faster than expected. Fixed April 10. Notably, Opus 4.7 caught the bug during back-testing while Opus 4.6 did not.
+The session log also doubles as a durable context store that lives outside Claude's context window — allowing long-horizon tasks to checkpoint, rewind, and resume without irreversible compaction decisions destroying information that future turns might need.
 
-Issue 3 — System prompt verbosity cap (April 16): A prompt addition capping responses at 25 words between tool calls hurt coding quality. Reverted April 20.
+The piece is worth reading alongside Anthropic's prior work on context engineering and harness design, as it shows how assumptions baked into harnesses (like "context anxiety" workarounds that became dead weight when Claude Opus 4.5 no longer needed them) must be continually questioned as models improve.
 
-Going forward, Anthropic is resetting usage limits for all subscribers as of April 23, adding tighter controls on system prompt changes, expanding eval coverage, and improving the Code Review tool they use internally. They've also created the ClaudeDevs account on X for more transparent product communication.
-https://www.anthropic.com/engineering/april-23-postmortem
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
----
-
-Claude Blog: New connectors in Claude for everyday life
-https://claude.com/blog/connectors-for-everyday-life
-
-Claude is expanding its connector directory with everyday consumer apps: AllTrails, Instacart, Audible, TripAdvisor, Intuit TurboTax, Booking.com, Spotify, Uber, Uber Eats, Resy, StubHub, Taskrabbit, Thumbtack, and Viator. Since the directory launched in July 2025, it has grown to over 200 connectors. Claude now dynamically suggests relevant connectors mid-conversation based on what you're doing. Claude is ad-free — no paid placements or sponsored answers. Connecting a service does not allow that app to see other conversations or use your data for model training. You can disconnect at any time. Connectors are available on all plans, with mobile in beta.
-https://claude.com/blog/connectors-for-everyday-life
-
----
-
-Claude Blog: Built-in memory for Claude Managed Agents
-https://claude.com/blog/claude-managed-agents-memory
-
-Memory on Claude Managed Agents is now in public beta. Agents can learn across sessions using an intelligence-optimized memory layer built on filesystem storage, giving developers full API control. Enterprise features include scoped permissions, audit logs, cross-agent shared stores with different read/write scopes, rollback to earlier versions, and session event visibility in the Claude Console. Early customer results: Rakuten cut first-pass errors by 97%, Wisedocs sped up document verification by 30%, Netflix carries multi-turn insights across sessions, and Ando is building workplace messaging on the platform rather than rolling their own memory infrastructure.
-https://claude.com/blog/claude-managed-agents-memory
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
