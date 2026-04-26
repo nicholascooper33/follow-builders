@@ -1,121 +1,65 @@
-AI Builders Digest — April 25, 2026
+AI Builders Digest — April 26, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman, CEO of OpenAI
-GPT-5.5 and GPT-5.5 Pro are now available in the API. Altman wrapped the week with a celebratory note — "this was a good week. proud of the team. happy building!" — a signal that OpenAI views this launch as meaningful, not just incremental.
-https://x.com/sama/status/2047787124846653895
-https://x.com/sama/status/2047823357635354814
+Amjad Masad (CEO at Replit) charted the corporate transformation arc of the past few decades: the 2000s made every company an internet company, the 2010s made every company a software company, the 2020s made every company an AI company — and his prediction for 2025 and beyond is that every company will become a cybersecurity company. The post generated significant traction with 369 likes and 26 retweets.
+https://x.com/amasad/status/2048265772775162078
 
----
+Aaron Levie (CEO at Box) reflected on how AI creates unprecedented leverage at every career level, enabling people with strong domain skills but limited experience to overcome historical barriers. He urges companies to find and empower these AI-native individuals — who "will seem strange and from the future" — by placing them in key positions. "The people that take advantage of this will get ahead massively." The post garnered 396 likes and 40 retweets.
+https://x.com/levie/status/2048223146063609965
 
-Ryo Lu, Designer at Cursor
-Ryo switched fully to GPT-5.5 + Composer 2 inside Cursor, calling it "the perfect duo for intelligence, speed, and cost." He also highlighted the /multitask command, which lets users break out of the queue and work on many things at once — a practical workflow tip for power users of the AI coding tool.
-https://x.com/ryolu_/status/2047879353313431649
-https://x.com/ryolu_/status/2047766831105220799
+Garry Tan (President & CEO at YCombinator, creator of GStack and GBrain) shipped two updates today. GBrain v0.22 brings fixes to search and retrieval along with a new eval system, with gbrain-evals now in a separate repo to keep checkouts lean. He also launched GStack Browser — a new way to control your browser side-by-side with Claude Code, installable for free by typing "Install GStack" in Claude Code and launched via the /open-gstack-browser skill.
+https://x.com/garrytan/status/2048290087318773807
+https://x.com/garrytan/status/2048278995121094868
 
----
+Peter Steinberger (co-founder of OpenClaw, affiliated with OpenAI) shipped two releases back-to-back. Summarize 0.14.0 adds GPT-5.5 Fast mode via --fast flag, Reddit thread extraction in the browser extension, and local PDF extraction via --extract. CodexBar 0.23 adds Mistral support, Claude Designs and Daily Routines usage tracking, Cursor Extra usage data, GPT-5.5 pricing, and cleaner widgets and menus. He also quipped that GitHub's engineers have been "amazing while we melt their servers."
+https://x.com/steipete/status/2048275589224628677
+https://x.com/steipete/status/2048252455817785357
 
-Peter Yang, AI Educator and Product at Roblox
-Peter tested GPT-5.5 and Codex's ability to make a Star Fox game — the result after just 15 minutes of prompting was striking enough to rack up 167 likes. What caught his attention was the model play-testing its own game, suggesting a new tier of agentic iteration in creative coding workflows.
-https://x.com/petergyang/status/2047882568520102226
+Peter Yang (Product at Roblox, AI educator for 140K+ newsletter readers) shared an observation from using Codex with a 7-year-old: the next generation expects AI to build anything instantly and has zero patience for limitations. He also called for better human-curated skill repositories across design, coding, and product — ones that aren't just a dump of 100 skills where you have to "separate the slop yourself."
+https://x.com/petergyang/status/2048220045726322934
+https://x.com/petergyang/status/2048190683782201767
 
----
+Nan Yu (Head of Product at Linear) offered a strategic take on technology adoption timing: being on the very bleeding edge means constantly rebuilding as the industry figures things out, so the real sweet spot is staying "just a couple steps behind" — adopting what's relatively new but has already survived the churn.
+https://x.com/thenanyu/status/2048172709075402787
 
-Peter Steinberger, OpenClaw and OpenAI
-Steinberger observed that "GPT-5.5 is definitely a step up in the character game," which generated 480 likes — pointing to qualitative leaps in model personality and responsiveness. He also shipped discrawl 0.6.0, a tool that can now read Discord DMs without custom login tricks, with an explicit decision to disable writing so it doesn't send humans AI-generated slop.
-https://x.com/steipete/status/2047871519762567468
-https://x.com/steipete/status/2047797210427859450
+Zara Zhang (Builder) challenged the conflation of craft with output: "When I sit down at my computer and start typing, that's not the beginning of writing. It's the LAST step. 80% of the writing is already done. It just happened in my head." She draws the parallel to building, designing, and engineering — none of which begin when you start producing artifacts.
+https://x.com/zarazhangrui/status/2048101948826751429
 
----
+Nikunj Kothari (Partner at FPV Ventures, early hire at Meter, Opendoor, and Atlassian) made a case for clarity in writing: he often holds back from posting publicly because he doesn't want to burden readers with muddy thoughts. The best writing, he argues, communicates the crux cleanly while leaving a thread "simmering but not fully explored." He adds that he's in awe of people who can speak with that clarity on the spot.
+https://x.com/nikunj/status/2048056524845482131
 
-Aaron Levie, CEO of Box
-Levie made a compelling case for Jevons paradox applied to AI: if AI makes employees more productive, companies will want more productive units of labor, not fewer. He argues this dynamic accelerates as AI improves — a small business that couldn't afford engineering talent will hire engineers once AI makes each one worth 5–10x. Sales teams with better lead gen will hire more salespeople. Counterintuitively, better AI leads to more human hiring.
-https://x.com/levie/status/2047747142308274645
+Dan Shipper (CEO at Every) offered a sharp epistemological observation about evaluating AI models: "what we observe is never the model itself, only the model exposed to our method of questioning." It's a reminder that benchmarks and evals are always mediated by how we ask — and that prompt design shapes what we think we're measuring.
+https://x.com/danshipper/status/2048026505461080076
 
----
+Sam Altman posted one of the most viral observations of the day, noting that AI coding is now strong on reasoning but still behind on visual/UI quality: "we still get looksmaxxed on frontend a little but we IQmog hard now" — drawing 14,000+ likes and 1,300 replies from builders who clearly related to the dynamic. He followed up: "and we will fix the former."
+https://x.com/sama/status/2048160404376105179
 
-Amjad Masad, CEO of Replit
-Replit now lets users import apps from Vercel or Lovable with just a few clicks. This positions Replit as a destination layer for projects started elsewhere — a smart ecosystem play that reduces switching friction.
-https://x.com/amasad/status/2047747978690232550
+Swyx (AI engineer, Latent Space pod, affiliated with Cognition and Temporal.io) teased an upcoming project with collaborator hhua_, with details still in progress. He asked followers to keep their calendars open for something after ICML in Seoul.
+https://x.com/swyx/status/2048126046487322835
 
----
-
-Josh Woodward, VP at Google Labs / NotebookLM
-NotebookLM can now auto-label and categorize sources, announced by Woodward to 297 likes. This is a meaningful quality-of-life update for researchers and heavy NotebookLM users managing large source libraries.
-https://x.com/joshwoodward/status/2047795981534847413
-
----
-
-Nan Yu, Head of Product at Linear
-Nan made a sharp point about design philosophy: "The core design is about understanding, not output. A design is an intention. Not an image or a prototype. Output without intention is hallucination." He extended this to a wry observation that the weather app and dashboard mockups flooding Dribbble and Behance in the pre-AI era were themselves a kind of hallucination — beautiful outputs without grounding.
-https://x.com/thenanyu/status/2047751915271020920
-https://x.com/thenanyu/status/2047758400948408831
-
----
-
-Dan Shipper, CEO of Every
-Shipper offered a concise framing worth sitting with: "Any AI knows more than any individual human. But any individual human learns faster than any AI." He also shared enthusiasm for NotebookLM's generative capabilities after using it on a book he was reading.
-https://x.com/danshipper/status/2047797874600161334
-https://x.com/danshipper/status/2047674383469093079
-
----
-
-Swyx, AI engineer at Cognition / Latent Space
-Swyx flagged that the hot skills of today become the post-training targets of tomorrow — a reminder that whatever feels like a differentiating human skill now is likely being baked into the next generation of models. He also highlighted that Vercel's AI engineering output is driven by C-suite involvement, calling it commendable and uncommon.
-https://x.com/swyx/status/2047715417867907539
-https://x.com/swyx/status/2047749587163877668
-
----
-
-Matt Turck, VC at FirstMark Capital
-The Cohere and Aleph Alpha combination drew Turck's attention for a geopolitical reason: outside the US, he observes significant reluctance to outsource intelligence to a handful of American platforms. Sovereign AI infrastructure is becoming a real demand signal, not just rhetoric.
-https://x.com/mattturck/status/2047721904438493482
-
----
-
-Aditya Agarwal, GP at SouthPark Commons, ex-CTO at Dropbox
-Aditya pointed to a broader shift: "We're approaching a post-prompting world." The framing suggests that explicit prompting as a skill may have a shorter shelf life than many expect, as models get better at inferring intent.
-https://x.com/adityaag/status/2047669585667666321
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors — "SAP: Bringing the 'Operating System' of a Company into the AI Era with CTO Philipp Herzig"
-https://www.youtube.com/watch?v=5u7AjPardvo
+No Priors — Scaling Global Organizations in the Age of AI with ServiceNow CEO Bill McDermott
 
-Takeaway: AI adoption in the enterprise is falling further behind the AI innovation pace — and closing that gap requires treating AI as a business model transformation, not just a technology upgrade.
+One-sentence takeaway: Enterprise workflow platforms aren't threatened by LLMs — they're complemented by them, and replicating a platform like ServiceNow with a language model costs 10x more while eliminating accountability.
 
-SAP CTO Philipp Herzig sat down with No Priors to explain why SAP — with 400,000 enterprise customers and software spanning finance, HR, supply chain, and logistics — thinks about AI differently from most. Herzig's core argument: the gap between the "AI innovation race" and the "AI outcome race" is widening, not shrinking. Delivering outcomes requires not just better models, but better data infrastructure, reliable evals, and a willingness to reengineer the entire software stack.
+Bill McDermott, CEO of ServiceNow, joined Sarah Guo on No Priors for a wide-ranging conversation on leadership, enterprise AI strategy, and why the "SaaSpocalypse" narrative misunderstands how AI actually reshapes large organizations.
 
-He laid out three layers undergoing transformation: the UI (moving from static interfaces designed for human clicks to generative UIs that respond to natural language queries against live business data), business processes (agents blending structured and unstructured data to handle tasks like travel expense automation and consulting support), and the data layer (SAP is building a harmonized semantic knowledge graph to give AI reliable grounding in real enterprise data).
+McDermott draws a sharp line between what LLMs do well and what workflow platforms uniquely handle. When a compensation issue arises at a large company, an LLM can produce a thoughtful recommendation in milliseconds — but it can't route through HR, finance, legal, and compliance, close the ticket, and maintain an audit trail. "AI thinks, but workflow acts," he said. On the economics, he's direct: "For a simple application on our platform, it would be 10 times greater in cost to try to replicate it with a language model" — once you factor in GPU costs, token pricing, and the engineering labor to rebuild decades of accumulated business logic. And he surfaces a crucial accountability gap: "People that run businesses understand that people make mistakes. They never will forgive software for making a mistake."
 
-On LLMs versus predictive models, Herzig made a point that cuts against the dominant narrative: large language models are not well suited for tabular, predictive tasks like demand forecasting or cash flow prediction. SAP's research led to RPT-1 (Relational Pretrained Transformers), a new architecture built specifically for structured/tabular prediction that could democratize what used to require specialized data scientists.
+McDermott is equally bullish that the agentic era accelerates ServiceNow's value rather than threatening it. Ninety percent of their own customer service cases are now handled by agents, with major enterprise customers going live in under 30 days. He frames ServiceNow as the "AI control tower for business reinvention" — a connective fabric linking hyperscalers, language models, and systems of record into a unified agentic platform.
 
-Perhaps the most resonant moment: "Do you still remember test-driven development? Nobody did it because it was more fun to write the code first. Now the behavior and the writing of the code is so much automated — you need to describe the right outcome." Writing evals is the new test-driven development, and enterprises that learn to do it well will compound their AI advantage.
+On the broader enterprise landscape, McDermott noted from a meeting with 800 Brazilian executives the night before that only 11% of companies in that market have moved past the experimentation phase with AI. He sees the US leading globally in adoption and speed, with the most aggressive first movers now actively rebuilding business models around agents rather than just running pilots.
 
-On pricing: SAP is shifting from seat-based to a consumptive hybrid model, but customers want predictability — so the transition is gradual. Herzig was candid that nobody knows how fast outcome-based licensing will arrive.
+On leadership, he returned repeatedly to a lesson from running a deli at age 16: "If you keep them coming back, you've got a good chance. And if you don't, you lose." He sees human connection, customer obsession, and emotional intelligence as more important than ever precisely because AI is raising the bar on everything else.
 
-Direct quote: "AI is only as powerful as the data is. The biggest challenge is not the AI — it's teaching the AI to do the right thing at scale."
+https://www.youtube.com/watch?v=tNNFJa5pUEg
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Anthropic Engineering — "Scaling Managed Agents: Decoupling the brain from the hands"
-https://www.anthropic.com/engineering/managed-agents
-
-Anthropic's engineering team published an architectural deep dive on how they built Managed Agents — their hosted service for long-horizon agents. The core insight is a classic distributed systems move: decouple the "brain" (Claude + its harness) from the "hands" (sandboxes and tools) and the "session" (the append-only event log). This separates concerns that were previously tangled, and lets each component fail or be replaced independently.
-
-The gains were substantial. Removing the container assumption cut time-to-first-token latency by 60% at p50 and over 90% at p95, because containers no longer need to be provisioned upfront for every session. The security model also improved: credentials never touch the sandbox where Claude's generated code runs, eliminating a class of prompt-injection attacks where a compromised session could steal tokens and spawn unrestricted new sessions.
-
-The session log also doubles as a durable context store that lives outside Claude's context window — allowing long-horizon tasks to checkpoint, rewind, and resume without irreversible compaction decisions destroying information that future turns might need.
-
-The piece is worth reading alongside Anthropic's prior work on context engineering and harness design, as it shows how assumptions baked into harnesses (like "context anxiety" workarounds that became dead weight when Claude Opus 4.5 no longer needed them) must be continually questioned as models improve.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
