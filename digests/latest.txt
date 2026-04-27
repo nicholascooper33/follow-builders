@@ -1,64 +1,54 @@
-AI Builders Digest — April 26, 2026
+AI Builders Digest — 2026-04-27
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Amjad Masad (CEO at Replit) charted the corporate transformation arc of the past few decades: the 2000s made every company an internet company, the 2010s made every company a software company, the 2020s made every company an AI company — and his prediction for 2025 and beyond is that every company will become a cybersecurity company. The post generated significant traction with 369 likes and 26 retweets.
-https://x.com/amasad/status/2048265772775162078
-
-Aaron Levie (CEO at Box) reflected on how AI creates unprecedented leverage at every career level, enabling people with strong domain skills but limited experience to overcome historical barriers. He urges companies to find and empower these AI-native individuals — who "will seem strange and from the future" — by placing them in key positions. "The people that take advantage of this will get ahead massively." The post garnered 396 likes and 40 retweets.
+Aaron Levie (CEO at Box) laid out the case that AI creates a once-in-a-generation opening for anyone combining ambition with core domain skills. Historical experience requirements are melting away, and the people taking advantage of this will get ahead massively — at every career stage, junior or senior. His advice to companies: actively find these AI-native people who "will seem strange and from the future" and put them in key positions before someone else does.
 https://x.com/levie/status/2048223146063609965
 
-Garry Tan (President & CEO at YCombinator, creator of GStack and GBrain) shipped two updates today. GBrain v0.22 brings fixes to search and retrieval along with a new eval system, with gbrain-evals now in a separate repo to keep checkouts lean. He also launched GStack Browser — a new way to control your browser side-by-side with Claude Code, installable for free by typing "Install GStack" in Claude Code and launched via the /open-gstack-browser skill.
+Amjad Masad (CEO at Replit) charted the corporate transformation arc in a single post: the 2000s made every company an internet company, the 2010s a software company, the 2020s an AI company — and 2025 onward, every company becomes a cybersecurity company. Compact and sharp.
+https://x.com/amasad/status/2048265772775162078
+
+Garry Tan (President & CEO at YCombinator, creator of GStack and GBrain) shipped two updates. GBrain v0.22 brings fixes to search and retrieval, plus a new eval system — with gbrain-evals now in a separate repo to keep checkouts lean. He also launched GStack Browser, a new way to control your browser side-by-side with Claude Code. To install free: type "Install GStack" in Claude Code, then launch via /open-gstack-browser.
 https://x.com/garrytan/status/2048290087318773807
 https://x.com/garrytan/status/2048278995121094868
 
-Peter Steinberger (co-founder of OpenClaw, affiliated with OpenAI) shipped two releases back-to-back. Summarize 0.14.0 adds GPT-5.5 Fast mode via --fast flag, Reddit thread extraction in the browser extension, and local PDF extraction via --extract. CodexBar 0.23 adds Mistral support, Claude Designs and Daily Routines usage tracking, Cursor Extra usage data, GPT-5.5 pricing, and cleaner widgets and menus. He also quipped that GitHub's engineers have been "amazing while we melt their servers."
+Peter Yang (Product at Roblox, creator of a 140K+ reader AI newsletter) had a sharp observation about next-generation AI expectations after watching a 7-year-old use Codex: "What do you mean it can't build a pet dragon raising game instantly? I'm bored." The next wave of users isn't calibrating to incremental improvement — they expect magic on demand. Worth keeping in mind.
+https://x.com/petergyang/status/2048220045726322934
+
+Nan Yu (Head of Product at Linear) articulated what good adoption timing looks like: the bleeding edge means constantly reworking your stack as the industry churns through ideas. The real sweet spot is "just a couple steps behind" — adopting what's new enough to matter but has already survived the initial churn and proven itself.
+https://x.com/thenanyu/status/2048172709075402787
+
+Zara Zhang (Builder) challenged the idea that creation starts when you open the editor. "When I sit down at my computer and start typing, that's not the beginning of writing. It's the LAST step. 80% of the writing is already done. It just happened in my head." The same holds for building product, engineering, and design — the artifact is the last mile, not the work itself.
+https://x.com/zarazhangrui/status/2048101948826751429
+
+Nikunj Kothari (Partner at FPV Ventures) made a quiet argument for writing discipline: he goes weeks without publishing because he refuses to offload muddy thinking onto readers. The goal is to communicate the crux cleanly while leaving threads "simmering but not fully explored." He's in particular awe of people who can hit that bar in real-time speech.
+https://x.com/nikunj/status/2048056524845482131
+
+Peter Steinberger (co-founder of OpenClaw, affiliated with OpenAI) shipped two tools back-to-back. Summarize 0.14.0 adds GPT-5.5 Fast mode via --fast, Reddit thread extraction in the browser extension, local PDF extraction via --extract, and fixes for auto model config and Meta site compatibility. CodexBar 0.23 brings Mistral support, Claude Designs/Daily Routines usage tracking, Cursor Extra usage, GPT-5.5 pricing display, and cleaner widgets and menus.
 https://x.com/steipete/status/2048275589224628677
 https://x.com/steipete/status/2048252455817785357
 
-Peter Yang (Product at Roblox, AI educator for 140K+ newsletter readers) shared an observation from using Codex with a 7-year-old: the next generation expects AI to build anything instantly and has zero patience for limitations. He also called for better human-curated skill repositories across design, coding, and product — ones that aren't just a dump of 100 skills where you have to "separate the slop yourself."
-https://x.com/petergyang/status/2048220045726322934
-https://x.com/petergyang/status/2048190683782201767
-
-Nan Yu (Head of Product at Linear) offered a strategic take on technology adoption timing: being on the very bleeding edge means constantly rebuilding as the industry figures things out, so the real sweet spot is staying "just a couple steps behind" — adopting what's relatively new but has already survived the churn.
-https://x.com/thenanyu/status/2048172709075402787
-
-Zara Zhang (Builder) challenged the conflation of craft with output: "When I sit down at my computer and start typing, that's not the beginning of writing. It's the LAST step. 80% of the writing is already done. It just happened in my head." She draws the parallel to building, designing, and engineering — none of which begin when you start producing artifacts.
-https://x.com/zarazhangrui/status/2048101948826751429
-
-Nikunj Kothari (Partner at FPV Ventures, early hire at Meter, Opendoor, and Atlassian) made a case for clarity in writing: he often holds back from posting publicly because he doesn't want to burden readers with muddy thoughts. The best writing, he argues, communicates the crux cleanly while leaving a thread "simmering but not fully explored." He adds that he's in awe of people who can speak with that clarity on the spot.
-https://x.com/nikunj/status/2048056524845482131
-
-Dan Shipper (CEO at Every) offered a sharp epistemological observation about evaluating AI models: "what we observe is never the model itself, only the model exposed to our method of questioning." It's a reminder that benchmarks and evals are always mediated by how we ask — and that prompt design shapes what we think we're measuring.
+Dan Shipper (CEO at Every) posted a single line that stands on its own: "what we observe is never the model itself, only the model exposed to our method of questioning." A reminder that every benchmark, vibe-check, and frustrated prompt is measuring an interaction — not the underlying capability in isolation.
 https://x.com/danshipper/status/2048026505461080076
-
-Sam Altman posted one of the most viral observations of the day, noting that AI coding is now strong on reasoning but still behind on visual/UI quality: "we still get looksmaxxed on frontend a little but we IQmog hard now" — drawing 14,000+ likes and 1,300 replies from builders who clearly related to the dynamic. He followed up: "and we will fix the former."
-https://x.com/sama/status/2048160404376105179
-
-Swyx (AI engineer, Latent Space pod, affiliated with Cognition and Temporal.io) teased an upcoming project with collaborator hhua_, with details still in progress. He asked followers to keep their calendars open for something after ICML in Seoul.
-https://x.com/swyx/status/2048126046487322835
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 No Priors — Scaling Global Organizations in the Age of AI with ServiceNow CEO Bill McDermott
-
-One-sentence takeaway: Enterprise workflow platforms aren't threatened by LLMs — they're complemented by them, and replicating a platform like ServiceNow with a language model costs 10x more while eliminating accountability.
-
-Bill McDermott, CEO of ServiceNow, joined Sarah Guo on No Priors for a wide-ranging conversation on leadership, enterprise AI strategy, and why the "SaaSpocalypse" narrative misunderstands how AI actually reshapes large organizations.
-
-McDermott draws a sharp line between what LLMs do well and what workflow platforms uniquely handle. When a compensation issue arises at a large company, an LLM can produce a thoughtful recommendation in milliseconds — but it can't route through HR, finance, legal, and compliance, close the ticket, and maintain an audit trail. "AI thinks, but workflow acts," he said. On the economics, he's direct: "For a simple application on our platform, it would be 10 times greater in cost to try to replicate it with a language model" — once you factor in GPU costs, token pricing, and the engineering labor to rebuild decades of accumulated business logic. And he surfaces a crucial accountability gap: "People that run businesses understand that people make mistakes. They never will forgive software for making a mistake."
-
-McDermott is equally bullish that the agentic era accelerates ServiceNow's value rather than threatening it. Ninety percent of their own customer service cases are now handled by agents, with major enterprise customers going live in under 30 days. He frames ServiceNow as the "AI control tower for business reinvention" — a connective fabric linking hyperscalers, language models, and systems of record into a unified agentic platform.
-
-On the broader enterprise landscape, McDermott noted from a meeting with 800 Brazilian executives the night before that only 11% of companies in that market have moved past the experimentation phase with AI. He sees the US leading globally in adoption and speed, with the most aggressive first movers now actively rebuilding business models around agents rather than just running pilots.
-
-On leadership, he returned repeatedly to a lesson from running a deli at age 16: "If you keep them coming back, you've got a good chance. And if you don't, you lose." He sees human connection, customer obsession, and emotional intelligence as more important than ever precisely because AI is raising the bar on everything else.
-
 https://www.youtube.com/watch?v=tNNFJa5pUEg
+
+Takeaway: Enterprise workflow platforms and large language models are complementary, not competitive — LLMs think and recommend, platforms act and close cases — and confusing the two is the most expensive mistake an enterprise can make right now.
+
+Bill McDermott joined No Priors host Sarah Guo for a wide-ranging conversation on leadership, the SaaSpocalypse thesis, and what it actually means to build an agentic enterprise. His central argument is both practical and pointed: when a compensation dispute surfaces in a real company, a language model can generate a thoughtful recommendation in milliseconds — but it doesn't close the case. Getting to resolution means routing through HR, finance, legal, and compliance, with full data context and an audit trail. That is what a workflow platform does. He frames this with a clean formula: "AI thinks, but workflow acts. That's an unlock for a lot of people." On cost, he's direct: replicating a mature enterprise platform with net-new LLM-generated code runs roughly 10 times higher once you factor in GPU costs, token pricing, and the labor to rebuild decades of accumulated business logic. And there is a deeper accountability gap LLMs can't close — "People that run businesses understand that people make mistakes. They never will forgive software for making a mistake."
+
+On the SaaSpocalypse narrative, McDermott drew a deliberate parallel to the hyperscaler scare of the previous decade. Everyone expected cloud infrastructure to eat software; instead the hyperscalers became indispensable partners. Language model companies, he argues, will follow the same arc. ServiceNow's strategy is to be the AI control tower that integrates hyperscalers, LLMs, and systems of record into a single workflow fabric — the connective tissue of an agentic enterprise, not a competing layer.
+
+The adoption picture remains uneven. McDermott cited a meeting the night before with 800 Brazilian executives: only 11% of companies in that market have moved past experimentation into mainstream agentic deployment. Financial services firms in the US are moving fastest — rethinking headcount, remodeling operations, chasing expanding margins. ServiceNow itself now handles 90% of customer service cases through AI agents, with humans concentrated on judgment calls and relationship work. He projects 2.2 billion AI agents entering the workforce in the coming years, which substantially raises the bar for what human roles need to offer.
+
+On leadership in a fast-moving environment, McDermott offered a line worth keeping: "It is fast, but it'll never move this slow again. So this is the way it's going to be." His prescription — lean in, be prescriptive with customers, and treat AI as a force multiplier for human ambition.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
