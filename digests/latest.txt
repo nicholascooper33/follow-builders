@@ -1,81 +1,147 @@
-AI Builders Digest — April 30, 2026
+AI Builders Digest — 2026-05-01
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude (AI assistant by Anthropic)
-Claude rolled out a wave of new connectors for creative professionals, generating massive engagement. The Blender connector lets users debug scenes, build tools, and batch-apply changes directly from Claude — the most-liked post of the day with 34K+ likes. An Autodesk Fusion connector enables designing and modifying 3D models through conversation, and additional connectors landed for Adobe Creative Cloud, Ableton, Splice, Canva Affinity, SketchUp, and Resolume. Anthropic also joined the Blender Development Fund as a patron to support open-source development.
-https://x.com/claudeai/status/2049143438281445811
-https://x.com/claudeai/status/2049143440508616863
-https://x.com/claudeai/status/2049143442601546054
+Andrej Karpathy — AI researcher, former Director of AI at Tesla and founding team at OpenAI
 
----
-
-Peter Steinberger — Polyagentmorous ClawFather, co-creator of OpenClaw at OpenAI
-Peter has wired Codex into his CI pipeline in an impressive loop: every commit that lands on main triggers a Codex instance that reviews the diff for regressions and security issues. If a problem is found, a new Codex spins up and (if still relevant) opens a PR with a fix — then a review agent checks that PR and can trigger up to 5 additional fix loops. Within 10 minutes of going live, the system caught one of his own bugs. This is one of the clearest examples yet of fully autonomous agent-driven code review in production.
-https://x.com/steipete/status/2049356949523730699
-https://x.com/steipete/status/2049290741013262522
+Karpathy shared highlights from a fireside chat at Sequoia Ascent 2026. He noted that the first theme he tried to push at the event was about LLMs and the evolving nature of how they're used. He also shared a quote he's been citing frequently in recent conversations — a sign of the ideas he's been thinking through most deeply.
+https://x.com/karpathy/status/2049903821095354523
 
 ---
 
-Dan Shipper — CEO at Every, "the only subscription you need to stay at the edge of AI"
-Dan is exploring a new category he's calling "agent-native" apps — software designed to be used inside the in-app browser of your coding agent (Codex, Cursor, etc.), where both the human and the AI share full context and can see what the other is doing. He demonstrated this with PostHog inside Codex: the agent can write analytics queries, view results, kick off sub-agents to write PRs, or run production DB queries — all without context switching. He sees this as a large opportunity for builders to rethink what software looks like when the primary user is a human-agent pair.
-https://x.com/danshipper/status/2049236793761976357
-https://x.com/danshipper/status/2049223933766041688
+Swyx — builder and writer focused on AI engineering
+
+Swyx made the case that "coding agents breaking containment" is the breakout theme of 2026. He said it on a recent podcast and followed up with a fuller writeup elaborating his thinking. The framing points to a shift where AI coding agents are no longer just assistants confined to IDEs — they're spilling into broader workflows.
+https://x.com/swyx/status/2050068468498842058
+Fuller writeup: https://x.com/swyx/status/2050076322781860144
 
 ---
 
-Aaron Levie — CEO at Box
-Aaron pushed back firmly on "software jobs are disappearing" narratives with a detailed counter-argument: we are not dividing a fixed pie of software, we are about to see 100X more software than exists today. He points to legacy on-prem systems needing re-platforming, SMBs that could never afford developers, security backlogs, IT automation, and data integration — all requiring humans who can orchestrate agents, manage their output, and take ownership of the results. He also noted a distinction: agentic coding is great for shipping fast, but ongoing maintenance and security patching remain real costs that most knowledge workers aren't prepared for.
-https://x.com/levie/status/2049333853777764495
-https://x.com/levie/status/2049163935182733396
+Amanda Askell — philosopher and ethicist at Anthropic AI
+
+Askell flagged a growing problem: content written about her that's stated with full confidence but is completely fabricated. She pushed back on the trend and noted it's strange because, in her own view, she's a very boring subject to write about. She called for writers to engage with her actual work instead of invented narratives.
+https://x.com/AmandaAskell/status/2050020603323904369
+https://x.com/AmandaAskell/status/2050021990023758206
 
 ---
 
-Thariq — Claude Code team at Anthropic, prev YC W20 and MIT Media Lab
-Thariq announced that the Claude Code team is actively hunting down the most annoying bugs reported by users. His personal "white whale" — a hang that appeared during large file writes — has apparently been found. He's also working on making the no-flicker renderer production-ready so it can ship as the default, with more papercut fixes on the way. He invited the community to share their own white-whale bugs.
-https://x.com/trq212/status/2049234228290961690
-https://x.com/trq212/status/2049252080892973563
+Cat Wu — Claude Code and cowork lead at Anthropic AI
+
+Cat announced that Claude Security is now in public beta, built directly into Claude Code on the web. Point it at a repo and get validated vulnerability findings — no custom tooling required.
+https://x.com/_catwu/status/2049964403177689130
 
 ---
 
-Amjad Masad — CEO at Replit
-Amjad backed an investment in an education founder he described as the "education GOAT" reinventing education again (the tweet linked to an external announcement). He also weighed in on GitHub's service strain from AI-generated bot activity, noting he predicted years ago that free services would become untenable with human-level bots and proposing micro-payments — potentially Bitcoin-based, to avoid KYC requirements — as a path to making platforms sustainable without locking out users.
-https://x.com/amasad/status/2049245424624820412
-https://x.com/amasad/status/2049242460078100638
+Amjad Masad — CEO of Replit
+
+Masad shared Replit's philosophy of treating its own company as "customer zero" — going beyond dogfooding. They expect their internal usage to have an outsized influence on the product direction. He also teased a "Prompt → LLC" workflow, hinting at AI-powered business formation.
+https://x.com/amasad/status/2049921597499445677
+https://x.com/amasad/status/2049934937688854993
 
 ---
 
-Guillermo Rauch — CEO at Vercel
-Guillermo announced that Vercel Labs is hiring, framing the team's mission as building devtools for the AI era — tools built for agents, not just humans. He highlighted the team's shipped work: agent-browser, portless, skills, dnat, just-in-time, json-renderer, and others, totaling 22.8M+ downloads. He described it as a "dream job" and said DMs are open.
-https://x.com/rauchg/status/2049216048831025232
+Aaron Levie — CEO of Box
+
+Levie made a sharp structural observation: as agents become the biggest users of software, all software needs to become available in a headless fashion. Agents won't navigate UIs the way humans do, so the interface layer has to change. This is a framing that has broad implications for how SaaS products are built.
+https://x.com/levie/status/2050051426446152159
 
 ---
 
-Zara Zhang — Builder, Harvard '17
-Zara made a practical case for using AI to generate SVGs instead of raster images, arguing that vector illustrations blend more seamlessly into design — particularly for HTML slide decks. She demonstrated the workflow using the QuiverAI API inside AnyGen.io's Frontend Slides feature. She also reflected on a shift in how she builds: rather than shipping web apps with GUIs, she now shares GitHub repos and lets people's agents customize the UI for them — similar to Karpathy's "idea file" concept where the artifact is the specification, not the finished product.
-https://x.com/zarazhangrui/status/2049258231042805806
-https://x.com/zarazhangrui/status/2049186121314415054
+Ryo Lu — designer at Cursor AI
+
+Ryo added the Cursor SDK to ryOS — his personal operating system project — making it possible to edit the OS just by chatting with it. He integrated it by pasting the SDK link directly into Cursor, calling it surprisingly easy. He also shared a thoughtful design take: "opinionated" and "general purpose" are not opposites. The moment you make any decision, you've taken a position.
+https://x.com/ryolu_/status/2049872551955013713
+https://x.com/ryolu_/status/2049866003287576978
 
 ---
 
-Peter Yang — Practical AI tutorials for busy people, 140K+ newsletter readers, Product at Roblox
-Peter offered a memorable mental model for benchmarking AI coding capability: what era of video games can a model build a single level for in one shot or 30 minutes of work — Atari, NES, SNES, PlayStation, up through PS5? His take: we're still in the NES era. He also shared a simpler observation with strong resonance: "I have a lot of respect for solo AI builders. The world is their playground now."
-https://x.com/petergyang/status/2049232534064734331
-https://x.com/petergyang/status/2049345724559847585
+Garry Tan — President and CEO of Y Combinator
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tan highlighted that GBrain — his AI knowledge and memory tool — has diverged sharply from Mempalace over the past three weeks and is now its own distinct category. He also noted that users of Hermes Agent or OpenClaw can layer GBrain on top of their Karpathy-style Knowledge Wiki for significant gains.
+https://x.com/garrytan/status/2050095919157350644
+https://x.com/garrytan/status/2050096324100682097
+
+---
+
+Nikunj Kothari — partner at FPV Ventures
+
+Kothari observed that the explosion of MCPs and CLIs makes one thing clear: large models are going to be how we orchestrate our lives. His investment thesis: be in the path of that orchestration layer.
+https://x.com/nikunj/status/2049871924105531672
+
+---
+
+Peter Steinberger — creator of OpenClaw, "ClawFather"
+
+Steinberger announced meaningful improvements to OpenClaw in group chats — if previous results were mixed, he says this version is worth trying again. He also reflected on lessons learned from working with Nvidia, OpenAI, Microsoft, and GitHub on the security ecosystem over the past few months.
+https://x.com/steipete/status/2049988836160074022
+https://x.com/steipete/status/2049976855617314991
+
+---
+
+Dan Shipper — CEO of Every
+
+Shipper is experimenting with using Codex alongside Chronicle as a focus tracker — an interesting use of AI coding tools for personal productivity rather than just code generation.
+https://x.com/danshipper/status/2049913064561258986
+
+---
+
+Sam Altman — CEO of OpenAI
+
+Altman announced a big upgrade to Codex, encouraging people to try it for non-coding computer work — signaling that Codex is expanding beyond its original software-development framing.
+https://x.com/sama/status/2049946120441520624
+
+---
+
+Claude (Anthropic AI)
+
+Anthropic announced Claude Security is now in public beta for Claude Enterprise customers, built on Opus 4.7. Since the research preview in February, hundreds of organizations have used it on production code to catch issues. It gives security teams a way to apply Opus 4.7 to their codebase without standing up custom tooling.
+https://x.com/claudeai/status/2049898741772021991
+Learn more: https://t.co/Oei6EHTZuX
+
+---
+
+Aditya Agarwal — General Partner at South Park Commons, former CTO of Dropbox
+
+Agarwal called the current moment a critical inflection point for cybersecurity. His framing: AI is simultaneously the biggest new threat and the only viable solution. The attackers have AI; so do the defenders.
+https://x.com/adityaag/status/2049874181509034151
+https://x.com/adityaag/status/2049941075872113145
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No new podcast episodes in the lookback window.
+Training Data — Demis Hassabis on Building DeepMind, AlphaFold, and the Final Stretch to AGI
+Published: 2026-04-30
+https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Takeaway: Demis Hassabis laid out DeepMind's founding vision — "step one, solve intelligence; step two, use it to solve everything else" — and argued the field remains on the trajectory he mapped out in 2009.
+
+In a wide-ranging fireside chat at what appears to be a Sequoia event, Hassabis walked through the origins of DeepMind, his path from chess prodigy to game developer to neuroscientist to AGI researcher, and why he believes AGI is still on track for around 2030. He described the early days when almost no one in academia or industry believed deep learning could lead anywhere: "We almost felt like we were keepers of a secret because no one either in academia or industry really believed that any big progress was possible."
+
+On AI for science, Hassabis explained that AlphaFold was always the intended early proof point, and that Isomorphic Labs is now building on that foundation to automate drug discovery — compressing the average ten-year timeline down to potentially weeks or days by doing nearly all exploration in silico. He sees biology as a natural domain for machine learning because it has "loads of weak signals, weak correlations, tons of data, far too much that any human mind can analyse."
+
+He made a provocative philosophical claim: that information, not energy or matter, is the most fundamental property of the universe — and that this makes AI even more profound than it first appears, since AI is fundamentally about organizing and understanding information.
+
+On consciousness, Hassabis recommended approaching it in two steps: first build an incredibly intelligent and useful tool, then tackle agency and consciousness with that tool as a resource. He also gave his favorite strategy-game teammate answer without hesitation: Von Neumann, "you want a game theorist."
+
+Direct quote: "I wanted to do AI for a long time, so I kind of decided it was the most important thing I could possibly and most interesting thing I could do in my teenage years."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No new blog posts in the lookback window.
+Claude Blog — Redesigning Claude Code on desktop for parallel agents
+Published: Apr 14, 2026
+https://claude.com/blog/claude-code-desktop-redesign
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Anthropic shipped a major redesign of the Claude Code desktop app aimed at developers running multiple agents in parallel. The new experience centers on a sidebar that consolidates all active and recent sessions — you can filter by status, project, or environment, and sessions archive themselves automatically when their PR merges.
+
+Key additions include an integrated terminal, an in-app file editor for spot edits, a faster rebuilt diff viewer, and a drag-and-drop pane layout so you can arrange the workspace however you prefer. A side-chat feature (Cmd/Ctrl + ;) lets you branch off a question mid-task without polluting the main thread's context.
+
+The redesign also brings CLI plugin parity to the desktop app, extends SSH support to Mac, and adds three view modes — Verbose, Normal, and Summary — to dial the interface from full transparency into tool calls down to just results. Available now for Pro, Max, Team, and Enterprise plans.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
