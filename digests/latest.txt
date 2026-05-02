@@ -1,147 +1,93 @@
-AI Builders Digest — 2026-05-01
+AI Builders Digest — May 2, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Andrej Karpathy — AI researcher, former Director of AI at Tesla and founding team at OpenAI
+Aaron Levie — CEO at Box
+Levie offered a sharp framework for thinking about AI's impact on software: when there are "100X more agents than people," the systems that will grow are those tied to increased work output — more code, more contracts, more invoices, more designs. Underlying systems of record that provide guardrails, security, compliance, and data storage will only increase in value as untrusted and trusted agents proliferate through enterprise workflows. He also observed that most enterprises outside Silicon Valley are focused on augmenting their existing processes with AI — not cutting costs — and that AI-driven cost savings quickly erode when competitors use AI to better serve customers.
+https://x.com/levie/status/2050295657836277764
+https://x.com/levie/status/2050240083325030404
 
-Karpathy shared highlights from a fireside chat at Sequoia Ascent 2026. He noted that the first theme he tried to push at the event was about LLMs and the evolving nature of how they're used. He also shared a quote he's been citing frequently in recent conversations — a sign of the ideas he's been thinking through most deeply.
-https://x.com/karpathy/status/2049903821095354523
+Zara Zhang — Builder (Harvard '17)
+Zhang shared a mindset shift reshaping how she works with coding agents: instead of treating them like employees who execute orders, she treats them like cofounders — presenting problems, describing context, and asking for their opinion. The post earned 74 likes and 20 replies.
+https://x.com/zarazhangrui/status/2050326543797469415
 
----
+Amjad Masad — CEO at Replit
+Replit celebrated its 10th anniversary today with a bold move: making the platform completely free for 24 hours starting at 5am PT. Masad reflected on the company's mission to make coding accessible to all, tracing roots back to 2011, and promised bigger celebrations for future releases.
+https://x.com/amasad/status/2050479551537619413
 
-Swyx — builder and writer focused on AI engineering
+Sam Altman — CEO at OpenAI
+Altman hinted at a product release event that drew far more attendees than expected, promising to "plan bigger parties for future releases." He also cryptically posted "/hatch clippy" — which sparked over 350 replies — and reflected on being back on X: "there is comfort in the skills of a wasted youth."
+https://x.com/sama/status/2050427808456077541
+https://x.com/sama/status/2050402088266694689
 
-Swyx made the case that "coding agents breaking containment" is the breakout theme of 2026. He said it on a recent podcast and followed up with a fuller writeup elaborating his thinking. The framing points to a shift where AI coding agents are no longer just assistants confined to IDEs — they're spilling into broader workflows.
-https://x.com/swyx/status/2050068468498842058
-Fuller writeup: https://x.com/swyx/status/2050076322781860144
+Peter Steinberger — Polyagentmorous ClawFather at OpenClaw + OpenAI
+Steinberger's post about the new /goal feature in Codex went viral with 2,020 likes and 110 replies — a sign that Codex's latest feature updates are deeply resonating with developers. He also shared a humorous screenshot about using Codex to resolve an xAI billing issue.
+https://x.com/steipete/status/2050275598178586921
+https://x.com/steipete/status/2050384648119734683
 
----
+Peter Yang — Product at Roblox, practical AI tutorials for 140K+ readers
+Yang documented his first broken Codex feature in a post that drew 77 likes and 8 replies. He also sparked a relatable conversation: he spent close to $3,000 on a MacBook Pro ostensibly to run local models — then revealed with a laughing emoji what he's actually running on it.
+https://x.com/petergyang/status/2050406287008268450
+https://x.com/petergyang/status/2050394924395434233
 
-Amanda Askell — philosopher and ethicist at Anthropic AI
+Nikunj Kothari — Partner at FPV Ventures
+Kothari is building in public: he's at $36,500 in ARR with a house-hunting app he built using Railway, Conductor, and Claude AI, with payments via Stripe. Each report costs $8–9 to generate, so he's selling mostly at cost and offering promo codes to active house hunters in exchange for feedback.
+https://x.com/nikunj/status/2050407946438467878
+https://x.com/nikunj/status/2050353986742698400
 
-Askell flagged a growing problem: content written about her that's stated with full confidence but is completely fabricated. She pushed back on the trend and noted it's strange because, in her own view, she's a very boring subject to write about. She called for writers to engage with her actual work instead of invented narratives.
-https://x.com/AmandaAskell/status/2050020603323904369
-https://x.com/AmandaAskell/status/2050021990023758206
+Dan Shipper — CEO at Every
+Shipper shared a pithy observation about the limits of AI: "models know more than any individual human. but any individual human learns faster than models do." The post was responding to a broader discussion about model knowledge versus human adaptability, and drew 93 likes and 13 replies.
+https://x.com/danshipper/status/2050304359024759242
 
----
+Aditya Agarwal — General Partner at South Park Commons, Co-Founder at Bevel Health, ex-CTO of Dropbox
+Agarwal distilled a core startup lesson: "The best way to kill your company? Focus on everything except the product." A simple reminder from someone who's seen it happen at scale, earning 83 likes and 8 retweets.
+https://x.com/adityaag/status/2050229509840900434
 
-Cat Wu — Claude Code and cowork lead at Anthropic AI
+Claude — Anthropic's official AI assistant account
+Anthropic announced that "Code with Claude," its developer conference, returns next week — with sessions for both beginners and experienced Claude Code builders, plus a public livestream to register for.
+https://x.com/claudeai/status/2050252933866930339
 
-Cat announced that Claude Security is now in public beta, built directly into Claude Code on the web. Point it at a repo and get validated vulnerability findings — no custom tooling required.
-https://x.com/_catwu/status/2049964403177689130
-
----
-
-Amjad Masad — CEO of Replit
-
-Masad shared Replit's philosophy of treating its own company as "customer zero" — going beyond dogfooding. They expect their internal usage to have an outsized influence on the product direction. He also teased a "Prompt → LLC" workflow, hinting at AI-powered business formation.
-https://x.com/amasad/status/2049921597499445677
-https://x.com/amasad/status/2049934937688854993
-
----
-
-Aaron Levie — CEO of Box
-
-Levie made a sharp structural observation: as agents become the biggest users of software, all software needs to become available in a headless fashion. Agents won't navigate UIs the way humans do, so the interface layer has to change. This is a framing that has broad implications for how SaaS products are built.
-https://x.com/levie/status/2050051426446152159
-
----
-
-Ryo Lu — designer at Cursor AI
-
-Ryo added the Cursor SDK to ryOS — his personal operating system project — making it possible to edit the OS just by chatting with it. He integrated it by pasting the SDK link directly into Cursor, calling it surprisingly easy. He also shared a thoughtful design take: "opinionated" and "general purpose" are not opposites. The moment you make any decision, you've taken a position.
-https://x.com/ryolu_/status/2049872551955013713
-https://x.com/ryolu_/status/2049866003287576978
-
----
-
-Garry Tan — President and CEO of Y Combinator
-
-Tan highlighted that GBrain — his AI knowledge and memory tool — has diverged sharply from Mempalace over the past three weeks and is now its own distinct category. He also noted that users of Hermes Agent or OpenClaw can layer GBrain on top of their Karpathy-style Knowledge Wiki for significant gains.
-https://x.com/garrytan/status/2050095919157350644
-https://x.com/garrytan/status/2050096324100682097
-
----
-
-Nikunj Kothari — partner at FPV Ventures
-
-Kothari observed that the explosion of MCPs and CLIs makes one thing clear: large models are going to be how we orchestrate our lives. His investment thesis: be in the path of that orchestration layer.
-https://x.com/nikunj/status/2049871924105531672
-
----
-
-Peter Steinberger — creator of OpenClaw, "ClawFather"
-
-Steinberger announced meaningful improvements to OpenClaw in group chats — if previous results were mixed, he says this version is worth trying again. He also reflected on lessons learned from working with Nvidia, OpenAI, Microsoft, and GitHub on the security ecosystem over the past few months.
-https://x.com/steipete/status/2049988836160074022
-https://x.com/steipete/status/2049976855617314991
-
----
-
-Dan Shipper — CEO of Every
-
-Shipper is experimenting with using Codex alongside Chronicle as a focus tracker — an interesting use of AI coding tools for personal productivity rather than just code generation.
-https://x.com/danshipper/status/2049913064561258986
-
----
-
-Sam Altman — CEO of OpenAI
-
-Altman announced a big upgrade to Codex, encouraging people to try it for non-coding computer work — signaling that Codex is expanding beyond its original software-development framing.
-https://x.com/sama/status/2049946120441520624
-
----
-
-Claude (Anthropic AI)
-
-Anthropic announced Claude Security is now in public beta for Claude Enterprise customers, built on Opus 4.7. Since the research preview in February, hundreds of organizations have used it on production code to catch issues. It gives security teams a way to apply Opus 4.7 to their codebase without standing up custom tooling.
-https://x.com/claudeai/status/2049898741772021991
-Learn more: https://t.co/Oei6EHTZuX
-
----
-
-Aditya Agarwal — General Partner at South Park Commons, former CTO of Dropbox
-
-Agarwal called the current moment a critical inflection point for cybersecurity. His framing: AI is simultaneously the biggest new threat and the only viable solution. The attackers have AI; so do the defenders.
-https://x.com/adityaag/status/2049874181509034151
-https://x.com/adityaag/status/2049941075872113145
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Training Data — Demis Hassabis on Building DeepMind, AlphaFold, and the Final Stretch to AGI
-Published: 2026-04-30
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
+No Priors — Baseten CEO Tuhin Srivastava on the AI Inference Crunch, Custom Models, and Building the Inference Cloud
 
-Takeaway: Demis Hassabis laid out DeepMind's founding vision — "step one, solve intelligence; step two, use it to solve everything else" — and argued the field remains on the trajectory he mapped out in 2009.
+The key takeaway: AI inference is the last market standing — even in a post-AGI world, everything still runs on inference, and we are nowhere near having enough compute to meet demand.
 
-In a wide-ranging fireside chat at what appears to be a Sequoia event, Hassabis walked through the origins of DeepMind, his path from chess prodigy to game developer to neuroscientist to AGI researcher, and why he believes AGI is still on track for around 2030. He described the early days when almost no one in academia or industry believed deep learning could lead anywhere: "We almost felt like we were keepers of a secret because no one either in academia or industry really believed that any big progress was possible."
+Tuhin Srivastava, founder and CEO of Baseten, joined No Priors hosts Sarah Guo and Elad Gil to discuss what it looks like to grow 30x in a year, operate 90 clusters across 18 clouds, and hold a daily 4pm capacity meeting as a permanent fixture of company culture. Baseten is on track to exceed $1B in revenue this year.
 
-On AI for science, Hassabis explained that AlphaFold was always the intended early proof point, and that Isomorphic Labs is now building on that foundation to automate drug discovery — compressing the average ten-year timeline down to potentially weeks or days by doing nearly all exploration in silico. He sees biology as a natural domain for machine learning because it has "loads of weak signals, weak correlations, tons of data, far too much that any human mind can analyse."
+Baseten serves some of the fastest-growing AI-native companies — Abridge, Cursor, Open Evidence, Decagon — and Srivastava's core thesis is that the application layer survives commoditization because companies that gather unique user signal and encode it in workflows (not just models) build durable moats. "To the extent that it is encoded in workflows, that is where they will be able to develop moat," he said. His concrete example: Abridge's ambient scribe product, so deeply integrated into hospital workflows and EMRs, is nearly impossible for a frontier lab to replicate without access to the same clinical user signal.
 
-He made a provocative philosophical claim: that information, not energy or matter, is the most fundamental property of the universe — and that this makes AI even more profound than it first appears, since AI is fundamentally about organizing and understanding information.
+On model mix, Srivastava revealed a striking stat: 95% of tokens served on Baseten today are from custom models, not vanilla open source weights. Nearly every customer modifies the base model with their own data — for quality, performance, or specialized use cases. Post-training expertise is now so central to the business that Baseten acquired a research team (Parzed) to offer it as a product.
 
-On consciousness, Hassabis recommended approaching it in two steps: first build an incredibly intelligent and useful tool, then tackle agency and consciousness with that tool as a resource. He also gave his favorite strategy-game teammate answer without hesitation: Von Neumann, "you want a game theorist."
+The supply crunch is real and worse than most people realize. Baseten runs clusters at "uncomfortably high utilization" — mid-nineties — and quality of compute supply is as much a problem as quantity: "There's probably like a dozen good clouds, and I'd probably put three or four of them in the gold tier." Buying future capacity now requires 3–5 year contracts with 20–30% TCV prepayments, which is pushing Baseten to think seriously about accessing public markets for lower cost of capital.
 
-Direct quote: "I wanted to do AI for a long time, so I kind of decided it was the most important thing I could possibly and most interesting thing I could do in my teenage years."
+On Jevons paradox, Srivastava is bullish: cheaper inference doesn't cannibalize demand — it amplifies it. "If you make it cheaper, they'll insert a hell of a lot more intelligence." Longer-running agents are the direct result of inference costs coming down. The episode closes with a vision of AI as personalized concierge for healthcare, education, and daily life — and a belief that software engineering headcount isn't shrinking, it's just building exponentially more things.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://www.youtube.com/watch?v=XAbKflCncDo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude Blog — Redesigning Claude Code on desktop for parallel agents
-Published: Apr 14, 2026
-https://claude.com/blog/claude-code-desktop-redesign
+Anthropic Engineering — An update on recent Claude Code quality reports
+https://www.anthropic.com/engineering/april-23-postmortem
 
-Anthropic shipped a major redesign of the Claude Code desktop app aimed at developers running multiple agents in parallel. The new experience centers on a sidebar that consolidates all active and recent sessions — you can filter by status, project, or environment, and sessions archive themselves automatically when their PR merges.
+Anthropic published a detailed postmortem on three separate changes that degraded Claude Code quality over the past month. The issues: (1) a default reasoning effort downgrade from high to medium, reverted April 7 after users reported feeling less intelligent responses; (2) a caching bug that cleared Claude's thinking history every single turn instead of just once after an idle session, causing forgetfulness and unusual tool choices — fixed April 10; and (3) a system prompt change capping responses to 25 words between tool calls, which hurt coding quality and was reverted April 20. All three have been resolved as of v2.1.116. Anthropic is resetting usage limits for all subscribers and committing to broader eval suites, tighter system prompt controls, and a new ClaudeDevs X account for transparent product communication.
 
-Key additions include an integrated terminal, an in-app file editor for spot edits, a faster rebuilt diff viewer, and a drag-and-drop pane layout so you can arrange the workspace however you prefer. A side-chat feature (Cmd/Ctrl + ;) lets you branch off a question mid-task without polluting the main thread's context.
+Claude Blog — New connectors in Claude for everyday life
+https://claude.com/blog/connectors-for-everyday-life
 
-The redesign also brings CLI plugin parity to the desktop app, extends SSH support to Mac, and adds three view modes — Verbose, Normal, and Summary — to dial the interface from full transparency into tool calls down to just results. Available now for Pro, Max, Team, and Enterprise plans.
+Claude's connector directory — now at over 200 integrations — is expanding into everyday life apps: AllTrails, Audible, Instacart, Tripadvisor, Intuit TurboTax, Uber, Spotify, Booking.com, Resy, StubHub, Taskrabbit, and more. Claude now proactively suggests the right connector for your context within the conversation, and shows all relevant options when multiple apps could help. The platform remains ad-free with no paid placements. Connectors are available on all plans, with mobile in beta.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Claude Blog — Built-in memory for Claude Managed Agents
+https://claude.com/blog/claude-managed-agents-memory
+
+Memory for Claude Managed Agents is now in public beta. Agents can learn and retain information across sessions via filesystem-based memory that integrates directly with bash and code execution tools. Memories are stored as exportable files with full API control and detailed audit logs. Early enterprise results are compelling: Rakuten cut first-pass errors by 97%, Wisedocs sped up document verification by 30%, and Netflix agents now carry context — including mid-conversation human corrections — across sessions without manual prompt updates.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
