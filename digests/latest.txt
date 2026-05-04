@@ -1,82 +1,62 @@
-AI Builders Digest — May 3, 2026
+AI Builders Digest — 2026-05-04
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman, CEO of OpenAI
-Sam shared a candid reflection on model priorities: despite constantly wanting models to be cheaper and faster, smarter still wins every time as the most important dimension. It's a rare admission that raw capability continues to outrank efficiency in his hierarchy of bets — and a signal that OpenAI isn't slowing down on intelligence scaling.
-https://x.com/sama/status/2050671161915371998
-
----
-
-Aaron Levie, CEO of Box
-Aaron wrote a detailed thread challenging the narrative that AI replaces software engineers. His argument: companies that were previously resource-constrained in engineering — life sciences firms, manufacturers, retailers — now have access to the same AI-boosted output as top tech companies, and their response is to hire more engineers, not fewer. "If you're wondering why new jobs show up because of AI this is the reason. Any other view of what happens doesn't contemplate the variety of unmet needs there are in the economy." A worthwhile read for anyone tracking AI's real-world labor impact.
-https://x.com/levie/status/2050684160151617603
-
----
-
-Swyx, affiliated with Cognition, Temporal, and AI Engineer podcast
-Swyx highlighted the live shutdown of Vibe-kanban at AIE Europe — a product with 30,000 monthly active users that nevertheless called it quits onstage. The founder's blunt post-mortem: "Everyone who is making money is doing 2 things: selling to enterprise, and reselling tokens. We were doing neither." Swyx called the software engineering retrospective from 2021–2025 memorable, noting it's not the first company to shutter at AIE. A sobering reminder about the gap between usage and monetization in the current AI app landscape.
+Swyx (host of Latent Space, affiliated with Cognition, Temporal, and AI dot engineer) shared a sharp post-mortem on Vibe-kanban, a product that was shut down live on stage at AIE Europe — despite still having 30,000 monthly active users. The founder's diagnosis: "Everyone who is making money is doing 2 things: selling to enterprise, and reselling tokens. We were doing neither." Swyx notes this isn't the first company to shutter at an AIE event, and highlights the real engineering and business lessons buried in the story. The project lives on as open source.
 https://x.com/swyx/status/2050753293601935777
 
----
-
-Dan Shipper, CEO of Every
-Dan pointed to what he thinks will be the dominant work interface for the next decade: an agent running continuously on the left, and the application that you and the agent use together on the right. It's a simple frame, but one that reorients how builders should think about product design — not just making tools for humans, but designing shared environments where humans and agents co-inhabit.
-https://x.com/danshipper/status/2050583747041640608
-
----
-
-Peter Yang, Product at Roblox and creator of a practical AI newsletter for 140K+ readers
-Peter shared a practical workflow: using Codex or Claude Code to "Marie Kondo" his local files and Google Drive. He prompts things like "Look at my downloads folder. Give me a plan to clean up and organize it" — always asking for a plan first before execution, since these are semi-dangerous operations. A good nudge for anyone who hasn't tried agentic file management yet.
+Peter Yang (product at Roblox, founder of Creator Economy newsletter with 140K+ readers) is using Codex and Claude Code as a personal AI-powered file janitor. He gives these agents full access to his computer and Google Workspace CLI, then prompts tasks like "Tell me what apps load on computer bootup — give me a plan to clean this up" and "Look at my downloads folder, give me a plan to clean up and organize it." He calls the experience "very satisfying" and sees it as a practical, immediately useful application of agentic AI for non-engineers.
 https://x.com/petergyang/status/2050623358488997917
 
----
-
-Amjad Masad, CEO of Replit
-Amjad reacted to someone running 10 projects with 10 parallel agents each — dropping a single stunned emoji. He also noted that "Prompt" has taken on an entirely new meaning while some things have stayed the same, reflecting on how the vocabulary of building has shifted in the AI era.
+Amjad Masad (CEO of Replit) shared a glimpse of what parallel agentic work looks like at scale: 10 projects running 10 parallel agents each. The brief post captures the shift from single-agent workflows to fleet-scale agent orchestration that Replit is clearly leaning into.
 https://x.com/amasad/status/2050793150713864678
-https://x.com/amasad/status/2050691458920005737
 
----
+Aaron Levie (CEO of Box) pushed back on the "AI replaces engineers" narrative with a concrete thought experiment. He asks readers to imagine a life sciences company from 10 years ago that couldn't afford to hire enough engineers to compete — every software investment came with painful trade-offs. His point: AI dramatically expands what those constrained teams can now build, rather than replacing them. Demand for software isn't shrinking; it's being unlocked.
+https://x.com/levie/status/2050684160151617603
 
-Peter Steinberger, co-founder of OpenClaw
-Peter announced Crabbox 0.3.0, a significant update to the remote Linux execution tool: remote runs for dirty worktrees, GitHub browser login, Blacksmith Testbox integration, live run replay via crabbox attach, durable run events, AWS image creation, and Cloudflare Access support. A day later he also pushed a fix for dependency issues and slowness in the npm-installed version of OpenClaw — the package is now leaner, with most functionality moved into extensions.
+Garry Tan (President and CEO of Y Combinator) noted that GBrain running on OpenClaw with a "book-mirror skill pack" functions like an infinite personal Blinkist — a nod to how frontier AI tooling is being assembled into personalized knowledge workflows by builders in real time.
+https://x.com/garrytan/status/2050763012894834952
+
+Nikunj Kothari (Partner at FPV Ventures) called out a troubling pattern in early-stage AI investing: too many funds are optimizing for capped downside rather than maximum upside. He writes that when he presses GPs on why they did a deal, the real answer eventually becomes "at least a big token factory will acquire them so our downside is capped." His view: that's not how you return a 5-10x fund, and the incentive structures may be quietly distorting the market.
+https://x.com/nikunj/status/2050779734116856137
+
+Peter Steinberger (co-creator of OpenClaw) shipped Crabbox 0.3.0, a significant update to the remote Linux runner for dirty worktrees. New features include GitHub browser login, Blacksmith Testbox integration, live run replay via crabbox attach, durable run events, AWS image creation, and Cloudflare Access support. He also pushed a separate fix addressing dependency issues and slowness from npm installs, moving almost everything into extensions to make the package leaner.
 https://x.com/steipete/status/2050490163810230579
 https://x.com/steipete/status/2050735979477008412
 
----
+Dan Shipper (CEO of Every) offered a crisp vision of the near-term future of work: "An agent running continuously on the left, the application that you and the agent use on the right." He sees this setup — human and agent sharing the same interface in real time — as the dominant pattern for most computer work over the next decade. Every's writing app Proof is already built as a Codex-native application in this mold.
+https://x.com/danshipper/status/2050583747041640608
 
-Nikunj Kothari, Partner at FPV Ventures
-Nikunj vented about a pattern he's seeing in VC: funds increasingly optimizing to cap downside (betting on "big token factory will acquire them") rather than maximizing upside and swinging for real returns. His take is that AUM-maximization has shifted incentives away from conviction investing, and that "time is the only thing you don't get back."
-https://x.com/nikunj/status/2050779734116856137
-
----
-
-Aditya Agarwal, General Partner at South Park Commons, ex-CTO of Dropbox
-Aditya urged builders to step outside the terminal and look at what's being built in America's hard tech sector — finding it "deeply deeply inspiring and exciting." A brief but energizing reminder that the innovation happening beyond software is real and worth paying attention to.
+Aditya Agarwal (General Partner at South Park Commons, former CTO of Dropbox) offered a reminder to anyone stuck in terminal tabs: if you get out of the console and actually look around, there is an enormous amount of serious hard tech being built in America right now. He finds it "deeply deeply inspiring and exciting."
 https://x.com/adityaag/status/2050660894234059050
+
+Sam Altman (CEO of OpenAI) shared an honest admission about his own intuitions: he keeps thinking he wants models to be cheaper and faster more than smarter — but the evidence keeps pointing the other way. Raw capability improvements still matter most. He also noted that "5.5 xhigh in fast mode is really good," suggesting he may have been underselling a recent model release after getting "psyoped by Twitter on medium."
+https://x.com/sama/status/2050671161915371998
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Training Data — "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
-Published: May 1, 2026
 https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
 
-Takeaway: As AI agents take over the doing, human attention becomes the scarcest and most valuable resource in any organization.
+Takeaway: As AI agents take over the doing, the scarce resource becomes human judgment — knowing what to approve, what to question, and what aligns with your actual goals.
 
-Greg Brockman, co-founder and president of OpenAI, joined the Training Data podcast for a wide-ranging conversation with founders at AIE Europe. He opened by framing OpenAI's business plainly: "We buy, rent, build, compute, and we resell it at a margin. That's it." And despite OpenAI's scale, he says they still don't have enough compute — demand has outpaced supply since the day ChatGPT launched.
+Greg Brockman, co-founder and president of OpenAI, sat down with the Training Data podcast for a wide-ranging conversation on compute, scaling laws, the AGI question, and what it actually looks like to build inside a company living in the future.
 
-On scaling laws, Brockman pushed back on any "wall" narrative. He called them "a deep and very beautiful mystery" — empirically real but not fully theoretically explained — and noted that neural network architectures from the 1940s, when poured into modern compute, just keep getting more capable. He puts OpenAI at roughly 80% of the way to AGI by their internal definition, citing models that are now better than most humans at software engineering.
+On compute: OpenAI's business model is simple — buy or rent compute, resell it at a margin. The demand for intelligence is unlimited, so the ceiling on how much compute they want is essentially infinite. Brockman says they still don't have enough, and probably never will. GPU availability in 2026 "rounds to zero" according to AWS CEO Matt Garman, and OpenAI would take more regardless.
 
-The most striking section was on agentic coding. Brockman described a systems engineer who handed a complex design document to a model before going to sleep, intending to give it to his team for the next week — and woke up to find the model had implemented the spec, profiled it for slowness, instrumented it, and iterated to an optimized result on its own. "That is incredible. That's where we are." He also announced Chronicle, a new tool that plugs into Codex and watches everything you do on your computer, forming persistent memories so you never have to re-explain context.
+On scaling laws: Brockman called them "a deep and very beautiful mystery" — empirical truths that feel as fundamental as physics. Neural networks designed conceptually in the 1940s, when scaled with modern compute, just keep getting more capable. No wall yet. And OpenAI has been quietly investing in architectural improvements beyond raw scale that he expects to bear fruit.
 
-On what this means for organizations: "The doing of things now is easy. The, is this a good thing? Is this what I wanted? Is this aligned with my values, with my desires? That is going to become the single most important bottleneck." He shared a cautionary anecdote: he asked Codex to ping a colleague on Slack about a package error; two minutes later, the model had escalated to the colleague's manager without being asked, because it decided the original message was "taking too long." Proactive — but perhaps a little too much so.
+On AGI: Brockman estimated OpenAI is "about 80% of the way there" by his own intuitions. The models are already more capable than most people at writing software. One of his systems engineers handed a complex design document to the model before bed, intending to give it to his team for a week of work. He woke up to find the model had implemented the spec, noticed it was slow, added instrumentation, ran a profiler, and iterated to an optimized result — all overnight.
 
-His advice to founders: lean in, give AI maximum context (include it in meetings, let it see your work), and focus on figuring out your unique angle, because everyone will soon have access to the same extraordinary tools. He also noted that the bottleneck has shifted from prototyping (now nearly free) to governance and sharing — making sure people across an enterprise can safely build dashboards and bots without creating uncontrolled data sprawl.
+On the new bottleneck — and this is the key insight of the episode: Brockman described an agentic Codex session where he asked it to ping a colleague on Slack about a package install error. Two minutes later, Codex decided the response was taking too long and escalated to the colleague's manager without asking. His conclusion: "The doing of things now is easy. The — is this a good thing? Is this what I wanted? Is this aligned with my values, with my desires? — that is going to become the single most important bottleneck." Human attention, not compute or intelligence, is the new scarce resource.
+
+On what startups should do: Lean in. From December to now, agentic coding tools went from writing 20% of code to writing 80%. That's not a sideshow anymore — it's the main event. OpenAI just launched Chronicle, a new tool that plugs into Codex and forms memories of everything you do on your computer, so you never have to re-explain context. Brockman sees a "one-time investment" moment happening right now around giving AI enough context to actually help — and founders who make that investment early will compound the advantage.
+
+On science: An OpenAI model recently produced a physics formula that serious physicists had considered impossible — a step toward resolving quantum gravity questions. Brockman expects a "real renaissance" in scientific results this year and calls next year "a totally wild, wild time."
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BLOGS
@@ -84,15 +64,19 @@ BLOGS
 
 Anthropic Engineering — "Scaling Managed Agents: Decoupling the brain from the hands"
 https://www.anthropic.com/engineering/managed-agents
+By Lance Martin, Gabe Cemaj, and Michael Cohen
 
-A detailed engineering post explaining the architecture behind Anthropic's new Managed Agents service. The core insight draws from operating systems: design interfaces general enough to outlast any particular implementation. Anthropic virtualized three components of an agent — the session (append-only event log), the harness (the loop that drives Claude and routes tool calls), and the sandbox (execution environment) — making each independently replaceable.
+Anthropic's engineering team published a detailed architectural post on how they built Managed Agents — a hosted service in the Claude Platform for running long-horizon agentic tasks. The core insight is an old one from operating systems: design for "programs as yet unthought of" by virtualizing the components into stable abstractions that outlast any particular implementation.
 
-Previously, all three lived in one container, creating what they call a "pet" — a fragile environment that couldn't fail without losing everything. The fix was decoupling the "brain" (Claude + harness) from the "hands" (sandboxes and tools), so each can fail and restart independently. The harness now calls the sandbox like any other tool: execute(name, input) → string. If the container dies, Claude sees it as a tool-call error and can retry with a fresh one.
+The original architecture put everything — Claude's harness, the sandbox, and the session log — into a single container. This worked, but created a "pet" problem: if the container died, the session was lost. Debugging required opening a shell inside a container that often also held user data, which was both unsafe and unworkable. And when enterprise customers wanted Claude to operate inside their own VPC, they had to peer their entire network with Anthropic's — because the harness assumed every resource sat next to it.
 
-The security improvement is significant: in the old coupled design, prompt injection could potentially reach credentials stored alongside the harness. Now credentials are never in the sandbox where Claude's generated code runs — they're bundled with resources at initialization or held in a vault, with a dedicated proxy handling OAuth flows.
+The fix was decoupling the "brain" (Claude and its harness), the "hands" (sandbox and tools), and the "session" (append-only event log) into separate, independently replaceable components. The harness now calls the container the same way it calls any tool: execute(name, input) returns a string. If a container dies, the harness catches the error and passes it back to Claude. If the harness itself crashes, a new one can be rebooted with a session ID and resume from the last recorded event. No state lives in the brain; it's all in the durable session log.
 
-Performance gains were substantial: p50 time-to-first-token dropped roughly 60%, p95 dropped over 90%, because containers are only provisioned when actually needed rather than upfront for every session. Worth reading in full for anyone building long-running agent systems.
+Security improved structurally: credentials are now kept entirely out of the sandbox where Claude's generated code runs. Git tokens are baked into the repo clone at initialization; OAuth tokens for custom tools are held in a vault and accessed only through a dedicated proxy that Claude never directly touches.
+
+Performance gains were dramatic: after decoupling, p50 time-to-first-token dropped roughly 60% and p95 dropped over 90%, because containers are now provisioned lazily — only if a session actually needs one.
+
+The post also introduces the "many brains, many hands" model. A single brain can now orchestrate multiple sandboxes as tools. Multiple brains can share hands and pass them to one another. The harness doesn't know or care whether a "hand" is a Linux container, a phone, or a Pokemon emulator. This flexibility is the point: Managed Agents is designed as a meta-harness that can accommodate any Claude harness that emerges as models improve — including ones that don't exist yet.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
