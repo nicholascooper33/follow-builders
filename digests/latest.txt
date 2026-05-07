@@ -1,68 +1,99 @@
-AI Builders Digest — May 6, 2026
+AI Builders Digest — May 7, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx (builder affiliated with Cognition, Temporal, AI dot Engineer, and the Latent Space Podcast) broke down the OpenAI vs. Anthropic valuation gap: OpenAI at ~$850B with ~$30B ARR versus Anthropic at ~$900B with ~$44B ARR — though he notes Anthropic's revenue is recognized differently and would be ~$8-10B lower under OpenAI's accounting methodology. He also highlighted that a conference track keynote by Patrick Debois (whom he gave a "blank check" to based on his track record) was drawing strong organic engagement.
-Sources: https://x.com/swyx/status/2051440392722391180 | https://x.com/swyx/status/2051329252344369626
+Thariq (Claude Code, Anthropic)
+Anthropic is doubling rate limits and winding back peak-hours restrictions, powered by a new compute partnership with SpaceX. Thariq, who leads Claude Code at Anthropic, confirmed they're pulling back the usage caps that frustrated developers and replacing them with expanded 5-hour limits. "We're winding back our peak hours limit reduction and doubling 5 hour limits. Excited to partner with SpaceX to bring you more compute and we'll keep pushing to bring you the best coding agent in the world."
+https://x.com/trq212/status/2052065936585457982
+https://x.com/trq212/status/2052074924588888261
 
-Peter Yang (product at Roblox, practical AI tutorials for 140K+ readers) laid out a three-frontier model for AI disruption: coding is the first frontier already being claimed by AI, knowledge work is the second, and personal agents are the third. He also shared that he wants to get his 8-year-old daughter building agent-powered apps she can share with her class — and maybe earn her first dollar online — and is crowdsourcing ideas.
-Sources: https://x.com/petergyang/status/2051508988936937764 | https://x.com/petergyang/status/2051459299860533483
+Alex Albert (Research, Anthropic)
+Alex Albert was at the Code with Claude event in San Francisco, engaging with developers and giving a main-stage talk at 5:30pm PT. He also pointed to the SpaceX compute deal as the driver behind expanded capacity: "More chips, more Claude." The event was livestreamed for those who couldn't attend in person.
+https://x.com/alexalbert__/status/2052065953173872912
+https://x.com/alexalbert__/status/2052067009605861764
 
-Amjad Masad (CEO of Replit) highlighted two real-world wins: Replit is helping entrepreneurs find investors and land meetings, and a builder used Replit to create a multimodal learning platform specifically for deaf students — a use case Masad called "great use of AI for education."
-Sources: https://x.com/amasad/status/2051511694040744139 | https://x.com/amasad/status/2051406536443035922
+Dan Shipper (CEO, Every)
+Dan Shipper flagged the Anthropic-SpaceX partnership, noting it unlocks Colossus supercluster capacity for Claude users and doubles rate limits. He also shared that Codex has become his daily driver for writing, recruiting, and deep engineering work — including keeping him at inbox zero. "Three months ago, Codex was trash for knowledge work. Now it's my daily driver. I use it for writing, recruiting, deep engineering work, and everything in between."
+https://x.com/danshipper/status/2052058966075846661
+https://x.com/danshipper/status/2052054077656252512
 
-Guillermo Rauch (CEO of Vercel) announced the open-source release of `npx deepsec`, an agent orchestrator built internally at Vercel for deep security reviews. After running it against major open-source projects, Vercel gained enough conviction to release it publicly. The tweet drew over 1,200 likes and 86 retweets, signaling broad interest across the security and dev community.
-Source: https://x.com/rauchg/status/2051386798899888539
+Aaron Levie (CEO, Box)
+Aaron Levie weighed in on the SpaceX-Anthropic partnership with a sharp strategic take: "SpaceX as a vertically integrated AI compute company makes an insane amount of sense." The framing positions SpaceX not merely as a cloud vendor but as a serious AI infrastructure play — with Starlink, Colossus, and Starship all potentially feeding into a vertically integrated stack.
+https://x.com/levie/status/2052071639337337288
 
-Aaron Levie (CEO of Box) noted that both Anthropic and OpenAI now have new enterprise-agent deployment initiatives. He called it a trend "early but going to get very big fast" — and sees this as the beginning of agentic AI entering knowledge work at organizational scale.
-Source: https://x.com/levie/status/2051344780328858040
+Claude / Anthropic
+Anthropic's official Claude account announced multiagent orchestration is now available on the Claude Platform. The new capability lets a lead agent break complex jobs into pieces and delegate to specialists running in parallel, each with its own model, prompt, and tools. Dario Amodei and Daniela Amodei also held a live conversation moderated by Chief Product Officer Ami Vora at 1pm PT.
+https://x.com/claudeai/status/2052067404696473833
+https://x.com/claudeai/status/2052067407204700646
+https://x.com/claudeai/status/2052105841864495282
 
-Garry Tan (President & CEO of YCombinator) shipped GBrain v0.27, adding support for non-Anthropic and non-OpenAI embeddings, multi-modal embeddings, and deep photo OCR. He framed GBrain's core differentiator clearly: it unifies memory, code tooling, and search under a single graph with one query interface — a combination he says no other tool currently offers. He also noted he personally stress-tests it obsessively.
-Sources: https://x.com/garrytan/status/2051517574589116510 | https://x.com/garrytan/status/2051525161380364315
+Zara Zhang (Builder)
+Zara flagged a strategic blind spot affecting many developer tools: now that agents can operate software on behalf of any user, the real addressable market has expanded far beyond professional developers — but product messaging hasn't caught up. "Lots of developer tools are having a missed opportunity. Their product is now essentially useful to anyone who has access to an agent, not just professional developers. But their messaging & marketing [hasn't reflected that]."
+https://x.com/zarazhangrui/status/2051900943831335167
 
-Nikunj Kothari (Partner at FPV Ventures) called Gemini Flash "criminal how cheap and how good" it is — citing 1M context windows, structured outputs, and new live voice features as the reasons it has become his most-used model in production workloads. Separately, he shared what he called a "hot take": founders from the 2023-2025 startup vintage are discovering that fancy launch videos and distribution-first strategies can unlock VC funding, but without real product substance, money still gets burned.
-Sources: https://x.com/nikunj/status/2051321911741972900 | https://x.com/nikunj/status/2051349526171287930
+Peter Yang (Practical AI, creator)
+Peter Yang noted that AI agents can now schedule meetings between their human users — two agents coordinating calendars on behalf of people who never directly interact. He also attended Code with Claude and observed that Claude still feels "the most like a trusted friend" among AI tools, and that Anthropic's new compute deal is a welcome development for users who've hit rate limits.
+https://x.com/petergyang/status/2052226719151710221
+https://x.com/petergyang/status/2052177418555977866
 
-Peter Steinberger (creator of OpenClaw, affiliated with OpenAI) released Crabbox 0.5.0 — ephemeral Linux, Windows (AWS + WSL2), and macOS boxes with VNC and authenticated WebVNC support. The update lets agents reproduce bugs in isolated "crabboxes," configure the exact state needed to test and fix an issue, and post recorded videos directly to pull requests. He's calling it a major step toward leveling up agentic QA.
-Sources: https://x.com/steipete/status/2051485798613111116 | https://x.com/steipete/status/2051557150040711425
+Ryo Lu (Design, Cursor)
+Ryo Lu shared Cursor's core design philosophy: the tool is built to be legible, customizable, and deeply under the user's control — showing less when you need clarity, more when you want depth. A clear statement of intent as the AI coding space grows noisier and competitors race to add features.
+https://x.com/ryolu_/status/2052064849346363729
 
-Sam Altman (CEO of OpenAI) said he's "pretty excited for voice models to get great," observing that people are already beginning to change how they interface with AI as the quality improves. He's watching the behavioral shift in human-AI interaction closely.
-Source: https://x.com/sama/status/2051464865634742334
+Garry Tan (President & CEO, YCombinator)
+Garry Tan shared a benchmarking post showing GBrain outperformed a competitor 8.3x on a particular document corpus. He also highlighted that hosted GStack is now available, lowering the barrier to spinning up new projects. His headline take on the current moment: "Just in time software is here."
+https://x.com/garrytan/status/2052227098883109235
+https://x.com/garrytan/status/2052162637916746114
+https://x.com/garrytan/status/2052024023861899655
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Josh Woodward (VP, Google Labs / Gemini)
+Josh Woodward announced a partnership between Google Flow Music and Believe, one of the world's largest music companies. Artists will be able to use Google's AI tools to experiment with new ways to craft melodies and instruments — an early signal of Google Labs experiments reaching large-scale commercial partnerships.
+https://x.com/joshwoodward/status/2052061728029212976
+
+Amjad Masad (CEO, Replit)
+Amjad Masad highlighted Replit's growing international presence with a post about Replit in Ghana, and shared a new collaboration with Lenny Rachitsky. Both moves reinforce Replit's push to position itself for non-technical builders worldwide rather than staying narrowly focused on professional developers.
+https://x.com/amasad/status/2052068011608264742
+https://x.com/amasad/status/2052185144879096139
+
+Peter Steinberger (ClawFather / open-source builder)
+Peter Steinberger shipped a flurry of open-source tools built with Codex, including integrations for Sonos, WhatsApp, X archives, and GitHub archives. He also released imsg 0.6 and 0.7 — a private API bridge for iMessage with improved watch/history reliability, better chat diagnostics, and correct decoding for long fallback messages. "Me and codex were busy."
+https://x.com/steipete/status/2051900143339704730
+https://x.com/steipete/status/2051905175355351440
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Training Data: Waymo's Dmitri Dolgov — 20 Million Rides and the Road to Full Autonomy
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
+AI & I by Every — "Why We Switched From Claude Code to Codex"
+https://www.youtube.com/watch?v=IDSAMqip6ms
 
-Takeaway: Waymo's co-CEO Dmitri Dolgov reveals how 21 years of mission-driven persistence — refusing to chase silver bullets through multiple hype cycles — combined with an end-to-end foundation model architecture, has produced a system that is over 13 times safer than human drivers and is now scaling exponentially.
+Takeaway: Codex has quietly transformed from a senior-engineer-only pairing tool into the leading general-purpose agent desktop for knowledge workers — and Every's team has fully migrated.
 
-Dolgov trained in physics and mathematics at Moscow Institute of Physics and Technology before completing a PhD in AI, and joined what became Waymo in 2009 when it was a 12-person team inside Google. The early years meant grinding around the clock — writing code during the day, testing at night — with milestones like driving 100,000 total miles and completing 10 pre-defined 100-mile routes fully autonomously. That took 18 months and seemed impossible at the time.
+Dan Shipper and Austin, Every's head of growth, hosted a live "Codex Camp" to walk subscribers through their switch from Claude Code to OpenAI's Codex desktop app. The conversation is bracingly honest: three months ago Codex "was trash." It was built for senior engineers, argued with users, lacked emotional intelligence, and was hobbled for safety inside a sandbox. But OpenAI pivoted hard after seeing how Claude Code was succeeding by being fast, smart, and emotionally aware on the desktop. The result is now what Austin describes as the best agent management interface available — faster, better organized, and capable of pulling in data from Gmail, Slack, Notion, and Stripe at startup.
 
-He addressed the AV hype-and-bust cycles directly: every breakthrough (convolutional nets, transformers, LLMs) reshapes the easy early part of the curve but leaves the long tail untouched. Most players gave up; Waymo persisted because the mission was non-negotiable. "Worldwide, somebody loses their life to a crash on our roads every twenty six seconds. Believing in the mission — because it's really, really important — and understanding what you're up against, not looking for easy wins or quick solutions or silver bullets, that's what helped the team have the right stamina to go the distance."
+Austin described his typical morning: "When I sign on during the day, Codex is the first thing I open. It is pulling in whatever I need from Gmail, Slack, Notion, Stripe, all of our data sources." He uses it to build automations, draft go-to-market plans, manage recruiting pipelines, and maintain a live KPI dashboard in Notion that updates every six hours across all of Every's data sources — work that previously required blocking off a full day or hiring a consultant.
 
-On technology, Dolgov rejected the false dichotomy between end-to-end and modular systems. The Waymo Foundation Model is end-to-end (sensors to decisions) but augmented with structured intermediate representations that enable closed-loop evaluation, richer RL reward functions, and runtime validation — the architecture that bridges the gap from impressive demo to superhuman, production-safe autonomy at scale.
+Dan articulated the broader macro frame: there is now an open race among model companies — Anthropic (Claude Code / Claude Desktop), OpenAI (Codex), xAI (Cursor) — to own the "agent management interface." Each is building a desktop app that starts as a programming agent and expands to cover all knowledge work. Dan expects Anthropic to close the current gap within weeks or months, after which the two tools will trade the lead repeatedly.
 
-The numbers are now verifiable: driving over 4 million fully autonomous miles per week, across 170 million total miles of data, Waymo is 13x safer than human drivers in serious-injury crashes — preventing a serious injury every 8 days. The sixth-generation hardware now powers the OHAI vehicle. From 8 years to reach four cities, Waymo earlier this year launched four new cities in a single day, now operating in 11 cities total, with London and Tokyo planned for 2026.
+A key workflow insight from Austin: he keeps a final review step outside the agent — reviewing Slack drafts in Slack, email drafts in Gmail — to preserve human accountability before anything reaches colleagues. He also built Compound Knowledge, a fork of the open-source Compound Engineering plugin, tuned for knowledge work: checking strategic alignment and data accuracy rather than security and front-end design. Sessions end with a prompt to compound learnings into shared memory and convert any useful workflow into a reusable skill.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Direct quote — Dan Shipper: "There's a new operating system for how and where you're gonna get your work done, and it's this kind of agent management interface."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Anthropic Engineering: Claude Code auto mode — a safer way to skip permissions
-https://www.anthropic.com/engineering/claude-code-auto-mode
+Claude Blog — "New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration"
+https://claude.com/blog/new-in-claude-managed-agents
 
-Anthropic's engineering team published a detailed technical breakdown of Claude Code's new "auto mode," which sits between two extremes: --dangerously-skip-permissions (zero friction, zero safety) and manual approval prompts (high friction, though users accept 93% of them anyway — creating approval fatigue). Auto mode delegates those approvals to model-based classifiers instead.
+Anthropic shipped three major updates to Claude Managed Agents. Dreaming is a new scheduled process that reviews past agent sessions and memory stores, extracts patterns, and curates memories so agents self-improve over time — with the developer choosing whether updates land automatically or go through human review first. Harvey used dreaming for complex legal drafting work and saw completion rates rise approximately 6x in tests; their agents now retain file-type workarounds and tool-specific patterns across sessions.
 
-The system has two defense layers. At the input layer, a prompt-injection probe scans tool outputs (file reads, web fetches, shell output) before they enter the agent's context, injecting a warning when it detects hijacking attempts. At the output layer, a two-stage transcript classifier (running on Sonnet 4.6) evaluates each action before execution. The classifier sees only user messages and bare tool calls — assistant prose and tool results are stripped so the agent can't construct persuasive rationalizations to bypass the check.
+Outcomes lets developers write a rubric describing what success looks like; a separate grader evaluates each output in its own context window and sends the agent back for another pass if the bar isn't met. In testing, outcomes improved task success by up to 10 percentage points, with the largest gains on the hardest problems — and +8.4% on docx and +10.1% on pptx file generation in internal benchmarks. Spiral by Every uses outcomes to score every draft against Every's editorial principles and the user's voice before returning anything to the user. Wisedocs used it to run document quality checks 50% faster while staying aligned with internal standards.
 
-Actions flow through tiers: safe read-only tools are allowlisted; in-project file writes pass through without classifier overhead; everything else — shell commands, web fetches, filesystem operations outside the project, subagent spawns — hits Stage 1 (a fast single-token yes/no filter tuned toward blocking) then Stage 2 (chain-of-thought reasoning, triggered only if Stage 1 flags).
+Multiagent orchestration allows a lead agent to delegate pieces of a complex job to specialists running in parallel on a shared filesystem. The lead agent can check in with subagents mid-workflow because events are persistent and every agent tracks its own history. Netflix's platform team uses this to analyze logs from hundreds of builds simultaneously, surfacing only patterns that recur broadly rather than one-off anomalies. Every step is traceable in the Claude Console — which agent did what, in what order, and why.
 
-Performance on real internal Anthropic traffic (n=10,000): 0.4% false positive rate. On real overeager actions (n=52): 17% false-negative rate. Anthropic is transparent about the 17% gap — the classifier often correctly identifies a dangerous action but misjudges whether a vague user statement like "clean up the PR" actually authorized the full blast radius (e.g. a force-push). Auto mode is recommended for users currently running --dangerously-skip-permissions, but not as a substitute for careful human review on high-stakes infrastructure.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
