@@ -1,120 +1,54 @@
-AI Builders Digest — 2026-05-11
+AI Builders Digest — 2026-05-13
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman — CEO, OpenAI
+Andrej Karpathy — Previously Director of AI at Tesla, founding team at OpenAI, PhD at Stanford
 
-OpenAI shipped what Altman is calling a new model ("5.5") with "autistic genius intelligence" and a very strange taste in naming — his words. He also described the new async workflow it enables: kick off a batch of Codex tasks, spend time outdoors with his kid, and return to find everything completed. He's using this as evidence of why the future looks optimistic.
-https://x.com/sama/status/2053192407664259251
-https://x.com/sama/status/2053191344999604409
-
----
-
-Aaron Levie — CEO, Box
-
-Levie wrote a detailed thread on why AI agents don't flatten the value of expertise — they amplify it. Novices gain access to new fields, but experienced practitioners always have an edge because they recognize when agents make catastrophic mistakes and know how to provide the right context. His conclusion: the volume and quality bar for every field will rise, but experienced people will remain in higher demand, not lower.
-https://x.com/levie/status/2053267097493573921
+Karpathy shared a practical prompting tip that's getting traction: ask your LLM to "structure your response as HTML," then open the generated file in your browser. He says it works really well and you can also prompt the model to preserve formatting in the rendered output. Simple trick, significant quality-of-life upgrade for complex or long-form outputs.
+https://x.com/karpathy/status/2053872850101285137
 
 ---
 
-Garry Tan — President & CEO, Y Combinator
+Swyx — Builder; affiliations: AI Engineer conference, Latent Space Pod, Cognition, Temporal
 
-GBrain v0.31.1 shipped real MCP thin-client support: you can now run one "home GBrain server" and have any other machine connect to it via MCP. Tan's summary: "GBrain just went client-server." He's also been having his AI agents generate ASCII diagrams of complex systems, then asking questions until the concept clicks — a lo-fi but effective debugging and learning workflow.
-https://x.com/garrytan/status/2053306243704410460
-https://x.com/garrytan/status/2053191327181865376
-
----
-
-Peter Yang — Practical AI educator; Product at Roblox
-
-Yang flagged a compounding slop trap that's easy to miss: you ask AI to generate some markdown, skim it, leave in the 5% slop, and then later ask it to generate more files referencing the first batch. The slop compounds from 5% to 10% to worse, until you have a pile of AI-generated content you don't fully understand. In a separate tweet that got nearly 1,000 likes, he called out Claude Code for hanging silently for three minutes with no indication of whether it's still working — and said he wished it communicated more.
-https://x.com/petergyang/status/2053317001976881312
-https://x.com/petergyang/status/2053170264121450616
+Swyx flagged what he's calling a massive upgrade to how the industry should define "realtime," pointing to new work from Thinky Machines. His read: "basically everyone's definition of 'realtime' just got a massive fricking upgrade." Nearly 800 likes, suggesting it landed hard in the AI engineering community. Worth tracking if you care about latency standards and real-time AI.
+https://x.com/swyx/status/2053960011748098462
 
 ---
 
-Swyx — AI Engineer; Affiliations: Cognition, Temporal, AI Engineer conference
+Amanda Askell — Philosopher & ethicist at Anthropic
 
-Swyx revealed that Singapore's Minister of Foreign Affairs (the equivalent of Secretary of State) is a NanoClaw fan and will be keynoting the AI Engineer Singapore conference, followed by NanoClaw creator Gavriel Cohen. He framed this as part of a broader trend: the UK's Chief AI Officer has already appeared at AI Engineer events, and now a sitting Cabinet minister is joining. He asked: who's next?
-https://x.com/swyx/status/2053370687931498603
-
----
-
-Peter Steinberger — Co-founder, OpenClaw; OpenAI
-
-Steinberger has been on a rapid Codex-powered build spree. He taught Codex to look for social signals (comments, reactions, review patterns) when evaluating PRs. He also used it to fix gifgrep — now rendering animated GIFs directly in the terminal — after updating Crabbox's Windows terminal handling. Separately, his Spotify CLI tool "spogo" got a speed upgrade: "Codex is my DJ now."
-https://x.com/steipete/status/2053374981824798751
-https://x.com/steipete/status/2053329609064685740
-https://x.com/steipete/status/2053310800773685600
+Askell announced that Claude's model spec — the document describing Claude's values, character, and behaviors — is now available as an audiobook, read by her and Joe. She's also working on a "fast mode" version for the recording. For anyone who's wanted to absorb Claude's constitution on a commute rather than a screen, now you can.
+https://x.com/AmandaAskell/status/2054010971765805486
 
 ---
 
-Zara Zhang — Builder
+Cat Wu — Claude Code + cowork at Anthropic
 
-Zhang argued that HTML matters because humans are visual animals — as Duolingo's founder once put it, "people don't read." In the past, we optimized output formats for human manipulation (e.g., pushing pixels in PowerPoint). Now that AI handles the manipulation, the format should be optimized for human consumption instead. Humans, it turns out, prefer beautiful and interactive artifacts.
-https://x.com/zarazhangrui/status/2053291803135410674
-
----
-
-Nikunj Kothari — Partner, FPV Ventures
-
-Kothari shared a custom instruction he adds to AI models to stop them from estimating work in human-days: tell the model to report timelines in model-execution units (seconds, tool calls, iterations), clearly separate what the model can do from what requires human action (credentials, deploys, API sign-ups), mark human-gating steps explicitly, and offer to start immediately if the task fits in the current session. A small prompt change with outsized practical value.
-https://x.com/nikunj/status/2053159569015328953
-
----
-
-Dan Shipper — CEO, Every
-
-Shipper pushed back on benchmark panic around new model releases: benchmarks don't measure raw model capability — they measure capability after a human has done the work of finding a prompt that lets the capability appear. That work is non-trivial and looks very much like a skilled job. His take: the "we got a tool to perform poorly" genre of science and journalism is the lowest form of the craft, and only relevant when the tool is actually useful.
-https://x.com/danshipper/status/2053191885116571935
-
----
+Wu highlighted a practical Claude Code tip: run `claude agents` in your terminal to get a control plane for managing all active CLI sessions. From any session, hit the left-arrow key to register it with the control plane — she recommends doing this from your root code directory. Separately, she put out an open call for feedback on Claude Code in the cloud across Desktop (cloud option), iOS, and Android, with office hours linked in the tweet.
+https://x.com/_catwu/status/2053999857799672111
+https://x.com/_catwu/status/2053873949646405879
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Training Data: ElevenLabs' Mati Staniszewski — How Voice Becomes the Interface for Everything
+No Priors — "Amex Global Business Travel: The World's First AI Take Private with Long Lake CEO Alexander Taubman"
+https://www.youtube.com/watch?v=g5TWnUjbeFM
+Published: 2026-05-11
 
-Takeaway: ElevenLabs CEO Mati Staniszewski explains how a childhood friendship forged in Poland's badly-dubbed movie culture turned into a frontier audio company doing $400M+ ARR, and why voice will be the primary interface for a world full of robots and AI agents.
+Takeaway: Long Lake Management is executing what may be the world's first AI-driven take-private — a $6.3 billion acquisition of the 111-year-old American Express Global Business Travel — built on the thesis that AI transforms labor-intensive service businesses into high-growth, software-margin operations.
 
-Staniszewski and his co-founder Piotr met in high school in Warsaw, bonded over Poland's notorious dubbing tradition — every foreign film, every character, one monotone voice — and decided to fix it. That founding story is more than charming; it explains why ElevenLabs took audio seriously before the big labs did. In 2022, when the rest of the industry was focused on text and image models, ElevenLabs bet on audio being undervalued and data-constrained rather than compute-constrained. They assembled top audio researchers via GitHub scraping and remote hiring across London and Warsaw, monetized quickly to stay independent, and now span the full audio stack: text-to-speech, speech-to-text, dubbing, real-time streaming, voice agents, and music.
+Long Lake CEO Alex Taubman joined No Priors to explain a model that looks unlike anything else in private equity: buy established service companies, deploy an in-house AI platform called Nexus, and hold for decades rather than flipping. Long Lake has already completed around 30 acquisitions across HOA management, HR services, and specialty tax. Businesses under their ownership are reportedly growing 20%+ per year, up from zero to 5% beforehand.
 
-Staniszewski is particularly excited about two things on the near-term roadmap. First, emotional intelligence in voice agents: not just producing the right intonation, but reading the caller's emotional state — if someone is stressed, the agent responds with a soothing tone; if they're excited, it matches the energy; if they speak slowly, it slows down. Second, "audio general intelligence": a single model that can narrate, pause, and then sing in the same continuous voice — something that's extremely difficult to combine today.
+The core insight Taubman returns to is that AI in services isn't primarily a cost story — it's a growth story. "Our view of AI is it's incredibly positive sum... we actually think AI makes people more productive. And we have more productive people, you want more of them. And when your customers are happier, you grow faster." By making existing employees 30–40% more efficient, Long Lake changes the unit economics of services: growth no longer requires proportionally more headcount, so incremental margins start to look like software rather than labor.
 
-On the business side, the obvious voice agent use case (customer support phone trees) is already working well. The next wave is revenue-generating: inbound and outbound sales. Deliveroo uses voice agents to call restaurants and capture their opening hours. Deutsche Telekom deploys them for inbound product inquiries. The Government of Ukraine built a voice agent where citizens can call to get real-time information about the war, education help, and safety guidance — what Staniszewski calls one of the most advanced government deployments he's seen.
+Taubman also draws a sharp distinction from traditional PE. Long Lake doesn't parachute in a turnaround playbook and exit — their engineers, recruited from Palantir, Ramp, Robinhood, and Glean, embed inside acquired companies for years, mapping workflows and deploying Nexus tooling. The feedback loop is tight because Long Lake owns the outcome, not just the software license. "When you're just selling software and you don't actually then care what happens with the business outcomes, you just don't see the same business results."
 
-A memorable quote from Nvidia CEO Jensen Huang, delivered in person to Staniszewski: "Speech to text is technology, and text to speech is artistry — and we are all artists." ElevenLabs now has over 20,000 community-contributed voices, a library Staniszewski sees as a durable moat: quality data, domain-specific fine-tuning, and a platform effect that's hard to replicate quickly.
-
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
-
----
+The Amex GBT deal is the firm's largest move yet — a company founded in 1915 to evacuate American Express Traveler's Cheque customers from Europe during World War I. Taubman's vision: equip every corporate travel counselor with AI superpowers — faster disruption resolution, near-zero errors in board reporting and budgeting, and tighter customer retention. The long-term ambition is explicitly Danaher/Berkshire-style compounding: own the best company in each service segment, reinvest for decades, and let the platform advantage make those businesses increasingly hard to leave.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Anthropic Engineering: An Update on Recent Claude Code Quality Reports
-
-Anthropic published a detailed postmortem on three separate bugs that degraded Claude Code between March and April 2026. First: the default reasoning effort was silently downgraded from high to medium on March 4, resulting in less intelligent responses — reverted April 7. Second: a caching optimization on March 26 had a bug that cleared reasoning history on every turn (not just once after idle sessions), causing forgetfulness, repetition, and odd tool choices — fixed April 10. Third: a system prompt tweak added on April 16 to reduce verbosity ("keep text between tool calls to ≤25 words") caused a measurable drop in coding quality — reverted April 20. All three are now resolved. Anthropic is resetting usage limits for all subscribers, rolling out improved eval coverage for every system prompt change, and publishing a dedicated ClaudeDevs account on X for product decision transparency.
-https://www.anthropic.com/engineering/april-23-postmortem
-
----
-
-Claude Blog: New Connectors in Claude for Everyday Life
-
-Anthropic expanded Claude's connector directory with a wave of consumer apps: AllTrails, Audible, Booking.com, Instacart, Intuit TurboTax, Intuit Credit Karma, Resy, Spotify, StubHub, Taskrabbit, Thumbtack, Tripadvisor, Uber, Uber Eats, and Viator. The directory now has over 200 connectors. A new contextual suggestion system means Claude now surfaces the right connector mid-conversation — ask for a weekend hike and AllTrails appears; mention a flight and Uber shows up — rather than requiring users to browse a catalog. Claude is ad-free: no paid placements, no sponsored answers. Connected app data is not used to train models, and apps don't see your other conversations.
-https://claude.com/blog/connectors-for-everyday-life
-
----
-
-Claude Blog: Built-In Memory for Claude Managed Agents
-
-Anthropic launched filesystem-based memory for Claude Managed Agents in public beta. Memories are stored as files, giving developers full control: export them, manage them via API, roll back versions, and audit every write with detailed logs showing which agent and session a memory came from. Stores can be scoped — a read-only org-wide store alongside a per-user read/write store — and multiple agents can work against the same store concurrently without overwriting each other. Early results are striking: Rakuten's task-based agents cut first-pass errors by 97% by learning from past sessions; Wisedocs sped up document verification by 30% by having agents remember recurring document issues across runs.
-https://claude.com/blog/claude-managed-agents-memory
-
----
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
