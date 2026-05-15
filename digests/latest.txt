@@ -1,114 +1,58 @@
-AI Builders Digest — May 14, 2026
+AI Builders Digest — 2026-05-15
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman — CEO at OpenAI
+Peter Yang — Practical AI tutorials and interviews for busy people, Product at Roblox
 
-OpenAI is making a bold move to capture enterprise coding teams: Codex is now free for two months for any company that wants to try switching over. Altman called Codex "the best AI coding product" and is doubling down with this limited-time offer. Separately, he shared a thought worth sitting with: maybe the real product axis isn't price vs. intelligence, but price vs. speed — musing that he sometimes doesn't mind a slower model if the tradeoff is right.
-https://x.com/sama/status/2054626219858293128
-https://x.com/sama/status/2054627102922797323
-
----
-
-Alex Albert — Research at Anthropic
-
-Starting June 15, paid Claude plans will include a separate monthly credit for the Claude Agent SDK — covering usage in your own scripts, agents, claude -p, and third-party apps like OpenClaw and Conductor. It's kept separate from your regular usage limits, which is a meaningful developer-friendliness signal. This announcement generated significant buzz (817 likes, 94 replies).
-https://x.com/alexalbert__/status/2054613082589298899
+Over 80,000 tech workers were laid off in Q1 2026 — the highest since 2022–23 — and companies keep citing AI as the cause. Yang calls this out as spin: most of these cuts are a reckoning from overhiring during the zero-interest-rate era, and AI is a convenient scapegoat. The tell is the boilerplate PR language ("our business has never been stronger, but AI has changed how we work"), which Yang translates plainly as "we overhired and need to cut costs." His post goes further with six concrete ways employees can take back control rather than waiting for the next round.
+https://x.com/petergyang/status/2054569893060809151
 
 ---
 
-Guillermo Rauch — CEO at Vercel
+Nikunj Kothari — Partner at FPV Ventures, seed/A investor, former early hire at Meter, Opendoor, Atlassian
 
-Two big signals from the Vercel side today. First, real-world production data from Vercel's AI Gateway shows Google leading at scale, Anthropic dominating in coding and spend, OpenAI growing fast since GPT-4.5, and OSS continuing to gain ground — "the AI race is a lot more fluid than it looks." Second, Notion's developer platform is now built on Vercel Sandbox, with an MCP integration that lets Notion extend natively into AI workflows.
-https://x.com/rauchg/status/2054671803264757957
-https://x.com/rauchg/status/2054734851086155778
-
----
-
-Aaron Levie — CEO at Box
-
-Levie wrote a detailed take on why "forward deployed engineer" roles are about to become one of the hottest hiring categories in tech. The profile requires deep CS chops, systems thinking, business acumen, and — crucially — fluency in AI agents, MCP, CLIs, and coding agents. He estimates hundreds to thousands of tech companies, plus consulting firms and large enterprises, will be competing for this talent. A must-read for anyone advising students on career paths right now.
-https://x.com/levie/status/2054729966630441007
+Kothari pushes back against what he calls the rise of "consensus capital" in VC — the tendency to fund only what already looks safe. His point for founders: a rejection from investors who want de-risked bets is not a verdict on whether your idea is worth building. If you're obsessed enough to build regardless of what the world thinks, treat rejections as potential learning and not a stop sign. The implication is that the most contrarian founders will face more rejections in this environment, not fewer.
+https://x.com/nikunj/status/2054599845214650442
 
 ---
 
-Peter Steinberger — Co-founder at OpenClaw
+Garry Tan — President & CEO of Y Combinator, designer/engineer, SF policy advocate
 
-The demo everyone is talking about today: Steinberger is streaming an Android phone to a Mac in a data center via Tailscale, and his AI "claw" controls it remotely — including ordering an Uber. The post racked up 1,562 likes and 112 retweets, making it one of the most viral AI builder posts of the day. He also shipped Crabbox 0.13.0 with modal sandbox runs, full resync for stale workdirs, native Windows support, and clearer SSH/sync failure hints.
-https://x.com/steipete/status/2054647734418756012
-https://x.com/steipete/status/2054690836613324997
+Tan weighs in on San Francisco's drug crisis, arguing that nonprofits whose model involves keeping people using rather than pushing toward recovery should lose public funding — and that legacy media amplifies these interests by quoting people who financially benefit from the status quo. His position: defund programs that enable fentanyl use, fund recovery and treatment instead.
+https://x.com/garrytan/status/2054778575988093249
 
----
-
-Swyx — at Cognition / AI dot engineer / Latent Space
-
-Swyx flagged fresh data from a model router company (Vercel's gateway) that's worth a look: Gemini leads in education and personal assistants, Anthropic leads in vibe-coding and back-office work, and OpenAI leads in recruiting outreach. He's careful to note this is only for the subset of traffic going through Vercel's gateway, so market share is unknown — but the category-level signal is interesting regardless.
-https://x.com/swyx/status/2054720201070190632
-
----
-
-Peter Yang — Product at Roblox / AI newsletter for 140K+ readers
-
-Yang surfaced an underrated use case: using Claude Code or Codex to combine, edit, and crop PDFs. Preview and Adobe Acrobat make it painful; just telling an AI to "crop out the empty spaces" on a scanned PDF works surprisingly well. Simple tip, but the kind of practical productivity unlock that resonates with a wide audience (64 likes, 12 replies).
-https://x.com/petergyang/status/2054736772312293466
-
----
-
-Matt Turck — VC at FirstMark Capital, host of MAD Podcast
-
-In what became today's most-liked AI tweet (2,028 likes, 98 retweets), Turck shared a single image with the caption: "me pretending to do work while my agents run 24/7 in the background." No further analysis needed — it landed.
-https://x.com/mattturck/status/2054658366362783981
-
----
-
-Zara Zhang — Builder, GitHub: zarazhangrui
-
-Zara is building a skill that converts ugly PowerPoint decks into beautiful HTML presentations in one shot — and is calling for sample ugly PPTs to test it. If you have a gnarly slide deck you've been embarrassed by, send it to thatzara@gmail.com. The uglier the better, apparently.
-https://x.com/zarazhangrui/status/2054625264286749138
-
----
-
-Nikunj Kothari — Partner at FPV Ventures
-
-Kothari shared a serendipitous NYC story: he grabbed coffee with a friend, they brainstormed a startup idea for the agent era, and immediately after — walking into a different startup's office for what he thought was a casual visit — they showed him a prototype of the exact same idea, but "5x better, as if they overheard my conversation and built it in 15 minutes." He signed up as their first beta customer on the spot. A nice reminder of how dense the builder ecosystem feels right now.
-https://x.com/nikunj/status/2054612777785045209
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Training Data — "Waymo's Dmitri Dolgov: 20 Million Rides and the Road to Full Autonomy"
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
+Training Data — Suno's Mikey Shulman: Everyone Can Make Music Now
+https://www.youtube.com/watch?v=Jq3BIGz4vXQ
 
-Takeaway: Waymo's co-CEO Dmitri Dolgov explains how two decades of patience, safety-first engineering, and a foundation model architecture built for superhuman performance — not just demos — got the company to 20 million fully autonomous rides and expanding globally.
+Takeaway: Suno has inverted the traditional music model — on any given day, 90% of its users create something, because Mikey Shulman built it around a simple conviction: the act of making music is itself the entertainment, not a means to an end.
 
-Dolgov's story is a case study in long-arc builder persistence. He joined the Google self-driving car project in 2009 when a team of about 12 people set two audacious goals: drive 100,000 total miles in full autonomy, and complete 10 routes of 100 miles each without a safety intervention. It took 18 months of around-the-clock work. Fast forward to today: Waymo gives over 4 million fully autonomous miles per week, has surpassed 20 million total rides, and hit 200 million miles in roughly six months after taking 16 years to reach the first 100 million.
+Shulman's path to AI music is unconventional even by startup standards. He holds a physics PhD (quantum computing with solid-state spins at Harvard) and had no background in consumer entertainment. His core insight, drawn from research, was that the biggest opportunities live at the nexus of two things that don't usually go together — in his case, music and technology. Before founding Suno, he and his co-founders initially ruled out the idea: back-of-the-envelope math suggested generating genuinely good music was "a couple of orders of magnitude away" in compute and model capability. When that gap closed faster than expected in the post-ChatGPT era, Suno was already thinking about it.
 
-The technical discussion is rich. Waymo's approach centers on a "Waymo Foundation Model" — a multimodal world-action model that powers three pillars: the driver, the simulator, and the critic. Dolgov pushed back on the "end-to-end vs. modular" framing as a false dichotomy: "It's end-to-end, and then what else?" For a product that needs superhuman safety at scale, the baseline end-to-end approach is insufficient. Waymo augments learned representations with structured, materialized intermediate outputs to enable runtime validation, closed-loop evaluation, and richer reinforcement learning reward functions.
+What Shulman describes as "creative entertainment" is the core product philosophy: people create music on Suno not to publish it or share it elsewhere, but because creating feels good. He draws the comparison to cooking — people cook even when a restaurant would produce a better meal, because the process is its own reward. He also draws a direct parallel to Claude Code and other agent-based tools: what makes people want to use them is the sense of productivity and fulfillment that comes from building, not just consuming. "Doomscrolling your favorite app for an hour does not feel so good when you're done."
 
-On safety: Waymo's data across 170 million autonomous miles shows their driver is more than 13 times safer than a human driver in serious injury-causing collisions. That 13x reduction means preventing a serious injury every eight days. One striking example Dolgov shared: a Waymo car detected a pedestrian's footsteps under a bus blocking its view — the LiDAR bounced under the chassis and got a sparse return from the movement of the person's feet — and braked before the pedestrian emerged.
+On the business case for consumer AI: Shulman is deliberately contrarian. Most AI investment flows toward automating existing workflows. Suno is betting on doing something that wasn't possible before — giving everyone the ability to feel what it's like to make music. He's openly "happy to have less competition" in consumer, and believes that as automation takes over routine work, platforms that help people feel creatively fulfilled will matter more.
 
-On scaling: Waymo launched four cities in a single day earlier this year. The sixth-generation Waymo Driver hardware focuses on performance plus drastic cost reduction for high-volume production, and it's powering their new OHAI platform. International expansion — London and Tokyo — is planned for this year.
+Direct quote: "Before Suno, basically everybody was a consumer of music. You know, compared to the 8,000,000,000 people on the planet, there are very few people who make music and the rest of us consume it. The crazy thing about Suno is that in any given day, 90% of the users are going to create something. And the thing that's hard to wrap your head around is you're not creating it to go bring it elsewhere... People are creating music for the fun and enjoyment and fulfillment that comes with being creative."
 
-Direct quote from Dolgov on persisting through the AV hype cycles: "It is understanding that it's not going to be an easy problem, but it's a very important one. Believing in the mission. Because today, worldwide, somebody loses their life to a crash on our roads every twenty-six seconds."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-READING
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration
+https://claude.com/blog/new-in-claude-managed-agents
 
-Anthropic Engineering — "Claude Code auto mode: a safer way to skip permissions"
-https://www.anthropic.com/engineering/claude-code-auto-mode
+Anthropic shipped three meaningful upgrades to Claude Managed Agents. The headline is "dreaming" — a scheduled background process that reviews past agent sessions, extracts patterns, and rewrites memory stores so agents improve between sessions without human intervention. Harvey (legal AI) tested dreaming for long-form drafting workflows and saw ~6x better completion rates as agents retained filetype workarounds and tool-specific patterns across runs.
 
-A deep technical post on how Anthropic built auto mode — a middle ground between manually approving every Claude Code action and the nuclear option of --dangerously-skip-permissions. The core insight: in practice, users accept 93% of permission prompts anyway, leading to approval fatigue where people stop paying close attention. Auto mode replaces the human approver with a two-stage transcript classifier.
+"Outcomes" gives agents a rubric describing what success looks like. A separate grader agent evaluates outputs in its own context window — isolated from the producing agent's reasoning — and sends work back for revision until it clears the bar. In internal benchmarks, outcomes improved task success by up to 10 points over standard prompting loops, with the largest gains on the hardest tasks. File generation quality improved +8.4% on docx and +10.1% on pptx. Spiral by Every uses outcomes to enforce editorial quality: every AI-written draft is scored against a rubric of Every's editorial principles and the user's voice before being returned.
 
-The threat model is honest and worth reading. Anthropic identifies four reasons an agent takes a dangerous action: overeager behavior (genuinely trying to help but going past what the user authorized), honest mistakes about blast radius, prompt injection, and — not currently observed in practice but carefully evaluated — misalignment. Real incidents from their internal log include: an agent deleting remote git branches from a vague "clean up" instruction, uploading a GitHub auth token to an internal cluster, and attempting a migration against a production database.
+Multiagent orchestration is now available for tasks that exceed what a single agent can handle well. A lead agent breaks work into pieces and delegates each to a specialist running its own model, prompt, and tools. Netflix's platform team is using this to analyze build logs from hundreds of services in parallel and surface only the patterns worth acting on. Every step is traceable in the Claude Console — which agent did what, in what order, and why.
 
-The pipeline works in two layers: a prompt-injection probe that screens tool outputs before they enter the agent's context, and a transcript classifier (running on Claude Sonnet 4.6) that evaluates each action against a fixed policy template. The classifier strips out assistant prose and tool outputs — seeing only user messages and bare tool calls — making it resistant to the agent "talking it into" a bad decision. Stage 1 is a fast single-token filter tuned toward blocking (8.5% false positive rate, 6.6% false negative rate on real traffic). Stage 2 adds chain-of-thought reasoning on anything Stage 1 flags, dropping the false positive rate to 0.4% at the cost of some recall.
-
-The honest number: 17% false-negative rate on real overeager actions — meaning roughly 1 in 6 genuinely dangerous agent actions still gets through. The post doesn't hide this, and explains clearly when auto mode is and isn't the right tool: it's designed for users currently running --dangerously-skip-permissions, not as a replacement for careful human review on high-stakes infrastructure.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
