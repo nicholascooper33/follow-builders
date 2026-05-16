@@ -1,58 +1,84 @@
-AI Builders Digest — 2026-05-15
+AI Builders Digest — 2026-05-16
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Peter Yang — Practical AI tutorials and interviews for busy people, Product at Roblox
+Swyx — AI developer, podcaster, affiliate at Cognition, Temporal, and Latent Space Pod
 
-Over 80,000 tech workers were laid off in Q1 2026 — the highest since 2022–23 — and companies keep citing AI as the cause. Yang calls this out as spin: most of these cuts are a reckoning from overhiring during the zero-interest-rate era, and AI is a convenient scapegoat. The tell is the boilerplate PR language ("our business has never been stronger, but AI has changed how we work"), which Yang translates plainly as "we overhired and need to cut costs." His post goes further with six concrete ways employees can take back control rather than waiting for the next round.
-https://x.com/petergyang/status/2054569893060809151
-
----
-
-Nikunj Kothari — Partner at FPV Ventures, seed/A investor, former early hire at Meter, Opendoor, Atlassian
-
-Kothari pushes back against what he calls the rise of "consensus capital" in VC — the tendency to fund only what already looks safe. His point for founders: a rejection from investors who want de-risked bets is not a verdict on whether your idea is worth building. If you're obsessed enough to build regardless of what the world thinks, treat rejections as potential learning and not a stop sign. The implication is that the most contrarian founders will face more rejections in this environment, not fewer.
-https://x.com/nikunj/status/2054599845214650442
+Swyx is buzzing about how much OpenAI's Codex has transformed in the last three months, calling it "completely unrecognizable" after watching a demo of what he described as "agentic Excel on Mac." He also flagged a striking signal from Singapore's GovTech scene: a head of AI Govtech is projecting 1.3 billion agents in the country within two years and is already building a national MCP gateway. Rounding it out, Swyx caught some Codex roadmap hints dropped casually during a keynote.
+https://x.com/swyx/status/2055494400252481687
+https://x.com/swyx/status/2055470634331750588
+https://x.com/swyx/status/2055467498888118647
 
 ---
 
-Garry Tan — President & CEO of Y Combinator, designer/engineer, SF policy advocate
+Peter Yang — Product at Roblox, practical AI tutorials writer for 140K+ subscribers
 
-Tan weighs in on San Francisco's drug crisis, arguing that nonprofits whose model involves keeping people using rather than pushing toward recovery should lose public funding — and that legacy media amplifies these interests by quoting people who financially benefit from the status quo. His position: defund programs that enable fentanyl use, fund recovery and treatment instead.
-https://x.com/garrytan/status/2054778575988093249
+Peter tested ChatGPT's new Finances feature and came away mostly impressed, noting the AI "still has trouble classifying transactions correctly." He also raised a data-privacy flag: there's no separate toggle to opt out of ad targeting, only a single "improve the model for everyone" toggle — which he turned off to keep his financial data out of training pipelines.
+https://x.com/petergyang/status/2055396161910194395
+https://x.com/petergyang/status/2055450577094738018
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
+
+Madhu Guru — Product Leader at Google (Gemini, Veo, Nano)
+
+Madhu shared a sharp observation about the current generation of product managers: they were trained to execute existing playbooks, not invent new ones — and AI demands invention. For two decades a handful of teams created product patterns while everyone else adapted them, making PM work feel mechanical. AI breaks that model entirely, and PMs who can't shift from execution to invention are struggling to keep up.
+https://x.com/realmadhuguru/status/2055414865146327088
+
+---
+
+Guillermo Rauch — CEO at Vercel
+
+Rauch is leaning hard into the agentic deployment story. He showcased Grok CLI's Vercel Plugin enabling seamless cloud deployment directly from a coding session, including a live demo of a creative coding website spun up and hosted in one flow. He also highlighted Vercel's SSO protection for agent-generated deployments — calling out the awkward edge case where an agent gets a 401 Unauthorized from the very app it just deployed — and introduced `vercel curl` as the fix. His broader take: agents amplify output dramatically, but only for people who are also masters of the fundamentals.
+https://x.com/rauchg/status/2055491454307582454
+https://x.com/rauchg/status/2055440326765244742
+https://x.com/rauchg/status/2055278852931530784
+
+---
+
+Aaron Levie — CEO at Box
+
+Levie made the case for "forward deployed engineering" as the right model for AI products, drawing a sharp distinction from traditional software. With software you ship a stable thing and customers adopt it — done. With AI, you're shipping something that constantly evolves, which means the delivery and feedback loop never really ends. He's fully convinced this changes how AI companies need to be structured operationally.
+https://x.com/levie/status/2055501840419328286
+
+---
+
+Nikunj Kothari — Partner at FPV Ventures, seed/Series A investor
+
+Nikunj shared an eye-opening example of what AI agents can do when given the right tools: a single /goal command worked through a 2,000+ line item database, fixed broken product images, resolved frontend bugs caused by image inconsistencies, rewrote descriptions, and pulled real-time data from the web — all without intervention. His take: this is basically AGI-level capability when given the right scaffolding.
+https://x.com/nikunj/status/2055426430654439485
+
+---
+
+Peter Steinberger — Builder at OpenClaw, "ClawFather"
+
+Steinberger is thinking about software development in a post-scarcity token world. His team runs roughly 100 Codex instances in the cloud simultaneously, reviewing every PR and every issue — and his core research question is: how do you build software when tokens don't cost anything? He also shipped clawpatch 0.1.0, a tool that maps codebases into semantic feature slices, reviews them for bugs and quality issues, and records explicit fix attempts with validation. He's been experimenting with Svelte as a React alternative and reports it works very cleanly with Codex.
+https://x.com/steipete/status/2055405041843052792
+https://x.com/steipete/status/2055364630709448970
+https://x.com/steipete/status/2055402519841411165
+
+---
+
+Dan Shipper — CEO at Every, the AI media company
+
+Dan and his team just published a deep-dive on their attempt to build an agent-as-a-service platform on top of OpenClaw. His two main findings: OpenClaw is genuinely impressive, but it's extremely difficult to build on as a platform — it moves fast, ships regressions, and being the middleware layer between OpenClaw and end users is rough. He's still bullish on the direction, calling "Codex-native apps" the future of software.
+https://x.com/danshipper/status/2055347527457886336
+https://x.com/danshipper/status/2055451869841965154
+
+---
+
+Sam Altman — CEO at OpenAI
+
+Altman shared a candid note about how the OpenAI team handles user feedback reports: they take every one seriously, even when the investigation reveals the user simply got used to the current level of AI "magic" and now wants more. It's a small but telling glimpse into how the team calibrates expectations as the capability baseline keeps rising.
+https://x.com/sama/status/2055356452286640630
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Training Data — Suno's Mikey Shulman: Everyone Can Make Music Now
-https://www.youtube.com/watch?v=Jq3BIGz4vXQ
+No podcast episodes with sufficient detail were available today. The feed returned an entry without a title, summary, or transcript.
 
-Takeaway: Suno has inverted the traditional music model — on any given day, 90% of its users create something, because Mikey Shulman built it around a simple conviction: the act of making music is itself the entertainment, not a means to an end.
-
-Shulman's path to AI music is unconventional even by startup standards. He holds a physics PhD (quantum computing with solid-state spins at Harvard) and had no background in consumer entertainment. His core insight, drawn from research, was that the biggest opportunities live at the nexus of two things that don't usually go together — in his case, music and technology. Before founding Suno, he and his co-founders initially ruled out the idea: back-of-the-envelope math suggested generating genuinely good music was "a couple of orders of magnitude away" in compute and model capability. When that gap closed faster than expected in the post-ChatGPT era, Suno was already thinking about it.
-
-What Shulman describes as "creative entertainment" is the core product philosophy: people create music on Suno not to publish it or share it elsewhere, but because creating feels good. He draws the comparison to cooking — people cook even when a restaurant would produce a better meal, because the process is its own reward. He also draws a direct parallel to Claude Code and other agent-based tools: what makes people want to use them is the sense of productivity and fulfillment that comes from building, not just consuming. "Doomscrolling your favorite app for an hour does not feel so good when you're done."
-
-On the business case for consumer AI: Shulman is deliberately contrarian. Most AI investment flows toward automating existing workflows. Suno is betting on doing something that wasn't possible before — giving everyone the ability to feel what it's like to make music. He's openly "happy to have less competition" in consumer, and believes that as automation takes over routine work, platforms that help people feel creatively fulfilled will matter more.
-
-Direct quote: "Before Suno, basically everybody was a consumer of music. You know, compared to the 8,000,000,000 people on the planet, there are very few people who make music and the rest of us consume it. The crazy thing about Suno is that in any given day, 90% of the users are going to create something. And the thing that's hard to wrap your head around is you're not creating it to go bring it elsewhere... People are creating music for the fun and enjoyment and fulfillment that comes with being creative."
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration
-https://claude.com/blog/new-in-claude-managed-agents
-
-Anthropic shipped three meaningful upgrades to Claude Managed Agents. The headline is "dreaming" — a scheduled background process that reviews past agent sessions, extracts patterns, and rewrites memory stores so agents improve between sessions without human intervention. Harvey (legal AI) tested dreaming for long-form drafting workflows and saw ~6x better completion rates as agents retained filetype workarounds and tool-specific patterns across runs.
-
-"Outcomes" gives agents a rubric describing what success looks like. A separate grader agent evaluates outputs in its own context window — isolated from the producing agent's reasoning — and sends work back for revision until it clears the bar. In internal benchmarks, outcomes improved task success by up to 10 points over standard prompting loops, with the largest gains on the hardest tasks. File generation quality improved +8.4% on docx and +10.1% on pptx. Spiral by Every uses outcomes to enforce editorial quality: every AI-written draft is scored against a rubric of Every's editorial principles and the user's voice before being returned.
-
-Multiagent orchestration is now available for tasks that exceed what a single agent can handle well. A lead agent breaks work into pieces and delegates each to a specialist running its own model, prompt, and tools. Netflix's platform team is using this to analyze build logs from hundreds of services in parallel and surface only the patterns worth acting on. Every step is traceable in the Claude Console — which agent did what, in what order, and why.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
