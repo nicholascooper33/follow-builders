@@ -1,83 +1,53 @@
-AI Builders Digest — 2026-05-16
+AI Builders Digest — May 17, 2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-X / TWITTER
+X/TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — AI developer, podcaster, affiliate at Cognition, Temporal, and Latent Space Pod
+Garry Tan, President & CEO of Y Combinator
+Garry made a notable open-source announcement: GBrain, his knowledge system for AI agents, is now free under the MIT license and installable with a single command. He describes it as "not RAG in a box" — rather, 8 layers working together to improve memory for already-smart models. This is a significant move from one of Silicon Valley's most connected operators, giving the broader developer community access to agent memory infrastructure he's been building.
+https://x.com/garrytan/status/2055670797596012657
+https://x.com/garrytan/status/2055670533451366479
 
-Swyx is buzzing about how much OpenAI's Codex has transformed in the last three months, calling it "completely unrecognizable" after watching a demo of what he described as "agentic Excel on Mac." He also flagged a striking signal from Singapore's GovTech scene: a head of AI Govtech is projecting 1.3 billion agents in the country within two years and is already building a national MCP gateway. Rounding it out, Swyx caught some Codex roadmap hints dropped casually during a keynote.
-https://x.com/swyx/status/2055494400252481687
-https://x.com/swyx/status/2055470634331750588
-https://x.com/swyx/status/2055467498888118647
+Zara Zhang, Builder
+Zara captured what many AI developers feel in one sharp observation: "AI psychosis — cycling between two mental states every single day: after using coding agents: holy shit I'm omnipotent. I can build anything. I've never felt this powerful in my life. [then] after scrolling..." The emotional whiplash of agentic coding tools is real, and she put words to the experience in a way that's instantly relatable to anyone building with AI.
+https://x.com/zarazhangrui/status/2055728641913536762
 
----
+Peter Steinberger, Polyagentmorous ClawFather at OpenClaw & OpenAI
+Peter shipped BlackBar 0.2.0 for Blacksmith — a menu bar CI tool that now features 24-hour vCPU and workflow graphs, opt-in status/job notifications, richer job rows, and a compact status badge. He also flagged a Claude Code optimization tip, pointing users toward a "deslop" guide for developers who haven't yet made the switch to Codex.
+https://x.com/steipete/status/2055685581758206139
+https://x.com/steipete/status/2055747016727167035
 
-Peter Yang — Product at Roblox, practical AI tutorials writer for 140K+ subscribers
+Swyx, Co-founder at AI Engineer / Cognition / Temporal
+Swyx teased that the AI Engineer (AIE) conference is coming to India soon — expanding the global footprint of one of the most builder-focused AI events in the world.
+https://x.com/swyx/status/2055889947136237595
 
-Peter tested ChatGPT's new Finances feature and came away mostly impressed, noting the AI "still has trouble classifying transactions correctly." He also raised a data-privacy flag: there's no separate toggle to opt out of ad targeting, only a single "improve the model for everyone" toggle — which he turned off to keep his financial data out of training pipelines.
-https://x.com/petergyang/status/2055396161910194395
-https://x.com/petergyang/status/2055450577094738018
+Thariq, Claude Code at Anthropic
+In a brief post, Thariq declared "HTML continues to be undefeated" — a nod from an Anthropic engineer to the enduring power of the web's foundational format, particularly resonant as AI-generated UIs increasingly default back to plain HTML over heavier frameworks.
+https://x.com/trq212/status/2055903660476129723
 
----
-
-Madhu Guru — Product Leader at Google (Gemini, Veo, Nano)
-
-Madhu shared a sharp observation about the current generation of product managers: they were trained to execute existing playbooks, not invent new ones — and AI demands invention. For two decades a handful of teams created product patterns while everyone else adapted them, making PM work feel mechanical. AI breaks that model entirely, and PMs who can't shift from execution to invention are struggling to keep up.
-https://x.com/realmadhuguru/status/2055414865146327088
-
----
-
-Guillermo Rauch — CEO at Vercel
-
-Rauch is leaning hard into the agentic deployment story. He showcased Grok CLI's Vercel Plugin enabling seamless cloud deployment directly from a coding session, including a live demo of a creative coding website spun up and hosted in one flow. He also highlighted Vercel's SSO protection for agent-generated deployments — calling out the awkward edge case where an agent gets a 401 Unauthorized from the very app it just deployed — and introduced `vercel curl` as the fix. His broader take: agents amplify output dramatically, but only for people who are also masters of the fundamentals.
-https://x.com/rauchg/status/2055491454307582454
-https://x.com/rauchg/status/2055440326765244742
-https://x.com/rauchg/status/2055278852931530784
-
----
-
-Aaron Levie — CEO at Box
-
-Levie made the case for "forward deployed engineering" as the right model for AI products, drawing a sharp distinction from traditional software. With software you ship a stable thing and customers adopt it — done. With AI, you're shipping something that constantly evolves, which means the delivery and feedback loop never really ends. He's fully convinced this changes how AI companies need to be structured operationally.
-https://x.com/levie/status/2055501840419328286
-
----
-
-Nikunj Kothari — Partner at FPV Ventures, seed/Series A investor
-
-Nikunj shared an eye-opening example of what AI agents can do when given the right tools: a single /goal command worked through a 2,000+ line item database, fixed broken product images, resolved frontend bugs caused by image inconsistencies, rewrote descriptions, and pulled real-time data from the web — all without intervention. His take: this is basically AGI-level capability when given the right scaffolding.
-https://x.com/nikunj/status/2055426430654439485
-
----
-
-Peter Steinberger — Builder at OpenClaw, "ClawFather"
-
-Steinberger is thinking about software development in a post-scarcity token world. His team runs roughly 100 Codex instances in the cloud simultaneously, reviewing every PR and every issue — and his core research question is: how do you build software when tokens don't cost anything? He also shipped clawpatch 0.1.0, a tool that maps codebases into semantic feature slices, reviews them for bugs and quality issues, and records explicit fix attempts with validation. He's been experimenting with Svelte as a React alternative and reports it works very cleanly with Codex.
-https://x.com/steipete/status/2055405041843052792
-https://x.com/steipete/status/2055364630709448970
-https://x.com/steipete/status/2055402519841411165
-
----
-
-Dan Shipper — CEO at Every, the AI media company
-
-Dan and his team just published a deep-dive on their attempt to build an agent-as-a-service platform on top of OpenClaw. His two main findings: OpenClaw is genuinely impressive, but it's extremely difficult to build on as a platform — it moves fast, ships regressions, and being the middleware layer between OpenClaw and end users is rough. He's still bullish on the direction, calling "Codex-native apps" the future of software.
-https://x.com/danshipper/status/2055347527457886336
-https://x.com/danshipper/status/2055451869841965154
-
----
-
-Sam Altman — CEO at OpenAI
-
-Altman shared a candid note about how the OpenAI team handles user feedback reports: they take every one seriously, even when the investigation reveals the user simply got used to the current level of AI "magic" and now wants more. It's a small but telling glimpse into how the team calibrates expectations as the capability baseline keeps rising.
-https://x.com/sama/status/2055356452286640630
+Dan Shipper, CEO at Every
+Dan shared he's been "Codex-pilling the world one text at a time" — a lighthearted note on his ongoing effort to get more people using AI coding tools. Every continues to be a leading voice translating AI capabilities into practical workflows for knowledge workers.
+https://x.com/danshipper/status/2055715359244566552
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No podcast episodes with sufficient detail were available today. The feed returned an entry without a title, summary, or transcript.
+No Priors: Pax Silica — Inside the Trump Administration's Tech Strategy with US Under Secretary of State Jacob Helberg
+https://www.youtube.com/watch?v=xjlYpGaxIPA
+
+The US government is building a private-sector-led coalition to de-risk the AI supply chain from Chinese dominance — and it's moving at "Trump time."
+
+Jacob Helberg, Under Secretary of State for Economic Affairs, joined No Priors to explain Pax Silica, a 14-country economic security coalition designed to secure the inputs America needs for the AI revolution — from rare earth magnets to robotics components to server motors. The centerpiece announcement is a 4,000-acre "economic security zone" in the Philippines, granted to the US State Department as diplomatic property. Over a two-year window, the administration plans to negotiate investor protections and build out a forward-deployed industrial base — a hub specifically targeting the robotics supply chain, which Helberg describes as currently "completely dominated by China."
+
+The strategy's defining difference from China's Belt and Road Initiative is its philosophy: rather than state-owned enterprises building government-operated infrastructure, the US approach puts private companies in the driver's seat. As Helberg put it directly: "We're not gonna do government operated supply chains because that's not how we shine as a country. Our superpower is really our private sector and our companies. American products enchant and delight users around the world by the billions — that is really our edge as a country."
+
+The administration has already held the largest critical minerals summit in State Department history — 55+ countries on February 4th — and signed MOU deals with dozens of nations on mineral security. Helberg said he's confident that pricing issues in the minerals market will be resolved before the end of the administration, calling it central to long-term commercial viability for alternative supply chains.
+
+On AI's economic weight: Helberg cited AI as driving over a third of US GDP growth and pointed to record global demand for copper, cobalt, and data center inputs as evidence of the supply chain pressure building ahead. He called on venture capitalists to help identify top operators in the space, framing VC diligence as a useful signal for government capital allocation decisions.
+
+A June rollout is planned with 4–5 additional major lines of effort. For American founders and builders, Helberg's message was clear: the administration sees the tech ecosystem's risk tolerance, contrarian instincts, and positive-sum ethos as exactly the kind of partnership it is looking to forge.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
