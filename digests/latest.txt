@@ -1,54 +1,57 @@
-AI Builders Digest — May 17, 2026
+AI Builders Digest — 2026-05-18
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-X/TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+X / TWITTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sam Altman, CEO of OpenAI
+ChatGPT's image generation has reached a significant milestone in India: over 1 billion images created. Altman shared the moment with visible enthusiasm, signaling how rapidly AI-native creative tools are being adopted in emerging markets.
+https://x.com/sama/status/2056165722804654196
+
+Aaron Levie, CEO of Box
+Levie made two closely related points about AI and the future of technical work. First: the expert with AI will always outperform the novice with AI — whether you're a software developer, designer, or financial analyst, depth in your craft is a multiplier, not a liability. "The experienced software developer that's built and scaled complex systems using agents outrun someone just vibe coding." Second: AI isn't shrinking demand for technical talent — it's expanding where that talent is needed. A Fortune 500 pharma CEO told him they urgently need more technical people, and that pattern is repeating across every industry. Colleges and companies both need to rethink their pipelines.
+https://x.com/levie/status/2056051851439857933
+https://x.com/levie/status/2056219645796090197
 
 Garry Tan, President & CEO of Y Combinator
-Garry made a notable open-source announcement: GBrain, his knowledge system for AI agents, is now free under the MIT license and installable with a single command. He describes it as "not RAG in a box" — rather, 8 layers working together to improve memory for already-smart models. This is a significant move from one of Silicon Valley's most connected operators, giving the broader developer community access to agent memory infrastructure he's been building.
-https://x.com/garrytan/status/2055670797596012657
-https://x.com/garrytan/status/2055670533451366479
+Tan pushed back on the idea that AI should primarily be a cost-cutting tool. His framing: the real opportunity isn't efficiency, it's ambition — some 20-something will build an "AI-human-computer-symbiosis team" that out-executes entire legacy operations. He also noted that for his personal AI use (a 120k-note markdown brain), ZeroEntropy has become his top tool.
+https://x.com/garrytan/status/2056123737544757733
 
-Zara Zhang, Builder
-Zara captured what many AI developers feel in one sharp observation: "AI psychosis — cycling between two mental states every single day: after using coding agents: holy shit I'm omnipotent. I can build anything. I've never felt this powerful in my life. [then] after scrolling..." The emotional whiplash of agentic coding tools is real, and she put words to the experience in a way that's instantly relatable to anyone building with AI.
-https://x.com/zarazhangrui/status/2055728641913536762
+Peter Yang, Product at Roblox / Practical AI newsletter (140K+ readers)
+Yang shared a key lesson on building AI product evals: read actual customer conversations with your model to develop product sense, use Claude to synthesize feedback into themes, and avoid running "eval theater" on generic academic benchmarks. "As models get smarter, evals need to get harder to keep producing signal." He also teased that Google has had a big week — his contacts there have been "cooking."
+https://x.com/petergyang/status/2056178053848703019
+https://x.com/petergyang/status/2056210471917912140
 
-Peter Steinberger, Polyagentmorous ClawFather at OpenClaw & OpenAI
-Peter shipped BlackBar 0.2.0 for Blacksmith — a menu bar CI tool that now features 24-hour vCPU and workflow graphs, opt-in status/job notifications, richer job rows, and a compact status badge. He also flagged a Claude Code optimization tip, pointing users toward a "deslop" guide for developers who haven't yet made the switch to Codex.
-https://x.com/steipete/status/2055685581758206139
-https://x.com/steipete/status/2055747016727167035
+Zara Zhang, Builder / Harvard '17
+A sharp observation on the real bottleneck in building: "People consistently overestimate how hard it is to build something and underestimate how hard it is to win people's attention once you've built it." In the age of AI-accelerated shipping, the distribution problem gets harder, not easier.
+https://x.com/zarazhangrui/status/2056132881630826952
 
-Swyx, Co-founder at AI Engineer / Cognition / Temporal
-Swyx teased that the AI Engineer (AIE) conference is coming to India soon — expanding the global footprint of one of the most builder-focused AI events in the world.
-https://x.com/swyx/status/2055889947136237595
+Nikunj Kothari, Partner at FPV Ventures
+Kothari laid out a clear-eyed warning for people joining recently minted unicorns: they often face a "triple whammy" — tranched valuations inflate the strike price, 409a valuations follow, and total comp packages look impressive on paper but reflect inflated valuations rather than real liquidity. His advice: do proper due diligence on equity like an investor would, and join for mission and learning first. Use Claude or ChatGPT to run exit math on your equity before signing.
+https://x.com/nikunj/status/2056125669466333672
 
-Thariq, Claude Code at Anthropic
-In a brief post, Thariq declared "HTML continues to be undefeated" — a nod from an Anthropic engineer to the enduring power of the web's foundational format, particularly resonant as AI-generated UIs increasingly default back to plain HTML over heavier frameworks.
-https://x.com/trq212/status/2055903660476129723
+Aditya Agarwal, General Partner at South Park Commons / Co-Founder of Bevel Health / former CTO of Dropbox
+After a week of using AI to write code, Agarwal spent the weekend watching the FA Cup Final and his kid's dance recital. His takeaway: we don't need to worry about losing meaning and purpose. Human performance and connection will remain deeply valuable even as AI reshapes how we build.
+https://x.com/adityaag/status/2056015684145127612
 
-Dan Shipper, CEO at Every
-Dan shared he's been "Codex-pilling the world one text at a time" — a lighthearted note on his ongoing effort to get more people using AI coding tools. Every continues to be a leading voice translating AI capabilities into practical workflows for knowledge workers.
-https://x.com/danshipper/status/2055715359244566552
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors: Pax Silica — Inside the Trump Administration's Tech Strategy with US Under Secretary of State Jacob Helberg
-https://www.youtube.com/watch?v=xjlYpGaxIPA
+AI & I by Every — "Claude Code Can Be Your Second Brain"
+https://www.youtube.com/watch?v=in7i-EVDDlk
 
-The US government is building a private-sector-led coalition to de-risk the AI supply chain from Chinese dominance — and it's moving at "Trump time."
+One-sentence takeaway: Noah Breyer's setup — Claude Code running over his Obsidian vault on a home server, accessible from his phone — shows how AI can function as a genuine thinking partner, not just a writing assistant.
 
-Jacob Helberg, Under Secretary of State for Economic Affairs, joined No Priors to explain Pax Silica, a 14-country economic security coalition designed to secure the inputs America needs for the AI revolution — from rare earth magnets to robotics components to server motors. The centerpiece announcement is a 4,000-acre "economic security zone" in the Philippines, granted to the US State Department as diplomatic property. Over a two-year window, the administration plans to negotiate investor protections and build out a forward-deployed industrial base — a hub specifically targeting the robotics supply chain, which Helberg describes as currently "completely dominated by China."
+Noah Breyer, founder of AI strategy consultancy Alethic and former co-founder of Percolate, walks through one of the most detailed Claude Code + personal knowledge management setups you'll see. The core insight: most people focus on AI's ability to generate text, but its ability to read and synthesize your existing notes is arguably more valuable. Breyer stores everything in Obsidian (organized with the PARA method), synced via Git, and runs Claude Code directly on top — allowing it to pull from his full archive of chats, research PDFs, and daily logs. For each project (like the conference talk he was preparing), he maintains subfolders for raw research, saved ChatGPT/Claude/Grok chat transcripts, and a daily progress file where the AI summarizes what was learned and what questions remain open.
 
-The strategy's defining difference from China's Belt and Road Initiative is its philosophy: rather than state-owned enterprises building government-operated infrastructure, the US approach puts private companies in the driver's seat. As Helberg put it directly: "We're not gonna do government operated supply chains because that's not how we shine as a country. Our superpower is really our private sector and our companies. American products enchant and delight users around the world by the billions — that is really our edge as a country."
+A standout workflow detail: Breyer explicitly puts Claude Code into "thinking mode" by writing strict instructions in the front matter of his notes — "I do not under any circumstances want you to try to write it. Take this literally. Do not create outlines, drafts, or any versions of talks/writing. Only gather and organize the requested materials." He argues this is one of the most underused levers in working with AI: forcing the model to ask sharp questions and help you think, rather than defaulting to producing an artifact.
 
-The administration has already held the largest critical minerals summit in State Department history — 55+ countries on February 4th — and signed MOU deals with dozens of nations on mineral security. Helberg said he's confident that pricing issues in the minerals market will be resolved before the end of the administration, calling it central to long-term commercial viability for alternative supply chains.
+He's also a strong advocate for AI voice modes for mobile deep work. "I found it to be by far the best of the voice modes," he says of Grok, praising its tool-calling and research capabilities during long drives. He spent a two-hour stretch doing research on Walter Benjamin and the critique of mass production while driving — the kind of deep, exploratory thinking that used to require being at a desk.
 
-On AI's economic weight: Helberg cited AI as driving over a third of US GDP growth and pointed to record global demand for copper, cobalt, and data center inputs as evidence of the supply chain pressure building ahead. He called on venture capitalists to help identify top operators in the space, framing VC diligence as a useful signal for government capital allocation decisions.
+The home server setup completes the loop: by running Claude Code on a server rather than his laptop, Breyer can continue working from his phone through a terminal app, meaning his second brain is truly always-on.
 
-A June rollout is planned with 4–5 additional major lines of effort. For American founders and builders, Helberg's message was clear: the administration sees the tech ecosystem's risk tolerance, contrarian instincts, and positive-sum ethos as exactly the kind of partnership it is looking to forge.
+Direct quote: "I think partially because we call it generative, there's entirely too much focus on its ability to write and not enough focus on its ability to read. Its ability to read is incredible, and arguably much more useful on a day-to-day basis. We produce artifacts far less frequently than we just think about things."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
