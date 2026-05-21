@@ -1,146 +1,59 @@
-AI Builders Digest — May 20, 2026
+AI Builders Digest — 2026-05-21
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Andrej Karpathy — Former Director of AI at Tesla, founding team at OpenAI, PhD at Stanford
+Sam Altman, former CPO of OpenAI, shared two major updates today. A general-purpose AI model has solved a major open problem in mathematics — the unit distance problem — which he described as "a kinda big milestone" that comes with "complicated feelings." On the business side, he outlined three areas of biggest excitement: AGI accelerating research, AGI accelerating companies, and personal AGI helping individuals achieve their goals. OpenAI announced it is offering $2M in OpenAI credits to every YC company.
+https://x.com/sama/status/2057203171198636251
+https://x.com/sama/status/2057218997503086888
 
-In a bombshell move that sent the AI community into a frenzy, Karpathy announced he has joined Anthropic. He described the next few years at the frontier of LLMs as "especially formative" and said he is excited to get back to R&D. He also noted he remains deeply passionate about education and plans to resume that work in time. The tweet accumulated over 131,000 likes within hours.
-https://x.com/karpathy/status/2056753169888334312
+Aaron Levie, CEO of Box, wrote a detailed analysis of why Field Deployment Engineers (FDEs) are a new and enduring job category in the AI era. Unlike cloud adoption — which mainly affected developers and IT — AI agents directly change the workflows of regular employees, requiring both heavy technical work and change management simultaneously. Model improvements arrive so fast that best practices can't propagate the way they did in the cloud era, meaning specialists who've seen hundreds of implementations will remain essential. "This job isn't going away any time soon, and will be a great path for a lot of technical talent, especially early career."
+https://x.com/levie/status/2057315272156135501
 
----
+Dan Shipper, CEO of Every, highlighted the news that Anthropic acquired developer tools startup Stainless for a reported $300 million. He shared a summary of his AI & I podcast interview with Stainless founder Alex Rattray. Key insights: MCP servers need to stay lean with small toolsets and precise descriptions; Stainless uses a "dynamic mode" for large APIs that condenses all tools down to just three (list endpoints, learn about one, execute it); and Alex builds a company knowledge base in a Git repo using Claude Code to save customer quotes and SQL queries for future reuse.
+https://x.com/danshipper/status/2057122805657821240
 
-Swyx — AI engineer and builder at Cognition, co-host of Latent Space podcast
+Garry Tan, President and CEO of Y Combinator, gave a strong public endorsement of Exa for AI agent web search. "Exa is what I trust for all my agents. We use it at YC. We use it in all my OpenClaw and Hermes Agents. There is no other option that is as fast, as reliable, and as complete. When your agents need to search the web, accept no substitutes."
+https://x.com/garrytan/status/2057202833251000503
 
-Swyx laid out a four-part AI-native software development lifecycle. Step one: put ~50 tests in place with instructions to keep adding them. Step two: use /plan to break up hot paths, isolate files for easier editing, and add logging and error boundaries. Step three: with the plan in hand, tell the AI it can break backward compatibility and to proceed non-stop, committing and deploying along the way. Step four: periodically spot-check deployed functionality and steer bugs. It's a practical blueprint for letting AI drive large chunks of the build cycle while keeping a human in the loop at key junctures.
-https://x.com/swyx/status/2056877529991205072
+Zara Zhang, builder and creator of Follow Builders, shared two sharp observations about AI-native organizations. First, in an AI-native team, ICs should start thinking like managers — delegating tasks to agents, setting standards, and verifying output — while managers should become more hands-on builders rather than just doing people management. Second, drawing from a Google I/O session on thriving as an AI-era developer, she argued the new T-shaped skillset requires going deeper in domain expertise, wider across adjacent fields, and strong AI usage layered on top — and that this applies not just to developers but to every job function.
+https://x.com/zarazhangrui/status/2057324988009685208
+https://x.com/zarazhangrui/status/2057267931025957348
 
----
+Google Labs announced that Project Genie — an AI tool for generating playable games — is now fully available to all Google AI Ultra subscribers globally (18+). Users choose characters, set the scene, and Genie generates a game in minutes. The tool is showcased at the Google I/O sandbox this year.
+https://x.com/GoogleLabs/status/2057218835074437573
 
-Josh Woodward — VP, Google Labs / Gemini App / Google AI Studio
+Guillermo Rauch, CEO of Vercel, teased what appears to be a significant infrastructure announcement: "This will bring AI to 42% of the web. Every model, every provider, every modality (text, image, video, audio)." No further details were shared in the tweet itself.
+https://x.com/rauchg/status/2057212335811620987
 
-Woodward announced Gemini Spark, a 24/7 personal AI agent designed to proactively manage tasks and help users navigate their digital lives—all under user direction. It is rolling out to trusted testers this week and will launch as a Beta for US Google AI Ultra subscribers the following week.
-https://x.com/joshwoodward/status/2056873495116845485
+Swyx, builder and co-host of Latent Space, shared that his team ran a bake-off of web search tools for AI agents and unanimously converged on Exa within just 1.5 hours. He also connected Sam Altman's idea of "a business that gets better when models get better" to what he calls "Agent Labs" — a business category where revenue directly correlates with model performance, with a sharp inflection in Q4 2025.
+https://x.com/swyx/status/2057180080078791036
+https://x.com/swyx/status/2057119153337545096
 
----
+Peter Steinberger, co-founder of OpenClaw, recommended Cotypist for system-wide AI autocomplete: "Can't recommend cotypist enough. Autocomplete everywhere." The tweet drew over 1,300 likes — unusually high engagement for a tool recommendation.
+https://x.com/steipete/status/2057040636449116222
 
-Google Labs — Google's home for latest AI tools and experiments
+Nikunj Kothari, partner at FPV Ventures, wrote a heartfelt reflection on the emotional weight of being a founder. "Being a founder is so freaking hard man.. chewing glass every day. If you fail, no one cares. If you succeed, you are given way more problems." He urged founders to only start companies for deep, personal reasons — the passion for the problem has to be strong enough to sustain you on the worst days. "I see you, I salute you and I admire you."
+https://x.com/nikunj/status/2057134939875991973
 
-Google Labs announced a major update to Project Genie, now allowing users to simulate worlds grounded in Google Maps Street View. New features include Street View grounding (pick a real US location as a starting point, choose a style like "Desert Sands" or "Ocean World"), a creation library to store and organize generated worlds, and external sharing for Ultra subscribers. The update is rolling out globally to all eligible Google AI Ultra subscribers (18+). Separately, Google Labs also unveiled Computational Discovery, an agentic research engine powered by AlphaEvolve and their Empirical Research Agent (ERA), which generates and evaluates thousands of code variations to accelerate discovery of advanced models and algorithms.
-https://x.com/GoogleLabs/status/2056872996988756228
-https://x.com/GoogleLabs/status/2056812957775142985
-
----
-
-Aaron Levie — CEO, Box
-
-Levie shared early-access benchmark results for Gemini 3.5 Flash on Box's AI Complex Work Eval, showing a 12-percentage-point jump over Gemini 3 Flash on complex document tasks. Healthcare saw +22pp, life sciences +20pp, public sector +17pp. He also reported from a Fortune 500 CIO dinner where token costs emerged as the most heated topic—no one felt they had the right solution. Strategies ranged from tiering models by workload to setting spend caps per team, reflecting deep uncertainty in enterprise AI economics as capabilities and cost models keep evolving simultaneously.
-https://x.com/levie/status/2056804573449474527
-https://x.com/levie/status/2056965292753146019
-
----
-
-Sam Altman — CEO, OpenAI
-
-Altman embraced "tokenmaxxing" by announcing OpenAI will offer $2M in tokens to every startup in the current YC batch. He also revealed OpenAI is offering discounted tokens for 1–3 year capacity commitments, responding to enterprise demand for cost predictability as compute becomes increasingly constrained and models keep improving. He noted they will offer this until their current allocation runs out, with plans to offer it again in the future.
-https://x.com/sama/status/2056933166875857290
-https://x.com/sama/status/2056827105401614656
-
----
-
-Ryo Lu — Designer at Cursor
-
-Ryo shared that he now uses Composer 2.5 for all phases of development—planning, building iterations, and debugging—calling it a great all-rounder especially for UI work and getting into flow with Design Mode in Cursor. He also highlighted a new Cursor integration in Jira, letting teams turn their backlog directly into reality by tagging Cursor in tickets.
-https://x.com/ryolu_/status/2056892527626817935
-https://x.com/ryolu_/status/2056878599333102053
-
----
-
-Guillermo Rauch — CEO, Vercel
-
-Rauch announced a new CDN pricing model that smooths over traffic spikes and viral events, offering predictability without slow routes, degraded PoPs, or tiered bandwidth. He also highlighted the integration of Claude Managed Agents with Vercel Sandbox—a combination that lets Claude handle orchestration and tool use while Vercel handles secure execution with millisecond startup and VPC peering.
-https://x.com/rauchg/status/2056802789477740713
-https://x.com/rauchg/status/2056735989830471977
-
----
-
-Matt Turck — VC at FirstMark Capital, host of the MAD Podcast
-
-Turck was genuinely impressed by Google's Gemini 3.5 Flash, noting strong performance on agentic coding benchmarks (76.2% on Terminal-Bench), multimodal reasoning (83.6% on MMMU-Pro), and financial tasks (57.9% on Finance Agent 2.0). He noted the cost (~$9/M output tokens) but called the three-lab competition a win for everyone: "We are all so spoiled to have the 3 labs compete."
-https://x.com/mattturck/status/2056834038946775343
-
----
-
-Nikunj Kothari — Partner at FPV Ventures
-
-Kothari argued that AI has entered a "diffusion era"—not diffusion models, but the phase where AI permeates every task it touches. He cited three signals: labs collecting long-horizon task data in RL environments, model harnesses supporting increasingly long tasks (like /goal or Droid Missions), and models' growing ability to recursively correct their own mistakes. He sees the shift from assistant to coworker to autonomous worker as already underway—even if "autonomy truly doesn't work yet"—and calls the next 10–20 years "the last mile of the last mile."
-https://x.com/nikunj/status/2056865808832397344
-
----
-
-Dan Shipper — CEO, Every
-
-Shipper posted a three-word viral tweet—"what did karpathy see"—after Karpathy announced he was joining Anthropic, racking up over 1,500 likes. It perfectly captured the community's collective curiosity and excitement about what Anthropic must be building behind closed doors.
-https://x.com/danshipper/status/2056762096352649421
-
----
-
-Garry Tan — President and CEO, Y Combinator
-
-Tan connected his past Microsoft experience (2003–2005) trying to make WinFS—a database-backed file system—to his current personal project GBrain, calling it "WinFS but now with LLMs." He also reflected on creativity and craft after recording a podcast alongside Rick Rubin and Clown from Slipknot, noting that "code can be art too."
-https://x.com/garrytan/status/2056967665001082919
-https://x.com/garrytan/status/2056976600294650266
-
----
-
-Thariq — Claude Code at Anthropic, prev YC W20
-
-Responding to Karpathy's Anthropic announcement with 1,763 likes, Thariq simply wrote: "the future is bright, let's get to work." He also shared the new Claude Managed Agents post on the Anthropic engineering blog. His reaction captured the enthusiasm inside Anthropic's team.
-https://x.com/trq212/status/2056777186062032964
-
----
-
-Claude (Anthropic) — AI assistant built by Anthropic
-
-The Claude account spotlighted "The Problem Solvers," a new series featuring founders using Claude to tackle hard problems—beginning with Scott Wu of Cognition, whose team built Devin (an AI software engineer on Claude) with the goal of making software development 10x faster for every engineering team. It also promoted the new Claude Platform capabilities: self-hosted sandboxes in public beta and MCP tunnels in research preview.
-https://x.com/claudeai/status/2056805728774402428
-https://x.com/claudeai/status/2056645493493575681
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Training Data — Rebuilding IT From the Ground Up for the AI Age: Serval's Jake Stauch
-https://www.youtube.com/watch?v=j7ypvRUFY7M
+AI & I by Every — "Inside Stainless: The Developer Tools Startup Anthropic Just Bought for $300 Million"
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
 
-Serval CEO Jake Stauch's core thesis is simple: enterprise automation only spreads when building the automation is easier than doing the task manually—and AI finally makes that possible.
+Takeaway: MCP is the emerging interface layer connecting AI to the internet — but building MCP servers that actually work requires deep product and engineering discipline, and the future likely belongs to code execution as a "super tool" that replaces hundreds of individual MCP endpoints.
 
-Stauch explains that ServiceNow got the core abstraction right (workflows on top of databases) but made building those workflows too expensive: weeks or months of developer time, often outdated by the time they shipped. Serval keeps the same primitives but uses a "cogen engine" that compiles natural language descriptions into working TypeScript automations instantly. Once built, those automations run without regenerating code on every request, which gives Serval unusually strong unit economics compared to most AI companies—they are not in the business of reselling tokens.
+Alex Rattray, founder and CEO of Stainless, joined Dan Shipper on AI & I to unpack what his company does and why Anthropic paid a reported $300 million for it. Stainless builds the APIs and SDKs powering the developer infrastructure of major AI companies — including OpenAI and Anthropic — and has been expanding aggressively into MCP servers.
 
-On model selection, Serval runs both OpenAI and Anthropic models: OpenAI wins on end-user interactions, while Anthropic's Sonnet and Opus models excel on the automation/code generation side. Stauch was candid about model upgrade friction: "Sometimes you get some advantages, and some things that were working really well don't work as well anymore." In some cases, they have downgraded models because predictable behavior mattered more than raw capability.
+The core insight of the episode is that MCP, while promising, is genuinely hard to scale. Models can only handle a limited number of tools before context windows overflow and performance collapses. A large API like Stripe has hundreds of endpoints — directly translating those into MCP tools would consume the entire context budget before a single task is attempted. Rattray's design principles for reliable MCP servers: keep the tool count small, give each tool a precise and specific name and description, minimize input and output parameters, and use JSON filters (like JQ) to strip unnecessary data from responses. For larger APIs, Stainless uses a "dynamic mode" with just three tools — list endpoints, learn about a specific one, and execute it — which keeps context manageable at the cost of additional round trips to the model.
 
-Architecturally, Serval uses a two-agent model: an admin agent that builds and configures tools with proper permissions and approvals, and a helpdesk agent that end users interact with—but the helpdesk agent can only use what the admin has explicitly published. This design gives enterprises full agent intelligence while maintaining the control layer that IT, security, and compliance teams require.
+The bigger vision Rattray shared is that MCP tool lists will eventually give way to a code execution "super tool." Instead of exposing hundreds of API endpoints, the AI writes TypeScript or Python against an SDK, a sandboxed server runs it, and a type-checker catches hallucinated endpoints before they cause failures. "The context hit coming back from all of this is going to be like 10 lines of text," he said. This approach keeps context minimal and dramatically speeds up multi-step operations — with the bonus that one-off AI actions can be committed to a repo and turned into permanent production software.
 
-Stauch's contrarian view: the real tension in enterprise AI is not between companies and foundation model providers, but between individuals who want full autonomy from their AI tools and organizations that want control. He compared it to the Shadow IT era when employees smuggled iPhones into BlackBerry shops: "The companies that basically say yes as the default are going to be way ahead of the companies that say no as the default."
+Rattray also described how he uses MCP today in his own work: connecting Notion, HubSpot, Gong, and a read-only copy of Stainless's database so he can ask questions like "What are the interesting customers that signed up last week?" — with the AI querying across all those systems and synthesizing a summary. He also maintains a company knowledge base in a Git repo via Claude Code, storing customer quotes and refined SQL queries for future reuse. On security, his view is that restricting what's exposed through MCP is only a partial fix — the right layer for security is the API itself, via OAuth with granular scopes and permissions.
 
-On building an AI-native company, Serval gives AI "right of first refusal" on every department. They have eliminated solution engineers and SDRs entirely, with reps using Serval to answer technical questions and generate battle cards in real time during calls. Their hiring mantra: "fewer, better"—because the ability to reinvent quickly requires a small, agile team. The company's north star: "We want to be the tool that actually closes the gap between what you think your job's gonna be and what your job actually is."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Anthropic Engineering: Scaling Managed Agents — Decoupling the brain from the hands
-https://www.anthropic.com/engineering/managed-agents
-
-Anthropic's engineering team explains the architectural rethink behind Managed Agents. The core insight: virtualize agent components into stable interfaces (session, harness, sandbox) the same way operating systems virtualized hardware decades ago. By decoupling Claude's "brain" (harness + inference) from the "hands" (sandboxes and tools) and persisting the session log outside the harness, the system became resilient to crashes, easier to debug, and flexible enough to connect to customer VPCs. The result: p50 time-to-first-token dropped ~60% and p95 dropped over 90%. The post also covers the security model—credentials are never accessible from the sandbox where Claude's generated code runs, using either token-bundled resource access (for Git) or a secure vault-and-proxy pattern (for OAuth/MCP tools).
-
----
-
-Claude Blog: New in Claude Managed Agents — self-hosted sandboxes and MCP tunnels
-https://claude.com/blog/claude-managed-agents-updates
-
-Anthropic announced two new Managed Agents capabilities. Self-hosted sandboxes let enterprises keep tool execution inside their own infrastructure or with managed providers (Cloudflare, Daytona, Modal, Vercel), while the agent loop stays on Anthropic's side—keeping sensitive files, packages, and services within the enterprise security perimeter. MCP tunnels allow agents to reach private MCP servers (internal databases, APIs, ticketing systems) without exposing them to the public internet, via a lightweight gateway that makes only a single outbound connection. Self-hosted sandboxes are now in public beta; MCP tunnels are in research preview with access available on request.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
