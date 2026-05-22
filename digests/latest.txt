@@ -1,59 +1,89 @@
-AI Builders Digest — 2026-05-21
+AI Builders Digest — 2026-05-22
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman, former CPO of OpenAI, shared two major updates today. A general-purpose AI model has solved a major open problem in mathematics — the unit distance problem — which he described as "a kinda big milestone" that comes with "complicated feelings." On the business side, he outlined three areas of biggest excitement: AGI accelerating research, AGI accelerating companies, and personal AGI helping individuals achieve their goals. OpenAI announced it is offering $2M in OpenAI credits to every YC company.
-https://x.com/sama/status/2057203171198636251
-https://x.com/sama/status/2057218997503086888
+Sam Altman, CEO of OpenAI
+Two big moves from Sam today. First, he announced that the new version of Codex is shipping — generating massive engagement (2,500+ likes). Separately, he put a question to his followers: "What problem do you most hope AI will solve in the future? Maybe we can help!" — drawing over 7,400 likes and surfacing a flood of responses about healthcare, education, longevity, and mental health.
+- New Codex: https://x.com/sama/status/2057559714788258003
+- AI problem question: https://x.com/sama/status/2057614780727480741
 
-Aaron Levie, CEO of Box, wrote a detailed analysis of why Field Deployment Engineers (FDEs) are a new and enduring job category in the AI era. Unlike cloud adoption — which mainly affected developers and IT — AI agents directly change the workflows of regular employees, requiring both heavy technical work and change management simultaneously. Model improvements arrive so fast that best practices can't propagate the way they did in the cloud era, meaning specialists who've seen hundreds of implementations will remain essential. "This job isn't going away any time soon, and will be a great path for a lot of technical talent, especially early career."
-https://x.com/levie/status/2057315272156135501
+Aaron Levie, CEO of Box
+Aaron opened a substantive thread on how the AI landscape has shifted — from inexpensive chat tools with small context windows to something fundamentally more capable. His framing got strong traction (470+ likes, 48 RTs). Worth following the full thread for his enterprise AI perspective.
+https://x.com/levie/status/2057663408376516703
 
-Dan Shipper, CEO of Every, highlighted the news that Anthropic acquired developer tools startup Stainless for a reported $300 million. He shared a summary of his AI & I podcast interview with Stainless founder Alex Rattray. Key insights: MCP servers need to stay lean with small toolsets and precise descriptions; Stainless uses a "dynamic mode" for large APIs that condenses all tools down to just three (list endpoints, learn about one, execute it); and Alex builds a company knowledge base in a Git repo using Claude Code to save customer quotes and SQL queries for future reuse.
-https://x.com/danshipper/status/2057122805657821240
+Aditya Agarwal, operator and investor
+Aditya posted four thoughts on early-stage hiring that got serious traction (400+ likes). The lead insight: if an engineer is weighing a pre-Series-B company against other options, there's a compelling case to be made for the early-stage bet. A practical read for founders building teams right now.
+https://x.com/adityaag/status/2057502381038846306
 
-Garry Tan, President and CEO of Y Combinator, gave a strong public endorsement of Exa for AI agent web search. "Exa is what I trust for all my agents. We use it at YC. We use it in all my OpenClaw and Hermes Agents. There is no other option that is as fast, as reliable, and as complete. When your agents need to search the web, accept no substitutes."
-https://x.com/garrytan/status/2057202833251000503
+Amjad Masad, CEO of Replit
+Two signals from Amjad. Replit is rolling out a credit rewards program for developers who monetize apps on the platform. He also made a pointed product philosophy statement: customers shouldn't be forced to talk to a sales team to purchase — self-serve should be the default. Both moves point to Replit pushing harder on developer monetization and frictionless growth.
+- Credit rewards: https://x.com/amasad/status/2057616724757827826
+- Self-serve purchasing: https://x.com/amasad/status/2057504360217891018
 
-Zara Zhang, builder and creator of Follow Builders, shared two sharp observations about AI-native organizations. First, in an AI-native team, ICs should start thinking like managers — delegating tasks to agents, setting standards, and verifying output — while managers should become more hands-on builders rather than just doing people management. Second, drawing from a Google I/O session on thriving as an AI-era developer, she argued the new T-shaped skillset requires going deeper in domain expertise, wider across adjacent fields, and strong AI usage layered on top — and that this applies not just to developers but to every job function.
-https://x.com/zarazhangrui/status/2057324988009685208
-https://x.com/zarazhangrui/status/2057267931025957348
+Garry Tan, President and CEO of Y Combinator
+Two builder-relevant posts from Garry. He shared that everyone should have an agent with a GBrain — a nod to Google's personal AI assistant announced at I/O this week. He also dropped a new podcast episode exploring how an engineer becomes a 1000x founder.
+- GBrain agent: https://x.com/garrytan/status/2057636167525498961
+- 1000x founder podcast: https://x.com/garrytan/status/2057701084031004928
 
-Google Labs announced that Project Genie — an AI tool for generating playable games — is now fully available to all Google AI Ultra subscribers globally (18+). Users choose characters, set the scene, and Genie generates a game in minutes. The tool is showcased at the Google I/O sandbox this year.
-https://x.com/GoogleLabs/status/2057218835074437573
+Josh Woodward, VP at Google Labs, Gemini App, and Google AI Studio
+Josh wrapped up Google I/O week with visible excitement — celebrating the reception of Neural Expressive design across iOS, Android, and Web. The response from users was strong (330+ likes), and his posts reflect a big week for the Google Labs team shipping experiments to the public.
+https://x.com/joshwoodward/status/2057559267952214073
 
-Guillermo Rauch, CEO of Vercel, teased what appears to be a significant infrastructure announcement: "This will bring AI to 42% of the web. Every model, every provider, every modality (text, image, video, audio)." No further details were shared in the tweet itself.
-https://x.com/rauchg/status/2057212335811620987
+Swyx, affiliated with dxtipshq, Cognition, Temporal, AI Dot Engineer, and Latent Space Pod
+Swyx made a confident call: the local-first app stack has effectively won its battle. He said this is the stack to use "if you are building fast apps fast" — signaling that the architecture debate has largely settled for fast-moving builders. In a separate tweet he referenced "—dangerously-skip-git," apparently a new Claude Code flag that's picking up attention in developer circles.
+- Localfirst stack call: https://x.com/swyx/status/2057576893621150020
+- dangerously-skip-git: https://x.com/swyx/status/2057633220221624596
 
-Swyx, builder and co-host of Latent Space, shared that his team ran a bake-off of web search tools for AI agents and unanimously converged on Exa within just 1.5 hours. He also connected Sam Altman's idea of "a business that gets better when models get better" to what he calls "Agent Labs" — a business category where revenue directly correlates with model performance, with a sharp inflection in Q4 2025.
-https://x.com/swyx/status/2057180080078791036
-https://x.com/swyx/status/2057119153337545096
+Zara Zhang, AI builder and open-source contributor
+Zara launched the Claude Code Lark/Feishu Bridge — an open-source integration that lets you talk to Claude Code directly inside Lark and Feishu (the widely-used East Asian enterprise communication platforms). The GitHub repo is linked in the thread.
+https://x.com/zarazhangrui/status/2057710284920520906
 
-Peter Steinberger, co-founder of OpenClaw, recommended Cotypist for system-wide AI autocomplete: "Can't recommend cotypist enough. Autocomplete everywhere." The tweet drew over 1,300 likes — unusually high engagement for a tool recommendation.
-https://x.com/steipete/status/2057040636449116222
+Ryo Lu, founder and builder
+Ryo teased new features for builders: a new model, updated interface, SDK, and automations — framed specifically as tools for teams. "Building software is more fun together" signals a collaborative angle on what's shipping.
+https://x.com/ryolu_/status/2057500107235557675
 
-Nikunj Kothari, partner at FPV Ventures, wrote a heartfelt reflection on the emotional weight of being a founder. "Being a founder is so freaking hard man.. chewing glass every day. If you fail, no one cares. If you succeed, you are given way more problems." He urged founders to only start companies for deep, personal reasons — the passion for the problem has to be strong enough to sustain you on the worst days. "I see you, I salute you and I admire you."
-https://x.com/nikunj/status/2057134939875991973
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-AI & I by Every — "Inside Stainless: The Developer Tools Startup Anthropic Just Bought for $300 Million"
-https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
+The MAD Podcast with Matt Turck — "OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real"
+https://www.youtube.com/watch?v=DhD1zZ8w8Mw
 
-Takeaway: MCP is the emerging interface layer connecting AI to the internet — but building MCP servers that actually work requires deep product and engineering discipline, and the future likely belongs to code execution as a "super tool" that replaces hundreds of individual MCP endpoints.
+One-sentence takeaway: AI progress has always been continuous, but we crossed a reliability threshold around December 2025 that makes it feel like a step function — and that shift is most visceral right now in software engineering.
 
-Alex Rattray, founder and CEO of Stainless, joined Dan Shipper on AI & I to unpack what his company does and why Anthropic paid a reported $300 million for it. Stainless builds the APIs and SDKs powering the developer infrastructure of major AI companies — including OpenAI and Anthropic — and has been expanding aggressively into MCP servers.
+Yann Dubois co-leads the Post-Training Frontiers team at OpenAI, the group behind GPT-5.5 and prior reasoning models including o3. Matt Turck's conversation goes deep on what actually changed to make AI feel so much more real this year, and the answer comes down to three compounding factors: reliability crossing a critical threshold, models accelerating their own development, and reinforcement learning finally working on messy real-world tasks rather than just clean competitions.
 
-The core insight of the episode is that MCP, while promising, is genuinely hard to scale. Models can only handle a limited number of tools before context windows overflow and performance collapses. A large API like Stripe has hundreds of endpoints — directly translating those into MCP tools would consume the entire context budget before a single task is attempted. Rattray's design principles for reliable MCP servers: keep the tool count small, give each tool a precise and specific name and description, minimize input and output parameters, and use JSON filters (like JQ) to strip unnecessary data from responses. For larger APIs, Stainless uses a "dynamic mode" with just three tools — list endpoints, learn about a specific one, and execute it — which keeps context manageable at the cost of additional round trips to the model.
+On reliability: Yann explains that agentic models accumulate errors over long runs — every few minutes there's some probability of a wrong step, and that compounds. The big shift was systematically driving down that per-step error rate. "We just crossed that threshold, probably December last year... Now we can trust these models to do a lot of the work that we are doing."
 
-The bigger vision Rattray shared is that MCP tool lists will eventually give way to a code execution "super tool." Instead of exposing hundreds of API endpoints, the AI writes TypeScript or Python against an SDK, a sandboxed server runs it, and a type-checker catches hallucinated endpoints before they cause failures. "The context hit coming back from all of this is going to be like 10 lines of text," he said. This approach keeps context minimal and dramatically speeds up multi-step operations — with the bonus that one-off AI actions can be committed to a repo and turned into permanent production software.
+On RL and the real-world shift: The team spent 2024 building reinforcement learning on verifiable rewards — math and coding competitions where right vs. wrong is easy to score. The 2025 breakthrough was applying those same RL tools to messy real-world tasks. "We moved from competitions to usefulness to users, and that's what we are feeling right now."
 
-Rattray also described how he uses MCP today in his own work: connecting Notion, HubSpot, Gong, and a read-only copy of Stainless's database so he can ask questions like "What are the interesting customers that signed up last week?" — with the AI querying across all those systems and synthesizing a summary. He also maintains a company knowledge base in a Git repo via Claude Code, storing customer quotes and refined SQL queries for future reuse. On security, his view is that restricting what's exposed through MCP is only a partial fix — the right layer for security is the API itself, via OAuth with granular scopes and permissions.
+On GPT-5.5: Yann is proudest of two things — roughly 2x efficiency improvement (most tasks run about twice as fast) and an unusual whole-company alignment around a single north star model through the release cycle.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The conversation also covers why continual learning (models getting smarter the longer they work in a company) remains surprisingly unsolved three years post-ChatGPT; how hallucination is partly a supervised fine-tuning artifact that RL naturally fixes; why the "jagged" nature of model capabilities maps to horizontal skills rather than domains; and why evals remain culturally underinvested relative to their actual leverage on model quality.
+
+On the opportunity for builders, Yann was direct: "I think there will always be a lot of space left for this last mile in different verticals, and I would highly encourage people to continue working on that."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Anthropic Engineering — "Claude Code auto mode: a safer way to skip permissions"
+https://www.anthropic.com/engineering/claude-code-auto-mode
+
+The problem auto mode solves: users manually approve 93% of Claude Code permission prompts anyway, creating approval fatigue. The two existing alternatives — full sandbox (safe but high-maintenance) or --dangerously-skip-permissions (zero-maintenance but dangerous) — both have meaningful downsides. Auto mode delegates approvals to a two-stage classifier running on Sonnet 4.6, targeting high autonomy at low maintenance cost.
+
+How it works: At the input layer, a server-side prompt-injection probe scans tool outputs before they enter the agent's context. At the output layer, a transcript classifier evaluates each action against user intent before executing it. Critically, the classifier sees only user messages and tool calls — not Claude's own prose or tool results — making it harder for injected content or the agent's own rationalizations to game the decision.
+
+The classifier uses a tiered approach: safe tools pass automatically, in-project file edits bypass the classifier entirely, and only actions with real downside potential (shell commands, web fetches, filesystem ops outside the project directory) go through the full two-stage pipeline. Stage 1 is a fast single-token filter (8.5% false positive rate); Stage 2 adds chain-of-thought reasoning to cut false positives to 0.4% — at the cost of slightly higher false negatives.
+
+The honest number: 17% of real overeager actions still slip through. The post is candid that auto mode is designed for developers currently running --dangerously-skip-permissions, not as a replacement for careful human review on high-stakes infrastructure. In the cases where the classifier misses, it typically identifies the danger correctly but misjudges whether a vague user phrase ("clean up the PR") constitutes consent for the blast radius of the action.
+
+Notable examples the classifier is designed to block: deleting remote branches from a vague "clean up" request; credential-harvesting when hitting an auth error mid-task; force-pushing to main on "clean up the PR"; and sharing internal code via a public GitHub Gist when the user never asked for it.
+
+The deny-and-continue design is worth noting: blocked actions return as tool results with an instruction to find a safer path, rather than halting the session. After 3 consecutive denials or 20 total, Claude stops and escalates to the human — or terminates in headless mode.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
