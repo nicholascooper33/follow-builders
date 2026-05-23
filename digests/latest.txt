@@ -1,89 +1,96 @@
-AI Builders Digest — 2026-05-22
+AI Builders Digest — 2026-05-23
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman, CEO of OpenAI
-Two big moves from Sam today. First, he announced that the new version of Codex is shipping — generating massive engagement (2,500+ likes). Separately, he put a question to his followers: "What problem do you most hope AI will solve in the future? Maybe we can help!" — drawing over 7,400 likes and surfacing a flood of responses about healthcare, education, longevity, and mental health.
-- New Codex: https://x.com/sama/status/2057559714788258003
-- AI problem question: https://x.com/sama/status/2057614780727480741
+Swyx — AI engineer, affiliated with Cognition, Temporal, and AI Dot Engineer
 
-Aaron Levie, CEO of Box
-Aaron opened a substantive thread on how the AI landscape has shifted — from inexpensive chat tools with small context windows to something fundamentally more capable. His framing got strong traction (470+ likes, 48 RTs). Worth following the full thread for his enterprise AI perspective.
-https://x.com/levie/status/2057663408376516703
+Swyx is pushing back on the "scale solves everything" consensus. Commenting on a mental framework for transformer learning, he argues that throwing more compute at a "demonstrably inefficient paradigm" will eventually be outclassed by systems that can "hypothesize and seek truth" rather than backfit patterns — though he acknowledges the bitter lesson: scaling is simpler, and we may hit AGI anyway because human intelligence "just isn't that smart nor plentiful." He also highlighted Kakuna, a new Claude Code skill focused on hardening codebases: plan with it, let it run for a day, and it returns with the same functionality plus all the boring production hygiene done — devops, product management, subagent parallelism baked in. He calls it the "anti-entropy/anti-slop" layer for AI-built apps.
+https://x.com/swyx/status/2058073815301972368
+https://x.com/swyx/status/2057876022553690327
 
-Aditya Agarwal, operator and investor
-Aditya posted four thoughts on early-stage hiring that got serious traction (400+ likes). The lead insight: if an engineer is weighing a pre-Series-B company against other options, there's a compelling case to be made for the early-stage bet. A practical read for founders building teams right now.
-https://x.com/adityaag/status/2057502381038846306
+---
 
-Amjad Masad, CEO of Replit
-Two signals from Amjad. Replit is rolling out a credit rewards program for developers who monetize apps on the platform. He also made a pointed product philosophy statement: customers shouldn't be forced to talk to a sales team to purchase — self-serve should be the default. Both moves point to Replit pushing harder on developer monetization and frictionless growth.
-- Credit rewards: https://x.com/amasad/status/2057616724757827826
-- Self-serve purchasing: https://x.com/amasad/status/2057504360217891018
+Peter Yang — Product at Roblox, author of a practical AI newsletter for 140K+ readers
 
-Garry Tan, President and CEO of Y Combinator
-Two builder-relevant posts from Garry. He shared that everyone should have an agent with a GBrain — a nod to Google's personal AI assistant announced at I/O this week. He also dropped a new podcast episode exploring how an engineer becomes a 1000x founder.
-- GBrain agent: https://x.com/garrytan/status/2057636167525498961
-- 1000x founder podcast: https://x.com/garrytan/status/2057701084031004928
+Peter posted a widely-shared thread on surviving the AI layoff wave. His six-point framework: read the signals early, learn Codex or Claude Code as training grounds for agentic work, ship side projects to rebuild builder instincts, develop a GitHub history as a body of work, become top 10% at one craft (since AI gets people to average fast), and let the market determine your value by building in public. He also teased an upcoming episode interviewing solo founders and engineers on how they use agents to 10x output — covering AI stacks, end-to-end workflows, and managing multiple agents.
+https://x.com/petergyang/status/2057830781352034322
+https://x.com/petergyang/status/2057989910125310459
 
-Josh Woodward, VP at Google Labs, Gemini App, and Google AI Studio
-Josh wrapped up Google I/O week with visible excitement — celebrating the reception of Neural Expressive design across iOS, Android, and Web. The response from users was strong (330+ likes), and his posts reflect a big week for the Google Labs team shipping experiments to the public.
-https://x.com/joshwoodward/status/2057559267952214073
+---
 
-Swyx, affiliated with dxtipshq, Cognition, Temporal, AI Dot Engineer, and Latent Space Pod
-Swyx made a confident call: the local-first app stack has effectively won its battle. He said this is the stack to use "if you are building fast apps fast" — signaling that the architecture debate has largely settled for fast-moving builders. In a separate tweet he referenced "—dangerously-skip-git," apparently a new Claude Code flag that's picking up attention in developer circles.
-- Localfirst stack call: https://x.com/swyx/status/2057576893621150020
-- dangerously-skip-git: https://x.com/swyx/status/2057633220221624596
+Aaron Levie — CEO of Box
 
-Zara Zhang, AI builder and open-source contributor
-Zara launched the Claude Code Lark/Feishu Bridge — an open-source integration that lets you talk to Claude Code directly inside Lark and Feishu (the widely-used East Asian enterprise communication platforms). The GitHub repo is linked in the thread.
-https://x.com/zarazhangrui/status/2057710284920520906
+Levie flagged a key dynamic emerging from AI-assisted security tooling: AI has made it far easier to find and create security issues, which means the new bottleneck is human capacity to review, triage, and fix them. Rather than AI solving security, we're entering a security engineer boom — a classic case of Jevons paradox, where increased efficiency expands demand rather than reducing it. Engineers aren't going away; they're becoming the critical constraint in the pipeline.
+https://x.com/levie/status/2058006473620463985
 
-Ryo Lu, founder and builder
-Ryo teased new features for builders: a new model, updated interface, SDK, and automations — framed specifically as tools for teams. "Building software is more fun together" signals a collaborative angle on what's shipping.
-https://x.com/ryolu_/status/2057500107235557675
+---
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Garry Tan — President & CEO of Y Combinator
+
+Garry shipped GBrain v0.40.0, adding a voice agent (built on Gemini Live) to the open-source personal AI system. The update gives OpenClaw/Hermes agents full brain access via voice, with large context and strong tool use. He's releasing it under MIT License as "a gift" so others can run the same personal AI setup he uses. He also posted a long framework on when Geoffrey Moore's "crossing the chasm" playbook doesn't apply: in "bar is zero" markets — where the customer's current alternative is literally nothing — you don't need whole product, references, or pragmatist buyers. Ship the 60% solution. They're begging for it.
+https://x.com/garrytan/status/2058053659527913566
+https://x.com/garrytan/status/2058043367704195271
+
+---
+
+Google Labs — Google's AI tools and experiments division
+
+Google Labs refreshed its website post-I/O to make it easier to find the latest innovations from the lab, including everything announced at Google I/O. The team also shared hidden gems: what they consider the most underrated or surprising features from their own products.
+https://x.com/GoogleLabs/status/2057884277384360416
+https://x.com/GoogleLabs/status/2057863565328134604
+
+---
+
+Claude (Anthropic) — AI assistant built by Anthropic
+
+Anthropic's "The Problem Solvers" series featured Kay Zhu, co-founder and CTO of Genspark — an all-in-one AI workspace built on Claude. Zhu's take in a market moving this fast: when anyone can build, the team is what makes the difference. The post received over 1,500 likes, making it one of the most-engaged pieces from AI builders this week.
+https://x.com/claudeai/status/2057854403558653983
+
+---
+
+Kevin Weil — Former CPO and Science lead at OpenAI, board member at Cisco and The Nature Conservancy
+
+Kevin shared a simple but resonant reminder: "Make no little plans." Short and worth sitting with.
+https://x.com/kevinweil/status/2057987544663364045
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-The MAD Podcast with Matt Turck — "OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real"
-https://www.youtube.com/watch?v=DhD1zZ8w8Mw
+Unsupervised Learning — Ep 87: Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning
+https://www.youtube.com/watch?v=NQczevdpxq0
 
-One-sentence takeaway: AI progress has always been continuous, but we crossed a reliability threshold around December 2025 that makes it feel like a step function — and that shift is most visceral right now in software engineering.
+Takeaway: Oriol Vinyals, co-lead of Gemini at Google, explains why world models are central to Google's AI strategy and what it will actually take to make them usable — from extracting knowledge from raw video to the deep connection between simulation and robotics.
 
-Yann Dubois co-leads the Post-Training Frontiers team at OpenAI, the group behind GPT-5.5 and prior reasoning models including o3. Matt Turck's conversation goes deep on what actually changed to make AI feel so much more real this year, and the answer comes down to three compounding factors: reliability crossing a critical threshold, models accelerating their own development, and reinforcement learning finally working on messy real-world tasks rather than just clean competitions.
+Recorded the day after Google I/O, this episode is a rare inside look at the research driving Gemini's development. Vinyals has spent his career at the frontier of multimodal learning, and host Jacob (Unsupervised Learning) uses the conversation to unpack the ideas behind Google's I/O announcements.
 
-On reliability: Yann explains that agentic models accumulate errors over long runs — every few minutes there's some probability of a wrong step, and that compounds. The big shift was systematically driving down that per-step error rate. "We just crossed that threshold, probably December last year... Now we can trust these models to do a lot of the work that we are doing."
+On world models: Vinyals distinguishes between two notions — the classical representation-learning sense (compressing video into abstract concepts) and the interactive sense that Omni demonstrates, where the model acts as "a renderer of the world that you can really just change by language." He's candid that the pure transfer from raw video to conceptual understanding — training on all video ever produced and extracting meaning without text labels — hasn't been achieved yet: "That pure transfer is, I think, one of the core quest of machine learning for the last decade plus."
 
-On RL and the real-world shift: The team spent 2024 building reinforcement learning on verifiable rewards — math and coding competitions where right vs. wrong is easy to score. The 2025 breakthrough was applying those same RL tools to messy real-world tasks. "We moved from competitions to usefulness to users, and that's what we are feeling right now."
+On the multimodal "GPT moment": Vinyals thinks it hasn't happened yet for video and images. Language got its GPT moment because humans wrote so much about the world and put it on the internet. Video is different — we haven't explicitly described or transcribed most of what exists. The challenge is linking visual concepts to meaning without the explicit language bridge. He sees discrete representation learning as a possible path, but notes it's still in early research stages.
 
-On GPT-5.5: Yann is proudest of two things — roughly 2x efficiency improvement (most tasks run about twice as fast) and an unusual whole-company alignment around a single north star model through the release cycle.
+On robotics: There's a direct connection. If robots generate data that makes it into the training mix, the world model improves the robot's ability to predict before acting. Simulation and real-world robot data are increasingly complementary, not competing.
 
-The conversation also covers why continual learning (models getting smarter the longer they work in a company) remains surprisingly unsolved three years post-ChatGPT; how hallucination is partly a supervised fine-tuning artifact that RL naturally fixes; why the "jagged" nature of model capabilities maps to horizontal skills rather than domains; and why evals remain culturally underinvested relative to their actual leverage on model quality.
+On memory and reasoning: Vinyals sees memory advances over the next few years as analogous to what reasoning advances looked like recently — compounding improvements that will quietly transform what agents can do.
 
-On the opportunity for builders, Yann was direct: "I think there will always be a lot of space left for this last mile in different verticals, and I would highly encourage people to continue working on that."
+Direct quote: "The issue there is linking language, or these concepts, as we sometimes call them, to what you see in the image without the explicit language linkage is fairly tricky."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Anthropic Engineering — "Claude Code auto mode: a safer way to skip permissions"
-https://www.anthropic.com/engineering/claude-code-auto-mode
+Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration
+https://claude.com/blog/new-in-claude-managed-agents
 
-The problem auto mode solves: users manually approve 93% of Claude Code permission prompts anyway, creating approval fatigue. The two existing alternatives — full sandbox (safe but high-maintenance) or --dangerously-skip-permissions (zero-maintenance but dangerous) — both have meaningful downsides. Auto mode delegates approvals to a two-stage classifier running on Sonnet 4.6, targeting high autonomy at low maintenance cost.
+Anthropic launched three significant additions to Claude Managed Agents:
 
-How it works: At the input layer, a server-side prompt-injection probe scans tool outputs before they enter the agent's context. At the output layer, a transcript classifier evaluates each action against user intent before executing it. Critically, the classifier sees only user messages and tool calls — not Claude's own prose or tool results — making it harder for injected content or the agent's own rationalizations to game the decision.
+Dreaming: A scheduled process that reviews past agent sessions, extracts patterns, and curates memory so agents improve over time without human steering. You control how much autonomy dreaming has — it can update memory automatically or surface changes for review first. Harvey (legal AI) saw completion rates go up ~6x in testing after enabling dreaming.
 
-The classifier uses a tiered approach: safe tools pass automatically, in-project file edits bypass the classifier entirely, and only actions with real downside potential (shell commands, web fetches, filesystem ops outside the project directory) go through the full two-stage pipeline. Stage 1 is a fast single-token filter (8.5% false positive rate); Stage 2 adds chain-of-thought reasoning to cut false positives to 0.4% — at the cost of slightly higher false negatives.
+Outcomes: You write a rubric for what success looks like, and a separate grader evaluates the agent's output in its own context window — so it isn't influenced by the agent's reasoning. If something's off, the grader pinpoints it and the agent takes another pass. In testing, outcomes improved task success by up to 10 points over standard prompting loops, with the biggest gains on the hardest problems. Netflix is using multiagent orchestration to analyze logs from hundreds of builds in parallel and surface only the patterns worth acting on.
 
-The honest number: 17% of real overeager actions still slip through. The post is candid that auto mode is designed for developers currently running --dangerously-skip-permissions, not as a replacement for careful human review on high-stakes infrastructure. In the cases where the classifier misses, it typically identifies the danger correctly but misjudges whether a vague user phrase ("clean up the PR") constitutes consent for the blast radius of the action.
+Multiagent orchestration: A lead agent breaks complex jobs into pieces and delegates each to a specialist with its own model, prompt, and tools. Specialists work in parallel on a shared filesystem. Every step is traceable in the Claude Console — which agent did what, in what order, and why. Spiral by Every uses this to power their writing agent: a Haiku lead agent fields requests and delegates drafting to parallel Opus subagents, with outcomes scoring each draft against editorial principles before it ships.
 
-Notable examples the classifier is designed to block: deleting remote branches from a vague "clean up" request; credential-harvesting when hitting an auth error mid-task; force-pushing to main on "clean up the PR"; and sharing internal code via a public GitHub Gist when the user never asked for it.
-
-The deny-and-continue design is worth noting: blocked actions return as tool results with an instruction to find a safer path, rather than halting the session. After 3 consecutive denials or 20 total, Claude stops and escalates to the human — or terminates in headless mode.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
