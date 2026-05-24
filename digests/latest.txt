@@ -1,96 +1,96 @@
-AI Builders Digest — 2026-05-23
+AI Builders Digest — 2026-05-24
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — AI engineer, affiliated with Cognition, Temporal, and AI Dot Engineer
+Thariq (Claude Code at Anthropic, prev YC W20)
 
-Swyx is pushing back on the "scale solves everything" consensus. Commenting on a mental framework for transformer learning, he argues that throwing more compute at a "demonstrably inefficient paradigm" will eventually be outclassed by systems that can "hypothesize and seek truth" rather than backfit patterns — though he acknowledges the bitter lesson: scaling is simpler, and we may hit AGI anyway because human intelligence "just isn't that smart nor plentiful." He also highlighted Kakuna, a new Claude Code skill focused on hardening codebases: plan with it, let it run for a day, and it returns with the same functionality plus all the boring production hygiene done — devops, product management, subagent parallelism baked in. He calls it the "anti-entropy/anti-slop" layer for AI-built apps.
-https://x.com/swyx/status/2058073815301972368
-https://x.com/swyx/status/2057876022553690327
+Thariq shared a practical tip for anyone with a legacy codebase draining money: run a "please save me money" prompt and it actually works. He's applying this to his old startup OMMultiverse, which has a large legacy codebase and a community that still relies on it, but no time for manual cost-saving audits. A useful reminder that agentic AI isn't just for building new things — it's equally valuable for maintaining and trimming what already exists.
 
----
-
-Peter Yang — Product at Roblox, author of a practical AI newsletter for 140K+ readers
-
-Peter posted a widely-shared thread on surviving the AI layoff wave. His six-point framework: read the signals early, learn Codex or Claude Code as training grounds for agentic work, ship side projects to rebuild builder instincts, develop a GitHub history as a body of work, become top 10% at one craft (since AI gets people to average fast), and let the market determine your value by building in public. He also teased an upcoming episode interviewing solo founders and engineers on how they use agents to 10x output — covering AI stacks, end-to-end workflows, and managing multiple agents.
-https://x.com/petergyang/status/2057830781352034322
-https://x.com/petergyang/status/2057989910125310459
+https://x.com/trq212/status/2058380417716125966
+https://x.com/trq212/status/2058377974882210096
 
 ---
 
-Aaron Levie — CEO of Box
+Amjad Masad (CEO, Replit)
 
-Levie flagged a key dynamic emerging from AI-assisted security tooling: AI has made it far easier to find and create security issues, which means the new bottleneck is human capacity to review, triage, and fix them. Rather than AI solving security, we're entering a security engineer boom — a classic case of Jevons paradox, where increased efficiency expands demand rather than reducing it. Engineers aren't going away; they're becoming the critical constraint in the pipeline.
-https://x.com/levie/status/2058006473620463985
+Amjad shared a builder testimonial that illustrates how far AI-assisted development tools have come: a developer built an MVP over a single weekend using Replit for Dial, and got it approved by Apple on the very first try — something that had never happened to them before. They had previously used Cursor and found Replit dramatically faster. A concrete data point for the "weekend MVP" era.
 
----
-
-Garry Tan — President & CEO of Y Combinator
-
-Garry shipped GBrain v0.40.0, adding a voice agent (built on Gemini Live) to the open-source personal AI system. The update gives OpenClaw/Hermes agents full brain access via voice, with large context and strong tool use. He's releasing it under MIT License as "a gift" so others can run the same personal AI setup he uses. He also posted a long framework on when Geoffrey Moore's "crossing the chasm" playbook doesn't apply: in "bar is zero" markets — where the customer's current alternative is literally nothing — you don't need whole product, references, or pragmatist buyers. Ship the 60% solution. They're begging for it.
-https://x.com/garrytan/status/2058053659527913566
-https://x.com/garrytan/status/2058043367704195271
+https://x.com/amasad/status/2058418731840159953
 
 ---
 
-Google Labs — Google's AI tools and experiments division
+Guillermo Rauch (CEO, Vercel)
 
-Google Labs refreshed its website post-I/O to make it easier to find the latest innovations from the lab, including everything announced at Google I/O. The team also shared hidden gems: what they consider the most underrated or surprising features from their own products.
-https://x.com/GoogleLabs/status/2057884277384360416
-https://x.com/GoogleLabs/status/2057863565328134604
+Guillermo ran a signal check on 1,400 replies to a question about what people are building with AI. His read: OpenAI is catching up to Anthropic in mentions, and "Codex" is getting more buzz than "Claude Code" in conversation — but when it comes to individual model mentions, Anthropic's models are winning. He also asked builders to share the AI-built product they're most proud of, along with the model used. A useful real-world benchmark thread worth browsing.
 
----
-
-Claude (Anthropic) — AI assistant built by Anthropic
-
-Anthropic's "The Problem Solvers" series featured Kay Zhu, co-founder and CTO of Genspark — an all-in-one AI workspace built on Claude. Zhu's take in a market moving this fast: when anyone can build, the team is what makes the difference. The post received over 1,500 likes, making it one of the most-engaged pieces from AI builders this week.
-https://x.com/claudeai/status/2057854403558653983
+https://x.com/rauchg/status/2058353051073970416
+https://x.com/rauchg/status/2058245330836271263
 
 ---
 
-Kevin Weil — Former CPO and Science lead at OpenAI, board member at Cisco and The Nature Conservancy
+Aaron Levie (CEO, Box)
 
-Kevin shared a simple but resonant reminder: "Make no little plans." Short and worth sitting with.
-https://x.com/kevinweil/status/2057987544663364045
+Aaron pushed back on the "AI is eliminating jobs" narrative, pointing to a piece arguing that automating individual tasks doesn't eliminate a role. As AI takes on tasks, the definition of the job expands and new responsibilities fill the gap. He sees the industry repeatedly confusing task-level AI capability with role-level replacement — a useful frame for founders and operators thinking about hiring and product positioning.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://x.com/levie/status/2058223867815227756
+
+---
+
+Garry Tan (President & CEO, Y Combinator)
+
+Garry dropped a benchmark update for GBrain, his personal AI memory and retrieval system. His latest evals show GBrain beats MemPalace by 1% on LongMemEval and outperforms standard Vector RAG by 38% on retrieval success — while also leading on cost and speed. He also fine-tuned a Qwen3.5-397B model in a couple of hours using Thinking Machines, calling fast usable multimodal the prerequisite for "very mind-blowing personal AI."
+
+https://x.com/garrytan/status/2058448209027141709
+https://x.com/garrytan/status/2058378310254793013
+
+---
+
+Peter Steinberger (Co-founder, OpenClaw / affiliated with OpenAI)
+
+Peter shipped a GitHub dashboard for anyone to use — showing your repos, open issues and PRs, last release version, and commits since last release in one place. He also shared a practical agentic coding workflow: tell Codex to maintain a scratch-log during large refactors, capturing every decision and tradeoff it makes, so you can review the agent's reasoning after the fact instead of being left with unexplained changes.
+
+https://x.com/steipete/status/2058381186884411473
+https://x.com/steipete/status/2058308112134635528
+
+---
+
+Nikunj Kothari (Partner, FPV Ventures)
+
+Nikunj flagged that more B2B companies are finally waking up to something he wrote about nearly a year ago: narrative and brand differentiation are becoming critical as AI lowers the barrier to building products, flooding the market with similar-looking output. His message to founders: don't wait another year to invest in standing out from the noise.
+
+https://x.com/nikunj/status/2058203594672021769
+
+---
+
+Aditya Agarwal (General Partner, South Park Commons; ex-CTO, Dropbox)
+
+Aditya paused to mark the pace of change: six months ago in November 2025, most people were still thrilled just to chat with LLMs. By May 2026, AI systems have produced more code than humans have written across all of history. Short and worth sitting with.
+
+https://x.com/adityaag/status/2058233900464238801
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning — Ep 87: Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning
-https://www.youtube.com/watch?v=NQczevdpxq0
+No Priors — "The Story Behind Cerebras' $63 Billion IPO with Founder and CEO Andrew Feldman"
+https://www.youtube.com/watch?v=jeop9wfb9jU
 
-Takeaway: Oriol Vinyals, co-lead of Gemini at Google, explains why world models are central to Google's AI strategy and what it will actually take to make them usable — from extracting knowledge from raw video to the deep connection between simulation and robotics.
+Takeaway: Cerebras bet from day one that radically better AI hardware required a radically different architecture — and then waited years for a market that eventually proved them right at a $63 billion valuation.
 
-Recorded the day after Google I/O, this episode is a rare inside look at the research driving Gemini's development. Vinyals has spent his career at the frontier of multimodal learning, and host Jacob (Unsupervised Learning) uses the conversation to unpack the ideas behind Google's I/O announcements.
+Andrew Feldman, co-founder and CEO of Cerebras, joined No Priors to tell the full story behind the company's IPO. The core thesis Cerebras built on: you cannot be 15-20x better than a GPU by making minor modifications to its design. So they built a wafer-scale chip — 46,000 square millimeters, about the size of a dinner plate — while everyone else was building chips the size of postage stamps. Industry veterans called it impossible. Gene Amdahl, one of the founding fathers of computing, had tried and failed.
 
-On world models: Vinyals distinguishes between two notions — the classical representation-learning sense (compressing video into abstract concepts) and the interactive sense that Omni demonstrates, where the model acts as "a renderer of the world that you can really just change by language." He's candid that the pure transfer from raw video to conceptual understanding — training on all video ever produced and extracting meaning without text labels — hasn't been achieved yet: "That pure transfer is, I think, one of the core quest of machine learning for the last decade plus."
+Cerebras proved it was possible in 2019 after a brutal two-year stretch where the chip simply wouldn't yield. Feldman describes sitting in a small office in Los Altos, staring at a working computer, unable to speak for half an hour: "Nobody had been able to do this, and it's working. And we did this." Then came the second problem — nobody cared. AI was still a novelty, and fast inference doesn't matter when models aren't used in daily work. First-gen systems sold in dozens. Second-gen in the hundreds.
 
-On the multimodal "GPT moment": Vinyals thinks it hasn't happened yet for video and images. Language got its GPT moment because humans wrote so much about the world and put it on the internet. Video is different — we haven't explicitly described or transcribed most of what exists. The challenge is linking visual concepts to meaning without the explicit language bridge. He sees discrete representation learning as a possible path, but notes it's still in early research stages.
+The company survived by targeting customers who valued speed regardless of software maturity: Argonne National Lab, Lawrence Livermore, Sandia, pharma, oil and gas. A billion-dollar order from sovereign partner G42 became the turning point — enough capital to transform their supply chain and battle-test at scale in real clusters.
 
-On robotics: There's a direct connection. If robots generate data that makes it into the training mix, the world model improves the robot's ability to predict before acting. Simulation and real-world robot data are increasingly complementary, not competing.
+Then 2025 hit. Models became smart enough to be genuinely useful every day, and the companies building on top — Cognition, Cursor, Lovable, OpenAI — ramped demand dramatically. Cerebras was right there with the fastest inference on the market, not by a little, but by 15-20x over GPUs across big models, small models, US models, Chinese models. They signed a deal with OpenAI worth north of $20 billion and an agreement with AWS to deploy in their data centers.
 
-On memory and reasoning: Vinyals sees memory advances over the next few years as analogous to what reasoning advances looked like recently — compounding improvements that will quietly transform what agents can do.
+Feldman's framing for why speed compounds into a winner-take-all position: "How big is the market for slow search? It's zero. How big is the market for dial-up internet? It's zero. That's how big the market for slow inference will be."
 
-Direct quote: "The issue there is linking language, or these concepts, as we sometimes call them, to what you see in the image without the explicit language linkage is fairly tricky."
+Direct quote: "Netflix used to deliver DVDs in envelopes. And when the internet got fast, they became a movie studio. It opened up an entirely new business, something fundamentally different. That's what happens with speed."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration
-https://claude.com/blog/new-in-claude-managed-agents
-
-Anthropic launched three significant additions to Claude Managed Agents:
-
-Dreaming: A scheduled process that reviews past agent sessions, extracts patterns, and curates memory so agents improve over time without human steering. You control how much autonomy dreaming has — it can update memory automatically or surface changes for review first. Harvey (legal AI) saw completion rates go up ~6x in testing after enabling dreaming.
-
-Outcomes: You write a rubric for what success looks like, and a separate grader evaluates the agent's output in its own context window — so it isn't influenced by the agent's reasoning. If something's off, the grader pinpoints it and the agent takes another pass. In testing, outcomes improved task success by up to 10 points over standard prompting loops, with the biggest gains on the hardest problems. Netflix is using multiagent orchestration to analyze logs from hundreds of builds in parallel and surface only the patterns worth acting on.
-
-Multiagent orchestration: A lead agent breaks complex jobs into pieces and delegates each to a specialist with its own model, prompt, and tools. Specialists work in parallel on a shared filesystem. Every step is traceable in the Claude Console — which agent did what, in what order, and why. Spiral by Every uses this to power their writing agent: a Haiku lead agent fields requests and delegates drafting to parallel Opus subagents, with outcomes scoring each draft against editorial principles before it ships.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
