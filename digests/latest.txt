@@ -1,45 +1,25 @@
-AI Builders Digest — 2026-05-28
+AI Builders Digest — 2026-05-29
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PODCAST
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-AI & I by Every — We Automated Everything With AI and Tripled Our Headcount
-https://www.youtube.com/watch?v=dCmOTURRf1Y
+PODCASTS
 
-Takeaway: Heavy AI adoption doesn't shrink teams — it paradoxically grows them, because automation floods organizations with "good enough" output that still needs expert judgment to actually cross the finish line.
+The MAD Podcast with Matt Turck
+"State of Enterprise AI 2026: Aaron Levie on Tokenmaxxing, Rise of Headless, and AI-Proofing Your Job"
+https://www.youtube.com/watch?v=Gs2styCcwro
 
-In this episode, Every COO Brandon interviews CEO Dan Shipper about his essay "After Automation." The conversation unpacks a counterintuitive paradox: Every has grown from 4 to 30 people since the GPT-3 era despite being, as Dan puts it, "as AI-native and agent-native as it gets" — with agents running alongside humans in Slack every day.
+Takeaway: Enterprise AI adoption is further behind than hype suggests — not because the technology isn't impressive, but because deploying agents across real organizations is a multi-year data, access control, and change management problem.
 
-Dan's central argument is that AI makes yesterday's expert competence cheap and widely available. When everyone can generate code, essays, or designs with a prompt, the zone gets flooded with work that is close-but-not-quite-right for the specific situation. That glut actually increases demand for experts — both to shepherd AI-generated material into something genuinely good, and to use these tools to build things that were previously impossible. As Dan describes it: non-technical ops people are submitting PRs, engineers are writing essays, everyone is crossing lines into unfamiliar domains — and then an expert has to step in to make it real.
+Aaron Levie, CEO of Box, joins Matt Turck for a wide-ranging conversation on where enterprise AI actually stands in 2026. Levie draws on conversations with hundreds of CIOs at Fortune 500 and Global 2000 companies to paint a picture that is more optimistic in mood than many expect, but more complex in execution than Silicon Valley typically acknowledges.
 
-The deeper point is structural: no matter how capable models become, the economic and design forces behind AI keep pushing agents toward a mode where they look back at humans and ask, "What should I do next?" Brandon captures this with the Zeno's paradox framing from the essay: the AI sprints ahead, blows your mind, makes you feel inadequate — and then stops and asks for direction. Dan argues this gap between human intent and AI execution is not a temporary limitation, and that people who panic on first contact with a powerful model are misreading how the technology actually functions at scale and over time.
+The central tension Levie identifies: AI model breakthroughs are happening faster than enterprises can standardize their architectures, meaning each wave of progress frequently makes the last deployment obsolete. "The breakthroughs keep happening faster than the customer can implement any kind of standard architecture. And those breakthroughs oftentimes make obsolete the last thing you implemented. It's this really bittersweet thing, which is like the technology is getting so advanced that it makes obsolete the prior thing that you implemented, which actually means that the rollout takes longer."
 
-Direct quote — Dan Shipper: "The further away an agent gets from a human, the less valuable it is. The human connection with an agent to actually do the work is the most important thing for making it work well."
+On token costs, Levie argues this is now a board-level concern — not because tokens are unaffordable, but because enterprises never built financial operations (FinOps) for line-of-business AI spend. He predicts a new category of software — essentially ERP for AI compute — will emerge to help companies measure ROI per token and allocate budgets across functions.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Levie pushes back on the "headless software kills everything" narrative, arguing we'll see a dual model: agents handling high-volume backend operations while humans retain GUI-based workflows for complex, iterative tasks. He's also bullish on the internal Field Deployment Engineer (FDE) role — technical staff embedded in business units to wire up agentic workflows — as a new, durable job category that won't disappear after initial implementation, since every model upgrade requires another round of scaffolding.
 
-An update on recent Claude Code quality reports — Anthropic Engineering
-https://www.anthropic.com/engineering/april-23-postmortem
+On jobs broadly, Levie invokes Jevons paradox: the same productivity gains that let five designers do the work of ten will cause twenty companies that previously couldn't afford design to hire designers for the first time. His advice to individual knowledge workers: spend 5-10% of your time actively using AI agents, not just chatting with them — connect them to real systems, push their limits, and develop fluency before your organization requires it.
 
-Anthropic published a detailed post-mortem on Claude Code quality degradation reports from March–April. Three separate changes stacked on top of each other to produce what looked like broad, inconsistent degradation across users: (1) the default reasoning effort was quietly lowered from high to medium in early March to reduce frozen-UI complaints — the wrong tradeoff, reverted in April; (2) a bug caused Claude to keep clearing its older thinking every single turn rather than just once after an idle session, making it seem forgetful and repetitive; (3) a verbosity-reduction system prompt instruction shipped April 16 hurt coding quality and was reverted April 20. The API was unaffected throughout. All three issues are resolved as of v2.1.116, and Anthropic is resetting usage limits for all subscribers. The post is notable for its candor about why internal evals didn't initially catch the problems and what process changes are coming.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Scaling Managed Agents: Decoupling the brain from the hands — Anthropic Engineering
-https://www.anthropic.com/engineering/managed-agents
-
-Anthropic's engineering blog explains the architecture behind Managed Agents, their hosted service for running long-horizon agents. The core observation is that agent harnesses encode assumptions about what models can't do — and those assumptions go stale as models improve. Rather than keep patching a monolithic container (what they call "adopting a pet"), they separated the session (append-only event log), the harness (the Claude-calling loop), and the sandbox (code execution environment) into independently swappable components. The analogy they draw is to operating systems virtualizing hardware into stable abstractions — the read() command is agnostic to whether it's hitting a 1970s disk pack or a modern SSD. The post walks through how this design handles container failures, stuck sessions, and model upgrades without bringing down everything else.
-
-New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels — Anthropic
-https://claude.com/blog/claude-managed-agents-updates
-
-Claude Managed Agents now supports running tool execution inside sandboxes you control, keeping sensitive files, packages, and services inside your own perimeter. The orchestration and context management remain on Anthropic's side; code execution moves to your infrastructure. Supported sandbox providers include Cloudflare (microVM isolation with zero-trust secrets injection and customizable egress proxies), Daytona (long-running stateful sandboxes accessible over SSH or authenticated preview URLs), Modal (sub-second startup, scales to hundreds of thousands of concurrent sandboxes, CPU and GPU on demand), and Vercel (VPC peering with millisecond startup and network-boundary credential injection). MCP tunnels — letting agents connect to private MCP servers inside your network — are also available in research preview. Self-hosted sandboxes are in public beta on the Claude Platform.
-
-New connectors in Claude for everyday life — Anthropic
-https://claude.com/blog/connectors-for-everyday-life
-
-Claude's connector directory has grown past 200 integrations since launching in July 2025, and Anthropic is now expanding it beyond work tools into everyday apps. New additions include AllTrails, Audible, Booking.com, Instacart, Intuit Credit Karma, Intuit TurboTax, Resy, Spotify, StubHub, Taskrabbit, Thumbtack, Tripadvisor, Uber, Uber Eats, and Viator, with more on the way. Claude now proactively surfaces relevant connectors mid-conversation — planning a weekend hike surfaces AllTrails; asking about travel surfaces Tripadvisor and Booking.com. Multiple connectors can work together in a single thread (pull a query from Amplitude, turn it into a Canva deck, drop it into Asana). Claude confirms before taking any transactional action on your behalf, and connected app data is not used to train models. Connectors are available on all plans, with mobile in beta.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
