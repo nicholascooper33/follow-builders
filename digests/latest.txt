@@ -1,25 +1,70 @@
-AI Builders Digest — 2026-05-29
+AI Builders Digest — 2026-05-30
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+X / TWITTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+Boris Cherny — Claude Code, Anthropic
+
+Salesforce published a detailed case study on going fully agentic with Claude Code, and the numbers are striking. A migration scoped at 231 days shipped in just 13 — and one PR delivered 21 endpoints with 100% test coverage. Cherny highlights that the biggest wins are coming from teams that completely rethink how they work, not just speed up existing workflows: eliminating steps, removing handoffs, and letting agents own tasks end to end. What's notable is that quality moved up alongside output — total incidents actually dropped 5% even as more PRs shipped, because security guardrails and quality standards were baked into the agentic workflow itself.
+
+https://x.com/bcherny/status/2060390852619272526
+https://x.com/bcherny/status/2060390853835726946
+https://x.com/bcherny/status/2060390855383400729
+
+---
+
+Thibault Sottiaux — Codex & ChatGPT, OpenAI
+
+Sottiaux is hinting at a big Codex milestone, teasing a dashboard number he saw today that made him happy — with a "more news soon" promise. In a separate thread, he posed an interesting question to the AI community: do you still trust benchmarks to evaluate new models, or do you rely on friends and word of mouth? The replies flooded in with 545 responses, suggesting this is a genuine pain point for builders trying to stay current.
+
+https://x.com/thsottiaux/status/2060565265906290786
+https://x.com/thsottiaux/status/2060563528596287874
+
+---
+
+Aaron Levie — CEO, Box
+
+Levie weighed in on news that a major company is spending $500M to build its own version of an existing app-layer product — his take is counterintuitive and bullish: this is actually the best advertisement the app layer could get. If a company is willing to spend half a billion dollars replicating software, it validates just how much value that software creates. The nuance gets lost in the headline, he notes, but builders should read this as a strong signal for the future of software.
+
+https://x.com/levie/status/2060525104384418271
+
+---
+
+Garry Tan — President & CEO, Y Combinator
+
+A concise and sharp insight from Tan on founder mindset: "Money is not the fire. Money is gasoline you pour on a fire that already exists." He's pushing back on founders who frame their struggles as a funding problem — the real issue, in most cases, is that customers don't want the product yet. The advice: go build the first fire before asking for gasoline.
+
+https://x.com/garrytan/status/2060600088079356292
+
+---
+
+Josh Woodward — VP, Google Labs / Gemini
+
+Woodward shared two quick-hit demos this week: one showing a car transformed into a Lamborghini via AI, and another highlighting how multilingual capabilities are now "ridiculously easy" — signaling that Google's AI tooling is making internationalization a non-issue for builders.
+
+https://x.com/joshwoodward/status/2060443095527989413
+https://x.com/joshwoodward/status/2060443093825094091
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-The MAD Podcast with Matt Turck
-"State of Enterprise AI 2026: Aaron Levie on Tokenmaxxing, Rise of Headless, and AI-Proofing Your Job"
-https://www.youtube.com/watch?v=Gs2styCcwro
+No Priors: Building an AI Guardian for Enterprise with Onyx Security CEO Maxim Bar Kogan
+https://www.youtube.com/watch?v=QDsbFLEt9ro
 
-Takeaway: Enterprise AI adoption is further behind than hype suggests — not because the technology isn't impressive, but because deploying agents across real organizations is a multi-year data, access control, and change management problem.
+Takeaway: As autonomous AI agents proliferate inside enterprises, the existing security stack is almost entirely blind to what those agents are actually doing — and Onyx Security is building AI-native oversight models to fill that gap.
 
-Aaron Levie, CEO of Box, joins Matt Turck for a wide-ranging conversation on where enterprise AI actually stands in 2026. Levie draws on conversations with hundreds of CIOs at Fortune 500 and Global 2000 companies to paint a picture that is more optimistic in mood than many expect, but more complex in execution than Silicon Valley typically acknowledges.
+Maxim Bar Kogan, co-founder and CEO of Onyx Security, traces his conviction to AutoGPT — the first widely-recognized autonomous LLM agent — which gave him a glimpse of a world where AI could take real actions on your behalf. The problem he saw early: when agents become capable enough to manage your infrastructure, how do you trust what they're doing? That question was too early for the market back then, but Claude Code changed everything. As Bar Kogan puts it, Claude Code became "the first widely used autonomous agent," and with it, enterprise adoption of deeply autonomous AI tools went from theoretical to mainstream.
 
-The central tension Levie identifies: AI model breakthroughs are happening faster than enterprises can standardize their architectures, meaning each wave of progress frequently makes the last deployment obsolete. "The breakthroughs keep happening faster than the customer can implement any kind of standard architecture. And those breakthroughs oftentimes make obsolete the last thing you implemented. It's this really bittersweet thing, which is like the technology is getting so advanced that it makes obsolete the prior thing that you implemented, which actually means that the rollout takes longer."
+Onyx breaks down enterprise AI into three buckets: low-code SaaS automations (~45%), first-party agents companies build themselves (~2%), and autonomous coding agents and assistants — now over 50% of what they see in the field. That last category, he notes, is also the fastest growing and the least controlled.
 
-On token costs, Levie argues this is now a board-level concern — not because tokens are unaffordable, but because enterprises never built financial operations (FinOps) for line-of-business AI spend. He predicts a new category of software — essentially ERP for AI compute — will emerge to help companies measure ROI per token and allocate budgets across functions.
+The core problem Onyx is solving is subtle: traditional security tools can't secure agents because they're built on the assumption that software is predictable. Endpoint security knows whether an action was taken — but not why. Identity systems depend on minimal permissions — but agents need broad access to be useful. As Bar Kogan explains: "If you're not building some kind of controls that are built for these systems, then you're either going to end up limiting them a lot, making them almost much less useful to the enterprise, or you're going to miss a lot of pretty dangerous things that they might be doing."
 
-Levie pushes back on the "headless software kills everything" narrative, arguing we'll see a dual model: agents handling high-volume backend operations while humans retain GUI-based workflows for complex, iterative tasks. He's also bullish on the internal Field Deployment Engineer (FDE) role — technical staff embedded in business units to wire up agentic workflows — as a new, durable job category that won't disappear after initial implementation, since every model upgrade requires another round of scaffolding.
+Onyx's answer is to fight AI with AI: train specialized models that can watch other agents, understand what they're planning, and flag actions that look out of scope — even when those actions would otherwise appear legitimate to a traditional policy engine. The "secure AI control plane" hooks into your existing agents and evaluates them in real time.
 
-On jobs broadly, Levie invokes Jevons paradox: the same productivity gains that let five designers do the work of ten will cause twenty companies that previously couldn't afford design to hire designers for the first time. His advice to individual knowledge workers: spend 5-10% of your time actively using AI agents, not just chatting with them — connect them to real systems, push their limits, and develop fluency before your organization requires it.
+The episode also touches on the dynamics of the Israeli security ecosystem, the challenges of training oversight models without access to enterprise data (enterprises won't share agent history with foundation model companies), and how Onyx thinks about the long arc from today's coding agents to AI managing critical infrastructure like power grids.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
