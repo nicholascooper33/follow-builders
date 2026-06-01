@@ -1,95 +1,79 @@
-AI Builders Digest — 2026-05-31
+AI Builders Digest — 2026-06-01
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Thibault Sottiaux — Codex & ChatGPT at OpenAI
-
-OpenAI Codex just hit 5 million users, and Sottiaux announced he's resetting usage limits to celebrate with a push toward "/fast" mode. On the versioning front, he clarified OpenAI's GPT-5.x numbering strategy: each increment (5.0 → 5.1 → ... → 5.5) reflects real capability and token efficiency improvements, with GPT-5.5 as their best model yet — and a strategy they intend to continue. He also opened a community thread asking what's been "plain annoying" and unfixed in Codex for a while, drawing over 800 replies from users.
+OpenAI's Codex team hit five million users, and Sottiaux is celebrating by resetting limits. On the model side, he clarified how the GPT-5.x numbering works: each increment (5.0 → 5.1 → ... → 5.5) reflects real capability and token-efficiency gains, with GPT-5.5 the strongest yet. He also opened the floor to community feedback, asking what's most broken in Codex right now — 816 replies and counting.
 https://x.com/thsottiaux/status/2060964284117782996
 https://x.com/thsottiaux/status/2060627747760984429
+https://x.com/thsottiaux/status/2060960564676034726
 
----
-
-Peter Steinberger — Polyagentmorous ClawFather at OpenClaw & OpenAI
-
-Steinberger shared a striking observation about the evolution of agentic work: with GPT-5.5, /goal, autoreview, and crabbox, his prompts have shifted from 30–60 minute tasks to routinely running 4–10 hour tasks — with much higher confidence in the output. His framing: "Yielding agents is a skill." He also highlighted a useful trick with Codex: if you ask it to review code for bugs and it says all is fine, tell it there IS a bug, and "it will LOOP AND LOOP and will find issues" — a neat forcing function for deeper model exploration.
+Peter Steinberger — OpenClaw & OpenAI
+Steinberger is reporting a dramatic productivity jump: with GPT-5.5, the /goal command, autoreview, and crabbox working together, his prompts have stretched from 30–60 minute tasks to 4–10 hour tasks, with much higher confidence in the output. He also noted a useful debugging pattern: Codex will claim code is bug-free unless you insist a bug exists — at which point it loops and loops until it actually finds real issues.
 https://x.com/steipete/status/2060678430031597696
 https://x.com/steipete/status/2060672154727825718
-
----
+https://x.com/steipete/status/2060691552486175041
 
 Guillermo Rauch — CEO at Vercel
-
-Rauch offered a sharp product philosophy: "Ship the best product. Use lots of AI, some AI, maybe no AI. Just be the best." He also flagged a new Vercel AI Gateway feature — per-API-key spend caps — a practical addition for teams managing costs across multiple AI providers.
+A sharp, widely-shared take: "Ship the best product. Use lots of AI, some AI, maybe no AI. Just be the best." Rauch also announced per-API-key spend caps on Vercel's AI Gateway, a practical guardrail for teams managing multiple AI integrations.
 https://x.com/rauchg/status/2060803480823193840
 https://x.com/rauchg/status/2060787704166776927
 
----
-
 Aaron Levie — CEO at Box
-
-In a detailed thread, Levie pushed back on the narrative that AI is eliminating enterprise headcount. His read from conversations with CIOs, CTOs, and CEOs: most large enterprises are either growing because of AI (new roles like foundation deployment engineers) or reinvesting efficiency savings into previously underfunded areas like sales, marketing, and customer success. He cited Goldman Sachs CEO David Solomon's NYT OpEd as a clean articulation of this view. The core argument: companies constrained by software throughput, sales capacity, or risk coverage are now unlocking those constraints with AI — and the winners will be those who serve their customers better, not just those who cut costs.
+Levie pushed back on the narrative that AI is destroying jobs, drawing on his conversations with enterprise CIOs and CTOs. His argument: most large companies are either growing headcount in new AI-adjacent roles or reinvesting efficiency savings into underfunded areas like sales and marketing. He cited Goldman Sachs CEO David Solomon's New York Times op-ed as a clear articulation of this dynamic — that the AI boom is creating new jobs while freeing dollars for areas that have always been demand-constrained.
 https://x.com/levie/status/2060923684295221390
 
----
-
 Ryo Lu — Design at Cursor
-
-Lu highlighted one thing he loves about Cursor's new auto-review feature: it explains the command it's running and the associated risk level, making it much easier for newer coders to learn as they go. Rather than just executing blind, the model teaches while it acts — a thoughtful UX detail for lowering the floor without raising the ceiling.
+Cursor's auto-review feature now explains each terminal command and its risk level inline before running it, making it significantly easier for newer coders to understand what's happening and build confidence. Ryo shared this as a design win: transparency as a teaching mechanism, not just a safety gate.
 https://x.com/ryolu_/status/2060766674203353190
 
----
-
 Dan Shipper — CEO at Every
-
-Shipper shared his Codex usage stats: 38 billion tokens consumed, a longest single task of 56 hours, and a 41-day streak. A real signal of how far sustained agentic workflows have come.
+Shipper is deep in a 41-day Codex streak: 38 billion tokens processed, with the longest single task clocking in at 56 hours. Short but striking data point on what sustained agentic use looks like at the edge.
 https://x.com/danshipper/status/2060771279280513362
 
----
-
 Zara Zhang — Builder
-
-A small but interesting observation: Opus 4.8 appears to have stopped using em dashes in its writing — a subtle but noticeable style shift for anyone working closely with the model.
+A small but interesting observation: Claude Opus 4.8 has stopped using em dashes in its writing, a subtle stylistic shift from prior versions worth watching if you're tracking model personality drift across releases.
 https://x.com/zarazhangrui/status/2060962160872919043
 
----
-
-Peter Yang — Practical AI tutorials, Product at Roblox
-
-Yang floated a vision for the ultimate education app: something like Final Fantasy where you're learning math and CS as you play. A quick sketch of where AI-powered learning could go when gamification and personalized tutoring converge.
-https://x.com/petergyang/status/2060930599565811774
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning — Ep 87: Gemini Co-Lead Oriol Vinyals on World Models, RL's Next Domains & Continual Learning
+Unsupervised Learning, Ep 87: Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning
 https://www.youtube.com/watch?v=NQczevdpxq0
 
-Takeaway: Oriol Vinyals, co-lead of Gemini alongside Noam Shazeer and Jeff Dean, makes the case that the next paradigm shift in AI will look less like a new architecture and more like memory — specifically, agents that accumulate and refine knowledge across sessions the way humans do.
+Takeaway: Oriol Vinyals, co-lead of Gemini alongside Noam Shazir and Jeff Dean, makes the case that world models and memory are the two most underappreciated bets in frontier AI — and explains why Google is uniquely positioned to pursue both.
 
-The conversation, recorded the day after Google IO 2026, covers a lot of ground. On world models, Vinyals explains that Gemini Omni is less about classical representation learning (compressing video into latent concepts) and more about giving users a language-steerable renderer of the world — think: "move forward" as input, simulated physics as output. He's candid that the "GPT moment" for pure visual-only understanding (no text labels) hasn't arrived yet, and that deriving something like the rules of gravity purely from video data remains an open research challenge.
+The conversation was recorded the day after Google IO, making it one of the most timely deep-dives into the research behind the announcements. Jacob Efron (Redpoint investor, host) covered world models, agents, RL, continual learning, and how Google manages research at scale.
 
-On RL and what domains come next, Vinyals made a notable admission: "Training on narrow points of great difficulty like maths or coding creates this generalization. I think that is not something I quite predicted to work as well as it did." He's now more interested in what he calls "meta capabilities" — not coding or math performance, but the ability to learn from experience and adapt, tested via novel in-context games the model has never seen. His favorite eval: give a model the instruction manual for a game like Civilization, then watch whether it can learn to play better as it plays.
+On world models: Vinyals explained that world models and code/self-improvement are operating at different layers — they aren't mutually exclusive bets but rather complementary approaches. Google's Omni, shipped at IO, represents a significant step toward what Demis Hassabis has called the path to AGI through world models, though Vinyals was careful not to overstate what current systems can do.
 
-On memory and continual learning, Vinyals argues the near-term path isn't about writing new knowledge into model weights (too hard to serve at scale) but about sophisticated file-system-style external memory — agents writing structured notes to disk that can be retrieved and updated. He sees this as potentially paradigm-shifting in the same way reasoning models were a year and a half ago. Dreaming-style memory consolidation (reviewing past sessions to extract patterns) is the mechanism he finds most promising.
+On memory: He argued that advances in memory will look a lot like what reasoning advances looked like over the past few years — foundational and compounding. Memory lets agents carry what they learn forward; the open question is how to keep that memory high-signal as it grows.
 
-On AGI: "If seven years ago I had to experiment with a model that we have currently, would I have declared this is AGI? I would say probably yes." He thinks genuine scientific innovation — not just executing known recipes, but generating genuinely novel ideas with taste — remains the clearest unsolved capability.
+On agents: Spark, Google's new consumer agent (an evolution of Project Mariner), resulted from iteratively improving both the model and the scaffolding system around it together. The capability breakthrough came from sequencing — getting the model to a certain level, then building the system, then optimizing both jointly.
 
-Direct quote: "The ability to continually learn or learn from experience very efficiently... that is a capability that I can sort of measure or feel, and probably it's not super super good yet."
+On research org design: Vinyals described the tension clearly at frontier labs: research needs some protection from short quarterly cycles, but it can't be too disconnected from where the models actually are. The magic is finding work that's a few steps ahead of the current training run, not years ahead.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Direct quote: "If you're a user, use the models. If you're a builder, use the models to build anything you do, even if you think there's no remote connection to AI. Play with these models. They're amazing, and they will only get better."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration
 https://claude.com/blog/new-in-claude-managed-agents
+Published: May 06, 2026
 
-Anthropic shipped three significant additions to Claude Managed Agents. Dreaming is a scheduled background process that reviews past agent sessions and memory stores, extracts patterns across runs (including recurring mistakes and converged workflows), and restructures memory to stay high-signal over time — with the option for developers to review changes before they land. Outcomes lets developers write a rubric for success; a separate grader evaluates the agent's output against that rubric in its own context window and tells the agent what to fix, repeating until the bar is cleared. In internal testing, outcomes improved task success by up to 10 points over standard prompting loops. Multiagent orchestration allows a lead agent to break work into pieces and delegate to specialists with their own models, prompts, and tools — running in parallel on a shared filesystem, with full step-by-step tracing in the Claude Console.
+Anthropic shipped three major additions to Claude Managed Agents:
 
-Real deployments: Harvey uses dreaming to help legal agents remember filetype workarounds and tool patterns between sessions, with ~6x completion rate improvement. Netflix's platform team uses multiagent orchestration to analyze logs from hundreds of builds in parallel and surface only cross-cutting patterns. Spiral by Every uses multiagent + outcomes for its writing agent: a Haiku lead agent delegates to Opus subagents for drafting, and each draft is scored against an editorial rubric before being returned to the user.
+Dreaming (research preview): A scheduled background process that reviews past agent sessions, extracts recurring patterns, and curates memory so agents self-improve over time. Developers can let it update memory automatically or review changes manually. Harvey used it to give their legal drafting agents persistent memory across sessions — including filetype workarounds and tool-specific patterns — and saw completion rates jump roughly 6x in testing.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Outcomes: Developers write a rubric describing what success looks like; a separate grader evaluates output in its own context window (so it's not influenced by the agent's reasoning) and tells the agent what to fix. In testing, outcomes improved task success by up to 10 points, with the biggest gains on the hardest problems. File generation quality also improved: +8.4% on docx, +10.1% on pptx. Spiral by Every is using outcomes to enforce their editorial rubric on every draft before it reaches the user.
+
+Multiagent orchestration: A lead agent can now break complex jobs into pieces and delegate to specialist subagents with their own models, prompts, and tools, running in parallel on a shared filesystem. Every step is traceable in the Claude Console. Netflix's platform team is using this to analyze logs from hundreds of builds in parallel and surface only the patterns worth acting on.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
