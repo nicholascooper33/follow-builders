@@ -1,78 +1,111 @@
-AI Builders Digest — 2026-06-01
+AI Builders Digest — 2026-06-02
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Thibault Sottiaux — Codex & ChatGPT at OpenAI
-OpenAI's Codex team hit five million users, and Sottiaux is celebrating by resetting limits. On the model side, he clarified how the GPT-5.x numbering works: each increment (5.0 → 5.1 → ... → 5.5) reflects real capability and token-efficiency gains, with GPT-5.5 the strongest yet. He also opened the floor to community feedback, asking what's most broken in Codex right now — 816 replies and counting.
-https://x.com/thsottiaux/status/2060964284117782996
-https://x.com/thsottiaux/status/2060627747760984429
-https://x.com/thsottiaux/status/2060960564676034726
+The Codex team is riding high. Thibault joked about renaming Codex to "ChadGPT" (2,984 likes), announced GPT-5.5 on AWS ("Heard that AWS is where the cool kids are. Hello. We have GPT-5.5."), and shared a video of using Codex to farm-build — pointing to the rapid expansion of what AI coding agents can accomplish. The playful tone masks real momentum: this is a team that knows their product is having a moment.
+https://x.com/thsottiaux/status/2061572602888589807
+https://x.com/thsottiaux/status/2061644307111796984
+https://x.com/thsottiaux/status/2061657264508006738
 
-Peter Steinberger — OpenClaw & OpenAI
-Steinberger is reporting a dramatic productivity jump: with GPT-5.5, the /goal command, autoreview, and crabbox working together, his prompts have stretched from 30–60 minute tasks to 4–10 hour tasks, with much higher confidence in the output. He also noted a useful debugging pattern: Codex will claim code is bug-free unless you insist a bug exists — at which point it loops and loops until it actually finds real issues.
-https://x.com/steipete/status/2060678430031597696
-https://x.com/steipete/status/2060672154727825718
-https://x.com/steipete/status/2060691552486175041
+---
 
-Guillermo Rauch — CEO at Vercel
-A sharp, widely-shared take: "Ship the best product. Use lots of AI, some AI, maybe no AI. Just be the best." Rauch also announced per-API-key spend caps on Vercel's AI Gateway, a practical guardrail for teams managing multiple AI integrations.
-https://x.com/rauchg/status/2060803480823193840
-https://x.com/rauchg/status/2060787704166776927
+Thariq — Claude Code at Anthropic, prev YC W20
+Thariq shared a fascinating internal Anthropic practice: asking colleagues how they stay in the loop with what Claude is actually doing. A standout technique from Suzanne — prompting Claude to explain its reasoning in a structured way that surfaces its real decision-making — resonated widely (6,183 likes, 351 retweets). He posted the full prompt as a public gist and noted that Suzanne uses voice mode to make the interaction feel more natural.
+https://x.com/trq212/status/2061545633560010826
+https://x.com/trq212/status/2061545635141361687
+
+---
+
+Sam Altman — CEO at OpenAI
+Sam highlighted work by the OpenAI Foundation on helping society become resilient to AI, calling it "incredibly important" with more to come. Brief but signals that OpenAI is thinking beyond products to broader societal infrastructure as AI capabilities accelerate.
+https://x.com/sama/status/2061562575322492937
+
+---
 
 Aaron Levie — CEO at Box
-Levie pushed back on the narrative that AI is destroying jobs, drawing on his conversations with enterprise CIOs and CTOs. His argument: most large companies are either growing headcount in new AI-adjacent roles or reinvesting efficiency savings into underfunded areas like sales and marketing. He cited Goldman Sachs CEO David Solomon's New York Times op-ed as a clear articulation of this dynamic — that the AI boom is creating new jobs while freeing dollars for areas that have always been demand-constrained.
-https://x.com/levie/status/2060923684295221390
+Aaron posed the defining competitive question of the AI agent era: if every company has access to the same models, where does competitive advantage come from? He argues the differentiator will be proprietary data, workflows, and institutional knowledge — the content layer that Box has long bet on. He also weighed in on the OpenAI/AWS partnership, noting it opens distribution for OpenAI's models while driving enterprise committed contract growth for AWS.
+https://x.com/levie/status/2061662386680127688
+https://x.com/levie/status/2061612625574944804
 
-Ryo Lu — Design at Cursor
-Cursor's auto-review feature now explains each terminal command and its risk level inline before running it, making it significantly easier for newer coders to understand what's happening and build confidence. Ryo shared this as a design win: transparency as a teaching mechanism, not just a safety gate.
-https://x.com/ryolu_/status/2060766674203353190
+---
+
+Guillermo Rauch — CEO at Vercel
+Guillermo flagged that MiniMax M3 has become the leading open model on Next.js agent evaluations — right behind Opus and GPT-5, but 10x cheaper (and 20x cheaper right now on Vercel's AI Gateway). He also highlighted a full-stack agent example on Vercel as "beautiful learning material" and reiterated a familiar thesis: "Git is all you need. Always has been."
+https://x.com/rauchg/status/2061593874498531707
+https://x.com/rauchg/status/2061533151676293430
+https://x.com/rauchg/status/2061415178298937365
+
+---
+
+Peter Yang — Product at Roblox, AI tutorials for 140K+ readers
+Peter shared six key takeaways from solo builder Josh Shpigford on shipping multiple products with AI agents. The standout: keep shipping even when the fear of embarrassment never fully goes away — a message from someone with 25 years of solo building experience. He also shared a peek into Josh's full skills library for AI-assisted product work.
+https://x.com/petergyang/status/2061452068792287622
+https://x.com/petergyang/status/2061452081572282805
+
+---
+
+Garry Tan — President & CEO at Y Combinator
+Garry shared a quote from Brian Chesky: "Leadership is presence, not absence." — a pointed reminder amid AI-driven efficiency debates about what founders and leaders actually owe their teams. He also promoted GStack's one-click office hours for product idea feedback, and posed a question about old vs. new ways of building.
+https://x.com/garrytan/status/2061495739637960927
+https://x.com/garrytan/status/2061568169354129640
+
+---
 
 Dan Shipper — CEO at Every
-Shipper is deep in a 41-day Codex streak: 38 billion tokens processed, with the longest single task clocking in at 56 hours. Short but striking data point on what sustained agentic use looks like at the edge.
-https://x.com/danshipper/status/2060771279280513362
+Dan is leaning fully into AI-assisted parallelism: "You don't have to work 7 days a week if you just have a swarm of Codex's running on /goal all the time — but you'll probably want to." He also celebrated a milestone that generated notable excitement.
+https://x.com/danshipper/status/2061443674311999739
+https://x.com/danshipper/status/2061550920635191666
 
-Zara Zhang — Builder
-A small but interesting observation: Claude Opus 4.8 has stopped using em dashes in its writing, a subtle stylistic shift from prior versions worth watching if you're tracking model personality drift across releases.
-https://x.com/zarazhangrui/status/2060962160872919043
+---
+
+Peter Steinberger — ClawFather at OpenClaw
+Peter set up Codex to use a text-to-speech tool whenever it gets blocked and needs his attention — and described occasionally hearing it speak to him out of nowhere as "the coolest thing ever." A small but vivid example of how agentic AI workflows are becoming genuinely ambient in daily work.
+https://x.com/steipete/status/2061574752574283858
+
+---
+
+Amjad Masad — CEO at Replit
+Amjad summed up Replit's pitch in four lines: website, mobile app, monetization, Delaware corp — all from a prompt, start for free. The framing is "prompt to business," targeting founders who want to go from idea to incorporated product without traditional infrastructure overhead.
+https://x.com/amasad/status/2061575503434408106
+
+---
+
+Matt Turck — VC at FirstMark Capital, Host of MAD Podcast
+Matt surfaced a sharp observation about the gap between AI marketing and engineering reality: a CEO claims "tens of thousands of AI agents running in production at massive scale right now" while a CTO video tells a very different story. The gap between AI ambition and actual production deployments remains wide.
+https://x.com/mattturck/status/2061533386296963464
+
+---
+
+Swyx — Cognition, DX Tips, Tempo
+Swyx flagged a WorkOS talk performing unusually well — the first in weeks to seriously challenge Matt Pocock at the top of his platform's rankings. He noted the team is A/B testing titles, a reminder that even high-quality technical content depends heavily on packaging and distribution strategy.
+https://x.com/swyx/status/2061658241877397917
+
+---
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning, Ep 87: Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning
-https://www.youtube.com/watch?v=NQczevdpxq0
+Unsupervised Learning (Redpoint AI) — Ep 88: Unpacking DeepMind's Quest for SuperIntelligence with Demis Hassabis' Biographer
+Published: June 1, 2026
+https://www.youtube.com/@RedpointAI
 
-Takeaway: Oriol Vinyals, co-lead of Gemini alongside Noam Shazir and Jeff Dean, makes the case that world models and memory are the two most underappreciated bets in frontier AI — and explains why Google is uniquely positioned to pursue both.
+Takeaway: Sebastian Mallaby, author of The Infinity Machine, argues that Demis Hassabis and DeepMind have been consistently underestimated by the industry — and that the AI safety problem is now fundamentally a collective action problem that only governments can solve.
 
-The conversation was recorded the day after Google IO, making it one of the most timely deep-dives into the research behind the announcements. Jacob Efron (Redpoint investor, host) covered world models, agents, RL, continual learning, and how Google manages research at scale.
+Sebastian Mallaby spent over 30 hours with Demis Hassabis in preparation to write The Infinity Machine, a biography tracing DeepMind from its 2010 founding through the current AI race. The conversation covers the full arc of Demis's thinking on safety, competition, and what drives him.
 
-On world models: Vinyals explained that world models and code/self-improvement are operating at different layers — they aren't mutually exclusive bets but rather complementary approaches. Google's Omni, shipped at IO, represents a significant step toward what Demis Hassabis has called the path to AGI through world models, though Vinyals was careful not to overstate what current systems can do.
+On the race dynamic: Mallaby traces today's competitive chaos to a 2015 DeepMind safety summit hosted at SpaceX, where Elon Musk was invited to become an inside ally. Instead, he used what he learned to co-found OpenAI. The lesson Demis drew: individual trust between labs can't hold, and the only path to real safety coordination is government enforcement — ideally a US-China agreement, "remote though that prospect may seem." He has shifted from hoping for a "singleton scenario" (one responsible lab steering toward AGI) to seeing safety as a collective action problem.
 
-On memory: He argued that advances in memory will look a lot like what reasoning advances looked like over the past few years — foundational and compounding. Memory lets agents carry what they learn forward; the open question is how to keep that memory high-signal as it grows.
+On government capacity: Mallaby pushes back on cynicism. The UK AI Safety Institute, led by Geoffrey Irving (formerly of both DeepMind and OpenAI), has already found model vulnerabilities that the private labs missed and quietly shared them — evidence that public institutions can attract serious talent when the mission is compelling. He draws a parallel to the FDA: if we can peer-review drugs before release, we should be able to peer-review AI models.
 
-On agents: Spark, Google's new consumer agent (an evolution of Project Mariner), resulted from iteratively improving both the model and the scaffolding system around it together. The capability breakthrough came from sequencing — getting the model to a certain level, then building the system, then optimizing both jointly.
+On DeepMind's competitive position: Mallaby argues people were too quick to crown OpenAI and dismissed both Demis personally and Google DeepMind as a company. Gemini 3.0 topped leaderboards in late 2025, only to be displaced by Anthropic's recent surge. The deeper pattern is that DeepMind's "try everything" research culture — rooted in Demis's broad intellectual formation — made it slower to take concentrated product bets. Anthropic got to coding leadership precisely because it chose not to pursue generative video or other adjacent areas.
 
-On research org design: Vinyals described the tension clearly at frontier labs: research needs some protection from short quarterly cycles, but it can't be too disconnected from where the models actually are. The magic is finding work that's a few steps ahead of the current training run, not years ahead.
+Direct quote: "He would sometimes erupt in these conversations I was having, and he would start banging the table and saying, maybe if we approach science the right way, we understand more about nature, we will be getting closer to something that we could perhaps call God."
 
-Direct quote: "If you're a user, use the models. If you're a builder, use the models to build anything you do, even if you think there's no remote connection to AI. Play with these models. They're amazing, and they will only get better."
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration
-https://claude.com/blog/new-in-claude-managed-agents
-Published: May 06, 2026
-
-Anthropic shipped three major additions to Claude Managed Agents:
-
-Dreaming (research preview): A scheduled background process that reviews past agent sessions, extracts recurring patterns, and curates memory so agents self-improve over time. Developers can let it update memory automatically or review changes manually. Harvey used it to give their legal drafting agents persistent memory across sessions — including filetype workarounds and tool-specific patterns — and saw completion rates jump roughly 6x in testing.
-
-Outcomes: Developers write a rubric describing what success looks like; a separate grader evaluates output in its own context window (so it's not influenced by the agent's reasoning) and tells the agent what to fix. In testing, outcomes improved task success by up to 10 points, with the biggest gains on the hardest problems. File generation quality also improved: +8.4% on docx, +10.1% on pptx. Spiral by Every is using outcomes to enforce their editorial rubric on every draft before it reaches the user.
-
-Multiagent orchestration: A lead agent can now break complex jobs into pieces and delegate to specialist subagents with their own models, prompts, and tools, running in parallel on a shared filesystem. Every step is traceable in the Claude Console. Netflix's platform team is using this to analyze logs from hundreds of builds in parallel and surface only the patterns worth acting on.
+The last line of Mallaby's book is a direct Demis quote: "I'm optimistic still."
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
