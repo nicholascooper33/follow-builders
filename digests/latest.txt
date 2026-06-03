@@ -1,112 +1,142 @@
-AI Builders Digest — 2026-06-02
+AI Builders Digest — June 3, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Thibault Sottiaux — Codex & ChatGPT at OpenAI
-The Codex team is riding high. Thibault joked about renaming Codex to "ChadGPT" (2,984 likes), announced GPT-5.5 on AWS ("Heard that AWS is where the cool kids are. Hello. We have GPT-5.5."), and shared a video of using Codex to farm-build — pointing to the rapid expansion of what AI coding agents can accomplish. The playful tone masks real momentum: this is a team that knows their product is having a moment.
-https://x.com/thsottiaux/status/2061572602888589807
-https://x.com/thsottiaux/status/2061644307111796984
-https://x.com/thsottiaux/status/2061657264508006738
+
+Thibault made a bold statement about ChatGPT's staying power: "Whether you understand the name or not. It's here to stay. It's the past, the present, the future. Synonym with AI, soon synonym with agents. Much to build." He also detailed a wave of new Codex features for business plan users — including hosting and sharing websites, vastly improved plugins and skills for broad roles, and the ability to give feedback to your agent through visual annotations in docs, slides, sheets, and more.
+https://x.com/thsottiaux/status/2062057881424506950
+https://x.com/thsottiaux/status/2061876999564791952
 
 ---
 
-Thariq — Claude Code at Anthropic, prev YC W20
-Thariq shared a fascinating internal Anthropic practice: asking colleagues how they stay in the loop with what Claude is actually doing. A standout technique from Suzanne — prompting Claude to explain its reasoning in a structured way that surfaces its real decision-making — resonated widely (6,183 likes, 351 retweets). He posted the full prompt as a public gist and noted that Suzanne uses voice mode to make the interaction feel more natural.
-https://x.com/trq212/status/2061545633560010826
-https://x.com/trq212/status/2061545635141361687
+Thariq — Claude Code at Anthropic
 
----
-
-Sam Altman — CEO at OpenAI
-Sam highlighted work by the OpenAI Foundation on helping society become resilient to AI, calling it "incredibly important" with more to come. Brief but signals that OpenAI is thinking beyond products to broader societal infrastructure as AI capabilities accelerate.
-https://x.com/sama/status/2061562575322492937
-
----
-
-Aaron Levie — CEO at Box
-Aaron posed the defining competitive question of the AI agent era: if every company has access to the same models, where does competitive advantage come from? He argues the differentiator will be proprietary data, workflows, and institutional knowledge — the content layer that Box has long bet on. He also weighed in on the OpenAI/AWS partnership, noting it opens distribution for OpenAI's models while driving enterprise committed contract growth for AWS.
-https://x.com/levie/status/2061662386680127688
-https://x.com/levie/status/2061612625574944804
+Thariq called Workflows "the biggest upgrade to Claude Code's capabilities since skills and subagents," and dove deep with sidbid to document best practices and examples. He's especially excited about the non-technical tasks Workflows now unlocks for Claude Code. A full writeup is also on the Claude Blog.
+https://x.com/trq212/status/2061907538741006796
 
 ---
 
 Guillermo Rauch — CEO at Vercel
-Guillermo flagged that MiniMax M3 has become the leading open model on Next.js agent evaluations — right behind Opus and GPT-5, but 10x cheaper (and 20x cheaper right now on Vercel's AI Gateway). He also highlighted a full-stack agent example on Vercel as "beautiful learning material" and reiterated a familiar thesis: "Git is all you need. Always has been."
-https://x.com/rauchg/status/2061593874498531707
-https://x.com/rauchg/status/2061533151676293430
-https://x.com/rauchg/status/2061415178298937365
+
+Guillermo coined the term "YES-CODE" — arguing that coding agents have forever changed the equation. Code is now cheap, easy, and abundant, and the old "no-code" premise (that code is scarce and hard) is obsolete. He also reflected on AI and education: "English alone could not produce tangible things. You had to translate it into machine instruction, through learning or delegation to others. You can now go direct." Separately, he announced Vercel is powering the Sandbox for Conductor, an IDE born for coding agents that he called an "ADE" (Agent Development Environment).
+https://x.com/rauchg/status/2061934154732974376
+https://x.com/rauchg/status/2061862134469062850
+https://x.com/rauchg/status/2061809689973944724
 
 ---
 
-Peter Yang — Product at Roblox, AI tutorials for 140K+ readers
-Peter shared six key takeaways from solo builder Josh Shpigford on shipping multiple products with AI agents. The standout: keep shipping even when the fear of embarrassment never fully goes away — a message from someone with 25 years of solo building experience. He also shared a peek into Josh's full skills library for AI-assisted product work.
-https://x.com/petergyang/status/2061452068792287622
-https://x.com/petergyang/status/2061452081572282805
+Aaron Levie — CEO at Box
+
+Aaron shared a sharp take on the economics of AI at scale: as token budgets become a significant operating expense, model routing becomes the inevitable strategy. He sees this as one of the biggest differentiators for the applied AI layer — companies that understand their domain's work patterns and build strong evals will be able to intelligently route workflows to the right tier of model. He cautions that enterprises trying to figure this out themselves at scale won't be able to, so products that aggregate demand through smart routing will win.
+https://x.com/levie/status/2061974298760495132
 
 ---
 
-Garry Tan — President & CEO at Y Combinator
-Garry shared a quote from Brian Chesky: "Leadership is presence, not absence." — a pointed reminder amid AI-driven efficiency debates about what founders and leaders actually owe their teams. He also promoted GStack's one-click office hours for product idea feedback, and posed a question about old vs. new ways of building.
-https://x.com/garrytan/status/2061495739637960927
-https://x.com/garrytan/status/2061568169354129640
+Sam Altman — CEO at OpenAI
+
+Sam weighed in on the new Executive Order on AI, stating: "The US should lead on AI by continuing to develop the very best models, making sure they're safe, and getting cyber tools into the hands of trusted defenders. The new EO gets the balance right." He also shared a personally meaningful quote from Ecclesiastes 9:10 — "Whatever your hand finds to do, do it with all your might" — for hard days.
+https://x.com/sama/status/2061973280655904815
+https://x.com/sama/status/2061828631089844709
 
 ---
 
-Dan Shipper — CEO at Every
-Dan is leaning fully into AI-assisted parallelism: "You don't have to work 7 days a week if you just have a swarm of Codex's running on /goal all the time — but you'll probably want to." He also celebrated a milestone that generated notable excitement.
-https://x.com/danshipper/status/2061443674311999739
-https://x.com/danshipper/status/2061550920635191666
+Josh Woodward — VP at Google Labs, Gemini App, and Google AI Studio
 
----
-
-Peter Steinberger — ClawFather at OpenClaw
-Peter set up Codex to use a text-to-speech tool whenever it gets blocked and needs his attention — and described occasionally hearing it speak to him out of nowhere as "the coolest thing ever." A small but vivid example of how agentic AI workflows are becoming genuinely ambient in daily work.
-https://x.com/steipete/status/2061574752574283858
+Josh announced a papercut fix: Thinking Levels are now available on Gemini across Web, iOS, and Android.
+https://x.com/joshwoodward/status/2062025667852812583
 
 ---
 
 Amjad Masad — CEO at Replit
-Amjad summed up Replit's pitch in four lines: website, mobile app, monetization, Delaware corp — all from a prompt, start for free. The framing is "prompt to business," targeting founders who want to go from idea to incorporated product without traditional infrastructure overhead.
-https://x.com/amasad/status/2061575503434408106
+
+Amjad argued that SWE benchmarks don't capture app-building capabilities — ViBench does — pushing back on how AI models are typically evaluated. He also announced a partnership with Microsoft to enable enterprise users to build and deploy safe and secure Fabric data apps using Microsoft's new Rayfin SDK.
+https://x.com/amasad/status/2061878314311266552
+https://x.com/amasad/status/2061893093696434578
 
 ---
 
-Matt Turck — VC at FirstMark Capital, Host of MAD Podcast
-Matt surfaced a sharp observation about the gap between AI marketing and engineering reality: a CEO claims "tens of thousands of AI agents running in production at massive scale right now" while a CTO video tells a very different story. The gap between AI ambition and actual production deployments remains wide.
-https://x.com/mattturck/status/2061533386296963464
+Peter Yang — Product at Roblox, creator of Creators & Builders newsletter (140K+ readers)
+
+Peter shared a candid thread on why narrow SaaS is getting harder to monetize: AI skills can solve the same problems more flexibly; AI-native agents like Codex and Claude Code hold personal context that standalone SaaS tools can't match; and users now benchmark $20/month subscriptions against their all-in Claude or ChatGPT plans. He also gave kudos to the Devin/Windsurf team for staying disciplined through the ups and downs.
+https://x.com/petergyang/status/2061846283263103274
+https://x.com/petergyang/status/2061936952400814392
 
 ---
 
-Swyx — Cognition, DX Tips, Tempo
-Swyx flagged a WorkOS talk performing unusually well — the first in weeks to seriously challenge Matt Pocock at the top of his platform's rankings. He noted the team is A/B testing titles, a reminder that even high-quality technical content depends heavily on packaging and distribution strategy.
-https://x.com/swyx/status/2061658241877397917
+Swyx — affiliated with dxtips, Cognition, Temporal, AI Engineer World's Fair, and Latent Space podcast
+
+Swyx shared what he called "probably the best reward function for reasoning efficiency I've seen," flagging a notable research direction for making AI models think more efficiently. He also argued in response to a tweet that "Codex is AGI, man" — pointing to a one-shotted demo with no notes.
+https://x.com/swyx/status/2062060142489973010
+https://x.com/swyx/status/2062062585391014245
 
 ---
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Zara Zhang — Builder, creator of Frontend Slides
+
+Zara highlighted a striking data point from OpenAI's latest Codex report: knowledge workers now represent 20% of Codex users and are adopting it more than 3x as fast as developers, with the fastest-growing task types being Data Analysis (+110% week-over-week), Research (+37%), and Knowledge Artifacts (+36%). She also celebrated Frontend Slides hitting 20K GitHub stars — noting that many users have already replaced traditional PowerPoint decks with HTML slides and never looked back, with new features including templates, publish-as-webpage, PDF export, and inline editing.
+https://x.com/zarazhangrui/status/2061924300698091760
+https://x.com/zarazhangrui/status/2061889286585405790
+
+---
+
+Dan Shipper — CEO at Every
+
+Dan flagged the Claude Code Workflows announcement as something people internally are "freaking out about" — calling it worth paying close attention to. He also asked the community for honest feedback on Opus 4.8 after a week in the wild: his team was extremely bullish in testing but observed that the model pushes back on your framing more, leading to high-variance results — sometimes remarkable, sometimes stubbornly wrong.
+https://x.com/danshipper/status/2061908190040645707
+https://x.com/danshipper/status/2061817375519809665
+
+---
+
+Garry Tan — President & CEO at Y Combinator
+
+Garry spotlighted GBrain, describing it as "the agentic swiss army knife for retrieval and memory."
+https://x.com/garrytan/status/2062052761945223266
+
+---
+
+Nikunj Kothari — Partner at FPV Ventures
+
+Nikunj issued a fundraising reality check for founders: the best founders treat AI/timing, funding, distribution, market, product, and revenue as each necessary but not sufficient. He warned that too many pitches are touting just one of these as the core reason to invest, and that the seed-to-A gap has never been wider. His advice: take the ten extra minutes to communicate long-term ambition — it might be the only small difference between a yes and a no.
+https://x.com/nikunj/status/2062033620773306763
+
+---
+
+Peter Steinberger — Co-founder at OpenClaw, affiliated with OpenAI
+
+Peter announced two significant milestones: OpenClaw is partnering with Microsoft to bring AI agents into enterprise settings, and has added observability and verifiable workspaces to the platform through a collaboration with Omar.
+https://x.com/steipete/status/2061874084649025728
+https://x.com/steipete/status/2061877813053907083
+
+---
+
+Claude AI — by Anthropic
+
+The Claude account spotlighted Max Junestrand, co-founder and CEO of Legora, a legal AI platform built on Claude. His thesis: "Every new model release raises the tide, and Legora is building the boats for everyone else." The profile is part of Anthropic's The Problem Solvers series featuring founders tackling hard problems with Claude.
+https://x.com/claudeai/status/2061829558999912680
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning (Redpoint AI) — Ep 88: Unpacking DeepMind's Quest for SuperIntelligence with Demis Hassabis' Biographer
-Published: June 1, 2026
-https://www.youtube.com/@RedpointAI
+Training Data — "Knowing What Your Customers Want, All the Time: Listen Labs' Alfred Wahlforss"
+https://www.youtube.com/watch?v=Rumft-rsEu4
 
-Takeaway: Sebastian Mallaby, author of The Infinity Machine, argues that Demis Hassabis and DeepMind have been consistently underestimated by the industry — and that the AI safety problem is now fundamentally a collective action problem that only governments can solve.
+Takeaway: Listen Labs is turning AI-powered voice interviews into a living data moat — and their next move, generative customer simulation, could redefine how companies make decisions without ever talking to a human.
 
-Sebastian Mallaby spent over 30 hours with Demis Hassabis in preparation to write The Infinity Machine, a biography tracing DeepMind from its 2010 founding through the current AI race. The conversation covers the full arc of Demis's thinking on safety, competition, and what drives him.
+Alfred Wahlforss, founder and CEO of Listen Labs, joined the Training Data podcast to explain how his AI-first customer research platform is transforming a multi-billion dollar industry that barely changed since the era of focus groups and Qualtrics surveys. Listen deploys an AI agent that runs thousands of asynchronous voice interviews simultaneously, drawing from a panel of 30 million participants — from oncologists to software engineers — and synthesizes the results in minutes rather than weeks. The company now serves 20% of the Fortune 500, including Microsoft, Anthropic, Sweetgreen, and NBC.
 
-On the race dynamic: Mallaby traces today's competitive chaos to a 2015 DeepMind safety summit hosted at SpaceX, where Elon Musk was invited to become an inside ally. Instead, he used what he learned to co-found OpenAI. The lesson Demis drew: individual trust between labs can't hold, and the only path to real safety coordination is government enforcement — ideally a US-China agreement, "remote though that prospect may seem." He has shifted from hoping for a "singleton scenario" (one responsible lab steering toward AGI) to seeing safety as a collective action problem.
+The interview goes well beyond the basics. Alfred explains why people are actually more honest with an AI interviewer ("it's a nonjudgmental entity that's really interested in you — it's a very therapeutic experience"), why traditional surveys produce radically inconsistent responses from the same person, and why the audience targeting problem is where 80% of Listen's engineering effort goes. He uses Sweetgreen as an example: even a brand that seems universal skews heavily toward urban, high-income, mostly female customers who know what seed oils are — and 80% of Sweetgreen's revenue comes from that tiny segment.
 
-On government capacity: Mallaby pushes back on cynicism. The UK AI Safety Institute, led by Geoffrey Irving (formerly of both DeepMind and OpenAI), has already found model vulnerabilities that the private labs missed and quietly shared them — evidence that public institutions can attract serious talent when the mission is compelling. He draws a parallel to the FDA: if we can peer-review drugs before release, we should be able to peer-review AI models.
+The most forward-looking section covers Listen's upcoming "simulation" feature. By building detailed profiles from real interviews, the platform can now predict with up to 95% accuracy how a known individual will answer new questions. Alfred tested this by inputting 100 different titles for a conference talk into his own customer panel's simulation — the top pick scored twice as well as the runner-up. In a direct comparison, ChatGPT picked the wrong talk title; Listen's simulation picked the right one. The intuition: general models are trained on the average person, while Listen trains on a specific niche.
 
-On DeepMind's competitive position: Mallaby argues people were too quick to crown OpenAI and dismissed both Demis personally and Google DeepMind as a company. Gemini 3.0 topped leaderboards in late 2025, only to be displaced by Anthropic's recent surge. The deeper pattern is that DeepMind's "try everything" research culture — rooted in Demis's broad intellectual formation — made it slower to take concentrated product bets. Anthropic got to coding leadership precisely because it chose not to pursue generative video or other adjacent areas.
+Alfred's broader vision is a "human API" — a layer that lets coding agents and strategy agents call on customer preferences in real time to decide what to build, what to say, and how to invest. He even describes an MCP integration with Claude that lets you run Listen's simulation in a loop, generating and testing concepts autonomously. As he put it: "As we get closer to AGI, it will be easier to build things, but the hard part will be knowing what to build. And that's what we're building at Listen."
 
-Direct quote: "He would sometimes erupt in these conversations I was having, and he would start banging the table and saying, maybe if we approach science the right way, we understand more about nature, we will be getting closer to something that we could perhaps call God."
+Direct quote:
+"We hope to live in a world that finally works the way people want."
 
-The last line of Mallaby's book is a direct Demis quote: "I'm optimistic still."
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
