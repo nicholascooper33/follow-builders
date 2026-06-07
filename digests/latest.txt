@@ -1,67 +1,73 @@
-AI Builders Digest — 2026-06-06
+AI Builders Digest — 2026-06-07
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Boris Cherny — Claude Code at Anthropic
-Anthropic doubled Claude Cowork usage limits for the next month on all paid plans, effective through July 5. Boris frames Cowork as best suited for tasks that are "too big for a chat" — research across dozens of accounts, recurring reports, triaging inboxes and drafting replies. The doubled rate limits mean bigger, messier projects can now be fully delegated to Claude without hitting the 5-hour ceiling. If you've been saving up something ambitious, this is the window.
-https://x.com/bcherny/status/2063028954546733462
+Swyx — builder, affiliated with AI Dot Engineer and Latent Space Podcast
 
-Swyx — AI engineer, AI & I podcast co-host, affiliated with Cognition and Temporal
-Instead of defaulting to "always use plan mode," Swyx suggests a simpler habit: frame every task as a question. Ending your prompt with "?" invites the model to push back, rate the quality of your idea, or propose alternatives — instead of blindly executing what you said rather than what you meant. It's a lightweight way to get collaborative reasoning without forcing plan mode every time.
-https://x.com/swyx/status/2063082950317486133
+A provocative theory on why AI research papers have dried up: researchers realized they could walk out the door and secure $100M+ for their legally protected tacit knowledge, rather than fight with marketing departments over what to publish. Swyx argues that California's non-compete laws have done more to spread — and concentrate — AI knowledge than GitHub, arXiv, and Huggingface combined. This is one motivation behind his plans for AI Dot Engineer, a product-centric industry conference designed to complement the paper-centric research circuit.
+https://x.com/swyx/status/2063432747432268259
 
-Aaron Levie — CEO at Box
-In a detailed thread, Aaron argues that if engineers remain in high demand despite all the structural advantages AI coding agents enjoy — verifiable outputs, vast training data, technical users, pre-digitized context — then the automation risk for other knowledge workers is probably lower than the hype suggests. Agents will let individuals do dramatically more, but the people won't disappear. A useful counterweight to the "coding is fully automated" narrative.
-https://x.com/levie/status/2063055332545540096
 
-Guillermo Rauch — CEO at Vercel
-Two notable announcements: First, agent filesystem state can now be read, written, and mounted independently of Sandbox lifecycle — a new virtual storage layer that's decoupled but attachable to Builds, Functions, and Sandboxes. Second, Vercel launched a Skills API — pitched as "the npm registry for agent capabilities and extensibility" — a free, open standard for making agents and platforms extensible.
-https://x.com/rauchg/status/2063009510503932181
-https://x.com/rauchg/status/2062951924677128455
+Peter Yang — Practical AI tutorials and interviews, Product at Roblox, 140K+ newsletter readers
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-Two signal-heavy posts: He noted that better memory directly enables shorter prompts, which means more utility per token — a clean statement of why persistent context is a core capability lever. He also charted the inverse relationship between fixing Codex papercuts and growing Codex adoption, reinforcing that friction removal is the main driver of agent usage growth right now.
-https://x.com/thsottiaux/status/2062966625733861752
-https://x.com/thsottiaux/status/2062997768470474765
+Peter declared that agentic coding has become more addictive than video games — a testament to how dramatically the workflow has matured. He's also hitting real UX friction managing 10+ Codex threads at once, and called on the Codex team to add filtering by thread status (e.g., "waiting for approval," "currently working") so parallel agentic work stays manageable at scale.
+https://x.com/petergyang/status/2063486871037153558
+https://x.com/petergyang/status/2063475353335869922
 
-Peter Yang — Product at Roblox, runs Creators Collective newsletter (140K+ readers)
-Peter shared a five-step framework for building AI skills that check their own work and improve over time: (1) give the skill examples of good output, (2) write a clear trigger description, (3) add an evals file with 10 pass/fail checks, (4) create a memory file to capture one-sentence learnings, and (5) build a "skill to edit skills" that removes stale or duplicate instructions. The compounding loop of skill + eval + memory is the key structural insight.
-https://x.com/petergyang/status/2062899832965255443
 
-Ryo Lu — Design at Cursor
-Cursor shipped a design-in-code feature: click to select elements, chat to edit, hold shift to multi-select. It works best with Composer 2.5. The demo positions it as direct manipulation of code via natural language — collapsing the gap between design intent and implementation without leaving the editor.
-https://x.com/ryolu_/status/2063038983408615435
+Madhu Guru — Former Product Lead at Google for Gemini, Veo, and Nano Banana
 
-Madhu Guru — Former Product Leader at Google (Gemini, Veo, Nano)
-Madhu flagged a common mistake in enterprise AI teams: building for today's model capabilities and price points. His prescription is to scaffold around current model weaknesses while betting the next generation will natively solve for those scaffolds — then push the frontier again. Over time, the ability to repeatedly identify and bridge model gaps becomes a durable moat.
-https://x.com/realmadhuguru/status/2063024953721827329
+Madhu mapped out a three-phase progression he observed in enterprise AI adoption. Phase 1 (2024): everyone defaulted to GPT for everything, because it was the shiny new thing. Phase 2 (early 2025): teams overcorrected by hunting for the smallest, cheapest model without having evals sophisticated enough to match tasks to models — burning cycles and shipping slower. Phase 3 (now): the most sophisticated AI-native startups decompose their products into sub-agents and route each task to the right model — hardest reasoning to Claude, simplest to Gemini Flash-Lite or open-weight models. Enterprises typically trail AI-native builders by 6–9 months.
+https://x.com/realmadhuguru/status/2063342268472574268
 
-Amjad Masad — CEO at Replit
-Replit announced a partnership with Shopify, shared with minimal commentary but notable given both companies' positioning around enabling non-engineers to build and ship software products.
-https://x.com/amasad/status/2063065480878063694
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Aaron Levie — CEO of Box
+
+Token costs have become one of the hottest topics in every enterprise AI conversation Aaron is having — and he sees that as bullish, because it means these systems are being used at scales nobody originally anticipated. The next wave of differentiation in the applied AI layer will be model routing: knowing which models perform best for specific document types, legal tasks, financial workflows, and domain sub-tasks. Companies that build the best evals, route workloads most efficiently, and align their business models to customers' financial outcomes will have a durable moat.
+https://x.com/levie/status/2063320673217609936
+
+
+Garry Tan — President & CEO of Y Combinator
+
+Garry clarified a misconception about Paxel, YC's AI coding tool: the claim was never that zero user data goes to the cloud — only that code file contents specifically stay off the cloud. As local models improve, the plan is to shift more processing on-device over time. He also expressed enthusiasm for helping users "become more legit" with Paxel as its capabilities grow.
+https://x.com/garrytan/status/2063418130714800487
+https://x.com/garrytan/status/2063409501706018903
+
+
+Zara Zhang — Builder, Harvard '17, creator of Follow Builders
+
+Zara shared a key insight from a talk she found compelling: the value of static content is declining while the value of live interaction is rising. People increasingly want to connect with the human being behind a piece of work — whether that's software or content. Raw and opinionated beats polished and generic.
+https://x.com/zarazhangrui/status/2063391758189572266
+
+
+Dan Shipper — CEO of Every, AI newsletter
+
+Dan has been exploring what Plato's Protagoras reveals about LLMs — arguing that the dialogue's treatment of the limits of techne (skill/craft) and the necessity of aidos (reverence) and dike (the capacity to perceive what is right) pre-sages core challenges of AI alignment. He also offered a characteristically pithy philosophical stance: "LLMs are not conscious. LLMs are not not conscious. Both true."
+https://x.com/danshipper/status/2063438262841094604
+https://x.com/danshipper/status/2063426632824562167
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-AI & I by Every — "The SaaS Apocalypse Is a Goldmine With Figma's Matt Colyer"
-Published: 2026-06-03
-https://www.youtube.com/watch?v=kYKebKB3-d0
+Unsupervised Learning — Ep 89: AI Research Legend's Honest Assessment of Where We Are
+https://www.youtube.com/watch?v=N1geOimmdDo
 
-Takeaway: The "SaaS apocalypse" is actually a gold mine — AI will expand the global developer population from ~30 million to a billion or more, creating dramatically more demand for software tools, not less.
+One-sentence takeaway: Lucas Kaiser, co-author of the original transformer paper, gives a rare insider view that current AI is genuinely astonishing — but that something fundamental about generalization remains unsolved, and honest researchers don't fully understand what tipped coding AI from impressive to indispensable.
 
-Matt Colyer, Director of Product Management for Developers at Figma, joined Dan Shipper to push back on the SaaS doomsday narrative with a clear-eyed and practically grounded perspective. Matt's core argument: when the number of people who can build software grows by an order of magnitude, the demand for software infrastructure, design systems, and maintenance tooling explodes with it. Building your own vibe-coded app is fun until you have to maintain the SMTP server — at which point, you pay someone else to run it. As Matt put it: "If you're in that space, it means it's a gold mine."
+Lucas Kaiser — a co-author of "Attention Is All You Need" and veteran of both Google and OpenAI — joins Unsupervised Learning for a wide-ranging conversation on where AI actually stands. Kaiser opens with the generalization question that has dominated AI discourse. Transformers with reasoning, agents, and tool access can do "amazing things" he says he wouldn't have believed possible two years ago. But they still need staggering amounts of data to learn what humans grasp intuitively. As he puts it:
 
-The conversation went deep on what that means for Figma specifically. Matt described Figma's agent as designed to operate directly on the infinite canvas — enabling divergent brainstorming (generating multiple design directions in parallel frames) and convergent filtering (clustering and evaluating those options). He sees this as the antidote to the "text box rules" era: instead of a linear chat interface, agents act inside a spatial medium built for design iteration. Figma's MCP server handles the code-to-design direction (importing a live page into the Figma canvas for direct manipulation), while their Kit Design Context tool handles design-to-code (wrapping Figma components and guidelines for agents to generate faithful implementation branches).
+"LLMs, they will learn the concept. They will learn it. But after exhausting all other options. You need this trillion tokens... You need to learn all the surface level things, and only when that doesn't explain something, they will finally learn the concept. That's not how we learn."
 
-Matt also described Figma's internal agent use: a product operations tool (PMOS) that aggregates org charts, Asana, Slack, and GitHub into a SQLite file system, then uses skills to auto-generate onboarding documents for new team members. The insight was that context already existed — it just needed to be shaped correctly for an agent to use it.
+He draws a sharp analogy to Waymo: millions of miles of simulation and real driving, and yet the system still can't reliably handle a highway construction zone the way any teenager can. It points to a form of generalization that current architectures haven't cracked.
 
-On the future of PMs and designers, Matt argued that curiosity is the differentiating trait. Foundations still matter ("you have to understand long division before you trust the calculator"), but the people who will build with these tools at the frontier are the ones pushing models to their limits, not just accepting the output. His closing analogy: LLMs are the Hitchhiker's Guide to the Galaxy — a magical time to be alive if you're the kind of person who keeps asking why.
+On why Anthropic led in coding, Kaiser offers a striking observation: Anthropic made a deliberate strategic bet on coding in part because they felt they couldn't compete with OpenAI on general chat. That focus paid off. The broader coding breakthrough around last Christmas, Kaiser says, wasn't attributable to any single change — it was a combination of better base models, post-training tweaks, improved agent harnesses, and compaction techniques. He's candid that even insiders don't fully know what specifically pushed coding AI from "useful" to "indispensable."
 
-Direct quote: "I think there's this incredible time that we're moving through of product development and really the democratization of technology. The end result is that there is dramatically more software out there in the world. If you're in that space, it means it's a gold mine."
+The episode also covers why current RL approaches are unlikely to produce researcher-level AI yet (rollouts would take weeks, making training take months), the open-versus-closed-source trajectory, and whether a post-transformer architecture is ultimately needed. Kaiser remains genuinely open about the uncertainty — he sees credible arguments on both sides — and finds that uncertainty itself the most exciting part of the research frontier right now.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
