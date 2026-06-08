@@ -1,73 +1,60 @@
-AI Builders Digest — 2026-06-07
+AI Builders Digest — 2026-06-08
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — builder, affiliated with AI Dot Engineer and Latent Space Podcast
-
-A provocative theory on why AI research papers have dried up: researchers realized they could walk out the door and secure $100M+ for their legally protected tacit knowledge, rather than fight with marketing departments over what to publish. Swyx argues that California's non-compete laws have done more to spread — and concentrate — AI knowledge than GitHub, arXiv, and Huggingface combined. This is one motivation behind his plans for AI Dot Engineer, a product-centric industry conference designed to complement the paper-centric research circuit.
+Swyx (AI engineer, affiliated with Cognition, Temporal, and AI Dot Engineer) argues that research paper publishing effectively died when researchers realized they could simply walk out of labs and get >$100M in funding for their legally protected tacit knowledge. He believes California's non-compete ban has had a bigger impact on the spread of AI knowledge than GitHub, arXiv, and Hugging Face combined — and says this motivates him to build AI Dot Engineer as a product-centric industry conference to complement research conferences.
 https://x.com/swyx/status/2063432747432268259
 
-
-Peter Yang — Practical AI tutorials and interviews, Product at Roblox, 140K+ newsletter readers
-
-Peter declared that agentic coding has become more addictive than video games — a testament to how dramatically the workflow has matured. He's also hitting real UX friction managing 10+ Codex threads at once, and called on the Codex team to add filtering by thread status (e.g., "waiting for approval," "currently working") so parallel agentic work stays manageable at scale.
-https://x.com/petergyang/status/2063486871037153558
-https://x.com/petergyang/status/2063475353335869922
-
-
-Madhu Guru — Former Product Lead at Google for Gemini, Veo, and Nano Banana
-
-Madhu mapped out a three-phase progression he observed in enterprise AI adoption. Phase 1 (2024): everyone defaulted to GPT for everything, because it was the shiny new thing. Phase 2 (early 2025): teams overcorrected by hunting for the smallest, cheapest model without having evals sophisticated enough to match tasks to models — burning cycles and shipping slower. Phase 3 (now): the most sophisticated AI-native startups decompose their products into sub-agents and route each task to the right model — hardest reasoning to Claude, simplest to Gemini Flash-Lite or open-weight models. Enterprises typically trail AI-native builders by 6–9 months.
+Madhu Guru (former Product Leader at Google for Gemini, Veo, and Nano) laid out three phases of how enterprises are approaching model routing. Phase 1 (2024): everyone defaulted to the "it" model (GPT), regardless of task. Phase 2 (early 2025): teams over-corrected and chased the smallest/cheapest model but lacked evals to do it right, slowing down shipping. Phase 3: the most sophisticated AI-native startups broke their products into sub-agents and routed each task to the right model — e.g. hardest reasoning to Claude, simplest tasks to Gemini Flash-Lite or open-weight models. Enterprises followed the AI-native builders 6-9 months later.
 https://x.com/realmadhuguru/status/2063342268472574268
 
-
-Aaron Levie — CEO of Box
-
-Token costs have become one of the hottest topics in every enterprise AI conversation Aaron is having — and he sees that as bullish, because it means these systems are being used at scales nobody originally anticipated. The next wave of differentiation in the applied AI layer will be model routing: knowing which models perform best for specific document types, legal tasks, financial workflows, and domain sub-tasks. Companies that build the best evals, route workloads most efficiently, and align their business models to customers' financial outcomes will have a durable moat.
+Aaron Levie (CEO of Box) echoes the model routing theme, noting that token costs are becoming one of the hottest enterprise topics he hears about — a bullish sign because it means AI is being used at scale nobody anticipated. He predicts that the applied AI layer will differentiate increasingly on domain-specific model routing: companies that know their workflows best (whether legal analysis, document extraction, or healthcare) and can mix-and-match models for each subtask will have a structural advantage. The companies with the best evals and business models aligned with customer cost goals will win.
 https://x.com/levie/status/2063320673217609936
 
-
-Garry Tan — President & CEO of Y Combinator
-
-Garry clarified a misconception about Paxel, YC's AI coding tool: the claim was never that zero user data goes to the cloud — only that code file contents specifically stay off the cloud. As local models improve, the plan is to shift more processing on-device over time. He also expressed enthusiasm for helping users "become more legit" with Paxel as its capabilities grow.
+Garry Tan (President & CEO of YCombinator) clarified that Paxel does not upload code/file contents to the cloud, though some other user data is uploaded. He expressed genuine excitement that as local models improve, even more can eventually be done locally. Separately, he promoted Paxel as a tool to help people become more "legit," suggesting it's being positioned as a broader productivity tool beyond just coding.
 https://x.com/garrytan/status/2063418130714800487
 https://x.com/garrytan/status/2063409501706018903
 
+Peter Yang (Product at Roblox, author of AI tutorials for 140K+ readers) captured a feeling many builders share right now: agentic coding is "more addictive than video games." He also flagged a missing UX feature in Codex — there's no way to filter or sort threads by status (e.g. "all waiting for approval" or "all currently working"), making it unwieldy once you're running 10+ parallel agents.
+https://x.com/petergyang/status/2063486871037153558
+https://x.com/petergyang/status/2063475353335869922
 
-Zara Zhang — Builder, Harvard '17, creator of Follow Builders
-
-Zara shared a key insight from a talk she found compelling: the value of static content is declining while the value of live interaction is rising. People increasingly want to connect with the human being behind a piece of work — whether that's software or content. Raw and opinionated beats polished and generic.
+Zara Zhang (builder, Harvard '17) reflected on a key content shift: the value of static content is going down while the value of live interaction is going up. People want to connect with the human being behind a piece of work — whether that's content or software. Raw and opinionated beats polished and generic.
 https://x.com/zarazhangrui/status/2063391758189572266
 
+Nikunj Kothari (partner at FPV Ventures) shared a new Walk in the Park interview with Taiuti, co-founder of Reactor World, covering how they went from text-to-3D research to building world models in stealth, why low latency matters for world models, how they picked investors with independent conviction, and advice for founders entering a hot but undefined space.
+https://x.com/nikunj/status/2063263389238087745
 
-Dan Shipper — CEO of Every, AI newsletter
-
-Dan has been exploring what Plato's Protagoras reveals about LLMs — arguing that the dialogue's treatment of the limits of techne (skill/craft) and the necessity of aidos (reverence) and dike (the capacity to perceive what is right) pre-sages core challenges of AI alignment. He also offered a characteristically pithy philosophical stance: "LLMs are not conscious. LLMs are not not conscious. Both true."
+Dan Shipper (CEO of Every) went philosophical, drawing a parallel between Plato's Protagoras — which explores the limits of techne (skill/craft) and the necessity of Aidōs (reverence and responsiveness to others) and Dikē (the capacity to perceive what is right) — and the nature of LLMs. He followed up with a clean statement: "LLMs are not conscious. LLMs are not not conscious. Both true." A thread worth reading for anyone thinking about AI and virtue.
 https://x.com/danshipper/status/2063438262841094604
+https://x.com/danshipper/status/2063436919967522848
 https://x.com/danshipper/status/2063426632824562167
 
+Amjad Masad (CEO of Replit) shared a reflection on integrity and investing: when he spoke out against the Gaza genocide, some VCs tried to hurt him publicly and privately. Many of those who stood by him turned out to be both better people and better investors. His takeaway: the best way to avoid sociopaths is to stand for your beliefs clearly so they self-select out of your life.
+https://x.com/amasad/status/2063344460705288401
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Unsupervised Learning — Ep 89: AI Research Legend's Honest Assessment of Where We Are
+Guest: Lukasz Kaiser (co-author of "Attention Is All You Need," formerly Google Brain and OpenAI)
+Host: Jacob Efron (investor at Redpoint)
 https://www.youtube.com/watch?v=N1geOimmdDo
 
-One-sentence takeaway: Lucas Kaiser, co-author of the original transformer paper, gives a rare insider view that current AI is genuinely astonishing — but that something fundamental about generalization remains unsolved, and honest researchers don't fully understand what tipped coding AI from impressive to indispensable.
+Takeaway: One of the original transformer architects gives an unflinching look at where current AI excels, where it still has fundamental gaps, and why this is still the most exciting era to be an ML researcher.
 
-Lucas Kaiser — a co-author of "Attention Is All You Need" and veteran of both Google and OpenAI — joins Unsupervised Learning for a wide-ranging conversation on where AI actually stands. Kaiser opens with the generalization question that has dominated AI discourse. Transformers with reasoning, agents, and tool access can do "amazing things" he says he wouldn't have believed possible two years ago. But they still need staggering amounts of data to learn what humans grasp intuitively. As he puts it:
+Lukasz Kaiser opens with a nuanced take on the generalization question that dominates AI discourse: transformers with reasoning and agents can do "amazing things," but there is a distinct feeling that the current architecture is not quite there yet. He puts it vividly: "LLMs, they will learn the concept — but after exhausting all other options. You need a trillion tokens... That's not how we learn." He's not dismissing transformers — he's impressed every day — but he believes there is likely "something else" that could generalize better from far less data, a feeling shared by multiple post-transformer labs now exploring new architectures.
 
-"LLMs, they will learn the concept. They will learn it. But after exhausting all other options. You need this trillion tokens... You need to learn all the surface level things, and only when that doesn't explain something, they will finally learn the concept. That's not how we learn."
+On agentic coding, Kaiser is emphatic: using agents has changed his work more than anything in the last 15–20 years. He estimates roughly a 10x speed-up on paper reproduction tasks, but the more interesting effect is qualitative — working with agents keeps him thinking at the architecture and loss level rather than getting buried in function names and class structure. "It's this beautiful thing where you can just be in this flow. You just think machine learning wise, what's supposed to happen. You tell it, verify it, and it's happening."
 
-He draws a sharp analogy to Waymo: millions of miles of simulation and real driving, and yet the system still can't reliably handle a highway construction zone the way any teenager can. It points to a form of generalization that current architectures haven't cracked.
+On Anthropic's early lead in coding, Kaiser is direct: "Anthropic made this very good decision to focus on coding. OpenAI was like, we're doing ChatGPT... Partly Anthropic made this decision was that they just could not compete." He credits the strategic bet, not a technical one-time advantage.
 
-On why Anthropic led in coding, Kaiser offers a striking observation: Anthropic made a deliberate strategic bet on coding in part because they felt they couldn't compete with OpenAI on general chat. That focus paid off. The broader coding breakthrough around last Christmas, Kaiser says, wasn't attributable to any single change — it was a combination of better base models, post-training tweaks, improved agent harnesses, and compaction techniques. He's candid that even insiders don't fully know what specifically pushed coding AI from "useful" to "indispensable."
+On the mysterious Christmas 2025 coding breakthrough, he admits he can't fully explain it — and suspects most people can't: "It was not like a big pretraining that changed it that much... the change last Christmas, it's a little hard to pin down." He sees it as a combination of harness improvements, post-training tweaks, and new base models all clicking together.
 
-The episode also covers why current RL approaches are unlikely to produce researcher-level AI yet (rollouts would take weeks, making training take months), the open-versus-closed-source trajectory, and whether a post-transformer architecture is ultimately needed. Kaiser remains genuinely open about the uncertainty — he sees credible arguments on both sides — and finds that uncertainty itself the most exciting part of the research frontier right now.
+Kaiser closes with an invitation to researchers everywhere: with a modern GPU (he bought an RTX 5090 — roughly 200 TFLOPS, compared to 9 TFLOPS on the GPUs used for the original transformer work), you can run ML experiments that would have required an 8-GPU lab machine just a few years ago. He urges the field to publish more wild ideas and explore directions that fall outside the current paradigm. "You need to explore the wrong things because they may lead you to the right thing."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
