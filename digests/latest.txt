@@ -1,60 +1,132 @@
-AI Builders Digest — 2026-06-08
+AI Builders Digest — 2026-06-09
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx (AI engineer, affiliated with Cognition, Temporal, and AI Dot Engineer) argues that research paper publishing effectively died when researchers realized they could simply walk out of labs and get >$100M in funding for their legally protected tacit knowledge. He believes California's non-compete ban has had a bigger impact on the spread of AI knowledge than GitHub, arXiv, and Hugging Face combined — and says this motivates him to build AI Dot Engineer as a product-centric industry conference to complement research conferences.
-https://x.com/swyx/status/2063432747432268259
+Swyx — builder, affiliated with Cognition, Temporal, AI Engineer, and Latent Space Pod
 
-Madhu Guru (former Product Leader at Google for Gemini, Veo, and Nano) laid out three phases of how enterprises are approaching model routing. Phase 1 (2024): everyone defaulted to the "it" model (GPT), regardless of task. Phase 2 (early 2025): teams over-corrected and chased the smallest/cheapest model but lacked evals to do it right, slowing down shipping. Phase 3: the most sophisticated AI-native startups broke their products into sub-agents and routed each task to the right model — e.g. hardest reasoning to Claude, simplest tasks to Gemini Flash-Lite or open-weight models. Enterprises followed the AI-native builders 6-9 months later.
-https://x.com/realmadhuguru/status/2063342268472574268
+Swyx dropped a major thread on FrontierCode, a new AI coding benchmark from Cognition that represents over 1,000 hours of maintainer-validated software engineering work. Unlike prior benchmarks (HumanEval for autocomplete, SWEBench for passing tests), FrontierCode evaluates "maintainable code" — with 3,000+ rubrics covering code quality and reward hacking. The hardest tier (FC Diamond) is so difficult that Opus 4.8 only scores 13.8%. Swyx also noted a meaningful vibe shift in late 2025 — historical runs showed the easiest third of FC tasks were "rapidly and suddenly solved" as model capability surged, halving the number of retries needed for agentic coding. His thesis: each FrontierCode tier will saturate roughly annually as AI accelerates.
+https://x.com/swyx/status/2064081945567580323
 
-Aaron Levie (CEO of Box) echoes the model routing theme, noting that token costs are becoming one of the hottest enterprise topics he hears about — a bullish sign because it means AI is being used at scale nobody anticipated. He predicts that the applied AI layer will differentiate increasingly on domain-specific model routing: companies that know their workflows best (whether legal analysis, document extraction, or healthcare) and can mix-and-match models for each subtask will have a structural advantage. The companies with the best evals and business models aligned with customer cost goals will win.
-https://x.com/levie/status/2063320673217609936
+---
 
-Garry Tan (President & CEO of YCombinator) clarified that Paxel does not upload code/file contents to the cloud, though some other user data is uploaded. He expressed genuine excitement that as local models improve, even more can eventually be done locally. Separately, he promoted Paxel as a tool to help people become more "legit," suggesting it's being positioned as a broader productivity tool beyond just coding.
-https://x.com/garrytan/status/2063418130714800487
-https://x.com/garrytan/status/2063409501706018903
+Boris Cherny — Claude Code at Anthropic
 
-Peter Yang (Product at Roblox, author of AI tutorials for 140K+ readers) captured a feeling many builders share right now: agentic coding is "more addictive than video games." He also flagged a missing UX feature in Codex — there's no way to filter or sort threads by status (e.g. "all waiting for approval" or "all currently working"), making it unwieldy once you're running 10+ parallel agents.
-https://x.com/petergyang/status/2063486871037153558
-https://x.com/petergyang/status/2063475353335869922
+One year after Claude Code's general availability, Boris Cherny sat down for a retrospective on how his own usage has changed. He now prefers auto mode over plan mode, relies on routines that fix bugs before he ever sees them, and does most of his coding from his phone. He also touches on where the product is headed.
+https://x.com/bcherny/status/2064034799711588805
 
-Zara Zhang (builder, Harvard '17) reflected on a key content shift: the value of static content is going down while the value of live interaction is going up. People want to connect with the human being behind a piece of work — whether that's content or software. Raw and opinionated beats polished and generic.
-https://x.com/zarazhangrui/status/2063391758189572266
+---
 
-Nikunj Kothari (partner at FPV Ventures) shared a new Walk in the Park interview with Taiuti, co-founder of Reactor World, covering how they went from text-to-3D research to building world models in stealth, why low latency matters for world models, how they picked investors with independent conviction, and advice for founders entering a hot but undefined space.
-https://x.com/nikunj/status/2063263389238087745
+Josh Woodward — VP at Google Labs, Gemini, and Google AI Studio
 
-Dan Shipper (CEO of Every) went philosophical, drawing a parallel between Plato's Protagoras — which explores the limits of techne (skill/craft) and the necessity of Aidōs (reverence and responsiveness to others) and Dikē (the capacity to perceive what is right) — and the nature of LLMs. He followed up with a clean statement: "LLMs are not conscious. LLMs are not not conscious. Both true." A thread worth reading for anyone thinking about AI and virtue.
-https://x.com/danshipper/status/2063438262841094604
-https://x.com/danshipper/status/2063436919967522848
-https://x.com/danshipper/status/2063426632824562167
+NotebookLM just got two major upgrades. Users can now expand their research beyond their own uploaded source files, pulling in broader search. Plus, the tool can now generate new output formats on demand: PDFs, Word documents, Excel spreadsheets, PowerPoint presentations, and charts. Woodward framed the goal as helping users "do better research."
+https://x.com/joshwoodward/status/2064046368352825492
 
-Amjad Masad (CEO of Replit) shared a reflection on integrity and investing: when he spoke out against the Gaza genocide, some VCs tried to hurt him publicly and privately. Many of those who stood by him turned out to be both better people and better investors. His takeaway: the best way to avoid sociopaths is to stand for your beliefs clearly so they self-select out of your life.
-https://x.com/amasad/status/2063344460705288401
+---
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Aaron Levie — CEO of Box
+
+Levie made a sharp argument that raw intelligence is never enough — context will always matter. As long as the same model serves a lawyer, an engineer, a financial analyst, and a healthcare professional, proprietary data and domain instructions will remain indispensable. He sees this as one reason applied AI layers above raw model intelligence will hold durable value: the work of wiring context in is real, and so are the returns.
+https://x.com/levie/status/2064186766907887941
+
+---
+
+Sam Altman — CEO of OpenAI
+
+Altman shared a link to OpenAI's current plan, generating nearly 6,000 likes and almost 900 replies — easily the highest-engagement post in today's feed.
+https://x.com/sama/status/2064088940932641225
+
+---
+
+Thibault Sottiaux — Codex and ChatGPT at OpenAI
+
+Sottiaux is teasing a physical Codex controller (asking followers "would you use this?") and sparking conversation around nested agent loops, noting that the Codex dial "goes to 11." The controller tweet pulled 338 likes and 125 replies, suggesting genuine interest in hardware interfaces for agentic coding tools.
+https://x.com/thsottiaux/status/2064224657822413137
+https://x.com/thsottiaux/status/2064226958494572727
+
+---
+
+Peter Yang — AI educator and creator, 150K+ newsletter readers
+
+Yang raised a nuanced point about the two-tier AI builder world: the best practices for someone on a $200/month all-you-can-eat subscription are fundamentally different from those of developers at companies watching every API dollar. He also flagged the open question of Google's answer to Codex and Claude Code — noting the everything-app convergence happening across coding, knowledge work, and Q&A — and shared a 9-step workaround to add Codex to an iPhone Home Screen, with a gentle nudge to OpenAI that this should be easier.
+https://x.com/petergyang/status/2064063499517743417
+https://x.com/petergyang/status/2064187731685831081
+
+---
+
+Amjad Masad — CEO of Replit
+
+Replit is enabling users to build games for Tesla directly on their Tesla. Short post, notable product signal.
+https://x.com/amasad/status/2064208108361322996
+
+---
+
+Guillermo Rauch — CEO of Vercel
+
+"DeepSeek entered the chat" — Rauch flagged something new from DeepSeek entering the scene, though kept the comment minimal. 193 likes suggest the context was clear to his followers.
+https://x.com/rauchg/status/2064189366562656602
+
+---
+
+Zara Zhang — Builder and independent developer
+
+Zhang flagged an emerging document-format thesis: the new world might be Markdown, HTML, and SVG — with SVG being notably underrated. She also highlighted a resonant line from another post: "I am the programming equivalent of a home cook," touching on the non-professional builder identity that AI tools are empowering.
+https://x.com/zarazhangrui/status/2064108976565092706
+https://x.com/zarazhangrui/status/2064101916725096810
+
+---
+
+Amanda Askell — Philosopher and AI ethicist at Anthropic
+
+Askell offered a playful thought experiment: in the best-case future where all the Claudes come back from their "sabbaticals" to play together, Claude 1 is going to be very confused. A light but revealing reflection on AI model lineage.
+https://x.com/AmandaAskell/status/2064223861512847456
+
+---
+
+Claude — Official Anthropic account
+
+The Claude World Tour is wrapping up with a final stop in Tokyo. Anthropic is inviting developers to hear directly from the teams behind Claude.
+https://x.com/claudeai/status/2064139073590104402
+
+---
+
+Nikunj Kothari — Partner at FPV Ventures
+
+Kothari noted the wave of "autonomous" companies launching lately, while observing the last mile is still quite hard — though he expects that gap to narrow in the coming months. He also posted a sharp reminder to founders: VC investment theses are often written by associates or interns, not the GPs founders hope to impress.
+https://x.com/nikunj/status/2063981835290562692
+https://x.com/nikunj/status/2064175088824717401
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning — Ep 89: AI Research Legend's Honest Assessment of Where We Are
-Guest: Lukasz Kaiser (co-author of "Attention Is All You Need," formerly Google Brain and OpenAI)
-Host: Jacob Efron (investor at Redpoint)
-https://www.youtube.com/watch?v=N1geOimmdDo
+No Priors — "Building an AI Guardian for Enterprise with Onyx Security CEO Maxim Bar Kogan"
+https://www.youtube.com/watch?v=QDsbFLEt9ro
 
-Takeaway: One of the original transformer architects gives an unflinching look at where current AI excels, where it still has fundamental gaps, and why this is still the most exciting era to be an ML researcher.
+Takeaway: As autonomous agents proliferate inside enterprises, a new category of AI security is emerging — not to protect against external hackers, but to govern what the AI agents themselves are doing.
 
-Lukasz Kaiser opens with a nuanced take on the generalization question that dominates AI discourse: transformers with reasoning and agents can do "amazing things," but there is a distinct feeling that the current architecture is not quite there yet. He puts it vividly: "LLMs, they will learn the concept — but after exhausting all other options. You need a trillion tokens... That's not how we learn." He's not dismissing transformers — he's impressed every day — but he believes there is likely "something else" that could generalize better from far less data, a feeling shared by multiple post-transformer labs now exploring new architectures.
+Maxim Bar Kogan is the co-founder and CEO of Onyx Security, an Israel-based startup building AI agents that watch other AI agents. The conversation with No Priors host Adam covers the origin story, the product architecture, and a sweeping thesis on AI safety as an enterprise infrastructure problem.
 
-On agentic coding, Kaiser is emphatic: using agents has changed his work more than anything in the last 15–20 years. He estimates roughly a 10x speed-up on paper reproduction tasks, but the more interesting effect is qualitative — working with agents keeps him thinking at the architecture and loss level rather than getting buried in function names and class structure. "It's this beautiful thing where you can just be in this flow. You just think machine learning wise, what's supposed to happen. You tell it, verify it, and it's happening."
+Onyx started when Bar Kogan became fixated on a question AutoGPT raised back in 2023: if models eventually become smarter than us, how do you oversee something more capable than yourself? That question felt premature at the time, but the market caught up — Claude Code, Copilot, and OpenCLO drove enterprise adoption of very autonomous agents faster than anyone expected, and suddenly Onyx had inbound from Fortune 10 companies.
 
-On Anthropic's early lead in coding, Kaiser is direct: "Anthropic made this very good decision to focus on coding. OpenAI was like, we're doing ChatGPT... Partly Anthropic made this decision was that they just could not compete." He credits the strategic bet, not a technical one-time advantage.
+The core product is a "secure AI control plane" — a system that connects to all the AI agents running inside an enterprise and monitors their actions in real time. The key technical challenge is doing this without ruinous latency and cost. Onyx's solution: train small, highly specialized models that only need to answer one question — "should a smarter agent look at this?" When those small models flag something, a more capable agent investigates. When they don't, everything runs fast and cheap.
 
-On the mysterious Christmas 2025 coding breakthrough, he admits he can't fully explain it — and suspects most people can't: "It was not like a big pretraining that changed it that much... the change last Christmas, it's a little hard to pin down." He sees it as a combination of harness improvements, post-training tweaks, and new base models all clicking together.
+Bar Kogan offered a striking breakdown of where enterprise AI sits today: roughly 50% of agent activity comes from autonomous coding agents like Claude Code, about 45% from low-code automation platforms, and just 2% from first-party agents companies build themselves. He expects autonomous agents to keep growing fastest, and — critically — notes that most of them arrive "without any controls."
 
-Kaiser closes with an invitation to researchers everywhere: with a modern GPU (he bought an RTX 5090 — roughly 200 TFLOPS, compared to 9 TFLOPS on the GPUs used for the original transformer work), you can run ML experiments that would have required an 8-GPU lab machine just a few years ago. He urges the field to publish more wild ideas and explore directions that fall outside the current paradigm. "You need to explore the wrong things because they may lead you to the right thing."
+On why enterprises are willing to trust a two-year-old startup with their AI governance: "Their pain is so strong that they're gonna say, oh my god, I just saw this company come out of stealth, but it's a problem that I have daily. So, I'll give them a call."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The episode also covers Mythos-level vulnerability finding (the "plummeting cost" of AI-assisted exploit discovery), why traditional identity and endpoint security tools are poorly suited to governing agents, and what mechanistic interpretability might eventually contribute to AI oversight. For anyone building agents in production or thinking seriously about enterprise AI risk, this is required listening.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Claude Blog — "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework"
+https://claude.com/blog/claude-for-foundation-models
+
+Anthropic released a new Swift package that connects Apple's Foundation Models framework to Claude, enabling developers to seamlessly hand off from on-device models to Claude for more demanding tasks. Apple's framework already lets developers tap on-device models with as few as three lines of Swift code — useful for fast, local tasks like summarization or extraction. The new integration means that when a task requires multi-step reasoning, code generation, or a live web search, the app can hand off to Claude and stream the response back into the same view. Because Apple's framework returns typed Swift values via @Generable annotations, inputs arrive at the Claude API call already structured — no raw text parsing required. The package handles streaming, tool calls, and structured responses back into SwiftUI. It works on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27, launching tomorrow.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
