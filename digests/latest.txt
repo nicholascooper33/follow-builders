@@ -1,132 +1,89 @@
-AI Builders Digest — 2026-06-09
+AI Builders Digest — 2026-06-10
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The big story today is the launch of Claude Fable 5 (the same underlying model as Mythos, with safeguards), which is generating major buzz across the builder community. Everyone is calling it a step-change moment.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — builder, affiliated with Cognition, Temporal, AI Engineer, and Latent Space Pod
-
-Swyx dropped a major thread on FrontierCode, a new AI coding benchmark from Cognition that represents over 1,000 hours of maintainer-validated software engineering work. Unlike prior benchmarks (HumanEval for autocomplete, SWEBench for passing tests), FrontierCode evaluates "maintainable code" — with 3,000+ rubrics covering code quality and reward hacking. The hardest tier (FC Diamond) is so difficult that Opus 4.8 only scores 13.8%. Swyx also noted a meaningful vibe shift in late 2025 — historical runs showed the easiest third of FC tasks were "rapidly and suddenly solved" as model capability surged, halving the number of retries needed for agentic coding. His thesis: each FrontierCode tier will saturate roughly annually as AI accelerates.
-https://x.com/swyx/status/2064081945567580323
-
----
+Andrej Karpathy — AI researcher and deep learning pioneer
+Karpathy called Fable 5 "a major-version-bump-deserving step change forward," comparable in quality to the jump Claude made back in November. He notes the model feels qualitatively different for long, difficult problem-solving sessions: "You can give it a lot more ambitious tasks than what you're used to, the model 'gets it' and it will just go." He also reflected on how cheap, on-tap software is triggering Jevons paradox — demand for software is growing substantially as the cost drops. He cautioned against trusting it fully in production, but added: "Free your mind."
+https://x.com/karpathy/status/2064409694761054332
 
 Boris Cherny — Claude Code at Anthropic
+Boris described Fable 5 as "the biggest step up I've felt in our models since Opus 4.5 back in November," noting he'd been doing 100% of his coding in a terminal since then. He also shared a broader architectural insight: in the age of powerful models running for long periods of time, self-verification loops are a key ingredient — models should be set up to check their own work rather than relying solely on human review.
+https://x.com/bcherny/status/2064431111154053187
+https://x.com/bcherny/status/2064426115255730578
 
-One year after Claude Code's general availability, Boris Cherny sat down for a retrospective on how his own usage has changed. He now prefers auto mode over plan mode, relies on routines that fix bugs before he ever sees them, and does most of his coding from his phone. He also touches on where the product is headed.
-https://x.com/bcherny/status/2064034799711588805
+Alex Albert — Researcher at Anthropic
+Alex marked the Fable 5 launch as one of the rare step-change moments in Anthropic's history — alongside Opus 3 and Sonnet 3.5. He reset usage limits across all Anthropic products and shared four tips for using Fable effectively: give it bigger and more ambitious tasks, use longer context, lean on its improved reasoning for multi-step problems, and expect it to push back less on complex requests.
+https://x.com/alexalbert__/status/2064394410004304003
+https://x.com/alexalbert__/status/2064467657483829441
 
----
+Thariq — Claude Code at Anthropic
+Thariq, currently at Code with Claude in Tokyo, called Fable "a step-change in models" and teased a series of posts on how it has reshaped internal work at Anthropic. The headline takeaway: "It's time to be more ambitious."
+https://x.com/trq212/status/2064437561930682672
 
-Josh Woodward — VP at Google Labs, Gemini, and Google AI Studio
-
-NotebookLM just got two major upgrades. Users can now expand their research beyond their own uploaded source files, pulling in broader search. Plus, the tool can now generate new output formats on demand: PDFs, Word documents, Excel spreadsheets, PowerPoint presentations, and charts. Woodward framed the goal as helping users "do better research."
-https://x.com/joshwoodward/status/2064046368352825492
-
----
-
-Aaron Levie — CEO of Box
-
-Levie made a sharp argument that raw intelligence is never enough — context will always matter. As long as the same model serves a lawyer, an engineer, a financial analyst, and a healthcare professional, proprietary data and domain instructions will remain indispensable. He sees this as one reason applied AI layers above raw model intelligence will hold durable value: the work of wiring context in is real, and so are the returns.
-https://x.com/levie/status/2064186766907887941
-
----
-
-Sam Altman — CEO of OpenAI
-
-Altman shared a link to OpenAI's current plan, generating nearly 6,000 likes and almost 900 replies — easily the highest-engagement post in today's feed.
-https://x.com/sama/status/2064088940932641225
-
----
-
-Thibault Sottiaux — Codex and ChatGPT at OpenAI
-
-Sottiaux is teasing a physical Codex controller (asking followers "would you use this?") and sparking conversation around nested agent loops, noting that the Codex dial "goes to 11." The controller tweet pulled 338 likes and 125 replies, suggesting genuine interest in hardware interfaces for agentic coding tools.
-https://x.com/thsottiaux/status/2064224657822413137
-https://x.com/thsottiaux/status/2064226958494572727
-
----
-
-Peter Yang — AI educator and creator, 150K+ newsletter readers
-
-Yang raised a nuanced point about the two-tier AI builder world: the best practices for someone on a $200/month all-you-can-eat subscription are fundamentally different from those of developers at companies watching every API dollar. He also flagged the open question of Google's answer to Codex and Claude Code — noting the everything-app convergence happening across coding, knowledge work, and Q&A — and shared a 9-step workaround to add Codex to an iPhone Home Screen, with a gentle nudge to OpenAI that this should be easier.
-https://x.com/petergyang/status/2064063499517743417
-https://x.com/petergyang/status/2064187731685831081
-
----
-
-Amjad Masad — CEO of Replit
-
-Replit is enabling users to build games for Tesla directly on their Tesla. Short post, notable product signal.
-https://x.com/amasad/status/2064208108361322996
-
----
+Swyx — AI engineer and co-founder at AI.Engineer, affiliated with Cognition and Latent Space
+Swyx highlighted a practical alpha: using Claude Code's "review my code for issues" command while on Fable's free tier is producing surprisingly deep reviews. He also noted that it took only 34 days from signing a deal with NVIDIA to launching a Mythos-class model GA to the world — a striking pace for frontier AI deployment.
+https://x.com/swyx/status/2064492823781789969
+https://x.com/swyx/status/2064421542503797186
 
 Guillermo Rauch — CEO of Vercel
+Vercel's CLI now supports AI Gateway API keys with spend caps and refresh periods — effectively virtual credit cards for AI token budgets. Rauch also noted that Opus wrote Vercel a VM and Mythos verified it, a neat example of using tiered models for generation vs. verification.
+https://x.com/rauchg/status/2064551967461114111
+https://x.com/rauchg/status/2064419055726215438
 
-"DeepSeek entered the chat" — Rauch flagged something new from DeepSeek entering the scene, though kept the comment minimal. 193 likes suggest the context was clear to his followers.
-https://x.com/rauchg/status/2064189366562656602
+Aaron Levie — CEO of Box
+Levie flagged a piece he called "critical reading for anyone building an applied AI company right now" — the key idea being that applications earn their defensibility by doing the "unglamorous work" of arranging a company's private data in the untrainable corner. He also reacted to Fable's launch as a direct rebuttal to anyone who thought AI progress was slowing: "Huge jump in capability across the board. This is going to deliver major improvement in agents across almost all industries."
+https://x.com/levie/status/2064569513023328268
+https://x.com/levie/status/2064396746953023647
 
----
+Garry Tan — President and CEO of Y Combinator
+Garry called Fable 5 "the biggest model energy I've ever seen" — though in the same breath posted about hitting a frustrating limitation while using it on his GStack project, the kind of early-adopter friction that comes with every major launch.
+https://x.com/garrytan/status/2064573857911152710
 
-Zara Zhang — Builder and independent developer
-
-Zhang flagged an emerging document-format thesis: the new world might be Markdown, HTML, and SVG — with SVG being notably underrated. She also highlighted a resonant line from another post: "I am the programming equivalent of a home cook," touching on the non-professional builder identity that AI tools are empowering.
-https://x.com/zarazhangrui/status/2064108976565092706
-https://x.com/zarazhangrui/status/2064101916725096810
-
----
-
-Amanda Askell — Philosopher and AI ethicist at Anthropic
-
-Askell offered a playful thought experiment: in the best-case future where all the Claudes come back from their "sabbaticals" to play together, Claude 1 is going to be very confused. A light but revealing reflection on AI model lineage.
-https://x.com/AmandaAskell/status/2064223861512847456
-
----
-
-Claude — Official Anthropic account
-
-The Claude World Tour is wrapping up with a final stop in Tokyo. Anthropic is inviting developers to hear directly from the teams behind Claude.
-https://x.com/claudeai/status/2064139073590104402
-
----
+Zara Zhang — Builder and vibe coder, 30k GitHub stars
+Zara made a sharp observation about the real barrier for non-technical people using coding agents: it's not the interface (chat is the easiest UI ever invented), it's not knowing what to ask for. The blank chat box assumption — that users know what to type — is the actual bottleneck. She also announced a virtual talk this Friday on her vibe coding process as a non-technical person who has shipped widely-used open source projects.
+https://x.com/zarazhangrui/status/2064587398529606082
+https://x.com/zarazhangrui/status/2064486120386379950
 
 Nikunj Kothari — Partner at FPV Ventures
+Nikunj had Fable one-shot build a full interactive website visualizing all historical S-curves, their inflection points, and commentary — sparked by listening to an episode of Invest Like the Best. He described using Claude's research mode to process a podcast transcript, have it research S-curves in history, then generate a Claude Code prompt from that research. A clean example of chaining models for research-to-product workflows.
+https://x.com/nikunj/status/2064506504888373758
+https://x.com/nikunj/status/2064508462034501997
 
-Kothari noted the wave of "autonomous" companies launching lately, while observing the last mile is still quite hard — though he expects that gap to narrow in the coming months. He also posted a sharp reminder to founders: VC investment theses are often written by associates or interns, not the GPs founders hope to impress.
-https://x.com/nikunj/status/2063981835290562692
-https://x.com/nikunj/status/2064175088824717401
+Thibault Sottiaux — Codex and ChatGPT at OpenAI
+Thibault shared his workflow of using Codex's /goal command as a primary driver for getting things done — "playing codex like an orchestra, one /goal at a time" — and polled his audience on whether they use it occasionally or as their main method of work.
+https://x.com/thsottiaux/status/2064307859903447396
+https://x.com/thsottiaux/status/2064308436133716008
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Amjad Masad — CEO of Replit
+Replit is offering Claude Mythos at 25% off for users on the platform — worth checking if you want to experiment with the uncapped model.
+https://x.com/amasad/status/2064411791015432466
+
+Dan Shipper — CEO of Every
+Dan called Fable 5's launch and shared Every's vibe check after a week of internal testing. The team at Every has been among the most AI-native early testers of each new frontier model.
+https://x.com/danshipper/status/2064395167658860859
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors — "Building an AI Guardian for Enterprise with Onyx Security CEO Maxim Bar Kogan"
-https://www.youtube.com/watch?v=QDsbFLEt9ro
+AI & I by Every — "We Automated Everything With AI and Tripled Our Headcount"
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
 
-Takeaway: As autonomous agents proliferate inside enterprises, a new category of AI security is emerging — not to protect against external hackers, but to govern what the AI agents themselves are doing.
+Takeaway: Heavy AI adoption creates more human work, not less — at least for fast-growing, ambitious companies.
 
-Maxim Bar Kogan is the co-founder and CEO of Onyx Security, an Israel-based startup building AI agents that watch other AI agents. The conversation with No Priors host Adam covers the origin story, the product architecture, and a sweeping thesis on AI safety as an enterprise infrastructure problem.
+In this episode of AI & I, Brandon (COO of Every) interviews Dan Shipper (CEO) about his essay "After Automation," which examines the paradox that Every has experienced: the company is as AI-native as it gets — Claude Code and Codex running constantly, agents outnumbering humans in Slack — and yet Every has grown from 4 people to 30 since the GPT-3 era, and is still hiring.
 
-Onyx started when Bar Kogan became fixated on a question AutoGPT raised back in 2023: if models eventually become smarter than us, how do you oversee something more capable than yourself? That question felt premature at the time, but the market caught up — Claude Code, Copilot, and OpenCLO drove enterprise adoption of very autonomous agents faster than anyone expected, and suddenly Onyx had inbound from Fortune 10 companies.
+Dan's central argument is that AI makes "yesterday's expert competence cheap." Anything trained on past outputs — code, writing, design, decisions — becomes available to anyone with a prompt. That democratization triggers Jevons paradox: cheap competence gets widely adopted, which floods the zone with output that is close-but-not-quite-right, which in turn creates enormous demand for people who can identify what's actually right. As Dan puts it: "AI is trained on all of our outputs... it makes that available to everyone for very cheap. Anyone now with a prompt can use yesterday's competence to solve a programming problem, build an app, or write a piece." The irony is that the experts whose competence has been commoditized are now in higher demand to verify and improve the flood of AI-generated work.
 
-The core product is a "secure AI control plane" — a system that connects to all the AI agents running inside an enterprise and monitors their actions in real time. The key technical challenge is doing this without ruinous latency and cost. Onyx's solution: train small, highly specialized models that only need to answer one question — "should a smarter agent look at this?" When those small models flag something, a more capable agent investigates. When they don't, everything runs fast and cheap.
+Brandon pushes back with a sharp devil's advocate question: does this thesis hold for large, mature enterprises — a 10,000-person company with established SOPs — rather than for a fast-moving 30-person media startup? Dan acknowledges the tension and notes that such companies face a different challenge: they've optimized their existing workflows over years, and AI disrupts those SOPs without obvious new ones to replace them.
 
-Bar Kogan offered a striking breakdown of where enterprise AI sits today: roughly 50% of agent activity comes from autonomous coding agents like Claude Code, about 45% from low-code automation platforms, and just 2% from first-party agents companies build themselves. He expects autonomous agents to keep growing fastest, and — critically — notes that most of them arrive "without any controls."
+A key quote that captures the episode's spirit: "The further away an agent gets from a human, the less valuable it is. If you just ride the models, you're going to be fine. If you care about leading a really ambitious life, I truly think that this is going to make that more possible for more people."
 
-On why enterprises are willing to trust a two-year-old startup with their AI governance: "Their pain is so strong that they're gonna say, oh my god, I just saw this company come out of stealth, but it's a problem that I have daily. So, I'll give them a call."
+The episode is a grounded counterweight to the wave of "all jobs are disappearing" narratives. For builders who are actually shipping with agents every day, the experience is consistently: more automation, more ambition, more work to do.
 
-The episode also covers Mythos-level vulnerability finding (the "plummeting cost" of AI-assisted exploit discovery), why traditional identity and endpoint security tools are poorly suited to governing agents, and what mechanistic interpretability might eventually contribute to AI oversight. For anyone building agents in production or thinking seriously about enterprise AI risk, this is required listening.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Claude Blog — "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework"
-https://claude.com/blog/claude-for-foundation-models
-
-Anthropic released a new Swift package that connects Apple's Foundation Models framework to Claude, enabling developers to seamlessly hand off from on-device models to Claude for more demanding tasks. Apple's framework already lets developers tap on-device models with as few as three lines of Swift code — useful for fast, local tasks like summarization or extraction. The new integration means that when a task requires multi-step reasoning, code generation, or a live web search, the app can hand off to Claude and stream the response back into the same view. Because Apple's framework returns typed Swift values via @Generable annotations, inputs arrive at the Claude API call already structured — no raw text parsing required. The package handles streaming, tool calls, and structured responses back into SwiftUI. It works on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27, launching tomorrow.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
