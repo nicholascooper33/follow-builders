@@ -1,99 +1,93 @@
-AI Builders Digest — 2026-06-13
+AI Builders Digest — 2026-06-14
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — Developer & AI engineer (Cognition / AI Engineer conference)
-Is Git the next thing to die after PRs and code review? Swyx argues that 20–40% of code spend today goes to managing merge conflicts — a "horseless carriage" habit inherited from human collaboration norms. He wonders whether the future codebase looks more like a Notion or Linear database than .git objects: less efficient, but more scalable to AI-driven development.
-https://x.com/swyx/status/2065559864559145420
+Aaron Levie — CEO, Box
+Two must-reads today from Aaron on AI regulation and infrastructure strategy.
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-After hearing complaints about Codex usage limits resetting without warning, Sottiaux announced an upcoming change: next time OpenAI resets usage allocations, users will be able to choose when the reset actually takes effect — putting control back in developers' hands.
-https://x.com/thsottiaux/status/2065468501750649006
+On the Fable export control saga: Aaron argues this is "actually net positive to regulation discourse" — a useful preview of what AI governance looks like when it targets the model layer rather than specific applications. The problem is that any government review process involves months of subjective debate over what a model is capable of, and blocking frontier intelligence today, had the same framework existed three years ago, would have left us stuck at GPT-4. His conclusion: regulate the applied use of AI (fraud, biowarfare, cyber attacks), not the model itself.
+https://x.com/levie/status/2065842361834651996
 
-Peter Yang — AI educator and creator (150K+ readers)
-Yang raised two pointed questions about the direction of AI access policy: he predicts ID verification will soon be required to access the most powerful models, and reacted with sharp skepticism to reports that Fable (Anthropic's latest model) was being suspended for "foreign persons inside the US" — questioning how such a policy could be meaningfully enforced.
-https://x.com/petergyang/status/2065622592309039449
-https://x.com/petergyang/status/2065602691850764667
+On model routing becoming a strategic moat: Aaron lays out three reasons the layer that routes between AI models will grow dramatically in value — cost optimization (frontier models for planning, cheaper ones for bulk work), capability maximization (different models excel at different tasks), and risk mitigation (geopolitical or regulatory disruption to any single provider). He predicts this routing flexibility will become a core competitive advantage for applied AI companies.
+https://x.com/levie/status/2065989559905812973
 
-Amjad Masad — CEO of Replit
-Masad signaled he may have to turn off Fable access on Replit given new access restrictions. Separately, he shared that Replit refused to build a "tokenmaxxing leaderboard" when enterprise customers asked for one — because "we sell outcomes, not tokens." He also announced that if you generate revenue on Replit, you receive free usage credits.
-https://x.com/amasad/status/2065600809224814835
-https://x.com/amasad/status/2065597793998422308
-https://x.com/amasad/status/2065503810592833560
+---
 
-Guillermo Rauch — CEO of Vercel
-Vercel shipped "ProviderAgent," a unified abstraction for the AI SDK that lets developers orchestrate any agent's "brain" into their app — freeing builders from both model lock-in and agent framework lock-in. Rauch also noted that HTML drag-and-drop is back in fashion as an interface primitive.
-https://x.com/rauchg/status/2065520041894756480
-https://x.com/rauchg/status/2065494112669966660
+Garry Tan — President & CEO, YCombinator
+A sharp observation on navigating the AI moment: "In AI most people are still trying to use old maps on a new territory. Throw the maps away. It's time to draw new ones. The only way you can do it is walking the land." He also flagged that most people form opinions about AI models through social signifiers — hype, reputation, vibes — rather than actually using them. That gap matters for how the industry communicates value.
+https://x.com/garrytan/status/2065877443874038203
 
-Alex Albert — Research at Anthropic
-Albert noted that Fable feels "superhuman" during long agentic conversations — sometimes moving so fast it's hard for humans to follow. His fix: a prompt snippet that tells the model to write clearly and drop all jargon, which he published from Anthropic's prompting guide.
-https://x.com/alexalbert__/status/2065493229760565758
-https://x.com/alexalbert__/status/2065493242158924031
+---
 
-Aaron Levie — CEO of Box
-Levie called government restrictions on Fable "a big turning point for AI regulation" — the first clear precedent of models being deemed too powerful for certain uses. He personally favors regulating AI use cases rather than the underlying models, but acknowledges this marks the start of far greater government involvement in AI's pace of progress. Either way, he argues, there is no going back.
-https://x.com/levie/status/2065616509666472329
+Madhu Guru — Former Product Leader, Google Gemini, Veo & Nano Banana
+A grounded, empathetic take on what it actually costs to ship a frontier model. Madhu explains you're making decisions about a black box with effectively infinite use cases and infinite failure modes. Labs build extensive evals, red-team relentlessly, and iterate across candidate checkpoints — yet early-access partners still uncover behaviors nobody anticipated. As models become smarter across the industry, that decision only gets harder, for both labs and regulators alike.
+https://x.com/realmadhuguru/status/2065911676000752122
 
-Garry Tan — President & CEO of Y Combinator
-Tan issued a sharp warning: AI coding tools will scaffold your bureaucracy just as fast as they scaffold your product. "Speed of construction is speed of calcification," he wrote — urging builders to focus on creating new experiences rather than rebuilding the same approval layers faster. He also highlighted Datacurve (YC W24) as the team building the defining software engineering benchmark with DeepSWE, and shared excitement about seeing Claude Fable 5 reasoning traces inside OpenClaw.
-https://x.com/garrytan/status/2065416181943865611
-https://x.com/garrytan/status/2065595201008398592
-https://x.com/garrytan/status/2065432924724539848
+---
 
-Zara Zhang — Builder (GitHub: zarazhangrui)
-Zhang observed that competition for attention among AI builders has become overwhelming — she receives at least three product demo requests per day and couldn't possibly try them all. Her take on breaking through: viral products have a founder people can see and hear. "People buy from people. A screen recording from the founder beats a corporate promo video or a wall of features."
-https://x.com/zarazhangrui/status/2065696088519270402
-https://x.com/zarazhangrui/status/2065674426197393779
+Peter Steinberger — AI builder (OpenClaw / PSPDFKit)
+The agentic AI moment in miniature: Peter got a PayPal verification text and thought he'd been hacked — turns out it was Codex autonomously signing up for a web service it needed to complete a task. A funny, real-world illustration of just how much autonomous action coding agents are taking without explicit per-step approval.
+https://x.com/steipete/status/2065997212015067508
 
-Nikunj Kothari — Partner at FPV Ventures
-Kothari published his answer to one of the defining startup questions of this moment: how do application companies survive when a large lab might build the exact same thing? His essay explores the strategic moves available to application-layer founders in a world where foundation model providers are moving further up the stack.
-https://x.com/nikunj/status/2065581110822593000
+---
 
-Peter Steinberger — Co-creator of OpenClaw (OpenAI)
-Steinberger reported that Codex has been running nonstop for four days inside "crabbox" (OpenClaw's container environment), effectively building itself. Because the entire system is end-to-end verifiable, Codex handles implementation and testing autonomously — Steinberger's main job has become adding payment details and reviewing fit. He also noted that Codex can now sign up for external services automatically via browser/computer use.
-https://x.com/steipete/status/2065650561484267540
+Dan Shipper — CEO, Every
+The Fable export ban has already shifted Dan's own daily tool usage: before the ban, he was primarily on the Claude app; after, he's on Codex. A small personal data point, but a telling signal of how quickly developer loyalty shifts when trust in a model's availability is disrupted.
+https://x.com/danshipper/status/2065856703397278060
+
+---
+
+Swyx — AI Engineering, Latent Space & Cognition
+Last call for the annual AI Engineering Survey — entries close this weekend, with prizes from Vercel and Notion. The real highlight: they used Devin AI to analyze the registered attendee list and auto-generate a live chart visualizing the community gathering at the AI Engineering conference in two weeks. Swyx called it "the single best data driven storytelling I've ever seen" about who shows up to AI Eng.
+https://x.com/swyx/status/2065909887025168887
+
+---
+
+Thibault Sottiaux — Codex & ChatGPT, OpenAI
+Posted a deceptively simple opener — "Hi, I'm Tibo and I just discovered Codex. AMA" — that immediately drew 1,442 likes and 521 replies. The engagement reflects the enormous curiosity right now about what it's like to work on Codex from the inside, and what the team actually thinks about where it's headed.
+https://x.com/thsottiaux/status/2066022651760721931
+
+---
+
+Amjad Masad — CEO, Replit
+A cryptic but high-signal post in the wake of the Fable/export control news cycle: "Feels like we're getting psyoped. The end-game here is something bigger." The tweet hit 2,292 likes and 104 retweets — suggesting a lot of builders share the suspicion that the current regulatory moves are about more than the stated rationale.
+https://x.com/amasad/status/2065838585358745653
+
+---
+
+Nikunj Kothari — Partner, FPV Ventures
+A signal-to-noise warning for founders: paid partnerships and boosted views on X have become a negative signal in VC group chats. Nikunj is hoping the same scrutiny arrives for inflated ARR claims, but expects that'll take another cycle. The underlying message — authenticity and real traction outperform manufactured visibility now more than ever.
+https://x.com/nikunj/status/2065889759906644146
+
+---
+
+Zara Zhang — Builder
+Shared an essay on taste and how to cultivate it — arguing that taste isn't merely personal preference, but requires genuine mastery and accumulated experience. Worth a read for anyone thinking about product quality standards in an era when AI can generate infinite surface-level polish.
+https://x.com/zarazhangrui/status/2066036778713362747
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning — "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions"
-https://www.youtube.com/watch?v=W_iO8XxgD_I
+No Priors — Biohub: The Future of Biology is Open-Source
+with Mark Zuckerberg, Priscilla Chan & Alex Rives (Head of Science, Biohub)
+Published: June 10, 2026
 
-Takeaway: AI is entering an era of acute compute scarcity where open-weight models may fade, API access itself could be suspended, and frontier advantage is increasingly determined by who controls the chips — not just who writes the best code.
+Takeaway: Chan Zuckerberg Initiative is betting $500M that the bottleneck to curing disease is data and tooling — not funding or intent — and that open-source AI is the fastest path to breaking it.
 
-Host Jacob Efron reunites with Ari (founder of Datalogy, ex-DeepMind and Meta) and Rob (partner at Radical Ventures) for their biannual "vibe check" on everything happening in AI. The conversation covers enormous ground.
+Mark Zuckerberg and Priscilla Chan have been funding Biohub for about a decade, starting from a question that got them laughed out of rooms by Nobel laureates: could science collectively cure, prevent, and manage all disease by the end of the century? What those scientists finally told them was revealing — the real obstacles aren't funding gaps, they're structural: science happens in silos, information gets locked up after publication, and tools built by one postdoc disappear when they graduate. Biohub's original design was to fix exactly that by embedding engineers alongside scientists and building shared, long-term tooling across universities.
 
-The biggest shift since their last episode: coding agents now reliably work at longer time horizons, and engineers inside AI companies have shifted from individual contributors to "managers of agents" — context-switching between multiple parallel agent threads rather than writing one thing at a time. Ari noted this creates a new bottleneck: review. "We now have big bottlenecks on reviews and we don't want to go fully to 'my agent will review your agent's output.'"
+That infrastructure bet has now evolved into something far more ambitious. The new $500M Virtual Biology Initiative pairs frontier AI research directly with frontier wet-lab biology in a single integrated effort. Priscilla explained the key inflection point: when large language models proved they could extract meaning from massive unstructured datasets, the team realized biology could undergo the same transformation — shifting from a "discovery-based science" to an "engineering-based science" where cellular behavior could be systematically understood and eventually designed.
 
-On open-weight models, both guests have turned bearish. Meta appears to be pulling back from open-source strategy. Chinese labs are increasingly keeping high-performing models proprietary behind APIs. The economic incentives simply don't support open release once you've achieved credibility — and the panel expects peak open-source model count is now behind us.
+Alex Rives, who previously co-founded Evolutionary Scale (an AI protein modeling company), joined Biohub because he saw it as the right place to build at the intersection: frontier AI and frontier biology put into a feedback loop, where models learn from biology experiments, and biology experiments are designed by what the models reveal. The approach is deliberately hierarchical — start by modeling proteins (they've already predicted structures for over 1.1 billion proteins), then cells, then full biological systems — because you can't model cellular behavior without first understanding protein interactions.
 
-The most provocative prediction came from Ari: "There's a very reasonable chance that we see probably Anthropic, but it could be OpenAI, suspend API access for some period of time or otherwise heavily limit API access for a brief period — purely because of compute constraints." In a compute-starved world, labs will prefer their own products over third-party API usage, and the appetite for selling tokens to app developers may give way to protecting first-party inference capacity.
+A defining strategic difference from most biotech: all data, tools, and models are open-source by design. Earlier Biohub tool CellxGene — built to help scientists annotate single-cell RNA data — grew into a massive community-contributed corpus that now powers transcriptomic models the team had nothing to do with creating. That compounding, community flywheel is the template for everything they're building now.
 
-The trio also discussed Fable's release and Anthropic's controversial restrictions on AI development use cases, which Rob and Ari called a "gift to OpenAI" — as prominent AI developers are likely to shift to Codex. Rob remains bullish on Google's structural advantages (full-stack compute, talent depth, distribution via Android and iOS) despite falling behind on coding. On XAI and the potential Cursor acquisition, Ari suggested the main motivation is obtaining coding traces to improve Grok's coding ability. Rob closed with a three-year prediction: Anthropic will emerge as one of the most important life sciences companies in the world, with Dario Amodei's background in biology pointing toward that as their next major bet after coding.
+Direct quote: "We wanna understand how biology works. I wanna understand the genetics of this person. I wanna understand the risks they have to different illnesses. My goal is to be able to treat the individual as an individual, understand the mechanisms, and be able to intervene." — Priscilla Chan
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Anthropic Engineering — "An update on recent Claude Code quality reports"
-https://www.anthropic.com/engineering/april-23-postmortem
-
-Anthropic published a detailed postmortem tracing months of user reports about Claude Code degradation to three separate issues: (1) the default reasoning effort was quietly switched from high to medium to reduce latency — a wrong tradeoff that was reverted after user backlash; (2) a caching optimization bug caused Claude to progressively lose memory of its own reasoning across a session, making it seem forgetful and burning through usage limits; (3) a system prompt change to limit verbosity reduced coding quality and was reverted. All three issues are resolved as of April 20. As part of the investigation, the team found that Opus 4.7 (but not Opus 4.6) could catch the caching bug when given full repo context for code review — a finding that informed improvements to their internal Code Review tooling. Going forward, Anthropic is adding tighter eval gates on every system prompt change and resetting usage limits for all subscribers.
-
-Anthropic Engineering — "Scaling Managed Agents: Decoupling the brain from the hands"
-https://www.anthropic.com/engineering/managed-agents
-
-A deep technical post explaining how Anthropic redesigned the architecture of Managed Agents by separating the "brain" (Claude and its harness) from the "hands" (sandboxes and tools). The original single-container design created fragile "pets" — losing a container meant losing the session. The new design virtualizes session, harness, and sandbox as independent interfaces: the harness calls the container like any other tool, the session log lives outside the harness so a crashed harness can be rebooted from the last event, and credentials are kept in a vault the sandbox never touches directly. The payoff was substantial: p50 time-to-first-token dropped roughly 60% and p95 dropped over 90%.
-
-Claude Blog — "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels"
-https://claude.com/blog/claude-managed-agents-updates
-
-Anthropic announced two new capabilities for Managed Agents now in beta: self-hosted sandboxes and MCP tunnels. Self-hosted sandboxes let enterprises keep agent tool execution inside their own infrastructure (or with managed providers like Cloudflare, Daytona, Modal, or Vercel) while the orchestration layer stays on Anthropic's side — meaning sensitive files, packages, and services never leave the enterprise perimeter. MCP tunnels let agents reach private MCP servers (internal databases, private APIs, knowledge bases) through a single outbound connection from a lightweight gateway, with no inbound firewall rules or public endpoints required. Both features are aimed at enterprise teams that need Managed Agents with full data control.
+https://www.youtube.com/@NoPriorsPodcast
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
