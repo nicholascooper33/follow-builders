@@ -1,93 +1,81 @@
-AI Builders Digest — 2026-06-14
+AI Builders Digest — 2026-06-15
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Aaron Levie — CEO, Box
-Two must-reads today from Aaron on AI regulation and infrastructure strategy.
-
-On the Fable export control saga: Aaron argues this is "actually net positive to regulation discourse" — a useful preview of what AI governance looks like when it targets the model layer rather than specific applications. The problem is that any government review process involves months of subjective debate over what a model is capable of, and blocking frontier intelligence today, had the same framework existed three years ago, would have left us stuck at GPT-4. His conclusion: regulate the applied use of AI (fraud, biowarfare, cyber attacks), not the model itself.
+Aaron Levie — CEO at Box
+The Fable export control situation is dominating the builder conversation, and Levie has the most substantive take. He argues the episode is a preview of what AI regulation at the model layer would look like at scale: the government would have sole discretion over each release, debating capabilities in a subjective, months-long process that would create a backlog and slow progress dramatically. His conclusion: regulate the *applied use* of AI, not the model itself — because the same capability that enables a cyber attack also enables cyber defense, and restricting it before deployment punishes both.
 https://x.com/levie/status/2065842361834651996
 
-On model routing becoming a strategic moat: Aaron lays out three reasons the layer that routes between AI models will grow dramatically in value — cost optimization (frontier models for planning, cheaper ones for bulk work), capability maximization (different models excel at different tasks), and risk mitigation (geopolitical or regulatory disruption to any single provider). He predicts this routing flexibility will become a core competitive advantage for applied AI companies.
+On a related thread, Levie also defends Amazon and the researchers involved: "It's quite standard to try and jailbreak AI models, and by definition they would share that research with the government — that's the whole point." He doesn't think this was a deliberate move against Anthropic.
+https://x.com/levie/status/2065964446489710939
+
+Levie also dropped a high-signal thread on why the AI model-routing layer is becoming strategically important: cost optimization (use frontier models only where needed), capability maximization (different models still excel at different tasks), and risk mitigation (regulatory flexibility across providers). He predicts routing will become a major competitive advantage for applied AI companies.
 https://x.com/levie/status/2065989559905812973
 
 ---
 
-Garry Tan — President & CEO, YCombinator
-A sharp observation on navigating the AI moment: "In AI most people are still trying to use old maps on a new territory. Throw the maps away. It's time to draw new ones. The only way you can do it is walking the land." He also flagged that most people form opinions about AI models through social signifiers — hype, reputation, vibes — rather than actually using them. That gap matters for how the industry communicates value.
-https://x.com/garrytan/status/2065877443874038203
-
----
-
-Madhu Guru — Former Product Leader, Google Gemini, Veo & Nano Banana
-A grounded, empathetic take on what it actually costs to ship a frontier model. Madhu explains you're making decisions about a black box with effectively infinite use cases and infinite failure modes. Labs build extensive evals, red-team relentlessly, and iterate across candidate checkpoints — yet early-access partners still uncover behaviors nobody anticipated. As models become smarter across the industry, that decision only gets harder, for both labs and regulators alike.
+Madhu Guru — Former Product Lead at Google (Gemini, Veo, Nano)
+Drawing on experience inside frontier model launch reviews, Guru explains why shipping an LLM is fundamentally unlike shipping traditional software: you're making a judgment call about a black box with effectively infinite use cases and failure modes. Labs build evals, red-team, and iterate — then early-access partners still uncover unexpected behaviors. "You can never be 100% certain you've understood a frontier model. You focus on reducing the uncertainty enough to launch." He notes this decision will only get harder as models become more capable — for both labs and regulators.
 https://x.com/realmadhuguru/status/2065911676000752122
 
 ---
 
-Peter Steinberger — AI builder (OpenClaw / PSPDFKit)
-The agentic AI moment in miniature: Peter got a PayPal verification text and thought he'd been hacked — turns out it was Codex autonomously signing up for a web service it needed to complete a task. A funny, real-world illustration of just how much autonomous action coding agents are taking without explicit per-step approval.
-https://x.com/steipete/status/2065997212015067508
-
----
-
-Dan Shipper — CEO, Every
-The Fable export ban has already shifted Dan's own daily tool usage: before the ban, he was primarily on the Claude app; after, he's on Codex. A small personal data point, but a telling signal of how quickly developer loyalty shifts when trust in a model's availability is disrupted.
-https://x.com/danshipper/status/2065856703397278060
-
----
-
-Swyx — AI Engineering, Latent Space & Cognition
-Last call for the annual AI Engineering Survey — entries close this weekend, with prizes from Vercel and Notion. The real highlight: they used Devin AI to analyze the registered attendee list and auto-generate a live chart visualizing the community gathering at the AI Engineering conference in two weeks. Swyx called it "the single best data driven storytelling I've ever seen" about who shows up to AI Eng.
-https://x.com/swyx/status/2065909887025168887
-
----
-
-Thibault Sottiaux — Codex & ChatGPT, OpenAI
-Posted a deceptively simple opener — "Hi, I'm Tibo and I just discovered Codex. AMA" — that immediately drew 1,442 likes and 521 replies. The engagement reflects the enormous curiosity right now about what it's like to work on Codex from the inside, and what the team actually thinks about where it's headed.
+Thibault Sottiaux — Codex & ChatGPT at OpenAI
+Posted a playful AMA: "Hi, I'm Tibo and I just discovered Codex." The tweet's obvious self-aware humor landed — 1,400+ likes and 520+ replies, making it one of the most engaging posts in this cycle. A reminder that personality and wit still cut through even in a technical community.
 https://x.com/thsottiaux/status/2066022651760721931
 
 ---
 
-Amjad Masad — CEO, Replit
-A cryptic but high-signal post in the wake of the Fable/export control news cycle: "Feels like we're getting psyoped. The end-game here is something bigger." The tweet hit 2,292 likes and 104 retweets — suggesting a lot of builders share the suspicion that the current regulatory moves are about more than the stated rationale.
-https://x.com/amasad/status/2065838585358745653
+Peter Steinberger — OpenClaw & OpenAI
+The most relatable agent story of the week: "Got a PayPal verification text and thought I'd been hacked, but it was just Codex signing up for a web service it needed." Over 1,300 likes and 70 replies — it captures something real about what autonomous AI agents actually feel like when you let them run.
+https://x.com/steipete/status/2065997212015067508
 
 ---
 
-Nikunj Kothari — Partner, FPV Ventures
-A signal-to-noise warning for founders: paid partnerships and boosted views on X have become a negative signal in VC group chats. Nikunj is hoping the same scrutiny arrives for inflated ARR claims, but expects that'll take another cycle. The underlying message — authenticity and real traction outperform manufactured visibility now more than ever.
+Garry Tan — President & CEO at Y Combinator
+A clean one-liner worth bookmarking: "In AI most people are still trying to use old maps on a new territory. Throw the maps away. It's time to draw new ones. The only way you can do it is walking the land." Over 1,100 likes and 148 replies — it resonates because the instinct to apply prior-era frameworks to AI is still the default for most organizations.
+https://x.com/garrytan/status/2065877443874038203
+
+---
+
+Swyx — AI Engineer & Host of Latent Space
+Last call for the annual AI Engineering Survey. The highlight: Swyx used Devin AI to analyze the registered attendee list and produce a live data visualization of the conference community — calling it "the single best data-driven storytelling I've ever seen." Worth filling out before the weekend deadline if you're in the AI engineering community.
+https://x.com/swyx/status/2065909887025168887
+
+---
+
+Nikunj Kothari — Partner at FPV Ventures
+A heads-up for founders: paid X partnerships and artificially boosted "views" are now a negative signal in VC group chats. Kothari expects the same skepticism will eventually reach inflated ARR claims, but that may take another cycle to shake out.
 https://x.com/nikunj/status/2065889759906644146
 
 ---
 
-Zara Zhang — Builder
-Shared an essay on taste and how to cultivate it — arguing that taste isn't merely personal preference, but requires genuine mastery and accumulated experience. Worth a read for anyone thinking about product quality standards in an era when AI can generate infinite surface-level polish.
-https://x.com/zarazhangrui/status/2066036778713362747
+Nan Yu — Head of Product at Linear
+Filed under things that resonate: "Imagine a piece of software so powerful it completely disables the operations of tech companies, freezing progress and rendering them worthless. Such damaging capabilities must be controlled and stopped. Import restrictions on Jira. Now."
+https://x.com/thenanyu/status/2065953400395555255
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 No Priors — Biohub: The Future of Biology is Open-Source
-with Mark Zuckerberg, Priscilla Chan & Alex Rives (Head of Science, Biohub)
-Published: June 10, 2026
+With Mark Zuckerberg, Priscilla Chan, and Alex Rives, Head of Science at Biohub
 
-Takeaway: Chan Zuckerberg Initiative is betting $500M that the bottleneck to curing disease is data and tooling — not funding or intent — and that open-source AI is the fastest path to breaking it.
+Takeaway: Zuckerberg and Chan are betting $500M that frontier AI and frontier biology need to be built together — and that open-source tooling is the fastest path to curing disease.
 
-Mark Zuckerberg and Priscilla Chan have been funding Biohub for about a decade, starting from a question that got them laughed out of rooms by Nobel laureates: could science collectively cure, prevent, and manage all disease by the end of the century? What those scientists finally told them was revealing — the real obstacles aren't funding gaps, they're structural: science happens in silos, information gets locked up after publication, and tools built by one postdoc disappear when they graduate. Biohub's original design was to fix exactly that by embedding engineers alongside scientists and building shared, long-term tooling across universities.
+The episode traces the decade-long arc of the Chan Zuckerberg Initiative's science work, from early single-cell sequencing grants to the current Virtual Biology Initiative. The core thesis: biology has the same structural problems that open-source software solved for engineering — siloed knowledge, tools that live on one postdoc's laptop and disappear when they graduate, and no shared infrastructure for the field to build on. Biohub's answer has been long-term tool development, bringing engineers and scientists together across universities.
 
-That infrastructure bet has now evolved into something far more ambitious. The new $500M Virtual Biology Initiative pairs frontier AI research directly with frontier wet-lab biology in a single integrated effort. Priscilla explained the key inflection point: when large language models proved they could extract meaning from massive unstructured datasets, the team realized biology could undergo the same transformation — shifting from a "discovery-based science" to an "engineering-based science" where cellular behavior could be systematically understood and eventually designed.
+What's changed is the AI piece. Priscilla Chan describes the moment large language models arrived as the unlock they'd been waiting for: "What if we could actually understand how biology worked? Move it from a discovery-based science to an engineering-based science where we could systematically understand how living cells worked and be able to understand why things go wrong."
 
-Alex Rives, who previously co-founded Evolutionary Scale (an AI protein modeling company), joined Biohub because he saw it as the right place to build at the intersection: frontier AI and frontier biology put into a feedback loop, where models learn from biology experiments, and biology experiments are designed by what the models reveal. The approach is deliberately hierarchical — start by modeling proteins (they've already predicted structures for over 1.1 billion proteins), then cells, then full biological systems — because you can't model cellular behavior without first understanding protein interactions.
+Alex Rives — who left Evolutionary Scale (where he'd assembled a team and raised venture funding for biological foundation models) to lead science at Biohub — explains the appeal: "To build that next institution for the next era, you would really need to have frontier artificial intelligence. You would have to have frontier biology. You would need to start to put those things in feedback and really have models that are learning from the biology."
 
-A defining strategic difference from most biotech: all data, tools, and models are open-source by design. Earlier Biohub tool CellxGene — built to help scientists annotate single-cell RNA data — grew into a massive community-contributed corpus that now powers transcriptomic models the team had nothing to do with creating. That compounding, community flywheel is the template for everything they're building now.
+The team has already folded over 1.1 billion proteins and predicted their structures. The next horizon is cell-level and whole-system modeling — creating datasets that don't yet exist by building new imaging, measurement, and cellular engineering tools across the San Francisco, New York, and Chicago Biohub locations. Unlike language models trained on internet text, biology models need novel scientific data generation, not just curation.
 
-Direct quote: "We wanna understand how biology works. I wanna understand the genetics of this person. I wanna understand the risks they have to different illnesses. My goal is to be able to treat the individual as an individual, understand the mechanisms, and be able to intervene." — Priscilla Chan
+A key quote from Zuckerberg: "We'll have a bigger impact by getting tools in more scientists' hands quicker by doing it as open-source projects instead."
 
 https://www.youtube.com/@NoPriorsPodcast
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
