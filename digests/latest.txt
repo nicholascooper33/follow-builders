@@ -1,81 +1,98 @@
-AI Builders Digest — 2026-06-15
+AI Builders Digest — June 16, 2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Aaron Levie — CEO at Box
-The Fable export control situation is dominating the builder conversation, and Levie has the most substantive take. He argues the episode is a preview of what AI regulation at the model layer would look like at scale: the government would have sole discretion over each release, debating capabilities in a subjective, months-long process that would create a backlog and slow progress dramatically. His conclusion: regulate the *applied use* of AI, not the model itself — because the same capability that enables a cyber attack also enables cyber defense, and restricting it before deployment punishes both.
-https://x.com/levie/status/2065842361834651996
+Swyx — AI builder affiliated with Cognition, Temporal, and the Latent Space podcast
 
-On a related thread, Levie also defends Amazon and the researchers involved: "It's quite standard to try and jailbreak AI models, and by definition they would share that research with the government — that's the whole point." He doesn't think this was a deliberate move against Anthropic.
-https://x.com/levie/status/2065964446489710939
+Swyx shared early impressions of Anthropic's "ultracode" capability, calling it "scarily good at burning tokens" but noting it requires proper repo parallelization to get full value from its subagent fanout. His framing: subagents are best understood as "subroutines but intelligent" — once you see that most knowledge work is just yakshave after yakshave requiring judgment, dynamic workflows make sense well beyond coding tasks.
+https://x.com/swyx/status/2066415484149633329
 
-Levie also dropped a high-signal thread on why the AI model-routing layer is becoming strategically important: cost optimization (use frontier models only where needed), capability maximization (different models still excel at different tasks), and risk mitigation (regulatory flexibility across providers). He predicts routing will become a major competitive advantage for applied AI companies.
-https://x.com/levie/status/2065989559905812973
-
----
-
-Madhu Guru — Former Product Lead at Google (Gemini, Veo, Nano)
-Drawing on experience inside frontier model launch reviews, Guru explains why shipping an LLM is fundamentally unlike shipping traditional software: you're making a judgment call about a black box with effectively infinite use cases and failure modes. Labs build evals, red-team, and iterate — then early-access partners still uncover unexpected behaviors. "You can never be 100% certain you've understood a frontier model. You focus on reducing the uncertainty enough to launch." He notes this decision will only get harder as models become more capable — for both labs and regulators.
-https://x.com/realmadhuguru/status/2065911676000752122
+He also amplified Satya Nadella's essay on learning loops, quoting: "the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound. You can offload a task, or even a job, but you can never offload your learning."
+https://x.com/swyx/status/2066235625695850526
 
 ---
 
 Thibault Sottiaux — Codex & ChatGPT at OpenAI
-Posted a playful AMA: "Hi, I'm Tibo and I just discovered Codex." The tweet's obvious self-aware humor landed — 1,400+ likes and 520+ replies, making it one of the most engaging posts in this cycle. A reminder that personality and wit still cut through even in a technical community.
-https://x.com/thsottiaux/status/2066022651760721931
 
----
-
-Peter Steinberger — OpenClaw & OpenAI
-The most relatable agent story of the week: "Got a PayPal verification text and thought I'd been hacked, but it was just Codex signing up for a web service it needed." Over 1,300 likes and 70 replies — it captures something real about what autonomous AI agents actually feel like when you let them run.
-https://x.com/steipete/status/2065997212015067508
-
----
-
-Garry Tan — President & CEO at Y Combinator
-A clean one-liner worth bookmarking: "In AI most people are still trying to use old maps on a new territory. Throw the maps away. It's time to draw new ones. The only way you can do it is walking the land." Over 1,100 likes and 148 replies — it resonates because the instinct to apply prior-era frameworks to AI is still the default for most organizations.
-https://x.com/garrytan/status/2065877443874038203
-
----
-
-Swyx — AI Engineer & Host of Latent Space
-Last call for the annual AI Engineering Survey. The highlight: Swyx used Devin AI to analyze the registered attendee list and produce a live data visualization of the conference community — calling it "the single best data-driven storytelling I've ever seen." Worth filling out before the weekend deadline if you're in the AI engineering community.
-https://x.com/swyx/status/2065909887025168887
-
----
-
-Nikunj Kothari — Partner at FPV Ventures
-A heads-up for founders: paid X partnerships and artificially boosted "views" are now a negative signal in VC group chats. Kothari expects the same skepticism will eventually reach inflated ARR claims, but that may take another cycle to shake out.
-https://x.com/nikunj/status/2065889759906644146
+Sottiaux revealed that Codex can now see and set its own /goal — letting the agent define its own task from user intent rather than waiting to be told exactly what to do. He called this "a generalization of meta prompting" and noted that everything the Codex team builds, they build also as a tool for the agent itself.
+https://x.com/thsottiaux/status/2066270561081454989
 
 ---
 
 Nan Yu — Head of Product at Linear
-Filed under things that resonate: "Imagine a piece of software so powerful it completely disables the operations of tech companies, freezing progress and rendering them worthless. Such damaging capabilities must be controlled and stopped. Import restrictions on Jira. Now."
-https://x.com/thenanyu/status/2065953400395555255
+
+In a single sharp observation, Yu pushed back on the solo-vs-paired-coding debate: "Counterpoint: everyone pair programs now, with a robot."
+https://x.com/thenanyu/status/2066190061419282602
+
+---
+
+Amjad Masad — CEO of Replit
+
+Masad called Satya Nadella's recent essay "the most inspiring positive-sum vision for AI in the enterprise," amplifying its core thesis that the companies which build proprietary learning loops on top of AI — compounding human capital with token capital — will be the durable winners of this era.
+https://x.com/amasad/status/2066195933969412098
+
+---
+
+Guillermo Rauch — CEO of Vercel
+
+Rauch noted that mcp.run has crossed 700,000 skills — entirely organic and community-driven — calling it "the open⌥ai ecosystem."
+https://x.com/rauchg/status/2066299732277031042
+
+---
+
+Aaron Levie — CEO of Box
+
+Levie made two substantive arguments. On AI architecture: companies that encode their unique IP and institutional expertise into AI learning systems will have durable competitive advantage regardless of which foundation model wins. He stressed that "a company should be able to switch out a 'generalist' model without losing the 'company veteran' expertise built into their learning system."
+https://x.com/levie/status/2066237607244427761
+
+On AI sovereignty and open weights: the precedent of a model being pulled creates strong incentives for other countries to build sovereign AI, and open weights models (currently not led by US companies) will be the natural answer. His conclusion: "America should be considering all of these downstream implications as it decides how and where in the stack to be regulating AI. At the same time, we should be doing a ton more OSS innovation."
+https://x.com/levie/status/2066167615618466060
+
+---
+
+Garry Tan — President & CEO of YCombinator
+
+Tan made a generational prediction: the next wave of world-changers will be those most adept at making "long-running multi-stage multi-team agent tasks work extremely well, and at high volume and across every part of their personal and work lives."
+https://x.com/garrytan/status/2066269412391637050
+
+He also framed open source as a business continuity strategy, not just a philosophy: "Open source is the escape hatch for businesses to be able to continue to control their own destiny long term."
+https://x.com/garrytan/status/2066307697574862905
+
+---
+
+Zara Zhang — Builder, Harvard '17
+
+Zhang shared a two-part philosophy on building AI skills. First: "You don't make a good skill by writing a skill. You make it by doing the thing, fixing it 20 times, then telling the AI to bottle up everything you just did." The follow-up distilled it further: "You make a skill by ending with one, not starting with one."
+https://x.com/zarazhangrui/status/2066388749244854771
+https://x.com/zarazhangrui/status/2066394505037926426
+
+---
+
+Dan Shipper — CEO of Every
+
+Shipper announced "FREE FABLE" — celebrating free access to the Fable AI model.
+https://x.com/danshipper/status/2066217865943093514
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors — Biohub: The Future of Biology is Open-Source
-With Mark Zuckerberg, Priscilla Chan, and Alex Rives, Head of Science at Biohub
+Training Data: "LIVE: Jensen Huang on Building the Dynamo of the Intelligence Age"
 
-Takeaway: Zuckerberg and Chan are betting $500M that frontier AI and frontier biology need to be built together — and that open-source tooling is the fastest path to curing disease.
+The core takeaway: AI has crossed from entertainment to economic value creation, and the infrastructure buildout to support it is the largest in human history — making now the best time in generations to invest across all five layers of the AI stack.
 
-The episode traces the decade-long arc of the Chan Zuckerberg Initiative's science work, from early single-cell sequencing grants to the current Virtual Biology Initiative. The core thesis: biology has the same structural problems that open-source software solved for engineering — siloed knowledge, tools that live on one postdoc's laptop and disappear when they graduate, and no shared infrastructure for the field to build on. Biohub's answer has been long-term tool development, bringing engineers and scientists together across universities.
+Jensen Huang framed the shift from retrieval-based computing to generative computing as a once-in-a-century architectural change, comparable to electrification and the internet. The old data center just stored and retrieved files; the new AI factory continuously generates original intelligence from context. He described NVIDIA's role using a vivid analogy: "The Dynamo, invented 300 years ago, takes atoms in, electrons out. We take electrons in and what comes out are numbers — tokens — and those tokens, depending on how you combine them, turn into language, math, proteins, robotics commands, or any form of structured intelligence."
 
-What's changed is the AI piece. Priscilla Chan describes the moment large language models arrived as the unlock they'd been waiting for: "What if we could actually understand how biology worked? Move it from a discovery-based science to an engineering-based science where we could systematically understand how living cells worked and be able to understand why things go wrong."
+On the five-layer investment framework: (1) energy, (2) chips and networking, (3) infrastructure — land, power, data center operations, (4) foundation models, and (5) application startups. Huang noted that $1 trillion is going into this stack this year alone, but estimated the steady-state AI economy will reach roughly $20 trillion annually.
 
-Alex Rives — who left Evolutionary Scale (where he'd assembled a team and raised venture funding for biological foundation models) to lead science at Biohub — explains the appeal: "To build that next institution for the next era, you would really need to have frontier artificial intelligence. You would have to have frontier biology. You would need to start to put those things in feedback and really have models that are learning from the biology."
+On jobs, Huang was direct and optimistic: "You may or may not lose a job to an AI. But you will absolutely lose a job to someone who uses AI." He walked through the radiology example — predicted to be eliminated by computer vision 12 years ago, yet today radiologists are more numerous and more productive because AI made the field more profitable and expanded throughput. His thesis: AI eliminates tasks, not purposes. The plumber becomes a designer; the furniture salesperson becomes an interior decorator.
 
-The team has already folded over 1.1 billion proteins and predicted their structures. The next horizon is cell-level and whole-system modeling — creating datasets that don't yet exist by building new imaging, measurement, and cellular engineering tools across the San Francisco, New York, and Chicago Biohub locations. Unlike language models trained on internet text, biology models need novel scientific data generation, not just curation.
+On AI risk framing: "Those articulations — singularity, 20% chance of end of humanity — is just nonsense. They know how it works. Because every year it gets better. If you don't know how something works, how do you make it better?"
 
-A key quote from Zuckerberg: "We'll have a bigger impact by getting tools in more scientists' hands quicker by doing it as open-source projects instead."
-
-https://www.youtube.com/@NoPriorsPodcast
+YouTube: https://www.youtube.com/watch?v=2UpQbeAZuqA
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
