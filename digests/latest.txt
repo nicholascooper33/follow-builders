@@ -1,98 +1,100 @@
-AI Builders Digest — June 16, 2026
+AI Builders Digest — 2026-06-17
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — AI builder affiliated with Cognition, Temporal, and the Latent Space podcast
+Josh Woodward — VP at Google Labs, Gemini App, and Google AI Studio
 
-Swyx shared early impressions of Anthropic's "ultracode" capability, calling it "scarily good at burning tokens" but noting it requires proper repo parallelization to get full value from its subagent fanout. His framing: subagents are best understood as "subroutines but intelligent" — once you see that most knowledge work is just yakshave after yakshave requiring judgment, dynamic workflows make sense well beyond coding tasks.
-https://x.com/swyx/status/2066415484149633329
-
-He also amplified Satya Nadella's essay on learning loops, quoting: "the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound. You can offload a task, or even a job, but you can never offload your learning."
-https://x.com/swyx/status/2066235625695850526
-
----
-
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-
-Sottiaux revealed that Codex can now see and set its own /goal — letting the agent define its own task from user intent rather than waiting to be told exactly what to do. He called this "a generalization of meta prompting" and noted that everything the Codex team builds, they build also as a tool for the agent itself.
-https://x.com/thsottiaux/status/2066270561081454989
-
----
-
-Nan Yu — Head of Product at Linear
-
-In a single sharp observation, Yu pushed back on the solo-vs-paired-coding debate: "Counterpoint: everyone pair programs now, with a robot."
-https://x.com/thenanyu/status/2066190061419282602
+Gemini's mic experience on Android and iOS just got a major upgrade: the app now supports 70+ languages, lets users mix languages freely, and no longer requires switching language settings manually. Josh says this is "HUGE for non-English speakers." A web rollout is expected within the next week, and Google is also opening a limited Gemini Trusted Tester program for power users who want early access to unreleased features.
+https://x.com/joshwoodward/status/2066673011554435450
+https://x.com/joshwoodward/status/2066664862671921259
 
 ---
 
 Amjad Masad — CEO of Replit
 
-Masad called Satya Nadella's recent essay "the most inspiring positive-sum vision for AI in the enterprise," amplifying its core thesis that the companies which build proprietary learning loops on top of AI — compounding human capital with token capital — will be the durable winners of this era.
-https://x.com/amasad/status/2066195933969412098
+Amjad is bullish on Replit's domain-specific agents, highlighting two in particular: a growth agent that surfaces SEO issues and a security agent that flags potential vulnerabilities. His favorite workflow — "select all, fix with Agent" — hints at a future where AI agents handle entire categories of operational concerns with a single command.
+https://x.com/amasad/status/2066683949129330817
 
 ---
 
 Guillermo Rauch — CEO of Vercel
 
-Rauch noted that mcp.run has crossed 700,000 skills — entirely organic and community-driven — calling it "the open⌥ai ecosystem."
-https://x.com/rauchg/status/2066299732277031042
+Guillermo shared a trio of interconnected announcements. First, v0 now ships with a curated set of default skills — with the goal of giving every user the equivalent of a top Vercel product engineer on every prompt — and teams can add private skill sets or pull from the community. Second, he made the case that 2026 is the year serverless and servers finally converge: sandboxes, functions, and builds are all expressions of the same underlying microVM compute infrastructure. Third, Vercel is shipping longer function runtimes powered by their Fluid compute platform, the result of a multi-year infrastructure investment.
+https://x.com/rauchg/status/2066567117562868009
+https://x.com/rauchg/status/2066556235961237826
+https://x.com/rauchg/status/2066553521978097921
 
 ---
 
 Aaron Levie — CEO of Box
 
-Levie made two substantive arguments. On AI architecture: companies that encode their unique IP and institutional expertise into AI learning systems will have durable competitive advantage regardless of which foundation model wins. He stressed that "a company should be able to switch out a 'generalist' model without losing the 'company veteran' expertise built into their learning system."
-https://x.com/levie/status/2066237607244427761
-
-On AI sovereignty and open weights: the precedent of a model being pulled creates strong incentives for other countries to build sovereign AI, and open weights models (currently not led by US companies) will be the natural answer. His conclusion: "America should be considering all of these downstream implications as it decides how and where in the stack to be regulating AI. At the same time, we should be doing a ton more OSS innovation."
-https://x.com/levie/status/2066167615618466060
+Aaron is thinking about AI's future through the lens of customizability rather than raw capability: "The companies that win won't necessarily be the ones with the biggest models." He also pushed back on calls for an "FDA for AI," arguing that the near-infinite permutations of AI model capabilities make purely objective, universal metrics nearly impossible — and pointing to what such a regulatory regime would actually look like in practice.
+https://x.com/levie/status/2066735879213994434
+https://x.com/levie/status/2066554018953146689
 
 ---
 
-Garry Tan — President & CEO of YCombinator
+Zara Zhang — Builder, YouTuber, Harvard '17
 
-Tan made a generational prediction: the next wave of world-changers will be those most adept at making "long-running multi-stage multi-team agent tasks work extremely well, and at high volume and across every part of their personal and work lives."
-https://x.com/garrytan/status/2066269412391637050
-
-He also framed open source as a business continuity strategy, not just a philosophy: "Open source is the escape hatch for businesses to be able to continue to control their own destiny long term."
-https://x.com/garrytan/status/2066307697574862905
+Zara hit 70,000 followers on X and shared how she grew while staying completely authentic — learning in public and building in public. A milestone worth noting for anyone trying to build an audience in the AI builder community.
+https://x.com/zarazhangrui/status/2066579717285957692
 
 ---
 
-Zara Zhang — Builder, Harvard '17
+Peter Steinberger — Co-founder of OpenClaw, working with OpenAI
 
-Zhang shared a two-part philosophy on building AI skills. First: "You don't make a good skill by writing a skill. You make it by doing the thing, fixing it 20 times, then telling the AI to bottle up everything you just did." The follow-up distilled it further: "You make a skill by ending with one, not starting with one."
-https://x.com/zarazhangrui/status/2066388749244854771
-https://x.com/zarazhangrui/status/2066394505037926426
+Peter's team shipped Clawsweeper, an automated agent that reviews new GitHub issues on their open-source projects and, if the issue fits the VISION.md file, creates and auto-reviews a pull request — no human required. He also flagged a real-world supply chain concern: even buying a new Mac Studio for San Francisco is getting harder as manufacturing knowledge erodes.
+https://x.com/steipete/status/2066457262571360396
+https://x.com/steipete/status/2066471737068232835
 
 ---
 
-Dan Shipper — CEO of Every
+Peter Yang — Creator of practical AI tutorials for 150K+ readers
 
-Shipper announced "FREE FABLE" — celebrating free access to the Fable AI model.
-https://x.com/danshipper/status/2066217865943093514
+Peter is impressed with where agentic AI tools have arrived. He praised Cursor AI for planning a Michelin-quality dinner, and called out Codex's browser-use capability as so good it makes direct APIs feel almost unnecessary.
+https://x.com/petergyang/status/2066756347438469602
+https://x.com/petergyang/status/2066753125197967653
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Training Data: "LIVE: Jensen Huang on Building the Dynamo of the Intelligence Age"
+OpenAI's Dan Roberts: Why AI Can Now Make Discoveries — MAD Podcast with Matt Turck
+https://www.youtube.com/watch?v=oWOz2htozfI
 
-The core takeaway: AI has crossed from entertainment to economic value creation, and the infrastructure buildout to support it is the largest in human history — making now the best time in generations to invest across all five layers of the AI stack.
+AI is no longer just executing tasks we hand it — it is now autonomously making deep scientific discoveries, and this episode is the best explanation yet of how that became possible.
 
-Jensen Huang framed the shift from retrieval-based computing to generative computing as a once-in-a-century architectural change, comparable to electrification and the internet. The old data center just stored and retrieved files; the new AI factory continuously generates original intelligence from context. He described NVIDIA's role using a vivid analogy: "The Dynamo, invented 300 years ago, takes atoms in, electrons out. We take electrons in and what comes out are numbers — tokens — and those tokens, depending on how you combine them, turn into language, math, proteins, robotics commands, or any form of structured intelligence."
+Dan Roberts leads the Foundations of Reinforcement Learning team at OpenAI, and he comes to the role from an unusual path: a PhD in theoretical physics from MIT, work on quantum gravity and black holes, and a postdoc at the Institute for Advanced Study — all before pivoting to AI research around 2016 when AlphaGo caught his attention. That cross-disciplinary background shapes how he thinks about RL: not just as an engineering problem, but as something that can be studied and understood the same way physicists study the universe.
 
-On the five-layer investment framework: (1) energy, (2) chips and networking, (3) infrastructure — land, power, data center operations, (4) foundation models, and (5) application startups. Huang noted that $1 trillion is going into this stack this year alone, but estimated the steady-state AI economy will reach roughly $20 trillion annually.
+The episode opens with recent news that OpenAI, DeepMind, and Anthropic cracked some of the most famous long-unsolved problems in mathematics — the Erdős problems — a moment host Matt Turck describes as a stunning breakthrough. Dan unpacks what made this possible: reinforcement learning, which he calls the most important paradigm in AI right now. He explains how RL differs from pretraining, what scaling laws look like for RL versus pretraining, and what this kind of training actually teaches — and doesn't teach — a model.
 
-On jobs, Huang was direct and optimistic: "You may or may not lose a job to an AI. But you will absolutely lose a job to someone who uses AI." He walked through the radiology example — predicted to be eliminated by computer vision 12 years ago, yet today radiologists are more numerous and more productive because AI made the field more profitable and expanded throughput. His thesis: AI eliminates tasks, not purposes. The plumber becomes a designer; the furniture salesperson becomes an interior decorator.
+A key thread through the conversation is the value of contrarian conviction. Dan notes that one of ChatGPT's breakthroughs required the team to "assume it was false" — to go against the grain with strong conviction and follow a long calculation path to its conclusion. That same disposition, he argues, is what allows reasoning models to work through hard problems rather than defaulting to the most likely next token.
 
-On AI risk framing: "Those articulations — singularity, 20% chance of end of humanity — is just nonsense. They know how it works. Because every year it gets better. If you don't know how something works, how do you make it better?"
+The closing note is the most forward-looking: "I feel really excited that we will get to really answer a lot of fundamental questions in the field of science that we care about with the aid — or the models being the driving force." Dan's framing is that we are moving from AI as a tool scientists use to AI as a co-discoverer, and that this transition is already underway.
 
-YouTube: https://www.youtube.com/watch?v=2UpQbeAZuqA
+If you want to understand why AI's leap into autonomous scientific discovery happened now, this is the episode to listen to.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+New in Claude Managed Agents: Dreaming, Outcomes, and Multiagent Orchestration — Anthropic
+https://claude.com/blog/new-in-claude-managed-agents
+
+Anthropic shipped three significant upgrades to Claude Managed Agents that collectively push toward agents capable of self-improvement, self-evaluation, and parallel execution.
+
+Dreaming is the headline feature: a scheduled process that reviews past agent sessions, extracts patterns, and curates memories so agents improve over time — without requiring a human to review every session. Teams can configure how much control they want, from fully automatic memory updates to human-in-the-loop review. Harvey (legal AI) saw ~6x completion rate improvement in tests using dreaming.
+
+Outcomes lets developers write a rubric for what success looks like. A separate grader evaluates agent output against that rubric in its own context window — isolated from the agent's reasoning — and sends the agent back for another pass if the bar isn't met. In Anthropic's internal benchmarks, outcomes improved task success by up to 10 points, with the largest gains on the hardest tasks. File generation also improved: +8.4% on docx, +10.1% on pptx.
+
+Multiagent orchestration allows a lead agent to break complex jobs into pieces and delegate each to specialist subagents with their own model, prompt, and tools — running in parallel on a shared filesystem. Netflix's platform team is using this to analyze logs from hundreds of builds simultaneously, surfacing only the patterns worth acting on. Spiral by Every uses a Haiku lead agent to delegate drafting to Opus subagents, with outcomes enforcing editorial quality on every draft before it's returned.
+
+---
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
