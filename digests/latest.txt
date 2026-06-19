@@ -1,82 +1,78 @@
-AI Builders Digest — 2026-06-18
+AI Builders Digest — 2026-06-19
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Josh Woodward — VP at Google Labs, Gemini, AI Studio
-Google's AI Futures Fund is officially expanding to Brazil through a new Gama Fund partnership with venture firm Monashees. An elite cohort of deep tech founders can now apply for up to $2M in co-investment, $350K in Google Cloud and Gemini credits, early access to DeepMind models, and direct co-development time with Google engineers at the new IPT Open campus hub. This marks a meaningful bet that world-changing AI companies will come from Latin America.
-https://x.com/joshwoodward/status/2067025851829330076
+Sam Altman | CEO, OpenAI
+Altman announced that Noam (widely understood to be Noam Shazeer, one of the most sought-after AI researchers) is joining OpenAI — someone he has "most wanted to work with since the very beginning." His follow-up quipped that Noams are apparently divinely gifted at AI. This is a significant talent acquisition signal.
+https://x.com/sama/status/2067427421083652131
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-OpenAI's Codex team had a bumpy few days: a "model at capacity" outage hit users across all plans, but the team resolved it and issued a full rate limit reset within 24 hours. Now Sottiaux is rolling out new Codex features across Europe while traveling in France — whether the timing was a coincidence or not is left as an exercise to the reader.
-https://x.com/thsottiaux/status/2067064381855187231
-https://x.com/thsottiaux/status/2066956441173323943
+Claude | Anthropic
+Anthropic rolled out Claude Design in beta for all paid plan users on web and desktop. The big unlock: Claude Design and Claude Code now work together in both directions — you can hand a design off to Claude Code to build, or start in the terminal and sync design projects with a single command. PDF export is also now available.
+https://x.com/claudeai/status/2067325893001826552
 
-Peter Yang — Practical AI tutorials for 150K+ readers
-Yang is publishing a new tutorial showing how to turn Codex or Claude Code into a personal AI advisor using a skill built from just four files. He also managed to save some of Fable's advice before access got restricted. Subscribe to get the tutorial tomorrow.
-https://x.com/petergyang/status/2067056979974160749
+Garry Tan | President & CEO, Y Combinator
+Tan estimated the productivity cost of the "Fable 5 ban" at roughly $12M per hour, based on 5M frontier AI-coding daily actives at a $90/hr fully-loaded cost, with 17.8% of work routed to Fable in 48 hours. He also made a sharper point: AI has given technical founders access to business thinking and business founders access to technical thinking — net result is more startups that can actually execute across both dimensions.
+https://x.com/garrytan/status/2067366749411176831
+https://x.com/garrytan/status/2067308407603048774
 
-Madhu Guru — Former Product Leader at Google Gemini, Veo, Nano
-Two sharp takes today. On the SpaceX-Cursor acquisition: "The real prize is the agentic harness that will become the core for automating all knowledge work at scale." He argues Cursor brings three hard-to-replicate things — a production-grade agentic harness (planning, context, memory, error recovery), full AI stack expertise from model to evals to application layer, and end-to-end product lifecycle discipline tuned to one job. Very few companies do even one of these well.
+Aaron Levie | CEO, Box
+Levie offered a pointed industry take: despite early criticism that the Applied AI layer would be "thin" on top of LLMs, the past couple months suggest otherwise. The value isn't commoditizing — it's compounding. Worth watching as a signal on where defensible moats are actually forming.
+https://x.com/levie/status/2067455756795039957
 
-On the bigger picture: over the last century, we've treated intellect as the defining human trait and under-invested in self-awareness, intuition, compassion, and kindness. The next few years will force us to rethink that.
-https://x.com/realmadhuguru/status/2066935654500671499
-https://x.com/realmadhuguru/status/2067090477434966396
+Thibault Sottiaux | Codex & ChatGPT, OpenAI
+Sottiaux reminded builders that the Codex App, CLI, and SDK work with any open source model — not just OpenAI's. This is an underappreciated flexibility point for teams that want Codex tooling without full OpenAI model lock-in.
+https://x.com/thsottiaux/status/2067181377028538431
 
-Guillermo Rauch — CEO at Vercel
-Vercel is shipping a significant infrastructure upgrade: sandbox lifetimes are now extended to 24 hours (up from the prior model), alongside the existing 30-minute function invocation support. This matters for longer-running agentic workloads that need persistent environments.
-https://x.com/rauchg/status/2067137678772937000
+Amjad Masad | CEO, Replit
+Masad surfaced a clean builder workflow pairing: "Design with Claude, Ship with Replit." It captures the emergent two-step pattern many vibe coders are landing on — use Claude for design/prototyping, Replit for deployment.
+https://x.com/amasad/status/2067363904183783833
 
-Aaron Levie — CEO at Box
-Levie posted two of the more analytical takes on the Cursor acquisition. First, on open vs. closed weights: the most consequential open question in AI right now is whether open weights models stay 3–6 months behind frontier, or fall years behind. The answer will reshape chip economics, inference deployment, sovereign AI, margin structures, and enterprise AI spend — essentially everything downstream.
+Guillermo Rauch | CEO, Vercel
+Rauch flagged that the Vercel AI SDK is "more relevant than ever" given the intense model competition landscape — pointing to GLM 5.2, a new open model, surpassing prior benchmarks. As model choice explodes, the abstraction layer for switching between them gains value.
+https://x.com/rauchg/status/2067242482190979186
 
-On Cursor specifically: "It was effectively the first mega success in the applied layer of AI." They proved out deep domain focus, smart model routing, when to use frontier vs. train your own, and GTM discipline for a competitive market. "This is really the first at-scale template for how to execute this playbook."
-https://x.com/levie/status/2067070918300664161
-https://x.com/levie/status/2066908002809221496
+Zara Zhang | Builder
+Two sharp takes from Zhang. First: don't use AI for writing until you've developed your own voice and taste — AI amplifies your existing sensibility; it can't substitute for never having developed one. Second: the real failure mode of vibe-coded personal apps isn't that they don't work, it's that you never open them. Most dead projects worked fine. The product-market fit problem applies to tools you build for yourself too.
+https://x.com/zarazhangrui/status/2067423674689638652
+https://x.com/zarazhangrui/status/2067313780724551853
 
-Ryo Lu — Design at Cursor
-On Cursor's new mobile app: the "crazy thing" is that designer rikcreation coded most of the real mobile product using Cursor. "Titles don't mean shit. You can just build." A neat self-referential point from a design lead at a coding tool company.
-https://x.com/ryolu_/status/2067124871226929526
+Nan Yu | Head of Product, Linear
+Yu pushed back on sloppy use of the word "taste" in builder discourse: taste isn't just aesthetic preference, just as design isn't just visual. Half the online conversations about taste are people talking past each other because of this conflation. A small but useful framing correction.
+https://x.com/thenanyu/status/2067327619897446721
 
-Zara Zhang — Builder
-Two tweets worth bookmarking. On product strategy: "Every other product right now is 'an AI agent that does everything in your work & life & integrates with everything.' Cool, that's just Claude/Codex. If you want me to use your thing instead, it needs an opinion & a soul. Build small & sharp, not big & generic. Doing everything means doing nothing. Speaking to everybody means speaking to nobody."
+Nikunj Kothari | Partner, FPV Ventures
+Kothari laid out why he opposes tranched VC rounds: they inflate the 409A for early employees who had nothing to do with the valuation games. His tell for spotting a tranche: if someone raises at under 10% dilution of the published valuation, it was almost certainly tranched. He also signaled a wave of debut emerging managers coming in the next 12 months — not household names yet, but ones to watch.
+https://x.com/nikunj/status/2067399657639285150
+https://x.com/nikunj/status/2067378464773292066
 
-On positioning yourself: "You don't have to chase the cool thing. Do whatever you're already doing so well that it becomes the cool thing. The cool thing is rarely cool when it starts. It becomes cool because someone went deep on something everyone else thought was too small."
-https://x.com/zarazhangrui/status/2066936706281206165
-https://x.com/zarazhangrui/status/2066994434953421226
-
-Nikunj Kothari — Partner at FPV Ventures
-Fresh from the Cursor Compile conference (custom mechanical keyboard swag included), Kothari posted a clean framework for the post-acquisition landscape: "Be in the judgement (data) path or the token path. Today's Cursor acquisition sets the path for more application companies." Congrats to his friends in the deal.
-https://x.com/nikunj/status/2066905445974102384
+Dan Shipper | CEO, Every
+Shipper announced Every's investment in Tacit (founded by ninklefitz), and resurfaced his 2023 piece "Against Explanations" — which argued AI might fundamentally change how science explains itself. He's pumped to see that vision accelerating.
+https://x.com/danshipper/status/2067386395283345808
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Simulating Humans at Scale: Simile's Joon Sung Park
-https://www.youtube.com/watch?v=lfhFmwcESRw
+GitHub's COO Explains Why AI Hasn't Replaced Developers
+AI & I by Every | Published 2026-06-17
 
-Takeaway: AI simulations of human behavior are already accurate enough to predict real-world responses 85% as well as people predict their own behavior — and that's creating a new category of applied AI that could replace traditional market research.
+Takeaway: GitHub COO Kyle Daigle reveals that 17 million pull requests were created by AI agents in March alone — and that GitHub is preparing for a wave of growth that shows no sign of plateauing.
 
-Joon Sung Park, founder and CEO of Simile, traces his path from a 2022 Stanford paper called Social Simulacra (simulating a subreddit with thousands of AI personas before anyone called them agents) to Smallville (25 generative agents living in a town, forming relationships, and spontaneously planning a Valentine's Day party) to a venture-backed company with CVS as a design partner.
+Mike Taylor (Every's head of tech consulting) sat down with Kyle Daigle at a developer conference for a wide-ranging conversation on the agent economy from GitHub's uniquely positioned vantage point. GitHub saw 1 billion commits in all of 2024; at current growth rates, they are on track for 14 billion this year. The 17M agent-created pull requests in March are "just the agent PRs" — on top of all human-created ones. Daigle pushes back on the "slop" narrative: the code volume is real and represents genuine developer leverage, not noise.
 
-The core insight: large language models have encoded a surprising amount of human microbehavior from the web and social data. But Park flags a real limitation that most labs aren't solving for — current models are optimized to be rational and technically precise, which makes them increasingly poor simulators of actual humans, who are irrational, subjective, and diverse. "You start to see divergence in model size going up and the performance in its ability to predict and simulate human behavior."
+On business model evolution, Daigle draws a parallel to GitHub's old private repo shift: just as individuals eventually deserved free private repos, the question now is what baseline level of agent usage every developer deserves by default. The answer will emerge from usage data, not top-down policy. He explicitly named Peter Steinberger's 150-simultaneous-agents workflow as the extreme end of what GitHub wants to enable — for those willing to pay for it.
 
-Simile's architecture targets that gap by modeling people's diversity rather than chasing superintelligent rationality. Their validation study simulated 1,000 people across the US population and hit 85% behavioral accuracy against self-reported responses — good enough, Park decided, to offer as a commercial platform.
+On open source maintainer burnout from the PR flood, GitHub is investing in agentic code review (which can now handle its own suggested fixes end-to-end) and giving maintainers more control over who can submit PRs at all — without mandating any single community standard.
 
-On the company formation: "Research is an amazing vehicle if you want to do breadth-first search... A company is a machine for depth-first search. You have a conviction on an area. You find a hill that you want to climb." The company's first serious enterprise customer, CVS, came through a paper the buyer read and a cousin who happened to know Park — a reminder that deep research published openly still generates extraordinary inbound.
+Perhaps the most vivid part of the conversation: Daigle's personal AI loop. He feeds everything he says and writes into a personal agent he calls Baxter (an OpenClaw instance), which reads his last seven days of emails and Slack messages and gives him a communication improvement report — not a summary of what he said, but patterns and metaphors he overuses. "Humans are way more willing to take critical feedback from robots than other humans," he noted, citing GitHub's old Hubot chatops days. His agent loop is primarily about self-improvement, not code.
 
-Direct quote: "I do see an opportunity today to really take the first crack at building the simulation. I would not have said that even five years ago, but that is a conviction that we have built up over the years as we're going deep into this research."
+On the $200-to-$2,000 cost spiral: the answer is model routing by task intent. Auto-routing a find-and-replace to a smaller model while reserving frontier models for hard problems is the lever — but developers won't do it manually. GitHub and Microsoft Foundry are building that router layer so the system can choose.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Direct quote: "The thing that I think seems to be true from the beginning to OpenClaw to now is this idea of personalization — or mine, or context, or fine tuning with context, or memory. All of these ideas seem to be a truth that's been there since ChatGPT came out or GitHub Copilot came out."
 
-Building intelligent apps for Apple platforms with Claude in the Foundation Models framework
-https://claude.com/blog/claude-for-foundation-models
-
-Anthropic is releasing a Swift package that lets Apple developers route requests from Apple's Foundation Models framework to Claude for workloads that need more than on-device models can handle. The integration works on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27. Apple's framework handles the easy local tasks (summarization, extraction, typed Swift outputs via guided generation in three lines of code); when a request calls for multi-step reasoning, code generation, web search, or data analysis, it hands off to Claude and streams results back into the same SwiftUI view. Because Apple's framework returns typed Swift values from @Generable annotations, Claude receives clean structured inputs rather than raw user text. The pattern unlocks a two-tier model for apps: fast, private, on-device for simple tasks — frontier reasoning from Claude when the question gets hard.
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
