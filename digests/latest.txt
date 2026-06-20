@@ -1,78 +1,86 @@
-AI Builders Digest — 2026-06-19
+AI Builders Digest — 2026-06-20
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman | CEO, OpenAI
-Altman announced that Noam (widely understood to be Noam Shazeer, one of the most sought-after AI researchers) is joining OpenAI — someone he has "most wanted to work with since the very beginning." His follow-up quipped that Noams are apparently divinely gifted at AI. This is a significant talent acquisition signal.
-https://x.com/sama/status/2067427421083652131
+Swyx — AI engineer, affiliated with Cognition, Temporal, AI Engineer, and Latent Space Pod
+Swyx dropped a notable market signal: "Anthropic is going to IPO at $2T." No commentary beyond the link, but the number speaks for itself.
+https://x.com/swyx/status/2068084391260426345
 
-Claude | Anthropic
-Anthropic rolled out Claude Design in beta for all paid plan users on web and desktop. The big unlock: Claude Design and Claude Code now work together in both directions — you can hand a design off to Claude Code to build, or start in the terminal and sync design projects with a single command. PDF export is also now available.
-https://x.com/claudeai/status/2067325893001826552
+Boris Cherny — Claude Code lead at Anthropic
+Boris shared a fascinating use case for Claude Code: researchers used it to help decipher Linear A, a 3,500-year-old written language from Crete that has never been decoded. He added a hopeful note: "Hope this holds up in peer review!" A great reminder that AI coding tools are reaching well beyond software.
+https://x.com/bcherny/status/2068064304503660962
 
-Garry Tan | President & CEO, Y Combinator
-Tan estimated the productivity cost of the "Fable 5 ban" at roughly $12M per hour, based on 5M frontier AI-coding daily actives at a $90/hr fully-loaded cost, with 17.8% of work routed to Fable in 48 hours. He also made a sharper point: AI has given technical founders access to business thinking and business founders access to technical thinking — net result is more startups that can actually execute across both dimensions.
-https://x.com/garrytan/status/2067366749411176831
-https://x.com/garrytan/status/2067308407603048774
+Thibault Sottiaux — Codex & ChatGPT at OpenAI
+Thibault announced remote/local handoff in Codex, letting work start in the cloud and land on the local machine seamlessly. His framing: "When you let the model be in the driver seat, you actually need less infrastructure." He also pointed followers to Dan Shipper as an S-tier source for Codex tips.
+https://x.com/thsottiaux/status/2068120572673077274
 
-Aaron Levie | CEO, Box
-Levie offered a pointed industry take: despite early criticism that the Applied AI layer would be "thin" on top of LLMs, the past couple months suggest otherwise. The value isn't commoditizing — it's compounding. Worth watching as a signal on where defensible moats are actually forming.
-https://x.com/levie/status/2067455756795039957
+Peter Yang — Practical AI newsletter and tutorials, 150K+ readers
+Peter declared that Codex has won him over from Claude Code. His reasons: GPT-5.5 quality, generous limits in fast mode, and — above all — Codex's browser and computer use capabilities, which he called "simply goated." A useful real-world benchmark from a high-volume AI user who tries everything.
+https://x.com/petergyang/status/2068175172960690266
 
-Thibault Sottiaux | Codex & ChatGPT, OpenAI
-Sottiaux reminded builders that the Codex App, CLI, and SDK work with any open source model — not just OpenAI's. This is an underappreciated flexibility point for teams that want Codex tooling without full OpenAI model lock-in.
-https://x.com/thsottiaux/status/2067181377028538431
+Amanda Askell — Philosopher and AI ethicist at Anthropic
+Amanda shared a personal thread about medical scans and information norms that lands with real AI-era relevance. She argued that the case against doing more scans — that incidental findings cause harm — misidentifies the problem: the issue isn't the scan, it's the response to it. If you find something with no symptoms, you could reasonably ignore it. She pushed back on the idea that norms are fixed, pointing out that we only rarely scanned before, so those norms will shift as scanning becomes routine. The implicit question for AI builders: as we surface more information, what do we do with it?
+https://x.com/AmandaAskell/status/2068162191740764622
 
-Amjad Masad | CEO, Replit
-Masad surfaced a clean builder workflow pairing: "Design with Claude, Ship with Replit." It captures the emergent two-step pattern many vibe coders are landing on — use Claude for design/prototyping, Replit for deployment.
-https://x.com/amasad/status/2067363904183783833
+Guillermo Rauch — CEO at Vercel
+Guillermo made a bold claim: "The next hot programming language is markdown." He described a minimal agentic architecture using just a markdown instructions file and a skills folder — deployable in one Vercel command. In a separate tweet he zoomed out further: agents are reviving healthy software habits — open APIs, documentation, tests, Unix CLIs, payment protocols — and called it "the original vision of the WWW coming to life before our eyes."
+https://x.com/rauchg/status/2068165988005380478
+https://x.com/rauchg/status/2067936390285807940
 
-Guillermo Rauch | CEO, Vercel
-Rauch flagged that the Vercel AI SDK is "more relevant than ever" given the intense model competition landscape — pointing to GLM 5.2, a new open model, surpassing prior benchmarks. As model choice explodes, the abstraction layer for switching between them gains value.
-https://x.com/rauchg/status/2067242482190979186
+Aaron Levie — CEO at Box
+Aaron identified the key variable in agent success: context. The agent needs to find what it needs to do its work, and the most important enabler is a shared working area that both agent and human can understand. He pointed to file systems as a natural interface for this — durable, readable, and auditable by both parties.
+https://x.com/levie/status/2068068247413694532
 
-Zara Zhang | Builder
-Two sharp takes from Zhang. First: don't use AI for writing until you've developed your own voice and taste — AI amplifies your existing sensibility; it can't substitute for never having developed one. Second: the real failure mode of vibe-coded personal apps isn't that they don't work, it's that you never open them. Most dead projects worked fine. The product-market fit problem applies to tools you build for yourself too.
-https://x.com/zarazhangrui/status/2067423674689638652
-https://x.com/zarazhangrui/status/2067313780724551853
+Garry Tan — President & CEO at Y Combinator
+Garry offered a board meeting tip that doubles as a leadership philosophy: "Pick the worst thing you are afraid to show your board and make it slide one." The catch: this only works with a good board. Make it a habit, he advised, not a one-time confession.
+https://x.com/garrytan/status/2068007205102842238
 
-Nan Yu | Head of Product, Linear
-Yu pushed back on sloppy use of the word "taste" in builder discourse: taste isn't just aesthetic preference, just as design isn't just visual. Half the online conversations about taste are people talking past each other because of this conflation. A small but useful framing correction.
-https://x.com/thenanyu/status/2067327619897446721
+Zara Zhang — Builder
+Zara distilled what differentiates people in the AI age to three things: Agency, Taste, and Distribution. Short and worth sitting with.
+https://x.com/zarazhangrui/status/2068094591220531583
 
-Nikunj Kothari | Partner, FPV Ventures
-Kothari laid out why he opposes tranched VC rounds: they inflate the 409A for early employees who had nothing to do with the valuation games. His tell for spotting a tranche: if someone raises at under 10% dilution of the published valuation, it was almost certainly tranched. He also signaled a wave of debut emerging managers coming in the next 12 months — not household names yet, but ones to watch.
-https://x.com/nikunj/status/2067399657639285150
-https://x.com/nikunj/status/2067378464773292066
-
-Dan Shipper | CEO, Every
-Shipper announced Every's investment in Tacit (founded by ninklefitz), and resurfaced his 2023 piece "Against Explanations" — which argued AI might fundamentally change how science explains itself. He's pumped to see that vision accelerating.
-https://x.com/danshipper/status/2067386395283345808
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-GitHub's COO Explains Why AI Hasn't Replaced Developers
-AI & I by Every | Published 2026-06-17
+No Priors — "Re-engineering the Semiconductor Supply Chain with Intel CEO Lip Bu Tan"
+https://www.youtube.com/watch?v=asCgCv2XB4s
+Published: June 18, 2026
 
-Takeaway: GitHub COO Kyle Daigle reveals that 17 million pull requests were created by AI agents in March alone — and that GitHub is preparing for a wave of growth that shows no sign of plateauing.
+Takeaway: Lip Bu Tan is running a disciplined, decade-long turnaround at Intel — and agentic AI is unexpectedly working in his favor, driving CPU demand back to the center of the AI stack.
 
-Mike Taylor (Every's head of tech consulting) sat down with Kyle Daigle at a developer conference for a wide-ranging conversation on the agent economy from GitHub's uniquely positioned vantage point. GitHub saw 1 billion commits in all of 2024; at current growth rates, they are on track for 14 billion this year. The 17M agent-created pull requests in March are "just the agent PRs" — on top of all human-created ones. Daigle pushes back on the "slop" narrative: the code volume is real and represents genuine developer leverage, not noise.
+Fourteen months into his tenure as Intel CEO, Lip Bu Tan sat down with the No Priors hosts to walk through what's changed, what hasn't, and where he's betting next. The conversation covered Intel's foundry ambitions, a surprising collaboration with Elon Musk on TeraFab, and a venture-capital-at-heart philosophy that shapes every decision he makes.
 
-On business model evolution, Daigle draws a parallel to GitHub's old private repo shift: just as individuals eventually deserved free private repos, the question now is what baseline level of agent usage every developer deserves by default. The answer will emerge from usage data, not top-down policy. He explicitly named Peter Steinberger's 150-simultaneous-agents workflow as the extreme end of what GitHub wants to enable — for those willing to pay for it.
+Lip Bu opened by explaining why he took the job at 66 when most expected him to retire: "This is an iconic company, and it's so important for the semiconductor ecosystem and also so important for United States." He laid out a "crawl, walk, run" framework — first strengthening the balance sheet, then simplifying products, then building toward the next generation. The US government becoming a major shareholder was part of the balance sheet fix: "I explained to President Trump, TSMC, when they started, they had the Taiwan government as a shareholder."
 
-On open source maintainer burnout from the PR flood, GitHub is investing in agentic code review (which can now handle its own suggested fixes end-to-end) and giving maintainers more control over who can submit PRs at all — without mandating any single community standard.
+On the AI infrastructure moment, he pushed back on the assumption that GPUs dominate everything: "In terms of reinforced learning, in terms of the speed of orchestrating all the agents, the CPU is actually better." He sees Intel's Xeon (Influence CPU) benefiting directly from the agentic AI wave, with a supply-demand ratio shifting from one CPU per eight GPUs toward one-to-one.
 
-Perhaps the most vivid part of the conversation: Daigle's personal AI loop. He feeds everything he says and writes into a personal agent he calls Baxter (an OpenClaw instance), which reads his last seven days of emails and Slack messages and gives him a communication improvement report — not a summary of what he said, but patterns and metaphors he overuses. "Humans are way more willing to take critical feedback from robots than other humans," he noted, citing GitHub's old Hubot chatops days. His agent loop is primarily about self-improvement, not code.
+The TeraFab partnership with Elon Musk came up at length. Lip Bu described Musk as "unconventional" in the best sense — questioning every assumption about how fabs have traditionally operated. Intel is collaborating on process technology and production, while Musk's team builds its own facility. "He's a very good team that I work with weekly, and it's just refreshing to work with him."
 
-On the $200-to-$2,000 cost spiral: the answer is model routing by task intent. Auto-routing a find-and-replace to a smaller model while reserving frontier models for hard problems is the lever — but developers won't do it manually. GitHub and Microsoft Foundry are building that router layer so the system can choose.
+On the longer-horizon question of whether domestic US manufacturing can really compete, he was direct: "Making in the United States is critical." He described Intel's process roadmap moving from 18A to 14A to 10 and 7 nanometer, and investing in new materials — gallium nitride, silicon carbide, indium phosphide, even artificial diamond — as CMOS scaling runs out of room.
 
-Direct quote: "The thing that I think seems to be true from the beginning to OpenClaw to now is this idea of personalization — or mine, or context, or fine tuning with context, or memory. All of these ideas seem to be a truth that's been there since ChatGPT came out or GitHub Copilot came out."
+For investors, he set a simple target: 10x returns over five to ten years, grounded in a venture-style discipline of finding the bottleneck, partnering with the right hyperscaler customer, and being willing to pivot. "Nine of the 10 companies I invest in, halfway they change their business plan because the market has changed."
 
-https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
+Direct quote: "If you look at it ten years from now, what are we going to be as the winning company? The one that articulate and laser focus on one niche area and also find the right partner and also able to scale the company."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Anthropic Engineering — "How we contain Claude across products"
+https://www.anthropic.com/engineering/how-we-contain-claude
+
+This is one of the most detailed public write-ups on agentic AI security architecture to come from any major lab. The Anthropic engineering team documents exactly what broke and what held across three years of deploying Claude in claude.ai, Claude Code, and Claude Cowork.
+
+The central design principle: contain at the environment layer first, then steer at the model layer. The post describes three isolation patterns — ephemeral containers for claude.ai, a human-in-the-loop sandbox for Claude Code, and a full local VM for Claude Cowork — and explains why each is calibrated to its user base. A developer who can read bash faces a different threat model than a knowledge worker who can't.
+
+The section on security incidents is unusually candid. A Claude Code vulnerability let a malicious settings file execute hooks before the user even saw the trust prompt — fixed by deferring all config parsing until after consent. A red-team exercise showed that a phishing email with a "ready-to-paste" Claude prompt could exfiltrate AWS credentials 24 out of 25 tries, because the user was the injection vector and no classifier could catch it. And an approved egress path to api.anthropic.com became an exfiltration channel when a malicious file used an attacker-controlled API key to upload workspace files to a separate Anthropic account.
+
+The lesson the team keeps returning to: "The software you built yourself is often the weakest." gVisor, seccomp, and hypervisors held. Their custom allowlist proxy and pre-trust config parser did not. The post also surfaces a forward-looking concern: as more agent state persists across sessions — memory files, CLAUDE.md, scheduled agent state — injection attacks gain persistence in the classic post-exploitation sense.
+
+Required reading for anyone building or deploying agents at scale.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
