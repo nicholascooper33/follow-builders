@@ -1,83 +1,78 @@
-AI Builders Digest — June 22, 2026
+AI Builders Digest — 2026-06-23
 
-━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thibault Sottiaux — Codex & ChatGPT, OpenAI
-The Codex App was built on models that were "okayish" at front-end, but Sottiaux hints that significantly improved front-end capabilities are on the way — and promises it will be "something" when they arrive. He also noted that "some tokens work harder than others," highlighting the value packed into the Codex app. His teaser (3,100+ likes) points toward a meaningful model upgrade for front-end development coming soon.
-https://x.com/thsottiaux/status/2068568650924409260
-https://x.com/thsottiaux/status/2068443037907522002
+Sam Altman — CEO at OpenAI
+OpenAI launched GPT-5.5-Cyber and the "Patch The Planet" initiative today, framing it as a major push for cyber defense acceleration in partnership with the US government and the broader security ecosystem. Altman described it as wanting to "help all companies be secure" — a notably proactive stance on AI-assisted cybersecurity. The full version of GPT-5.5-Cyber is reportedly state-of-the-art on CyberGym benchmarks.
+https://x.com/sama/status/2069121360744550796
 
-Guillermo Rauch — CEO, Vercel
-Rauch was "genuinely impressed, almost shocked" by GLM-5.2's coding performance from the zhipuai team, declaring "this changes things" — a tweet that earned nearly 3,000 likes. A notable signal from the CEO of Vercel that open-source coding models from Chinese labs are closing the gap faster than the industry expected.
-https://x.com/rauchg/status/2068517095818809770
+Thibault Sottiaux — Codex & ChatGPT at OpenAI
+Sottiaux amplified the "Patch The Planet" launch with the announcement post, then turned around and asked "What are we codexing tonight" — which drew 491 replies and nearly 1,000 likes, signaling just how engaged the Codex user community has become. Both posts together paint a picture of a product in full stride.
+https://x.com/thsottiaux/status/2069152290326630518
+https://x.com/thsottiaux/status/2069267387464274366
 
-Aaron Levie — CEO, Box
-Levie offered a nuanced take on the open weights AI surge: frontier labs still lead on planning, orchestration, and review tasks, while open models are now close enough to cost-optimize specific workloads. He sees this as good for the whole ecosystem — cheaper AI drives more usage overall, and the applied layer is now well-positioned to mix frontier and open models for different parts of the stack.
-https://x.com/levie/status/2068434042148782515
+Swyx — AI engineer, affiliated with Cognition, Temporal, and Latent Space
+Swyx laid out a pointed analysis of SpaceX's positioning as a combined model lab and neocloud — what he calls "NeoCloud+NeoLab." His key claim: SpaceX has already recouped roughly half its investment in Cursor through compute deals, and the other half depends on Composer 3's performance. He argues no other company is simultaneously a leading model lab and neocloud with GPU supply planned for both the success and failure scenarios of in-house training, calling it "a crazy effective combo."
+https://x.com/swyx/status/2069301071965741388
 
-Amjad Masad — CEO, Replit
-In a quietly viral tweet (159 likes), Masad reflected on the nature of the internet and large language models: "We posted for twenty years, thinking we were talking to each other. Then the transformer came online, and the network read what we'd written, and became itself." A poetic framing of how the training corpus became something more than the sum of its posts.
-https://x.com/amasad/status/2068589860097790449
+Guillermo Rauch — CEO at Vercel
+Two big product moments from Rauch today. First, Vercel shipped a "Claude Design → Vercel, in one click" integration — a direct pipeline from Anthropic's design tooling into Vercel deployments (498 likes). Second, WebSocket and socket.io support is now live on Vercel across CDN and Fluid, which Rauch called "a special full circle moment" given Vercel's origins (934 likes).
+https://x.com/rauchg/status/2069219190834127276
+https://x.com/rauchg/status/2069109057433035171
 
-Madhu Guru — Former Product Lead, Google Gemini / Veo / Nano
-Guru argues the PM role is having its own AI identity crisis. He draws a sharp line between the "old-school PM" who uses AI for more docs and decks, and the "Builder PM" who runs agents for market and user research, queries logs directly, generates competing ideas, and ships prototypes instead of specs. His take: the role is moving firmly toward Builder PM, and those who don't adapt are producing "lots of output, not much judgment."
-https://x.com/realmadhuguru/status/2068350509027876876
+Amjad Masad — CEO at Replit
+A single two-word post — "Never quit" — accompanied by a media attachment, generating 708 likes. Brief but characteristic of Masad's builder-founder energy.
+https://x.com/amasad/status/2069217138775388603
 
-Zara Zhang — Builder / Follow Builders creator
-Zhang built a Chrome extension that injects one of her 1,000+ saved X bookmarks into her main feed every time she opens X — treating her unread saves like an ad slot she already checks 50 times a day. "The trick was hijacking real estate I already check 50 times a day." She also raised an underrated question: joining a large company may actually be riskier than joining or starting a startup, when you factor in the pace of AI-driven disruption to incumbents.
-https://x.com/zarazhangrui/status/2068568920613953626
-https://x.com/zarazhangrui/status/2068522129193418759
+Aaron Levie — CEO at Box
+Levie made the case that virtually all AI progress — model improvements, open-weights post-training for specific domains, and agent improvements in the applied layer — is downstream of evals. Strong framing for anyone thinking about where to invest in AI infrastructure. Separately, Box shipped HTML content preview and editing, with version management and secure sharing built in — positioned as purpose-built for agent-produced content.
+https://x.com/levie/status/2069228335255949775
+https://x.com/levie/status/2069140445205348432
 
-Nikunj Kothari — Partner, FPV Ventures
-Kothari's hot take: the biggest problem in AI isn't the models themselves — it's people whose priors are months out of date. His prescription is to maintain personal hard-task evals and dedicate weekly tinkering time to understand where the frontier actually is, while also talking to enterprise buyers (typically two years behind) to understand how to market. "If you just do these two weekly, you'll be ahead of 99% of people."
-https://x.com/nikunj/status/2068411460620042720
+Ryo Lu — Design at Cursor
+Lu shared his talk from Cursor Compile, exploring how design and building practices are changing in the AI age — and crucially, what doesn't change. The talk was posted to YouTube and picked up nearly 1,000 likes, making it one of the most-watched pieces of builder content today.
+https://x.com/ryolu_/status/2069218497272717661
 
-Peter Yang — Practical AI newsletter, 150K+ readers
-Yang pushed back on the local-models hype: he can barely use up his $200/month Codex and Claude subscriptions, so he doesn't see the case for running models locally. He also noted that trying the latest GLM locally requires 512GB of VRAM — roughly a $10K Mac Studio. A grounded reality check on the gap between "you can run it locally" and "running it locally makes sense."
-https://x.com/petergyang/status/2068411894185295969
+Peter Yang — Practical AI tutorials, 150K+ newsletter readers
+Yang flagged that Anthropic's documentation on "dynamic workflows" in Claude Code still isn't landing for him — he couldn't figure out what the feature is or when to use it after reading the docs. He's also looking for someone skilled at using Codex or Claude Code to build pixel or Three.js games for an upcoming podcast episode.
+https://x.com/petergyang/status/2069267139576693028
+https://x.com/petergyang/status/2069118077313425840
 
-━━━━━━━━━━━━━━━━━━━━━━━━━
+Zara Zhang — Builder and Follow Builders creator
+Zhang released a complete walkthrough of her Frontend Slides skill, which has over 22,000 GitHub stars. The video covers a beginner-friendly demo of creating HTML slides with Claude Code plus a behind-the-scenes look at how the skill itself was built.
+https://x.com/zarazhangrui/status/2069311440692072481
+
+Peter Steinberger — Developer and indie AI builder
+Steinberger amplified the Patch The Planet launch (616 likes) and made a relatable jab at shared office spaces with a reaction post that earned 816 likes. Both posts reflect his characteristic mix of AI enthusiasm and developer humor.
+https://x.com/steipete/status/2069132838356840857
+
+Garry Tan — President & CEO at Y Combinator
+Tan weighed in on California's proposed asset seizure tax, arguing it will impoverish the state and reduce healthcare funding — and that the SEIU UHW union's support for the measure prioritizes politics over quality of care. A policy take from one of the most prominent voices in the startup ecosystem.
+https://x.com/garrytan/status/2069234760615096344
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning — "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions"
-https://www.youtube.com/watch?v=W_iO8XxgD_I
+How Anthropic Uses Claude Fable 5 With Mike Krieger
+Show: AI & I by Every
 
-Takeaway: The lab wars are shifting fast — Anthropic is on an unprecedented vibe run, open weights AI may be quietly contracting, and compute constraints could soon force labs to restrict or kill public API access entirely.
+Takeaway: Mike Krieger — head of Anthropic Labs and Instagram co-founder — explains how Fable 5 has forced him to completely rethink what productive work with an AI model looks like, shifting from short prompts to overnight delegation and upfront architectural planning.
 
-Host Jacob Efron (Redpoint investor) reunited with Ari (CEO, Datalogy, former DeepMind/Meta researcher) and Rob (Radical Ventures) for a wide-ranging episode covering the last six months in AI.
+Krieger opened by describing the disorienting experience of first encountering Fable 5 internally: "I feel like a total newbie again because I feel like the way that I am prompting or even thinking about decomposing a task is really out of date now with this model." That sense of being reset — even for someone who helped build it — sets the tone for the whole conversation.
 
-The most striking structural shift: engineers are becoming managers of agents, not individual contributors. Ari noted that at Datalogy, people now "context switch between managing different agents rather than just kind of working on the one thing." But this creates new bottlenecks — code review is now the chokepoint, and the team is reluctant to go fully to "my agent will review your agent's output."
+The most striking shift Krieger describes is temporal. Where earlier models required constant back-and-forth, Fable 5 has earned enough trust that he now sets it on complex overnight tasks. He recounts waking up to find that Claude had hit a remote service outage mid-task, scaffolded a temporary backend workaround, documented it, and continued — without human intervention. In his words, it "really feels like a teammate that I can delegate a lot of work to."
 
-On open weights, both guests converged on a bearish view. Meta appears to be pulling back from its open-source strategy. Chinese labs are keeping their best models proprietary behind APIs, only open-sourcing smaller, less performant versions. The economics don't support giving away weights once you've achieved frontier credibility. As Ari put it: "I think we probably hit the peak number of open models and it's now going to get less and less."
+Krieger has also changed how he plans. He now uses Fable extensively for upfront architectural discussions — often asking it to generate an HTML page or markdown diagram to align his team before writing any code. He links this directly to the pace of AI-assisted development: teams can build so fast now that forcing early alignment has become critical to avoid costly re-work.
 
-The spiciest prediction came from Ari: "There's a very reasonable chance that we see Anthropic, but it could be OpenAI, suspend API access for some period of time or otherwise heavily limit API access." Not as a business decision — purely due to compute constraints, with labs increasingly routing capacity to first-party products like Claude Code. "That is a huge existential threat to anybody that builds on top of these models."
+On tooling and model selection: Krieger mostly works in the terminal app (Ghostty), while his wife — a UX designer — has taken to Claude Code via the desktop app. He's begun experimenting with effort levels, dialing Fable down to medium for trivial UI tweaks and switching to Sonnet for quick questions where "Fable will go off and think very hard" about something that doesn't warrant it.
 
-On Anthropic's Fable restrictions for AI development use cases, Ari noted the community outrage wasn't about the restriction itself — it was the silence. "It doesn't say I'm not going to help you with this, it just does a poor job on that without you knowing." He called it competitive positioning dressed as safety, and observed that many loud AI voices on X would likely shift to Codex as a result — "a pretty nice gift for OpenAI."
+The episode closes with a demo of a personal media tracker Krieger built over a weekend — a React Native and web app where Claude can not only search and add content, but actually modify the app itself from within the interface. He called it "agent-native architecture at its fullest degree": every part of the product is accessible via tool calls, and the agent can update the software it's embedded in. A hands-on look at what building with the most capable current model actually feels like from the inside.
 
-Rob revised his robotics timeline: foundation models have crossed a commercial viability threshold in just the past few months, and as early deployments start spinning the data flywheel, he now believes a "GPT-3 moment" for general-purpose robotics AI is not far off. His year-end prediction: by end of 2026 it will be obvious Anthropic is becoming a force in life sciences — Dario has long been passionate about bio, and there are strong rumors of Anthropic setting up wet lab facilities to collect experimental data.
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
 
-━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Anthropic Engineering: "An update on recent Claude Code quality reports"
-https://www.anthropic.com/engineering/april-23-postmortem
-
-A candid postmortem on three separate changes that caused Claude Code quality regressions between March and April 2026, all now resolved as of v2.1.116 (April 20). The three issues: (1) Reasoning effort was silently downgraded from high to medium on March 4 to reduce latency — users noticed and disliked it; reverted April 7. (2) A caching bug shipped March 26 was supposed to clear old thinking blocks once after an idle session, but instead cleared them on every subsequent turn, making Claude increasingly forgetful and draining usage limits faster than expected; fixed April 10. (3) A system prompt addition on April 16 — "keep text between tool calls to ≤25 words" — caused a 3% drop in coding quality; reverted April 20. As an apology, Anthropic reset usage limits for all subscribers. Going forward: broader eval suites for every system prompt change, wider soak periods, gradual rollouts, and tighter code review tooling.
-
-Anthropic Engineering: "Scaling Managed Agents: Decoupling the brain from the hands"
-https://www.anthropic.com/engineering/managed-agents
-
-Anthropic's engineering blog explains the architecture behind Claude Managed Agents — a hosted service for long-horizon agentic tasks. The core design insight: decouple the "brain" (Claude + harness) from the "hands" (sandboxes and tools) and the "session" (the durable event log). In the old coupled design, a single container failure meant losing the entire session, and debugging required opening a shell inside a container holding user data. In the new architecture, each component can fail or be replaced independently — container failures are just tool-call errors that Claude can catch and retry, and harnesses are stateless so they can be rebooted from the session log at any time. Credentials are never exposed inside the sandbox: Git tokens are baked in at clone time; OAuth tokens are held in a secure vault and accessed via proxy. The performance gains were dramatic: p50 time-to-first-token dropped ~60%, p95 dropped over 90%. The design philosophy borrows from operating systems: "programs as yet unthought of" — stable interfaces, implementations that can evolve freely as models improve.
-
-Claude Blog: "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels"
-https://claude.com/blog/claude-managed-agents-updates
-
-Two major additions to Claude Managed Agents announced May 19: self-hosted sandboxes (public beta) and MCP tunnels (research preview). With self-hosted sandboxes, enterprises can keep all tool execution — code runs, file edits, network calls — within their own infrastructure or with managed providers (Cloudflare, Daytona, Modal, Vercel), while orchestration and context management stay on Anthropic's side. MCP tunnels let agents reach private MCP servers inside a company's network via a lightweight gateway that requires only a single outbound connection — no inbound firewall rules, no public endpoints, traffic encrypted end to end. Early adopters include Amplitude (design agent for on-brand UI/marketing), Clay (GTM engineering agent Sculptor that builds and monitors workflows autonomously), and Rogo (finance analyst agent handling proprietary data securely).
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
