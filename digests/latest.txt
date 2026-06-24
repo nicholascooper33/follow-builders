@@ -1,78 +1,90 @@
-AI Builders Digest — 2026-06-23
+AI Builders Digest — 2026-06-24
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman — CEO at OpenAI
-OpenAI launched GPT-5.5-Cyber and the "Patch The Planet" initiative today, framing it as a major push for cyber defense acceleration in partnership with the US government and the broader security ecosystem. Altman described it as wanting to "help all companies be secure" — a notably proactive stance on AI-assisted cybersecurity. The full version of GPT-5.5-Cyber is reportedly state-of-the-art on CyberGym benchmarks.
-https://x.com/sama/status/2069121360744550796
+CLAUDE TAG TAKES CENTER STAGE
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-Sottiaux amplified the "Patch The Planet" launch with the announcement post, then turned around and asked "What are we codexing tonight" — which drew 491 replies and nearly 1,000 likes, signaling just how engaged the Codex user community has become. Both posts together paint a picture of a product in full stride.
-https://x.com/thsottiaux/status/2069152290326630518
-https://x.com/thsottiaux/status/2069267387464274366
+The biggest story today is Anthropic's launch of Claude Tag — a Slack integration that turns Claude into a proactive, multi-player collaborator inside team channels.
 
-Swyx — AI engineer, affiliated with Cognition, Temporal, and Latent Space
-Swyx laid out a pointed analysis of SpaceX's positioning as a combined model lab and neocloud — what he calls "NeoCloud+NeoLab." His key claim: SpaceX has already recouped roughly half its investment in Cursor through compute deals, and the other half depends on Composer 3's performance. He argues no other company is simultaneously a leading model lab and neocloud with GPU supply planned for both the success and failure scenarios of in-house training, calling it "a crazy effective combo."
-https://x.com/swyx/status/2069301071965741388
+Andrej Karpathy, AI researcher and deep learning pioneer, called it "a new paradigm for interacting with Claude that is significantly more 'inline' with all the other human activity org-wide." He noted the substantial under-the-hood engineering required to make it feel native to how teams already work.
+https://x.com/karpathy/status/2069547676849557725
 
-Guillermo Rauch — CEO at Vercel
-Two big product moments from Rauch today. First, Vercel shipped a "Claude Design → Vercel, in one click" integration — a direct pipeline from Anthropic's design tooling into Vercel deployments (498 likes). Second, WebSocket and socket.io support is now live on Vercel across CDN and Fluid, which Rauch called "a special full circle moment" given Vercel's origins (934 likes).
-https://x.com/rauchg/status/2069219190834127276
-https://x.com/rauchg/status/2069109057433035171
+Cat Wu, product lead for Claude Code and Cowork at Anthropic, described the scale of internal adoption: "Claude Tag is a paradigm shift in how we ship products at Anthropic. Our internal version merges 65% of product PRs." She shared six common workflows — from code review to Q&A — that resonated with internal teams and external design partners, and published a Get Started guide for configuring agent permissions.
+https://x.com/_catwu/status/2069473118742331608
+https://x.com/_catwu/status/2069486403696869555
 
-Amjad Masad — CEO at Replit
-A single two-word post — "Never quit" — accompanied by a media attachment, generating 708 likes. Brief but characteristic of Masad's builder-founder energy.
-https://x.com/amasad/status/2069217138775388603
+Boris Cherny, Claude Code at Anthropic, detailed the mechanics: tag Claude in a channel, it spins up an isolated sandbox, clones repos, writes and tests code, and discards the sandbox when done. He also described setting Claude to proactively monitor channels, answer questions, draft PRs, and react with status emojis (✅❌) when threads resolve.
+https://x.com/bcherny/status/2069474691010707486
+https://x.com/bcherny/status/2069474688619958517
 
-Aaron Levie — CEO at Box
-Levie made the case that virtually all AI progress — model improvements, open-weights post-training for specific domains, and agent improvements in the applied layer — is downstream of evals. Strong framing for anyone thinking about where to invest in AI infrastructure. Separately, Box shipped HTML content preview and editing, with version management and secure sharing built in — positioned as purpose-built for agent-produced content.
-https://x.com/levie/status/2069228335255949775
-https://x.com/levie/status/2069140445205348432
+Thariq, also on the Claude Code team at Anthropic, shared practical tips for heavy users: ask Claude to maintain a pinned status message across all open tasks, use reaction emojis (⏲️✅❓🛑) for at-a-glance thread status, and get creative with use cases like a dedicated scheduling channel where Claude finds time on team calendars.
+https://x.com/trq212/status/2069474343512617390
 
-Ryo Lu — Design at Cursor
-Lu shared his talk from Cursor Compile, exploring how design and building practices are changing in the AI age — and crucially, what doesn't change. The talk was posted to YouTube and picked up nearly 1,000 likes, making it one of the most-watched pieces of builder content today.
-https://x.com/ryolu_/status/2069218497272717661
+Alex Albert, Research at Anthropic, summed up the shift plainly: "This has completely changed how I work with Claude. It feels less like using a tool and more like managing a team."
+https://x.com/alexalbert__/status/2069470389391241314
 
-Peter Yang — Practical AI tutorials, 150K+ newsletter readers
-Yang flagged that Anthropic's documentation on "dynamic workflows" in Claude Code still isn't landing for him — he couldn't figure out what the feature is or when to use it after reading the docs. He's also looking for someone skilled at using Codex or Claude Code to build pixel or Three.js games for an upcoming podcast episode.
-https://x.com/petergyang/status/2069267139576693028
-https://x.com/petergyang/status/2069118077313425840
+Aaron Levie, CEO of Box, highlighted the enterprise angle: Claude Tag can be given access to corporate files in Box from Slack, making enterprise knowledge directly accessible through the agent. He also weighed in on AI pricing dynamics, predicting a barbell market between high-cost frontier models and cheap-but-good open or closed-weights models, with commoditization pressure squeezing the middle.
+https://x.com/levie/status/2069596515560267891
+https://x.com/levie/status/2069639600310767616
 
-Zara Zhang — Builder and Follow Builders creator
-Zhang released a complete walkthrough of her Frontend Slides skill, which has over 22,000 GitHub stars. The video covers a beginner-friendly demo of creating HTML slides with Claude Code plus a behind-the-scenes look at how the skill itself was built.
-https://x.com/zarazhangrui/status/2069311440692072481
+---
 
-Peter Steinberger — Developer and indie AI builder
-Steinberger amplified the Patch The Planet launch (616 likes) and made a relatable jab at shared office spaces with a reaction post that earned 816 likes. Both posts reflect his characteristic mix of AI enthusiasm and developer humor.
-https://x.com/steipete/status/2069132838356840857
+CODEX RAPID ITERATION AT OPENAI
 
-Garry Tan — President & CEO at Y Combinator
-Tan weighed in on California's proposed asset seizure tax, arguing it will impoverish the state and reduce healthcare funding — and that the SEIU UHW union's support for the measure prioritizes politics over quality of care. A policy take from one of the most prominent voices in the startup ecosystem.
-https://x.com/garrytan/status/2069234760615096344
+Thibault Sottiaux, working on Codex and ChatGPT at OpenAI, gave a window into how fast the team is moving. He posted three times today: acknowledging a bug existed, fixing it, and thanking users for the feedback that drove the fix. His tone — celebratory about five minutes of server calm — captured the pace. The bug fix tweet earned over 3,200 likes, reflecting how closely the developer community is watching Codex's reliability.
+https://x.com/thsottiaux/status/2069579993588625574
+https://x.com/thsottiaux/status/2069592160966733853
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
+
+PRODUCTS AND SHIFTS
+
+Josh Woodward, VP at Google Labs overseeing Gemini and NotebookLM, shared a striking quote from Florida State University: students who were struggling with a C grade "completely transformed their study habits and their grades in a matter of" weeks after NotebookLM was introduced on campus. He also promoted Gemini App's new feature for generating sports-fan trading cards and murals tied to the World Cup.
+https://x.com/joshwoodward/status/2069406832523624696
+
+Guillermo Rauch, CEO of Vercel, announced a partnership with Cursor and opened a private X Chat group for builders working on agents who have high-quality feedback to share. Both moves position Vercel as the deployment layer of choice for AI-native development.
+https://x.com/rauchg/status/2069513849578082474
+https://x.com/rauchg/status/2069590431646769472
+
+Peter Yang, creator of practical AI tutorials and interviews for 150K+ readers, posed the sharpest design question of the day: "What is design if what's accessing your product is just an agent looking for an API or CLI?" He also flagged the Google Workspace CLI as underappreciated and noted that human-agent interaction is trending toward managing a "highly capable employee."
+https://x.com/petergyang/status/2069603490524254473
+https://x.com/petergyang/status/2069530765352907180
+
+Peter Steinberger, of OpenClaw and OpenAI, highlighted a striking irony: Google apparently fired the engineer who built the Google Workspace CLI — the same tool that drew wide praise from builders this week. His post went viral with 3,700+ likes.
+https://x.com/steipete/status/2069594195522941059
+
+Garry Tan, President and CEO of Y Combinator, spotlighted Linzumi, a YC startup building multiplayer Codex — letting teams collaborate on AI-driven code in real time. He noted that the founder, Sean Grove, was on the OpenAI team that significantly reduced sycophancy in ChatGPT before leaving to start the company.
+https://x.com/garrytan/status/2069474420113146355
+
+Nikunj Kothari, partner at FPV Ventures, shipped a weekend project: Plug That Shop, a tool that connects Shopify's new UCP CLI to Claude Opus 4.8 and Railway for agent-driven storefront interactions — a working example of how the new wave of CLI-native AI products is being assembled from modular pieces.
+https://x.com/nikunj/status/2069534712763490668
+https://x.com/nikunj/status/2069547206504566980
+
+Swyx, AI engineer and host of the Latent Space podcast, flagged a milestone worth noting: Zhipu AI's GLM series has now beaten DeepSeek to become the top open model by some benchmarks, and the company IPO'd in Hong Kong in January at HK$120/share. For those following the open model race beyond the usual Western players, it's a signal worth tracking.
+https://x.com/swyx/status/2069598378191941835
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-How Anthropic Uses Claude Fable 5 With Mike Krieger
-Show: AI & I by Every
+NO PRIORS — "Biohub: The Future of Biology is Open-Source"
+Guests: Mark Zuckerberg, Priscilla Chan, Alex Rives (Head of Science, CZI Biohub)
+https://www.youtube.com/@NoPriorsPodcast
 
-Takeaway: Mike Krieger — head of Anthropic Labs and Instagram co-founder — explains how Fable 5 has forced him to completely rethink what productive work with an AI model looks like, shifting from short prompts to overnight delegation and upfront architectural planning.
+Takeaway: CZI Biohub is betting that frontier AI and frontier biology must be built together — and that open-sourcing the tools is the only path to curing all disease at civilizational scale.
 
-Krieger opened by describing the disorienting experience of first encountering Fable 5 internally: "I feel like a total newbie again because I feel like the way that I am prompting or even thinking about decomposing a task is really out of date now with this model." That sense of being reset — even for someone who helped build it — sets the tone for the whole conversation.
+Mark Zuckerberg, Priscilla Chan, and Alex Rives joined No Priors to explain what the Chan Zuckerberg Initiative's $500M Virtual Biology Initiative is actually trying to do — and why they structured it as an open-source nonprofit rather than a venture-backed company.
 
-The most striking shift Krieger describes is temporal. Where earlier models required constant back-and-forth, Fable 5 has earned enough trust that he now sets it on complex overnight tasks. He recounts waking up to find that Claude had hit a remote service outage mid-task, scaffolded a temporary backend workaround, documented it, and continued — without human intervention. In his words, it "really feels like a teammate that I can delegate a lot of work to."
+The core argument: biology suffers the same problems language models would face if most of the internet were locked up in silos. Scientists work in isolation, tools die when postdocs graduate, and data doesn't move across labs. Biohub's answer is to build and release the tools openly so the entire scientific field can accelerate together. As Zuckerberg put it: "The theory isn't that we're gonna cure the diseases. We're not. It's that we wanna help accelerate the pace of progress for the whole scientific field."
 
-Krieger has also changed how he plans. He now uses Fable extensively for upfront architectural discussions — often asking it to generate an HTML page or markdown diagram to align his team before writing any code. He links this directly to the pace of AI-assisted development: teams can build so fast now that forcing early alignment has become critical to avoid costly re-work.
+The anchor product discussed is ESMFold 2, an open protein world model trained on over 1.1 billion protein sequences. Alex Rives described what makes it different from prior protein-folding models: "We didn't design a model for antibodies. We didn't design a model to bind one particular target. We just designed a model that could understand proteins — and you get protein design as an emergent property." The team validated antibody designs in cryo-EM, confirming nanomolar binding activity against therapeutically relevant targets — the threshold for therapeutic activity.
 
-On tooling and model selection: Krieger mostly works in the terminal app (Ghostty), while his wife — a UX designer — has taken to Claude Code via the desktop app. He's begun experimenting with effort levels, dialing Fable down to medium for trivial UI tweaks and switching to Sonnet for quick questions where "Fable will go off and think very hard" about something that doesn't warrant it.
+Priscilla Chan laid out the roadmap from molecules to cells to whole systems — Biohub's "virtual cell" vision. The goal is a model that can take a genetic profile, predict which proteins are implicated, simulate how a drug would distribute across cell types, and flag off-target toxicity before a single human trial. She drew a direct line from Biohub's early single-cell sequencing work (which seeded the Human Cell Atlas and the CellByGene annotation tool) to the current LLM-style training paradigm: "Imagine our delight when large language models became a huge topic of conversation that could make sense of large amounts of data."
 
-The episode closes with a demo of a personal media tracker Krieger built over a weekend — a React Native and web app where Claude can not only search and add content, but actually modify the app itself from within the interface. He called it "agent-native architecture at its fullest degree": every part of the product is accessible via tool calls, and the agent can update the software it's embedded in. A hands-on look at what building with the most capable current model actually feels like from the inside.
+The episode also covers why open source makes strategic sense (decentralizing talent to attack the long tail of rare diseases), how mechanistic interpretability of protein language models can reveal unknown biology by "opening the black box," and what the tightly integrated wet-lab and AI research structure looks like in practice under Rives' leadership. On timeline, Zuckerberg noted that the goal of curing, preventing, and managing all disease by the end of the century, once mocked by Nobel laureates as too ambitious, now feels "too conservative" given AI's pace of progress.
 
-https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
