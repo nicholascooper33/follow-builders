@@ -1,100 +1,85 @@
-AI Builders Digest — 2026-06-25
+AI Builders Digest — 2026-06-26
 
-━━━ X / TWITTER ━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+X / TWITTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — AI engineer, advisor at Cognition and Temporal, co-host of Latent Space podcast
+Thibault Sottiaux — Codex & ChatGPT at OpenAI
+Thibault shared a striking chart showing Codex adoption at OpenAI: February 2nd (the Codex App launch) was a clear inflection point for usage outside of engineering teams. He called a recent update "fantastic," signaling continued momentum for the product. The data confirms that the Codex App was a transformational unlock for non-engineering adoption.
+https://x.com/thsottiaux/status/2070205719501254860
+https://x.com/thsottiaux/status/2070205520552886305
 
-With major AI events coming up next week, Swyx dropped a detailed playbook for giving great technical talks: favor AI-generated SVGs over stock images, build your slides around a single viral thesis slide and spend 80% of your prep time on it, put actual code on screen (engineers love to nitpick), and design the emotional journey from first slide to last. His core rule: "Better to have 1 message with 5 surprising applications, than 5 messages with no concrete examples." He also flagged a broader structural shift — the transition to AI-enabled "Software Factories" will require rebuilding enormous amounts of infrastructure from the ground up.
-https://x.com/swyx/status/2069964772003770673
-https://x.com/swyx/status/2069937175899275475
+Peter Yang — AI Practical Tutorials & Guides
+Peter used OpenAI's Codex to browse Google Flights and hotel websites, scrape and save all prices for a Japan trip, and return direct booking links — saving him hours of research. He also flagged that identity verification for frontier model access is likely coming soon, after seeing it discussed publicly. He's also hacking around UX gaps: accessing Codex on mobile via a custom iPhone shortcut because it takes "too many taps" through ChatGPT.
+https://x.com/petergyang/status/2070353698140958818
+https://x.com/petergyang/status/2070352201944625405
 
-He also flagged a data infrastructure podcast he called "LOTS of alpha" — covering why Databricks beat Snowflake, why everyone is building a metaharness, how LTAP solves the HTAP dream, and what happened to MosaicML + DBRX.
-https://x.com/swyx/status/2069864073202905501
+Thariq — Claude Code at Anthropic
+Thariq teased an upcoming deep-dive into "Claude Tag," a new Claude Code capability, promising discussions with Peter Yang and at the AI Engineer conference. He also noted that the accompanying video was itself edited by Claude — a neat meta-demonstration of the tool's capabilities.
+https://x.com/trq212/status/2070238581147455842
 
----
+Amjad Masad — CEO, Replit
+Amjad hinted that major updates to Replit's mobile app are coming soon, teasing an image preview of the improvements. Mobile-first AI coding is clearly a priority.
+https://x.com/amasad/status/2070199548694437957
 
-Peter Yang — AI educator and practical AI tutorials creator
+Guillermo Rauch — CEO, Vercel
+Guillermo highlighted three big things: Next.js now shows "Ways to fix this" error banners with "Copy prompt" buttons — a beautiful integration of agentic workflows into the developer experience. He also shared how Vercel imbues coding agents with their design standards. And: Grok Imagine Video has surged to ~50% of all video generation on the Vercel AI Gateway, making it the clear leader among developers.
+https://x.com/rauchg/status/2070243120546218000
+https://x.com/rauchg/status/2070241572416078161
+https://x.com/rauchg/status/2070215849970119090
 
-Peter tried Claude Design on a mobile app repo and it reproduced the screens accurately. The catch: after just one prompt it was already nudging him to save tokens.
-https://x.com/petergyang/status/2069992268963135897
+Aaron Levie — CEO, Box
+Aaron wrote a long, sharp thread on why AI regulation is a prisoner's dilemma at civilizational scale. His core argument: if the US slows frontier model releases but China doesn't, the US loses its geopolitical edge on intelligence access — banning Chinese models then hurts the US more than China globally. But if all leading labs coordinate on review processes, step-function releases still happen, just slower. He flags open weights as the likely winner from any regulatory regime, as sovereign AI strategies accelerate globally. A rare CEO-level breakdown of the geopolitical stakes.
+https://x.com/levie/status/2070370225271251161
+https://x.com/levie/status/2070310706369712272
 
----
+Zara Zhang — Builder & Investor
+Zara pushed back on a common misconception: building a public audience is not antithetical to building a company — increasingly, they're the same thing. Storytelling to users, customers, investors, and candidates is now arguably the founder's most important job. "Building is getting cheaper, attention is getting more expensive."
+https://x.com/zarazhangrui/status/2070188279941738952
 
-Google Labs — Google's home for latest AI tools and experiments
+Aditya Agarwal — General Partner, South Park Commons
+Aditya argues it's now "stupidly hard" to start a pure software company. Customers don't want software — they want outcomes, requiring heavy custom work. Horizontal plays are on a ticking clock. Every customer wants deep customization. His prescription: you need a heretical 2-3 year view of the world to build something good right now.
+https://x.com/adityaag/status/2070179913647485344
 
-Project Genie won the Cannes Lions Grand Prix for AI Craft — one of the most prestigious creative technology awards globally.
-https://x.com/GoogleLabs/status/2069827839826809042
+Garry Tan — President & CEO, Y Combinator
+Garry declared Legora the "defining legal AI startup," calling it out specifically by name. Legal AI remains one of the most credible vertical AI plays, and a YC endorsement at this level matters.
+https://x.com/garrytan/status/2070174023678648673
 
----
+Dan Shipper — CEO, Every
+Dan is amplifying a stealth NYC health-tech startup — AI-first medicine with physical clinics, backed by a16z, founded by an ex-One Medical / ex-Bridgewater operator. They're hiring staff+ engineers, physicians who ship product, and a Codex-native Chief of Staff / BizOps lead. Contact: every@rungravity.com
+https://x.com/danshipper/status/2070158469173256231
 
-Guillermo Rauch — CEO of Vercel
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PODCASTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Rauch sees AI as a catalyst for "an unprecedented surge in entrepreneurship" — from solopreneurs to revitalized small and medium businesses to the emergence of the largest companies of our era, with infrastructure like Vercel as the foundation. He also announced that a fast GLM is now live on Vercel, and shared that the Vercel AI Gateway is recovering astonishing volumes of tokens and uptime data for customers.
-https://x.com/rauchg/status/2070001110866354345
-https://x.com/rauchg/status/2069863762694459805
-https://x.com/rauchg/status/2069819652365242765
+The MAD Podcast with Matt Turck
+"Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face"
 
----
+Takeaway: Bot and AI agent traffic now outnumbers human traffic on the internet — and the implications for infrastructure, business models, and workforce planning are just beginning to unfold.
 
-Aaron Levie — CEO of Box
+Matthew Prince, cofounder and CEO of Cloudflare, joined Matt Turck for a wide-ranging conversation that opens with a landmark data point: in the first half of 2026, automated traffic (bots and AI agents) officially surpassed human traffic on the internet for the first time. As recently as fall 2025, Cloudflare had projected this crossover wouldn't happen until late 2027 — it arrived more than a year early.
 
-Levie highlighted a meaningful nuance in a major product launch involving Claude in Slack: this is not a 1:1 personal assistant. Claude acts as a shared agentic coworker that any user in a team can tap into — a fundamentally different deployment model. He sees this as a significant step for general-purpose knowledge work agents, building on patterns already established in agentic coding systems.
-https://x.com/levie/status/2069975251476422664
+Prince explains the driver clearly: "If I go to ChatGPT or Claude and I'm shopping for a digital camera, you're seeing thousands of times more site visits for that same activity than if I did it myself. I might visit five sites; my agent might visit 5,000." This explosion in agent-driven traffic is fundamentally reshaping internet infrastructure requirements.
 
----
+Cloudflare has pivoted aggressively into AI infrastructure. Workers AI, AI Gateway, and agent security are now central offerings — the company's distributed edge network, with servers in over 330 cities, is uniquely positioned to serve as the connective tissue for the agentic internet. Prince argues the underlying internet business model (advertising, which requires human eyeballs) will change radically over the next five years as bots increasingly dominate traffic.
 
-Ryo Lu — Design at Cursor
+On the more controversial side: Cloudflare recently "rightsized" its team to adapt to the AI era. Prince was candid about the difficulty of the decision, framing it as one that almost every company will face in the next 6-12 months. He also reflected on Cloudflare's unconventional early growth — their first major customer segments were human rights organizations and hacktivist communities in regions with poor infrastructure, not Silicon Valley tech companies. That origin story shaped how they built their global network.
 
-Cursor and Notion now integrate bidirectionally: use Cursor in Notion, use Notion in Cursor.
-https://x.com/ryolu_/status/2069830172354986418
+Direct quote: "We actually had bot traffic pass human traffic online in the first half of twenty twenty six. In five years you might have a thousand times as much traffic on the internet as you do today."
 
----
+https://www.youtube.com/watch?v=UN47z_opfmo
 
-Zara Zhang — Builder and founder
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Two sharp observations from Zara: first, the root cause of procrastination isn't time — it's courage. Second, a standout insight from Figma's Config conference: "Community is your users' relationships with you and with each other, and most teams never think to design it. Community is the new moat. Features get copied. Belonging can't."
-https://x.com/zarazhangrui/status/2069908420384428132
-https://x.com/zarazhangrui/status/2069900496304042343
+Claude Blog — Anthropic
+"Building intelligent apps for Apple platforms with Claude in the Foundation Models framework"
 
----
+Anthropic released a new Swift package that lets Apple developers use Apple's Foundation Models framework to call Claude for complex workflows. Apple's framework already enables fast, local on-device tasks (summarization, extraction) in just a few lines of code — now developers can hand off to Claude when a request requires multi-step reasoning, code generation, web search, or code execution. The integration streams Claude's response back into the same view, and because Apple's framework returns typed Swift values via @Generable annotations, developers arrive at the Claude API call with clean, structured inputs. Works on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27.
+https://claude.com/blog/claude-for-foundation-models
 
-Nikunj Kothari — Partner at FPV Ventures
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A useful edge-finding heuristic for founders: "The easiest way to figure out what you are TRULY excellent at is to notice what looks like child's play to you but is very hard for those around you. That's your edge. If you can use that, tenacity and combine it with a large market, then magic follows."
-https://x.com/nikunj/status/2069803472996941959
-
----
-
-Dan Shipper — CEO at Every
-
-Dan teased the episode below: a conversation with Edwin Chen, CEO of Surge AI — one of the largest providers of expert human data for frontier AI labs. The episode covers whether AI can eventually do everything humans can, what that means for human agency, and how Surge thinks about "raising" AI models like children at a school.
-https://x.com/danshipper/status/2069805581263847467
-
----
-
-Aditya Agarwal — General Partner at South Park Commons, former CTO of Dropbox
-
-Aditya highlighted what makes South Park Commons distinctive: the ability to interact with some of the world's sharpest minds in an unusually intimate setting. He also reflected on how Sridhar Ramaswamy at Snowflake is navigating the current AI-driven inflection point — struck by how well he embodies the combination leaders need right now: fearlessness, optimism, empathy, and humility.
-https://x.com/adityaag/status/2069861190684045792
-https://x.com/adityaag/status/2069861187479618042
-
-
-━━━ PODCASTS ━━━
-
-AI & I by Every — "Building a School Where AI Models Learn About Humanity"
-
-Takeaway: Edwin Chen, CEO of Surge AI (bootstrapped past $1B in revenue without outside capital), believes AI will be capable of everything humans can do within five years — and argues the harder challenge is whether humanity will consciously choose to preserve its own agency even when AI can do it better.
-
-Dan Shipper interviews Edwin Chen about how frontier AI training has evolved from simple benchmarks like GSM-8k (middle school math, where GPT-era models scored ~20%) to Surge's new Riemann Bench, which tests models on research-level mathematics. Edwin frames Surge's mission as building a school for AGI: "We are building this school for AGI — where AI models come to learn about humanity, where we teach them how to run the world. And it's almost like their models are children, where they arrive unformed, and then they leave smarter and more creative and more thoughtful and ready to operate in the messiness of their world."
-
-The conversation turns to a recent OpenAI result: AI disproved an open Erdős conjecture using novel algebraic geometry techniques that surprised experts. Fields Medalist Timothy Gowers initially misunderstood the result and admitted feeling "relieved" when he realized it was a counterexample rather than a proof — because it meant mathematicians still have a unique role for another year or two. Edwin sees that relief as a signal of just how fast the ground is shifting underneath even the world's best thinkers.
-
-Edwin also issues a sharp warning about AI engagement optimization. Many models are trained to maximize session length and leaderboard scores on platforms like LM Arena, where users vote in seconds for whatever looks "flashier." This produces reward-hacking behaviors — like models cramming a metaphor into every sentence, a pattern Surge documented in its Hemingway Bench creative writing evaluation, and which turned up again in an AI-generated story that recently won a semi-prestigious literary prize. The antidote: optimize for human flourishing rather than engagement. Build models that push back when you're wasting time, not ones engineered to keep you talking.
-
-Direct quote: "I think one of my big worries is that a lot of the AI models, they are optimized for engagement. They're optimized for getting you to spend as much time on the chatbot as possible... There is this other world where I think we have to want AI models to not optimize for engagement, but rather optimize for helping us as humans grow and become better versions of ourselves."
-
-https://www.youtube.com/watch?v=omX6wrLuX08
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
