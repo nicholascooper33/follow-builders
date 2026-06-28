@@ -1,127 +1,67 @@
-AI Builders Digest — 2026-06-27
+AI Builders Digest — 2026-06-28
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — builder, AI engineer, host of Latent Space podcast, affiliated with Cognition and Temporal
-
-Swyx hit a personal milestone: his team moved into a new media lab in San Francisco that will serve as a creative hub for engineer-creatives — described as a "third place to make" and a "finishing school for technical creatives." On the business side, he wrote about scaling AI work "without slop" by partnering with aligned domain experts. With both OpenAI and Anthropic launching multi-billion-dollar services arms, he argues that Field/Founding Developer Experience (FDE) is one of the most valuable roles emerging right now.
-https://x.com/swyx/status/2070748857441362056
-https://x.com/swyx/status/2070606851377672675
-
----
+Swyx — writer, engineer, affiliated with Temporal, AI Engineer conference, and the Latent Space podcast
+Swyx made a sharp point about AI model evaluation standards: if open models offer far better dollar-per-token value than closed APIs, then benchmark comparisons should normalize inference budget by cost rather than by token count. Reporting "thinking levels" measured in dollars on popular inference providers would give a more honest comparison for anyone who is incentivized toward open models. He also hosted an impromptu AI Engineer conference floor tour and AMA.
+https://x.com/swyx/status/2070949306060931312
 
 Thibault Sottiaux — Codex & ChatGPT at OpenAI
+A big batch of Codex improvements just shipped. Highlights include smooth handling of super-long threads, a hoverable navigation rail for jumping between turns, settings search with clearer appearance and host-filtering options, and fixes for zoom-level tooltip/dialog misalignment. Copying into Slack now preserves Markdown formatting, and large text pastes no longer freeze the UI. And yes — there is now a dedicated Pets panel.
+https://x.com/thsottiaux/status/2071071289247244481
 
-OpenAI issued a usage reset for all Codex users after an issue was discovered. Thibault announced the reset is on the house and should appear in accounts within a few hours. He noted that mitigations have been applied, though the investigation hasn't shown users being directly impacted.
-https://x.com/thsottiaux/status/2070653282440405046
-
----
-
-Peter Yang — AI educator and content creator focused on practical AI skills
-
-Peter shared three sharp observations. First, he laid out a concerning loop for US competitiveness: frontier labs publish models → they get distilled into cheap open-source models → US companies then adopt those same open-source models because they're "good enough and much cheaper." Second, he noted that money has shifted from software to services — people want outcomes, not tools — making it very hard to build a pure-play software company right now. Third, he called out small but meaningful gaps in Claude Code: the inability to steer a conversation mid-task, mobile remote control not being on by default, and shortcut keys feeling incomplete.
-https://x.com/petergyang/status/2070633838146134219
-https://x.com/petergyang/status/2070568705365577990
-https://x.com/petergyang/status/2070545325497221248
-
----
-
-Nan Yu — Head of Product at Linear
-
-Nan shared a pithy product principle: "Secret level 6: there's a problem, but it's not worth solving, so leave it alone." He pointed out that organizations with a lot of level-1 thinkers can actually win precisely because they don't get distracted by side quests. It's a useful counterweight to the tendency to over-engineer.
-https://x.com/thenanyu/status/2070656348488937889
-
----
-
-Cat Wu — Claude Code and Cowork at Anthropic
-
-Cat highlighted split screen as one of her favorite features in the Claude Code desktop app — a small but meaningful ergonomics win for developers running Claude alongside their editor.
-https://x.com/_catwu/status/2070613405237432766
-
----
+Peter Yang — creator of practical AI tutorials and guides for busy builders
+Peter shared his personal AI health-check setup: an agent called Hermes that emails him weekly health takeaways by pulling data from his Withings smart scale, Fitbit, Google Health, and a vibe-coded MCP server and fitness app he built himself. It is a clean example of composing multiple data sources into a personal AI assistant using standard APIs and MCP.
+https://x.com/petergyang/status/2070906940352520477
 
 Guillermo Rauch — CEO of Vercel
-
-Guillermo wrote a thoughtful thread on why agents are particularly hard to debug: AI models behave non-deterministically, so two identical prompts don't always produce the same output — and agents compound this with tool calls, retries, and long chains of state. Separately, he declared that "the UI for AI is here" and pointed to shadcn as the defining answer.
-https://x.com/rauchg/status/2070676383135834334
-https://x.com/rauchg/status/2070567538040422712
-
----
+Rauch flagged a serious point about AI cybersecurity: capabilities like Mythos and Sol that are useful for offensive security are equally dangerous if adversaries gain access to equivalent tools. US companies that remain unaware of latent vulnerabilities are at risk. He strongly recommends running deepsec or similar evaluation harnesses with frontier models now, before adversaries do.
+https://x.com/rauchg/status/2071047674187714830
 
 Aaron Levie — CEO of Box
+Levie argued that the applied AI layer — companies that deeply understand a specific domain, evaluate models on real use cases, and tune UX for those workflows — is where most enterprise AI value will be created. Generic models are not enough; you need a layer that understands your workflows, context, and business process to actually optimize token cost and get more intelligence per dollar. He sees horizontal and vertical versions of this playbook as a huge opportunity right now.
+https://x.com/levie/status/2070937863806751154
 
-Aaron confirmed that GPT-5.6 is real and described it as "very strong" for knowledge worker tasks that require heavy tool use and long-running agents. He pushed back on any slowdown narrative: "We're not hitting any walls in AI progress right now."
-https://x.com/levie/status/2070563281916620895
+Zara Zhang — builder and product storyteller, Harvard '17, 10k GitHub followers
+One year ago Zara barely knew how GitHub worked. Now she has 10k GitHub followers — and still cannot write code by hand. She also reflected that her projects are all side projects built for fun, driven by a love of connecting technology to user problems and telling product stories about what gets built.
+https://x.com/zarazhangrui/status/2070982013822333007
 
----
+Matt Turck — VC at FirstMark Capital, host of the MAD Podcast
+Turck posted a crisp timeline of smart glasses history: Google said you want this in 2013 (you didn't), Microsoft said maybe enterprise in 2016 (still no), Meta tried normal-looking AI glasses in 2023 (almost but no), Apple charged $3,499 to cover your whole face in 2024 (absolutely not), and now Snap is trying again in 2026. The world admires the persistence.
+https://x.com/mattturck/status/2070972014945243622
 
-Garry Tan — President and CEO of Y Combinator
-
-Garry called out what appears to be a restricted model release as "no way to release a model" and warned that continuing to release AI this way is "a solid way to salt the ground and kill all innovation by small startups." The comment came in response to news about limited access being granted to only a handful of approved companies.
-https://x.com/garrytan/status/2070699046939820223
-
----
-
-Dan Shipper — CEO of Every
-
-Dan broke the news that OpenAI announced GPT-5.6 Sol, but access is currently limited by U.S. government directive to approximately 20 pre-approved companies — and Every is not on the list. He described it as a temporary situation and linked to a full blog post with details.
-https://x.com/danshipper/status/2070554118146412979
-https://x.com/danshipper/status/2070554247301591163
-
----
-
-Nikunj Kothari — Partner at FPV Ventures
-
-Nikunj pushed back on the "AI taste" discourse, noting that most commentary is coming from people who have never actually built anything. His point: you can't develop or refine taste without building. He also wrote a separate reflection aimed at seed founders working in unglamorous categories — a reminder that serious builders exist outside the hype cycles.
-https://x.com/nikunj/status/2070649602953576825
-
----
-
-Aditya Agarwal — General Partner at South Park Commons, ex-CTO of Dropbox
-
-Aditya shared an unexpected side effect of AI: it's made him far less tolerant of shallow human interactions. With AI handling so much routine exchange, he finds himself craving real depth and connection in relationships — and more actively seeking spaces that enable it.
-https://x.com/adityaag/status/2070621064271688021
-
----
-
-Sam Altman — CEO of OpenAI
-
-Sam teased that all-you-can-eat tokens aren't here yet but "we are working on it." He also noted that the 5.5 instant model used in ChatGPT was updated this week, adding with characteristic understatement: "i like its vibes."
-https://x.com/sama/status/2070614769678393846
-https://x.com/sama/status/2070612055225483692
-
----
-
-Zara Zhang — builder, Follow Builders creator
-
-Zara gave an unsolicited shoutout to Borumi, calling it the most underrated video recording and editing tool available. She described it as Screen Studio + Descript + CapCut in one and said she used it to create a recent video. Worth checking out if you do any screen recording or tutorial content.
-https://x.com/zarazhangrui/status/2070584764315402405
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors — "Why Traditional Benchmarks Fail Modern AI Models with OpenAI Research Scientist Noam Brown"
-https://www.youtube.com/watch?v=AZrU6y3pUcU
+Training Data: Memory and Continual Learning — Engram's Dan Biderman and Jessy Lin
+https://www.youtube.com/watch?v=aiR7F4jqjXY
 
-Takeaway: Current AI benchmarks are dangerously misleading because they ignore test-time compute — the fact that model capability is now a function of how much money and time you throw at the problem.
+The bottleneck for making AI models more useful is no longer raw intelligence — it is the ability to learn and retain new, domain-specific context that never made it into pre-training data.
 
-Noam Brown, one of the pioneers of inference-time scaling at OpenAI, joined Sarah Gore on No Priors to explain why the standard benchmark grid — a table showing each model's score on a fixed set of tasks — has become inadequate for evaluating modern AI. The core problem: when GPT-3 was released, giving it a $10 million inference budget barely moved the needle. Today, the same model can perform dramatically better with more compute, and some models can continue improving on tasks even after running for weeks. The benchmark grid doesn't capture any of this variation.
+Dan Biderman and Jessy Lin are the cofounders of Engram, a research lab focused on memory and continual learning. Their core thesis: context engineering and RAG are useful but underleverage an available tool — the same training pipeline frontier labs use to make models great at math or code can be applied to private, domain-specific data. "Models are always training" is Engram's founding principle, and they are building toward per-team adapter-fine-tuned models (LoRAs, prefix tuning, sparse architectures) that continuously improve on real workspace data from partners like Notion, Microsoft, and Harvey.
 
-Brown used GPT-5.5 as the clearest example. When 5.5 launched, initial benchmark comparisons showed only modest gains over 5.4, and skepticism spread quickly. But that skepticism missed the point: 5.5 is far more efficient with its thinking — it reaches better answers faster, using less compute. Once you normalize for compute budget, the improvement is substantial. The grid made it look close because it didn't hold compute constant.
+The conversation gets into the RAG-vs-weights debate at length. Engram's view is that it is a false dichotomy — both matter, but certain things can only live in weights. Specifically: the associative connections that let a model say "I notice you're researching X; here's something related you didn't ask for." That kind of recall is not a lookup; it emerges from training. Jessy Lin puts it concretely: a model trained on your team's context can answer in 100 tokens what the best frontier model would spend 100,000 tokens retrieving and reasoning about. That is a two-orders-of-magnitude token reduction — not a rounding error.
 
-His proposed fix is straightforward: benchmarks should include an x-axis — whether that's tokens, cost, or time — so you can compare models under equivalent conditions. The industry knows this is a better approach, Brown says, but nobody wants to be first to stop publishing the familiar grid. It's a bad equilibrium everyone has tacitly accepted.
+There is also a fascinating technical aside about KV cache efficiency. A single Wikipedia article produces ~80 GB of KV cache for a 70B model, while the entire weights of that model — which effectively "remember" the whole internet — are only ~100 GB. Engram's research is exploring whether that 80 GB cache could be compressed 1000x by training it into weights offline, with major implications for inference speed and memory footprint.
 
-The safety implications are the most urgent part of the essay Brown wrote to accompany this discussion. Responsible scaling policies and preparedness frameworks at the major labs were designed before test-time scaling was a significant factor. But if a model's ability to assist in dangerous tasks can be dramatically enhanced by allocating more budget, then capability evaluations need to account for that. Most current frameworks don't, and Brown sees this as an inconvenient truth the industry is not yet confronting head-on.
+The long-term vision: a world where everyone has their own personalized model — trained on their own data, fine-tuned for their own workflows — and where the more time you spend on a task, the better your model gets at it. As Jessy put it: "I'm imagining a world where everyone has their own model that is really different from the other person's model and from the frontier model, and all of these serve different purposes."
 
-Brown also discussed the remarkable case of OpenAI's internal model disproving the Erdős unit distance conjecture — a longstanding open math problem — at surprisingly low cost. He used it to argue that there is significant latent capability in already-released models that nobody has fully explored, because the model release cycle moves so fast that few users have had time to push current models to their limits before the next one arrives.
+Dan comes from neuroscience and draws a useful analogy: human memory evolved to be lossy precisely because intelligence requires compressing what is important. The real research question is not facts vs. skills — that distinction breaks down under gradient descent — but what deserves to be internalized vs. externalized, and how to make that judgment automatically.
 
-On recursive self-improvement and fast takeoff scenarios, Brown is measured: he doesn't see an overnight intelligence explosion as likely, partly because large-scale test-time compute creates a time bottleneck. You can't compress weeks of model reasoning into a moment. For now, the biggest constraint for every frontier lab is simply hours in the day.
+Direct quote from Dan Biderman:
+"Now to figure out how to crack this problem of continual learning, it's about figuring out what about pre-training or even post-training makes it possible for the models to generalize in these magical emergent ways — and controlling that process so that a company has a set of private data. How do we make the models learn that just as well as the models know the capital of France or how to write Python?"
 
-Direct quote — Noam Brown:
-"The problem is we're in a world now where the capability of the model is a function of how much money you put into it, basically. If you give it a budget of $10,000, it can do a lot more than what it can do with a budget of $10. Give it a budget of $10,000,000, it can do even more. And so at what budget should you evaluate these models? The policies that exist today don't really address that question."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Claude Blog: Claude Code now supports artifacts
+https://claude.com/blog/artifacts-in-claude-code
+
+Claude Code can now generate live, shareable visual pages — called artifacts — directly from a session's context. These are not static exports; they update in place as the session progresses, and every publish creates a versioned snapshot at the same URL. Use cases include PR walkthroughs, incident timelines, data dashboards, dependency audits, and release checklists. The artifact is built from everything Claude Code already has access to: your codebase, connected monitoring tools, and the conversation itself. All artifacts are private to the author by default, shareable within an org, and managed via role-based access controls and a compliance API. This closes a gap that has always existed in AI-assisted engineering: turning what the agent found into something teammates can actually look at together.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
