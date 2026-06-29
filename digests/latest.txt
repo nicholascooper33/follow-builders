@@ -1,67 +1,100 @@
-AI Builders Digest — 2026-06-28
+AI Builders Digest — 2026-06-29
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — writer, engineer, affiliated with Temporal, AI Engineer conference, and the Latent Space podcast
-Swyx made a sharp point about AI model evaluation standards: if open models offer far better dollar-per-token value than closed APIs, then benchmark comparisons should normalize inference budget by cost rather than by token count. Reporting "thinking levels" measured in dollars on popular inference providers would give a more honest comparison for anyone who is incentivized toward open models. He also hosted an impromptu AI Engineer conference floor tour and AMA.
+Swyx — AI engineer, co-host of the Latent Space podcast, affiliated with Cognition and Temporal
+
+Swyx raised an interesting framing on model evaluation: if you take Noam Chomsky's principle of keeping a constant inference budget across eval reports, open models actually have a pricing advantage over closed APIs. Anyone shipping or benchmarking open models today should be reporting thinking-level performance measured in dollar-equivalent inference on popular providers, not just raw token counts on the x-axis. This reframes the open vs. closed model debate around real-world cost efficiency.
 https://x.com/swyx/status/2070949306060931312
 
+He also gave an impromptu floor tour and AMA ahead of the AI Engineer pre-show — worth a watch if you're following the conference.
+https://x.com/swyx/status/2070971772548366788
+
+---
+
 Thibault Sottiaux — Codex & ChatGPT at OpenAI
-A big batch of Codex improvements just shipped. Highlights include smooth handling of super-long threads, a hoverable navigation rail for jumping between turns, settings search with clearer appearance and host-filtering options, and fixes for zoom-level tooltip/dialog misalignment. Copying into Slack now preserves Markdown formatting, and large text pastes no longer freeze the UI. And yes — there is now a dedicated Pets panel.
+
+Thibault announced a wave of quality-of-life improvements landing in Codex. Highlights include smooth handling of super-long threads, a hoverable navigation rail for jumping between turns, improved settings search with host-filtering and custom-provider options, and a fix for zoom-level misalignments that were breaking tooltips, dialogs, menus, and autocomplete. Large pastes into Slack now preserve Markdown formatting, and big text no longer freezes the UI. And yes — there is now a dedicated Pets panel.
 https://x.com/thsottiaux/status/2071071289247244481
 
-Peter Yang — creator of practical AI tutorials and guides for busy builders
-Peter shared his personal AI health-check setup: an agent called Hermes that emails him weekly health takeaways by pulling data from his Withings smart scale, Fitbit, Google Health, and a vibe-coded MCP server and fitness app he built himself. It is a clean example of composing multiple data sources into a personal AI assistant using standard APIs and MCP.
+---
+
+Peter Yang — Practical AI tutorials and interviews
+
+Peter shared how he built a personal health coach using AI: every Saturday, an agent called Hermes emails him a health check with top takeaways drawn from his Withings smart scale, Fitbit, Google Health, and a custom MCP-connected fitness app he vibe-coded himself. The setup pulls from multiple APIs and synthesizes a weekly report toward his health goals — a concrete example of agentic workflows delivering real personal utility.
 https://x.com/petergyang/status/2070906940352520477
 
-Guillermo Rauch — CEO of Vercel
-Rauch flagged a serious point about AI cybersecurity: capabilities like Mythos and Sol that are useful for offensive security are equally dangerous if adversaries gain access to equivalent tools. US companies that remain unaware of latent vulnerabilities are at risk. He strongly recommends running deepsec or similar evaluation harnesses with frontier models now, before adversaries do.
+---
+
+Guillermo Rauch — CEO at Vercel
+
+Guillermo flagged a serious security point: AI cybersecurity capabilities like Mythos and Sol are dual-use, equally useful for offensive and defensive purposes. His concern is that adversaries gaining equivalent offensive capabilities poses a genuine threat to US companies that remain unaware of latent vulnerabilities. He strongly recommends running deepsec or similar harnesses with frontier models to surface vulnerabilities before adversaries do.
 https://x.com/rauchg/status/2071047674187714830
 
-Aaron Levie — CEO of Box
-Levie argued that the applied AI layer — companies that deeply understand a specific domain, evaluate models on real use cases, and tune UX for those workflows — is where most enterprise AI value will be created. Generic models are not enough; you need a layer that understands your workflows, context, and business process to actually optimize token cost and get more intelligence per dollar. He sees horizontal and vertical versions of this playbook as a huge opportunity right now.
+---
+
+Aaron Levie — CEO at Box
+
+Aaron expanded on a thread about AI token cost optimization with a sharp strategic take: none of the efficiency tactics matter without deeply understanding the underlying work in a non-abstract way. His thesis is that the real value layer in applied AI is a company that deeply understands your workflows, domain, and business processes — evaluating models for specific use cases, tuning UX, supporting adoption, and having field engineers. This lets enterprises get more intelligence per dollar through optimal architecture and workflows. He sees this as the dominant playbook for applied AI companies right now, with both horizontal and vertical versions as a huge opportunity.
 https://x.com/levie/status/2070937863806751154
 
-Zara Zhang — builder and product storyteller, Harvard '17, 10k GitHub followers
-One year ago Zara barely knew how GitHub worked. Now she has 10k GitHub followers — and still cannot write code by hand. She also reflected that her projects are all side projects built for fun, driven by a love of connecting technology to user problems and telling product stories about what gets built.
-https://x.com/zarazhangrui/status/2070982013822333007
+---
 
-Matt Turck — VC at FirstMark Capital, host of the MAD Podcast
-Turck posted a crisp timeline of smart glasses history: Google said you want this in 2013 (you didn't), Microsoft said maybe enterprise in 2016 (still no), Meta tried normal-looking AI glasses in 2023 (almost but no), Apple charged $3,499 to cover your whole face in 2024 (absolutely not), and now Snap is trying again in 2026. The world admires the persistence.
+Matt Turck — VC at FirstMark Capital, organizer of Data Driven NYC
+
+Matt offered a sardonic timeline of smart glasses attempts — from Google Glass in 2013 ("you really want this") through Microsoft HoloLens, Meta Ray-Bans, Apple Vision Pro ($3,499, face-covering), and now Snap's latest entry in 2026. Each time Silicon Valley announces the future of computing; each time the world politely declines. A useful reminder that AR wearables have been "next year's platform" for over a decade — though the pattern also suggests the market keeps trying, which means eventually something will click.
 https://x.com/mattturck/status/2070972014945243622
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
 
-Training Data: Memory and Continual Learning — Engram's Dan Biderman and Jessy Lin
+Zara Zhang — Builder, Harvard '17
+
+Zara crossed 10,000 GitHub followers — notable because she's candid that she can't write code by hand. All of her projects are side projects built with AI tools, connecting technology to user problems and telling stories about the products. A data point for what non-engineers can ship in the current AI tooling environment: in one year, from barely knowing how GitHub works to 10k followers.
+https://x.com/zarazhangrui/status/2070982013822333007
+
+---
+
+Peter Steinberger — ClawFather at OpenClaw, OpenAI
+
+Peter shared a pointed quote: "History teaches us that access blockage rarely stops determined users." No additional commentary needed — reads as a nod to the limits of platform restrictions on AI capabilities.
+https://x.com/steipete/status/2071063588329193551
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PODCASTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Memory and Continual Learning: Engram's Dan Biderman and Jessy Lin
+Training Data Podcast
 https://www.youtube.com/watch?v=aiR7F4jqjXY
 
-The bottleneck for making AI models more useful is no longer raw intelligence — it is the ability to learn and retain new, domain-specific context that never made it into pre-training data.
+One-sentence takeaway: Engram is betting that the bottleneck in AI usefulness isn't raw intelligence but the ability to continuously learn and deeply encode new, evolving context into model weights — the same way pre-training encodes world knowledge.
 
-Dan Biderman and Jessy Lin are the cofounders of Engram, a research lab focused on memory and continual learning. Their core thesis: context engineering and RAG are useful but underleverage an available tool — the same training pipeline frontier labs use to make models great at math or code can be applied to private, domain-specific data. "Models are always training" is Engram's founding principle, and they are building toward per-team adapter-fine-tuned models (LoRAs, prefix tuning, sparse architectures) that continuously improve on real workspace data from partners like Notion, Microsoft, and Harvey.
+Dan Biderman and Jessy Lin, co-founders of Engram, joined the Training Data podcast to discuss one of the most underrated problems in applied AI: how do you make a model truly learn your company's specific context, not just read it at inference time?
 
-The conversation gets into the RAG-vs-weights debate at length. Engram's view is that it is a false dichotomy — both matter, but certain things can only live in weights. Specifically: the associative connections that let a model say "I notice you're researching X; here's something related you didn't ask for." That kind of recall is not a lookup; it emerges from training. Jessy Lin puts it concretely: a model trained on your team's context can answer in 100 tokens what the best frontier model would spend 100,000 tokens retrieving and reasoning about. That is a two-orders-of-magnitude token reduction — not a rounding error.
+Their framing is crisp: current frontier models are incredibly intelligent, but they don't adapt to new contexts the way an experienced employee does. Context engineering — stuffing long prompts, reorganizing conversation history, managing external memory stores — is how most people patch this gap today. But Dan argues this approach has real limits. Tens of millions of tokens generated per person per day is coming, and searching through externalized memory at that scale will be expensive and confusing for models.
 
-There is also a fascinating technical aside about KV cache efficiency. A single Wikipedia article produces ~80 GB of KV cache for a 70B model, while the entire weights of that model — which effectively "remember" the whole internet — are only ~100 GB. Engram's research is exploring whether that 80 GB cache could be compressed 1000x by training it into weights offline, with major implications for inference speed and memory footprint.
+Engram's answer is to apply the same training pipelines that make models great at frontier math or code — supervised fine tuning, RL, on-policy distillation — to every domain and private context a company cares about. They do adapter fine-tuning (LoRAs, prefixes, sparse architectures), turning raw documents and agent interactions into training signal, and training per-team models that improve continuously on what the team actually does.
 
-The long-term vision: a world where everyone has their own personalized model — trained on their own data, fine-tuned for their own workflows — and where the more time you spend on a task, the better your model gets at it. As Jessy put it: "I'm imagining a world where everyone has their own model that is really different from the other person's model and from the frontier model, and all of these serve different purposes."
+The analogy Dan uses is telling: "How do you make the models learn that just as well as the models know the capital of France or how to write Python?" The goal is weight-level knowledge of your company's hiring pipeline, initiatives, and workflows — not sticky notes in a context window.
 
-Dan comes from neuroscience and draws a useful analogy: human memory evolved to be lossy precisely because intelligence requires compressing what is important. The real research question is not facts vs. skills — that distinction breaks down under gradient descent — but what deserves to be internalized vs. externalized, and how to make that judgment automatically.
+Their current partners include Notion, Microsoft, and Harvey. The pitch to these enterprise platforms is that agents interacting with your workspace over months shouldn't need to be repeatedly re-briefed — they should accumulate understanding, the way a long-tenured employee does.
 
-Direct quote from Dan Biderman:
-"Now to figure out how to crack this problem of continual learning, it's about figuring out what about pre-training or even post-training makes it possible for the models to generalize in these magical emergent ways — and controlling that process so that a company has a set of private data. How do we make the models learn that just as well as the models know the capital of France or how to write Python?"
+As Jessy puts it: "As an individual, taking notes and having sticky notes is a very valuable thing. We should never discard this. But whenever we get back to business the next day, we always have some sort of trace of memory in our brain, some new intuition about how things should be."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The episode covers their architecture in depth, the tradeoffs between externalized and weight-encoded memory, and why they think adapter fine-tuning at the workspace level is the right wedge. Recommended if you're thinking about long-term agent memory and personalization.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude Blog: Claude Code now supports artifacts
+Claude Code now supports artifacts
+Anthropic / Claude Blog — Jun 18, 2026
 https://claude.com/blog/artifacts-in-claude-code
 
-Claude Code can now generate live, shareable visual pages — called artifacts — directly from a session's context. These are not static exports; they update in place as the session progresses, and every publish creates a versioned snapshot at the same URL. Use cases include PR walkthroughs, incident timelines, data dashboards, dependency audits, and release checklists. The artifact is built from everything Claude Code already has access to: your codebase, connected monitoring tools, and the conversation itself. All artifacts are private to the author by default, shareable within an org, and managed via role-based access controls and a compliance API. This closes a gap that has always existed in AI-assisted engineering: turning what the agent found into something teammates can actually look at together.
+Anthropic launched artifact support in Claude Code. Claude Code sessions — which can span incident investigations, service refactors, or multi-month data analyses — can now capture their work as live, shareable visual pages. These artifacts automatically pull from your codebase, connected tools, and session context: a single incident page can combine a failing test, the function behind it, an error spike from a monitoring connector, and the root-cause reasoning from the session. The pages refresh in place when Claude Code updates them, so teammates see the latest version at the same link without needing to be re-briefed. Version history and a gallery for managing artifacts are included. The stated design goal: spend more time building, less time communicating status updates.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
