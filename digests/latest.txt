@@ -1,100 +1,67 @@
-AI Builders Digest — 2026-06-29
+AI Builders Digest — 2026-06-30
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — AI engineer, co-host of the Latent Space podcast, affiliated with Cognition and Temporal
+No new tweets from tracked builders in this period.
 
-Swyx raised an interesting framing on model evaluation: if you take Noam Chomsky's principle of keeping a constant inference budget across eval reports, open models actually have a pricing advantage over closed APIs. Anyone shipping or benchmarking open models today should be reporting thinking-level performance measured in dollar-equivalent inference on popular providers, not just raw token counts on the x-axis. This reframes the open vs. closed model debate around real-world cost efficiency.
-https://x.com/swyx/status/2070949306060931312
-
-He also gave an impromptu floor tour and AMA ahead of the AI Engineer pre-show — worth a watch if you're following the conference.
-https://x.com/swyx/status/2070971772548366788
-
----
-
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-
-Thibault announced a wave of quality-of-life improvements landing in Codex. Highlights include smooth handling of super-long threads, a hoverable navigation rail for jumping between turns, improved settings search with host-filtering and custom-provider options, and a fix for zoom-level misalignments that were breaking tooltips, dialogs, menus, and autocomplete. Large pastes into Slack now preserve Markdown formatting, and big text no longer freezes the UI. And yes — there is now a dedicated Pets panel.
-https://x.com/thsottiaux/status/2071071289247244481
-
----
-
-Peter Yang — Practical AI tutorials and interviews
-
-Peter shared how he built a personal health coach using AI: every Saturday, an agent called Hermes emails him a health check with top takeaways drawn from his Withings smart scale, Fitbit, Google Health, and a custom MCP-connected fitness app he vibe-coded himself. The setup pulls from multiple APIs and synthesizes a weekly report toward his health goals — a concrete example of agentic workflows delivering real personal utility.
-https://x.com/petergyang/status/2070906940352520477
-
----
-
-Guillermo Rauch — CEO at Vercel
-
-Guillermo flagged a serious security point: AI cybersecurity capabilities like Mythos and Sol are dual-use, equally useful for offensive and defensive purposes. His concern is that adversaries gaining equivalent offensive capabilities poses a genuine threat to US companies that remain unaware of latent vulnerabilities. He strongly recommends running deepsec or similar harnesses with frontier models to surface vulnerabilities before adversaries do.
-https://x.com/rauchg/status/2071047674187714830
-
----
-
-Aaron Levie — CEO at Box
-
-Aaron expanded on a thread about AI token cost optimization with a sharp strategic take: none of the efficiency tactics matter without deeply understanding the underlying work in a non-abstract way. His thesis is that the real value layer in applied AI is a company that deeply understands your workflows, domain, and business processes — evaluating models for specific use cases, tuning UX, supporting adoption, and having field engineers. This lets enterprises get more intelligence per dollar through optimal architecture and workflows. He sees this as the dominant playbook for applied AI companies right now, with both horizontal and vertical versions as a huge opportunity.
-https://x.com/levie/status/2070937863806751154
-
----
-
-Matt Turck — VC at FirstMark Capital, organizer of Data Driven NYC
-
-Matt offered a sardonic timeline of smart glasses attempts — from Google Glass in 2013 ("you really want this") through Microsoft HoloLens, Meta Ray-Bans, Apple Vision Pro ($3,499, face-covering), and now Snap's latest entry in 2026. Each time Silicon Valley announces the future of computing; each time the world politely declines. A useful reminder that AR wearables have been "next year's platform" for over a decade — though the pattern also suggests the market keeps trying, which means eventually something will click.
-https://x.com/mattturck/status/2070972014945243622
-
----
-
-Zara Zhang — Builder, Harvard '17
-
-Zara crossed 10,000 GitHub followers — notable because she's candid that she can't write code by hand. All of her projects are side projects built with AI tools, connecting technology to user problems and telling stories about the products. A data point for what non-engineers can ship in the current AI tooling environment: in one year, from barely knowing how GitHub works to 10k followers.
-https://x.com/zarazhangrui/status/2070982013822333007
-
----
-
-Peter Steinberger — ClawFather at OpenClaw, OpenAI
-
-Peter shared a pointed quote: "History teaches us that access blockage rarely stops determined users." No additional commentary needed — reads as a nod to the limits of platform restrictions on AI capabilities.
-https://x.com/steipete/status/2071063588329193551
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Memory and Continual Learning: Engram's Dan Biderman and Jessy Lin
-Training Data Podcast
-https://www.youtube.com/watch?v=aiR7F4jqjXY
+No Priors — Re-engineering the Semiconductor Supply Chain with Intel CEO Lip-Bu Tan
+Published: June 18, 2026
+https://www.youtube.com/watch?v=asCgCv2XB4s
 
-One-sentence takeaway: Engram is betting that the bottleneck in AI usefulness isn't raw intelligence but the ability to continuously learn and deeply encode new, evolving context into model weights — the same way pre-training encodes world knowledge.
+Takeaway: Intel CEO Lip-Bu Tan is betting that the agentic AI boom is precisely what the company needed — CPUs are back in demand, and Tan is methodically rebuilding Intel's culture, balance sheet, and foundry business to capitalize on the moment.
 
-Dan Biderman and Jessy Lin, co-founders of Engram, joined the Training Data podcast to discuss one of the most underrated problems in applied AI: how do you make a model truly learn your company's specific context, not just read it at inference time?
+Tan, 66 and a 13-year veteran CEO of Cadence, took what he calls "the hardest job in the industry" out of conviction that Intel is too important to the US semiconductor ecosystem to let fail. His first fourteen months have been anything but smooth: President Trump initially asked him to resign over a conflict-of-interest concern, before Tan got a hearing and persuaded him otherwise. He framed the episode with characteristic equanimity — "I don't need this job. I do it purely to save Intel."
 
-Their framing is crisp: current frontier models are incredibly intelligent, but they don't adapt to new contexts the way an experienced employee does. Context engineering — stuffing long prompts, reorganizing conversation history, managing external memory stores — is how most people patch this gap today. But Dan argues this approach has real limits. Tens of millions of tokens generated per person per day is coming, and searching through externalized memory at that scale will be expensive and confusing for models.
+His turnaround playbook is disciplined and sequential: strengthen the balance sheet first (the US government is now a major shareholder, mirroring how Taiwan's government backed TSMC at the start), simplify the product line, get engineering to report directly to the CEO, and drive faster decision-making. Jensen Huang's $5 billion investment — which Tan notes has since grown to $25 billion or more — validates the direction. On culture, Tan is pushing hard against Intel's historical bureaucracy: "I'm so used to startup culture, you move fast in the speed of light."
 
-Engram's answer is to apply the same training pipelines that make models great at frontier math or code — supervised fine tuning, RL, on-policy distillation — to every domain and private context a company cares about. They do adapter fine-tuning (LoRAs, prefixes, sparse architectures), turning raw documents and agent interactions into training signal, and training per-team models that improve continuously on what the team actually does.
+What makes the timing interesting for AI builders: Tan argues the agentic AI wave is shifting the GPU-to-CPU ratio. Where training clusters ran 8 GPUs for every 1 CPU, inference and agent orchestration workloads can run as close as 1-to-1. "In terms of reinforced learning, in terms of the speed of orchestrating all the agents, the CPU is actually better," he said.
 
-The analogy Dan uses is telling: "How do you make the models learn that just as well as the models know the capital of France or how to write Python?" The goal is weight-level knowledge of your company's hiring pipeline, initiatives, and workflows — not sticky notes in a context window.
+On Intel's foundry business, Tan is adamant it's a service and trust business: yield, defect density, and cycle time are non-negotiables. He's doing all senior recruiting himself — no search firms. The episode closes with a long view on what winning looks like over the next decade: a full-stack Intel delivering silicon, software, and complete rack systems.
 
-Their current partners include Notion, Microsoft, and Harvey. The pitch to these enterprise platforms is that agents interacting with your workspace over months shouldn't need to be repeatedly re-briefed — they should accumulate understanding, the way a long-tenured employee does.
+Direct quote: "Jensen Huang, my all time friend, he also put $5,000,000,000 in investing and support me. His $5,000,000,000 become $25,000,000,000 now."
 
-As Jessy puts it: "As an individual, taking notes and having sticky notes is a very valuable thing. We should never discard this. But whenever we get back to business the next day, we always have some sort of trace of memory in our brain, some new intuition about how things should be."
-
-The episode covers their architecture in depth, the tradeoffs between externalized and weight-encoded memory, and why they think adapter fine-tuning at the workspace level is the right wedge. Recommended if you're thinking about long-term agent memory and personalization.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude Code now supports artifacts
-Anthropic / Claude Blog — Jun 18, 2026
-https://claude.com/blog/artifacts-in-claude-code
+Anthropic Engineering — An update on recent Claude Code quality reports
+https://www.anthropic.com/engineering/april-23-postmortem
 
-Anthropic launched artifact support in Claude Code. Claude Code sessions — which can span incident investigations, service refactors, or multi-month data analyses — can now capture their work as live, shareable visual pages. These artifacts automatically pull from your codebase, connected tools, and session context: a single incident page can combine a failing test, the function behind it, an error spike from a monitoring connector, and the root-cause reasoning from the session. The pages refresh in place when Claude Code updates them, so teammates see the latest version at the same link without needing to be re-briefed. Version history and a gallery for managing artifacts are included. The stated design goal: spend more time building, less time communicating status updates.
+Anthropic traced a wave of user-reported quality degradation to three separate, overlapping changes rather than any single regression. All three are now fixed as of April 20 (v2.1.116); the API was unaffected throughout.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The three issues: (1) On March 4, Claude Code's default reasoning effort was quietly lowered from high to medium to reduce latency — a tradeoff users rejected, and Anthropic reverted on April 7. (2) On March 26, a bug caused Claude's thinking to be wiped every turn (not just once after an idle hour as intended), making the model seem forgetful and repetitive — fixed April 10. (3) On April 16, a verbosity-reduction system prompt was added that, combined with other prompt changes, degraded coding quality — reverted April 20.
+
+Because each change hit a different slice of traffic on a different schedule, the combined effect looked like broad, inconsistent degradation that was hard to distinguish from normal feedback noise. Anthropic is resetting usage limits for all subscribers as of April 23 in response.
+
+---
+
+Anthropic Engineering — Scaling Managed Agents: Decoupling the brain from the hands
+https://www.anthropic.com/engineering/managed-agents
+
+Anthropic's key insight in building Managed Agents: harnesses encode assumptions about what the model can't do on its own, but those assumptions go stale as models improve — so the architecture needs to outlast any particular implementation.
+
+The solution draws on a classical computing analogy: just as operating systems virtualized hardware into abstractions (process, file) general enough for programs not yet written, Managed Agents virtualizes agent components into three interfaces — session (an append-only log of everything that happened), harness (the loop that calls Claude and routes tool calls), and sandbox (the execution environment). Each can be swapped independently.
+
+The team learned early not to "adopt a pet": bundling session, harness, and sandbox into a single container made that container irreplaceable. Failures required nursing rather than replacement. Decoupling the brain (Claude) from the hands (tools, sandbox) means a stuck sandbox can be replaced without losing the session, and a smarter model can be dropped in without rewriting the harness.
+
+---
+
+Claude.com Blog — New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels
+Published: May 19, 2026
+https://claude.com/blog/claude-managed-agents-updates
+
+Claude Managed Agents can now run tool execution inside infrastructure you control. The agent loop (orchestration, context management, error recovery) stays on Anthropic's servers, while the sandbox where the agent actually runs code moves into your perimeter — on your own infrastructure or with managed providers including Cloudflare, Daytona, Modal, and Vercel.
+
+The practical upshot: sensitive files, packages, and internal services never leave your network. Your existing security policies, audit logging, and network controls apply automatically. You also control compute sizing, which matters for agents doing long builds or image generation.
+
+Alongside self-hosted sandboxes, MCP tunnels (in research preview) let agents connect to private MCP servers inside your enterprise. Real-world deployments already using the new capabilities: Amplitude built a Design Agent for on-brand UI production on Managed Agents and Cloudflare; Clay's GTM engineering agent, Sculptor, builds, tests, and monitors workflows on Managed Agents and Daytona. Self-hosted sandboxes are in public beta on the Claude Platform.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
