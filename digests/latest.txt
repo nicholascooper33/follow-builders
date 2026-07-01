@@ -1,67 +1,96 @@
-AI Builders Digest — 2026-06-30
+AI Builders Digest — 2026-07-01
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No new tweets from tracked builders in this period.
+Boris Cherny — Claude Code at Anthropic
+Claude Desktop for Linux has arrived. After repeated requests from the community, Anthropic shipped the native Linux desktop app. The announcement landed on June 30 and has already pulled nearly 3,500 likes and 196 retweets, making it one of the most-shared developer news items of the day.
+https://x.com/bcherny/status/2072000214634742243
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Claude (Anthropic's official account) — AI assistant from Anthropic
+Sonnet 5 is now the default model on Free and Pro tiers and is available to Max, Team, and Enterprise users. Anthropic says early access partners found the model "finishes complex tasks where previous Sonnets stopped short, checks its own output without being asked, and does all its agentic work at an attractive price point." Performance is described as close to Opus 4.8 at lower prices, with substantial gains in reasoning, tool use, coding, and knowledge work. Introductory pricing runs through August 31.
+https://x.com/claudeai/status/2072017452335087996
+
+Thariq — Claude Code at Anthropic
+Thariq addressed community questions around Fable 5's updated classifiers. He clarified that, just as with the original classifiers, a small fraction of routine coding and debugging tasks may be flagged and fall back to Opus. He added that Anthropic is "continuing to refine these safeguards to better distinguish genuine misuse from legitimate requests and reduce false positives," and said the team is "excited for guys to get access back tomorrow." The announcement drew 1,350 likes and 346 replies.
+https://x.com/trq212/status/2072185565076988326
+
+Aaron Levie — CEO at Box
+Levie had a busy 24 hours. First, he published results from Box's internal "Complex Work Eval" benchmark showing Claude Sonnet 5 holds frontier-class quality on multi-step enterprise document tasks, with notable gains in Energy (+4.7 pp), Retail (+4.4 pp), and Professional Services (+2.6 pp) over Sonnet 4.6. Concrete wins included catching loan covenant violations a source report itself understated, respecting company-specific KPI definitions across a cost analysis, and correctly computing subcategory denominators on segmented sales data. Sonnet 5 will be available in Box AI Studio shortly.
+https://x.com/levie/status/2072046374045249671
+
+He also shared data pushing back on AI-eliminates-jobs fears. A survey of 1,600+ mid and large companies found 58% expect headcount to grow over the next three years—rising to 79% among the most mature AI adopters. His read: companies that use AI to win more customers hire more people to serve them.
+https://x.com/levie/status/2071992799109824562
+
+On the Fable safety framework, Levie commented on the broader industry implications: Anthropic's post-release blog outlined a shared framework (co-developed with Amazon, Microsoft, Google, and others) for assessing and triaging jailbreaks, plus deeper US government collaboration on pre-release testing. Levie welcomed the progress but flagged that heavy judgment calls remain, and warned against letting every incremental model update require the same review cycle.
+https://x.com/levie/status/2072172275017879829
+
+Peter Steinberger — OpenClaw at OpenAI
+Steinberger amplified a point that's been picking up steam: "Price per token != cost per task." As models get more capable, fewer tokens are needed to complete a given task, meaning a nominally pricier model can be cheaper in practice. The tweet pulled 1,072 likes.
+https://x.com/steipete/status/2072144627474579925
+
+Amjad Masad — CEO at Replit
+Masad highlighted Etched, framing it as the first inference system designed from the ground up for modern AI workloads rather than repurposed pre-LLM hardware. He argues most inference is expensive today precisely because the underlying silicon was designed before transformers existed.
+https://x.com/amasad/status/2071992110132117740
+
+Guillermo Rauch — CEO at Vercel
+Two noteworthy posts. First, Vercel Services is now live: you can co-locate a Python backend API, an ExpressJS server, and a React SPA inside one Vercel project, all deployable and rollback-able together with internal networking and shared observability.
+https://x.com/rauchg/status/2071966055308607765
+
+Second, Rauch announced a collaboration with Shopify and Tobi Lütke on "pushing the agentic web forward."
+https://x.com/rauchg/status/2072044844965400589
+
+Garry Tan — President & CEO at Y Combinator
+Tan shared that Gbrain—his personal knowledge tool—becomes genuinely useful at 10,000+ markdown files in a personal or company brain. Below that threshold the signal is too thin; at scale it becomes a meaningful second brain.
+https://x.com/garrytan/status/2071910876496757145
+
+Madhu Guru — prev Product Leader at Google (Gemini, Veo, Nano)
+Madhu identified what he sees as the core obstacle for traditional PMs trying to build AI-native products: "a lack of magical thinking." A decade of agile frameworks and metric obsession has trained PMs toward constraint-first, incremental thinking. His workaround on past teams was asking people to imagine they had tech from 100 years in the future and work backward. His conclusion: that future tech is here now—go build the magical thing.
+https://x.com/realmadhuguru/status/2071970221477470694
+
+Nan Yu — Head of Product at Linear
+Commenting on the ongoing debate around AI data and model distillation, Nan noted that under some definitions of "distillation," the entirety of Cursor's early training data would qualify as distilled from Claude. A pointed observation about how the legal and technical definitions don't always map cleanly to each other.
+https://x.com/thenanyu/status/2071973229070033322
+
+Aditya Agarwal — General Partner at South Park Commons; prev CTO at Dropbox
+A crisp observation: "It is a very strange state of the world where the models powering innovation in the USA are Chinese open source models." No further commentary needed—it landed 284 likes and 28 retweets.
+https://x.com/adityaag/status/2071983952894837062
+
+Zara Zhang — Builder
+Shared a quote worth sitting with: "Taste isn't valuable because it's impossible to copy. Taste is valuable exactly because it defines what everyone else chooses to copy."
+https://x.com/zarazhangrui/status/2072197929138602079
+
+Swyx — AI engineer; affiliations include Cognition, Temporal, AI Dot Engineer, Latent Space Pod
+Reported on a successful first Poster Sessions day at the AI Engineering World Fair (AIEWF), thanking the organizers. Day two will feature "Poaster sessions"—printing the hottest tweets as physical posters.
+https://x.com/swyx/status/2072048730581405800
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors — Re-engineering the Semiconductor Supply Chain with Intel CEO Lip-Bu Tan
-Published: June 18, 2026
-https://www.youtube.com/watch?v=asCgCv2XB4s
+Training Data (Sequoia) — "Why Hardware-Software Co-Design Is AI's Real 100x: Dylan Patel of SemiAnalysis"
+https://www.youtube.com/watch?v=f6D_aiy8qyU
+Published: June 30, 2026
 
-Takeaway: Intel CEO Lip-Bu Tan is betting that the agentic AI boom is precisely what the company needed — CPUs are back in demand, and Tan is methodically rebuilding Intel's culture, balance sheet, and foundry business to capitalize on the moment.
+The single biggest lever in AI efficiency isn't better hardware or better models in isolation—it's co-designing them together, and Dylan Patel of SemiAnalysis makes that case in granular, authoritative detail in this conversation with Sequoia's Sean and Sonja Huang.
 
-Tan, 66 and a 13-year veteran CEO of Cadence, took what he calls "the hardest job in the industry" out of conviction that Intel is too important to the US semiconductor ecosystem to let fail. His first fourteen months have been anything but smooth: President Trump initially asked him to resign over a conflict-of-interest concern, before Tan got a hearing and persuaded him otherwise. He framed the episode with characteristic equanimity — "I don't need this job. I do it purely to save Intel."
+Patel opens with his origin story: growing up in a family motel and gas station, obsessively moderating semiconductor forums from age 12, and eventually founding SemiAnalysis after a bruising exit from a quant firm during COVID. The company now has 90 people and, according to circulating estimates he declines to confirm, north of $100M in revenue.
 
-His turnaround playbook is disciplined and sequential: strengthen the balance sheet first (the US government is now a major shareholder, mirroring how Taiwan's government backed TSMC at the start), simplify the product line, get engineering to report directly to the CEO, and drive faster decision-making. Jensen Huang's $5 billion investment — which Tan notes has since grown to $25 billion or more — validates the direction. On culture, Tan is pushing hard against Intel's historical bureaucracy: "I'm so used to startup culture, you move fast in the speed of light."
+The conversation quickly gets substantive. Patel explains why model costs have dropped ~60x per year for equivalent quality: not from any single source, but from simultaneous advances at the hardware layer (Hopper to Blackwell: ~30x), the model architecture layer (GPT-4-era to a modern 27B MoE: enormous quality jump for a fraction of the compute), and—most importantly—the co-design layer that bridges them. His key point: "Instead of being multiplicative to 8x, it's actually 100x, because you've optimized across all three layers."
 
-What makes the timing interesting for AI builders: Tan argues the agentic AI wave is shifting the GPU-to-CPU ratio. Where training clusters ran 8 GPUs for every 1 CPU, inference and agent orchestration workloads can run as close as 1-to-1. "In terms of reinforced learning, in terms of the speed of orchestrating all the agents, the CPU is actually better," he said.
+DeepSeek is his go-to public example. Its expert shapes were designed specifically for Hopper; V4's are tuned for Blackwell. The model doesn't run well on TPUs—not because TPUs are bad, but because it was never optimized for them. Conversely, Google's Gemini models are architected for TPUs and don't run optimally on NVIDIA silicon. "The real breakthrough innovation is when you leapfrog a few layers."
 
-On Intel's foundry business, Tan is adamant it's a service and trust business: yield, defect density, and cycle time are non-negotiables. He's doing all senior recruiting himself — no search firms. The episode closes with a long view on what winning looks like over the next decade: a full-stack Intel delivering silicon, software, and complete rack systems.
+On the NVIDIA vs. TPU debate, Patel refuses to pick a winner. His view: OpenAI's increasingly sparse architectures are naturally co-optimized for GPUs; Anthropic's denser (but still sparse) architectures and training on TPUs reflect a different set of trade-offs. "With a straight face I could argue GPUs are way better than TPUs, or TPUs are way better than GPUs—it comes down to hardware-software co-design." He also notes that CUDA's moat is real but changing: models like Claude and Codex are now good enough at low-level kernel work that writing custom kernels for alternative chips is no longer the blocker it once was. The stickiness is now more about the fact that major open-source models (DeepSeek, Qwen, etc.) are all shaped for NVIDIA, pulling the ecosystem with them.
 
-Direct quote: "Jensen Huang, my all time friend, he also put $5,000,000,000 in investing and support me. His $5,000,000,000 become $25,000,000,000 now."
+On InferenceX—SemiAnalysis's living benchmark platform backed by over $50M in donated hardware from CoreWeave, Crusoe, Oracle, Microsoft, Amazon, Google, and others, and running against all frontier models daily—Patel describes it as a response to the problem of point-in-time benchmarking in a world where models and optimization libraries update twice a week. The output is a public Pareto frontier of throughput vs. interactivity for every major chip and model combination, along with downloadable containers for the optimal configuration. "The problem is people take a suboptimal point for someone else and compare it to their optimal one."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+He also shares projections that are worth noting: by 2030, just OpenAI and Anthropic alone will exceed 100 gigawatts of compute combined. By 2040, he expects terawatts globally and predicts more than half of incremental compute will be deployed in space. For the next three to five years, though, space data centers barely register.
 
-Anthropic Engineering — An update on recent Claude Code quality reports
-https://www.anthropic.com/engineering/april-23-postmortem
+The episode closes with Patel's view on the Neo Cloud opportunity, Jensen Huang's incentives to keep the ecosystem multipolar, and why Anthropic's per-token margins on Opus 4.8 are "north of 80%"—giving it headroom to pay above-market compute rates and still grow net income. Profitable in Q2 on a net-income basis (ex-SBC), potentially profitable including SBC by Q3.
 
-Anthropic traced a wave of user-reported quality degradation to three separate, overlapping changes rather than any single regression. All three are now fixed as of April 20 (v2.1.116); the API was unaffected throughout.
+A direct quote that captures his core thesis: "The biggest gain and the beauty of the best labs is when they co-optimize all three [hardware, model architecture, and inference software]. That's really exciting."
 
-The three issues: (1) On March 4, Claude Code's default reasoning effort was quietly lowered from high to medium to reduce latency — a tradeoff users rejected, and Anthropic reverted on April 7. (2) On March 26, a bug caused Claude's thinking to be wiped every turn (not just once after an idle hour as intended), making the model seem forgetful and repetitive — fixed April 10. (3) On April 16, a verbosity-reduction system prompt was added that, combined with other prompt changes, degraded coding quality — reverted April 20.
-
-Because each change hit a different slice of traffic on a different schedule, the combined effect looked like broad, inconsistent degradation that was hard to distinguish from normal feedback noise. Anthropic is resetting usage limits for all subscribers as of April 23 in response.
-
----
-
-Anthropic Engineering — Scaling Managed Agents: Decoupling the brain from the hands
-https://www.anthropic.com/engineering/managed-agents
-
-Anthropic's key insight in building Managed Agents: harnesses encode assumptions about what the model can't do on its own, but those assumptions go stale as models improve — so the architecture needs to outlast any particular implementation.
-
-The solution draws on a classical computing analogy: just as operating systems virtualized hardware into abstractions (process, file) general enough for programs not yet written, Managed Agents virtualizes agent components into three interfaces — session (an append-only log of everything that happened), harness (the loop that calls Claude and routes tool calls), and sandbox (the execution environment). Each can be swapped independently.
-
-The team learned early not to "adopt a pet": bundling session, harness, and sandbox into a single container made that container irreplaceable. Failures required nursing rather than replacement. Decoupling the brain (Claude) from the hands (tools, sandbox) means a stuck sandbox can be replaced without losing the session, and a smarter model can be dropped in without rewriting the harness.
-
----
-
-Claude.com Blog — New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels
-Published: May 19, 2026
-https://claude.com/blog/claude-managed-agents-updates
-
-Claude Managed Agents can now run tool execution inside infrastructure you control. The agent loop (orchestration, context management, error recovery) stays on Anthropic's servers, while the sandbox where the agent actually runs code moves into your perimeter — on your own infrastructure or with managed providers including Cloudflare, Daytona, Modal, and Vercel.
-
-The practical upshot: sensitive files, packages, and internal services never leave your network. Your existing security policies, audit logging, and network controls apply automatically. You also control compute sizing, which matters for agents doing long builds or image generation.
-
-Alongside self-hosted sandboxes, MCP tunnels (in research preview) let agents connect to private MCP servers inside your enterprise. Real-world deployments already using the new capabilities: Amplitude built a Design Agent for on-brand UI production on Managed Agents and Cloudflare; Clay's GTM engineering agent, Sculptor, builds, tests, and monitors workflows on Managed Agents and Daytona. Self-hosted sandboxes are in public beta on the Claude Platform.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
