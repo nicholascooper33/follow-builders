@@ -1,96 +1,80 @@
-AI Builders Digest — 2026-07-01
+AI Builders Digest — July 2, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━
 
-Boris Cherny — Claude Code at Anthropic
-Claude Desktop for Linux has arrived. After repeated requests from the community, Anthropic shipped the native Linux desktop app. The announcement landed on June 30 and has already pulled nearly 3,500 likes and 196 retweets, making it one of the most-shared developer news items of the day.
-https://x.com/bcherny/status/2072000214634742243
+── FABLE 5 IS BACK ──
 
-Claude (Anthropic's official account) — AI assistant from Anthropic
-Sonnet 5 is now the default model on Free and Pro tiers and is available to Max, Team, and Enterprise users. Anthropic says early access partners found the model "finishes complex tasks where previous Sonnets stopped short, checks its own output without being asked, and does all its agentic work at an attractive price point." Performance is described as close to Opus 4.8 at lower prices, with substantial gains in reasoning, tool use, coding, and knowledge work. Introductory pricing runs through August 31.
-https://x.com/claudeai/status/2072017452335087996
+Claude (AI assistant by Anthropic): Fable 5 has returned. All paid plans with usage included can access it through July 7 — up to 50% of the weekly usage limit, with additional access available via usage credits. Anthropic also reminded users that the /feedback command in Claude Code can file a report if a request is mistakenly flagged, helping tune classifiers and reduce false positives over time.
+https://x.com/claudeai/status/2072402639644766602
+https://x.com/claudeai/status/2072402640907162072
 
-Thariq — Claude Code at Anthropic
-Thariq addressed community questions around Fable 5's updated classifiers. He clarified that, just as with the original classifiers, a small fraction of routine coding and debugging tasks may be flagged and fall back to Opus. He added that Anthropic is "continuing to refine these safeguards to better distinguish genuine misuse from legitimate requests and reduce false positives," and said the team is "excited for guys to get access back tomorrow." The announcement drew 1,350 likes and 346 replies.
-https://x.com/trq212/status/2072185565076988326
+Peter Yang (practical AI tutorials and interviews for busy people): Peter gave Fable 5 a "vibe check" and called it "a step function above any other model — still really f***ing good." He published a no-BS tutorial covering five use cases worth trying it on: finding Fable-worthy work, getting life and business advice, making projects ship-ready, planning the next big thing, and refactoring a codebase. He also flagged the "explain-diff" Claude Code skill as a must-install for anyone still learning to read code.
+https://x.com/petergyang/status/2072458983886205333
+https://x.com/petergyang/status/2072525669704384612
 
-Aaron Levie — CEO at Box
-Levie had a busy 24 hours. First, he published results from Box's internal "Complex Work Eval" benchmark showing Claude Sonnet 5 holds frontier-class quality on multi-step enterprise document tasks, with notable gains in Energy (+4.7 pp), Retail (+4.4 pp), and Professional Services (+2.6 pp) over Sonnet 4.6. Concrete wins included catching loan covenant violations a source report itself understated, respecting company-specific KPI definitions across a cost analysis, and correctly computing subcategory denominators on segmented sales data. Sonnet 5 will be available in Box AI Studio shortly.
-https://x.com/levie/status/2072046374045249671
+── AGENTIC INFRASTRUCTURE & DEVELOPER TOOLS ──
 
-He also shared data pushing back on AI-eliminates-jobs fears. A survey of 1,600+ mid and large companies found 58% expect headcount to grow over the next three years—rising to 79% among the most mature AI adopters. His read: companies that use AI to win more customers hire more people to serve them.
-https://x.com/levie/status/2071992799109824562
+Guillermo Rauch (CEO of Vercel): Vercel now supports WordPress deployments using Fluid compute with Active CPU, MySQL on PlanetScale, and 30-second cloud-side Docker builds — all from a single Dockerfile.vercel and one `vercel` command. On the agentic side, Vercel is shipping a dry-run step for agentic deployments: agents already run checks like `tsc --noEmit` and `next build` before pushing, and the dry-run formalizes that loop to minimize cost and risk.
+https://x.com/rauchg/status/2072463293654942090
+https://x.com/rauchg/status/2072398926175404250
 
-On the Fable safety framework, Levie commented on the broader industry implications: Anthropic's post-release blog outlined a shared framework (co-developed with Amazon, Microsoft, Google, and others) for assessing and triaging jailbreaks, plus deeper US government collaboration on pre-release testing. Levie welcomed the progress but flagged that heavy judgment calls remain, and warned against letting every incremental model update require the same review cycle.
-https://x.com/levie/status/2072172275017879829
+Aaron Levie (CEO of Box): Aaron spotlighted Devin's "agentic mapreduce" pattern for code security — mapping signals across a repo, fanning out focused agents over bounded shards, reducing findings into a single report, then verifying confirmed vulnerabilities in isolated sandboxes. He argues this is exactly why we'll need 100X more AI inference in the future, and that it only scales when you can mix frontier and lower-cost models. Box sees the same dynamic with enterprise customers wanting to process millions of documents for risk, insights, and relationship signals — with pharma and banking next.
+https://x.com/levie/status/2072519377371459836
 
-Peter Steinberger — OpenClaw at OpenAI
-Steinberger amplified a point that's been picking up steam: "Price per token != cost per task." As models get more capable, fewer tokens are needed to complete a given task, meaning a nominally pricier model can be cheaper in practice. The tweet pulled 1,072 likes.
-https://x.com/steipete/status/2072144627474579925
+Amjad Masad (CEO of Replit): Replit apps can now be sold on Whop, giving builders a direct path from creation to monetization. Masad framed it as a deliberate shift in focus: now that building is easy, Replit is doubling down on helping entrepreneurs reach their first customer and first dollar.
+https://x.com/amasad/status/2072385092824260748
 
-Amjad Masad — CEO at Replit
-Masad highlighted Etched, framing it as the first inference system designed from the ground up for modern AI workloads rather than repurposed pre-LLM hardware. He argues most inference is expensive today precisely because the underlying silicon was designed before transformers existed.
-https://x.com/amasad/status/2071992110132117740
+── AI LABS & TALENT ──
 
-Guillermo Rauch — CEO at Vercel
-Two noteworthy posts. First, Vercel Services is now live: you can co-locate a Python backend API, an ExpressJS server, and a React SPA inside one Vercel project, all deployable and rollback-able together with internal networking and shared observability.
-https://x.com/rauchg/status/2071966055308607765
+Garry Tan (President & CEO of Y Combinator): Garry called Anthropic's hire of the head of UC Berkeley EECS a "mega get," adding "Anthropic is on a tear."
+https://x.com/garrytan/status/2072331451270606933
 
-Second, Rauch announced a collaboration with Shopify and Tobi Lütke on "pushing the agentic web forward."
-https://x.com/rauchg/status/2072044844965400589
+Nikunj Kothari (Partner at FPV Ventures): Nikunj observed that the talent vortex at OpenAI and Anthropic is only intensifying — four personal friends have left very established roles to join the labs in just the past two months. The dual pull of building consequential technology and capturing pre-IPO liquidity is proving too strong to resist. His counterpoint: this raises the bar significantly for anyone choosing to build independently, who needs genuine conviction and massive ambition.
+https://x.com/nikunj/status/2072344802570756121
 
-Garry Tan — President & CEO at Y Combinator
-Tan shared that Gbrain—his personal knowledge tool—becomes genuinely useful at 10,000+ markdown files in a personal or company brain. Below that threshold the signal is too thin; at scale it becomes a meaningful second brain.
-https://x.com/garrytan/status/2071910876496757145
+── BUILDING SKILLS & META-LEARNING ──
 
-Madhu Guru — prev Product Leader at Google (Gemini, Veo, Nano)
-Madhu identified what he sees as the core obstacle for traditional PMs trying to build AI-native products: "a lack of magical thinking." A decade of agile frameworks and metric obsession has trained PMs toward constraint-first, incremental thinking. His workaround on past teams was asking people to imagine they had tech from 100 years in the future and work backward. His conclusion: that future tech is here now—go build the magical thing.
-https://x.com/realmadhuguru/status/2071970221477470694
+Zara Zhang (Builder): Zara shared a sharp insight on skill-building workflow: "HOW TO BUILD A SKILL — You don't START with a skill. You END with a skill. Building the skill is the last step of your workflow, not the first step." She also noted a useful configuration tip: you can change Codex's model to GLM.
+https://x.com/zarazhangrui/status/2072381929366987087
+https://x.com/zarazhangrui/status/2072391971721884073
 
-Nan Yu — Head of Product at Linear
-Commenting on the ongoing debate around AI data and model distillation, Nan noted that under some definitions of "distillation," the entirety of Cursor's early training data would qualify as distilled from Claude. A pointed observation about how the legal and technical definitions don't always map cleanly to each other.
-https://x.com/thenanyu/status/2071973229070033322
+Swyx (AI engineer, affiliated with AI & Engineer, Latent Space, Temporal): At the AI Engineer World's Fair, Swyx highlighted that Christopher Manning and Abshkbh both gave double-length keynotes — on sandboxing and world models respectively. The room was packed, and the online audience was expected to be more than 1,000x the in-person crowd.
+https://x.com/swyx/status/2072562702703046855
 
-Aditya Agarwal — General Partner at South Park Commons; prev CTO at Dropbox
-A crisp observation: "It is a very strange state of the world where the models powering innovation in the USA are Chinese open source models." No further commentary needed—it landed 284 likes and 28 retweets.
-https://x.com/adityaag/status/2071983952894837062
+Peter Steinberger (OpenClaw, OpenAI): Peter gave a long-overdue shoutout to Steve Yegge — who was early on the idea of AI-powered "factories" — noting that most visionaries just arrive before everyone else is ready. Now everyone is building factories.
+https://x.com/steipete/status/2072532278476148881
 
-Zara Zhang — Builder
-Shared a quote worth sitting with: "Taste isn't valuable because it's impossible to copy. Taste is valuable exactly because it defines what everyone else chooses to copy."
-https://x.com/zarazhangrui/status/2072197929138602079
+── TRANSITIONS & BUSINESS ──
 
-Swyx — AI engineer; affiliations include Cognition, Temporal, AI Dot Engineer, Latent Space Pod
-Reported on a successful first Poster Sessions day at the AI Engineering World Fair (AIEWF), thanking the organizers. Day two will feature "Poaster sessions"—printing the hottest tweets as physical posters.
-https://x.com/swyx/status/2072048730581405800
+Google Labs: Google is sunsetting MusicFX and MusicFX DJ on July 31, 2026, to focus resources on Google Flow Music — its tool for creating, sharing, and remixing original music. The early experiments pushed the boundary on real-time AI music creation, and the lessons are being carried forward into Flow Music as the long-term home for musical projects.
+https://x.com/GoogleLabs/status/2072417166952136789
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Matt Turck (VC at FirstMark Capital, host of MAD Podcast): Matt broke down the surprising Lime scooter IPO. Three factors made it work: smart financial engineering (the IPO paid off toxic loans and converted remaining debt to equity), a 22% Uber stake that routes riders directly to Lime, and three consecutive years of FCF positive operations with ~30% YoY revenue growth. The lesson: never give up — Lime survived the micromobility bloodbath that claimed Bird and others.
+https://x.com/mattturck/status/2072419592354529712
+
+━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━
 
-Training Data (Sequoia) — "Why Hardware-Software Co-Design Is AI's Real 100x: Dylan Patel of SemiAnalysis"
-https://www.youtube.com/watch?v=f6D_aiy8qyU
-Published: June 30, 2026
+AI & I by Every — "The AI Workflows Behind Every's Consulting Team"
+Published: July 1, 2026
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
 
-The single biggest lever in AI efficiency isn't better hardware or better models in isolation—it's co-designing them together, and Dylan Patel of SemiAnalysis makes that case in granular, authoritative detail in this conversation with Sequoia's Sean and Sonja Huang.
+Takeaway: Once AI handles the execution, your job becomes building the systems — not doing the work itself.
 
-Patel opens with his origin story: growing up in a family motel and gas station, obsessively moderating semiconductor forums from age 12, and eventually founding SemiAnalysis after a bruising exit from a quant firm during COVID. The company now has 90 people and, according to circulating estimates he declines to confirm, north of $100M in revenue.
+Dan Shipper (CEO, Every) sat down with Natalia, Every's head of consulting, to walk through the AI-powered workflows she's built using Codex to transform how she operates — from email triage to eldercare coordination to overnight CRM setup.
 
-The conversation quickly gets substantive. Patel explains why model costs have dropped ~60x per year for equivalent quality: not from any single source, but from simultaneous advances at the hardware layer (Hopper to Blackwell: ~30x), the model architecture layer (GPT-4-era to a modern 27B MoE: enormous quality jump for a fraction of the compute), and—most importantly—the co-design layer that bridges them. His key point: "Instead of being multiplicative to 8x, it's actually 100x, because you've optimized across all three layers."
+The episode's central metaphor lands early and sticks: "Knowledge work now is turning into something like gardening, where when you're gardening, you're creating the conditions for the growth to happen, but you're not like making the plant with your hands."
 
-DeepSeek is his go-to public example. Its expert shapes were designed specifically for Hopper; V4's are tuned for Blackwell. The model doesn't run well on TPUs—not because TPUs are bad, but because it was never optimized for them. Conversely, Google's Gemini models are architected for TPUs and don't run optimally on NVIDIA silicon. "The real breakthrough innovation is when you leapfrog a few layers."
+Natalia manages Claudi, Every's internal AI agent employee, which has its own LinkedIn and social presence, maintains dashboards, and self-evaluates performance through a "trust battery" feedback loop. But she also just hired a human operations person — because AI still needs constant oversight and taste direction, and because clients want to interface with people. The lesson: AI is exceptional at executing against a standard operating procedure, but it still needs managerial support to reach excellence.
 
-On the NVIDIA vs. TPU debate, Patel refuses to pick a winner. His view: OpenAI's increasingly sparse architectures are naturally co-optimized for GPUs; Anthropic's denser (but still sparse) architectures and training on TPUs reflect a different set of trade-offs. "With a straight face I could argue GPUs are way better than TPUs, or TPUs are way better than GPUs—it comes down to hardware-software co-design." He also notes that CUDA's moat is real but changing: models like Claude and Codex are now good enough at low-level kernel work that writing custom kernels for alternative chips is no longer the blocker it once was. The stickiness is now more about the fact that major open-source models (DeepSeek, Qwen, etc.) are all shaped for NVIDIA, pulling the ecosystem with them.
+Her most striking demo: a 13-hour Codex overnight loop that fully populated a CRM with context drawn from hundreds of emails and conversation notes — weeks of work, done by morning. She also built a family eldercare portal for her 81-year-old father: nurse WhatsApp updates, Google Form health reports, and follow-up action items all centralized in one bilingual (Spanish/English) password-protected site, accessible to family members and caregivers alike.
 
-On InferenceX—SemiAnalysis's living benchmark platform backed by over $50M in donated hardware from CoreWeave, Crusoe, Oracle, Microsoft, Amazon, Google, and others, and running against all frontier models daily—Patel describes it as a response to the problem of point-in-time benchmarking in a world where models and optimization libraries update twice a week. The output is a public Pareto frontier of throughput vs. interactivity for every major chip and model combination, along with downloadable containers for the optimal configuration. "The problem is people take a suboptimal point for someone else and compare it to their optimal one."
+She also showed her custom email triage app — trained on 150 past emails to write replies in her voice, with one-click actions to send, archive, log to a markdown client file, or push to Asana. Her inbox now knows more about what's going on than she does.
 
-He also shares projections that are worth noting: by 2030, just OpenAI and Anthropic alone will exceed 100 gigawatts of compute combined. By 2040, he expects terawatts globally and predicts more than half of incremental compute will be deployed in space. For the next three to five years, though, space data centers barely register.
+Her advice for executives: start with your existing systems (OKRs, KPIs, shared goals), give that context to AI, then identify what tasks only humans should do. The most common mistake she sees — and makes herself — is trying to rebuild everything at once. Start with one task, write down what doing it well looks like, and build from there.
 
-The episode closes with Patel's view on the Neo Cloud opportunity, Jensen Huang's incentives to keep the ecosystem multipolar, and why Anthropic's per-token margins on Opus 4.8 are "north of 80%"—giving it headroom to pay above-market compute rates and still grow net income. Profitable in Q2 on a net-income basis (ex-SBC), potentially profitable including SBC by Q3.
-
-A direct quote that captures his core thesis: "The biggest gain and the beauty of the best labs is when they co-optimize all three [hardware, model architecture, and inference software]. That's really exciting."
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
