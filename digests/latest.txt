@@ -1,80 +1,82 @@
-AI Builders Digest — July 2, 2026
+AI Builders Digest — 2026-07-03
 
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-── FABLE 5 IS BACK ──
+Boris Cherny — Claude Code engineer, Anthropic
+Claude Code Artifacts are coming to Pro and Max plans. Boris called the feature "life changing" and expressed excitement about the wider rollout. With 1,776 likes, this announcement landed as one of the most-engaged posts of the day from the Anthropic team.
+https://x.com/bcherny/status/2072777472970563995
 
-Claude (AI assistant by Anthropic): Fable 5 has returned. All paid plans with usage included can access it through July 7 — up to 50% of the weekly usage limit, with additional access available via usage credits. Anthropic also reminded users that the /feedback command in Claude Code can file a report if a request is mistakenly flagged, helping tune classifiers and reduce false positives over time.
-https://x.com/claudeai/status/2072402639644766602
-https://x.com/claudeai/status/2072402640907162072
+Thibault Sottiaux — Codex & ChatGPT, OpenAI
+A cryptic but highly-anticipated tease: "Stash your hardest prompts somewhere" ahead of GPT-5.6 Sol Ultra. The post drew over 9,600 likes and 1,500 replies, signaling the community is eager for the next capability leap.
+https://x.com/thsottiaux/status/2072607914217320644
 
-Peter Yang (practical AI tutorials and interviews for busy people): Peter gave Fable 5 a "vibe check" and called it "a step function above any other model — still really f***ing good." He published a no-BS tutorial covering five use cases worth trying it on: finding Fable-worthy work, getting life and business advice, making projects ship-ready, planning the next big thing, and refactoring a codebase. He also flagged the "explain-diff" Claude Code skill as a must-install for anyone still learning to read code.
-https://x.com/petergyang/status/2072458983886205333
-https://x.com/petergyang/status/2072525669704384612
+Thariq — Claude Code, Anthropic
+Addressing wide confusion about Fable's subscription status: Claude Fable 5 will leave standard subscriptions after July 7, but the team intends to restore it as soon as capacity allows. This clarification drew nearly 7,000 likes and 583 replies, reflecting how much builder anxiety there was around the model's future availability.
+https://x.com/trq212/status/2072814903170408784
 
-── AGENTIC INFRASTRUCTURE & DEVELOPER TOOLS ──
+Cat Wu — Claude Code & Cowork, Anthropic
+Claude Tag has landed 65% of product PRs internally and is now spreading across engineering, product, data, sales, and marketing at Anthropic. Anthropic is offering $25k in credits for Enterprise orgs and $2.5k for Team orgs through September 1. Cat's post on the CEO/CTO playbook for rolling it out and its day-one security design got 483 likes.
+https://x.com/_catwu/status/2072731500928508331
+https://x.com/_catwu/status/2072743070316257662
 
-Guillermo Rauch (CEO of Vercel): Vercel now supports WordPress deployments using Fluid compute with Active CPU, MySQL on PlanetScale, and 30-second cloud-side Docker builds — all from a single Dockerfile.vercel and one `vercel` command. On the agentic side, Vercel is shipping a dry-run step for agentic deployments: agents already run checks like `tsc --noEmit` and `next build` before pushing, and the dry-run formalizes that loop to minimize cost and risk.
-https://x.com/rauchg/status/2072463293654942090
-https://x.com/rauchg/status/2072398926175404250
+Claude (Anthropic official account)
+Two big announcements: (1) Claude Fable 5 is now available in Claude Tag, with a deep-dive conversation with Boris Cherny and Cat Wu about how it spread from engineering to the whole company (2,620 likes). (2) A Life Sciences global virtual hackathon running July 7-13, run with Gladstone Institute, offering $100k in credits as prizes — apply by Sunday (4,558 likes).
+https://x.com/claudeai/status/2072725610061803522
+https://x.com/claudeai/status/2072681853971001849
 
-Aaron Levie (CEO of Box): Aaron spotlighted Devin's "agentic mapreduce" pattern for code security — mapping signals across a repo, fanning out focused agents over bounded shards, reducing findings into a single report, then verifying confirmed vulnerabilities in isolated sandboxes. He argues this is exactly why we'll need 100X more AI inference in the future, and that it only scales when you can mix frontier and lower-cost models. Box sees the same dynamic with enterprise customers wanting to process millions of documents for risk, insights, and relationship signals — with pharma and banking next.
-https://x.com/levie/status/2072519377371459836
+Guillermo Rauch — CEO, Vercel
+Guillermo reframed Vercel's AI Gateway as a "Token Delivery Network" — a CDN for AI models. When Fable was suddenly retired, his team used dynamic re-routing to protect production workloads without requiring a redeployment. The comparison to CDN traffic shaping for AI is a concise mental model worth keeping.
+https://x.com/rauchg/status/2072741369848746315
 
-Amjad Masad (CEO of Replit): Replit apps can now be sold on Whop, giving builders a direct path from creation to monetization. Masad framed it as a deliberate shift in focus: now that building is easy, Replit is doubling down on helping entrepreneurs reach their first customer and first dollar.
-https://x.com/amasad/status/2072385092824260748
+Peter Yang — AI educator and creator
+Practical tips for squeezing value out of Fable before it leaves subscriptions on July 7: (1) prep context with cheaper models, (2) plan with Fable, execute with another model, (3) use Medium effort and keep watch. He also shared a fun moment using OpenAI Codex with his 8-year-old daughter — she drew a dragon, Codex generated variations from the sketch, and she gave feedback by voice until she was happy with the result.
+https://x.com/petergyang/status/2072842766053499353
+https://x.com/petergyang/status/2072756657856422379
 
-── AI LABS & TALENT ──
+Swyx — AI engineer, Latent Space Pod
+At the AIE Expo, Swyx flagged a flash surprise at 12:30 and a live Latent Space Pod recording at Expo Stage 2 featuring Etched. He also highlighted that the biggest applause line in the AIE keynotes was normalizing men talking about mental health in hypergrowth — crediting an open conversation with Instagram co-founder Mike Krieger about building Fable and Tag.
+https://x.com/swyx/status/2072760421627597198
+https://x.com/swyx/status/2072754722059239471
 
-Garry Tan (President & CEO of Y Combinator): Garry called Anthropic's hire of the head of UC Berkeley EECS a "mega get," adding "Anthropic is on a tear."
-https://x.com/garrytan/status/2072331451270606933
+Aaron Levie — CEO, Box
+Levie pushed back on the "just drop in an AI agent" narrative for enterprise: most workflows weren't designed with agents in mind, and real AI deployment requires genuine alignment work between AI systems and underlying business processes. A grounding post amid the hype about autonomous AI at scale.
+https://x.com/levie/status/2072875685811716182
 
-Nikunj Kothari (Partner at FPV Ventures): Nikunj observed that the talent vortex at OpenAI and Anthropic is only intensifying — four personal friends have left very established roles to join the labs in just the past two months. The dual pull of building consequential technology and capturing pre-IPO liquidity is proving too strong to resist. His counterpoint: this raises the bar significantly for anyone choosing to build independently, who needs genuine conviction and massive ambition.
-https://x.com/nikunj/status/2072344802570756121
+Dan Shipper — CEO, Every
+Dan resonated with the UX problem of long-running agents: Fable can go off for hours and return with a two-paragraph summary of what it did. He called for better ways for AI to "tell us stories" — a design challenge that deserves more attention as agentic workflows get longer.
+https://x.com/danshipper/status/2072805884376301737
 
-── BUILDING SKILLS & META-LEARNING ──
+Matt Turck — VC, FirstMark Capital
+Matt published a conversation with Bryan Catanzaro of NVIDIA AI on why a chip company invests hundreds of researchers into building and then giving away AI models for free. They go deep on the Nemotron models, what it takes to run a top-tier AI lab, and the future of open-weight models.
+https://x.com/mattturck/status/2072723410975629364
 
-Zara Zhang (Builder): Zara shared a sharp insight on skill-building workflow: "HOW TO BUILD A SKILL — You don't START with a skill. You END with a skill. Building the skill is the last step of your workflow, not the first step." She also noted a useful configuration tip: you can change Codex's model to GLM.
-https://x.com/zarazhangrui/status/2072381929366987087
-https://x.com/zarazhangrui/status/2072391971721884073
+Zara Zhang — Builder
+Two sharp observations: "The root of AI slop isn't bad style. It's no substance." And a report from a recent college grad who found that feeding lecture decks to AI and asking it to teach the material was often better than attending the actual lecture — raising hard questions about knowledge delivery and education.
+https://x.com/zarazhangrui/status/2072943922385715262
+https://x.com/zarazhangrui/status/2072729444943577601
 
-Swyx (AI engineer, affiliated with AI & Engineer, Latent Space, Temporal): At the AI Engineer World's Fair, Swyx highlighted that Christopher Manning and Abshkbh both gave double-length keynotes — on sandboxing and world models respectively. The room was packed, and the online audience was expected to be more than 1,000x the in-person crowd.
-https://x.com/swyx/status/2072562702703046855
-
-Peter Steinberger (OpenClaw, OpenAI): Peter gave a long-overdue shoutout to Steve Yegge — who was early on the idea of AI-powered "factories" — noting that most visionaries just arrive before everyone else is ready. Now everyone is building factories.
-https://x.com/steipete/status/2072532278476148881
-
-── TRANSITIONS & BUSINESS ──
-
-Google Labs: Google is sunsetting MusicFX and MusicFX DJ on July 31, 2026, to focus resources on Google Flow Music — its tool for creating, sharing, and remixing original music. The early experiments pushed the boundary on real-time AI music creation, and the lessons are being carried forward into Flow Music as the long-term home for musical projects.
-https://x.com/GoogleLabs/status/2072417166952136789
-
-Matt Turck (VC at FirstMark Capital, host of MAD Podcast): Matt broke down the surprising Lime scooter IPO. Three factors made it work: smart financial engineering (the IPO paid off toxic loans and converted remaining debt to equity), a 22% Uber stake that routes riders directly to Lime, and three consecutive years of FCF positive operations with ~30% YoY revenue growth. The lesson: never give up — Lime survived the micromobility bloodbath that claimed Bird and others.
-https://x.com/mattturck/status/2072419592354529712
-
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-AI & I by Every — "The AI Workflows Behind Every's Consulting Team"
-Published: July 1, 2026
-https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
+How Nuclear Will Unlock Energy Abundance with Valar Atomics Founder Isaiah Taylor
+No Priors Podcast
 
-Takeaway: Once AI handles the execution, your job becomes building the systems — not doing the work itself.
+Takeaway: Valar Atomics has done what no startup has done before — turned on an advanced nuclear reactor and powered an AI chip with it — and they believe the same hardware-iteration playbook that made SpaceX possible can make nuclear energy 10x cheaper for humanity.
 
-Dan Shipper (CEO, Every) sat down with Natalia, Every's head of consulting, to walk through the AI-powered workflows she's built using Codex to transform how she operates — from email triage to eldercare coordination to overnight CRM setup.
+This episode of No Priors was recorded live at Valar Atomics' nuclear facility in Utah with Isaiah Taylor, founder and CEO. The episode covers the full arc: why America stopped building reactors after Three Mile Island, why the nuclear industry became trapped in modeling-and-simulation rather than hardware iteration, and how Isaiah's background — his great-grandparents were both in the secret city during the Manhattan Project — gave him a lifelong belief in fission at scale.
 
-The episode's central metaphor lands early and sticks: "Knowledge work now is turning into something like gardening, where when you're gardening, you're creating the conditions for the growth to happen, but you're not like making the plant with your hands."
+Isaiah's core thesis is that nuclear has never had its "Ford moment" or its "Tesla moment." Reactors have been constructed, not manufactured. Valar's approach flips that: their reactors use TRISO fuel, which is inherently safe (no active cooling needed after shutdown), and are designed for mass manufacturing rather than one-off site construction. The goal is to bring costs down so dramatically that energy becomes cheap enough to create entirely new demand — not just serve existing demand.
 
-Natalia manages Claudi, Every's internal AI agent employee, which has its own LinkedIn and social presence, maintains dashboards, and self-evaluates performance through a "trust battery" feedback loop. But she also just hired a human operations person — because AI still needs constant oversight and taste direction, and because clients want to interface with people. The lesson: AI is exceptional at executing against a standard operating procedure, but it still needs managerial support to reach excellence.
+The AI angle is central. Isaiah argues that AI compute is the largest new source of energy demand the world has ever seen, and the only way to serve it without constraint is abundant, cheap, carbon-free energy. He draws a direct line from AI chips needing power to nuclear being the highest-density clean energy source available. The milestone achieved — the first AI chip powered by a nuclear reactor, and the first TRISO reactor to turn on in over fifty years in the United States — was a proof point that the whole stack can work together.
 
-Her most striking demo: a 13-hour Codex overnight loop that fully populated a CRM with context drawn from hundreds of emails and conversation notes — weeks of work, done by morning. She also built a family eldercare portal for her 81-year-old father: nurse WhatsApp updates, Google Form health reports, and follow-up action items all centralized in one bilingual (Spanish/English) password-protected site, accessible to family members and caregivers alike.
+On the regulatory environment: Isaiah is unusually bullish on the current moment, citing an openness to nuclear R&D that hasn't existed in decades. His argument is that the fear that froze the industry after Three Mile Island — where nobody actually died or was injured — created risk-aversion far out of proportion to actual danger. Valar is betting that hardware execution and regulatory tailwinds can unlock what fifty years of modeling and lobbying couldn't.
 
-She also showed her custom email triage app — trained on 150 past emails to write replies in her voice, with one-click actions to send, archive, log to a markdown client file, or push to Asana. Her inbox now knows more about what's going on than she does.
+"Most of the nuclear industry is a modeling and simulation industry. They're not focused on hardware iteration, hardware execution, building the simplest and safest reactor that allows them to scale. And Valar just demonstrated that we are."
 
-Her advice for executives: start with your existing systems (OKRs, KPIs, shared goals), give that context to AI, then identify what tasks only humans should do. The most common mistake she sees — and makes herself — is trying to rebuild everything at once. Start with one task, write down what doing it well looks like, and build from there.
+https://www.youtube.com/watch?v=5Xvbq_zvOQ4
 
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
