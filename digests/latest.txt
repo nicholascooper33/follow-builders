@@ -1,82 +1,87 @@
-AI Builders Digest — 2026-07-03
+AI Builders Digest — July 4, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Boris Cherny — Claude Code engineer, Anthropic
-Claude Code Artifacts are coming to Pro and Max plans. Boris called the feature "life changing" and expressed excitement about the wider rollout. With 1,776 likes, this announcement landed as one of the most-engaged posts of the day from the Anthropic team.
-https://x.com/bcherny/status/2072777472970563995
+Thariq, Claude Code engineer at Anthropic
+The week's most-shared AI builder tweet came from Thariq on working with Fable 5: "I've found the most important part of working with Fable is discovering my own unknowns so I can prompt it better." He describes using HTML artifacts and interactive quizzes to surface gaps in his own understanding before prompting — essentially using the model as a Socratic mirror. The thread drew 3,389 likes and 260 retweets.
+https://x.com/trq212/status/2073101078145724589
 
-Thibault Sottiaux — Codex & ChatGPT, OpenAI
-A cryptic but highly-anticipated tease: "Stash your hardest prompts somewhere" ahead of GPT-5.6 Sol Ultra. The post drew over 9,600 likes and 1,500 replies, signaling the community is eager for the next capability leap.
-https://x.com/thsottiaux/status/2072607914217320644
+Peter Steinberger, co-creator of OpenClaw at OpenAI
+Steinberger shared a tip that got 1,175 likes: if you think Codex is bad at design, try telling it "use imagegen to re-imagine this design and implement that." He also fed Fable 80,000 of his own tweets so it could roast him — the result got 267 likes and 46 replies.
+https://x.com/steipete/status/2073277317464682723
+https://x.com/steipete/status/2073295890857758810
 
-Thariq — Claude Code, Anthropic
-Addressing wide confusion about Fable's subscription status: Claude Fable 5 will leave standard subscriptions after July 7, but the team intends to restore it as soon as capacity allows. This clarification drew nearly 7,000 likes and 583 replies, reflecting how much builder anxiety there was around the model's future availability.
-https://x.com/trq212/status/2072814903170408784
+Cat Wu, Claude Code and Cowork at Anthropic
+Cat Wu shared two practical tips around Fable 5 weekend: Claude Code can now use computer use to autonomously set up Claude Tag, connecting a team's GitHub repo, data warehouse, and Google Drive by just pointing it at the docs. She also asked what people are building with Fable 5 over the long weekend — the thread collected 479 likes and 253 replies.
+https://x.com/_catwu/status/2073149354412822738
+https://x.com/_catwu/status/2073147672106873001
 
-Cat Wu — Claude Code & Cowork, Anthropic
-Claude Tag has landed 65% of product PRs internally and is now spreading across engineering, product, data, sales, and marketing at Anthropic. Anthropic is offering $25k in credits for Enterprise orgs and $2.5k for Team orgs through September 1. Cat's post on the CEO/CTO playbook for rolling it out and its day-one security design got 483 likes.
-https://x.com/_catwu/status/2072731500928508331
-https://x.com/_catwu/status/2072743070316257662
+Guillermo Rauch, CEO at Vercel
+Rauch made the case for agentic self-improvement: give your agent the ability to introspect its past runs, spot inefficiencies and redundant tool calls, and generate new prompts and skills from those observations. He noted that agent observability is now built into Vercel deployments to enable this. 523 likes, 57 replies.
+https://x.com/rauchg/status/2073132174958841887
 
-Claude (Anthropic official account)
-Two big announcements: (1) Claude Fable 5 is now available in Claude Tag, with a deep-dive conversation with Boris Cherny and Cat Wu about how it spread from engineering to the whole company (2,620 likes). (2) A Life Sciences global virtual hackathon running July 7-13, run with Gladstone Institute, offering $100k in credits as prizes — apply by Sunday (4,558 likes).
-https://x.com/claudeai/status/2072725610061803522
-https://x.com/claudeai/status/2072681853971001849
+Aaron Levie, CEO at Box
+Levie wrote one of the week's most substantive long-form builder threads: "The battle in AI is shaping up to be a battle for context." His thesis: the applied AI layer — not the model layer — captures the most durable value, because it owns domain knowledge, governs data access, and manages the human workflow around agents. He argues the applied layer will increasingly route between frontier models for orchestration and cheaper models for high-volume tasks, and may fine-tune its own models for specific domains. The companies that solve the full end-to-end workflow, including change management, will have the deepest moats. 238 likes, 57 replies.
+https://x.com/levie/status/2073138135014502777
 
-Guillermo Rauch — CEO, Vercel
-Guillermo reframed Vercel's AI Gateway as a "Token Delivery Network" — a CDN for AI models. When Fable was suddenly retired, his team used dynamic re-routing to protect production workloads without requiring a redeployment. The comparison to CDN traffic shaping for AI is a concise mental model worth keeping.
-https://x.com/rauchg/status/2072741369848746315
+Swyx, at Cognition and AI Daily Engineer
+Swyx called out the central irony of the "tools for thought" movement: a decade of beautiful canvas-based demos got completely outcompeted by "low contrast poorly designed CLIs" that do commodity thinking for you. The observation cut deep — 114 likes and 20 replies.
+https://x.com/swyx/status/2073220591684096087
 
-Peter Yang — AI educator and creator
-Practical tips for squeezing value out of Fable before it leaves subscriptions on July 7: (1) prep context with cheaper models, (2) plan with Fable, execute with another model, (3) use Medium effort and keep watch. He also shared a fun moment using OpenAI Codex with his 8-year-old daughter — she drew a dragon, Codex generated variations from the sketch, and she gave feedback by voice until she was happy with the result.
-https://x.com/petergyang/status/2072842766053499353
-https://x.com/petergyang/status/2072756657856422379
+Nan Yu, Head of Product at Linear
+Two sharp observations this week. First: "if your field doesn't produce good training data it was probably full of crap to begin with." Second: Tailwind being adopted by the company that brought you Bootstrap is "supreme victory" for Tailwind.
+https://x.com/thenanyu/status/2073070255031615877
+https://x.com/thenanyu/status/2073194274435317767
 
-Swyx — AI engineer, Latent Space Pod
-At the AIE Expo, Swyx flagged a flash surprise at 12:30 and a live Latent Space Pod recording at Expo Stage 2 featuring Etched. He also highlighted that the biggest applause line in the AIE keynotes was normalizing men talking about mental health in hypergrowth — crediting an open conversation with Instagram co-founder Mike Krieger about building Fable and Tag.
-https://x.com/swyx/status/2072760421627597198
-https://x.com/swyx/status/2072754722059239471
+Zara Zhang, Builder
+"People are getting less willing to buy tools. If it's just a tool, they figure they can build it themselves with coding agents. What they'll pay for is the feeling of hiring expertise they don't have." A pointed observation about where software product value is migrating in the coding agent era.
+https://x.com/zarazhangrui/status/2073295900395606401
 
-Aaron Levie — CEO, Box
-Levie pushed back on the "just drop in an AI agent" narrative for enterprise: most workflows weren't designed with agents in mind, and real AI deployment requires genuine alignment work between AI systems and underlying business processes. A grounding post amid the hype about autonomous AI at scale.
-https://x.com/levie/status/2072875685811716182
+Dan Shipper, CEO at Every
+Shipper's breakdown of what Fable 5 can now do while you're at the pool: a new personal iOS app end-to-end at 5M tokens, clearing your whole prod bug backlog at 20M tokens, and "unnecessarily detailed responses to every single unread email, Slack, and text message: 30M tokens." 138 likes.
+https://x.com/danshipper/status/2073076447992746379
 
-Dan Shipper — CEO, Every
-Dan resonated with the UX problem of long-running agents: Fable can go off for hours and return with a two-paragraph summary of what it did. He called for better ways for AI to "tell us stories" — a design challenge that deserves more attention as agentic workflows get longer.
-https://x.com/danshipper/status/2072805884376301737
+Amjad Masad, CEO at Replit
+Replit launched video generation — Masad shared a demo. 198 likes.
+https://x.com/amasad/status/2073003971287863717
 
-Matt Turck — VC, FirstMark Capital
-Matt published a conversation with Bryan Catanzaro of NVIDIA AI on why a chip company invests hundreds of researchers into building and then giving away AI models for free. They go deep on the Nemotron models, what it takes to run a top-tier AI lab, and the future of open-weight models.
-https://x.com/mattturck/status/2072723410975629364
+Nikunj Kothari, Partner at FPV Ventures
+Two observations: (1) Gemini remains the only place where a single API key covers everything — Flash for fast structured tasks, Nano for images, real-time audio, search with grounding. Many of his side projects have become Gemini-key-only. (2) A pattern he noticed: labs seem to release frontier models right before long weekends — Opus 4.5 before Thanksgiving, Fable 5 before July 4th — giving builders time to tinker.
+https://x.com/nikunj/status/2073151491557478883
+https://x.com/nikunj/status/2073071325644816440
 
-Zara Zhang — Builder
-Two sharp observations: "The root of AI slop isn't bad style. It's no substance." And a report from a recent college grad who found that feeding lecture decks to AI and asking it to teach the material was often better than attending the actual lecture — raising hard questions about knowledge delivery and education.
-https://x.com/zarazhangrui/status/2072943922385715262
-https://x.com/zarazhangrui/status/2072729444943577601
+Garry Tan, President and CEO at Y Combinator
+Wait times for medical specialists are rising exactly as AI is about to transform care: "I have a feeling AI will bring the quality of care up 100x and not a moment too soon for patients everywhere."
+https://x.com/garrytan/status/2073053799791710301
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Claude, from Anthropic
+Squidsoup — a collective of artists who build immersive experiences with sound, light, and space — is preparing for one of their largest projects to date: a live performance with an orchestra at the Southbank Centre in London. 2,641 likes, 163 replies.
+https://x.com/claudeai/status/2073028947478995406
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-How Nuclear Will Unlock Energy Abundance with Valar Atomics Founder Isaiah Taylor
-No Priors Podcast
+The MAD Podcast with Matt Turck
+"Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro"
+https://www.youtube.com/watch?v=Oojrfdl42LI
 
-Takeaway: Valar Atomics has done what no startup has done before — turned on an advanced nuclear reactor and powered an AI chip with it — and they believe the same hardware-iteration playbook that made SpaceX possible can make nuclear energy 10x cheaper for humanity.
+Takeaway: NVIDIA is not a charity — it gives away frontier AI models because a thriving open-source ecosystem creates more demand for the GPUs that are actually the business. Bryan Catanzaro, who leads Nemotron (NVIDIA's family of open foundation models), makes the case with unusual depth and candor in this episode.
 
-This episode of No Priors was recorded live at Valar Atomics' nuclear facility in Utah with Isaiah Taylor, founder and CEO. The episode covers the full arc: why America stopped building reactors after Three Mile Island, why the nuclear industry became trapped in modeling-and-simulation rather than hardware iteration, and how Isaiah's background — his great-grandparents were both in the secret city during the Manhattan Project — gave him a lifelong belief in fission at scale.
+The episode opens with a striking philosophical framing from Catanzaro: "We have an external stomach. We call it kitchen. Now we're creating an external brain. What is the implications of an external brain? Pretty profound. Nobody actually really knows." The rest of the conversation unpacks what NVIDIA is building and why.
 
-Isaiah's core thesis is that nuclear has never had its "Ford moment" or its "Tesla moment." Reactors have been constructed, not manufactured. Valar's approach flips that: their reactors use TRISO fuel, which is inherently safe (no active cooling needed after shutdown), and are designed for mass manufacturing rather than one-off site construction. The goal is to bring costs down so dramatically that energy becomes cheap enough to create entirely new demand — not just serve existing demand.
+Catanzaro joined NVIDIA in 2008 as a grad student trying to get neural networks to train on GPUs. At ICML that year, people told him his paper didn't belong there — "we just do fancy math here." He was briefly at Baidu's Silicon Valley AI Lab alongside both Andrew Ng and Dario Amodei before returning to NVIDIA, where his first project became DLSS, the AI-upscaling technology that lets a small GPU render like a big one.
 
-The AI angle is central. Isaiah argues that AI compute is the largest new source of energy demand the world has ever seen, and the only way to serve it without constraint is abundant, cheap, carbon-free energy. He draws a direct line from AI chips needing power to nuclear being the highest-density clean energy source available. The milestone achieved — the first AI chip powered by a nuclear reactor, and the first TRISO reactor to turn on in over fifty years in the United States — was a proof point that the whole stack can work together.
+On open source vs. closed source: Catanzaro pushes back on framing it as a competition, noting that the entire field is moving so fast that "the most important thing is how is AI developing as a field." He is also direct in defending China's AI contributions — he worked at Baidu and pushes back firmly on the "copycat" narrative: "I would say it's been a really good thing for the world that the Chinese AI community has been so open with what they've been building."
 
-On the regulatory environment: Isaiah is unusually bullish on the current moment, citing an openness to nuclear R&D that hasn't existed in decades. His argument is that the fear that froze the industry after Three Mile Island — where nobody actually died or was injured — created risk-aversion far out of proportion to actual danger. Valar is betting that hardware execution and regulatory tailwinds can unlock what fifty years of modeling and lobbying couldn't.
+The technical heart of the episode is a plain-language walkthrough of Nemotron 3 Ultra's architecture: four-bit pretraining (MXFP4 arithmetic — training at 16 values of precision rather than 65,536, a non-trivial convergence problem they had to invent new algorithms to solve), hybrid SSM-plus-attention architecture, and mixture of experts. The hybrid architecture insight is particularly clear: state space models compress a sequence into a fixed-size "scratchpad" and are good at global intuitive understanding; full attention loses nothing but is expensive; using both together is better than either alone, and now widely adopted (QwQ, Kimi, and others have done the same). MoE adds sparsity — a learned router sends each token to just a subset of the model's parameters, so you can train on the whole internet but activate only the relevant experts during inference.
 
-"Most of the nuclear industry is a modeling and simulation industry. They're not focused on hardware iteration, hardware execution, building the simplest and safest reactor that allows them to scale. And Valar just demonstrated that we are."
+On why NVIDIA builds open models when it sells hardware: "Every company is built around a secret... The more valuable the data that goes in, the more valuable the solution becomes." Enterprises with trade secrets, regulatory constraints, and proprietary workflows need open models they can customize and run themselves — and those deployments run on NVIDIA chips.
 
-https://www.youtube.com/watch?v=5Xvbq_zvOQ4
+Direct quote from Bryan Catanzaro: "The whole AI community is moving very fast. And if you're in a field that's moving really, really fast, I think that's more important than any particular gaps that might exist between different models — because the most important thing is, how is AI developing as a field?"
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
