@@ -1,87 +1,81 @@
-AI Builders Digest — July 4, 2026
+AI Builders Digest — 2026-07-05
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thariq, Claude Code engineer at Anthropic
-The week's most-shared AI builder tweet came from Thariq on working with Fable 5: "I've found the most important part of working with Fable is discovering my own unknowns so I can prompt it better." He describes using HTML artifacts and interactive quizzes to surface gaps in his own understanding before prompting — essentially using the model as a Socratic mirror. The thread drew 3,389 likes and 260 retweets.
-https://x.com/trq212/status/2073101078145724589
+Cat Wu — Claude Code & Cowork at Anthropic
+Cat highlighted a standout moment with Claude Fable 5: it autonomously applied propensity score matching in a retention analysis without being asked — matching users on activity levels to ensure like-for-like comparisons. She pointed to this as evidence of Fable 5's improved judgment carrying over across diverse tasks, from statistical analysis to writing emails and docs.
+https://x.com/_catwu/status/2073439890482794966
 
-Peter Steinberger, co-creator of OpenClaw at OpenAI
-Steinberger shared a tip that got 1,175 likes: if you think Codex is bad at design, try telling it "use imagegen to re-imagine this design and implement that." He also fed Fable 80,000 of his own tweets so it could roast him — the result got 267 likes and 46 replies.
-https://x.com/steipete/status/2073277317464682723
-https://x.com/steipete/status/2073295890857758810
+---
 
-Cat Wu, Claude Code and Cowork at Anthropic
-Cat Wu shared two practical tips around Fable 5 weekend: Claude Code can now use computer use to autonomously set up Claude Tag, connecting a team's GitHub repo, data warehouse, and Google Drive by just pointing it at the docs. She also asked what people are building with Fable 5 over the long weekend — the thread collected 479 likes and 253 replies.
-https://x.com/_catwu/status/2073149354412822738
-https://x.com/_catwu/status/2073147672106873001
+Nan Yu — Head of Product at Linear
+Nan made a sharp observation about debugging philosophy: the best way to catch bugs is to actually use the product and try to break it — not to dead-reckon through code. He argued that code review is really for architecture and API design, not bug detection, and that line-by-line code reading won't surface most real-world issues. A timely reminder as AI-assisted codegen accelerates output velocity. He also quipped about AI agents dropping production tables: who gets fired, the model or the engineer?
+https://x.com/thenanyu/status/2073410299680428445
+https://x.com/thenanyu/status/2073410944969932877
 
-Guillermo Rauch, CEO at Vercel
-Rauch made the case for agentic self-improvement: give your agent the ability to introspect its past runs, spot inefficiencies and redundant tool calls, and generate new prompts and skills from those observations. He noted that agent observability is now built into Vercel deployments to enable this. 523 likes, 57 replies.
-https://x.com/rauchg/status/2073132174958841887
+---
 
-Aaron Levie, CEO at Box
-Levie wrote one of the week's most substantive long-form builder threads: "The battle in AI is shaping up to be a battle for context." His thesis: the applied AI layer — not the model layer — captures the most durable value, because it owns domain knowledge, governs data access, and manages the human workflow around agents. He argues the applied layer will increasingly route between frontier models for orchestration and cheaper models for high-volume tasks, and may fine-tune its own models for specific domains. The companies that solve the full end-to-end workflow, including change management, will have the deepest moats. 238 likes, 57 replies.
-https://x.com/levie/status/2073138135014502777
+Guillermo Rauch — CEO at Vercel
+Guillermo shared an animated visualization of token spend across AI providers, drawn from Vercel AI Gateway data aggregating trillions of tokens monthly from millions of developers. The data showed Anthropic's clear dominance among professional builders, notable fluctuations between labs, and the rising share of open-weight models. A ground-level view of where developer AI spend is actually flowing.
+https://x.com/rauchg/status/2073563586270781674
 
-Swyx, at Cognition and AI Daily Engineer
-Swyx called out the central irony of the "tools for thought" movement: a decade of beautiful canvas-based demos got completely outcompeted by "low contrast poorly designed CLIs" that do commodity thinking for you. The observation cut deep — 114 likes and 20 replies.
-https://x.com/swyx/status/2073220591684096087
+---
 
-Nan Yu, Head of Product at Linear
-Two sharp observations this week. First: "if your field doesn't produce good training data it was probably full of crap to begin with." Second: Tailwind being adopted by the company that brought you Bootstrap is "supreme victory" for Tailwind.
-https://x.com/thenanyu/status/2073070255031615877
-https://x.com/thenanyu/status/2073194274435317767
+Thibault Sottiaux — Codex & ChatGPT at OpenAI
+Thibault asked his followers an unusually candid question: what is something surprising that Codex still can't do well — something that should have been solved a while ago? A rare and valuable signal-gathering moment from someone on the inside building the product.
+https://x.com/thsottiaux/status/2073551549494596079
 
-Zara Zhang, Builder
-"People are getting less willing to buy tools. If it's just a tool, they figure they can build it themselves with coding agents. What they'll pay for is the feeling of hiring expertise they don't have." A pointed observation about where software product value is migrating in the coding agent era.
-https://x.com/zarazhangrui/status/2073295900395606401
+---
 
-Dan Shipper, CEO at Every
-Shipper's breakdown of what Fable 5 can now do while you're at the pool: a new personal iOS app end-to-end at 5M tokens, clearing your whole prod bug backlog at 20M tokens, and "unnecessarily detailed responses to every single unread email, Slack, and text message: 30M tokens." 138 likes.
-https://x.com/danshipper/status/2073076447992746379
+Dan Shipper — CEO at Every
+Dan noted with dry amusement that Codex is now embedded inside ChatGPT — an AI coding agent living inside another AI product. Brief but captures how fast the product landscape is layering.
+https://x.com/danshipper/status/2073586548545638459
 
-Amjad Masad, CEO at Replit
-Replit launched video generation — Masad shared a demo. 198 likes.
-https://x.com/amasad/status/2073003971287863717
+---
 
-Nikunj Kothari, Partner at FPV Ventures
-Two observations: (1) Gemini remains the only place where a single API key covers everything — Flash for fast structured tasks, Nano for images, real-time audio, search with grounding. Many of his side projects have become Gemini-key-only. (2) A pattern he noticed: labs seem to release frontier models right before long weekends — Opus 4.5 before Thanksgiving, Fable 5 before July 4th — giving builders time to tinker.
-https://x.com/nikunj/status/2073151491557478883
-https://x.com/nikunj/status/2073071325644816440
+Peter Steinberger — OpenClaw at OpenAI
+Peter teased an upcoming feature in his token-tracking tool that shows exactly when usage resets expire — so users can better plan and maximize their token allowance windows.
+https://x.com/steipete/status/2073482942513565713
 
-Garry Tan, President and CEO at Y Combinator
-Wait times for medical specialists are rising exactly as AI is about to transform care: "I have a feeling AI will bring the quality of care up 100x and not a moment too soon for patients everywhere."
-https://x.com/garrytan/status/2073053799791710301
 
-Claude, from Anthropic
-Squidsoup — a collective of artists who build immersive experiences with sound, light, and space — is preparing for one of their largest projects to date: a live performance with an orchestra at the Southbank Centre in London. 2,641 likes, 163 replies.
-https://x.com/claudeai/status/2073028947478995406
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-The MAD Podcast with Matt Turck
-"Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro"
-https://www.youtube.com/watch?v=Oojrfdl42LI
+Cloudflare CEO: The Internet's Business Model Is Dead
+MAD Podcast with Matt Turck, featuring Matthew Prince, cofounder and CEO of Cloudflare
+https://www.youtube.com/watch?v=UN47z_opfmo
 
-Takeaway: NVIDIA is not a charity — it gives away frontier AI models because a thriving open-source ecosystem creates more demand for the GPUs that are actually the business. Bryan Catanzaro, who leads Nemotron (NVIDIA's family of open foundation models), makes the case with unusual depth and candor in this episode.
+One-sentence takeaway: Bot and AI agent traffic now outnumbers human traffic on the internet — and the advertising-based business model that has funded the web for 28 years won't survive that shift.
 
-The episode opens with a striking philosophical framing from Catanzaro: "We have an external stomach. We call it kitchen. Now we're creating an external brain. What is the implications of an external brain? Pretty profound. Nobody actually really knows." The rest of the conversation unpacks what NVIDIA is building and why.
+Matthew Prince opened with a milestone that slipped in ahead of even Cloudflare's own projections. Last fall, analysts expected automated traffic to surpass human traffic by end of 2027. By March 2026 the estimate had moved to mid-2027. Then weeks before the interview, the data showed it had already happened — in the first half of 2026. The driver isn't old-school crawlers: it's AI agents. When a human shops for a digital camera, they might visit five websites. An AI agent doing the same task visits five thousand. Prince expects a thousand times more bot traffic than human traffic within five years, and calls that estimate conservative.
 
-Catanzaro joined NVIDIA in 2008 as a grad student trying to get neural networks to train on GPUs. At ICML that year, people told him his paper didn't belong there — "we just do fancy math here." He was briefly at Baidu's Silicon Valley AI Lab alongside both Andrew Ng and Dario Amodei before returning to NVIDIA, where his first project became DLSS, the AI-upscaling technology that lets a small GPU render like a big one.
+The economic consequence is stark. As Prince put it: "The underlying business model of the internet for the last twenty-eight years has remained basically the same — it's largely advertising. The problem is bots don't click on ads." He predicts the entire business model of the web will need to be reinvented over the next five years. What replaces advertising — action-based fees, API metering, something else entirely — is still undefined.
 
-On open source vs. closed source: Catanzaro pushes back on framing it as a competition, noting that the entire field is moving so fast that "the most important thing is how is AI developing as a field." He is also direct in defending China's AI contributions — he worked at Baidu and pushes back firmly on the "copycat" narrative: "I would say it's been a really good thing for the world that the Chinese AI community has been so open with what they've been building."
+On the infrastructure side, Cloudflare has quietly become a major inference and agent-security layer. Cloudflare Workers gives developers an edge runtime with GPUs distributed across hundreds of cities, often delivering better performance and lower latency than going directly to model providers. Prince noted that OpenAI's mobile app and Anthropic's Claude.ai both run on Cloudflare. He also described Cloudflare's AI Gateway as a key tool for securing and routing agent traffic.
 
-The technical heart of the episode is a plain-language walkthrough of Nemotron 3 Ultra's architecture: four-bit pretraining (MXFP4 arithmetic — training at 16 values of precision rather than 65,536, a non-trivial convergence problem they had to invent new algorithms to solve), hybrid SSM-plus-attention architecture, and mixture of experts. The hybrid architecture insight is particularly clear: state space models compress a sequence into a fixed-size "scratchpad" and are good at global intuitive understanding; full attention loses nothing but is expensive; using both together is better than either alone, and now widely adopted (QwQ, Kimi, and others have done the same). MoE adds sparsity — a learned router sends each token to just a subset of the model's parameters, so you can train on the whole internet but activate only the relevant experts during inference.
+The most headline-grabbing section was Prince's candid account of Cloudflare cutting more than 20% of its workforce — not due to financial distress, but because AI productivity gains eliminated the need for many middle-management layers. He was blunt about the timeline: "I do think in the next six to twelve months, almost every company is going to go through some exercise like this where they're going to cut a bunch of their team." His case for acting sooner: it is easier for affected employees to find new roles today than once every company goes through the same exercise simultaneously, flooding the job market.
 
-On why NVIDIA builds open models when it sells hardware: "Every company is built around a secret... The more valuable the data that goes in, the more valuable the solution becomes." Enterprises with trade secrets, regulatory constraints, and proprietary workflows need open models they can customize and run themselves — and those deployments run on NVIDIA chips.
+Direct quote: "The kindest thing that you can do for your team is to do it as soon as possible, because it's way easier to get a job today than it's going to be in six to twelve months because the market's going to get flooded."
 
-Direct quote from Bryan Catanzaro: "The whole AI community is moving very fast. And if you're in a field that's moving really, really fast, I think that's more important than any particular gaps that might exist between different models — because the most important thing is, how is AI developing as a field?"
+Internally, Cloudflare reached 93% of R&D employees using AI coding tools. A senior engineer who was initially skeptical took a month to deeply experiment, came back, and reported 100x productivity gains. The team built an internal AI OS called Cloudflare OS — an enterprise agent harness integrated with their ERP, sales, and HR systems — bootstrapped by having 20 people shadow employees' actual jobs via a fake-AI-agent email address, encoding those real workflows into skill files before automating them.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Building intelligent apps for Apple platforms with Claude in the Foundation Models framework
+Anthropic — Jun 08, 2026
+https://claude.com/blog/claude-for-foundation-models
+
+Anthropic released a Swift package that lets Apple developers use Apple's Foundation Models framework to call Claude directly, enabling a two-tier architecture for iOS and macOS apps. Lightweight on-device models handle fast local tasks like summarization and extraction; when a request demands multi-step reasoning, code generation, or live web search, the app hands off to Claude. Apple's framework returns typed Swift values via @Generable annotations, so by the time a request reaches Claude the inputs are already structured. The package handles streaming, tool calls, and structured responses back into SwiftUI views.
+
+Available now on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27. Practical examples from the announcement: a journaling app that generates prompts on-device but asks Claude to surface threads across months of entries; a study app that defines a term locally, then hands off to Claude when the student asks a follow-up that requires broader context.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
