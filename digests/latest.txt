@@ -1,81 +1,53 @@
-AI Builders Digest — 2026-07-05
+AI Builders Digest — 2026-07-06
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Cat Wu — Claude Code & Cowork at Anthropic
-Cat highlighted a standout moment with Claude Fable 5: it autonomously applied propensity score matching in a retention analysis without being asked — matching users on activity levels to ensure like-for-like comparisons. She pointed to this as evidence of Fable 5's improved judgment carrying over across diverse tasks, from statistical analysis to writing emails and docs.
-https://x.com/_catwu/status/2073439890482794966
+Nan Yu, Head of Product at Linear, pushed back on two prevailing AI developer behaviors. He called bragging about running 10 Claude Code tabs "just theater," suggesting it signals busyness rather than real output. In a separate post he argued that the "real-time strategy game" model of managing agents is a dead end — because AI already out-micros human players at ancient RTS games, micromanaging agents the same way misses the point.
+https://x.com/thenanyu/status/2073920959011074292
+https://x.com/thenanyu/status/2073920326304460847
 
----
+Cat Wu, who works on Claude Code and Cowork at Anthropic, shared a favorite workflow: using Claude Code to source candidates for a role. She described telling it the role and background she's looking for, then asking it to kick off a dynamic workflow to find 100 candidates — pulling from LinkedIn, Twitter, blogs, and podcasts. She asked her followers to share their own top Claude Code + workflows + artifacts use cases.
+https://x.com/_catwu/status/2073806626965049686
 
-Nan Yu — Head of Product at Linear
-Nan made a sharp observation about debugging philosophy: the best way to catch bugs is to actually use the product and try to break it — not to dead-reckon through code. He argued that code review is really for architecture and API design, not bug detection, and that line-by-line code reading won't surface most real-world issues. A timely reminder as AI-assisted codegen accelerates output velocity. He also quipped about AI agents dropping production tables: who gets fired, the model or the engineer?
-https://x.com/thenanyu/status/2073410299680428445
-https://x.com/thenanyu/status/2073410944969932877
+Garry Tan, President and CEO of Y Combinator, made a sweeping point about AI and economic leverage. He argued that the real constraint on human wealth was never resources but good ideas and the leverage to act on them — and that AI has now removed the leverage constraint for everyone. What remains is the ideas themselves. He posted this from Osaka, where a separate observation about Japan competing on quality over quantity reinforced the theme.
+https://x.com/garrytan/status/2073881439700168925
 
----
+Dan Shipper, CEO at Every, poked fun at Fable's ultracode feature from two angles. First, he shared a clip of Fable on ultracode responding to the instruction "make no mistakes." Second, he joked: "me: change this button color / Fable: sure I just spun up a fleet of 100 agents to get that done for you." The jokes land because they capture something real — ultracode's default behavior is to fan out many agents, which can feel disproportionate for small tasks.
+https://x.com/danshipper/status/2073894034225897602
+https://x.com/danshipper/status/2073764166700048480
 
-Guillermo Rauch — CEO at Vercel
-Guillermo shared an animated visualization of token spend across AI providers, drawn from Vercel AI Gateway data aggregating trillions of tokens monthly from millions of developers. The data showed Anthropic's clear dominance among professional builders, notable fluctuations between labs, and the rising share of open-weight models. A ground-level view of where developer AI spend is actually flowing.
-https://x.com/rauchg/status/2073563586270781674
+Nikunj Kothari, Partner at FPV Ventures, called out a gap in the standard founder-VC dynamic. He's still waiting for a founder who gates a VC chat until the investor has actually played with the product and shown up with at least two pieces of feedback. He noted that spending 30 minutes on a parroted deck could instead be a much more productive conversation.
+https://x.com/nikunj/status/2073903310982218088
 
----
+Sam Altman, CEO at OpenAI, marked a personal milestone with an AI comparison: his older kid put two words together for the first time, and he wrote that he is "approximately as amazed by this cognitive feat as I am by GPT-5.6 discovering new math."
+https://x.com/sama/status/2073791666553844074
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-Thibault asked his followers an unusually candid question: what is something surprising that Codex still can't do well — something that should have been solved a while ago? A rare and valuable signal-gathering moment from someone on the inside building the product.
-https://x.com/thsottiaux/status/2073551549494596079
+Peter Yang, creator of practical AI tutorials for busy people, is approaching 100K YouTube subscribers and teased upcoming podcast episodes. His birthday is July 9, and he asked followers who are looking forward to the episodes to consider subscribing.
+https://x.com/petergyang/status/2073930836551032858
 
----
+Zara Zhang, builder and creator of the Follow Builders skill, resurfaced a code-understanding skill she built — noting it's timely now that understanding your codebase is back in vogue.
+https://x.com/zarazhangrui/status/2073768913310200310
 
-Dan Shipper — CEO at Every
-Dan noted with dry amusement that Codex is now embedded inside ChatGPT — an AI coding agent living inside another AI product. Brief but captures how fast the product landscape is layering.
-https://x.com/danshipper/status/2073586548545638459
-
----
-
-Peter Steinberger — OpenClaw at OpenAI
-Peter teased an upcoming feature in his token-tracking tool that shows exactly when usage resets expire — so users can better plan and maximize their token allowance windows.
-https://x.com/steipete/status/2073482942513565713
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Cloudflare CEO: The Internet's Business Model Is Dead
-MAD Podcast with Matt Turck, featuring Matthew Prince, cofounder and CEO of Cloudflare
-https://www.youtube.com/watch?v=UN47z_opfmo
+No Priors — "Really Big Test-Time Compute in AI Changes Benchmarks, Safety and Research" with Noam Brown, OpenAI Research Scientist
+https://www.youtube.com/watch?v=AZrU6y3pUcU
 
-One-sentence takeaway: Bot and AI agent traffic now outnumbers human traffic on the internet — and the advertising-based business model that has funded the web for 28 years won't survive that shift.
+Takeaway: The standard benchmark grid for comparing AI models is fundamentally broken because it ignores the single most important variable — how much compute was spent at inference time.
 
-Matthew Prince opened with a milestone that slipped in ahead of even Cloudflare's own projections. Last fall, analysts expected automated traffic to surpass human traffic by end of 2027. By March 2026 the estimate had moved to mid-2027. Then weeks before the interview, the data showed it had already happened — in the first half of 2026. The driver isn't old-school crawlers: it's AI agents. When a human shops for a digital camera, they might visit five websites. An AI agent doing the same task visits five thousand. Prince expects a thousand times more bot traffic than human traffic within five years, and calls that estimate conservative.
+Noam Brown, one of the pioneers of inference-time scaling, joined Sarah Guo on No Priors to explain why the AI industry is systematically misleading itself about model capabilities. Brown wrote an essay prompted by the lukewarm initial reception to GPT-5.5: benchmark scores showed only modest improvements over 5.4, but once people actually used the model, the story changed completely. The reason, he argues, is that benchmarks are being compared at different inference budgets. GPT-5.5 is more compute-efficient — it reaches better answers faster — but when you run both models at max settings, 5.4 burns more thinking time for worse results. Without controlling for that, the comparison is meaningless.
 
-The economic consequence is stark. As Prince put it: "The underlying business model of the internet for the last twenty-eight years has remained basically the same — it's largely advertising. The problem is bots don't click on ads." He predicts the entire business model of the web will need to be reinvented over the next five years. What replaces advertising — action-based fees, API metering, something else entirely — is still undefined.
+The deeper problem is that today's models don't plateau quickly. "What we're seeing today with the modern models is that 5.5 and other models can think for — if you scaffold them reasonably well — weeks, even, before performance plateaus on some of these benchmarks. The point at which they plateau is simply too far out to reasonably test." Brown's proposed fix: always report benchmark performance with an x-axis showing the inference budget (tokens, cost, or time), so comparisons are apples-to-apples.
 
-On the infrastructure side, Cloudflare has quietly become a major inference and agent-security layer. Cloudflare Workers gives developers an edge runtime with GPUs distributed across hundreds of cities, often delivering better performance and lower latency than going directly to model providers. Prince noted that OpenAI's mobile app and Anthropic's Claude.ai both run on Cloudflare. He also described Cloudflare's AI Gateway as a key tool for securing and routing agent traffic.
+The safety implications are the inconvenient part. AI labs' preparedness frameworks and responsible scaling policies were largely designed before test-time compute scaling became significant. They ask "what is this model capable of?" — but today the answer is "it depends how much you spend." A model that seems safe at a $10 inference budget may behave differently at $10 million. Brown flagged this as a question the current policies don't adequately address: "We're just kind of pretending that this issue doesn't exist."
 
-The most headline-grabbing section was Prince's candid account of Cloudflare cutting more than 20% of its workforce — not due to financial distress, but because AI productivity gains eliminated the need for many middle-management layers. He was blunt about the timeline: "I do think in the next six to twelve months, almost every company is going to go through some exercise like this where they're going to cut a bunch of their team." His case for acting sooner: it is easier for affected employees to find new roles today than once every company goes through the same exercise simultaneously, flooding the job market.
+Brown also addressed the pace of discovery. OpenAI recently used an internal model to disprove the Erdos unit distance conjecture — a longstanding open math problem — at a budget he described as "dirt cheap." He noted that the same result was later replicated by others using GPT-5.5 with careful scaffolding, meaning the latent capability existed in a publicly available model and nobody had tried hard enough. His read: there is significant unexplored capability in current models simply because the release cycle is faster than anyone can fully evaluate what a model can do when given real compute.
 
-Direct quote: "The kindest thing that you can do for your team is to do it as soon as possible, because it's way easier to get a job today than it's going to be in six to twelve months because the market's going to get flooded."
+On recursive self-improvement and fast takeoff, Brown was measured. He doesn't believe an overnight intelligence explosion is likely, partly because test-time scaling means intelligence is bottlenecked by time itself — "if it requires so much test-time compute to unlock the full capabilities of the model, then that means you're bottlenecked by time." The more likely path is a gradual compounding as models take over more of the research bottlenecks inside labs, with time itself remaining the constraint.
 
-Internally, Cloudflare reached 93% of R&D employees using AI coding tools. A senior engineer who was initially skeptical took a month to deeply experiment, came back, and reported 100x productivity gains. The team built an internal AI OS called Cloudflare OS — an enterprise agent harness integrated with their ERP, sales, and HR systems — bootstrapped by having 20 people shadow employees' actual jobs via a fake-AI-agent email address, encoding those real workflows into skill files before automating them.
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Building intelligent apps for Apple platforms with Claude in the Foundation Models framework
-Anthropic — Jun 08, 2026
-https://claude.com/blog/claude-for-foundation-models
-
-Anthropic released a Swift package that lets Apple developers use Apple's Foundation Models framework to call Claude directly, enabling a two-tier architecture for iOS and macOS apps. Lightweight on-device models handle fast local tasks like summarization and extraction; when a request demands multi-step reasoning, code generation, or live web search, the app hands off to Claude. Apple's framework returns typed Swift values via @Generable annotations, so by the time a request reaches Claude the inputs are already structured. The package handles streaming, tool calls, and structured responses back into SwiftUI views.
-
-Available now on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27. Practical examples from the announcement: a journaling app that generates prompts on-device but asks Claude to surface threads across months of entries; a study app that defines a term locally, then hands off to Claude when the student asks a follow-up that requires broader context.
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
