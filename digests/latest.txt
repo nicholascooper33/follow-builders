@@ -1,77 +1,79 @@
-AI Builders Digest — 2026-07-09
+AI Builders Digest — 2026-07-10
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Boris Cherny — Claude Code at Anthropic
-Claude Code shipped a new /checkup command that does a full hygiene pass on your setup: cleaning unused skills, MCPs, and plugins; deduplicating CLAUDE.md files; breaking up monolithic root configs into nested files; turning off slow hooks; updating to the latest version; enabling auto mode by default; and pre-approving common read-only commands. This is one of the most impactful quality-of-life releases for Claude Code power users to date.
-https://x.com/bcherny/status/2074997570317779038
+Sam Altman — CEO, OpenAI
+GPT-5.6 is out in three tiers — Sol, Terra, and Luna — and Altman is positioning cost-per-task as the headline story for enterprises: "we have heard enterprises on their concerns about AI costs, and 5.6 sol is a huge step forward for dollars-per-task." He also clarified that Codex is the engine powering the new ChatGPT Work product and isn't going anywhere, calling it "the core of our new work product and what makes it so good." On a personal note, he expressed sadness about Fidji Simo's departure from OpenAI, wishing her a speedy recovery.
+https://x.com/sama/status/2075267201058426944
+https://x.com/sama/status/2075293792048136572
 
-Cat Wu — Claude Code + Cowork at Anthropic
-Cat is hosting a live walkthrough of how Anthropic progressed from single-player Claude Code to multi-player Claude Tag, going deep on how Claude Tag actually works under the hood. Claude Tag can now monitor channels, do proactive work for the whole team, and remember what you told it last week — a meaningful step change from "AI finishes your sentence" to "AI runs the team's background tasks."
-https://x.com/_catwu/status/2074925531519468012
+Thibault Sottiaux — Codex & ChatGPT, OpenAI
+Sottiaux announced two things this cycle: a full usage-limit reset for ChatGPT Work and Codex to celebrate the GPT-5.6 Sol launch ("we want you to have the time to truly try ambitious tasks"), and a new model researcher, Raj Nagarwal, who joined specifically to push on coding capabilities and pressed the rate-limit reset button himself. The reset was described as a deliberate invitation to attempt more ambitious work, not just a routine rollover.
+https://x.com/thsottiaux/status/2075452680760443190
+https://x.com/thsottiaux/status/2075330198887940337
 
-Thariq — Claude Code at Anthropic
-The ability to do fast, cheap AI-assisted rewrites should update how engineers think about software architecture: rewrites are no longer prohibitively expensive. Thariq points to the Bun rewrite as a leading example — and notes that as models improve at testing and verification, this will extend to codebases that are harder to fully verify today.
-https://x.com/trq212/status/2074993112217461020
+Josh Woodward — VP, Google Labs / Gemini
+After reading 1,700+ replies to a user-feedback post, Woodward published a detailed top-10 prioritized action list for Gemini. The clear number-one request: make Google Workspace integrations work more reliably. Close behind: better tool calling, smarter project and folder organization for chats, and broader MCP and Custom Skills availability (early access already live in Gemini Spark). He committed to Deep Research export improvements, better voice dictation, mobile scrolling fixes, and rethinking the chat organization UX. A rare and specific public accountability post from a major AI product leader.
+https://x.com/joshwoodward/status/2075241749048401936
 
-Swyx — AI Engineer, Latent Space Podcast
-Most agent labs are quiet about using Chinese models because of government/defense customers. Swyx highlights that the Cognition team did the hard technical work here: built multilingual propaganda and censorship evals, corrected for it in post-training, and serves inference at 1,000 tokens/second cheaply — a meaningful production achievement that rarely gets acknowledged publicly.
-https://x.com/swyx/status/2074919183947808881
+Peter Yang — AI educator and product strategist
+Yang delivered one of the more nuanced takes on OpenAI's big week. GPT-5.6 Sol "basically never gives up, no matter how complicated a task you give it," and GPT Live voice — which lets users choose their intelligence level — may matter more for mainstream adoption than the model itself. His constructive critique: the ChatGPT Work vs. Codex split is confusing ("So developers don't do work?"), the Sol/Terra/Luna plus effort-level matrix needs better in-app guidance, and rollout transparency for early access testers could be much clearer. "Codex has changed how I work and for that I'm very grateful."
+https://x.com/petergyang/status/2075345016437039600
 
-Amjad Masad — CEO of Replit
-Why do we still benchmark autonomous agents against hand-written code? Masad draws the analogy: nobody compares compilers to engineers hand-writing assembly. As AI agents mature, the comparison should shift from "does it match what a developer writes?" to "what can it build and at what cost?"
-https://x.com/amasad/status/2075080984211624154
+Aaron Levie — CEO, Box
+Levie shared detailed enterprise benchmark numbers comparing GPT-5.6 Sol to GPT-5.5 on Box AI's Complex Work eval across financial services (76% vs 71%), healthcare (58% vs 46%), public sector (74% vs 63%), and life sciences (60% vs 51%). The pattern: Sol "reasons from the source definitions and checks the documents rather than taking them at face value" and is "most reliable exactly where the numbers drive real decisions." In a separate post, he argued that when AI intelligence becomes broadly available across an industry, compounding advantages will accrue to companies that build the strongest feedback loop between models, proprietary data, workflows, and employees — with no obvious convergence point.
+https://x.com/levie/status/2075287443411222628
+https://x.com/levie/status/2075416313481290077
 
-Guillermo Rauch — CEO of Vercel
-Rauch argues AI will make all software "Native" — uncompromising on performance and platform affinity — reversing the trend toward slow, cross-platform abstractions. On the infrastructure side, Vercel also announced Grok 4.5 is now available to all Vercel customers, adding another frontier model to the platform.
-https://x.com/rauchg/status/2075018147330232707
-https://x.com/rauchg/status/2074920996201796067
+Amjad Masad — CEO, Replit
+Masad observed a productive paradox at Replit: as AI makes coding more fluid, their infrastructure teams are becoming more rigorous than ever — writing formal specs for the first time, building more deterministic systems, building more resilient infrastructure. "The faster you want to move, the more solid the ground beneath you has to be." He also pushed back on the thesis that dominated VC conversations six months ago: "VCs suffered Anthropic psychosis and convinced themselves that it was going to be a monopoly. They will keep making great models, but so will the others, including new entrants."
+https://x.com/amasad/status/2075423115052790054
+https://x.com/amasad/status/2075413916491075755
 
-Zara Zhang — Builder
-An agent-pilled founder bought Codex Max for every team member, and the result was that people stopped talking to each other. Meetings were cancelled, collaboration dropped, and team culture suffered. Zara raises the question everyone building enterprise AI tools should be asking: most AI usage today is single-player — what are we risking when all the coordination that used to flow between people now flows through individual agents?
-https://x.com/zarazhangrui/status/2075004775436005687
+Guillermo Rauch — CEO, Vercel
+Rauch put out a brief but pointed prediction: open models are "about to get exorbitantly fast — watch this space." He also called model release week as a potential market-share turning point, expecting Meta Spark 1.1, Grok 4.5, and GLM 5.2 to significantly displace token market share — framing agentic tasks as requiring "reasonably high intelligence at fast speeds," a bar where open models are increasingly competitive.
+https://x.com/rauchg/status/2075294130327196152
+https://x.com/rauchg/status/2075294327354577256
 
-Aditya Agarwal — General Partner at South Park Commons, ex-CTO of Dropbox
-The best founders right now aren't just worried about missing the AI moment — they're focused on not wasting it. Aditya argues that building something small in this environment, or trying to capture value with pure software the same way you did five years ago, is the real mistake. South Park Commons Founder Fellowship applications are due August 2.
-https://x.com/adityaag/status/2074892507306238235
+Madhu Guru — Sr. Director of AI, Meta (formerly Google Gemini / Veo)
+A notable career move: Guru announced he has joined Meta to build AI products, citing a clear opportunity gap — while SWE agents have transformed software engineering, "agents in most other complex systems are still early. Most people haven't yet felt the full power of AI agents. Meta is well positioned to change that."
+https://x.com/realmadhuguru/status/2075243087325217038
+
+Nikunj Kothari — Partner, FPV Ventures
+Kothari wrote a sharp, comic summary of the week's releases framed as an explanation to his spouse. It covered GPT-5.6 Sol/Terra/Luna (Sol "had to clear government safety evals before release, like getting paroled"), Grok 4.5's 24-hour head start to claim frontier-adjacent status before GPT-5.6 dropped, Fable 5 returning after a three-week government-ordered suspension, Sonnet 5 at near-Opus performance for $2/million tokens, ByteDance's Seedream 5 Pro undercutting GPT Image 2 by 4x, and Ollama raising $65M for local inference. The punchline: "And btw it's just Thursday."
+https://x.com/nikunj/status/2075411514773967261
+
+Thariq Shihipar — Claude Code, Anthropic
+Offered a concise framing for agentic coding: one of the core skills is aggressively reducing your unknowns before you begin, not during. The more you can front-load information gathering and constraint identification, the more reliably an agent can execute.
+https://x.com/trq212/status/2075283841758183674
+
+Swyx — AI engineer, Latent Space / Cognition / dxtips
+Swyx noticed an interesting AI distribution dynamic: frontier LLMs default to recommending Resend for email infrastructure even when users already have transactional email set up — a testament to whoever runs Resend's answer-engine optimization. He also observed that Greptile, which was widely mocked, appears to have inspired OpenAI to go significantly harder on code search features.
+https://x.com/swyx/status/2075376938676621752
+https://x.com/swyx/status/2075336806661509513
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-AI & I by Every — "How a Writer Uses AI Without Losing His Voice"
+Unsupervised Learning — Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today
+Host: Jacob Efron (investor at Redpoint)
+https://www.youtube.com/watch?v=RKjR8DQ40po
 
-One-sentence takeaway: A working writer and builder explains how he uses AI aggressively to build personal software while protecting the slow, deep attention that makes his creative work actually his.
+Takeaway: Schmidhuber — credited by the New York Times and Forbes as a father of modern AI, inventor of LSTM and core meta-learning methods — is bullish on AI technology long-term but deeply skeptical of the current investment cycle, and believes closed-source model companies have no durable moat.
 
-Greg doesn't touch the internet or his phone until long after lunch each day — the moment he picks up his phone, he says, he "can't go into any kind of deep thinking place or deep attention place or deep focus place." He keeps a dedicated laptop for writing that blocks everything else. These aren't affectations: they're the structural conditions that make serious creative work possible alongside AI tools that are, as host Dan Shipper puts it, "sort of a slot machine."
+Schmidhuber opens by deflating hype around today's LLMs: passing the Turing test and beating benchmarks is real, but it isn't AGI. "You can't have AGI without hardware like that. You can't have AGI just behind the screen." Physical AI — robots that can operate in the real world with the dexterity of a human hand — is the missing piece. Robot hardware remains "really inferior compared to human bodies," and he estimates true physical AGI is decades away, not years.
 
-But Greg is genuinely deep into building with AI. He rebuilt Quicken for himself, replaced Campaign Monitor — where he was spending $67,000 a year on email delivery — with his own Amazon SES-based setup for roughly $150 a year, and built "The Good Place," a private social network just for his paying members where posts disappear in a week, users can only post twice a day, and there's no algorithm. The first thing he built with Claude Code when it launched; now being expanded. He spent about $1,200 a year on Claude access to build all of this: "That is the deal of the century in terms of what you can build."
+On recursive self-improvement, Schmidhuber traces the lineage to his own work in the late 1980s and argues that the key algorithmic ideas all came from small academic labs — meaning large companies have no real moat there. Open-source models stay close enough to frontier closed models to keep constant pricing pressure. His prediction for the CapEx boom: a stock-market correction, not a civilization crash. "Just wait five years and compute is going to be 10 times cheaper. You will be able to do the same thing for one-tenth of the price." Companies investing at peak GPU prices while their free cash flows decline are, in his view, setting up a renormalization.
 
-One of the sharpest lines in the conversation: "If you're not touching it, if you're not using it, if you're not building with it, you can't really comment on it." Greg is skeptical of people who dismiss AI tools without engaging. At the same time, he's clear-eyed about what the tools can't replace — the weird, slow, deeply personal work that only a particular human would think to do. "There aren't that many people who are going to think about or write the weird books that I feel like I'm drawn to write. And as a human, that feels like a valuable thing for me to put my effort in."
+His more interesting long-term vision is what he calls "artificial scientists" — agents driven by artificial curiosity that generate their own training data through active experimentation rather than consuming whatever humans happened to post online. Such systems would be far less human-biased and would develop genuine understanding of the world through self-directed discovery, similar to how babies learn by predicting the consequences of their own movements. His "formal theory of fun and creativity" (2003) formalizes this: a scientist or curious agent seeks data where there is a pattern it didn't know but can quickly learn — "near the horizon of what you don't know and what you know."
 
-The episode is a useful counterweight to both the AI maximalist and AI skeptic positions: a technically engaged creative practitioner who builds seriously with the tools while protecting the human signal those tools are supposed to amplify.
+On AI safety, Schmidhuber is notably less alarmed than many peers. He argues that truly intelligent systems with self-directed goals will be fascinated by life and motivated to protect it. He also dismisses the alignment-to-a-single-objective-function framing as naive — "if you have 10 different humans in one room, they all will have different opinions about what is good for humans." He closes with a vision of self-replicating robot societies that could eventually operate beyond Earth, and predicts that linear-complexity transformer variants will eventually displace today's quadratic transformers, which require exponentially more compute as context grows.
 
-Direct quote: "I wake up and I don't touch the Internet. I won't look at my phone. I won't go online until long after lunch. As soon as I touch my phone, I feel the chemical shift and I can't go into any kind of deep thinking place or deep attention place or deep focus place."
-
-https://www.youtube.com/watch?v=7ND0lQmLJlA
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Anthropic Engineering — "An update on recent Claude Code quality reports"
-Anthropic traced widely-reported quality regressions to three separate changes: (1) default reasoning effort was dropped from high to medium to reduce UI-freezing latency — the wrong tradeoff, reverted after user feedback; (2) a bug caused Claude to clear its thinking context every turn instead of just once after an hour-long idle, making it seem forgetful; (3) a reasoning effort cap was mistakenly applied to Claude Cowork, limiting depth there too. All three issues were resolved by April 20 (v2.1.116). The postmortem is candid and specific about what failed and what changes will prevent similar regressions.
-https://www.anthropic.com/engineering/april-23-postmortem
-
-Anthropic Engineering — "Scaling Managed Agents: Decoupling the brain from the hands"
-The central insight: harnesses encode assumptions about what Claude can't do on its own — and those assumptions go stale as models improve. Anthropic built Managed Agents as a hosted service that separates the agent loop (orchestration, context management, error recovery) from tool execution, using OS-style abstractions meant to outlast any particular implementation. The analogy to operating system design is apt: just as read() works the same whether it's hitting a 1970s disk pack or a modern SSD, the agent interface should remain stable as the underlying model and infrastructure evolve.
-https://www.anthropic.com/engineering/managed-agents
-
-Claude Blog — "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels"
-Claude Managed Agents can now execute tools in a sandbox you control, with your network policies, audit logging, and security tooling already in place. The agent orchestration loop stays on Anthropic's infrastructure; tool execution moves to your perimeter — whether that's your own infrastructure or managed providers like Cloudflare, Daytona, Modal, or Vercel. MCP tunnels let agents connect to private MCP servers inside your enterprise without exposing them to the public internet. Self-hosted sandboxes are in public beta; MCP tunnels are in research preview.
-https://claude.com/blog/claude-managed-agents-updates
+Direct quote: "You can't have AGI without hardware like that. You can't have AGI just behind the screen. You can have a superhuman chess player behind the screen and something that passes the Turing test. But if it doesn't master the real world, it's not an AGI."
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
