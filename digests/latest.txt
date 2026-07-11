@@ -1,78 +1,32 @@
-AI Builders Digest — 2026-07-10
+AI Builders Digest — 2026-07-11
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman — CEO, OpenAI
-GPT-5.6 is out in three tiers — Sol, Terra, and Luna — and Altman is positioning cost-per-task as the headline story for enterprises: "we have heard enterprises on their concerns about AI costs, and 5.6 sol is a huge step forward for dollars-per-task." He also clarified that Codex is the engine powering the new ChatGPT Work product and isn't going anywhere, calling it "the core of our new work product and what makes it so good." On a personal note, he expressed sadness about Fidji Simo's departure from OpenAI, wishing her a speedy recovery.
-https://x.com/sama/status/2075267201058426944
-https://x.com/sama/status/2075293792048136572
-
-Thibault Sottiaux — Codex & ChatGPT, OpenAI
-Sottiaux announced two things this cycle: a full usage-limit reset for ChatGPT Work and Codex to celebrate the GPT-5.6 Sol launch ("we want you to have the time to truly try ambitious tasks"), and a new model researcher, Raj Nagarwal, who joined specifically to push on coding capabilities and pressed the rate-limit reset button himself. The reset was described as a deliberate invitation to attempt more ambitious work, not just a routine rollover.
-https://x.com/thsottiaux/status/2075452680760443190
-https://x.com/thsottiaux/status/2075330198887940337
-
-Josh Woodward — VP, Google Labs / Gemini
-After reading 1,700+ replies to a user-feedback post, Woodward published a detailed top-10 prioritized action list for Gemini. The clear number-one request: make Google Workspace integrations work more reliably. Close behind: better tool calling, smarter project and folder organization for chats, and broader MCP and Custom Skills availability (early access already live in Gemini Spark). He committed to Deep Research export improvements, better voice dictation, mobile scrolling fixes, and rethinking the chat organization UX. A rare and specific public accountability post from a major AI product leader.
-https://x.com/joshwoodward/status/2075241749048401936
-
-Peter Yang — AI educator and product strategist
-Yang delivered one of the more nuanced takes on OpenAI's big week. GPT-5.6 Sol "basically never gives up, no matter how complicated a task you give it," and GPT Live voice — which lets users choose their intelligence level — may matter more for mainstream adoption than the model itself. His constructive critique: the ChatGPT Work vs. Codex split is confusing ("So developers don't do work?"), the Sol/Terra/Luna plus effort-level matrix needs better in-app guidance, and rollout transparency for early access testers could be much clearer. "Codex has changed how I work and for that I'm very grateful."
-https://x.com/petergyang/status/2075345016437039600
-
-Aaron Levie — CEO, Box
-Levie shared detailed enterprise benchmark numbers comparing GPT-5.6 Sol to GPT-5.5 on Box AI's Complex Work eval across financial services (76% vs 71%), healthcare (58% vs 46%), public sector (74% vs 63%), and life sciences (60% vs 51%). The pattern: Sol "reasons from the source definitions and checks the documents rather than taking them at face value" and is "most reliable exactly where the numbers drive real decisions." In a separate post, he argued that when AI intelligence becomes broadly available across an industry, compounding advantages will accrue to companies that build the strongest feedback loop between models, proprietary data, workflows, and employees — with no obvious convergence point.
-https://x.com/levie/status/2075287443411222628
-https://x.com/levie/status/2075416313481290077
-
-Amjad Masad — CEO, Replit
-Masad observed a productive paradox at Replit: as AI makes coding more fluid, their infrastructure teams are becoming more rigorous than ever — writing formal specs for the first time, building more deterministic systems, building more resilient infrastructure. "The faster you want to move, the more solid the ground beneath you has to be." He also pushed back on the thesis that dominated VC conversations six months ago: "VCs suffered Anthropic psychosis and convinced themselves that it was going to be a monopoly. They will keep making great models, but so will the others, including new entrants."
-https://x.com/amasad/status/2075423115052790054
-https://x.com/amasad/status/2075413916491075755
-
-Guillermo Rauch — CEO, Vercel
-Rauch put out a brief but pointed prediction: open models are "about to get exorbitantly fast — watch this space." He also called model release week as a potential market-share turning point, expecting Meta Spark 1.1, Grok 4.5, and GLM 5.2 to significantly displace token market share — framing agentic tasks as requiring "reasonably high intelligence at fast speeds," a bar where open models are increasingly competitive.
-https://x.com/rauchg/status/2075294130327196152
-https://x.com/rauchg/status/2075294327354577256
-
-Madhu Guru — Sr. Director of AI, Meta (formerly Google Gemini / Veo)
-A notable career move: Guru announced he has joined Meta to build AI products, citing a clear opportunity gap — while SWE agents have transformed software engineering, "agents in most other complex systems are still early. Most people haven't yet felt the full power of AI agents. Meta is well positioned to change that."
-https://x.com/realmadhuguru/status/2075243087325217038
-
-Nikunj Kothari — Partner, FPV Ventures
-Kothari wrote a sharp, comic summary of the week's releases framed as an explanation to his spouse. It covered GPT-5.6 Sol/Terra/Luna (Sol "had to clear government safety evals before release, like getting paroled"), Grok 4.5's 24-hour head start to claim frontier-adjacent status before GPT-5.6 dropped, Fable 5 returning after a three-week government-ordered suspension, Sonnet 5 at near-Opus performance for $2/million tokens, ByteDance's Seedream 5 Pro undercutting GPT Image 2 by 4x, and Ollama raising $65M for local inference. The punchline: "And btw it's just Thursday."
-https://x.com/nikunj/status/2075411514773967261
-
-Thariq Shihipar — Claude Code, Anthropic
-Offered a concise framing for agentic coding: one of the core skills is aggressively reducing your unknowns before you begin, not during. The more you can front-load information gathering and constraint identification, the more reliably an agent can execute.
-https://x.com/trq212/status/2075283841758183674
-
-Swyx — AI engineer, Latent Space / Cognition / dxtips
-Swyx noticed an interesting AI distribution dynamic: frontier LLMs default to recommending Resend for email infrastructure even when users already have transactional email set up — a testament to whoever runs Resend's answer-engine optimization. He also observed that Greptile, which was widely mocked, appears to have inspired OpenAI to go significantly harder on code search features.
-https://x.com/swyx/status/2075376938676621752
-https://x.com/swyx/status/2075336806661509513
+No tweets today — the X API returned errors for all tracked builders (HTTP 402). Check back tomorrow.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning — Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today
-Host: Jacob Efron (investor at Redpoint)
-https://www.youtube.com/watch?v=RKjR8DQ40po
+The MAD Podcast with Matt Turck — "Stripe's AI Chief: How AI Agents Will Buy, Sell, and Pay"
+Published: July 9, 2026
+https://www.youtube.com/@DataDrivenNYC/videos
 
-Takeaway: Schmidhuber — credited by the New York Times and Forbes as a father of modern AI, inventor of LSTM and core meta-learning methods — is bullish on AI technology long-term but deeply skeptical of the current investment cycle, and believes closed-source model companies have no durable moat.
+Takeaway: Stripe's head of data and AI, Emily Sense, argues that agentic commerce is already live infrastructure — not just a concept — and the next frontier is agents that don't just buy on your behalf but run entire micro-businesses end to end.
 
-Schmidhuber opens by deflating hype around today's LLMs: passing the Turing test and beating benchmarks is real, but it isn't AGI. "You can't have AGI without hardware like that. You can't have AGI just behind the screen." Physical AI — robots that can operate in the real world with the dexterity of a human hand — is the missing piece. Robot hardware remains "really inferior compared to human bodies," and he estimates true physical AGI is decades away, not years.
+The conversation covers the full spectrum of how agentic commerce plays out today. At one end, fully autonomous agents discover a service, negotiate pricing, and execute a transaction with no human in the loop. At the other, consumers use AI surfaces (ChatGPT, Gemini, Copilot) to discover products and then press a buy button themselves — the agent handles the checkout flow. Emily says the industry is mostly hovering around "Level 2" right now, where humans still make the final selection decision but lean on AI heavily to surface and filter options.
 
-On recursive self-improvement, Schmidhuber traces the lineage to his own work in the late 1980s and argues that the key algorithmic ideas all came from small academic labs — meaning large companies have no real moat there. Open-source models stay close enough to frontier closed models to keep constant pricing pressure. His prediction for the CapEx boom: a stock-market correction, not a civilization crash. "Just wait five years and compute is going to be 10 times cheaper. You will be able to do the same thing for one-tenth of the price." Companies investing at peak GPU prices while their free cash flows decline are, in his view, setting up a renormalization.
+Stripe has been building the infrastructure layer for both ends of that spectrum. The Agentic Commerce Protocol (ACP), co-created with OpenAI, is a standardized way for businesses to expose their product catalog and prices to any AI agent — once, without needing to register separately with every model provider. Brands like Best Buy, Coach, URBN, Kate Spade, and platforms like Shopify, Wix, and BigCommerce have already adopted it. On the payments side, Stripe's new Shared Payment Token lets agents transact without ever seeing a user's actual card credentials — the token encodes exactly which merchants can be charged, for how much, in which currency, and for how long. Link Wallet (Stripe's consumer wallet with 300 million users) is being repositioned as the wallet for agents, giving consumers fine-grained spending guardrails rather than handing agents a blank check.
 
-His more interesting long-term vision is what he calls "artificial scientists" — agents driven by artificial curiosity that generate their own training data through active experimentation rather than consuming whatever humans happened to post online. Such systems would be far less human-biased and would develop genuine understanding of the world through self-directed discovery, similar to how babies learn by predicting the consequences of their own movements. His "formal theory of fun and creativity" (2003) formalizes this: a scientist or curious agent seeks data where there is a pattern it didn't know but can quickly learn — "near the horizon of what you don't know and what you know."
+One of the most underreported topics Emily flags is token theft: more than one in six signups at AI companies are fraudulent actors trying to steal compute tokens rather than money or credentials. She also notes that per-seat SaaS pricing is breaking — AI costs scale with compute usage, not headcount — forcing a rethink of how software is monetized.
 
-On AI safety, Schmidhuber is notably less alarmed than many peers. He argues that truly intelligent systems with self-directed goals will be fascinated by life and motivated to protect it. He also dismisses the alignment-to-a-single-objective-function framing as naive — "if you have 10 different humans in one room, they all will have different opinions about what is good for humans." He closes with a vision of self-replicating robot societies that could eventually operate beyond Earth, and predicts that linear-complexity transformer variants will eventually displace today's quadratic transformers, which require exponentially more compute as context grows.
+On the macro picture, Emily points to a surge in US solopreneurs (5 million people now making their living from solo companies, hundreds of thousands clearing $1M/year) as evidence that AI is already reshaping business formation. The longer-term vision is agents as full economic actors — not just buying, but selling, provisioning infrastructure, and operating as micro-firms.
 
-Direct quote: "You can't have AGI without hardware like that. You can't have AGI just behind the screen. You can have a superhuman chess player behind the screen and something that passes the Turing test. But if it doesn't master the real world, it's not an AGI."
+Direct quote from Emily Sense:
+
+"It's not Emily permissioning an agent to buy on her behalf. It's Emily has an agent who's tasked with running a business, and that includes buying some things and selling some things and making some profits. And that'll be the world that I would like to be talking about twelve months from now."
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
