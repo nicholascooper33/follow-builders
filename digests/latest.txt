@@ -1,33 +1,51 @@
-AI Builders Digest — 2026-07-11
+AI Builders Digest — 2026-07-12
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No tweets today — the X API returned errors for all tracked builders (HTTP 402). Check back tomorrow.
+Sam Altman — CEO at OpenAI
+GPT 5.6 Sol appears to be leading on multiple benchmarks, and Altman isn't shy about it. He quipped that the most reliable signal that a new model is world-class is that competitors become obsessed with it. He also flagged a striking data point: at current usage levels, 30% of inference costs came from the Fable (Anthropic) model family, signaling just how much developer demand has shifted.
+https://x.com/sama/status/2075983427019612242
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Thibault Sottiaux — Codex & ChatGPT at OpenAI
+Sottiaux announced GPT 5.6 Sol directly addresses the top developer complaints: it's faster, token-efficient, strong at backend code, and — notably — no longer overuses useEffect in React. He also shared a practical workaround for Claude Code users who want to point their orange-crab coding agent at GPT 5.6 Sol via CLIProxyAPI, publishing a ready-to-paste shell alias to make the switch in minutes.
+https://x.com/thsottiaux/status/2076145711922696371
+https://x.com/thsottiaux/status/2076119366647894371
+
+Swyx — AI Engineer; affiliations include Cognition, Temporal, AI dot Engineer, Latent Space Pod
+Swyx made the case that the AI community has only partially understood Jevons Paradox. As coding agents drive down the cost of knowledge work, demand doesn't stay flat — it expands into entirely new domains. Coding wasn't the end state of this dynamic; it's the opening act. The engineers who can wield agents effectively are positioned at the center of that expansion.
+https://x.com/swyx/status/2076155833428431012
+
+Aaron Levie — CEO at Box
+Levie pushed back on the narrative that AI is collapsing software jobs. He argued that cheaper-per-unit software production follows the same industrial pattern seen throughout history: lower unit cost → more demand → more projects → more people needed to run, maintain, and direct them. AI agents create abundance first, replacement second — if ever.
+https://x.com/levie/status/2076116544980214164
+
+Zara Zhang — Builder
+A quick but telling data point: after testing GPT 5.6 Sol on a front-end project, Zhang gave it a thumbs up. Short, but consistent with the chorus of positive developer reactions to today's model update.
+https://x.com/zarazhangrui/status/2076130810143367453
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-The MAD Podcast with Matt Turck — "Stripe's AI Chief: How AI Agents Will Buy, Sell, and Pay"
-Published: July 9, 2026
-https://www.youtube.com/@DataDrivenNYC/videos
+No Priors: "Travel Through the Lens of AI with Booking.com CEO Glenn Fogel"
+Published: 2026-07-09 | https://www.youtube.com/watch?v=8nj_0wZkbtA
 
-Takeaway: Stripe's head of data and AI, Emily Sense, argues that agentic commerce is already live infrastructure — not just a concept — and the next frontier is agents that don't just buy on your behalf but run entire micro-businesses end to end.
+Takeaway: Booking Holdings is betting that the company with the best AI agent — not just the most listings — will win the next era of travel.
 
-The conversation covers the full spectrum of how agentic commerce plays out today. At one end, fully autonomous agents discover a service, negotiate pricing, and execute a transaction with no human in the loop. At the other, consumers use AI surfaces (ChatGPT, Gemini, Copilot) to discover products and then press a buy button themselves — the agent handles the checkout flow. Emily says the industry is mostly hovering around "Level 2" right now, where humans still make the final selection decision but lean on AI heavily to surface and filter options.
+Glenn Fogel, a 25-year veteran who helped grow Booking Holdings from a few hundred million to over $100B in market cap, joined No Priors to share how the company is deploying AI across its entire stack — and why he thinks no one should feel safe from disruption, including himself.
 
-Stripe has been building the infrastructure layer for both ends of that spectrum. The Agentic Commerce Protocol (ACP), co-created with OpenAI, is a standardized way for businesses to expose their product catalog and prices to any AI agent — once, without needing to register separately with every model provider. Brands like Best Buy, Coach, URBN, Kate Spade, and platforms like Shopify, Wix, and BigCommerce have already adopted it. On the payments side, Stripe's new Shared Payment Token lets agents transact without ever seeing a user's actual card credentials — the token encodes exactly which merchants can be charged, for how much, in which currency, and for how long. Link Wallet (Stripe's consumer wallet with 300 million users) is being repositioned as the wallet for agents, giving consumers fine-grained spending guardrails rather than handing agents a blank check.
+The most compelling part of the conversation centered on Penny, Priceline's agentic AI system. Fogel described using it personally to plan a complex multi-city family trip: coordinating different cabin classes, frequent-flyer mile optimization, hotel logistics, and routing across multiple travelers. "It was wonderful," he said, adding that Penny adoption has doubled month-over-month for the past several months — while generating measurable lifts in conversion, faster booking paths, lower cancellations, and higher customer satisfaction scores.
 
-One of the most underreported topics Emily flags is token theft: more than one in six signups at AI companies are fraudulent actors trying to steal compute tokens rather than money or credentials. She also notes that per-seat SaaS pricing is breaking — AI costs scale with compute usage, not headcount — forcing a rethink of how software is monetized.
+On the enterprise side, Booking Holdings is already seeing AI drive a ~10% reduction in customer service cost-per-contact, while satisfaction goes up. The company is investing approximately $700M this year across AI and platform development. Fogel acknowledged the key tension: token economics. Every AI-assisted interaction has a cost, and the team is still working out the ROI model — which models to use for which tasks, what the long-term lifetime value lift looks like, and when to push agentic workflows to full scale.
 
-On the macro picture, Emily points to a surge in US solopreneurs (5 million people now making their living from solo companies, hundreds of thousands clearing $1M/year) as evidence that AI is already reshaping business formation. The longer-term vision is agents as full economic actors — not just buying, but selling, provisioning infrastructure, and operating as micro-firms.
+Fogel was notably candid about competitive durability. When asked whether Booking's 8.6 million alternative accommodation listings represent a durable moat against AI-native travel startups, he didn't flinch:
 
-Direct quote from Emily Sense:
+"There is no such thing as a moat. There is no such thing as somewhere you're gonna be protected against innovation. Today, we have a competitive advantage on areas. Absolutely. But those can go away tomorrow."
 
-"It's not Emily permissioning an agent to buy on her behalf. It's Emily has an agent who's tasked with running a business, and that includes buying some things and selling some things and making some profits. And that'll be the world that I would like to be talking about twelve months from now."
+He argued the only winning strategy is relentless product development — continuously finding new ways to create value for both travelers and supply-side partners, while being honest about what AI can and can't do today. The session also touched on Booking's historical parallels to the dot-com bubble, the founder's decision of when to sell vs. keep building, and how the company navigated near-delisting in 2001 to reach $186B in travel booked last year.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
