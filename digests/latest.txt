@@ -1,63 +1,78 @@
-AI Builders Digest — 2026-07-13
+AI Builders Digest — 2026-07-14
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-OpenAI is passing down inference optimizations as savings to paid subscribers for GPT-5.6 Sol, resulting in roughly 10% more usage allowance across plans. Changes to the context size limit are also in the works for Codex and ChatGPT Work users. Sottiaux reassured the community that GPT 5.6 Sol is staying in Go, Plus, Pro, Team, and Edu subscriptions — it won't be removed until a better model ships.
-https://x.com/thsottiaux/status/2076495156757577895
+Swyx — AI engineer, affiliated with Cognition, Temporal, and Latent Space Pod:
+Swyx shared his current model stack for serious projects: Sol Ultra for planning, Fable 5 for critique, and Sonnet 5/Terra Ultra/SWE 1.7 for ultracode-style slop-cannon output. He also recommends using variants of mattpocockuk's "grill-me" or trq212's "interview-me" prompts to front-load decisions before writing code. A compact and practical workflow for anyone thinking about multi-model orchestration.
+https://x.com/swyx/status/2076811977918484795
 
-Peter Yang — AI Tutorials Creator
-Peter Yang argues that when community sentiment turns negative, the worst thing a company can do is retreat into corporate communication — and the best thing is to lean into transparency, honesty, and direct engagement. He singled out Anthropic's communication style as an example to improve upon, contrasting it with what OpenAI has done to stay connected to its developer community.
-https://x.com/petergyang/status/2076512796481880270
+Cat Wu — Claude Code + Cowork at Anthropic:
+Cat announced an upgrade to Claude Artifacts.
+https://x.com/_catwu/status/2076867882894684314
 
-Amjad Masad — CEO of Replit
-Amjad is doing what he calls "Vibe Research": fine-tuning a Qwen-8b model to play chess on Replit, running three parallel experiment branches simultaneously. He's also demoing Replit's computer use model playing against his own chess engine. He notes that models have gotten dramatically better at ML tasks than they were even a short while ago, making this kind of research accessible in new ways.
-https://x.com/amasad/status/2076227936202662357
+Thariq — Claude Code at Anthropic:
+Thariq elaborated on what the Artifacts upgrade unlocks: it makes artifacts significantly more expressive and combinable. His favorite use case is creating a project dashboard in Claude Tag that can be edited by teammates or by local Claude Code sessions — a real-time, collaborative surface built entirely from AI-generated components.
+https://x.com/trq212/status/2076790799011131735
 
-Guillermo Rauch — CEO of Vercel
-Rauch made a pointed case for AI infrastructure ownership: make the model a cog in a machine you control. His recommended stack — open model API via AI SDK, open Agent API, and open ZDR inference via AI Gateway — is aimed at ensuring startups and enterprises own their data, evals, and model choices. Don't outsource your brain.
-https://x.com/rauchg/status/2076364176252191222
+Amjad Masad — CEO of Replit:
+Amjad shared that he is now getting realtime progress updates on his model training runs. He described it as feeling like "early vibe coding except it's making personal models" — a sign that fine-tuning and personal model creation is becoming as fluid as coding.
+https://x.com/amasad/status/2076776737074184661
 
-Zara Zhang — Builder
-Zara shared a high-signal workflow: use your meeting transcript as a product requirements document. Discuss a feature's implementation with a colleague, send the transcript to Codex, and it builds the prototype as discussed — the meeting itself becomes the prompt. Simple, practical, and a strong example of how AI coding tools change the shape of product work.
-https://x.com/zarazhangrui/status/2076300222884626754
+Guillermo Rauch — CEO of Vercel:
+Rauch highlighted that the two most popular v0 features so far are the filesystem API and observability, and said Vercel is doubling down on both. He also noted open-weight models have grown from 11% to 29% of Vercel gateway tokens since April — a significant jump signaling enterprise adoption of open-source models. On the product side, he is pushing feature flags as a building block for autonomous, self-optimizing websites.
+https://x.com/rauchg/status/2076817174073880957
+https://x.com/rauchg/status/2076713720731042174
 
-Nikunj Kothari — Partner at FPV Ventures
-Nikunj observed that in San Francisco he keeps meeting people claiming to have armies of subagents looping things for them — but when asked what they're building and for whom, very few can give a straight answer. His take: even in the AI era, simplicity and directness still win. Execution clarity matters more than infrastructure flex.
-https://x.com/nikunj/status/2076458876816540144
+Aaron Levie — CEO of Box:
+Levie offered a structured read on where AI is heading for enterprises. He sees frontier intelligence continuing unabated, with a clear template emerging: frontier models as managers routing to lower-cost models for workhorse tasks. He also pushed back on the "every enterprise will have its own model" narrative, arguing that the most sensitive and valuable enterprise data — the kind that would make a proprietary model truly valuable — is precisely the data that cannot be safely packed into a model. RAG and retrieval architectures, he implies, will remain essential.
+https://x.com/levie/status/2076882332821373381
+https://x.com/levie/status/2076764958579446006
 
-Sam Altman — CEO of OpenAI
-Sam put out a direct call to the community: show him the coolest thing you've built with GPT 5.6 Sol. The best submission gets a special gift from the OpenAI archives. A straightforward way to surface real-world usage at the frontier.
-https://x.com/sama/status/2076398253332140410
+Zara Zhang — Builder:
+Zhang shared a framework on the three levels of AI adoption for organizations, noting that most companies are still at level 2. No further text in the tweet, but the visual (linked) lays out the progression.
+https://x.com/zarazhangrui/status/2076862290985730481
 
-Claude (Anthropic)
-Anthropic is extending Claude Fable 5 access on all paid plans through July 19, and keeping Claude Code's weekly rate limits 50% higher through the same date. Users can apply up to half their weekly usage limit to Fable 5, with usage credits available after that threshold.
-https://x.com/claudeai/status/2076351399999557669
+Nikunj Kothari — Partner at FPV Ventures:
+Kothari built and open-sourced the Ramp-Autofill skill, which automatically finds receipts in iMessage and Gmail, parses any links for amounts and vendors, and fills in expense reports. Built using the Ramp CLI and Claude Fable. He noted the initial version was one-shot by Fable from a voice prompt while driving — with some steering and edits afterward.
+https://x.com/nikunj/status/2076775924650107151
+https://x.com/nikunj/status/2076776777884811671
+
+Sam Altman — CEO of OpenAI:
+Altman noted it now "sorta breaks his brain" to see OpenAI models finally getting good at design. He also took an apparent jab at silent model downgrading practices — "hard questions are great but only if we deem you worthy enough to not silently downgrade you" — framed in a tone that could be self-critical or competitive.
+https://x.com/sama/status/2076823209589313910
+https://x.com/sama/status/2076824870072238299
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Priors: How Nuclear Will Unlock Energy Abundance with Valor Atomics Founder Isaiah Taylor
-https://www.youtube.com/watch?v=5Xvbq_zvOQ4
+The MAD Podcast with Matt Turck — "Inside Nemotron & NVIDIA's AI Lab | Bryan Catanzaro"
+https://www.youtube.com/@DataDrivenNYC/videos
 
-Takeaway: Valor Atomics just became the first private startup in history to generate nuclear power, and founder Isaiah Taylor's bet is that hardware iteration — not design elegance — is what gives nuclear its long-overdue "Ford moment."
+Takeaway: NVIDIA's open-weight Nemotron models are built to be fast, efficient, and agentic-first — and the architecture choices behind them (4-bit pretraining, hybrid SSM-transformer, MoE) are inseparable from NVIDIA's chip roadmap.
 
-Recorded on-site at Valor's Utah nuclear facility, this episode follows host Sarah Guo through a live tour of the Ward 250, the first advanced reactor ever to produce power from a startup. Taylor, whose great-grandfather was a nuclear physicist on the Manhattan Project, spent a decade watching nuclear startups fail before founding Valor less than three years ago. The company went from incorporation to first criticality in two years and four months, then cut that to seven months for their second reactor. Taylor's goal: a new reactor turning on every few minutes.
+Bryan Catanzaro, who leads Nemotron at NVIDIA, gave one of the most technically candid interviews on open-source AI in recent memory. He started by reframing the open-vs-closed debate: rather than a race, he sees the entire field moving fast in parallel, with open technologies enabling the kind of domain-specific customization that closed APIs simply can't allow for sensitive enterprise data.
 
-The company's thesis is deliberately contrarian. Where most of the nuclear industry consists of "modeling and simulation" companies producing paper reactors with beautiful designs, Valor builds and turns things on. Taylor divides the nuclear startup landscape into two camps — those who think nuclear is a design problem, and those who think it's a hardware execution problem. Valor is firmly in the second camp, and the Ward 250 is their argument.
+On architecture: Nemotron 3 Ultra is a hybrid of state space models (SSMs) and transformers — a design NVIDIA published in 2024 showing the combination outperforms either alone. SSMs compress context into a constant-size scratchpad, excelling at global understanding; full attention layers handle precise recall. The model is also a mixture-of-experts (MoE), meaning only ~10% of parameters activate per token — a design NVIDIA's Blackwell GPUs were purpose-built for, with NVL 72 enabling 72 GPUs to read each other's memory at low latency to route tokens dynamically between expert partitions.
 
-On safety, Valor also takes a different approach. Rather than reducing the odds of a meltdown through redundant active cooling systems (the failure mode in Three Mile Island and Fukushima), Valor's Triso-fueled, helium-cooled, graphite-moderated reactor is passively safe by physics. During the recording, Taylor describes their planned demonstration: shut off the entire electrical supply to the plant — every safety system at once — and watch decay heat dissipate naturally through convection over two days, with no operator action required.
+Perhaps the most interesting technical detail: Nemotron Ultra was pretrained entirely in 4-bit (NVFP4) arithmetic — "not a trivial thing," Catanzaro said, because training in low-precision can cause divergence. NVIDIA invented new optimization algorithms to make it stable. At inference, multi-token prediction lets the model speculate 5 tokens ahead, then verify them on the next pass — yielding up to 4x speedup with no accuracy cost. "The more accurate your model is, the faster the inference is," Catanzaro noted, calling it an unusual and satisfying property.
 
-Valor also built their own reactor protection system after being quoted $5 million and two and a half years by a vendor. Five engineers built a working equivalent in six weeks for $400,000. "Everywhere in nuclear is like this," Taylor says. "It's a fake industry that has not been building anything for forty years, and the little bit that they have been building, they're charging up 100x margin on."
+On organization: Nemotron is built across ~10 teams at NVIDIA, none of which owns it fully. The key cultural principle: "the mission is the boss." Multi-domain on-policy distillation (MOPD) — using ~15 specialist teacher models trained on domains like math, science, and coding — lets all those teams contribute without fighting over which capability gets prioritized in training.
 
-To mark the milestone, Valor powered an NVIDIA Blackwell AI chip directly from their nuclear reactor and hosted a live website — nuclearwebsite.com — that displayed the exact number of uranium atoms split to deliver each page load, along with Valor merchandise only available while the reactor is running.
+On safety, Catanzaro took a contrarian view: open models are inherently safer because "more sunlight" means more people identifying and fixing problems, rather than a small group making safety decisions for everyone.
 
-The long-term vision: as AI converts human labor into energy consumption in manufacturing, the price of energy becomes the price of everything. Taylor believes nuclear can make energy ten times — eventually a thousand times — cheaper, unlocking a future where manufactured goods trend toward free.
+Direct quote: "If you accept as the truth that we're gonna be running at the limit, then what that means is that the way to get more intelligence is to be more efficient. We can't get more intelligence by applying more force if we're already at the limit. We have to be more thoughtful about how we use what we have."
 
-Direct quote: "Most of the nuclear industry is a modeling and simulation industry. They're not focused on hardware iteration, hardware execution, building the simplest and safest reactor that allows them to scale. And Valor just demonstrated that we are."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Claude Blog — "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework"
+https://claude.com/blog/claude-for-foundation-models
+
+Anthropic released a Swift package that lets Apple developers use Apple's Foundation Models framework to call Claude directly. The integration is designed around Apple's guided generation system: because Apple's framework returns typed Swift values via @Generable annotations, developers arrive at the Claude API call with clean, structured inputs rather than raw user text. The pattern is a natural split — Apple's on-device model handles fast, local tasks (summarization, extraction, classification) and hands off to Claude when the request requires multi-step reasoning, code generation, web search, or data analysis. Claude then streams its response back into the same SwiftUI view, making the hand-off invisible to the user. The integration supports iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
