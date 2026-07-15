@@ -1,79 +1,91 @@
-AI Builders Digest — 2026-07-14
+AI Builders Digest — 2026-07-15
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — AI engineer, affiliated with Cognition, Temporal, and Latent Space Pod:
-Swyx shared his current model stack for serious projects: Sol Ultra for planning, Fable 5 for critique, and Sonnet 5/Terra Ultra/SWE 1.7 for ultracode-style slop-cannon output. He also recommends using variants of mattpocockuk's "grill-me" or trq212's "interview-me" prompts to front-load decisions before writing code. A compact and practical workflow for anyone thinking about multi-model orchestration.
-https://x.com/swyx/status/2076811977918484795
+Sam Altman — CEO, OpenAI
+GPT-5.6 Sol is seeing explosive demand, and Altman is flagging the reality: "5.6 sol growth is insane. The inference team has done heroic work to be able to support demand. We are going to move mountains to continue to scale, but it is possible there are some hiccups soon." He also dropped a brief but pointed note — "also, a reason to favor open-source harnesses" — gesturing toward the systemic risk of centralized inference dependencies.
+https://x.com/sama/status/2077106587307798989
+https://x.com/sama/status/2077053226080436235
 
-Cat Wu — Claude Code + Cowork at Anthropic:
-Cat announced an upgrade to Claude Artifacts.
-https://x.com/_catwu/status/2076867882894684314
+Thibault Sottiaux — Codex & ChatGPT, OpenAI
+ChatGPT Work (Codex) is surging toward 9 million users and Sottiaux is soliciting feedback in real-time: "Or… what if we gave you $100 in Codex credits if you tell us what you love about GPT-5.6 Sol or why you switched? Tweet it, claim your gift, enjoy more usage. First 10k get the free tokens!" He's also asking directly what users want improved in ChatGPT Work — an unusually public product conversation.
+https://x.com/thsottiaux/status/2077248807533003257
+https://x.com/thsottiaux/status/2077271889626706300
 
-Thariq — Claude Code at Anthropic:
-Thariq elaborated on what the Artifacts upgrade unlocks: it makes artifacts significantly more expressive and combinable. His favorite use case is creating a project dashboard in Claude Tag that can be edited by teammates or by local Claude Code sessions — a real-time, collaborative surface built entirely from AI-generated components.
-https://x.com/trq212/status/2076790799011131735
+Peter Yang — AI educator and creator
+Teasing a full walkthrough of his ChatGPT Work (Codex) setup: "Tomorrow, I'm sharing a new video on how I use ChatGPT Work to do almost everything on my computer. I'll cover my complete setup in 7 steps." If you're wondering how practitioners are actually integrating these tools into daily workflows, this one is worth watching.
+https://x.com/petergyang/status/2077196815951417649
 
-Amjad Masad — CEO of Replit:
-Amjad shared that he is now getting realtime progress updates on his model training runs. He described it as feeling like "early vibe coding except it's making personal models" — a sign that fine-tuning and personal model creation is becoming as fluid as coding.
-https://x.com/amasad/status/2076776737074184661
+Thariq — Claude Code, Anthropic
+A fun look at agentic tooling applied to competitive gaming: "I've been playing a lot of Pokemon Champions recently and started using Claude Code to help me. It writes code using Smogon's npm library, pulls live usage stats and then writes reports to understand" his team matchups. He's planning to open-source the artifact — a nice example of Claude Code as a personal analytics layer, not just a coding assistant.
+https://x.com/trq212/status/2077051280267399550
+https://x.com/trq212/status/2077051282146431092
 
-Guillermo Rauch — CEO of Vercel:
-Rauch highlighted that the two most popular v0 features so far are the filesystem API and observability, and said Vercel is doubling down on both. He also noted open-weight models have grown from 11% to 29% of Vercel gateway tokens since April — a significant jump signaling enterprise adoption of open-source models. On the product side, he is pushing feature flags as a building block for autonomous, self-optimizing websites.
-https://x.com/rauchg/status/2076817174073880957
-https://x.com/rauchg/status/2076713720731042174
+Guillermo Rauch — CEO, Vercel
+Two related moves from Vercel this cycle: the team opened up their dataset of AI token flows from Vercel AI Gateway ("Fascinating insights contained within"), and they added native agentmail integration — "Tell your agent to vercel install agentmail – no signup, automatic setup and unified billing." Both point toward Vercel building the infrastructure layer for agentic web apps.
+https://x.com/rauchg/status/2077176141790752798
+https://x.com/rauchg/status/2077154901013221444
 
-Aaron Levie — CEO of Box:
-Levie offered a structured read on where AI is heading for enterprises. He sees frontier intelligence continuing unabated, with a clear template emerging: frontier models as managers routing to lower-cost models for workhorse tasks. He also pushed back on the "every enterprise will have its own model" narrative, arguing that the most sensitive and valuable enterprise data — the kind that would make a proprietary model truly valuable — is precisely the data that cannot be safely packed into a model. RAG and retrieval architectures, he implies, will remain essential.
-https://x.com/levie/status/2076882332821373381
-https://x.com/levie/status/2076764958579446006
+Aaron Levie — CEO, Box
+Levie made a clean observation about why coding is such a natural fit for agents: code is uniquely testable. "One of the many properties that code has that makes it highly amenable to agents is that you can more or less quickly test it. You can either go see if the application works manually, or you can actually run it." He also flagged a "thoughtful proposal for a standards body for AI" — distinct from a regulatory agency, more nimble for industry coordination.
+https://x.com/levie/status/2077201458546745553
+https://x.com/levie/status/2077043523703243070
 
-Zara Zhang — Builder:
-Zhang shared a framework on the three levels of AI adoption for organizations, noting that most companies are still at level 2. No further text in the tweet, but the visual (linked) lays out the progression.
-https://x.com/zarazhangrui/status/2076862290985730481
+Ryo Lu — Design, Cursor AI
+A reflective post about working at Cursor: "I used to think the dream was to make my hobby my work. To spend my life close to the things I loved: computers, tools, interfaces, systems, tiny details, the feeling..." The post went wide (800+ likes) and he followed it up by announcing open roles for design engineers — Cursor is actively building out its design team.
+https://x.com/ryolu_/status/2077162119506833627
+https://x.com/ryolu_/status/2077108336844210352
 
-Nikunj Kothari — Partner at FPV Ventures:
-Kothari built and open-sourced the Ramp-Autofill skill, which automatically finds receipts in iMessage and Gmail, parses any links for amounts and vendors, and fills in expense reports. Built using the Ramp CLI and Claude Fable. He noted the initial version was one-shot by Fable from a voice prompt while driving — with some steering and edits afterward.
-https://x.com/nikunj/status/2076775924650107151
-https://x.com/nikunj/status/2076776777884811671
+Peter Steinberger — Co-founder, OpenClaw / OpenAI
+Flagging a practical workflow tip: always run autoreview on AI-generated code. "That's why you always wanna run autoreview." It burns tokens, but as he put it separately — "it'll calm your nerves." Worth internalizing if you're shipping agent-written code into production.
+https://x.com/steipete/status/2077265627379843242
 
-Sam Altman — CEO of OpenAI:
-Altman noted it now "sorta breaks his brain" to see OpenAI models finally getting good at design. He also took an apparent jab at silent model downgrading practices — "hard questions are great but only if we deem you worthy enough to not silently downgrade you" — framed in a tone that could be self-critical or competitive.
-https://x.com/sama/status/2076823209589313910
-https://x.com/sama/status/2076824870072238299
+Dan Shipper — CEO, Every
+Every had been covering Codex extensively six months before the broader market caught on, and Shipper is rightfully claiming the prediction. He's also hosting a subscriber meetup at their Brooklyn brownstone today (July 15, 6-8 PM) for anyone in NYC.
+https://x.com/danshipper/status/2077196636971815135
+https://x.com/danshipper/status/2077156555376492557
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Nikunj Kothari — Partner, FPV Ventures
+A sharp observation about the new engineering archetype emerging: "The pre-AI engineering leader mind can't comprehend that their most cracked engineer is also extremely online. While the agents are working, X becomes the dopamine spike they need as they wait." The character of high-output engineering is changing.
+https://x.com/nikunj/status/2077144910508257317
+
+Swyx — Latent Space, Cognition, dxtips
+Organizing a demo night for SF personal AI builders this Thursday at New Media Lab, with a special guest. "SF Personal AI engineers — if you are building personal agents, come demo at new media lab this thursday night." Good signal for anyone tracking the personal AI agent space in the Bay.
+https://x.com/swyx/status/2077243443391422813
+
+Aditya Agarwal — GP, South Park Commons / former CTO, Dropbox
+A candid take on the ChatGPT interface tradeoff: "I appreciate the in-depth feature set of the new 'ChatGPT' app... But there is a real tradeoff. I used ChatGPT (Legacy) 15-20 times a day for queries... And now it feels so heavyweight for that use." Speed and lightness matter — a recurring tension as AI products try to do everything.
+https://x.com/adityaag/status/2077130899733553560
+
+Claude AI — Anthropic
+Anthropic announced Claude for Teachers, a K-12 focused offering with meaningful privacy protections: "We never train our models on your conversations, and student information is protected by a data processing agreement written to comply with FERPA." The product connects to Learning Commons to draft lesson plans from state standards and generate student-facing materials.
+https://x.com/claudeai/status/2077047282109714488
+https://x.com/claudeai/status/2077047279689535705
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-The MAD Podcast with Matt Turck — "Inside Nemotron & NVIDIA's AI Lab | Bryan Catanzaro"
-https://www.youtube.com/@DataDrivenNYC/videos
+Training Data — "Anthropic's Katelyn Lesse & Angela Jiang: Building an Ecosystem, not a Walled Garden"
+https://www.youtube.com/watch?v=vPnVTHYplrQ
+Published: 2026-07-14
 
-Takeaway: NVIDIA's open-weight Nemotron models are built to be fast, efficient, and agentic-first — and the architecture choices behind them (4-bit pretraining, hybrid SSM-transformer, MoE) are inseparable from NVIDIA's chip roadmap.
+Takeaway: Anthropic's platform team is building a three-layer abstraction cake — knowledge, execution, and coordination — and the next big unlock is "strategies": meta-harnesses that assign specific jobs to tokens rather than just running them as interchangeable compute.
 
-Bryan Catanzaro, who leads Nemotron at NVIDIA, gave one of the most technically candid interviews on open-source AI in recent memory. He started by reframing the open-vs-closed debate: rather than a race, he sees the entire field moving fast in parallel, with open technologies enabling the kind of domain-specific customization that closed APIs simply can't allow for sensitive enterprise data.
+Angela Jiang and Katelyn Lesse lead the platform team that powers both Anthropic's internal products and its external APIs. In this conversation on the Training Data podcast, they laid out how they think about the architecture of Claude's platform and where it's heading.
 
-On architecture: Nemotron 3 Ultra is a hybrid of state space models (SSMs) and transformers — a design NVIDIA published in 2024 showing the combination outperforms either alone. SSMs compress context into a constant-size scratchpad, excelling at global understanding; full attention layers handle precise recall. The model is also a mixture-of-experts (MoE), meaning only ~10% of parameters activate per token — a design NVIDIA's Blackwell GPUs were purpose-built for, with NVL 72 enabling 72 GPUs to read each other's memory at low latency to route tokens dynamically between expert partitions.
+The three-layer model is the clearest framing they offered: at the base is the knowledge layer — the Messages API, tool definitions, MCP, skills, and memory. Above that is the execution layer, which is what Claude Managed Agents represents today: higher-order packaging that handles prompt caching, context management, sandboxes, and session persistence so builders don't have to reinvent that infrastructure. And above that — still nascent but the team's current focus — is the coordination layer, which they're calling "strategies."
 
-Perhaps the most interesting technical detail: Nemotron Ultra was pretrained entirely in 4-bit (NVFP4) arithmetic — "not a trivial thing," Catanzaro said, because training in low-precision can cause divergence. NVIDIA invented new optimization algorithms to make it stable. At inference, multi-token prediction lets the model speculate 5 tokens ahead, then verify them on the next pass — yielding up to 4x speedup with no accuracy cost. "The more accurate your model is, the faster the inference is," Catanzaro noted, calling it an unusual and satisfying property.
+The concept of strategies is the most forward-looking idea in the episode. As Jiang explained: "The true low-level harness is designed for execution. But the next one is about, okay, if tokens aren't really fungible and you need to give them different jobs — like maybe this token is advising versus this token is executing — you wanna start composing these kind of orchestrated strategies that go together." In practical terms this means agent patterns like best-of-N sampling, critic-then-execute loops, and advisor-executor splits packaged into reusable primitives rather than bespoke engineering projects.
 
-On organization: Nemotron is built across ~10 teams at NVIDIA, none of which owns it fully. The key cultural principle: "the mission is the boss." Multi-domain on-policy distillation (MOPD) — using ~15 specialist teacher models trained on domains like math, science, and coding — lets all those teams contribute without fighting over which capability gets prioritized in training.
+On the walled garden question, the answer is clearly no. Lesse highlighted how they've partnered with Modal, Vercel, Cloudflare, and Amazon for self-hosted sandboxes: "Whether it runs on our infrastructure versus somebody else's infrastructure is actually not important to us because the thing that's important to us is more that the architecture of how you put together these agents in a way that will be powerful." MCP tunnels let agents reach behind corporate firewalls. Connectors let third-party products embed natively. Claude Tag is the Slack packaging of all of this — a full org-level harness that surfaces as just another coworker in your channel.
 
-On safety, Catanzaro took a contrarian view: open models are inherently safer because "more sunlight" means more people identifying and fixing problems, rather than a small group making safety decisions for everyone.
+The team also pushed back on token rationalization as a reason to cut AI usage. Jiang's framing: design a routing strategy — assess task complexity and route hard tasks to capable models, simple tasks to cheaper ones — rather than capping usage globally. "You don't wanna stop AI usage. That's kind of the wrong move."
 
-Direct quote: "If you accept as the truth that we're gonna be running at the limit, then what that means is that the way to get more intelligence is to be more efficient. We can't get more intelligence by applying more force if we're already at the limit. We have to be more thoughtful about how we use what we have."
+One emerging category caught their attention from the customer side: manufacturing. "We're starting to see manufacturing really pick up as just a category where people are building with AI." And for legacy healthcare systems with no APIs, computer use is being deployed to bridge the gap — automating workflows through UI rather than waiting for modern integrations.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Claude Blog — "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework"
-https://claude.com/blog/claude-for-foundation-models
-
-Anthropic released a Swift package that lets Apple developers use Apple's Foundation Models framework to call Claude directly. The integration is designed around Apple's guided generation system: because Apple's framework returns typed Swift values via @Generable annotations, developers arrive at the Claude API call with clean, structured inputs rather than raw user text. The pattern is a natural split — Apple's on-device model handles fast, local tasks (summarization, extraction, classification) and hands off to Claude when the request requires multi-step reasoning, code generation, web search, or data analysis. Claude then streams its response back into the same SwiftUI view, making the hand-off invisible to the user. The integration supports iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
