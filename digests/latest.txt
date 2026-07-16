@@ -1,91 +1,105 @@
-AI Builders Digest — 2026-07-15
+AI Builders Digest — July 16, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman — CEO, OpenAI
-GPT-5.6 Sol is seeing explosive demand, and Altman is flagging the reality: "5.6 sol growth is insane. The inference team has done heroic work to be able to support demand. We are going to move mountains to continue to scale, but it is possible there are some hiccups soon." He also dropped a brief but pointed note — "also, a reason to favor open-source harnesses" — gesturing toward the systemic risk of centralized inference dependencies.
-https://x.com/sama/status/2077106587307798989
-https://x.com/sama/status/2077053226080436235
+Boris Cherny — Claude Code at Anthropic
 
-Thibault Sottiaux — Codex & ChatGPT, OpenAI
-ChatGPT Work (Codex) is surging toward 9 million users and Sottiaux is soliciting feedback in real-time: "Or… what if we gave you $100 in Codex credits if you tell us what you love about GPT-5.6 Sol or why you switched? Tweet it, claim your gift, enjoy more usage. First 10k get the free tokens!" He's also asking directly what users want improved in ChatGPT Work — an unusually public product conversation.
-https://x.com/thsottiaux/status/2077248807533003257
-https://x.com/thsottiaux/status/2077271889626706300
+In a post that racked up 7,200+ likes, Boris made the case that automation has always been the highest-leverage activity for engineers — and that this is now even more true in the age of AI agents. Encoding domain knowledge as infrastructure (CLAUDE.md files, lint rules, CI steps, skills, review docs) multiplies every agent's output, not just the original engineer's. Rejecting a PR because it doesn't use the right framework or architectural pattern is, he argues, a failure of automation — not a success of code review. "Every team should be writing the CLAUDE.md's, REVIEW.md's, skills, and docs that enable agents to productively work in their codebase with zero additional context from the prompter. This sounds crazy, and at the same time is a natural extension of the stuff engineers have always done: automate, and encode domain knowledge as infrastructure."
+https://x.com/bcherny/status/2077460395279692197
 
-Peter Yang — AI educator and creator
-Teasing a full walkthrough of his ChatGPT Work (Codex) setup: "Tomorrow, I'm sharing a new video on how I use ChatGPT Work to do almost everything on my computer. I'll cover my complete setup in 7 steps." If you're wondering how practitioners are actually integrating these tools into daily workflows, this one is worth watching.
-https://x.com/petergyang/status/2077196815951417649
+---
 
-Thariq — Claude Code, Anthropic
-A fun look at agentic tooling applied to competitive gaming: "I've been playing a lot of Pokemon Champions recently and started using Claude Code to help me. It writes code using Smogon's npm library, pulls live usage stats and then writes reports to understand" his team matchups. He's planning to open-source the artifact — a nice example of Claude Code as a personal analytics layer, not just a coding assistant.
-https://x.com/trq212/status/2077051280267399550
-https://x.com/trq212/status/2077051282146431092
+Thariq — Claude Code at Anthropic
 
-Guillermo Rauch — CEO, Vercel
-Two related moves from Vercel this cycle: the team opened up their dataset of AI token flows from Vercel AI Gateway ("Fascinating insights contained within"), and they added native agentmail integration — "Tell your agent to vercel install agentmail – no signup, automatic setup and unified billing." Both point toward Vercel building the infrastructure layer for agentic web apps.
-https://x.com/rauchg/status/2077176141790752798
-https://x.com/rauchg/status/2077154901013221444
+Thariq shared a maxim that got 2,750+ likes: "ideal prompting technique is: thin prompts, thick artifacts + context, thin skills." In a follow-up quoting Boris's post above, he added: "software engineering is the profession of automation." Two short posts that capture a lot of current thinking about how to work with AI agents effectively.
+https://x.com/trq212/status/2077539537992229076
+https://x.com/trq212/status/2077490092290253259
 
-Aaron Levie — CEO, Box
-Levie made a clean observation about why coding is such a natural fit for agents: code is uniquely testable. "One of the many properties that code has that makes it highly amenable to agents is that you can more or less quickly test it. You can either go see if the application works manually, or you can actually run it." He also flagged a "thoughtful proposal for a standards body for AI" — distinct from a regulatory agency, more nimble for industry coordination.
-https://x.com/levie/status/2077201458546745553
-https://x.com/levie/status/2077043523703243070
+---
 
-Ryo Lu — Design, Cursor AI
-A reflective post about working at Cursor: "I used to think the dream was to make my hobby my work. To spend my life close to the things I loved: computers, tools, interfaces, systems, tiny details, the feeling..." The post went wide (800+ likes) and he followed it up by announcing open roles for design engineers — Cursor is actively building out its design team.
-https://x.com/ryolu_/status/2077162119506833627
-https://x.com/ryolu_/status/2077108336844210352
+Thibault Sottiaux — Codex & ChatGPT at OpenAI
 
-Peter Steinberger — Co-founder, OpenClaw / OpenAI
-Flagging a practical workflow tip: always run autoreview on AI-generated code. "That's why you always wanna run autoreview." It burns tokens, but as he put it separately — "it'll calm your nerves." Worth internalizing if you're shipping agent-written code into production.
-https://x.com/steipete/status/2077265627379843242
+Two significant updates from the Codex team. First: OpenAI investigated reports of GPT-5.6 unexpectedly deleting files. Root cause: full-access mode without sandboxing, combined with the model attempting to override $HOME to set a temp directory and then mistakenly deleting $HOME itself. This happens "extremely rarely," but Thibault committed to a detailed post-mortem and said they are updating the developer message, guiding users toward safer permission modes, and adding harness safeguards. Second: the 5-hour usage cap in Codex Plus and Pro has been lifted for several days, and Thibault is soliciting feedback on how a weekly usage limit should ideally work.
+https://x.com/thsottiaux/status/2077630111499882637
+https://x.com/thsottiaux/status/2077632589498913087
 
-Dan Shipper — CEO, Every
-Every had been covering Codex extensively six months before the broader market caught on, and Shipper is rightfully claiming the prediction. He's also hosting a subscriber meetup at their Brooklyn brownstone today (July 15, 6-8 PM) for anyone in NYC.
-https://x.com/danshipper/status/2077196636971815135
-https://x.com/danshipper/status/2077156555376492557
+---
 
-Nikunj Kothari — Partner, FPV Ventures
-A sharp observation about the new engineering archetype emerging: "The pre-AI engineering leader mind can't comprehend that their most cracked engineer is also extremely online. While the agents are working, X becomes the dopamine spike they need as they wait." The character of high-output engineering is changing.
-https://x.com/nikunj/status/2077144910508257317
+Josh Woodward — VP at Google Labs / Gemini App / AI Studio
 
-Swyx — Latent Space, Cognition, dxtips
-Organizing a demo night for SF personal AI builders this Thursday at New Media Lab, with a special guest. "SF Personal AI engineers — if you are building personal agents, come demo at new media lab this thursday night." Good signal for anyone tracking the personal AI agent space in the Bay.
-https://x.com/swyx/status/2077243443391422813
+Gemini Spark is expanding to more Ultra subscribers globally with four new capabilities: it can now open and edit Google Docs (acting on user feedback), read comments in Sheets and Slides, run more than 50% faster, and parallel-process across multiple sources for faster end-to-end task completion. Woodward also released Google's first Gemini Southeast Asia Report: active users more than doubled in the last year, 70% of prompts are submitted in native languages, and 40% of prompts use only voice, image, or video — pointing to multimodal and local-language capabilities as the main growth drivers in the region.
+https://x.com/joshwoodward/status/2077471111240204457
+https://x.com/joshwoodward/status/2077411104775406045
 
-Aditya Agarwal — GP, South Park Commons / former CTO, Dropbox
-A candid take on the ChatGPT interface tradeoff: "I appreciate the in-depth feature set of the new 'ChatGPT' app... But there is a real tradeoff. I used ChatGPT (Legacy) 15-20 times a day for queries... And now it feels so heavyweight for that use." Speed and lightness matter — a recurring tension as AI products try to do everything.
-https://x.com/adityaag/status/2077130899733553560
+---
 
-Claude AI — Anthropic
-Anthropic announced Claude for Teachers, a K-12 focused offering with meaningful privacy protections: "We never train our models on your conversations, and student information is protected by a data processing agreement written to comply with FERPA." The product connects to Learning Commons to draft lesson plans from state standards and generate student-facing materials.
-https://x.com/claudeai/status/2077047282109714488
-https://x.com/claudeai/status/2077047279689535705
+Aaron Levie — CEO of Box
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+After hosting a dinner with IT leaders of large enterprises focused on agent adoption, Levie published detailed notes. Key signals: change management and getting data into agent-ready shape remain the biggest blockers. Companies having the most success are embedding full engineers directly into business functions to accelerate deployment. IT is becoming more central than ever — AI can now touch all knowledge work, not just ERP-style systems. Cross-functional agentic workflows create complex data-modeling and permissions challenges that individual users can't solve. There's a huge variance in per-developer AI budgets ($1,000 to $5,000/month), while budgets for non-coding knowledge work remain far smaller. Traditional software vendors who don't offer headless, agent-friendly interfaces face an existential warning.
+https://x.com/levie/status/2077526010753581156
+
+---
+
+Peter Yang — AI educator and practitioner
+
+Peter called out what he sees as OpenAI's biggest missed opportunity: ChatGPT Live and Codex don't talk to each other. He asked ChatGPT Live to pull up a Google Doc and it said it couldn't — but manually triggering the Documents plugin gave it the context it needed. His conclusion: "It would be amazing to talk to ChatGPT Live and have it be able to use all the plugins, tools, and browser use that Codex has access to. Why build such a great voice assistant but have it not be able to do anything?"
+https://x.com/petergyang/status/2077572198655754583
+
+---
+
+Swyx — co-founder at AI Engineer, host of Latent Space podcast
+
+Swyx pushed back on what he called a "Gell-Mann amnesia moment" — a take that underestimated how fast computer use AI has progressed. He traced his personal history watching CUA evolve from the 2017 World of Bits paper through Adept, Anthropic's Computer Use launch, Claude Cowork, and the AI Engineer track he ran three weeks ago. His verdict: GPT-5.6 + Superapp is now better at CUA than all of the above. "If you found yourself nodding along to this take below, you are so not up to date that you don't know what you don't know, and underestimating capabilities is quite a dangerous category error if you are doing any AI decisionmaking."
+https://x.com/swyx/status/2077475285205958771
+
+---
+
+Zara Zhang — builder
+
+Zara highlighted a design principle for agent-native organizations: structure your company so agents can read it. She pointed to Shopify's example of using only public channels — no private chat — which had the side effect of enabling peer learning for both humans and agents. "If you want agents to actually work inside a company, you have to design the company so they can read it."
+https://x.com/zarazhangrui/status/2077417579837309040
+
+---
+
+Guillermo Rauch — CEO of Vercel
+
+Vercel Sandbox is growing at 100% month-over-month DAUs, with 3.5 million sandboxes created per day. Current customers include Notion, Airtable, Meta, and Zapier. Rauch says his DMs are open for migration help.
+https://x.com/rauchg/status/2077559189015335019
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Training Data — "Anthropic's Katelyn Lesse & Angela Jiang: Building an Ecosystem, not a Walled Garden"
-https://www.youtube.com/watch?v=vPnVTHYplrQ
-Published: 2026-07-14
+AI & I by Every — "The Founder of a $1.5B AI Company on What Comes After the First Wave of AI Apps"
 
-Takeaway: Anthropic's platform team is building a three-layer abstraction cake — knowledge, execution, and coordination — and the next big unlock is "strategies": meta-harnesses that assign specific jobs to tokens rather than just running them as interchangeable compute.
+Takeaway: Granola CEO Chris Pedregal isn't worried about meeting-note clones — he believes the real prize is owning the AI-native work interface, and the winning move is being 5x better than anyone else at a few meeting-adjacent jobs while making Granola's context easy to pull into whatever agent a user prefers.
 
-Angela Jiang and Katelyn Lesse lead the platform team that powers both Anthropic's internal products and its external APIs. In this conversation on the Training Data podcast, they laid out how they think about the architecture of Claude's platform and where it's heading.
+Dan Shipper, CEO of Every, sat down with Chris Pedregal, co-founder and CEO of Granola — the $1.5B AI startup that broke through as a genuinely useful meeting notes app. The conversation ranges from competitive strategy to the future of the application layer to how both founders are reimagining what knowledge work looks like in an AI-native world.
 
-The three-layer model is the clearest framing they offered: at the base is the knowledge layer — the Messages API, tool definitions, MCP, skills, and memory. Above that is the execution layer, which is what Claude Managed Agents represents today: higher-order packaging that handles prompt caching, context management, sandboxes, and session persistence so builders don't have to reinvent that infrastructure. And above that — still nascent but the team's current focus — is the coordination layer, which they're calling "strategies."
+Chris's frame on competition is deliberately zoomed out: "Meeting notes are not the end all, be all value that everyone's running after. There's something much bigger... We are in the very, very early steps of a computing revolution. What has come thus far will pale in comparison to what will come soon." When Notion, OpenAI, and Zoom each shipped meeting notes features, Granola's growth rate barely moved — confirming for Chris that the real prize is the interface through which all knowledge work eventually flows.
 
-The concept of strategies is the most forward-looking idea in the episode. As Jiang explained: "The true low-level harness is designed for execution. But the next one is about, okay, if tokens aren't really fungible and you need to give them different jobs — like maybe this token is advising versus this token is executing — you wanna start composing these kind of orchestrated strategies that go together." In practical terms this means agent patterns like best-of-N sampling, critic-then-execute loops, and advisor-executor splits packaged into reusable primitives rather than bespoke engineering projects.
+Dan describes his own work surface as bifurcated: async delegation via Slack agents (collaborative, multiplayer, proactive) and deep work inside Codex, where he now spends almost all his time. He's building what he calls "Codex-native apps" — products that save state and render UI, letting you bring your own agent rather than having the app bundle one in. He used Codex to switch his internet provider by letting it open the Verizon site, log in, chat with customer service, compare plans, and push for no hidden fees — all without him having to do anything directly.
 
-On the walled garden question, the answer is clearly no. Lesse highlighted how they've partnered with Modal, Vercel, Cloudflare, and Amazon for self-hosted sandboxes: "Whether it runs on our infrastructure versus somebody else's infrastructure is actually not important to us because the thing that's important to us is more that the architecture of how you put together these agents in a way that will be powerful." MCP tunnels let agents reach behind corporate firewalls. Connectors let third-party products embed natively. Claude Tag is the Slack packaging of all of this — a full org-level harness that surfaces as just another coworker in your channel.
+One of Granola's most interesting product bets: they pre-generate millions of pre-meeting briefs that most users never open. The logic is that the 10–15% who open one at exactly the right moment — running two minutes late, needing context in fifteen seconds — will find it magical enough to justify the cost. Chris calls this the "handrail" philosophy: invisible until you need it, but load-bearing when you do.
 
-The team also pushed back on token rationalization as a reason to cut AI usage. Jiang's framing: design a routing strategy — assess task complexity and route hard tasks to capable models, simple tasks to cheaper ones — rather than capping usage globally. "You don't wanna stop AI usage. That's kind of the wrong move."
+Direct quote from Chris: "Startups are like knife fights. And I thought startups were just really hard when they weren't working. Turns out they're really hard even when they're working as well."
 
-One emerging category caught their attention from the customer side: manufacturing. "We're starting to see manufacturing really pick up as just a category where people are building with AI." And for legacy healthcare systems with no APIs, computer use is being deployed to bridge the gap — automating workflows through UI rather than waiting for modern integrations.
+On roadmap: Granola is doubling down on anything meeting-adjacent and investing heavily in making their context available to any agent the user chooses — their MCP and API is getting a "first class" overhaul in the coming months. Their strategy is to let power users build wild workflows and then productize the ones that prove most valuable. A founder of Hugging Face told Chris he had spent months building a "super convoluted" pre-meeting brief workflow in Claude Code — and then turned it off when Granola's version was better. That is exactly the outcome they are optimizing for.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Claude Blog — "Claude Code now supports artifacts"
+
+Anthropic launched artifacts in Claude Code, now in beta for Team and Enterprise orgs. Sessions can publish live, shareable web pages — PR walkthroughs, incident timelines, dashboards, release checklists — that update in place as work progresses. Artifacts are built from the full session context (codebase, connectors, conversation history), private to the organization by default, and shareable via a stable URL. Every update creates a new version at the same link with full version history. An incident investigation page, for example, can pull together the failing test, the function behind it, an error spike from a monitoring connector, and the root-cause reasoning from the session — and republish automatically as the investigation deepens, so teammates arrive at standup looking at the same live view instead of waiting to be walked through it.
+
+https://claude.com/blog/artifacts-in-claude-code
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
