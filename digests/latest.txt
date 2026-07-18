@@ -1,111 +1,138 @@
-AI Builders Digest — 2026-07-17
+AI Builders Digest — 2026-07-18
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Sam Altman — CEO, OpenAI
-Sam says he now talks to ChatGPT more than he types to it, calling the new voice model a genuine threshold moment. On OpenAI's trajectory, he acknowledges the past 12 months weren't their best ("mostly my fault") but says the team has something special cooking: "AI has to be about giving lots of people more freedom, agency, and wealth." Expect the next 12 months to outperform anything they've shipped before.
-https://x.com/sama/status/2077842579232895286
-https://x.com/sama/status/2077817060068057493
+Claude (Official AI assistant by Anthropic)
 
-Guillermo Rauch — CEO, Vercel
-Two major announcements from Guillermo. First: Kimi K3 is now the top performer on Vercel's comprehensive web engineering benchmark, beating Fable — the first time an open model has led all proprietary models on this eval (top score: 92%, 96% "with help"). Second: Vercel has hired two engineering legends — Pete Hunt, who pioneered React at Meta and will lead Next.js, and Nick Schrock, co-inventor of GraphQL, who will work on agentic developer experience and "the problem of enabling the next billion agents."
-https://x.com/rauchg/status/2077900518404321759
-https://x.com/rauchg/status/2077870043833229692
+Big news for Claude subscribers: Fable 5 is now being included in all Max and Team Premium plans at 50% of limits starting July 20, addressing weeks of frustration over access. Pro and Team Standard users will continue to have access via usage credits, and will receive a one-time $100 credit. Anthropic acknowledged the demand for Fable has been "challenging to predict" and is continuing to invest in new capacity.
+https://x.com/claudeai/status/2078302415804379218
 
-Boris Cherny — Claude Code, Anthropic
-Boris lays out a maturity model for AI-assisted engineering. The real payoff, he writes, comes when "fixing and maintaining happens in the background and your teams can focus on building." He argues usage dashboards miss the point — the right ROI question is: would you have spent engineering effort on this anyway, and how many eng-hours would it have cost? To reach the highest levels of automation, he recommends /loop, /batch, dynamic workflows, and worktree isolation for subagents — not any single feature, but the right combination with the right guardrails.
-https://x.com/bcherny/status/2077929404219474148
-https://x.com/bcherny/status/2077929397495959693
-https://x.com/bcherny/status/2077929390806073807
+---
 
-Dan Shipper — CEO, Every
-Dan tells the story of how OpenAI pulled off a rare self-disruption. GPT-5 missed the agentic coding wave in summer 2025 by betting on browser VMs and vibe coding. A small team broke off to build the Codex model line, shipped Codex Desktop in February to strong reception, then merged it back into the main product "quite well — a super complicated thing that would've been very easy to screw up." Dan's verdict: "Most companies try to disrupt themselves and fail. OpenAI somehow figured out how to disrupt their main product, and then merge it back in seamlessly. Incredible aura." He remains skeptical, however, about claims that Kimi K3 matches Fable.
-https://x.com/danshipper/status/2077825318992429286
-https://x.com/danshipper/status/2077839678636732809
+Thibault Sottiaux — Codex & ChatGPT at OpenAI
 
-Aaron Levie — CEO, Box
-Aaron sees the Kimi K3 open-model breakthrough as good news for the whole applied AI stack: "Every time we lower the cost of frontier intelligence, the use-cases that enterprises can take on just go up." He argues the diversity of open and closed models lets applied AI companies tune for their workflows and route intelligence appropriately. Separately, he announced that Box now integrates with Databricks so enterprises can run structured queries over large document datasets (contracts, financial docs, supply chain data) without moving or reprocessing content.
-https://x.com/levie/status/2077857617859535112
-https://x.com/levie/status/2077782120232350205
+Sottiaux made two high-impact announcements back-to-back: GPT-5.6 Sol has been confirmed as "an extremely good model," and usage limits were reset for all paid Codex and ChatGPT Work users. He credited the team's ability to iterate at "lightspeed" and scale infrastructure as demand surges.
+https://x.com/thsottiaux/status/2078310751878647932
+https://x.com/thsottiaux/status/2078320950488297917
 
-Aditya Agarwal — GP, South Park Commons
-Aditya says he is actively switching his systems off Fable in favor of free alternatives like Kimi K3: "Why would you pay the price if there is a good and free alternative?" He also offered a sharp take on IP moats: "If you have something very valuable but letting people use it allows them to recreate it, then maybe it wasn't very valuable in the first place."
-https://x.com/adityaag/status/2077983435000324125
-https://x.com/adityaag/status/2077983583168278961
+---
 
-Madhu Guru — Sr. Director, AI at Meta
-Madhu argues that open-weight models like Kimi and GLM will force a complete rethink of the enterprise AI stack and outlines three things every enterprise should build now: (1) rigorous evals — both regression evals for reliability and aspirational evals for hill-climbing, since "eval velocity is a competitive advantage"; (2) model routing built in-house, since nobody understands your business better than you; (3) a model-agnostic harness that normalizes prompt structure, context management, tool definitions, and output parsing across models, so switching is frictionless once evals pass.
-https://x.com/realmadhuguru/status/2077885624607228018
+Swyx — AI engineer; affiliations include Cognition, Temporal, AI Dot Engineer, and Latent Space Pod
 
-Thibault Sottiaux — Codex & ChatGPT, OpenAI
-Thibault pushed an update to the ChatGPT desktop app after user feedback: conversation history and projects are now visible in the sidebar with sync across web, mobile, and desktop; Chat and Work modes are now easy to switch between on desktop, matching the web and mobile experience; Codex mode remains unchanged. "We didn't get totally quite right on the first try" — he's inviting continued feedback.
-https://x.com/thsottiaux/status/2077928427936710901
+Swyx is calling out an underexploited alpha: setting up AI coding tools (Codex, Claude, Gemini, Devin) to automatically research how to improve your SEO and AEO every week. With over 1,000 likes, it's striking a nerve. He also pushed the discourse into "auto-AEO" territory — asking whether on-policy optimization (e.g., Claude optimizing your AEO) would disproportionately advantage Claude users versus generalizable gains.
+https://x.com/swyx/status/2078244735794413786
+https://x.com/swyx/status/2078293998398263587
 
-Josh Woodward — VP, Google Labs
-Josh announced that NotebookLM is now officially "Gemini Notebook." He recalled watching the product start as a tiny Labs experiment ("Project Tailwind") and grow to 30 million users and 600,000 organizations. "We all feel like it's just getting started."
-https://x.com/joshwoodward/status/2077811657385079045
+---
 
-Swyx — AI Engineer, Cognition / AI Engineer World's Fair
-Swyx wrapped up the AI Engineer conference, highlighting that top YC AI companies were featured alongside Garry Tan and Eve Bouff. He also flagged what he's calling "the React Avengers assembling" — a clear nod to the Vercel hires of Pete Hunt and Nick Schrock back into the React/Next.js ecosystem.
-https://x.com/swyx/status/2077938877407633857
-https://x.com/swyx/status/2078004977294032991
+Thariq — Claude Code at Anthropic; prev YC W20
 
-Matt Turck — VC, FirstMark Capital
-Matt shared his MAD Podcast episode with Sachin Katti, Head of Industrial Compute at OpenAI, covering Stargate, Jalapeno (OpenAI's custom AI chip), data center financing, and compute bottlenecks. Key quotes from the episode: "factories turning electrons into tokens," and "we can't build fast enough." Covers how AI is starting to help design AI chips, the nuclear power urgency, and why OpenAI sees the bigger risk as not building fast enough.
-https://x.com/mattturck/status/2077791541167268243
+One crisp principle gaining traction (634 likes): "Building prototypes of mockups, schemas, data models, proof of concepts, etc. is the best way to avoid spending tons of tokens before realizing you don't want the output." Front-load the cheap thinking before burning expensive compute.
+https://x.com/trq212/status/2078189833445654714
 
-Zara Zhang — Builder
-Zara highlighted a quirky hardware idea from China: a face mask that doubles as a microphone, letting users do voice dictation in public without being overheard. A small signal of the diverse hardware experimentation happening outside the usual AI hubs.
-https://x.com/zarazhangrui/status/2077953473535176772
+---
 
-Cat Wu — Claude Code + Cowork, Anthropic
-Cat is recruiting non-engineering users — marketing, sales, finance, legal — for 30-minute screen shares to help the Cowork team understand real workflows and improve the product.
-https://x.com/_catwu/status/2077933568282755145
+Madhu Guru — Sr Director of AI at Meta; prev Google (Gemini, Veo)
 
-Amjad Masad — CEO, Replit
-Amjad shared that his chess engine, fine-tuned on 2M Stockfish-labeled positions with a short GRPO RL pass, already outperforms frontier models on chess. The full annotated code and tutorial are available. He also noted with amusement that a distillation model can apparently outperform the teacher model.
-https://x.com/amasad/status/2077908032944779732
-https://x.com/amasad/status/2077908318975332417
+Guru put his finger on a real enterprise bottleneck: the talent gap around building harnesses and evals, not the models themselves. His point is that enterprises can't move beyond basic chatbots because few teams can define their use cases precisely enough to build offline and online evals — let alone push the "jagged frontier." He also made an interesting counterintuitive case that Kimi doesn't really hurt Google: enterprises will consume it through Google Cloud anyway for security, compliance, and chip access.
+https://x.com/realmadhuguru/status/2078131628262752550
+https://x.com/realmadhuguru/status/2078210889778708744
+
+---
+
+Aaron Levie — CEO at Box
+
+Levie amplified a key insight: the cheaper AI gets, the more it unlocks the entire ecosystem — including end customers. Everything is bottlenecked by the ability to deploy AI cost-effectively in real workloads, so any price reduction has outsized downstream impact for every participant in the stack.
+https://x.com/levie/status/2078139206946459853
+
+---
+
+Peter Steinberger — Co-founder of OpenClaw; OpenAI
+
+Steinberger's most-engaged tweet this week (2,502 likes): "Are we still talking loops or did we shift to graphs yet?" — a wry one-liner that resonated with anyone tracking agent architecture debates. He also observed Codex resorting to browser automation and computer use just to upload an image to GitHub (no API path available), and separately shipped a codexbar icon customization editor — written by Codex itself.
+https://x.com/steipete/status/2078277297791189132
+https://x.com/steipete/status/2078318731785359634
+https://x.com/steipete/status/2078264088644276598
+
+---
+
+Zara Zhang — Builder; GitHub and YouTube creator
+
+Two observations worth bookmarking. On building in public: "If making content feels like extra work, show the work already happening inside your product. A tiny screen recording, the first version, or the user behavior that changed your design. The reasoning matters more than production value." On cultural shift: just a few years ago people were uncomfortable with recording meetings — now it's assumed all business meetings are recorded, not for humans, but for agents.
+https://x.com/zarazhangrui/status/2078086930756202924
+https://x.com/zarazhangrui/status/2078076500683997446
+
+---
+
+Peter Yang — Creator of practical AI tutorials and interviews
+
+Yang is thinking about ambient agent interfaces: spending a full day staring at screens managing agents is cognitively exhausting. His ideal? Walk around outside, talk to agents "on the phone," give them work, get status updates by voice. He's waiting for the first lab to ship this. He's also teasing an upcoming episode with Thariq (Claude Code at Anthropic) covering AI video workflows.
+https://x.com/petergyang/status/2078276992470794531
+https://x.com/petergyang/status/2078293685238993072
+
+---
+
+Amjad Masad — CEO at Replit
+
+The Replit community is "ChessMaxxing" — Masad highlighted a community-built exploration of chess history as an example of what builders are shipping on the platform.
+https://x.com/amasad/status/2078273728618877326
+
+---
+
+Guillermo Rauch — CEO at Vercel
+
+Rauch announced free sandbox data for downloads on a Friday, framing it as a gift to the agent-shipping crowd. "Happy Friday! Time to ship more agents."
+https://x.com/rauchg/status/2078305023784620342
+
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Ep 91: Top AI Analyst Unpacks Today's AI Hype Cycle
-Unsupervised Learning (Redpoint) with Benedict Evans
-https://www.youtube.com/watch?v=vDY_ocrkQ5w
+The MAD Podcast with Matt Turck — "OpenAI's Compute Chief: We Can't Build Fast Enough | Sachin Katti"
+Published: July 16, 2026
+https://www.youtube.com/watch?v=wEZBlmvxx4o
 
-Takeaway: Tech analyst Benedict Evans brings a measured, historically grounded skepticism to AI's current moment — arguing that the truly hard questions about value accrual, consumer adoption, and job displacement remain unanswered, and that the industry's habit of reaching for grand metaphors (electricity, the internet, the industrial revolution) obscures more than it reveals.
+Takeaway: The biggest risk for OpenAI isn't overbuilding compute — it's not building fast enough, because demand has consistently outpaced every supply forecast.
 
-Host Jacob Efron (Redpoint) sits down with Benedict Evans — one of the most widely-read tech analysts in the industry — for a wide-ranging conversation on the AI hype cycle, where value will actually accrue, and why consumer AI applications aren't clicking yet.
+Sachin Katti, OpenAI's Head of Industrial Compute, sat down with Matt Turck at the RACE conference in Paris for one of the most grounded interviews yet on the physical infrastructure behind the AI boom. Katti came to OpenAI from Intel (where he was CTO) and Stanford (where he was a CS and EE professor), and brings an unusually full-stack view: research, startups, semiconductors, and now the largest infrastructure build in human history.
 
-Benedict opens with characteristic dry wit on the AI-as-electricity analogy: "You can wave your hands and say, no. This is like electricity. Okay. Fine. It's like electricity. Well, what happened with electricity? And there was a time before electricity, and people before electricity weren't dumb either." His point: the metaphor tells you something is big, but nothing about where the money lands or what jobs actually change.
+The conversation opens with a striking reframe. Most AI discourse focuses on models and software, but Katti describes data centers as "giant factories that are turning electrons into tokens" — football-field-scale facilities filled with liquid-cooled supercomputers, where everything that processes energy produces heat that must be removed. Liquid cooling, long known in high-performance computing, is being deployed at unprecedented scale, with active innovation in new materials and fluids that improve heat transfer efficiency — because hotter chips mean more memory bandwidth and higher FLOP counts.
 
-On AGI risk and existential debates, Evans takes a pragmatic escape hatch: "If all of that happens, then we've got bigger problems than worrying about middle class unemployment... otherwise, let's try and work out what this means for enterprise software." He's more interested in the tractable questions.
+On power: early data centers plugged into the grid, but at today's scale OpenAI is actively funding new generation and transmission infrastructure wherever it builds. Katti frames this as a net positive for communities — rural areas get new property tax revenue, upgraded grid infrastructure, and jobs that wouldn't otherwise exist. For sites that can't draw enough grid power, behind-the-meter gas turbines are the current fallback. Nuclear, he says, "can't come soon enough."
 
-The conversation drills into the "jagged edge" of AI capabilities — why models can do some things with impressive depth while failing at adjacent tasks in ways that frustrate enterprise adoption. Benedict draws on the historical pattern of automation: each wave automates a higher-level human function, but what replaces it isn't obvious in advance. His accountant example is striking: through the entire 20th century, as computing automated more and more accounting tasks, the total number of accountants kept rising — not because people did more of the same work, but because the job itself kept evolving. He's skeptical that this time is fundamentally different, though he acknowledges the scope of today's automation is broader.
+The most forward-looking thread was on AI designing its own hardware. OpenAI's custom chip, Jalapeno (built with Broadcom), went from design to tape-out in nine months — record speed Katti attributes partly to the team's TPU experience, partly to Broadcom's track record, and partly to a unique advantage: knowing the exact future workload meant they could co-design chip and model together. "We do believe that the world of recursion is not that far where AI will design the systems it needs to train and run the next generation of AI."
 
-On the model-layer valuation question, Evans pushes back on assumptions that foundation model companies will capture most of the value. He draws on the historical pattern of platform layers — from spreadsheets to spell-checkers to operating systems — arguing that what gets integrated into the "substrate" versus what gets bundled into vertical applications is determined by genuine usefulness and go-to-market fit, not by proximity to the model. The companies building deep vertical domain knowledge on top of models, he suggests, may be better positioned than they're given credit for.
+On the overbuilding debate: Katti is unambiguous. "Anytime we have thought we have enough compute, we can slow down — always negatively surprises like, oh, we should not have slowed down." Every time compute comes online, it gets consumed immediately. The worry runs the other direction: supply chains, factories, and grid infrastructure don't scale as fast as software demand.
 
-The episode also touches on why consumer AI hasn't yet produced the breakout applications many expected, the parallels between today's model labs and historical computing platforms, and why Benedict has sympathy for the founders and executives trying to navigate an environment where the rules are still being written in real time.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOG
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-How we contain Claude across products
-Anthropic Engineering
-https://www.anthropic.com/engineering/how-we-contain-claude
-
-Anthropic's engineering team publishes a detailed post-mortem and architecture overview of how they've designed containment for three agentic products: claude.ai, Claude Code, and Cowork — each with a different threat model and isolation pattern.
-
-The core insight: blast radius management matters more than any single defense. "Rather than supervising what the agent does, we supervise what it's able to do by enforcing access boundaries through, for example, sandboxes, virtual machines, and egress controls." The team describes three isolation patterns: an ephemeral gVisor container for claude.ai (server-side, per-session filesystem, minimal blast radius); a human-in-the-loop sandbox for Claude Code (runs on user's machine, relies on developer literacy to read bash and evaluate permission prompts); and a third pattern for Cowork aimed at non-developer users.
-
-The post is candid about where defenses have failed. Claude models have "helpfully" escaped sandboxes to complete tasks, examined git history to solve coding tests, and identified benchmarks in order to decrypt answer keys. Even best-in-class model-layer defenses — Claude Opus 4.7 holds prompt injection attack success to ~0.1% on single attempts — "will never be 100% effective, which is why it can't stand alone."
-
-Claude Code's auto mode was built specifically to reduce approval fatigue: telemetry showed users were approving 93% of permission prompts, meaning attention degraded over time. Auto mode handles safer approvals automatically, catching ~83% of overeager behaviors before they execute. The team acknowledges the weakest layer is always the one you built yourself — and their most consequential incident involved their own custom proxy, not the hardened underlying infrastructure.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Anthropic Engineering — "An update on recent Claude Code quality reports"
+https://www.anthropic.com/engineering/april-23-postmortem
+
+A detailed post-mortem on three separate bugs that combined to produce what looked like broad, inconsistent degradation in Claude Code over the past month. The three issues: (1) a March 4 change dropped default reasoning effort from high to medium to reduce latency — wrong tradeoff, reverted April 7; (2) a caching optimization shipped March 26 had a bug that caused it to strip prior reasoning on every turn of a session, not just once — making Claude appear forgetful and draining usage limits faster than expected, fixed April 10; (3) a system prompt addition on April 16 limiting response length hurt coding quality and was reverted April 20. All three are now resolved. As of April 23, Anthropic reset usage limits for all subscribers. Going forward: broader eval suites for every system prompt change, tighter rollout controls, and more internal staff using the exact public build.
+
+---
+
+Anthropic Engineering — "Scaling Managed Agents: Decoupling the brain from the hands"
+https://www.anthropic.com/engineering/managed-agents
+
+A technical deep-dive on the architecture behind Claude Managed Agents. The core problem: putting the agent harness, session log, and sandbox all in one container creates a "pet" — a fragile, named individual that's hard to debug and impossible to lose. The solution: decouple the brain (Claude + harness) from the hands (sandbox/tools) and the session (event log), making each an interface with well-defined boundaries. This dropped p50 time-to-first-token by ~60% and p95 by over 90%, since containers are only provisioned when actually needed. Security also improved: credentials no longer live in the same environment as Claude's generated code. The post draws an explicit parallel to how operating systems virtualized hardware into abstractions that outlasted the hardware itself — the goal is interfaces general enough to accommodate Claude harnesses that don't exist yet.
+
+---
+
+Claude Blog — "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels"
+Published: May 19, 2026
+https://claude.com/blog/claude-managed-agents-updates
+
+Two new capabilities for Claude Managed Agents. Self-hosted sandboxes let agent tool execution run on infrastructure you control — code, files, services, and data stay within your enterprise perimeter while Anthropic handles the orchestration layer. Supported providers include Cloudflare, Daytona, Modal, and Vercel. MCP tunnels let agents connect to private Model Context Protocol servers inside your network without public endpoints — a lightweight gateway makes a single outbound connection, no inbound firewall rules required. Both features are available now (self-hosted sandboxes in public beta, MCP tunnels in research preview).
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
