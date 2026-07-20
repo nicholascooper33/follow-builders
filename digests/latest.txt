@@ -1,66 +1,65 @@
-AI Builders Digest — 2026-07-19
+AI Builders Digest — 2026-07-20
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-ChatGPT Work is becoming a genuine work-delegation layer: Thibault has been dictating tasks and having the AI handle everything from sorting thousands of DMs into spreadsheets to creating sites, managing emails, and summarizing documents. His detailed voice dictation example — building a categorized spreadsheet of beta applicants with sophistication ratings — shows how far natural-language task delegation has come for a power user. The feature is available in Plus, Pro, Business, and Enterprise plans.
-https://x.com/thsottiaux/status/2078702412085498087
-https://x.com/thsottiaux/status/2078697741455356367
+Thibault Sottiaux — Codex & ChatGPT, OpenAI
+Thibault asked his followers to share stories of ChatGPT having a "deeply positive impact" on their lives — and the response was enormous: 791 replies and nearly 1,800 likes. The prompt came after reading inspiring DMs about how people use ChatGPT Work, and Thibault wanted to surface more of those real-life stories for his team. It's a window into how the OpenAI team tracks emotional resonance and real-world impact beyond benchmark numbers.
+https://x.com/thsottiaux/status/2079058139207573541
 
-Guillermo Rauch — CEO at Vercel
-Vercel's internal evals of frontier models on cybersecurity tasks found Kimi K3 "top-tier" and Sol "a leap ahead," while Fable refused to complete any of the runs — which Rauch sees as interesting behavior contrasted with Sol's willingness to help with defensive hardening. In a separate, longer post, Rauch argues the term "AGI" has aged poorly: today's systems are superhuman on most economically-relevant tasks, yet remain "robots" at writing because they can't replicate the individual human voice. His warning — "I know one definitive way that people can become irrelevant: they stop being themselves" — is a pointed critique of AI-generated social media content.
-https://x.com/rauchg/status/2078647648307880209
-https://x.com/rauchg/status/2078548458714406959
+Cat Wu — Claude Code & Cowork, Anthropic
+Cat shared the exact prompt she uses to let Claude Cowork manage her entire weekly calendar: keep meetings under 20 hours, deduplicate conflicts, learn from past decline patterns, exclude dinners from the count, build a reusable skill, and always confirm before updating invites. The tweet sparked 42 replies from others sharing their own Cowork workflows. It's one of the clearest public demonstrations of agentic calendar management as a practical daily habit rather than a future concept.
+https://x.com/_catwu/status/2079011428380602526
 
-Aaron Levie — CEO at Box
-Levie wrote a detailed breakdown of the emerging AI ecosystem, arguing the value won't accrue to just a handful of players. He sees parallel tracks thriving simultaneously: fine-tuning / inference providers, applied AI companies that deeply understand vertical workflows, domain-specific new labs (life sciences, finance, healthcare), new AI infrastructure layers, and new services firms managing enterprise change management. Separately, he argued that gating models won't solve the China AI competition challenge — the better answer is accelerating US open-source progress, infrastructure build-out, and safe diffusion of the technology.
-https://x.com/levie/status/2078567715544121815
-https://x.com/levie/status/2078481578779685245
+Thariq — Claude Code, Anthropic
+Thariq pushed out a fix for a bug users had been hitting in Claude Code and asked anyone affected to restart the app. Separately, he's working on a longer post about lessons learned writing Claude's skills and system prompts — the teaser tweet earned over 1,000 likes and 45 retweets, signaling how hungry the developer community is for behind-the-scenes insight from the team that ships Claude Code.
+https://x.com/trq212/status/2079103743535280508
+https://x.com/trq212/status/2078901672441790818
 
-Swyx — AI engineer; affiliated with Latent Space Pod, Cognition, Temporal
-Swyx pushed back on blanket criticism of Europe's AI talent, noting that the continent actually has some of the world's top AI engineers when you look at who shows up to talks and workshops — and that the AI Engineer Summit is essentially running a "global arena" for that talent. In a separate tweet, he shared that AEO (Answer Engine Optimization) is on track to be responsible for $1M in his revenue next year, a concrete data point for builders thinking about how AI search and answer surfaces affect discovery and distribution.
-https://x.com/swyx/status/2078628617987518855
-https://x.com/swyx/status/2078581967768166591
+Guillermo Rauch — CEO, Vercel
+Guillermo made a case for cybersecurity as the best benchmark for AI superintelligence — better than "one-shotting an app clone." Finding, patching, reversing, and exploiting vulnerabilities demands true reasoning that transcends any single language or framework, and very few humans excel at it. He noted that Kimi K3's strong performance on security tasks bodes well for the open model ecosystem, calling security evaluations "the IQ test for software engineering."
+https://x.com/rauchg/status/2078912929714356698
 
-Thariq — Claude Code at Anthropic
-Thariq celebrated the launch of Fable, calling it the result of "a heroic effort by many people at Anthropic working sometimes literally around the clock." The tweet confirms it wasn't a sure thing on schedule, making the launch a meaningful milestone for the team.
-https://x.com/trq212/status/2078514180051906864
+Aaron Levie — CEO, Box
+Aaron had a productive day on AI macro-themes. On token economics: lower AI costs don't shrink spend — they expand it, because teams start applying AI to tasks they previously couldn't afford to automate (more code written, more code reviewed, more large datasets processed). On open source AI and regulation: banning open weights models in the US would hand other ecosystems a structural advantage, since they'd keep using and improving those models while US companies couldn't. On applied AI: progress is ultimately rate-limited by real-world feedback loops — drug trials, sales cycles, contract negotiations — which is exactly why the biggest opportunity lies in applied AI that changes existing industry workflows, not raw model intelligence alone.
+https://x.com/levie/status/2078968158006939716
+https://x.com/levie/status/2078992778449850769
+https://x.com/levie/status/2078864191683969212
 
-Peter Yang — AI educator and tutorial creator
-Peter and his 8-year-old daughter built a ChatGPT Site to help her learn multiplication tables, using ChatGPT Images to generate the UI and characters, adding music, and even a timed boss level. It's a clean example of how accessible vibe-coding with AI has become — even for a child's learning project — and a fun reminder that the most compelling demos are often personal.
-https://x.com/petergyang/status/2078638568784994686
+Garry Tan — President & CEO, Y Combinator
+Garry pointed out that Markdown files — universal, plain-text, human-readable — are an ideal data format for the current AI era precisely because "the intelligence stack is in flux at this extreme pace." When model capabilities, APIs, and toolchains are all changing rapidly, durable data formats matter more than ever. 668 likes and 54 retweets suggest this landed as practical wisdom for the builders in his audience.
+https://x.com/garrytan/status/2078803803659452624
 
-Zara Zhang — Builder; Follow Builders creator
-Zara made the case that everyone should develop their own "personal eval set" — a handful of tasks actually relevant to their day-to-day work — rather than relying entirely on industry benchmarks. Her framing: "You find the model's capability boundary by poking at it & bumping into it for fun." She also put a sharp, widely-shared diagnosis on enterprise AI adoption: "The people who understand AI don't understand the business, and the people who understand the business don't understand AI."
-https://x.com/zarazhangrui/status/2078666187026911488
-https://x.com/zarazhangrui/status/2078492577788268549
+Zara Zhang — Builder
+Zara made the case that code can now be disposable: design playgrounds to fine-tune a UI, HTML explainer pages to understand your own codebase, throwaway dashboards to inspect data once and discard. The mindset of "build it, use it, discard it" is now a legitimate and efficient workflow rather than technical debt. She also shared her content creation advice: if you've said something more than three times in real life, it's worth turning into a post or video — your most-repeated explanations are your positioning.
+https://x.com/zarazhangrui/status/2078835308905578660
+https://x.com/zarazhangrui/status/2078830510177128481
 
-Matt Turck — VC at FirstMark Capital; host of MAD Podcast
-Turck noted wryly that the "model layer is commoditizing" prediction has been made confidently every year since 2024 — and each time, it hasn't happened. Short and sharp, but it cuts right to the heart of one of the most persistently wrong takes in AI investing.
-https://x.com/mattturck/status/2078520552680046920
+Dan Shipper — CEO, Every
+Dan reported a genuine quality milestone: for the past week, AI has been handling approximately 70% of the copy edits Every would ordinarily do by hand — the first time that threshold has been crossed after years of trying. He framed it as passing a meaningful barrier, not just incremental improvement. For a media company whose product lives on editorial quality, this is a significant internal signal that AI writing assistance has reached production-grade usefulness.
+https://x.com/danshipper/status/2078920115140358585
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Unsupervised Learning, Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today
-Takeaway: Schmidhuber — often called the "father of modern AI" for his foundational work on LSTMs and meta-learning — is bullish on AI technology but deeply skeptical of the business models of the companies building it, and far less worried about AI safety than most of his peers.
+The MAD Podcast with Matt Turck — "Stripe's AI Chief: How AI Agents Will Buy, Sell, and Pay"
+Published: 2026-07-09
 
-Jacob Efron (Redpoint) sits down with Jürgen Schmidhuber for a wide-ranging conversation that cuts against much of the current hype. Schmidhuber's core thesis: the current CapEx boom in data centers is massively overdone. With compute getting roughly 10x cheaper every five years, companies investing hundreds of billions in GPUs today will see those assets depreciate by ~90% within five years — and no current business model recuperates that. Open-source models closing the gap every few months only compounds the pricing pressure, leaving frontier labs in a squeeze between massive capital costs and commoditizing margins.
+Takeaway: Emily Sands, head of data and AI at Stripe, maps out the full infrastructure stack needed before AI agents can autonomously buy, sell, and run businesses — and identifies token theft as the most underappreciated risk in the entire AI ecosystem.
 
-On recursive self-improvement (RSI), Schmidhuber — who pioneered meta-learning and self-referential machines going back to 1987 — argues that RSI won't be a durable moat for any company. The key ideas behind RSI came from academic labs, not big companies, and PhD students worldwide are already building on them. "Everybody's cooking with the same water," he said flatly.
+A year ago, the conversation about AI agents as buyers was largely hypothetical. Today, Stripe has real infrastructure deployed and real companies building on it. Emily laid out a spectrum of agentic commerce ranging from "level one" — where a human makes all the decisions and an agent simply handles checkout — to fully autonomous, where an agent discovers a service, decides to buy it, and executes the transaction with no human in the loop. By her read, most consumer AI commerce today hovers around level two, with a hint of level three.
 
-His most contrarian take may be on AGI itself: true AGI, he insists, requires physical embodiment in the real world. Text-behind-the-screen systems, however impressive, are "fancy text editors." Robot hardware remains far behind human physiology — no synthetic hand comes close to the sensor density and self-healing capability of the human hand — and he thinks matching that may take decades, not years.
+The infrastructure Stripe has built to support this spectrum includes three layers: businesses exposing their product catalogs and pricing in machine-readable form, consumers authorizing agents to pay on their behalf, and agents being able to safely execute those transactions. On the partnership side, Stripe is enabling merchants to sell inside Google's AI Mode and Gemini app, inside Microsoft Copilot and ChatGPT, and is powering checkout inside Meta's ad surfaces. Early brand adopters include Best Buy, Coach, URBN, and Kate Spade.
 
-On AI safety, Schmidhuber has long been the skeptic in the room. He never signed the safety letters of the 2010s, viewing the alignment framing as naive: "If you have 10 different humans in one room, they all will have different needs." He points to AI-controlled drones already fighting on both sides in Ukraine as evidence that universal alignment governance was always a fiction.
+The most striking part of the conversation was Emily's discussion of token theft — what she calls "the dine and dash, but for tokens." More than one in six signups at AI companies are fraudulent: not to steal money or credentials, but to steal API token compute. The scale surprised even her when she looked at the data, and she considers it the most underdiscussed topic in all of AI right now.
 
-His long-term vision is optimistic though: robots that can learn to operate all existing human machines, replicate themselves, and eventually colonize the solar system — driven by "artificial curiosity," a reward signal for discovering new patterns at the edge of what a system already understands. That principle, he argues, is also the true engine of human creativity.
+Looking further out, Emily described the end state she's working toward: an agent that's not just helping you check out faster, but one delegated to run a whole business — buying inputs, selling outputs, managing margin — with a human setting the strategy and the agent handling execution. "It's not Emily permissioning an agent to buy on her behalf. It's Emily has an agent who's tasked with running a business."
 
-Direct quote: "All these companies are getting less and less efficient. So at some point, they wouldn't have to stop. Now they're taking on debt to finance even more data centers, and this will be possible only to a certain extent."
+Direct quote: "Fraudsters have figured out that in AI, you actually don't really need to steal money or credentials. You can just steal tokens. And the scale of this actually shocked me when I looked at the data. So more than one in six signups at AI companies are this kind of abuse."
 
-https://www.youtube.com/watch?v=RKjR8DQ40po
+https://www.youtube.com/@DataDrivenNYC/videos
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
