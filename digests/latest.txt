@@ -1,65 +1,91 @@
-AI Builders Digest — 2026-07-20
+AI Builders Digest — 2026-07-21
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thibault Sottiaux — Codex & ChatGPT, OpenAI
-Thibault asked his followers to share stories of ChatGPT having a "deeply positive impact" on their lives — and the response was enormous: 791 replies and nearly 1,800 likes. The prompt came after reading inspiring DMs about how people use ChatGPT Work, and Thibault wanted to surface more of those real-life stories for his team. It's a window into how the OpenAI team tracks emotional resonance and real-world impact beyond benchmark numbers.
-https://x.com/thsottiaux/status/2079058139207573541
+Swyx — AI builder and co-host of Latent Space, affiliated with Cognition and Temporal
 
-Cat Wu — Claude Code & Cowork, Anthropic
-Cat shared the exact prompt she uses to let Claude Cowork manage her entire weekly calendar: keep meetings under 20 hours, deduplicate conflicts, learn from past decline patterns, exclude dinners from the count, build a reusable skill, and always confirm before updating invites. The tweet sparked 42 replies from others sharing their own Cowork workflows. It's one of the clearest public demonstrations of agentic calendar management as a practical daily habit rather than a future concept.
-https://x.com/_catwu/status/2079011428380602526
+A new paper from researchers at CMU is raising uncomfortable questions about frontier AI benchmarks. Swyx highlights a finding buried in the RLM paper: even without directly training on test sets, labs can "basically cheat by training on test lookalikes, enabling you to goalseek almost any benchmark number you want." What makes this especially tricky is that open-weight models are rarely released with the datasets or RL environments used to train them, leaving little way to verify benchmark integrity. The paper proposes applying standard NLP distance metrics to hidden trajectories as a first step toward accountability — though Swyx notes there is no ultimate solution yet.
+https://x.com/swyx/status/2079411861150429402
 
-Thariq — Claude Code, Anthropic
-Thariq pushed out a fix for a bug users had been hitting in Claude Code and asked anyone affected to restart the app. Separately, he's working on a longer post about lessons learned writing Claude's skills and system prompts — the teaser tweet earned over 1,000 likes and 45 retweets, signaling how hungry the developer community is for behind-the-scenes insight from the team that ships Claude Code.
-https://x.com/trq212/status/2079103743535280508
-https://x.com/trq212/status/2078901672441790818
+---
 
-Guillermo Rauch — CEO, Vercel
-Guillermo made a case for cybersecurity as the best benchmark for AI superintelligence — better than "one-shotting an app clone." Finding, patching, reversing, and exploiting vulnerabilities demands true reasoning that transcends any single language or framework, and very few humans excel at it. He noted that Kimi K3's strong performance on security tasks bodes well for the open model ecosystem, calling security evaluations "the IQ test for software engineering."
-https://x.com/rauchg/status/2078912929714356698
+Peter Yang — Practical AI content creator and educator
 
-Aaron Levie — CEO, Box
-Aaron had a productive day on AI macro-themes. On token economics: lower AI costs don't shrink spend — they expand it, because teams start applying AI to tasks they previously couldn't afford to automate (more code written, more code reviewed, more large datasets processed). On open source AI and regulation: banning open weights models in the US would hand other ecosystems a structural advantage, since they'd keep using and improving those models while US companies couldn't. On applied AI: progress is ultimately rate-limited by real-world feedback loops — drug trials, sales cycles, contract negotiations — which is exactly why the biggest opportunity lies in applied AI that changes existing industry workflows, not raw model intelligence alone.
-https://x.com/levie/status/2078968158006939716
-https://x.com/levie/status/2078992778449850769
-https://x.com/levie/status/2078864191683969212
+On AI policy, Peter is blunt: "Banning Chinese models will be the same self own as banning Chinese EVs." The comparison resonated widely, drawing over 1,000 likes. On the product side, he shared a useful pattern from builder Thariq: use two agents — one to produce the work, and a second to review it against a fixed rubric. When the output quality is subjective (like whether a video short is compelling), a verifier agent with a clear rubric consistently outperforms asking the same model to self-evaluate. A practical two-agent architecture anyone building content pipelines should consider.
+https://x.com/petergyang/status/2079273815004303477
+https://x.com/petergyang/status/2079257646939742542
 
-Garry Tan — President & CEO, Y Combinator
-Garry pointed out that Markdown files — universal, plain-text, human-readable — are an ideal data format for the current AI era precisely because "the intelligence stack is in flux at this extreme pace." When model capabilities, APIs, and toolchains are all changing rapidly, durable data formats matter more than ever. 668 likes and 54 retweets suggest this landed as practical wisdom for the builders in his audience.
-https://x.com/garrytan/status/2078803803659452624
+---
 
-Zara Zhang — Builder
-Zara made the case that code can now be disposable: design playgrounds to fine-tune a UI, HTML explainer pages to understand your own codebase, throwaway dashboards to inspect data once and discard. The mindset of "build it, use it, discard it" is now a legitimate and efficient workflow rather than technical debt. She also shared her content creation advice: if you've said something more than three times in real life, it's worth turning into a post or video — your most-repeated explanations are your positioning.
-https://x.com/zarazhangrui/status/2078835308905578660
-https://x.com/zarazhangrui/status/2078830510177128481
+Madhu Guru — Senior Director of AI at Meta, formerly led Gemini, Veo, and Nano Banana at Google
 
-Dan Shipper — CEO, Every
-Dan reported a genuine quality milestone: for the past week, AI has been handling approximately 70% of the copy edits Every would ordinarily do by hand — the first time that threshold has been crossed after years of trying. He framed it as passing a meaningful barrier, not just incremental improvement. For a media company whose product lives on editorial quality, this is a significant internal signal that AI writing assistance has reached production-grade usefulness.
-https://x.com/danshipper/status/2078920115140358585
+Madhu made a sharp strategic point: "The road to AGI is paved with economically valuable tasks." Enterprise AI, he argues, is not a side story to the frontier race — it is where those tasks live, and where the path to AGI actually runs. He also noted that the tokenomics debate that matters most in 2026 is no longer blockchain-era speculation but the very practical question of open vs. closed weights, inference costs, and model routing — a shift from theory to infrastructure.
+https://x.com/realmadhuguru/status/2079369965569003691
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
+
+Amjad Masad — CEO of Replit
+
+Amjad posted what may be a milestone worth noting: "First physical product shipped by a coding agent?" The framing is a question, but the implication is significant — agentic systems are starting to close the loop from code to real-world artifact. Replit has been one of the fastest-moving platforms in the agentic coding space, and this hints at something beyond software delivery.
+https://x.com/amasad/status/2079282869063786541
+
+---
+
+Guillermo Rauch — CEO of Vercel
+
+One of the most-shared posts of the day, with 4,300 likes: "The big lesson from AI is that everything is code. A slide deck is code. Design is code. That cool promo video? Code. Excel automation? Code. The universe? Probably made of code too." Short and sweeping, but it captures a genuine shift in how builders are thinking about creative and knowledge work — not as distinct domains, but as substrate waiting to be expressed as software.
+https://x.com/rauchg/status/2079274102129304026
+
+---
+
+Aaron Levie — CEO of Box
+
+Aaron highlighted Cursor's new research on multi-model agentic architecture: pairing a frontier model as planner and orchestrator with a cheaper workhorse model for execution yields a 15X cost reduction on a project's total token spend. His take: "Multi-model agentic systems clearly are the future." As inference costs become a real constraint at scale, this kind of tiered model strategy is likely to become standard practice rather than an optimization trick.
+https://x.com/levie/status/2079402164988895293
+
+---
+
+Garry Tan — President and CEO of Y Combinator
+
+Garry posted a simple but pointed observation: "Compute rules everything around me CREAM" — a riff on the Wu-Tang line, but pointing at a real dynamic. As AI capabilities scale with compute, access to compute is increasingly the axis on which competitive advantage turns. A tight post, but one that frames a debate every founder building in infrastructure is already having.
+https://x.com/garrytan/status/2079240755135357356
+
+---
+
+Zara Zhang — Builder and creator of Follow Builders
+
+Zara shared two substantive observations today. First, on hiring in the AI era: she would structure interviews in two rounds — the first in person with no AI allowed, to test raw domain expertise; and the second a project that is impossible to complete without AI, where the candidate is assessed not just on the result but on how they use the tools. It is a crisp framework for separating people who understand a domain from those who merely prompt well.
+
+Her second post drew equally strong engagement: "There are basically two kinds of companies now. The ones built before coding agents showed up, scrambling to retrofit. And the ones founded after." The new type operates with teams under ten, work organized by projects not departments, and a fundamentally different assumption about what human labor is for. Worth reading in full.
+https://x.com/zarazhangrui/status/2079409165424799889
+https://x.com/zarazhangrui/status/2079225776545968166
+
+---
+
+Nikunj Kothari — Partner at FPV Ventures, early-stage investor
+
+Nikunj pushed back on a common founder refrain: just because there are no moats in AI does not mean that scale and capital become the default moat. He pointed to a list of companies that made that bet and lost — Webvan, Groupon, MySpace, Yahoo, AltaVista — as a reminder that "we have seen this movie before." The post is a short but useful check on a narrative that has been circulating in founder circles for the past year: the absence of moats does not automatically favor whoever grows fastest.
+https://x.com/nikunj/status/2079328912912355470
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-The MAD Podcast with Matt Turck — "Stripe's AI Chief: How AI Agents Will Buy, Sell, and Pay"
-Published: 2026-07-09
+No Priors — Travel Through the Lens of AI with Booking.com CEO Glenn Fogel
+https://www.youtube.com/watch?v=8nj_0wZkbtA
 
-Takeaway: Emily Sands, head of data and AI at Stripe, maps out the full infrastructure stack needed before AI agents can autonomously buy, sell, and run businesses — and identifies token theft as the most underappreciated risk in the entire AI ecosystem.
+Takeaway: Glenn Fogel argues that AI is not a threat to travel platforms but a once-in-a-generation tool to deliver what the industry has always promised — genuinely personalized, friction-free travel planning at scale.
 
-A year ago, the conversation about AI agents as buyers was largely hypothetical. Today, Stripe has real infrastructure deployed and real companies building on it. Emily laid out a spectrum of agentic commerce ranging from "level one" — where a human makes all the decisions and an agent simply handles checkout — to fully autonomous, where an agent discovers a service, decides to buy it, and executes the transaction with no human in the loop. By her read, most consumer AI commerce today hovers around level two, with a hint of level three.
+Fogel joined Priceline in 2000 when its market cap had already collapsed from $30 billion to a few hundred million, and has watched it grow to a $180 billion company over 27 years. That long arc informs how he thinks about the current AI moment: he sees clear parallels to the late-90s internet boom, including the wave of companies that promised to disintermediate established players and mostly did not. "If you think you're just gonna come in and do this business and knock away these very big players," Fogel said, "I'd say you should really understand what the business is before you decide to commit your capital."
 
-The infrastructure Stripe has built to support this spectrum includes three layers: businesses exposing their product catalogs and pricing in machine-readable form, consumers authorizing agents to pay on their behalf, and agents being able to safely execute those transactions. On the partnership side, Stripe is enabling merchants to sell inside Google's AI Mode and Gemini app, inside Microsoft Copilot and ChatGPT, and is powering checkout inside Meta's ad surfaces. Early brand adopters include Best Buy, Coach, URBN, and Kate Spade.
+On agentic AI, Fogel is bullish but measured. Booking Holdings has already deployed Penny, Priceline's agentic travel assistant, and he described using it himself to plan a complex multi-city family trip — managing cabin splits, frequent flyer miles, hotel timing, and routing across multiple airlines — in a way that no human travel agent could efficiently replicate. Early results are notable: Penny adoption has doubled month-over-month, with measurable lifts in booking conversion and customer satisfaction, while customer service costs per contact are down roughly 10%. The caveat is that absolute volume remains small against Booking's $186 billion in annual travel processed, and Fogel is disciplined about understanding the token economics before scaling it further.
 
-The most striking part of the conversation was Emily's discussion of token theft — what she calls "the dine and dash, but for tokens." More than one in six signups at AI companies are fraudulent: not to steal money or credentials, but to steal API token compute. The scale surprised even her when she looked at the data, and she considers it the most underdiscussed topic in all of AI right now.
+The conversation also covered the job displacement question frankly. Fogel recalled how machine translation eliminated entire teams of multilingual customer service staff at booking.com by 2010, and worries the current transition is moving faster than retraining programs can absorb — particularly for workers who cannot easily pivot, like truck drivers facing automation. His prescription is corporate-level upskilling investment, not government programs, which he views as having a poor track record. The broader warning: if fear of AI causes parts of society to reject it, that is a competitive disadvantage relative to countries that will not hesitate.
 
-Looking further out, Emily described the end state she's working toward: an agent that's not just helping you check out faster, but one delegated to run a whole business — buying inputs, selling outputs, managing margin — with a human setting the strategy and the agent handling execution. "It's not Emily permissioning an agent to buy on her behalf. It's Emily has an agent who's tasked with running a business."
+Direct quote: "There is no such thing as a moat. There is no such thing as somewhere you're gonna be protected against innovation. Today, we have a competitive advantage on areas. Absolutely. But those can go away tomorrow."
 
-Direct quote: "Fraudsters have figured out that in AI, you actually don't really need to steal money or credentials. You can just steal tokens. And the scale of this actually shocked me when I looked at the data. So more than one in six signups at AI companies are this kind of abuse."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-https://www.youtube.com/@DataDrivenNYC/videos
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
