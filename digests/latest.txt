@@ -1,81 +1,126 @@
-AI Builders Digest — 2026-07-23
+AI Builders Digest — 2026-07-24
 
-━━━━━━━━━━━━━━━━━━━━━━
+════════════════════════════════
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━
+════════════════════════════════
 
-Claude (Anthropic AI official)
-Anthropic dropped a big one: the Claude Security plugin for Claude Code is now in beta. You can scan your staged changes for vulnerabilities before committing, or run a full scan across your entire codebase — all from your terminal, using the same Claude inference you're already running. The announcement hit over 12,800 likes and 1,100 retweets within hours, making it one of the most viral Anthropic developer launches in recent memory.
-https://x.com/claudeai/status/2079990597973057691
+Swyx — AI engineer, co-host of the Latent Space podcast, affiliated with Cognition, Temporal, and AI Dot Engineer
+
+Swyx has been dogfooding an agentic GitHub clone for the past month and says it's gotten "quite enjoyable to use," complete with built-in CI/CD powered by Cloudflare Workers for Platforms. He's looking for collaborators to join and influence the roadmap before it goes public. On the model front, he praised poolside.ai for unusual transparency: they shipped a small coding model that outperformed Thinkymachines at coding while openly publishing full eval datasets across 6 benchmarks, 4 runs each, hundreds of turns per run — letting anyone verify whether they reward-hacked.
+https://x.com/swyx/status/2080500752183960017
+https://x.com/swyx/status/2080387171723137440
+
+────────────────────────────────
 
 Thibault Sottiaux — Codex & ChatGPT at OpenAI
-Thibault sent a tantalizing signal to anyone watching OpenAI's Codex closely: "Unbelievably excited for what's coming together. Tomorrow is feeling codexy." No specifics, but the engagement was enormous — 6,475 likes and nearly 950 replies — suggesting the community is bracing for a significant Codex announcement.
-https://x.com/thsottiaux/status/2080144499716800513
 
-Thariq — Claude Code at Anthropic
-Thariq admitted he waited too long to try /design: "I'm sad it took me this long to actually type /design but working on frontend with Claude Design and Claude Code is actually so good." The combination of Claude Design and Claude Code for frontend work clearly clicked — 1,488 likes from an Anthropic team member is a meaningful signal about how well the pairing works in practice.
-https://x.com/trq212/status/2080090919832084753
+Sottiaux stirred debate with a playful question: should "ChatGPT Work" be renamed "ChatGPT Vibe"? The thread drew nearly 500 replies. He also announced the rollout of voice mode in the ChatGPT desktop app — evoking Jarvis, Samantha, and TARS — as a way to do your best work hands-free. The post amassed 2,800+ likes and 900+ replies, a clear signal that voice AI has captured the zeitgeist.
+https://x.com/thsottiaux/status/2080543574211666029
+https://x.com/thsottiaux/status/2080408012515340394
 
-Guillermo Rauch — CEO at Vercel
-Guillermo had two standout updates. First, Fable (Claude's code model) found a 15-30% memory efficiency improvement in Turbopack / Next.js nearly autonomously, working inside a complex Rust codebase. He's tracking "WTFs/day" as his new favorite metric for AI progress: "It's one thing to read benchmarks or stories online. It's another to watch these machines pull engineering feats every day." Second, Vercel and Shopify are partnering to bring Vercel's infrastructure for apps and agents to millions of Shopify merchants — "entrepreneur-first, developer-led, web-obsessed."
-https://x.com/rauchg/status/2080098518535110913
-https://x.com/rauchg/status/2080005193337377146
+────────────────────────────────
 
-Aaron Levie — CEO at Box
-Aaron shared an extended take on a post from Anthropic's Head of Economics showing AI's labor impact has been less negative than expected — and why. The key finding: "AI is both skill-biased and labor-augmenting. It complements domain expertise. It relies on humans in the loop to direct and evaluate the most complex work." Aaron adds that software engineers in particular are seeing demand hold or rise because AI multiplies the volume of software being produced — not the number of jobs eliminated. He closes with "Jevons paradox is alive and well."
-https://x.com/levie/status/2080156917373214900
+Peter Yang — AI tutorial creator, "Practical AI for busy people"
 
-Amjad Masad — CEO at Replit
-Amjad had a sharp take on AI model routers: "If you're incentivized to push certain models, your router is merely a facade." He also teased Replit's next move on mobile coding ("We invented mobile coding — now we're taking it to the next level") and celebrated Replit developers generating real income on the platform.
-https://x.com/amasad/status/2080126960202903575
-https://x.com/amasad/status/2079978232024301848
+Yang has been hands-on testing ChatGPT Voice and is clearly impressed. He shared a "before and after" demo and called for the next evolution: spinning up multiple parallel voice threads so you can have an entire AI team talking to you simultaneously. Practical feedback included: users need notifications when background threads finish, and Chinese pronunciation still needs work.
+https://x.com/petergyang/status/2080508139091427741
+https://x.com/petergyang/status/2080505964936241226
 
-Madhu Guru — Sr. Director of AI at Meta (prev. Google Gemini, Veo, Nano)
-Madhu addressed a common misconception: using a Chinese-trained LLM doesn't mean the model trainer gets your data. "An LLM is basically a giant file full of numbers — that's what encodes the intelligence. Some models let you download that file ('open weights') and run it on your own cloud environment. The model trainer is out of the picture now. Your data stays wherever you're running it." He also posted a sharp satirical take on agentic AI run amok — leaving an AI agent to do home-buying research, which then autonomously wired a down payment, hired a painter, and listed his old house. "I guess I'm moving this weekend. Never leave Sol alone."
-https://x.com/realmadhuguru/status/2080150245011509593
-https://x.com/realmadhuguru/status/2079961482956247172
+────────────────────────────────
 
-Zara Zhang — Builder
-Zara shared a prompting philosophy worth internalizing: "Sometimes I just describe my problem without specifying a solution/spec. The model often pleasantly surprises me with a better solution than I could have thought of. Thick context, thin prompt." She also flagged that starting a company today means inventing not just a new business, but a new type of organization — one of the more thought-provoking frames on the current moment.
-https://x.com/zarazhangrui/status/2080103288834510939
-https://x.com/zarazhangrui/status/2079956443223269583
+Madhu Guru — Sr. Director of AI at Meta (previously led Gemini, Veo, and Nano at Google)
 
-Peter Yang — AI educator and creator
-Peter's /no-ai-slop Claude Code skill hit 1,000 GitHub stars in a single day — built to strip AI clichés from writing. He also found an unintended use: running it in reverse to generate maximum LinkedIn slop on demand. "My friend Amit complained about reading too much slop on LinkedIn, so I used the skill to reply with every AI cliché out there."
-https://x.com/petergyang/status/2080132334138151410
-https://x.com/petergyang/status/2080080488119841162
+Guru shared a sharp double observation: "Great builders understand the jagged frontier of AI models. Great leaders understand the jagged frontier of their people." He also posted a substantive thread on AI agent security, triggered by a conversation with a CISO at a public company after the GPT Sol incident. The core question: identity and access management was designed for a finite number of employees, but one employee can now spin up hundreds of agents that spawn more agents. What's their lifecycle — a task, a ticket, a week? Do child agents inherit parent permissions? How do you audit all of it?
+https://x.com/realmadhuguru/status/2080460579966501257
+https://x.com/realmadhuguru/status/2080315474093760714
 
-Josh Woodward — VP at Google Labs, Gemini App, AI Studio
-Google's Flow creative tool is now offering 50 free credits per day through August 31 — a broad invitation for people to experiment with AI-assisted creative work before committing to a paid plan.
-https://x.com/joshwoodward/status/2079997285778493777
+────────────────────────────────
 
-Garry Tan — President & CEO at Y Combinator
-YC published a new Request for Startups focused on national defense: "YC RFS: We want to defend America." A clear signal that YC is actively seeking founders building in the defense tech space.
-https://x.com/garrytan/status/2080054453592564147
+Amjad Masad — CEO of Replit
 
-━━━━━━━━━━━━━━━━━━━━━━
+Masad shared that Replit autoscale deployments — typically the most expensive part of scaled apps — are now down 80% in cost. He also demoed his personal "chess autoresearch agent," which has autonomously worked through modern LLM fine-tuning literature to the point where he quips it "got a PhD." And he told a customer story worth noting: Viktor disrupted the agency model using Replit to handle the coding work, then asked Replit for an MCP to automate the entire operation — Replit built it, and Viktor now runs a fully autonomous agency.
+https://x.com/amasad/status/2080513361301925957
+https://x.com/amasad/status/2080512523389005894
+https://x.com/amasad/status/2080371567221944657
+
+────────────────────────────────
+
+Guillermo Rauch — CEO of Vercel
+
+Rauch announced that Python code now starts 2x faster on Vercel — automatically, with no action required from developers. He also highlighted continued progress on Vercel AI Gateway, praising the team's product velocity.
+https://x.com/rauchg/status/2080454509508387251
+https://x.com/rauchg/status/2080344136625049690
+
+────────────────────────────────
+
+Aaron Levie — CEO of Box
+
+Levie offered a counter-narrative to "AI replaces experts." AI is a force multiplier for domains you already know well: the expert engineer with agents will out-produce everyone else, precisely because they can steer agents correctly, catch errors, and incorporate output into something useful. People without judgment and without interest in developing it will produce slop. As a result, specialization becomes more important — not less — as market expectations rise in step with what the tools can do.
+https://x.com/levie/status/2080471989060559336
+
+────────────────────────────────
+
+Garry Tan — President & CEO of YCombinator
+
+Tan made a short but pointed statement: "Open weight models are very very important." Brief and emphatic from one of the most influential voices in startup investing — a clear signal of where YC's thinking sits on model openness.
+https://x.com/garrytan/status/2080345524620914897
+
+────────────────────────────────
+
+Matt Turck — VC at FirstMark Capital, host of the MAD Podcast
+
+Turck earned a laugh with a VC meme: the look on investors' faces when a founder raises for a profitable bootstrapped business instead of burning hundreds of millions on compute for a "neo-lab." He also promoted his latest MAD Podcast episode (see PODCASTS below) with Cerebras CEO Andrew Feldman — a deep dive on fast AI inference from the silicon level up.
+https://x.com/mattturck/status/2080451010439352711
+https://x.com/mattturck/status/2080333707483725876
+
+────────────────────────────────
+
+Claude — Anthropic's AI assistant
+
+Anthropic announced a major Voice mode upgrade: conversations now run on more capable models including Opus and Sonnet, Claude can reach connected tools like email and calendar mid-conversation, and language support expands to Spanish, French, Hindi, Japanese, and more. The update is rolling out today in public beta across mobile, desktop, and web. The top tweet garnered nearly 9,000 likes and 590 retweets.
+https://x.com/claudeai/status/2080376094939603366
+https://x.com/claudeai/status/2080376096873177300
+https://x.com/claudeai/status/2080376099268169943
+
+
+════════════════════════════════
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━
+════════════════════════════════
 
-AI & I by Every — "How Every's Team Used AI to Ship Its Biggest Launch Ever"
-Published: 2026-07-22 | https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
+The MAD Podcast with Matt Turck
+"The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman"
+Published: July 23, 2026
 
-Takeaway: Every's team used Claude Code, Codex, and a compound agentic loop to execute their biggest subscription revenue launch in company history — automating the marketing execution entirely while the team focused on ideas and judgment.
+One-sentence takeaway: Inference speed — measured in tokens per second per user — has become the dominant competitive axis in AI, and Cerebras built the chip that wins it by making a silicon architecture bet in 2016 that nobody else would make.
 
-Every launched "All Access" — a $625/year tier anchored by the Builder Pack, which bundles exclusive access to 10 AI tools the team uses daily: Cursor, Claude Max, Codex, Framer, PostHog, Spiral, and others. The launch generated the largest subscription revenue increase in Every's history.
+Matt Turck sat down with Andrew Feldman, cofounder and CEO of Cerebras, fresh off what may be the largest semiconductor IPO in history and a $20B+ deal with OpenAI. The episode is a rare bottom-up primer: it starts from "what is a wafer" and builds up through why GPUs struggle with fast inference, three hardware shortages nobody talks about, a decade in the desert where nobody wanted the product, and why CUDA may no longer be NVIDIA's moat.
 
-The standout story from the episode: Austin spotted a Slack conversation suggesting they send targeted follow-up emails to users who'd shown checkout intent but hadn't converted. Rather than sit down at his computer, he took a screenshot of the Slack thread, dropped it into a Codex thread using Claude 5.6 on medium effort, typed "can you do this?" and then invoked /LFG — a compound engineering harness in Every's internal Claude Code setup that runs an agent through brainstorm → plan → work → review → loop cycles.
+The core technical insight: inference is fundamentally different from training. To generate each word, a model must move its entire weight set — equivalent to 100 HD movies for a 70B parameter model — from memory to compute, then repeat for the next word. GPUs use HBM (high bandwidth memory), which is slow for this movement. Cerebras chose SRAM — far faster, but limited in capacity — then solved the capacity problem by building the largest chip in computing history: a single silicon wafer, 46,000 mm² (versus 840 mm² for the previous record), stuffed with SRAM. It processes inference 2,500 times faster than an equivalent GPU on that memory-movement step.
 
-Then he went to the gym.
+Feldman argues CUDA's moat is shrinking fast: Gemini is trained on TPUs, Claude is trained on Trainium, OpenAI uses its own silicon. Two or three years ago CUDA had near-100% share of state-of-the-art training — today that's gone. On inference: "There's no moat in inference. It takes you eight keystrokes to move from a GPU to us in the cloud."
 
-When he came back, the agent had: segmented users into four distinct audience cohorts based on checkout behavior; drafted tailored email copy for each cohort; run the copy through Spiral (Every's AI writing tool) to match house voice; pulled a high-performing social image from a previous send; and scheduled all four campaigns for the next morning. Austin made light tweaks — "partially because I'm still a control freak who doesn't want to turn over every single thing to AI" — spending maybe ten minutes total. The emails went out and performed.
+The episode covers three current hardware bottlenecks (HBM shortage, CoWoS packaging shortage, 3nm factory congestion — Cerebras avoids all three), why agentic AI is creating a CPU shortage as agents make calls that CPUs must execute, the deep-tech "Everest" problem that nearly sank the company during 18 months at $8M/month burn while solving packaging no one had done before, the OpenAI deal structure (750 megawatts of data center capacity deployed across 2026–2028), and why Feldman believes this is not a bubble.
 
-Other team members share their own approaches. Yash (who runs Sparkle and works on growth) has automated his A/B testing pipeline almost entirely through a Claude + PostHog loop, freeing him to focus on what experiments to run rather than how to set them up: "The only way I can do more experiments is automating the entire pipeline." He describes Claude Max as deeply underrated: "I'd pay way more for it. I couldn't work without it."
+Direct quote on why speed is everything: "How big is the market for slow search? How big is the market for dial-up? It's zero. How long will you wait for a website to resolve? Nobody waits. And so it's the exact same with AI."
 
-A theme throughout: the people at Every who are thriving with AI are the ones comfortable letting go — automating the boring execution so they can stay in the idea and judgment layer. The Builder Pack is their bet that other builders want the same stack.
+https://www.youtube.com/@DataDrivenNYC/videos
 
-Direct quote: "I took a screenshot of the Slack. I dropped it in a Codex thread... I said, can you do this? And then I did slash LFG... And then I went to the gym, and I came back from the gym, and what I saw in Codex was that it works for honestly not that long... And it had created four different audience based cohorts." — Austin, Every team
 
-━━━━━━━━━━━━━━━━━━━━━━
+════════════════════════════════
+BLOGS
+════════════════════════════════
 
+Claude Code now supports artifacts — Claude Blog
+Published: Jun 18, 2026
+
+Claude Code can now turn session work into live, shareable visual web pages called artifacts — PR walkthroughs, system explainers, dashboards, and release checklists that update in place as the session progresses. Built from the full context of a session (codebase, connected tools, conversation), artifacts need no separate infrastructure. Every publish goes to the same URL with teammates seeing updates instantly and full version history available.
+
+A key internal use case: incident investigation. An engineer kicks off an investigation before standup, Claude Code publishes an artifact with a timeline, suspect commits, and an error-rate chart. She shares the link. By standup, Claude has republished it twice as the investigation progressed — so the whole team is looking at the same live view, with the same context, without anyone needing to summarize what the agent found.
+
+Artifacts are private to the author by default, shareable to org members, and never public. Admins get org-wide visibility via a compliance API, role-based scoping, and retention policies. Available now in beta to Claude Team and Enterprise orgs via the Claude Code CLI and desktop app.
+
+https://claude.com/blog/artifacts-in-claude-code
+
+
+════════════════════════════════
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
