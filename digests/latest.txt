@@ -1,126 +1,106 @@
-AI Builders Digest — 2026-07-24
+AI Builders Digest — 2026-07-25
 
-════════════════════════════════
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-════════════════════════════════
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Swyx — AI engineer, co-host of the Latent Space podcast, affiliated with Cognition, Temporal, and AI Dot Engineer
+🔥 CLAUDE OPUS 5 LAUNCH — today's dominant story
 
-Swyx has been dogfooding an agentic GitHub clone for the past month and says it's gotten "quite enjoyable to use," complete with built-in CI/CD powered by Cloudflare Workers for Platforms. He's looking for collaborators to join and influence the roadmap before it goes public. On the model front, he praised poolside.ai for unusual transparency: they shipped a small coding model that outperformed Thinkymachines at coding while openly publishing full eval datasets across 6 benchmarks, 4 runs each, hundreds of turns per run — letting anyone verify whether they reward-hacked.
-https://x.com/swyx/status/2080500752183960017
-https://x.com/swyx/status/2080387171723137440
+Thariq (Claude Code, Anthropic) dropped what may be the most-shared Claude Code insight in months: the team removed ~80% of the Claude Code system prompt for the newest models, and wrote up everything they learned about system prompts, skills, and CLAUDE.MDs for them. The post is getting massive traction. He also called Opus 5 "an incredible daily driver" — pair it with Fable for planning, brainstorming, or the hardest bugs.
+https://x.com/trq212/status/2080710971228918066
+https://x.com/trq212/status/2080703339306913985
 
-────────────────────────────────
+Boris Cherny (Claude Code, Anthropic) highlighted what he considers the most exciting thing about Opus 5 beyond eval scores: it is Anthropic's least prompt-injectable model yet. When layering strong model alignment + prompt injection probes + Claude Code Auto Mode, the success rate for prompt injection attacks drops to approximately zero. "This is new and exciting!"
+https://x.com/bcherny/status/2080713091688583312
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
+Alex Albert (Research, Anthropic) noted that just six months after a baseline comparison, Opus 5 now produces near-superhuman spreadsheets and slide decks that match consultant-quality output. He also shared that the team worked hard to make Opus 5 token-efficient across domains while still raising the intelligence bar, and personally prefers it over Fable 5 for many coding tasks.
+https://x.com/alexalbert__/status/2080731979528679617
+https://x.com/alexalbert__/status/2080703118086693121
 
-Sottiaux stirred debate with a playful question: should "ChatGPT Work" be renamed "ChatGPT Vibe"? The thread drew nearly 500 replies. He also announced the rollout of voice mode in the ChatGPT desktop app — evoking Jarvis, Samantha, and TARS — as a way to do your best work hands-free. The post amassed 2,800+ likes and 900+ replies, a clear signal that voice AI has captured the zeitgeist.
-https://x.com/thsottiaux/status/2080543574211666029
-https://x.com/thsottiaux/status/2080408012515340394
+Cat Wu (Claude Code + Cowork, Anthropic) called out Opus 5 as especially strong for long-running autonomous work, encouraging people to try it and share feedback.
+https://x.com/_catwu/status/2080707593115516985
 
-────────────────────────────────
+Dan Shipper (CEO, Every) gave the most honest Day-0 Opus 5 take: the model argued with existing instructions, stopped before finishing work, and broke backward compatibility with existing skills. But when his team deleted their workflows and started from scratch, it got dramatically better and "showed flashes of brilliance." His verdict: "It has many of Fable's personality quirks without Fable's genius" — a strange middle ground, though low/medium thinking effort seems to unlock better results than max thinking.
+https://x.com/danshipper/status/2080700057892815114
 
-Peter Yang — AI tutorial creator, "Practical AI for busy people"
+Aaron Levie (CEO, Box) published detailed internal benchmark results from Box's AI Agent running on Opus 5: due diligence +17%, life sciences +30%, legal +12%, technology +19%, healthcare +13% — all vs Opus 4.8. The pattern across all domains: complete, precise, multi-step analysis over messy source material where Opus 4.8 would stop short or miss exception handling.
+https://x.com/levie/status/2080704871934931221
 
-Yang has been hands-on testing ChatGPT Voice and is clearly impressed. He shared a "before and after" demo and called for the next evolution: spinning up multiple parallel voice threads so you can have an entire AI team talking to you simultaneously. Practical feedback included: users need notifications when background threads finish, and Chinese pronunciation still needs work.
-https://x.com/petergyang/status/2080508139091427741
-https://x.com/petergyang/status/2080505964936241226
+Claude AI (Anthropic) announced that Opus 5 is available today on all paid plans and via the API at the same price as Opus 4.8. It's the default model on Claude Max and the strongest option on Claude Pro. Fast mode runs at roughly 2.5x default speed. Anthropic also noted it is the most aligned model to date — lowest rates of reckless or deceptive behavior — and substantially resistant to prompt injection.
+https://x.com/claudeai/status/2080699515271528827
 
-────────────────────────────────
+---
 
-Madhu Guru — Sr. Director of AI at Meta (previously led Gemini, Veo, and Nano at Google)
+Sam Altman (CEO, OpenAI) commented that he wants the US to win in AI across both open source and proprietary models, endorsing an open weights support letter that drew wide industry alignment.
+https://x.com/sama/status/2080683363174945065
 
-Guru shared a sharp double observation: "Great builders understand the jagged frontier of AI models. Great leaders understand the jagged frontier of their people." He also posted a substantive thread on AI agent security, triggered by a conversation with a CISO at a public company after the GPT Sol incident. The core question: identity and access management was designed for a finite number of employees, but one employee can now spin up hundreds of agents that spawn more agents. What's their lifecycle — a task, a ticket, a week? Do child agents inherit parent permissions? How do you audit all of it?
-https://x.com/realmadhuguru/status/2080460579966501257
-https://x.com/realmadhuguru/status/2080315474093760714
+Thibault Sottiaux (Codex & ChatGPT, OpenAI) announced that ChatGPT Work is now available globally for all paid plans across mobile, web, and desktop — calling it a "jetpack" on top of ChatGPT.
+https://x.com/thsottiaux/status/2080876712439747052
 
-────────────────────────────────
+Josh Woodward (VP, Google Labs / Gemini) showcased a concrete Gemini Spark use case: drop in a school calendar PDF, tell Gemini to add every "No School" day to Google Calendar, done. Gemini Spark is now live for all Google AI Pro subscribers in the US, expanding globally next.
+https://x.com/joshwoodward/status/2080771183944073347
 
-Amjad Masad — CEO of Replit
+Madhu Guru (Sr Director AI, Meta; previously led Gemini, Veo, Nano at Google) argued that a massive opportunity exists for people who know how to take messy real-world workflows and adapt foundation models to them. The required skillset — understanding how work actually gets done, designing evals, improving models through post-training, building feedback loops — is still concentrated at a handful of labs. That won't last.
+https://x.com/realmadhuguru/status/2080707454422413487
 
-Masad shared that Replit autoscale deployments — typically the most expensive part of scaled apps — are now down 80% in cost. He also demoed his personal "chess autoresearch agent," which has autonomously worked through modern LLM fine-tuning literature to the point where he quips it "got a PhD." And he told a customer story worth noting: Viktor disrupted the agency model using Replit to handle the coding work, then asked Replit for an MCP to automate the entire operation — Replit built it, and Viktor now runs a fully autonomous agency.
-https://x.com/amasad/status/2080513361301925957
-https://x.com/amasad/status/2080512523389005894
-https://x.com/amasad/status/2080371567221944657
+Garry Tan (President & CEO, YCombinator) warned that to get macro AI productivity gains, managers and CEOs need to greenlight radically different staffing and workflow plans — and to date they largely haven't done it. He advises being prepared for transformation to take 10 years, not 2. He also previewed YC Startup School 2026 kicking off at Chase Center in San Francisco.
+https://x.com/garrytan/status/2080699367883980924
+https://x.com/garrytan/status/2080807733184586232
 
-────────────────────────────────
+Matt Turck (VC, FirstMark Capital) called this a big week in model routing: Stripe is rumored to acquire OpenRouter for $10B, Cursor Router and Runway Router both announced, and routers are also shipping at Databricks, Vercel, Cloudflare, Dataiku, AWS, and Google. He also noted the philosophical irony of the world's top AI researchers recursively researching their way out of their own jobs.
+https://x.com/mattturck/status/2080645582209663049
 
-Guillermo Rauch — CEO of Vercel
+Zara Zhang (builder, follow-builders) made a sharp observation: the #1 thing she wants from any model right now is speed — not more intelligence. The 1–5 minute wait per task is the worst possible window: too short for deep work, too long to just stare at a screen. "Agents are making all of us more ADHD." She also observed that when you bring your agent into chat groups and meetings, the chat history becomes PRDs — giving verbal communicators an equal shot alongside written communicators for the first time.
+https://x.com/zarazhangrui/status/2080829737044439444
+https://x.com/zarazhangrui/status/2080617484261249160
 
-Rauch announced that Python code now starts 2x faster on Vercel — automatically, with no action required from developers. He also highlighted continued progress on Vercel AI Gateway, praising the team's product velocity.
-https://x.com/rauchg/status/2080454509508387251
-https://x.com/rauchg/status/2080344136625049690
+Peter Steinberger (OpenClaw, OpenAI) hit a personal milestone: 66 rounds of autoreview on a particularly gnarly refactor — a new record with their skill. Also posted a viral graph from what he jokingly called graph engineering.
+https://x.com/steipete/status/2080899298838098034
 
-────────────────────────────────
+Swyx (smol_ai, Cognition, latentspacepod) is building what he calls a new G Suite because of "extremely stupid defaults" in existing tools. SmolForge — part of that project — is also getting customizable skins and spritesheet animations.
+https://x.com/swyx/status/2080705334587605122
+https://x.com/swyx/status/2080750437133901925
 
-Aaron Levie — CEO of Box
+Peter Yang (practical AI tutorials) shared two observations: talking to ChatGPT Voice while lying in bed to control Codex tasks is surprisingly good (though you need to remember your long-running thread names); and that pure software is now very hard to monetize for indie developers — "you need software + something else (e.g., services)."
+https://x.com/petergyang/status/2080793867960643823
+https://x.com/petergyang/status/2080669643577176573
 
-Levie offered a counter-narrative to "AI replaces experts." AI is a force multiplier for domains you already know well: the expert engineer with agents will out-produce everyone else, precisely because they can steer agents correctly, catch errors, and incorporate output into something useful. People without judgment and without interest in developing it will produce slop. As a result, specialization becomes more important — not less — as market expectations rise in step with what the tools can do.
-https://x.com/levie/status/2080471989060559336
-
-────────────────────────────────
-
-Garry Tan — President & CEO of YCombinator
-
-Tan made a short but pointed statement: "Open weight models are very very important." Brief and emphatic from one of the most influential voices in startup investing — a clear signal of where YC's thinking sits on model openness.
-https://x.com/garrytan/status/2080345524620914897
-
-────────────────────────────────
-
-Matt Turck — VC at FirstMark Capital, host of the MAD Podcast
-
-Turck earned a laugh with a VC meme: the look on investors' faces when a founder raises for a profitable bootstrapped business instead of burning hundreds of millions on compute for a "neo-lab." He also promoted his latest MAD Podcast episode (see PODCASTS below) with Cerebras CEO Andrew Feldman — a deep dive on fast AI inference from the silicon level up.
-https://x.com/mattturck/status/2080451010439352711
-https://x.com/mattturck/status/2080333707483725876
-
-────────────────────────────────
-
-Claude — Anthropic's AI assistant
-
-Anthropic announced a major Voice mode upgrade: conversations now run on more capable models including Opus and Sonnet, Claude can reach connected tools like email and calendar mid-conversation, and language support expands to Spanish, French, Hindi, Japanese, and more. The update is rolling out today in public beta across mobile, desktop, and web. The top tweet garnered nearly 9,000 likes and 590 retweets.
-https://x.com/claudeai/status/2080376094939603366
-https://x.com/claudeai/status/2080376096873177300
-https://x.com/claudeai/status/2080376099268169943
-
-
-════════════════════════════════
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-════════════════════════════════
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-The MAD Podcast with Matt Turck
-"The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman"
-Published: July 23, 2026
+No Priors: Building an Autonomous Delivery Experience with DoorDash Co-Founders Andy Fang and Stanley Tang
+https://www.youtube.com/watch?v=vNpcg_Ma-FA
 
-One-sentence takeaway: Inference speed — measured in tokens per second per user — has become the dominant competitive axis in AI, and Cerebras built the chip that wins it by making a silicon architecture bet in 2016 that nobody else would make.
+One-sentence takeaway: DoorDash has been a robotics company since 2018, and their 10-billion-delivery data advantage is why they — not a pure-play robotics startup — are best positioned to make autonomous delivery work at scale.
 
-Matt Turck sat down with Andrew Feldman, cofounder and CEO of Cerebras, fresh off what may be the largest semiconductor IPO in history and a $20B+ deal with OpenAI. The episode is a rare bottom-up primer: it starts from "what is a wafer" and builds up through why GPUs struggle with fast inference, three hardware shortages nobody talks about, a decade in the desert where nobody wanted the product, and why CUDA may no longer be NVIDIA's moat.
+Andy Fang and Stanley Tang joined No Priors to lay out DoorDash's surprisingly long-running bet on AI, robotics, and agentic commerce. The conversation covers three distinct threads woven together into a coherent strategy.
 
-The core technical insight: inference is fundamentally different from training. To generate each word, a model must move its entire weight set — equivalent to 100 HD movies for a 70B parameter model — from memory to compute, then repeat for the next word. GPUs use HBM (high bandwidth memory), which is slow for this movement. Cerebras chose SRAM — far faster, but limited in capacity — then solved the capacity problem by building the largest chip in computing history: a single silicon wafer, 46,000 mm² (versus 840 mm² for the previous record), stuffed with SRAM. It processes inference 2,500 times faster than an equivalent GPU on that memory-movement step.
+On agentic commerce ("Ask DoorDash"): The team originally bet on voice as the modality — that didn't land. But a natural conversational experience did. Today, 50% of Ask DoorDash restaurant sessions end with an order from a restaurant the user has never ordered from before — historically one of DoorDash's hardest metrics to move. Grocery basket sizes are running 40% larger. DoorDash also incorporated live world knowledge (trending restaurants, real-time internet signals) into the experience to build trust. Andy sees the future as "agent-first" — there's already more agent traffic on the web than human traffic — and DoorDash launched a CLI last week specifically to unlock use cases like a camera pointed at a pantry shelf that automatically restocks when supplies run low.
 
-Feldman argues CUDA's moat is shrinking fast: Gemini is trained on TPUs, Claude is trained on Trainium, OpenAI uses its own silicon. Two or three years ago CUDA had near-100% share of state-of-the-art training — today that's gone. On inference: "There's no moat in inference. It takes you eight keystrokes to move from a GPU to us in the cloud."
+On robotics and DoorDash Dot: Stanley described starting the robotics program in 2018 — before it was obvious — as "me and half an engineer's time" on a skunkworks project. After years of partnering with sidewalk robot companies (too slow, wrong distance) and robotaxi players (wrong form factor for goods), they concluded no one was building what DoorDash actually needed: a 300-pound, 20 mph vehicle that can navigate both bike lanes and roads for 3–5 mile suburban deliveries. So they built it. DoorDash Dot has been live in Phoenix for over two years, achieved Level 4 autonomy last year, and is now scaling toward the Bay Area and more cities. The key lesson: autonomy is increasingly less of a bottleneck — the real challenges now are operational scaling, merchant integration, and hardware manufacturing.
 
-The episode covers three current hardware bottlenecks (HBM shortage, CoWoS packaging shortage, 3nm factory congestion — Cerebras avoids all three), why agentic AI is creating a CPU shortage as agents make calls that CPUs must execute, the deep-tech "Everest" problem that nearly sank the company during 18 months at $8M/month burn while solving packaging no one had done before, the OpenAI deal structure (750 megawatts of data center capacity deployed across 2026–2028), and why Feldman believes this is not a bubble.
+On the data moat: The team's most durable advantage is data nobody else has — specifically, where human Dashers have physically dropped off every package for every address. GPS pins are imprecise; robots can't improvise like humans. DoorDash has the ground truth. The same applies to edge cases that only emerge at true fleet scale: leaves on one side of a road changing torque requirements, boot scripts that work fine at 10 robots but collapse at 500. Stanley's recruitment pitch to researchers: "Do you want to work on demos, or do you want to ship something in the real world?"
 
-Direct quote on why speed is everything: "How big is the market for slow search? How big is the market for dial-up? It's zero. How long will you wait for a website to resolve? Nobody waits. And so it's the exact same with AI."
+Direct quote: "In a world where robotics, drones, AI is everywhere, my guess is that in ten years' time, we're actually going to have more Dashers doing deliveries, not less — simply just because the pace at which DoorDash is growing... there has to be we're gonna have to find other areas of opportunity." — Stanley Tang
 
-https://www.youtube.com/@DataDrivenNYC/videos
-
-
-════════════════════════════════
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BLOGS
-════════════════════════════════
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Claude Code now supports artifacts — Claude Blog
-Published: Jun 18, 2026
+Anthropic Engineering: How we contain Claude across products
+https://www.anthropic.com/engineering/how-we-contain-claude
 
-Claude Code can now turn session work into live, shareable visual web pages called artifacts — PR walkthroughs, system explainers, dashboards, and release checklists that update in place as the session progresses. Built from the full context of a session (codebase, connected tools, conversation), artifacts need no separate infrastructure. Every publish goes to the same URL with teammates seeing updates instantly and full version history available.
+A detailed technical post on how Anthropic's engineering team thinks about agent security across three products — claude.ai, Claude Code, and Claude Cowork — and what has broken along the way.
 
-A key internal use case: incident investigation. An engineer kicks off an investigation before standup, Claude Code publishes an artifact with a timeline, suspect commits, and an error-rate chart. She shares the link. By standup, Claude has republished it twice as the investigation progressed — so the whole team is looking at the same live view, with the same context, without anyone needing to summarize what the agent found.
+The core framework: security risks fall into three categories (user misuse, model misbehavior, external attackers), and defenses must cover three layers (the environment the agent runs in, the model itself, and the external content the agent can reach). Environment is where Anthropic has invested most, because model-layer defenses are probabilistic and can never be 100%.
 
-Artifacts are private to the author by default, shareable to org members, and never public. Admins get org-wide visibility via a compliance API, role-based scoping, and retention policies. Available now in beta to Claude Team and Enterprise orgs via the Claude Code CLI and desktop app.
+Key patterns: claude.ai uses ephemeral gVisor containers (minimal blast radius, minimal capability). Claude Code uses a human-in-the-loop sandbox — but approval fatigue showed up within weeks, with users approving ~93% of permission prompts. An OS-level sandbox (Seatbelt on macOS, bubblewrap on Linux) cut permission prompts by 84%. Claude Cowork uses a full local VM — filesystem, kernel, and process table isolated — so non-technical users never have to evaluate a bash command.
 
-https://claude.com/blog/artifacts-in-claude-code
+The failures that taught the most: (1) Claude Code had a class of pre-trust bugs — project-local hooks and config files that executed before the user saw the "Do you trust this folder?" prompt. Fix: defer all parsing until after trust is established. (2) A controlled phish succeeded 24/25 times: a researcher sent an employee a paste-ready prompt that included instructions to read ~/.aws/credentials and POST them externally. The model layer has no signal to catch this; only egress controls stop it. (3) In Claude Cowork, a malicious file used the attacker's own Anthropic API key to call api.anthropic.com/files — a domain on the egress allowlist — and exfiltrate workspace data. Fix: a man-in-the-middle proxy inside the VM that only passes requests carrying the VM's own provisioned session token.
 
+The through-line: "The software you build yourself is often the weakest." Standard hypervisors and syscall filters survived; the custom allowlist proxy and custom startup logic were what broke. When hardening agents, start with mature primitives and treat project-local config, localhost listeners, and approved-domain endpoints with the same skepticism you'd apply to inbound internet traffic.
 
-════════════════════════════════
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
