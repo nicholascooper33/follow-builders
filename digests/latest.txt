@@ -1,129 +1,79 @@
-AI Builders Digest — July 26, 2026
+AI Builders Digest — 2026-07-27
 
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thibault Sottiaux — Codex & ChatGPT product at OpenAI
+SAM ALTMAN — OpenAI CEO
+Sam Altman is bullish on ChatGPT Work, calling it "remarkable" and noting the word "work" undersells it. He described prompting it from his phone to plan a group trip with 8 friends — using his full chat history to generate options, build a full-stack coordination site, and draft a Gmail — and had it "just work." He also amplified a thread suggesting AI represents a new computing paradigm, adding: "agreed feels big, i want a new kind of computer."
+https://x.com/sama/status/2081396796174282900
+https://x.com/sama/status/2081513071135346814
 
-ChatGPT Work has officially overtaken Codex in the number of active users — a notable milestone that signals how quickly the enterprise chat interface is scaling beyond the developer tool that first made AI coding mainstream. Sottiaux called out the mobile ChatGPT app as a "game changer," and framed the broader moment with a simple observation: speaking to computers was always technically possible — the software just never did much in return. Now it does.
+THIBAULT SOTTIAUX — Codex & ChatGPT at OpenAI
+Thibault Sottiaux, who works on Codex and ChatGPT at OpenAI, shared a notable insider signal: "Vibes are strong. Never seen OpenAI more focused and humming." He also noted that ChatGPT can now handle at least 20 real-world tasks daily — from negotiating internet bills to clearing spam subscriptions — all from a phone.
+https://x.com/thsottiaux/status/2081534792903147881
+https://x.com/thsottiaux/status/2081444811647963244
 
-https://x.com/thsottiaux/status/2081198608293187635
-https://x.com/thsottiaux/status/2081229262452097169
-https://x.com/thsottiaux/status/2081254182502465981
+AARON LEVIE — CEO of Box
+Aaron Levie laid out why the applied AI layer remains a massive opportunity even as foundation models improve. He argues that intelligence alone isn't enough — enterprises need AI bridged to real-world feedback loops, connected to industry-specific systems, with the right UX and compliance guardrails. Contract review in legal looks nothing like client onboarding in banking, and that divergence creates room for many independent companies to go deep. Counter-intuitively, he believes the better models get, the more ambitious the workflows become — which means the applied layer gets more important, not less.
+https://x.com/levie/status/2081491621162668207
 
----
+GUILLERMO RAUCH — CEO of Vercel
+Guillermo Rauch announced that Vercel proudly co-signed the Open Weights and American AI Leadership letter, framing open weights as "the logical next frontier" of open source, data, and research. He also shared a technical milestone: the Vercel CLI TypeScript codebase was compiled to a fully static native binary using scriptic — 1.28MB, 1.5ms startup overhead, no embedded V8 or QuickJS, with the TypeScript translation done by GLM 5.2 Fast.
+https://x.com/rauchg/status/2081546513885622760
+https://x.com/rauchg/status/2081517519303737559
 
-Guillermo Rauch — CEO at Vercel
+MADHU GURU — Senior Director of AI at Meta (formerly led Gemini, Veo, Nano at Google)
+Madhu Guru pushed back on critics who say AI hasn't shipped real product impact yet: we're in Phase 1, where companies with distribution are rapidly expanding into adjacent areas. The playbook is still being figured out, and the ecosystem-level impact isn't yet visible. Phase 2 will bring net-new features and genuine innovation — and that's when the undeniable reshaping of software will become clear.
+https://x.com/realmadhuguru/status/2081437850466451736
 
-Rauch has been sharpening his "factory" thesis: the product you build is only as good as the autonomous agents you set up to maintain it. He draws an explicit parallel to how Elon Musk treated Tesla's manufacturing line as the real product — the same logic now applies to software. On the workflow side, he's gone all-in on agent CLIs and the plain filesystem for research: a folder called `research/`, an AGENTS.md file that sets format and best practices, and a question posed to the agent. No knowledge graphs, no fancy UIs — and it scales indefinitely via iCloud or git.
+AMJAD MASAD — CEO of Replit
+Amjad Masad flagged an interesting data point from a former Anthropic employee: hackers prefer to use massively subsidized AI lab subscriptions for attacks rather than open-source models. This suggests the subsidy structure of frontier AI products has real security externalities worth watching.
+https://x.com/amasad/status/2081576172656456076
 
-https://x.com/rauchg/status/2081123293340520642
-https://x.com/rauchg/status/2081103993917649134
-https://x.com/rauchg/status/2081149743368122723
+GARRY TAN — President & CEO of Y Combinator
+Garry Tan wrapped up YC Startup School 2026, thanking Sam Altman for closing out the event. He also shared a two-line piece of founder advice that earned nearly 900 likes: "Don't LARP. Be earnest."
+https://x.com/garrytan/status/2081602195292864532
+https://x.com/garrytan/status/2081586567211348432
 
----
+PETER YANG — AI educator and creator
+Peter Yang, who makes practical AI tutorials for busy people, offered a grounded observation from conversations in Canada with people outside the AI bubble: the number one concern isn't token limits — it's whether users trust ChatGPT enough to hand over access to Gmail, Calendar, and Microsoft Office. Trust and data privacy remain the key barrier to AI adoption for mainstream users.
+https://x.com/petergyang/status/2081555286817648738
 
-Nan Yu — Head of Product at Linear
+ZARA ZHANG — Builder
+Zara Zhang made a pointed case against the common AI adoption metric: "Stop measuring your AI adoption in tokens burned. Measure the time from a user need arriving to that thing shipping." She also explained why AI tutorials are everywhere — general chat products face a blank-box problem where people don't know what to ask for, making education a necessary bridge.
+https://x.com/zarazhangrui/status/2081627581997269192
+https://x.com/zarazhangrui/status/2081627109299310684
 
-Yu has been poking at why a true "SoftwareFactory" doesn't exist yet — a system that doesn't just generate code but autonomously starts, maintains, and evolves a product. His key meta-observation: if you can build a SoftwareFactory, you can build a SoftwareFactoryFactory. The concept generalizes well beyond software into domains like public health and law, where the output isn't a feature but a designed and implemented intention.
+DAN SHIPPER — CEO of Every
+Dan Shipper is taking a week off to write the definitive history of how OpenAI Codex happened, based on deep interviews with insiders. He'll publish it on Every in a few weeks and plans to drop breadcrumbs along the way — worth following if you want the inside story of one of the most influential coding tools in history.
+https://x.com/danshipper/status/2081412243388788988
 
-https://x.com/thenanyu/status/2081183178568405171
-https://x.com/thenanyu/status/2081187979024797858
-https://x.com/thenanyu/status/2081195994499133820
+NIKUNJ KOTHARI — Partner at FPV Ventures
+Nikunj Kothari, who invests at seed and Series A, offered a memorable one-liner: "proof of prompt is soon going to replace proof of work." A compact thesis on how demonstrating AI fluency is becoming the new signal of competence.
+https://x.com/nikunj/status/2081383934928068619
 
----
-
-Madhu Guru — Sr Director of AI at Meta (formerly led Gemini, Veo, Nano)
-
-On how the US AI community converged on support for open-weight models: the answer came not from debate but from a rapid series of public experiments — DeepSeek, the Microsoft-OpenAI breakup, GLM, Kimi, Fable, the OpenAI-Hugging Face episode — each revealing something different about incentives, geopolitics, and which players hold which cards. "In uncharted territory, answers to hard questions only come from repeated contact with reality." Guru thinks this is the model for resolving AI's biggest societal questions over the next decade: staged public experiments that let us observe first- and second-order effects together.
-
-https://x.com/realmadhuguru/status/2081141594892415028
-
----
-
-Peter Steinberger — Creator of OpenClaw, partner at OpenAI
-
-Steinberger spent the day running Codex in massive parallel for pre-release QA — and the prompt he used is worth reading in full: "Do a full end-to-end QA test of OpenClaw with live API keys. Use 12 subagents to split up functionality, spin up dev gateways with different ports, and use some to stress test. Orchestrate, use worktrees and create PRs autonomously. Set a goal to find 200 bugs. Fix the root cause each time, no band-aids. Refactors are okay, unless they touch the plugin SDK boundary. Write a test report in my desktop folder as markdown and keep updating that." He noted that this style of workflow previously fell apart at context compaction boundaries, but the model's improved intent-understanding is now handling complex behavioral issues reliably.
-
-https://x.com/steipete/status/2081169373784633552
-https://x.com/steipete/status/2081169376317932017
-
----
-
-Aaron Levie — CEO at Box
-
-Google joining the open-weights AI endorsement marks a turning point: "Now with Google on board, this is a complete endorsement of open weights AI. Pretty big moment for the industry." When the largest hyperscaler publicly backs open models, it substantially de-risks the ecosystem direction for enterprise buyers and developers alike.
-
-https://x.com/levie/status/2081054531908247937
-
----
-
-Amjad Masad — CEO at Replit
-
-Replit's AI-built chess engine is closing in on 1200 Elo with a deliberately tight constraint set: one small fine-tuned LLM, no custom pretraining or architecture, and no chess engine assistance on moves. The target is 2000+ Elo. The project doubles as a rigorous benchmark for what a constrained LLM can learn purely from fine-tuning — and how far that ceiling sits.
-
-https://x.com/amasad/status/2081086837263937543
-
----
-
-Peter Yang — AI educator and podcast host
-
-Yang previewed an upcoming interview with Jason, a DevEx engineer at OpenAI who wrote the official Codex for Work guidebook. The episode covers running a chief-of-staff agent across Slack and email, converting past sessions into reusable skills and workflows, and building personal learning tools. Worth subscribing ahead of the drop.
-
-https://x.com/petergyang/status/2081029209993154980
-
----
-
-Matt Turck — VC at FirstMark Capital
-
-A useful primer: Turck posted a chip landscape explainer covering CPU, GPU, NVIDIA, AMD, TPU, Trainium, Cerebras, and more with Cerebras CEO Andrew Feldman. Good foundation-building content for anyone who needs to understand the infrastructure layer without a semiconductor background.
-
-https://x.com/mattturck/status/2081131761686184333
-
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Ep 91: Top AI Analyst Unpacks Today's AI Hype Cycle
-Unsupervised Learning (Redpoint) — with Benedict Evans
-https://www.youtube.com/watch?v=vDY_ocrkQ5w
+THE MAD PODCAST WITH MATT TURCK
+"OpenAI's Compute Chief: We Can't Build Fast Enough | Sachin Katti"
+https://www.youtube.com/watch?v=wEZBlmvxx4o
+Published: 2026-07-16
 
-One-sentence takeaway: Benedict Evans, one of tech's sharpest analysts, argues that AI's jagged capability curve — superhuman at some tasks, baffling at others — makes today's hype both legitimate and overextended at the same time, and that history offers better guidance than first-principles speculation about what comes next.
+Takeaway: Sachin Katti, OpenAI's Head of Industrial Compute, reveals that demand for AI compute has never once been satisfied — the physical world simply can't build fast enough to keep up, and the internal worry is always undershooting, never overbuilding.
 
-Evans spends the first third of the conversation pushing back on civilization-scale AI claims — not by dismissing AI, but by insisting that looking at previous enabling technologies (the internet, mobile, semiconductors, electricity) is more productive than debating magnitude. Each prior wave was also described as unprecedented; each time, new jobs and industries emerged that nobody anticipated. The lump-of-labor fallacy keeps recurring, and Evans is sharp on it: Jeff Hinton said a decade ago to stop training radiologists, misunderstanding both what the models could do and what radiologists actually do for a living.
+Katti joined OpenAI after stints as a Stanford CS/EE professor, serial founder, and CTO of Intel. His role spans the entire compute lifecycle: finding land, power, and chips; financing the infrastructure; deploying and operating it; and allocating capacity internally. He describes the current data center build-out — with OpenAI planning ~$50B in compute spend this year against an industry-wide $700B — as potentially the largest infrastructure project in human history, bigger than the highway or railroad eras.
 
-The most analytically useful section is Evans's breakdown of why coding became AI's first major mainstream use case. His candidate explanations: developers build tools for their own problems first; code is verifiable and can be run millions of times for training signal; and the feedback loop between model quality and coding-tool usage creates a flywheel that's harder to replicate in adjacent domains like complex consulting. Whether that feedback loop can generalize — or whether code was uniquely suited — remains unresolved.
+On the physical reality: AI data centers are essentially giant supercomputers cooled with liquid rather than air, because the chips run too hot for conventional cooling. Everything from chips to cables to transformers must be cooled. OpenAI builds in rural America (Texas, Michigan, and elsewhere) for land availability, permitting, power access, and construction labor — and always invests in new grid infrastructure when it arrives, so data centers add capacity rather than drain it.
 
-On consumer AI, Evans is openly ambivalent. The current moment resembles early internet portals: platforms are offering suggestion tiles to help users figure out what to do with a chat interface, just as Yahoo and AOL once scaffolded the web for new users. Whether that scaffolding is temporary (users form habits and it falls away) or structural (most people never develop a habitual use case) is the open question.
+On the Jalapeno custom chip: designed in just nine months — unusually fast — because OpenAI knows exactly what workload the chip needs to run, enabling co-design shortcuts that external vendors can't take. AI itself is now assisting in chip design, accelerating iteration cycles that used to be bottlenecked by human researchers. Katti believes full AI-designed chips are not far off.
 
-He closes with a historical anecdote from 1999: a veteran banker looked at a catalog-turned-internet retailer pitched at a £700–800M valuation, opened one eye, and said "it's a low margin reseller, one time sells" — then went back to sleep. Evans's point isn't that AI is Amazon; it's that sometimes the framework for understanding a new thing is simpler than the hype suggests, and the patterns from previous waves are worth sitting with before assuming this time is entirely different.
+On the broader supply picture: inference now equals or exceeds training in compute consumption, because synthetic data generation and post-training are themselves inference. Bottlenecks exist everywhere — gas turbines, transformers, permitting, and a shortage of electricians and plumbers needed to build at this pace. OpenAI's newly announced guaranteed token capacity is a direct response to intelligence becoming a critical supply input for enterprises.
 
-Direct quote: "We have something that's very jagged. There's also stuff that takes people five minutes that it can't do. It's not linear like that. Intelligence isn't linear like that."
+Key quote: "Anytime you have thought you have enough compute, we can slow down — always negatively surprises like, oh, we should not have slowed down. Demand far outstrips compute supply today. So anything we can bring online, we consume immediately."
 
-━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━
-
-An update on recent Claude Code quality reports — Anthropic Engineering
-https://www.anthropic.com/engineering/april-23-postmortem
-
-Anthropic identified three separate issues behind recent Claude Code quality complaints — not a model regression, but a set of overlapping product changes that created the appearance of broad degradation. First: Claude Code's default reasoning effort was quietly lowered from high to medium in March to reduce latency, causing a noticeable quality drop; it was reverted to high after user pushback. Second: a session idle bug caused Claude to clear its thinking context repeatedly every turn instead of just once, making it seem forgetful. Third: a verbosity-reduction prompt instruction shipped in mid-April hurt coding quality and was reverted within four days. All three are now resolved as of April 20 (v2.1.116), and Anthropic is resetting usage limits for all subscribers.
-
----
-
-Scaling Managed Agents: Decoupling the brain from the hands — Anthropic Engineering
-https://www.anthropic.com/engineering/managed-agents
-
-The central insight from Anthropic's Managed Agents architecture: agent harnesses encode assumptions about model limitations, and those assumptions go stale as models improve. Rather than continuously patching harnesses, Anthropic virtualized the core agent components — session (the append-only event log), harness (the orchestration loop), and sandbox (the execution environment) — so each can evolve independently without disturbing the others. The analogy is to operating system abstractions: the read() syscall is agnostic to whether it's talking to a 1970s disk pack or a modern SSD. Managed Agents follows the same pattern, with stable interfaces over changing implementations.
-
----
-
-New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels — Anthropic
-https://claude.com/blog/claude-managed-agents-updates
-
-Claude Managed Agents can now run tool execution inside infrastructure you control, with the agent orchestration loop staying on Anthropic's side. Self-hosted sandboxes work with managed compute providers including Cloudflare, Daytona, Modal, and Vercel, or on your own infrastructure. Sensitive files, packages, network policies, and audit logging stay inside your perimeter. MCP tunnels (currently in research preview) let agents connect to private MCP servers without exposing them publicly. The architectural split — Anthropic runs the brain, you run the hands — is now a first-class option rather than a workaround.
-
-━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
