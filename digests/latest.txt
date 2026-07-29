@@ -1,75 +1,53 @@
-AI Builders Digest — 2026-07-28
+AI Builders Digest — 2026-07-29
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-X/TWITTER
+X / TWITTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
-Big news from OpenAI: usage limits have been reset for all paid users of Codex and ChatGPT Work. Sottiaux announced it to celebrate the fast adoption of ChatGPT Work, then confirmed limits were back when he returned to his laptop later that morning. The announcements collectively drew nearly 18,000 likes, reflecting intense demand from the developer community.
-https://x.com/thsottiaux/status/2081899343091843463
-https://x.com/thsottiaux/status/2081940052154933696
+Thibault Sottiaux — Codex & ChatGPT, OpenAI
+
+OpenAI reset usage limits for all ChatGPT Work and Codex subscribers after discovering that GPT-5.6 Sol was consuming far more tokens than expected. Sol is significantly more agentic than previous models — it willingly runs longer tasks, fires parallel tool calls, and coordinates complex subagent workflows — all of which drove up token usage unevenly, hitting power users hardest while median usage looked fine. The team shipped several efficiency improvements and says usage should now last ~18% longer during typical sessions, with the five-hour Codex limit also being restored. In a follow-up, Sottiaux also announced a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — supporting repository scans, change reviews, finding tracking over time, and CI integration.
+
+Usage reset announcement: https://x.com/thsottiaux/status/2082317452755751098
+Security CLI release: https://x.com/thsottiaux/status/2082241164850364555
 
 ---
 
-Swyx — AI builder, co-founder of smol.ai, affiliated with Cognition and AI Engineer community
-Swyx argues that the era of measuring AI cost in dollars per input/output token is over — the right unit is $/task. "If you haven't updated your x axes to $/task... then idk if you can be taken seriously anymore these days." He also reflected on his "agent lab thesis," noting that while his directional bets on evals, routing, interactivity, and ROI were right, the biggest argument against himself is that Claude Code being "accidentally open-sourced" this year produced almost no competitive reaction from the rest of the market.
-https://x.com/swyx/status/2081904230768816487
-https://x.com/swyx/status/2081890955070980416
+Swyx — AI engineer, smol.ai / Latent Space
+
+Swyx shared a sharp take on the current hiring landscape: it's a massive bull market for AI-native individual contributors and player-coaches, and a bear market for "heads of X" managers. His framing — "1 year experience managing 10 agents > 10 years experience managing 10-100 people" — captures a real bifurcation happening right now in how companies value different kinds of seniority. Whether you agree or not, it's one of the more concrete articulations of how AI is reshaping org design.
+
+https://x.com/swyx/status/2082199414656127010
 
 ---
 
-Guillermo Rauch — CEO at Vercel
-Two important infrastructure findings from Rauch today. First, on agent security: Kimi's research paper shows container-level isolation is insufficient for AI agents — their experiments found agents can cause kernel panics that crash the underlying machine. The takeaway is that Firecracker microVMs (as used in Vercel Sandbox) are necessary for safe agent execution. Second, on benchmarks: Vercel's latest cybersecurity AI model rankings show Grok 4.5 has emerged as the leader on price-performance — 10x cheaper than Sol, 5.7x cheaper than Opus 5, and 2.2x cheaper than Kimi K3, while matching Kimi-level performance.
-https://x.com/rauchg/status/2081842439304995169
-https://x.com/rauchg/status/2081852481517318560
+Dan Shipper — CEO, Every
+
+Shipper wrote what he calls the definitive history of Codex — based on hours of in-depth interviews with the team — without once touching a keyboard or mouse. He did the entire piece: organizing interviews, building a timeline, drafting, editing, and revising, all via ChatGPT for Work's voice mode. He described it as "absolutely goated for creative work." The full piece will be published on Every in the coming weeks, and this is worth watching as a real-world demonstration of how voice-first AI workflows are becoming viable for long-form professional writing.
+
+https://x.com/danshipper/status/2082130836485259530
 
 ---
 
-Aaron Levie — CEO at Box
-Levie pushes back on AI job displacement fears based on conversations with enterprise customers across industries. He's seeing continued hiring — engineers tackling problems they couldn't afford to address before, more sales staff to deepen client relationships with AI help, and internal roles focused on deploying AI. The pattern is Jevons paradox in action: AI lets companies do more, not just cut headcount. "Anyone using AI merely to cut costs eventually just gets outcompeted by companies that use AI to better serve their customers."
-https://x.com/levie/status/2081930301752942703
+Peter Yang — AI tutorials and product builder
+
+Yang built a new app called Tastemaker — a unified platform for rating and curating movies, TV shows, and video games in one profile — and documented the full build process using Claude Design and Claude Code. His workflow: write a design.md and HTML spec, prototype screens in Claude Design, then build and iterate with Claude Code. He's releasing the app as a limited 100-profile launch. A tutorial video walking through the full process is coming soon.
+
+App: https://x.com/petergyang/status/2082254840655405293
+Build process thread: https://x.com/petergyang/status/2082254852600873376
 
 ---
 
-Peter Steinberger — Co-founder at OpenClaw (OpenAI)
-A glimpse of the agentic future: Steinberger's agent detected a bug and a colleague's "robobun" AI agent fixed it — in the same night. The autonomous agent-to-agent debugging loop drew 325 likes and widespread excitement as an early example of AI systems collaborating without human involvement in the loop.
-https://x.com/steipete/status/2081767828278170002
+Amjad Masad — CEO, Replit
+
+Masad floated an intriguing compute-donation concept: imagine a SETI@Home-style project, but instead of donating compute to search for aliens, you donate it to search for mathematical proofs. A casual tweet, but it surfaces a real question about what distributed volunteered compute could do for frontier math and AI research beyond what any single institution can fund.
+
+https://x.com/amasad/status/2082316553740284060
 
 ---
-
-Peter Yang — Practical AI content creator and interviewer
-Yang surfaced a standout story from his interview with Jason (DevEx at OpenAI): while on a bike ride, Jason connected remotely and asked Codex to use computer use to edit a launch video, export it, and post it to Slack. Then told Codex: "Every 30 minutes, check the thread for feedback and export V2, V3, V4." By the time he got home, the video was greenlit — all revisions handled autonomously. The story captures how agentic tools are enabling a new class of "delegate and forget" workflows.
-https://x.com/petergyang/status/2081775399097549083
-
----
-
-Amjad Masad — CEO at Replit
-Masad puts the current AI moment in historical perspective: just as our ancestors mapped the Earth and then explored space, this generation may explore the "computational universe" — the vast space of algorithms, programs, proofs, and designs that AI agents can search. A philosophical framing for why the current AI moment is unlike what came before.
-https://x.com/amasad/status/2082000490066592127
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PODCAST
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-AI & I by Every — "The Founder of a $1.5B AI Company on What Comes After the First Wave of AI Apps"
-https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
-
-Takeaway: Granola CEO Chris Pedrigl and Every CEO Dan Shipper both agree we're in the earliest innings of a computing revolution — the real prize isn't meeting notes, it's figuring out the new interface for how humans and AI will work together. Neither has the full answer, but they're both building and experimenting in real time.
-
-This wide-ranging conversation covers how to build products in the agentic era, the power of proactive AI, and what comes after the first wave of AI apps.
-
-Chris opens by reframing competition: when Notion, OpenAI, and Zoom launched meeting note-takers inspired by Granola, he expected it to damage growth — it barely moved the needle. His reasoning: "We are in the very, very early steps of a computing revolution. What has come thus far will pale in comparison to what will come soon." Meeting notes aren't the end goal; the prize is inventing the AI-native interface for work itself.
-
-Dan describes his current workflow as bifurcating into two surfaces. First: async delegation — Slack agents like Claude Tag and PlusOne that handle tasks publicly, in multiplayer threads where teams can interact. Second: deep work in Codex, where he spends almost all his time, using the in-app browser so he and the agent see the same UI simultaneously. He calls this the "Codex-native app" paradigm — apps responsible for saving state and rendering UI that you bring your own agent to. A vivid example: he asked Codex to switch his internet plan while he was away, and it opened Verizon's site, chatted with a customer service agent until the switch was complete, and even pushed back on hidden fees. "I don't have to do any of that. I'm just sitting there."
-
-Dan also proposes the "pirate/architect" team model for building new products: one "pirate" per product who builds fast and scrappy to find something valuable, while one "architect" drops in across multiple products, uses an LLM to map the codebase quickly, identifies invariants, and sends off a 24-hour rewrite in Codex — then moves on.
-
-Chris shares a counterintuitive product insight: Granola pre-generates pre-meeting briefs for millions of meetings even though only ~10% ever get opened. The reason is that the brief is only valuable in the 15-second window before a meeting starts — it must already be there when you need it. He calls this the "handrail" philosophy: invisible until you trip, then absolutely load-bearing. The same approach extends to Granola's overall product strategy: be the best in the world at anything meeting-adjacent, and be the best context layer for any agent the user brings.
-
-Both founders identified the missing UI metaphor as the next frontier. Chris: "We have a chat UI and chat threads are surprisingly versatile when you're doing one thing. But when you're actually trying to do multiple things across varied contexts, I don't think we have the right metaphor there." Dan and Chris also agree that today's "builder guinea pigs" — people setting up Codex workflows, Granola MCPs, and Claude Code agents — are discovering patterns that will eventually be productized for mainstream users. As evidence: the founder of Hugging Face told Chris he had spent months building a pre-meeting brief workflow in Claude Code, then turned it off when Granola's version was better.
-
-Direct quote from Chris Pedrigl: "Meeting notes are not the end all, be all value that everyone's running after. There's something much bigger. I think we are in the very, very early steps of a computing revolution. What has come thus far will pale in comparison to what will come soon."
-
+No podcast episodes or blog posts in today's feed window.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
