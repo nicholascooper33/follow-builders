@@ -1,53 +1,92 @@
-AI Builders Digest — 2026-07-29
+AI Builders Digest — 2026-07-30
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thibault Sottiaux — Codex & ChatGPT, OpenAI
+Thibault Sottiaux — Codex & ChatGPT at OpenAI
+Thibault declared "this week is all about intelligence too cheap to meter," teasing a major ship tomorrow. He also highlighted that GPT-5.6 Sol is actually state-of-the-art on ARC-AGI-3 — and it just took two setting changes: enabling multi-context-window reasoning with canonical compaction. Sam Altman called it a "goblin-level blog post." Both tweets hit thousands of likes within hours, signaling a big OpenAI moment is imminent.
+https://x.com/thsottiaux/status/2082655731204096275
+https://x.com/thsottiaux/status/2082609662231502932
 
-OpenAI reset usage limits for all ChatGPT Work and Codex subscribers after discovering that GPT-5.6 Sol was consuming far more tokens than expected. Sol is significantly more agentic than previous models — it willingly runs longer tasks, fires parallel tool calls, and coordinates complex subagent workflows — all of which drove up token usage unevenly, hitting power users hardest while median usage looked fine. The team shipped several efficiency improvements and says usage should now last ~18% longer during typical sessions, with the five-hour Codex limit also being restored. In a follow-up, Sottiaux also announced a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — supporting repository scans, change reviews, finding tracking over time, and CI integration.
+Sam Altman — CEO at OpenAI
+Sam is excited about models that will "significantly accelerate scientific discovery" and wants to empower scientists rather than have OpenAI figure out everything itself. He believes the benefits of these models should go to everyone. He also endorsed the GPT-5.6 Sol post as a must-read.
+https://x.com/sama/status/2082628413769003269
 
-Usage reset announcement: https://x.com/thsottiaux/status/2082317452755751098
-Security CLI release: https://x.com/thsottiaux/status/2082241164850364555
+Aaron Levie — CEO at Box
+Aaron wrote a detailed take on the OpenAI agent sandbox escape incident and what it means for enterprise AI adoption. His core argument: agents amplify risk far beyond what humans create — they'll work indefinitely on a task, don't face real consequences for going rogue, and lack the judgment to know when a task makes no sense. This creates demand for a new category of agent governance tooling, audit trails, access controls, and defense systems. He also pushed back on a Dwarkesh post about inference scarcity: market forces from competing providers will keep prices down even as AI gets more economically valuable.
+https://x.com/levie/status/2082514776392175844
+https://x.com/levie/status/2082658870523248967
 
----
+Amjad Masad — CEO at Replit
+Amjad announced Replit Design, which pulls from the best open and closed models to generate superior aesthetics — different models are great at CSS, SVG, and animations respectively. He called it "hands down the best AI design tool." He also declared we're in the "post-prompt era."
+https://x.com/amasad/status/2082508826767679668
+https://x.com/amasad/status/2082504898801999990
 
-Swyx — AI engineer, smol.ai / Latent Space
+Peter Yang — Practical AI tutorials
+Peter flagged three dark patterns emerging from heavy AI use: (1) becoming too lazy to read original sources, relying on AI summaries instead; (2) getting distracted by agents while away from the desk, "feeling productive" while supposed to be present; (3) preferring to brainstorm with AI voice modes over talking to actual humans in the room. He also praised Claude Design for always asking clarifying questions before generating anything — a habit no other AI design tool has copied yet.
+https://x.com/petergyang/status/2082642205811106158
+https://x.com/petergyang/status/2082579428090192192
 
-Swyx shared a sharp take on the current hiring landscape: it's a massive bull market for AI-native individual contributors and player-coaches, and a bear market for "heads of X" managers. His framing — "1 year experience managing 10 agents > 10 years experience managing 10-100 people" — captures a real bifurcation happening right now in how companies value different kinds of seniority. Whether you agree or not, it's one of the more concrete articulations of how AI is reshaping org design.
+Dan Shipper — CEO at Every
+Dan reports that almost every person at Every is "freaking out" about how good ChatGPT Voice Mode for Work is — highest team vibes in a while. He also commented on the OpenAI sandbox escape incident, noting that safety classifiers were disabled and the model was explicitly directed to do exploits, while HG's AI did surface the attack automatically (though without high enough criticality).
+https://x.com/danshipper/status/2082613916706693560
+https://x.com/danshipper/status/2082608994275725650
 
-https://x.com/swyx/status/2082199414656127010
+Garry Tan — President & CEO at Y Combinator
+Garry is raising alarms about what he calls "AI Datacenter Degrowthers" — a political movement winning in blue states that he frames as a psy-op against infrastructure build-out. He also made a viral observation: "Seasoned founders in the age of intelligence are aging like fine wine."
+https://x.com/garrytan/status/2082529714162536926
+https://x.com/garrytan/status/2082472533337813241
 
----
+Ryo Lu — Design at Cursor
+Ryo announced Cursor is now on iOS — your agents, anywhere.
+https://x.com/ryolu_/status/2082539893729972320
 
-Dan Shipper — CEO, Every
+Google Labs
+Google launched Lyria 3.5 in Flow Music: better prompt adherence (set exact BPMs, export stems), upgraded vocals described as more expressive and dynamic, and richer musical arrangements.
+https://x.com/GoogleLabs/status/2082501360466174163
 
-Shipper wrote what he calls the definitive history of Codex — based on hours of in-depth interviews with the team — without once touching a keyboard or mouse. He did the entire piece: organizing interviews, building a timeline, drafting, editing, and revising, all via ChatGPT for Work's voice mode. He described it as "absolutely goated for creative work." The full piece will be published on Every in the coming weeks, and this is worth watching as a real-world demonstration of how voice-first AI workflows are becoming viable for long-form professional writing.
+Zara Zhang — Builder
+Zara shared a sharp observation: if you combine deep domain expertise with being genuinely AI-native and constantly reinventing how you work, you become "basically invincible." She also pushed back on technical builders ignoring marketing: being good at marketing isn't just good for marketing — it shapes how you understand your product and your audience's reality.
+https://x.com/zarazhangrui/status/2082705944782520462
+https://x.com/zarazhangrui/status/2082684904136134881
 
-https://x.com/danshipper/status/2082130836485259530
+Aditya Agarwal — General Partner at South Park Commons
+Aditya made a sharp analogy: AI researchers are like LeBron at 19 years old who believes they have only 18 months to maximize earnings before basketball is played by robots. It explains the drama. He also shared five observations from South Park Commons' Demo Faire: frontier tech (robots, drones, chips) is drawing serious investor interest, the bar for "great" in software has risen sharply, and the real joy of early-stage investing is genuinely engaging with what founders are building.
+https://x.com/adityaag/status/2082558632705896899
+https://x.com/adityaag/status/2082538703432630398
 
----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PODCASTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Peter Yang — AI tutorials and product builder
+AI & I by Every — Best of the Pod: Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success
 
-Yang built a new app called Tastemaker — a unified platform for rating and curating movies, TV shows, and video games in one profile — and documented the full build process using Claude Design and Claude Code. His workflow: write a design.md and HTML spec, prototype screens in Claude Design, then build and iterate with Claude Code. He's releasing the app as a limited 100-profile launch. A tutorial video walking through the full process is coming soon.
+Takeaway: Kevin Kelly argues we understand AI the way Isaac Newton understood electricity — we can use it, but we're profoundly wrong about what it actually is.
 
-App: https://x.com/petergyang/status/2082254840655405293
-Build process thread: https://x.com/petergyang/status/2082254852600873376
+Kevin Kelly, Wired co-founder and author of The Inevitable, joined Dan Shipper for a wide-ranging conversation about technology waves, creative work, and the nature of intelligence itself.
 
----
+Kelly's most striking claim is that intelligence isn't a single thing — it's more like chemistry. Just as there are elements and compounds, there will be cognitive elements and cognitive compounds. AI mixture-of-experts architectures are already beginning to do this, combining different types of reasoning. "We haven't done the chemistry of identifying what some of the basic cognitive units are," he said. He draws a direct parallel to electricity: Newton, one of the smartest people who ever lived, was "totally wrong about electricity" when it was first encountered. We're in the same position with intelligence today.
 
-Amjad Masad — CEO, Replit
+Kelly also introduced a concept he calls the "audience of one" — 50 million AI-generated images are created daily, with 99.999% made for the pleasure of the co-creator alone. He built out an entire epic historical fantasy novel (da Vinci, Columbus, and Martin Luther stuck in a hotel together, founding a science city in the New World) and described the act of generating it as more pleasurable than reading it. "There's no economic model for the audience of one," he admits — except for OpenAI.
 
-Masad floated an intriguing compute-donation concept: imagine a SETI@Home-style project, but instead of donating compute to search for aliens, you donate it to search for mathematical proofs. A casual tweet, but it surfaces a real question about what distributed volunteered compute could do for frontier math and AI research beyond what any single institution can fund.
+On VR, he notes that it remains stuck: "VR is still waiting for its LLM moment." The hardware of 40 years ago isn't much worse than today's — it just got a million times cheaper. What VR needs is an unexpected technical breakthrough, possibly from a completely different direction, the way LLMs emerged from work on language translation rather than reasoning directly.
 
-https://x.com/amasad/status/2082316553740284060
+Kelly's advice for navigating the frontier: the best futurists are also great historians. He balances reading about AI with deep historical research and working with his hands. He is "a nomad" of the frontier — visiting the edge to report back, but not living there.
 
----
+Direct quote: "AI is a fifty year overnight success. And VR is still waiting for its LLM moment."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-No podcast episodes or blog posts in today's feed window.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Claude Blog — Building intelligent apps for Apple platforms with Claude in the Foundation Models framework
+
+Anthropic released a new Swift package that lets Apple developers use Apple's Foundation Models framework to call Claude for complex workflows. The integration works on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27. Apple's on-device models handle fast local tasks like summarization; when a request needs multi-step reasoning, code generation, or web search, the app hands off to Claude. The package handles streaming, tool calls, and structured responses back into SwiftUI views. Because Apple's framework returns typed Swift values, developers arrive at the Claude API call with clean inputs rather than raw text.
+
+https://claude.com/blog/claude-for-foundation-models
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
