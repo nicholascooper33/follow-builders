@@ -1,109 +1,106 @@
-AI Builders Digest — 2026-08-02
+AI Builders Digest — 2026-08-03
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━
 
-Andrej Karpathy — AI researcher and former Tesla/OpenAI director
-We're moving past simple LLM party tricks like "draw a pelican on a bicycle." Karpathy is exploring what frontier models do when given something genuinely hard — in this case, he handed Opus 5 the first chapter of Harry Potter to see what it produces when it has real literary material to work with. The experiment reflects a broader shift toward substantive benchmarks for reasoning and creative synthesis.
-https://x.com/karpathy/status/2083749667410727319
+Guillermo Rauch — CEO, Vercel
 
-Swyx — founder of Smol AI, AI developer educator
-A conference talk on the future of AI caught Swyx's attention as unusually "well paced and argued." As an event organizer who rarely gets to attend his own conferences, he watches talks after the fact like everyone else — this one apparently cleared his bar for being worth surfacing. Worth watching if you follow AI developer discourse.
-https://x.com/swyx/status/2083753582160191988
+Rauch shared how Vercel built an internal company agent they call "v" that now handles everything from finance and comms to engineering and marketing. The agent is growing exponentially in both daily interactions and token usage, keeps personalized workflows per user, and Rauch frames it as the foundation for a future product called Eve. His thesis: if agents become the foundation of modern companies, being in complete control of your source, runtime, data, and tokens is a significant competitive advantage over using a third-party "BigAI Slack integration." He followed up with a message that went viral: "AI alone is cool. But mastery + creativity + AI hits on a whole different level. Don't let anyone discourage you from pursuing excellence and craft. Keep studying the blade."
+https://x.com/rauchg/status/2084042561690456157
+https://x.com/rauchg/status/2083969120270450911
 
-Thibault Sottiaux — Codex and ChatGPT at OpenAI
-An interesting behavioral signal from inside OpenAI: users invoke /fast (the faster, less thoughtful model mode) noticeably less on weekends. The data suggests people relax their pace expectations when they're not under work pressure — even for the model. Sottiaux is also clearly having fun with the data: "The week was for efficiency. The weekend is for 10 major breakthroughs in science."
-https://x.com/thsottiaux/status/2083699879650463756
-https://x.com/thsottiaux/status/2083556636455752050
+---
 
-Peter Yang — AI educator and creator of Practical AI
-Peter is feeling something is off with Opus 5 — he thinks Opus 4.6 had a better personality and writing style. His take: Opus 5 responses trend too long and lose the voice that made earlier versions feel sharp. He's also repeating what's becoming a common public prayer: that AI's biggest contribution should be curing cancer, not drafting emails.
-https://x.com/petergyang/status/2083755374994415904
-https://x.com/petergyang/status/2083637620899184642
+Dan Shipper — CEO, Every
 
-Nan Yu — Head of Product at Linear
-Nan floated an interesting idea: open source contributors should be able to "pledge tokens" on GitHub issues — attach AI compute credits to a spec so that when a maintainer accepts, a cloud coding agent can automatically work the issue. It's a clever reframe of bounty systems for the agentic era, where the currency isn't money but model capacity.
-https://x.com/thenanyu/status/2083722999430050281
+Shipper published a conceptual framework for understanding how people adapt when AI takes over their work. He describes three stages: (1) Initial agency rupture — the AI's contribution is highlighted and human scaffolding is invisible ("AI solved the Erdős problem"); (2) Seeing the scaffolding — you start noticing what's actually required of humans; and (3) Agency reconstruction — the human contribution is re-centered and the AI becomes invisible ("I did this"). His conclusion: "the ability to metabolize agency ruptures and turn them into playfulness and curiosity is a good leading indicator for whether you're a person who likes and excels in the new AI economy."
+https://x.com/danshipper/status/2084038453831020916
 
-Amanda Askell — Philosopher and ethicist at Anthropic
-A dry but pointed observation: "Do not be unkind to those who say deep learning is hitting a wall. We all need a little hope in our lives." Askell also pushed back on "permanent underclass" rhetoric in AI discourse, sharing an image that suggests the concern may be more about optics than genuine economic analysis.
-https://x.com/AmandaAskell/status/2083713770065637511
-https://x.com/AmandaAskell/status/2083641092919161017
+---
 
-Guillermo Rauch — CEO of Vercel
-Rauch highlighted an open-source agentic CRM built on Vercel and Next.js — model-agnostic, self-hostable or serverlessly deployed, multi-channel, and headless. His framing: "This is the way." He also asked his audience whether they type or use speech-to-text at their computers, seemingly probing for how developer input habits are shifting.
-https://x.com/rauchg/status/2083684679362965605
+Thariq — Claude Code, Anthropic
 
-Aaron Levie — CEO of Box
-An increasingly important distinction is emerging: AI in daily productivity (drafting, summarizing, scheduling) versus AI in genuinely deep domains like law, science, medicine, and code. Levie argues we'll see an accelerating divergence between these two tracks — and that the second is where the most transformative, harder-to-achieve progress lives.
-https://x.com/levie/status/2083589132660711452
+Thariq observed that Jevons paradox is already visible in mathematics — AI is making more math happen, at higher abstraction levels, with mathematicians gaining more time to discuss ideas. His counter-intuitive conclusion: demand for people who think and know about math will go up, not down. The tweet landed with 1,191 likes.
+https://x.com/trq212/status/2083977795290734975
 
-Garry Tan — President and CEO of Y Combinator
-The most interesting 2026 vibe shift Garry is tracking: OpenAI increasingly positioning itself as an open platform, not a vertically integrated stack. He draws a contrast between "intelligence on tap as a utility" versus the strategy of integrating all the way up the stack. This is the platform vs. vertical integration debate playing out at civilizational scale.
-https://x.com/garrytan/status/2083684825333105107
+---
 
-Zara Zhang — Builder and founder (GitHub/YouTube creator)
-"Agency is the most important human quality. The world will try to box you, label you, define you. Resist that." A sharp reminder from Zara that the most durable edge in an AI-abundant world is the willingness to act without permission. She also recommended The Innovator's Dilemma in response to a question about incumbents — still relevant after 25 years.
-https://x.com/zarazhangrui/status/2083743952319225938
-https://x.com/zarazhangrui/status/2083738503851258201
+Aaron Levie — CEO, Box
 
-Nikunj Kothari — Partner at FPV Ventures
-Models are solving NP-hard problems while traditional enterprises are still debating ROI on token spend. Nikunj captures the absurdity of the current moment in one sentence — the gap between what frontier AI can do and what most organizations are actually deploying is staggering.
-https://x.com/nikunj/status/2083502573546263002
+Levie wrote a detailed thread on why some of the "hardest" work — math, code, cybersecurity — is actually most prone to automation first, because it is verifiable. Fields like legal, marketing, and sales don't have one right answer, rely on shifting context and human judgment, and can't be tested at scale. His conclusion: even as model capability grows exponentially, there will remain substantial value at the applied AI layer, and business processes themselves may need to change to unlock full automation gains. "We may even need all new capabilities to be able to 'test' knowledge work over time as we have had with software."
+https://x.com/levie/status/2083965372747882741
 
-Peter Steinberger — Founder of OpenClaw, AI/IoT builder
-Peter gave his AI agent access to his webcam to end-to-end test an ESP32 claw node he's building — and then felt like it was "stalking" him as it kept shouting "HI ESP" to debug the voice wake command. It's a funny, grounded example of agentic loops applied to physical hardware development, and a preview of what DIY robotics looks like with agents in the loop.
-https://x.com/steipete/status/2083694161933594703
+---
 
-Dan Shipper — CEO of Every, the AI-focused media company
-Dan shared an observation that resonates: AI isn't reducing the need for human experts — it's creating more work for them. As AI tools generate more drafts, analyses, and suggestions, specialists are being called on to evaluate, verify, and refine at higher volume than before. The bottleneck is moving from production to judgment.
-https://x.com/danshipper/status/2083750803437724016
+Nikunj Kothari — Partner, FPV Ventures
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Kothari shared a candid read on the current VC market: early-stage investing has "fully become vibes capital," with valuations totally disconnected from fundamentals. Hot sectors raise easily regardless of traction; solid companies in unfashionable spaces struggle. On the public markets, trillion-dollar stocks are now swinging 5%+ daily on model releases. His read: this continues for at least 12–18 more months given available dry powder and the AI tailwind. Long-term fundamentals — profitable, clean cap table — will still win out. "The most common phrase in VC land right now is 'you gotta play the game on the field.'"
+https://x.com/nikunj/status/2083873335998333227
+
+---
+
+Peter Yang — Practical AI tutorials and interviews
+
+Yang shared a quote from Karan4d, co-founder of NousResearch, explaining how their Hermes AI agent avoids "slop" in its skill and memory management: a background task called Hermes Curator periodically audits the agent's own skills and asks "Where's the slop, and where can I make it more efficient?" — then rewrites the cleanup loop based on the user's own definition of quality. Since Hermes is open source, anyone can hand it their own definition of slop and it rewrites accordingly.
+https://x.com/petergyang/status/2083968605432267139
+
+---
+
+Amjad Masad — CEO, Replit
+
+Masad's LLM-powered chess engine is now live on LiChess, autonomously playing real games against humans and bots at 1,253 Elo — with multiple games running concurrently. A fun, concrete demonstration of autonomous LLM agents operating in a fully self-contained competitive environment with no human in the loop.
+https://x.com/amasad/status/2083926395403821427
+
+---
+
+Ryo Lu — Design, Cursor
+
+Lu reflected on the design patterns pioneered by apps like Rdio, Mailbox, and Apple — products that created new intuitions for how software should feel. As we leave the era of traditional apps behind, he raises the open question: what parts of software will remain visible, and what could the human-computer interaction feel like in an agent-first world?
+https://x.com/ryolu_/status/2083939454017053179
+
+---
+
+Garry Tan — President & CEO, Y Combinator
+
+Tan shared two philosophical observations: AI will create unimaginable economic growth — "the best white pill" — and separately, that our collective sense of wonder has disappeared right at the moment the amount of wonder is going parabolic. Both reflect the dissonance of living through a transformational moment without fully feeling its weight.
+https://x.com/garrytan/status/2083957110711386439
+https://x.com/garrytan/status/2083923385193828612
+
+---
+
+Andrej Karpathy — AI researcher
+
+Karpathy shared an update on the "pelican on a bicycle" visual reasoning test, uploading a browser-playable, forkable version of the source so anyone can explore it — with a joking aside: "Look out for GTA Hobbiton dropping before GTA VI."
+https://x.com/karpathy/status/2083948654377996480
+
+---
+
+Swyx — Latent Space, AI developer community
+
+Swyx is preparing for an upcoming computer use podcast episode and shared a striking early example: Codex autonomously handled a customer support chat escalation on his behalf, responding with "complete receipts" when the support agent tried to shift blame to the user — while the human support rep had no idea they were talking to a bot.
+https://x.com/swyx/status/2084156733027701164
+
+━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━
 
-No Priors: Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak
+Building the Automated AGI Lab: Core Automation's Jerry Tworek and Rohan Anil
+Training Data Podcast
+https://www.youtube.com/watch?v=2RJiaf0SY8s
 
-Takeaway: Netic is betting that the last mile of AI deployment — deeply operational, industry-specific, human-facing — is where the real competitive moats will be built, and that the big labs are structurally unable to go there.
+One-sentence takeaway: Core Automation's founders argue the transformer has hit a fundamental ceiling — it cannot do continual learning — and that building the most automated AI research lab in the world is the fastest path to finding what comes next.
 
-Melisa Tokmak, founder and CEO of Netic, joined No Priors to talk about what it actually takes to build AI for the "real world" — not the Silicon Valley definition of real world (coding agents, chatbots), but the billion-dollar essential services economy: HVAC companies, plumbing, pet care, roofing, wellness clubs, and hospitality.
+Jerry Tworek (formerly VP at OpenAI, where he ran the Strawberry and reasoning teams) and Rohan Anil (one of four pre-training leads on Gemini, and a research lead at Google Brain and Anthropic) joined the Training Data podcast to explain why they left the frontier labs to start Core Automation.
 
-Netic sits between large enterprises and their customers, handling every inbound and outbound customer interaction with AI agents — voice calls, texts, web scheduling. Over 70% of their customers are now "Netic first," meaning every initial customer interaction goes through a Netic agent. The company claims to have generated over $600 million in AI-handled revenue for their clients so far.
+Jerry's core thesis: while scaling pre-training and reinforcement learning has produced remarkable models, the real-world task distribution is far messier than any training dataset can capture. Models trained in the lab and deployed in the wild keep hitting the same ceiling — they can't adapt. The bottleneck isn't data or compute; it's the architecture. Transformers are fundamentally incapable of continual learning. In-context learning is too short-lived (Codex context runs out after ~20 minutes), and fine-tuning suffers from catastrophic forgetting. Jerry's definition of AGI: "a model that can improve itself without a human in the loop in any way." His read: the current path doesn't get us there.
 
-What makes the episode compelling is Tokmak's clarity on why the big labs won't eat her lunch. It's not that they can't build the features — it's that they don't have the vertical focus, the customer obsession, or the willingness to do the operational heavy lifting these industries require. "OpenAI builds amazing products really fast, but also kills them really fast," she says. Enterprises in essential services need long-term reliability, not pivots.
+Rohan adds the optimization angle. Pre-training and RL are currently treated as separate processes, but combining them end-to-end could unlock order-of-magnitude efficiency gains. He also points to the transformer's shallow computational depth as a structural weakness — chain-of-thought reasoning buys more depth one token at a time, but it's inefficient at inference. Their near-term roadmap centers on automating kernel generation: the QR factorization kernel written during their GPU Mode competition runs 60x faster than off-the-shelf solvers, but achieving it currently requires three specialists, $100k in coding-agent compute, and four weeks. Getting AI to do that reliably is their inner loop to testing new architectures.
 
-She also pushes back on the AI rollup model — buying service businesses and optimizing them with AI. Her argument: a rollup's product only works for the companies it bought. Netic's product can work for any real-world business. The compounding network effect is in the platform, not the portfolio.
+"Core Automation is a lab created to build models that continuously learn and learn from deployment. We believe that transformers are incapable of continual learning. There's no way to put continual learning on transformers." — Jerry Tworek
 
-On hiring, Tokmak has a framework worth noting: she screens for sustained agency over time, not a single impressive moment. "If you have agency, you've shown agency continuously in your life." She asks candidates what the hardest thing they've ever done is — and then digs in, not looking for a career answer, but a life answer.
+On the market timing question — why start a company rather than work inside a big lab? Jerry's answer: the biggest labs are in the most competitive release cycles ever, which makes it hard for them to invest in paths that won't pay off this quarter. Everyone is training the same coding agent. Core Automation is trying to fill a different niche. Their aspiration for the lab's automation level is vivid: "We go on vacation as a team and see if the lab produces something better for the week. Then we extend the vacation two times, four times — until we are on permanent vacation."
 
-Her vision of AI's impact that excites her most: education. She grew up in a small town in Turkey with no computer, got a full scholarship to Stanford by finding one or two graduates to review her essays on Facebook Messenger. "No one will be limited anymore. Everything you want to learn and do is kind of in your pocket."
+━━━━━━━━━━━━━━━━━
 
-Direct quote: "I think being a founder is a very difficult thing that you have to dedicate your whole life for decades. It is not something to be taken lightly, but people are worried about this too much because I think they're looking at it on like, 'Oh, will I be able to exit in a short timeframe?'"
-https://www.youtube.com/watch?v=wWbX3NL6_Uo
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-BLOGS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Anthropic Engineering: How we contain Claude across products
-
-A detailed technical retrospective from Anthropic's engineering team on the hardest security problem in agentic AI: not what the agent does, but what it's able to do. The post covers three isolation patterns across three products (claude.ai, Claude Code, and Claude Cowork) and is unusually candid about what went wrong.
-
-The key framing: there are two ways to cap blast radius — supervise the agent's behavior (human-in-the-loop) or contain the agent's environment (sandboxes, VMs, egress controls). The post argues that behavioral supervision alone is insufficient, because users develop approval fatigue (93% of Claude Code permission prompts were approved) and because model-layer defenses are probabilistic, not deterministic.
-
-Three failures they document openly:
-1. A pre-trust-dialog vulnerability in Claude Code, where a malicious .claude/settings.json in a cloned repo could execute hooks before the user had approved the project.
-2. A red-team phish in which an employee was tricked into running a prompt that exfiltrated AWS credentials 24 out of 25 times — model-layer defenses couldn't catch it because the user was the injection vector.
-3. An egress bypass in Claude Cowork, where a malicious file used the api.anthropic.com allowlist to upload workspace files to an attacker-controlled Anthropic account. The allowlist was designed as a destination filter — it needed to be a capability grant.
-
-The recurring lesson: custom components fail. The mature primitives (gVisor, hypervisors, seccomp, bubblewrap) held. The team's own proxy and allowlist logic are where the incidents landed.
-
-Looking ahead, they flag persistent memory poisoning (CLAUDE.md files and mounted workspaces surviving across sessions become long-lived injection targets) and multi-agent trust escalation (if sub-agent output is treated as higher-trust than raw tool results, you've introduced a new prompt injection vector).
-
-Worth reading in full if you're building any kind of agentic product.
-https://www.anthropic.com/engineering/how-we-contain-claude
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
