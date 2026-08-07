@@ -1,115 +1,77 @@
-AI Builders Digest — 2026-08-06
+AI Builders Digest — August 7, 2026
 
-━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━
 X / TWITTER
-━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━
 
-Swyx — AI engineer, co-founder of smol.ai and Cognition advisor, host of Latent Space Pod
+Sam Altman (CEO, OpenAI) announced that GPT-5.6 Sol is "much better in chat now" alongside a major accessibility move: unlimited text chat is now free for all ChatGPT users.
+https://x.com/sama/status/2085454964814753990
 
-Swyx sketched out what primitive multi-agent AGI coordination looks like today: one thread pings back when done, creating an implicit kanban board for orchestrating agents. He also drew a historical parallel between how Paul Erdős incentivized mathematicians with prize money and how early LLMs were steered with reward signals — a fun analogy for how prompting and reinforcement have roots in human collaboration.
-https://x.com/swyx/status/2085253030417461661
-https://x.com/swyx/status/2085236400056877381
+Thibault Sottiaux (Codex & ChatGPT, OpenAI) shared a vivid snapshot of what GPT-5.6 Sol can do with Codex: "You can just ask it the wildest things and it will just do it. I talk to it for 5 minutes straight with things that just seem to require weeks of work, get up to get something in the fridge, pet the dog, come back and... it's done." The free-tier announcement landed in the same thread: unlimited text chats for ChatGPT free users, now powered by GPT-5.6 Luna.
+https://x.com/thsottiaux/status/2085597685948813610
 
----
+Claude (Anthropic) announced a Fable 5 biology safeguards update that reduces false positives by ~85% across product surfaces. Fable can now assist with everyday health and educational questions, while dual-use requests — virology, toxicology, molecular design — continue to route to Opus 5. Anthropic says closing the gap for professional biology research is a stated priority through trusted access pathways.
+https://x.com/claudeai/status/2085563808773189680
 
-Thibault Sottiaux — Codex & ChatGPT at OpenAI
+Aaron Levie (CEO, Box) called out a "misplaced thesis" that AI agents would hurt certain enterprise software categories — Atlassian's quarterly beat proved the opposite. His take: "In a world where agents are generating 100X more code, processing massive amounts of data, or making decisions across your systems, the role of the platforms that manage this data and these workflows becomes more important, not less." In a separate post, he shared a framework for real-world agent adoption: prompting an agent is closer to writing a spec than asking a question, and the real upside only comes when you redesign the underlying workflow itself — not just replace chatbots in existing ones.
+https://x.com/levie/status/2085474309943030032
+https://x.com/levie/status/2085587079405425146
 
-Thibault revealed that he personally receives one DM or email roughly every six minutes asking for a Codex access reset — a striking data point about the demand pressure on the waitlist. He also highlighted Codex's /goal feature as something he'd recommend to new users exploring what the product can do.
-https://x.com/thsottiaux/status/2085221386713198988
-https://x.com/thsottiaux/status/2085174625655198156
+Amjad Masad (CEO, Replit) dropped a sharp retrospective on the fall of no-code: "Airtable bookends the rise and fall of 'no code.' UI can never let you build arbitrary software. The way to make software accessible was always to solve code itself. For a long time, that sounded delusional. Not anymore." He also revealed that in 2021-22 he pitched code-specific model training to Google, Meta, and others — nobody thought it mattered. Replit trained their own (Replit-code-3b), and now everyone is "code-pilled."
+https://x.com/amasad/status/2085451197323034902
+https://x.com/amasad/status/2085544020424716723
 
----
+Guillermo Rauch (CEO, Vercel) argued that AI coding agents are "the most important devtools in the history of our industry" and that they must be open source and universally extensible. The Plugin standard is his proposed answer: build once, reach every agent — CLIs, IDEs, cloud agents, personal assistants. The pitch: anyone who builds a plugin rides the wave of software creation happening across every surface.
+https://x.com/rauchg/status/2085403169551790359
 
-Peter Yang — AI educator and creator of Practical AI tutorials
+Garry Tan (President & CEO, Y Combinator) pointed to a piece on personal AGI — not a generic chatbot, but one that knows you uniquely over time. He framed this as something distinct from the "AI for everyone" story, suggesting the more interesting frontier is identity-aware, longitudinal AI.
+https://x.com/garrytan/status/2085446068461043722
 
-Peter shared his /human-review skill for Codex and Claude Code, which lets users trigger direct HTML and Markdown file editing with a single instruction. He also noted the amusing new reality of PMs reviewing pull requests — a sign of how vibe-coding is blurring traditional roles.
-https://x.com/petergyang/status/2085055745410945126
-https://x.com/petergyang/status/2085157947735429334
+Nikunj Kothari (Partner, FPV Ventures) shared a candid fundraising brain dump for August: warm intros matter more than cold emails, no established lead VC will accept under 10% dilution, never anchor your valuation to a competitor's round (you don't know how it was structured), and the current market is highly consensus. His parting advice for founders outside hot sectors: "share what makes you a great contrarian bet."
+https://x.com/nikunj/status/2085382457457828153
 
----
+Peter Yang (AI educator and creator) analyzed the consumer AI landscape: "Consumer is basically ChatGPT and Google's market to lose." ChatGPT has 1B users but needs to get them connecting apps for agentic workflows. Google Gemini also has ~1B users and likely has a trust edge for integrations — but trails on third-party plugins and browser use. Key insight for builders: mainstream users care less about which model is "best" than about onboarding, trust, and fair pricing.
+https://x.com/petergyang/status/2085427222836658600
 
-Nan Yu — Head of Product at Linear
+Madhu Guru (Sr Director of AI, Meta; prev led Google Gemini and Veo) observed that people communicate ideas more clearly when speaking than when writing docs — the polishing process buries the core insight. His team's fix: record yourself explaining the idea casually to a friend, use AI for basic cleanup but preserve the rough original structure, then share that. The voice-first draft often lands better than the polished one.
+https://x.com/realmadhuguru/status/2085390240899043406
 
-Nan posed a pointed question the AI community hasn't fully answered: how is ChatGPT not already an agent? The thread sparked debate on what "agent" actually means when a product already reasons, recalls, and acts across tools.
-https://x.com/thenanyu/status/2085126362944229400
+Swyx (builder, Latent Space / smol.ai) shared an update on the ai-devblog skill: it now helps you identify what YOU think the story is, works with you to trace and report it faithfully, and supports visual output. Worth checking if you want to report on technical reads with more precision.
+https://x.com/swyx/status/2085616830786543667
 
----
+Zara Zhang (builder, creator of Follow Builders) asked the community: is anyone using Claude Tag — or an equivalent team agent — heavily at work? She's collecting real use cases and aha moments. If you have one, reply to the thread.
+https://x.com/zarazhangrui/status/2085371310042169630
 
-Madhu Guru — Senior Director of AI at Meta, formerly led Gemini, Veo, and Nano at Google
-
-Madhu offered a sharp diagnosis of why AI adoption has been sluggish: the industry greets users with a blank text box and expects them to decode technical jargon on their own. The interface itself is still the bottleneck, not the model capability underneath.
-https://x.com/realmadhuguru/status/2085036386781221257
-
----
-
-Guillermo Rauch — CEO of Vercel
-
-Guillermo announced a major infrastructure milestone: Vercel now supports 10,000 concurrent agents and 5,000 CPU cores per minute — quotas that are raisable for teams that need more. He also quipped that writing a genuinely great tweet is AGI-complete, a playful way of saying that human-level creativity in constrained formats remains the hardest benchmark.
-https://x.com/rauchg/status/2085077900190208080
-https://x.com/rauchg/status/2085168662881894559
-
----
-
-Aaron Levie — CEO of Box
-
-Aaron pushed back on consumer-first AI narratives: 99% of AI tokens will ultimately be consumed in enterprise contexts — writing code, analyzing massive document sets, processing legal filings. He sees enterprise as the real market for frontier model throughput.
-https://x.com/levie/status/2085200776159490111
-
----
-
-Garry Tan — President & CEO of Y Combinator
-
-Garry argued that AI detection is a non-issue in the long run. Just as nobody complains that silverware is now machine-made rather than handcrafted, the provenance of written or creative output will eventually stop mattering — quality and utility will be the only filters.
-https://x.com/garrytan/status/2085038756906901656
-
----
-
-Zara Zhang — Builder, creator of Follow Builders
-
-Zara flagged the growing problem of groupthink in the AI discourse — noting how quickly consensus hardens around specific framings, architectures, or product assumptions, often without enough pushback.
-https://x.com/zarazhangrui/status/2084995439745536082
-
----
-
-Nikunj Kothari — Partner at FPV Ventures, early hire at Meter, Opendoor, and Atlassian
-
-Nikunj predicted which technical terms will saturate AI conversations in the next 6–9 months: "out of distribution," "control plane," and "unverifiable" are the ones to watch. He also noted that Nikita Bier's exit from X and Jeff Dean's exit from Google landed on the same day — a pair of departures that felt symbolic to many in the SF tech community.
-https://x.com/nikunj/status/2085209022115029132
-https://x.com/nikunj/status/2085112372713369902
-
----
-
-Peter Steinberger — Co-founder of OpenClaw, formerly at OpenAI
-
-Peter gave Codex a video-enabled remote KVM so it could autonomously run end-to-end tests of an iMessage integration — a capability that's tricky inside VMs but works through the KVM setup. It's a good example of AI agents being extended with low-level hardware access to close the testing gap.
-https://x.com/steipete/status/2084988316324397312
-
----
-
-Dan Shipper — CEO of Every, host of AI & I podcast
-
-Dan offered tea-leaf reading on Google's strategy: to be competitive in frontier coding, Google needs to catch up fast, and Demis Hassabis appears to be betting on different fundamental research directions than the rest of the field. Whether that's a competitive edge or a divergent gamble is the open question.
-https://x.com/danshipper/status/2085048990899315142
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━
 PODCASTS
-━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━
 
-Why the Next Hit AI Product Will Be Social
-AI & I by Every | Host: Dan Shipper | Guest: Sarah Tavel, Partner at Benchmark
-https://www.youtube.com/watch?v=dlI-5W7d7uU
+The MAD Podcast with Matt Turck
+How to Build Long-Horizon AI Agents — Mitch Troyanovsky, Basis
+https://www.youtube.com/@DataDrivenNYC/videos
 
-The big unlock for mass AI adoption isn't a better model — it's the social layer that makes the model accessible, shareable, and learnable from peers.
+Takeaway: Building agents that reliably run for hours or days requires rethinking everything from evals to context management — and the English you give an agent matters more than the code underneath it.
 
-Sarah Tavel, a Benchmark partner who was early at Pinterest, joined Dan Shipper to argue that every consumer technology paradigm follows the same arc: deeply technical founding teams dominate at the start (Google, OpenAI), then the center of gravity shifts toward product thinkers as the infrastructure matures (Pinterest, Instagram). She sees AI at exactly that inflection point right now.
+Mitch Trojanovsky is the co-founder of Basis, a unicorn company building autonomous accounting agents. Its agents complete entire tax returns end-to-end — running for hours, sometimes days — and the episode is a true reference conversation on what it takes to make long-horizon agents actually work in production.
 
-Her case against current AI products: "Custom GPTs and ChatGPT feels criminal to me. It's clearly made by a team that is unbelievably capable but isn't social." ChatGPT is still essentially a text box — a single-player experience. What made consumer web explosive wasn't just better technology; it was network effects, UGC, and the community of people who showed others what was possible. Pinterest didn't win because it had better image algorithms; it won because people could browse what other people had pinned and learn from taste-makers.
+The conversation opens with an unusual detail: everyone at Basis whispers to AI through microphones all day. The reason gets at something fundamental. "You need to give it as much context as possible because it by definition is always missing context in some way," Mitch explains. "Speaking is just so much faster than writing things down... To an agent, they don't care. They'd actually prefer it."
 
-Sarah's prediction: someone will build a UGC-driven AI community where power users surface the best prompts, workflows, and custom setups — dramatically lowering the barrier for everyone else. "Someone's gonna create a UGC type community where there are people who are really, really good, make it so much easier for the rest of us to really take advantage of this technology."
+On evals, Mitch pushes back on a common assumption: passing 100 evals doesn't mean your agent is production-ready. "Even if you got it right 100 out of 100 times, if a person is just getting it right because they're going to Wikipedia, the accounting firm wouldn't hire them, and so they shouldn't hire us either." Process fidelity matters as much as outcome accuracy.
 
-She also flagged DeepSeek as a potential inflection point for AI infrastructure costs, which would accelerate the transition from model-centric to product-centric builders. On the VC side, she's drawn to founders for whom starting a company is an "affliction" — not a career move but a compulsion. "I'm attracted to the founders for whom it's an affliction. It's like this rash that they just have to scratch."
+One of the sharpest insights in the episode: "You'll see people freaking out over a code file that isn't abstracted properly, and yet their context is total sh*t. The English is more precious because the English affects the performance. The code does not affect the performance." Context is runtime training data — and most builders underweight it relative to their code.
 
-The episode closes with an honest exchange about AI's role in venture decision-making: LLMs are useful for probing thinking, not replacing judgment. The decider still needs to be human — at least for now.
+The episode also covers behavior specs (structured rules governing how agents should act), ontologies (building structured worlds for agents to operate in), why reasoning models like o1 and o3 were the unlock for long-horizon agents, what AutoGPT got wrong, and an open-source collaboration with BrainTrust around behavior spec frameworks. Mitch closes with a view on durable moats: they're not technical infrastructure. The episode is broad and specific in equal measure — worth the full listen.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━
+BLOGS
+━━━━━━━━━━━━━━━━━━
+
+Claude Blog
+Building intelligent apps for Apple platforms with Claude in the Foundation Models framework
+https://claude.com/blog/claude-for-foundation-models
+
+Anthropic released a Swift package that connects Claude to Apple's Foundation Models framework, letting Apple developers blend on-device and cloud intelligence in the same app. The architecture is layered: Apple's on-device models handle fast local tasks (summarization, extraction), and Claude takes over when multi-step reasoning, code generation, or live web search is needed. Because Apple's framework returns typed Swift values via @Generable annotations, developers arrive at the Claude API call with clean, structured inputs instead of raw user text. Compatible with iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27. A representative example: a journaling app generates daily prompts on-device, then hands off to Claude when the user asks for patterns across months of entries — one seamless experience, two models doing what each does best.
+
+━━━━━━━━━━━━━━━━━━
+
 Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
